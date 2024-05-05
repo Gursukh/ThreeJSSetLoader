@@ -1,0 +1,31 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+#framing-grid {
+  display: grid;
+  position: relative;
+  height: 100%;
+  grid-template-columns: 6fr 1fr;
+}
+
+#hierarchy {
+  background-color: rgb(42, 39, 53);
+}
+
+
+#viewport {
+  background-color: red;
+}
+
+#toolbar { 
+  position: absolute;
+  height: 100%;
+  width: 15%;
+  background-color: black
+}
