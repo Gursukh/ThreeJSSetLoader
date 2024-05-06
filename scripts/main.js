@@ -167,7 +167,6 @@ function instantiateBox(Node) {
   switch (Node.getAttribute("type")) {
     case "eventbox":
       colour = [0, 1, 0, 0.5]
-      console.log(Node)
       createBox(Node, colour);
       break;
 
@@ -276,10 +275,10 @@ function addEventListeners() {
   }, false);
 
   addEventListener('keydown', (e) => {
-    keyboard[e.key] = true;
+    keyboard[(e.key).toString().toLowerCase()] = true;
   });
   addEventListener('keyup', (e) => {
-    keyboard[e.key] = false;
+    keyboard[(e.key).toString().toLowerCase()] = false;
   });
   addEventListener('wheel', (e) => {
     if (e.deltaY > 0) {
