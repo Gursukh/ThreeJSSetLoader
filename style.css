@@ -1,5 +1,7 @@
 html, body {
   height: 100%;
+  
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -8,27 +10,61 @@ body {
 }
 
 #framing-grid {
-  display: grid;
-  position: relative;
-  height: 100%;
-  grid-template-columns: 6fr 1fr;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
 }
 
 #hierarchy {
+  height: 100%;
+  min-width: 15%;
   background-color: rgb(42, 39, 53);
+  padding: 10px;
+  box-sizing: border-box;
+  color: white;
 }
 
 
 #viewport {
   background-color: red;
+  height: 100%;
+  flex-grow: 1;
+  overflow: hidden;
 }
 
-#toolbar { 
-  position: absolute;
+#toolbar {
   height: 100%;
   min-width: 15%;
   background-color: rgb(41, 41, 41);
   color: white;
   padding: 10px;
   box-sizing: border-box;
+  z-index: 1;
+}
+
+#collision-hierarchy {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.collsion-node {
+  display: flex;
+  gap: 5px;
+}
+
+.collsion-node > input[type=color] {
+  width: 20px;
+  height: 20px;
+}
+
+
+.collsion-node > input[type=range] {
+  width: 60px;
+  border-radius: 0;
+  height: 20px;
+}
+
+.collsion-node > button {
+  height: 20px;
 }
