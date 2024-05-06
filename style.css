@@ -26,6 +26,9 @@ body {
 #toolbar { 
   position: absolute;
   height: 100%;
-  width: 15%;
-  background-color: black
+  min-width: 15%;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
 }

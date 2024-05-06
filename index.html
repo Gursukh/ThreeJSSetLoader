@@ -10,11 +10,26 @@
 <body>
   <script  src="./scripts/main.js" defer></script>
   <div id="framing-grid">
-    <div id="toolbar"></div>
+    <div id="toolbar">
+      <div>
+        <p>Collision</p>
+        <div id="collision-dropdown"></div>
+        <button id="load-collision">Load</button>
+      </div>
+      <div>
+        <p>Placement</p>
+        <div id="placement-dropdown"></div>
+        <button>Load</button>
+      </div>
+    </div>
     <div id="viewport"></div>
     <div id="hierarchy">
-
     </div>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js"></script>
+  <script src="scripts/PointerLockControls.js" ></script>
+  <script src="scripts/OBJLoader.js"></script>
+  <script src="scripts/MTLLoader.js"></script>
 </body>
 </html>
