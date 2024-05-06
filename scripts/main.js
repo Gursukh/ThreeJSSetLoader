@@ -88,7 +88,7 @@ async function loadCollision(collision) {
 
   collisionGroups = [];
 
-  objectLoader.load('resources/collision/' + collision + "/collision.obj", function (object) {
+  objectLoader.load('docs/assets/collision/' + collision + "/collision.obj", function (object) {
     object.scale.set(0.001, 0.001, 0.001)
     object.position.set(0, 0, 0);
     col = object;
@@ -173,7 +173,7 @@ async function setup() {
   viewport.appendChild(renderer.domElement);
 
 
-  var resourceData = await (await fetch("/collisionHierarchy.json")).json();
+  var resourceData = await (await fetch("docs/assets/collisionHierarchy.json")).json();
   createCollisionDropdowns(document.getElementById("collision-dropdown"), resourceData["collision"])
   createPlacementDropdowns(document.getElementById("placement-dropdown"), resourceData["placement"])
 
