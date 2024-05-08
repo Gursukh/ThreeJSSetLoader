@@ -6,9 +6,18 @@
   <link rel="stylesheet" href="style.css">
   <title>06 SET Loader</title>
 
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/"
+      }
+    }
+  </script>
+
 </head>
 <body>
-  <script  src="./scripts/main.js" defer></script>
+  <script type="module" src="./scripts/main.js" defer></script>
   <div id="framing-grid">
     <div id="toolbar">
       <div>
@@ -24,19 +33,29 @@
         <button id="open-placement">Open</button>
       </div>
     </div>
-    <div id="viewport"></div>
+    <div id="viewport">
+      <span id="speedometer" style="position: absolute; top: 0; left: 0; color: white;">speed: 1</span>
+    </div>
     <div id="hierarchy">
-      <p>Hierarchy</p>
-      <div>
-        <p>Collision</p>
+      <p><strong>Hierarchy</strong></p>
+      <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <p style="font-size: 12px;">Collision</p>
         <div id="collision-hierarchy"></div>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <p style="font-size: 12px;">Placement</p>
+        <div id="placement-hierarchy"></div>
       </div>
     </div>
   </div>
+
+
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js"></script>
-  <script src="scripts/PointerLockControls.js" ></script>
-  <script src="scripts/OBJLoader.js"></script>
-  <script src="scripts/MTLLoader.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js"></script> -->
+  <!-- <script src="scripts/THREEJS/PointerLockControls.js" ></script>
+  <script type="module" src="scripts/THREEJS/DDSLoader.js"></script>
+  <script src="scripts/THREEJS/OBJLoader.js"></script>
+  <script src="scripts/THREEJS/MTLLoader.js"></script> -->
+  <!-- <script src="scripts/THREEJS/ColladaLoader.js"></script> -->
 </body>
 </html>

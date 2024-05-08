@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 html, body {
   height: 100%;
-  
+  font-family: "Poppins", sans-serif;  
   box-sizing: border-box;
   margin: 0;
 }
@@ -20,9 +29,12 @@ body {
   height: 100%;
   min-width: 15%;
   background-color: rgb(42, 39, 53);
-  padding: 10px;
+  padding: 10px 20px;
   box-sizing: border-box;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -31,6 +43,7 @@ body {
   height: 100%;
   flex-grow: 1;
   overflow: hidden;
+  position: relative;
 }
 
 #toolbar {
@@ -59,25 +72,62 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  height: 150px;
+  max-height: 150px;
+  overflow-y: scroll;
+  background-color: black;
 }
 
-.collsion-node {
+
+#placement-hierarchy {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  height: 150px;
+  max-height: 150px;
+  overflow-y: scroll;
+  background-color: black;
+}
+
+.collision-node {
   display: flex;
   gap: 5px;
+  height: 20px;
 }
 
-.collsion-node > input[type=color] {
+.collision-node > input[type=color] {
   width: 20px;
-  height: 20px;
+  height: 100%;
 }
 
 
-.collsion-node > input[type=range] {
-  width: 60px;
-  border-radius: 0;
+.collision-node > input[type=number] {
+  width: 45px;
+  height: calc(100% - 5px);
+}
+
+.collision-node > button {
+  flex-grow: 1;
+  height: 100%;
+}
+
+
+.placement-node {
+  display: flex;
+  gap: 5px;
+  width: 100%;
   height: 20px;
 }
 
-.collsion-node > button {
-  height: 20px;
+.placement-node > button {
+  width: 100%;
+  font-size: 12px;
 }
