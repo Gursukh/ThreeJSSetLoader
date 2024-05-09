@@ -21,18 +21,31 @@ def traverse_directory(root_dir):
 def get_files_in_directory(directory):
     return [file for file in os.listdir(directory) if os.path.isfile(os.path.join(directory, file))]
 
+def map_terrain(terrain_directory):
+    terrain_data = {}
+    for root, dirs, files in os.walk(terrain_directory):
+        relative_path = os.path.relpath(root, terrain_directory)
+        if "textures" in relative_path:
+            continue
+        files_list = [f for f in files if os.path.isfile(os.path.join(root, f))]
+        if files_list:
+            terrain_data[relative_path.replace(os.path.sep, "/")] = files_list
+    return terrain_data
+
 def write_json(data, output_file):
     with open(output_file, 'w') as json_file:
         json.dump(data, json_file, indent=4)
 
 if __name__ == "__main__":
-    collision_directory = "./res/collision"
-    placement_directory = "./res/placement"
+    collision_directory = "./docs/assets/collision"
+    placement_directory = "./docs/assets/placement"
+    terrain_directory = "./docs/assets/terrain/"
     output_file_path = "collisionHierarchy.json"
 
     data = {}
     data["collision"] = traverse_directory(collision_directory)
     data["placement"] = get_files_in_directory(placement_directory)
+    data["terrain"] = map_terrain(terrain_directory)
 
     write_json(data, output_file_path)
 

@@ -20,7 +20,8 @@ export class Environment {
 
     this.placement_group = new THREE.Group();
     this.collision_group = new THREE.Group();
-  
+    this.terrain_group = new THREE.Group();
+
     this.renderer.setSize(viewport.clientWidth, viewport.clientHeight);
     viewport.appendChild(this.renderer.domElement);
 
@@ -30,8 +31,9 @@ export class Environment {
     var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
     var cube = new THREE.Mesh(geometry, material);
     this.scene.add(cube);
-    
+
     this.scene.add(this.placement_group)
+    this.scene.add(this.terrain_group)
     this.scene.add(this.collision_group)
   }
 
@@ -65,7 +67,7 @@ export class Environment {
 
     console.log(this.scene)
   }
-  
+
   clear_placement() {
     this.placement_group.children = [];
   }
@@ -77,14 +79,14 @@ export class Environment {
     let xml = await (await fetch("docs/assets/placement/" + placement)).text()
     let parser = new DOMParser();
     let xml_dom = parser.parseFromString(xml, 'application/xml').children[0];
-    
+
     let object_table = {}
-    
+
     for (let i = 0; i < xml_dom.childElementCount; i++) {
       let [type, object] = this.conceptualise_asset(xml_dom.children[i]);
 
-      if(object_table[type]) {
-        if(object != null) object_table[type].children.push(object)
+      if (object_table[type]) {
+        if (object != null) object_table[type].children.push(object)
       } else {
         object_table[type] = new THREE.Group();
         object_table[type].name = type;
@@ -99,24 +101,24 @@ export class Environment {
   }
 
   create_box(node, colour) {
-    
+
     var geometry = new THREE.BoxGeometry(
       node.children[1].children[1].innerHTML * 0.001,
       node.children[1].children[2].innerHTML * 0.001,
       node.children[1].children[0].innerHTML * 0.001);
-  
-    var material = new THREE.MeshBasicMaterial({ color: rgbToHex(colour[0] * 255,colour[1] * 255,colour[2] * 255) });
+
+    var material = new THREE.MeshBasicMaterial({ color: rgbToHex(colour[0] * 255, colour[1] * 255, colour[2] * 255) });
     material.transparent = colour[3] < 1;
     material.opacity = colour[3];
 
     var cube = new THREE.Mesh(geometry, material);
-  
+
     cube.position.set(
       node.children[2].children[0].children[0].children[0].innerHTML * 0.001,
       (node.children[2].children[0].children[0].children[1].innerHTML * 0.001) + (node.children[1].children[2].innerHTML * 0.0006),
       node.children[2].children[0].children[0].children[2].innerHTML * 0.001
     );
-  
+
     var Rotation = new THREE.Quaternion(
       node.children[2].children[0].children[1].children[0].innerHTML,
       node.children[2].children[0].children[1].children[1].innerHTML,
@@ -126,7 +128,7 @@ export class Environment {
     Rotation.normalize();
 
     cube.rotation.setFromQuaternion(Rotation);
-  
+
     return cube;
   }
 
@@ -137,61 +139,44 @@ export class Environment {
     switch (type) {
       case "eventbox":
         return [type, this.create_box(node, [0, 1, 0, 0.5])];
-        
+
       case "cameraeventbox":
         return [type, this.create_box(node, [1, 0, 0, 0.5])];
-  
+
       default:
         return [type, null];
     }
   }
 
-  load_terrain_test() {
+  async load_terrain(terrain, callback) {
 
-
-    let files = [
-"twn_c_brgtpl01_nos_",
-,"twn_c_obj01.dae"
-,"twn_c_rampart_nos_.dae"
-,"twn_mapA_woter04.dae"
-,"twn_mapC_bigtree_nos_.dae"
-,"twn_mapC_ground01_nos_.dae"
-,"twn_mapC_leaffar_nos_.dae"
-,"twn_mapC_leaflarge_nos_.dae"
-,"twn_mapC_leafmiddle1_nos_.dae"
-,"twn_mapC_leafmiddle2_nos_.dae"
-,"twn_mapC_leafmiddle3_nos_.dae"
-,"twn_mapC_leafmiddle4_nos_.dae"
-,"twn_mapC_leafnear1_nos_.dae"
-,"twn_mapC_leafnear2_nos_.dae"
-,"twn_mapC_leafnear3_nos_.dae"
-,"twn_mapC_plant01_nos_.dae"
-,"twn_mapC_plant02_nos_.dae"
-,"twn_mapC_shadw_sdw_.dae"
-,"twn_mapC_tree_nos_.dae"]
-
-    
-
+    var resourceData = await (await fetch("docs/assets/collisionHierarchy.json")).json();
     var loader = new ColladaLoader(manager);
-    
-    files.forEach(f => {
-      loader.load("docs/assets/terrain/twn/c/"+f,  (result) => {
-        result.scene.children.forEach((node) => {
-          
-          let mats = node.material
-          
-          if(node.type == "SkinnedMesh") { 
+
+    this.terrain_group.children = [];
+    let files = resourceData["terrain"][terrain];
+
+
+    for(let i = 0; i < files.length; i++) {
+      let result = await loader.loadAsync("docs/assets/terrain/" + terrain + "/" + files[i])
+      result.scene.children.forEach((node) => {
+
+        let mats = node.material
+
+        if (node.type == "SkinnedMesh") {
           let model = new THREE.Mesh(node.geometry, mats)
           model.scale.set(0.001, 0.001, 0.001)
-          model.position.set(0, 0, 0);          
+          model.position.set(0, 0, 0);
+          model.name = node.name.split(".")[0]
 
           model.geometry.computeVertexNormals()
-          console.log(model);
-          this.scene.add(model);
+          this.terrain_group.add(model);
         }
-        })
-      });
-    })
+      })
+    }
+
+    callback(this.terrain_group.children);
+
   }
 
   render() {

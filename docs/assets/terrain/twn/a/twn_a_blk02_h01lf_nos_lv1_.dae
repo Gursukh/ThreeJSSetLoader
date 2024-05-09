@@ -1,0 +1,255 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="twn_a_h168_dfxx_c.dds-image" name="twn_a_h168_dfxx_c.dds-image">
+      <init_from>./textures/twn_a_h168_dfxx_c.dds</init_from>
+    </image>
+    <image id="twn_mapA01_lm_.dds-image" name="twn_mapA01_lm_.dds-image">
+      <init_from>./textures/twn_mapA01_lm_.dds</init_from>
+    </image>
+    <image id="twn_a_h170_dfxx_c.dds-image" name="twn_a_h170_dfxx_c.dds-image">
+      <init_from>./textures/twn_a_h170_dfxx_c.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="twn_a_blk02_h01lf_nos_lv1_.xno0ID" name="twn_a_blk02_h01lf_nos_lv1_.xno0">
+      <instance_effect url="#twn_a_blk02_h01lf_nos_lv1_.xno0-effect" />
+    </material>
+    <material id="twn_a_blk02_h01lf_nos_lv1_.xno1ID" name="twn_a_blk02_h01lf_nos_lv1_.xno1">
+      <instance_effect url="#twn_a_blk02_h01lf_nos_lv1_.xno1-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="twn_a_blk02_h01lf_nos_lv1_.xno0-effect" name="twn_a_blk02_h01lf_nos_lv1_.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="twn_a_h168_dfxx_c.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_a_h168_dfxx_c.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_a_h168_dfxx_c.dds-image-sampler">
+          <sampler2D>
+            <source>twn_a_h168_dfxx_c.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA01_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA01_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA01_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA01_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA01_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA01_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA01_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA01_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_a_h168_dfxx_c.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="twn_a_blk02_h01lf_nos_lv1_.xno1-effect" name="twn_a_blk02_h01lf_nos_lv1_.xno1-effect">
+      <profile_COMMON>
+        <newparam sid="twn_a_h170_dfxx_c.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_a_h170_dfxx_c.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_a_h170_dfxx_c.dds-image-sampler">
+          <sampler2D>
+            <source>twn_a_h170_dfxx_c.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA01_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA01_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA01_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA01_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA01_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA01_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA01_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA01_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_a_h170_dfxx_c.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="twn_a_blk02_h01lf_nos_lv1_.xno-geometry" name="twn_a_blk02_h01lf_nos_lv1_.xno-geometry">
+      <mesh>
+        <source id="twn_a_blk02_h01lf_nos_lv1_.xno-geometry-position">
+          <float_array id="twn_a_blk02_h01lf_nos_lv1_.xno-geometry-position-array" count="324">9470.64 255 -13674.8 9470.64 255 -19354 9881.14 255 -18944 9881.14 255 -18944 9881.14 255 -18944 9881.14 210 -13622.6 9881.14 255 -13622.6 9881.14 255 -13622.6 9881.14 240 -13622.6 9881.14 240 -13622.6 9881.14 225 -13622.6 9881.14 225 -13622.6 9881.14 255 -13674.8 9911.14 255 -18914 9911.14 255 -18914 9911.14 255 -18914 9911.14 255 -18914 9911.14 240 -18914 9911.14 240 -18914 9911.14 240 -18914 9911.14 240 -18914 9911.14 240 -13622.6 9911.14 240 -13622.6 9911.14 240 -13622.6 9911.14 240 -13622.6 9911.14 255 -13622.6 9911.14 255 -13622.6 9911.14 255 -13622.6 9926.14 225 -18899 9926.14 225 -18899 9926.14 225 -18899 9926.14 225 -18899 9926.14 240 -18899 9926.14 240 -18899 9926.14 240 -18899 9926.14 240 -18899 9926.14 240 -13622.6 9926.14 240 -13622.6 9926.14 240 -13622.6 9926.14 225 -13622.6 9926.14 225 -13622.6 9926.14 225 -13622.6 9926.14 225 -13622.6 9941.14 225 -18884 9941.14 225 -18884 9941.14 225 -18884 9941.14 225 -18884 9941.14 210 -18884 9941.14 210 -18884 9941.14 225 -13622.6 9941.14 225 -13622.6 9941.14 225 -13622.6 9941.14 210 -13622.6 9941.14 210 -13622.6 13960.3 210 -18884 13960.3 210 -18884 13960.3 210 -16675.5 13960.3 210 -16675.5 13960.3 225 -18884 13960.3 225 -18884 13960.3 225 -18884 13960.3 225 -18884 13960.3 225 -16675.5 13960.3 225 -16675.5 13960.3 225 -16675.5 13975.3 225 -18899 13975.3 225 -18899 13975.3 225 -18899 13975.3 225 -18899 13975.3 240 -16675.5 13975.3 240 -16675.5 13975.3 240 -16675.5 13975.3 225 -16675.5 13975.3 225 -16675.5 13975.3 225 -16675.5 13975.3 225 -16675.5 13975.3 240 -18899 13975.3 240 -18899 13975.3 240 -18899 13975.3 240 -18899 13990.3 240 -18914 13990.3 240 -18914 13990.3 240 -18914 13990.3 240 -18914 13990.3 255 -16675.5 13990.3 255 -16675.5 13990.3 255 -16675.5 13990.3 255 -18914 13990.3 255 -18914 13990.3 255 -18914 13990.3 255 -18914 13990.3 240 -16675.5 13990.3 240 -16675.5 13990.3 240 -16675.5 13990.3 240 -16675.5 14020.1 255 -18944 14020.1 255 -18944 14020.1 255 -18944 14020.1 255 -16675.5 14020.1 255 -16727.7 14020.3 225 -16675.5 14020.3 225 -16675.5 14020.3 240 -16675.5 14020.3 240 -16675.5 14020.3 255 -16675.5 14020.3 210 -16675.5 14430.6 255 -19354 14430.6 255 -16727.7 </float_array>
+          <technique_common>
+            <accessor source="#twn_a_blk02_h01lf_nos_lv1_.xno-geometry-position-array" count="108" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_a_blk02_h01lf_nos_lv1_.xno-geometry-normal">
+          <float_array id="twn_a_blk02_h01lf_nos_lv1_.xno-geometry-normal-array" count="12">-5.08626e-007 1 -2.88352e-009 0 0 1 1 0 -3.69115e-007 -1 6.48245e-005 4.37325e-007 </float_array>
+          <technique_common>
+            <accessor source="#twn_a_blk02_h01lf_nos_lv1_.xno-geometry-normal-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_a_blk02_h01lf_nos_lv1_.xno-geometry-uv">
+          <float_array id="twn_a_blk02_h01lf_nos_lv1_.xno-geometry-uv-array" count="140">-6.33257 -18.2443 -6.33256 5.25159 -4.97644 3.53043 0.997481 0.773964 0.997517 13.7448 0.858238 -15.1169 0.997534 20.0012 0.907 20.0012 0.859421 20.0012 0.922399 -6.71862 0.922399 -15.1169 0.858238 -6.71862 -4.97644 -18.2443 0.906957 0.882361 0.906986 13.6364 0.986557 18.8241 0.986559 1.78472 0.859421 13.6364 0.859421 0.882362 0.98656 -6.71862 0.859421 19.907 0.922399 -6.59267 0.907 19.907 0.986557 42.1913 0.986559 4.17855 0.858238 1.85713 0.858238 18.7517 0.922397 18.7517 0.922398 1.85713 0.922399 -6.5297 0.98656 -15.1169 0.858238 -6.5297 0.922399 -14.6918 0.922398 42.0283 0.922399 4.34146 0.858238 4.34146 0.858238 42.0283 0.922399 -14.5501 0.858238 -14.5501 0.858238 43.4647 0.858238 47.9943 0.858238 67.4512 0.922398 43.4647 0.922398 47.9943 0.922397 67.4512 0.858238 19.2452 0.986557 48.1573 0.986557 43.3018 0.858238 21.4032 0.922396 29.9783 0.858238 29.9783 0.986556 67.4512 0.922397 19.2452 0.922397 21.4032 0.859421 0.621319 0.986557 21.4756 0.986557 19.1728 0.859421 -1.10235 0.906938 -7.46667 0.906956 0.621318 0.906952 -1.10235 0.859421 -7.46667 0.986556 29.9783 0.997476 -1.21074 0.997481 0.729713 8.69703 3.53043 0.997458 -7.46667 8.73649 -5.11532 10.0531 5.25159 10.0492 -5.01753 </float_array>
+          <technique_common>
+            <accessor source="#twn_a_blk02_h01lf_nos_lv1_.xno-geometry-uv-array" count="70" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_a_blk02_h01lf_nos_lv1_.xno-geometry-uv2">
+          <float_array id="twn_a_blk02_h01lf_nos_lv1_.xno-geometry-uv2-array" count="58">0.722677 0.400097 0.722677 0.476507 0.731518 0.471038 0.731783 0.39889 0.731783 0.399395 0.731518 0.400097 0.732315 0.47036 0.732787 0.469998 0.732807 0.399255 0.73232 0.399467 0.733503 0.469277 0.733141 0.469639 0.733327 0.398904 0.733878 0.468918 0.73425 0.468514 0.734242 0.398576 0.81802 0.46842 0.818056 0.439792 0.818556 0.469143 0.81905 0.440122 0.819292 0.469978 0.820096 0.440797 0.819706 0.470543 0.819726 0.440448 0.820662 0.470991 0.820585 0.440913 0.820665 0.439966 0.829503 0.476507 0.829503 0.441172 </float_array>
+          <technique_common>
+            <accessor source="#twn_a_blk02_h01lf_nos_lv1_.xno-geometry-uv2-array" count="29" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_a_blk02_h01lf_nos_lv1_.xno-geometry-color">
+          <float_array id="twn_a_blk02_h01lf_nos_lv1_.xno-geometry-color-array" count="96">0.788235 0.788235 0.788235 1 0.784314 0.784314 0.784314 1 0.796078 0.796078 0.796078 1 0.713726 0.713726 0.713726 1 0.807843 0.807843 0.807843 1 0.737255 0.737255 0.737255 1 0.733333 0.733333 0.733333 1 0.721569 0.721569 0.721569 1 0.803922 0.803922 0.803922 1 0.992157 0.992157 0.992157 1 0.756863 0.756863 0.756863 1 1 1 1 1 0.729412 0.729412 0.729412 1 0.988235 0.988235 0.988235 1 0.760784 0.760784 0.760784 1 0.72549 0.72549 0.72549 1 0.67451 0.67451 0.67451 1 0.811765 0.811765 0.811765 1 0.980392 0.980392 0.980392 1 0.956863 0.956863 0.956863 1 0.984314 0.984314 0.984314 1 0.772549 0.772549 0.772549 1 0.776471 0.776471 0.776471 1 0.768627 0.768627 0.768627 1 </float_array>
+          <technique_common>
+            <accessor source="#twn_a_blk02_h01lf_nos_lv1_.xno-geometry-color-array" count="24" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="twn_a_blk02_h01lf_nos_lv1_.xno-geometry-vertex">
+          <input semantic="POSITION" source="#twn_a_blk02_h01lf_nos_lv1_.xno-geometry-position" />
+        </vertices>
+        <triangles material="twn_a_blk02_h01lf_nos_lv1_.xno0" count="52">
+          <input semantic="VERTEX" source="#twn_a_blk02_h01lf_nos_lv1_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#twn_a_blk02_h01lf_nos_lv1_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#twn_a_blk02_h01lf_nos_lv1_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#twn_a_blk02_h01lf_nos_lv1_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#twn_a_blk02_h01lf_nos_lv1_.xno-geometry-color" offset="4" set="0" />
+          <p>50 1 37 12 3 41 1 32 12 7 52 1 38 15 3 10 1 10 3 7 52 1 38 15 3 41 1 32 12 7 52 1 38 15 3 10 1 10 3 7 5 1 5 3 3 22 1 20 8 12 7 1 7 4 5 8 1 8 4 6 7 1 7 4 5 22 1 20 8 12 26 1 22 9 5 23 1 21 8 12 40 1 31 12 7 37 1 29 8 15 40 1 31 12 7 23 1 21 8 12 11 1 11 3 7 9 1 9 4 6 11 1 11 3 7 23 1 21 8 12 71 1 29 19 13 74 1 31 19 20 94 1 21 23 9 100 1 11 26 20 94 1 21 23 9 74 1 31 19 20 94 1 21 23 9 100 1 11 26 20 103 1 9 26 9 29 0 24 10 11 59 0 43 16 11 66 0 46 18 11 59 0 43 16 11 29 0 24 10 11 44 0 34 13 11 93 1 20 23 9 104 1 7 25 9 86 1 22 21 9 104 1 7 25 9 93 1 20 23 9 102 1 8 26 9 57 1 38 17 18 75 1 32 19 20 64 1 37 17 18 75 1 32 19 20 57 1 38 17 18 101 1 10 26 20 105 1 5 26 18 101 1 10 26 20 57 1 38 17 18 73 0 51 19 11 67 0 47 18 11 63 0 44 17 11 60 0 42 16 11 63 0 44 17 11 67 0 47 18 11 84 3 58 21 9 87 3 59 22 9 91 3 61 23 9 80 3 54 20 9 91 3 61 23 9 87 3 59 22 9 92 0 62 23 11 82 0 56 20 11 70 0 49 19 11 78 0 52 18 11 70 0 49 19 11 82 0 56 20 11 69 3 49 19 19 76 3 52 18 19 72 3 50 19 19 65 3 45 18 19 72 3 50 19 19 76 3 52 18 19 89 0 59 22 2 85 0 58 21 2 96 0 64 24 0 98 0 66 25 2 96 0 64 24 0 85 0 58 21 2 54 3 39 16 17 56 3 41 17 17 58 3 42 16 17 62 3 44 17 17 58 3 42 16 17 56 3 41 17 17 25 0 7 9 4 13 0 13 6 8 6 0 6 4 4 3 0 3 2 2 6 0 6 4 4 13 0 13 6 8 53 2 5 15 16 48 2 36 14 16 51 2 10 12 16 46 2 33 13 16 51 2 10 12 16 48 2 36 14 16 16 2 13 6 10 27 2 7 9 10 20 2 18 7 10 24 2 8 8 10 20 2 18 7 10 27 2 7 9 10 17 0 15 7 11 21 0 19 8 11 32 0 27 11 11 36 0 9 8 11 32 0 27 11 11 21 0 19 8 11 35 2 27 11 14 38 2 9 8 14 31 2 26 10 14 42 2 11 12 14 31 2 26 10 14 38 2 9 8 14 28 0 23 10 11 39 0 30 12 11 43 0 33 13 11 49 0 10 12 11 43 0 33 13 11 39 0 30 12 11 14 0 14 6 8 88 0 60 22 2 4 0 4 2 2 95 0 63 24 0 4 0 4 2 2 88 0 60 22 2 47 1 35 14 4 55 1 40 16 4 45 1 34 13 4 61 1 43 16 4 45 1 34 13 4 55 1 40 16 4 90 1 60 22 9 15 1 14 6 9 83 1 57 20 9 19 1 17 7 9 83 1 57 20 9 15 1 14 6 9 18 0 16 7 11 33 0 28 11 11 81 0 55 20 11 77 0 53 18 11 81 0 55 20 11 33 0 28 11 11 79 1 53 18 13 34 1 28 11 13 68 1 48 18 13 30 1 25 10 13 68 1 48 18 13 34 1 28 11 13 </p>
+        </triangles>
+        <triangles material="twn_a_blk02_h01lf_nos_lv1_.xno1" count="6">
+          <input semantic="VERTEX" source="#twn_a_blk02_h01lf_nos_lv1_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#twn_a_blk02_h01lf_nos_lv1_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#twn_a_blk02_h01lf_nos_lv1_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#twn_a_blk02_h01lf_nos_lv1_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#twn_a_blk02_h01lf_nos_lv1_.xno-geometry-color" offset="4" set="0" />
+          <p>106 0 68 27 22 99 0 67 25 21 107 0 69 28 23 99 0 67 25 21 106 0 68 27 22 97 0 65 24 0 1 0 1 1 1 97 0 65 24 0 106 0 68 27 22 97 0 65 24 0 1 0 1 1 1 2 0 2 2 2 0 0 0 0 0 2 0 2 2 2 1 0 1 1 1 2 0 2 2 2 0 0 0 0 0 12 0 12 5 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="twn_a_blk02_h01lf_nos_lv1_.xno-controller">
+      <skin source="#twn_a_blk02_h01lf_nos_lv1_.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="twn_a_blk02_h01lf_nos_lv1_.xno-controller-Joints">
+          <Name_array id="twn_a_blk02_h01lf_nos_lv1_.xno-controller-Joints-array" count="1">twn_a_blk02_h01lf_nos_lv1_.xno0 </Name_array>
+          <technique_common>
+            <accessor source="#twn_a_blk02_h01lf_nos_lv1_.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_a_blk02_h01lf_nos_lv1_.xno-controller-Matrices">
+          <float_array id="twn_a_blk02_h01lf_nos_lv1_.xno-controller-Matrices-array" count="16">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#twn_a_blk02_h01lf_nos_lv1_.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_a_blk02_h01lf_nos_lv1_.xno-controller-Weights">
+          <float_array id="twn_a_blk02_h01lf_nos_lv1_.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#twn_a_blk02_h01lf_nos_lv1_.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#twn_a_blk02_h01lf_nos_lv1_.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#twn_a_blk02_h01lf_nos_lv1_.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="108">
+          <input semantic="JOINT" offset="0" source="#twn_a_blk02_h01lf_nos_lv1_.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#twn_a_blk02_h01lf_nos_lv1_.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="twn_a_blk02_h01lf_nos_lv1_.xno0" sid="twn_a_blk02_h01lf_nos_lv1_.xno0" name="twn_a_blk02_h01lf_nos_lv1_.xno0" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="twn_a_blk02_h01lf_nos_lv1_.xno" sid="twn_a_blk02_h01lf_nos_lv1_.xno" name="twn_a_blk02_h01lf_nos_lv1_.xno">
+        <instance_controller url="#twn_a_blk02_h01lf_nos_lv1_.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="twn_a_blk02_h01lf_nos_lv1_.xno0" target="#twn_a_blk02_h01lf_nos_lv1_.xno0ID" />
+              <instance_material symbol="twn_a_blk02_h01lf_nos_lv1_.xno1" target="#twn_a_blk02_h01lf_nos_lv1_.xno1ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

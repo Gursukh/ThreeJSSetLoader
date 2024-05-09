@@ -1,0 +1,996 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="twn_a_h255_dfxx_c.dds-image" name="twn_a_h255_dfxx_c.dds-image">
+      <init_from>./textures/twn_a_h255_dfxx_c.dds</init_from>
+    </image>
+    <image id="twn_mapA02_lm_.dds-image" name="twn_mapA02_lm_.dds-image">
+      <init_from>./textures/twn_mapA02_lm_.dds</init_from>
+    </image>
+    <image id="twn_a_h248_dfxx_c.dds-image" name="twn_a_h248_dfxx_c.dds-image">
+      <init_from>./textures/twn_a_h248_dfxx_c.dds</init_from>
+    </image>
+    <image id="twn_a_h282_dfxx_c.dds-image" name="twn_a_h282_dfxx_c.dds-image">
+      <init_from>./textures/twn_a_h282_dfxx_c.dds</init_from>
+    </image>
+    <image id="twn_a_h279_dfxx_c.dds-image" name="twn_a_h279_dfxx_c.dds-image">
+      <init_from>./textures/twn_a_h279_dfxx_c.dds</init_from>
+    </image>
+    <image id="twn_a_h298_dfxx_c.dds-image" name="twn_a_h298_dfxx_c.dds-image">
+      <init_from>./textures/twn_a_h298_dfxx_c.dds</init_from>
+    </image>
+    <image id="twn_a_h301_dfxx_c.dds-image" name="twn_a_h301_dfxx_c.dds-image">
+      <init_from>./textures/twn_a_h301_dfxx_c.dds</init_from>
+    </image>
+    <image id="twn_a_h286_dfxx_c.dds-image" name="twn_a_h286_dfxx_c.dds-image">
+      <init_from>./textures/twn_a_h286_dfxx_c.dds</init_from>
+    </image>
+    <image id="twn_a_h185_dfxx_c.dds-image" name="twn_a_h185_dfxx_c.dds-image">
+      <init_from>./textures/twn_a_h185_dfxx_c.dds</init_from>
+    </image>
+    <image id="twn_a_h181_dfxx_c.dds-image" name="twn_a_h181_dfxx_c.dds-image">
+      <init_from>./textures/twn_a_h181_dfxx_c.dds</init_from>
+    </image>
+    <image id="twn_a_h038_df_c.dds-image" name="twn_a_h038_df_c.dds-image">
+      <init_from>./textures/twn_a_h038_df_c.dds</init_from>
+    </image>
+    <image id="twn_a_h313_dfxx_c.dds-image" name="twn_a_h313_dfxx_c.dds-image">
+      <init_from>./textures/twn_a_h313_dfxx_c.dds</init_from>
+    </image>
+    <image id="twn_a_h317_dfxx_c.dds-image" name="twn_a_h317_dfxx_c.dds-image">
+      <init_from>./textures/twn_a_h317_dfxx_c.dds</init_from>
+    </image>
+    <image id="twn_a_h058_df_c.dds-image" name="twn_a_h058_df_c.dds-image">
+      <init_from>./textures/twn_a_h058_df_c.dds</init_from>
+    </image>
+    <image id="twn_a_h249_dfxx_c.dds-image" name="twn_a_h249_dfxx_c.dds-image">
+      <init_from>./textures/twn_a_h249_dfxx_c.dds</init_from>
+    </image>
+    <image id="twn_a_h315_dfxx_c.dds-image" name="twn_a_h315_dfxx_c.dds-image">
+      <init_from>./textures/twn_a_h315_dfxx_c.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="twn_a_blk05_rf.xno0ID" name="twn_a_blk05_rf.xno0">
+      <instance_effect url="#twn_a_blk05_rf.xno0-effect" />
+    </material>
+    <material id="twn_a_blk05_rf.xno1ID" name="twn_a_blk05_rf.xno1">
+      <instance_effect url="#twn_a_blk05_rf.xno1-effect" />
+    </material>
+    <material id="twn_a_blk05_rf.xno2ID" name="twn_a_blk05_rf.xno2">
+      <instance_effect url="#twn_a_blk05_rf.xno2-effect" />
+    </material>
+    <material id="twn_a_blk05_rf.xno3ID" name="twn_a_blk05_rf.xno3">
+      <instance_effect url="#twn_a_blk05_rf.xno3-effect" />
+    </material>
+    <material id="twn_a_blk05_rf.xno4ID" name="twn_a_blk05_rf.xno4">
+      <instance_effect url="#twn_a_blk05_rf.xno4-effect" />
+    </material>
+    <material id="twn_a_blk05_rf.xno5ID" name="twn_a_blk05_rf.xno5">
+      <instance_effect url="#twn_a_blk05_rf.xno5-effect" />
+    </material>
+    <material id="twn_a_blk05_rf.xno6ID" name="twn_a_blk05_rf.xno6">
+      <instance_effect url="#twn_a_blk05_rf.xno6-effect" />
+    </material>
+    <material id="twn_a_blk05_rf.xno7ID" name="twn_a_blk05_rf.xno7">
+      <instance_effect url="#twn_a_blk05_rf.xno7-effect" />
+    </material>
+    <material id="twn_a_blk05_rf.xno8ID" name="twn_a_blk05_rf.xno8">
+      <instance_effect url="#twn_a_blk05_rf.xno8-effect" />
+    </material>
+    <material id="twn_a_blk05_rf.xno9ID" name="twn_a_blk05_rf.xno9">
+      <instance_effect url="#twn_a_blk05_rf.xno9-effect" />
+    </material>
+    <material id="twn_a_blk05_rf.xno10ID" name="twn_a_blk05_rf.xno10">
+      <instance_effect url="#twn_a_blk05_rf.xno10-effect" />
+    </material>
+    <material id="twn_a_blk05_rf.xno11ID" name="twn_a_blk05_rf.xno11">
+      <instance_effect url="#twn_a_blk05_rf.xno11-effect" />
+    </material>
+    <material id="twn_a_blk05_rf.xno12ID" name="twn_a_blk05_rf.xno12">
+      <instance_effect url="#twn_a_blk05_rf.xno12-effect" />
+    </material>
+    <material id="twn_a_blk05_rf.xno13ID" name="twn_a_blk05_rf.xno13">
+      <instance_effect url="#twn_a_blk05_rf.xno13-effect" />
+    </material>
+    <material id="twn_a_blk05_rf.xno14ID" name="twn_a_blk05_rf.xno14">
+      <instance_effect url="#twn_a_blk05_rf.xno14-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="twn_a_blk05_rf.xno0-effect" name="twn_a_blk05_rf.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="twn_a_h255_dfxx_c.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_a_h255_dfxx_c.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_a_h255_dfxx_c.dds-image-sampler">
+          <sampler2D>
+            <source>twn_a_h255_dfxx_c.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_a_h255_dfxx_c.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="twn_a_blk05_rf.xno1-effect" name="twn_a_blk05_rf.xno1-effect">
+      <profile_COMMON>
+        <newparam sid="twn_a_h248_dfxx_c.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_a_h248_dfxx_c.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_a_h248_dfxx_c.dds-image-sampler">
+          <sampler2D>
+            <source>twn_a_h248_dfxx_c.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_a_h248_dfxx_c.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="twn_a_blk05_rf.xno2-effect" name="twn_a_blk05_rf.xno2-effect">
+      <profile_COMMON>
+        <newparam sid="twn_a_h282_dfxx_c.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_a_h282_dfxx_c.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_a_h282_dfxx_c.dds-image-sampler">
+          <sampler2D>
+            <source>twn_a_h282_dfxx_c.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_a_h282_dfxx_c.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="twn_a_blk05_rf.xno3-effect" name="twn_a_blk05_rf.xno3-effect">
+      <profile_COMMON>
+        <newparam sid="twn_a_h279_dfxx_c.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_a_h279_dfxx_c.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_a_h279_dfxx_c.dds-image-sampler">
+          <sampler2D>
+            <source>twn_a_h279_dfxx_c.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_a_h279_dfxx_c.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="twn_a_blk05_rf.xno4-effect" name="twn_a_blk05_rf.xno4-effect">
+      <profile_COMMON>
+        <newparam sid="twn_a_h298_dfxx_c.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_a_h298_dfxx_c.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_a_h298_dfxx_c.dds-image-sampler">
+          <sampler2D>
+            <source>twn_a_h298_dfxx_c.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_a_h298_dfxx_c.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="twn_a_blk05_rf.xno5-effect" name="twn_a_blk05_rf.xno5-effect">
+      <profile_COMMON>
+        <newparam sid="twn_a_h301_dfxx_c.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_a_h301_dfxx_c.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_a_h301_dfxx_c.dds-image-sampler">
+          <sampler2D>
+            <source>twn_a_h301_dfxx_c.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_a_h301_dfxx_c.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="twn_a_blk05_rf.xno6-effect" name="twn_a_blk05_rf.xno6-effect">
+      <profile_COMMON>
+        <newparam sid="twn_a_h286_dfxx_c.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_a_h286_dfxx_c.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_a_h286_dfxx_c.dds-image-sampler">
+          <sampler2D>
+            <source>twn_a_h286_dfxx_c.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_a_h286_dfxx_c.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="twn_a_blk05_rf.xno7-effect" name="twn_a_blk05_rf.xno7-effect">
+      <profile_COMMON>
+        <newparam sid="twn_a_h185_dfxx_c.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_a_h185_dfxx_c.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_a_h185_dfxx_c.dds-image-sampler">
+          <sampler2D>
+            <source>twn_a_h185_dfxx_c.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_a_h185_dfxx_c.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="twn_a_blk05_rf.xno8-effect" name="twn_a_blk05_rf.xno8-effect">
+      <profile_COMMON>
+        <newparam sid="twn_a_h181_dfxx_c.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_a_h181_dfxx_c.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_a_h181_dfxx_c.dds-image-sampler">
+          <sampler2D>
+            <source>twn_a_h181_dfxx_c.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_a_h181_dfxx_c.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="twn_a_blk05_rf.xno9-effect" name="twn_a_blk05_rf.xno9-effect">
+      <profile_COMMON>
+        <newparam sid="twn_a_h038_df_c.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_a_h038_df_c.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_a_h038_df_c.dds-image-sampler">
+          <sampler2D>
+            <source>twn_a_h038_df_c.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_a_h038_df_c.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="twn_a_blk05_rf.xno10-effect" name="twn_a_blk05_rf.xno10-effect">
+      <profile_COMMON>
+        <newparam sid="twn_a_h313_dfxx_c.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_a_h313_dfxx_c.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_a_h313_dfxx_c.dds-image-sampler">
+          <sampler2D>
+            <source>twn_a_h313_dfxx_c.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_a_h313_dfxx_c.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="twn_a_blk05_rf.xno11-effect" name="twn_a_blk05_rf.xno11-effect">
+      <profile_COMMON>
+        <newparam sid="twn_a_h317_dfxx_c.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_a_h317_dfxx_c.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_a_h317_dfxx_c.dds-image-sampler">
+          <sampler2D>
+            <source>twn_a_h317_dfxx_c.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_a_h317_dfxx_c.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="twn_a_blk05_rf.xno12-effect" name="twn_a_blk05_rf.xno12-effect">
+      <profile_COMMON>
+        <newparam sid="twn_a_h058_df_c.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_a_h058_df_c.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_a_h058_df_c.dds-image-sampler">
+          <sampler2D>
+            <source>twn_a_h058_df_c.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_a_h058_df_c.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="twn_a_blk05_rf.xno13-effect" name="twn_a_blk05_rf.xno13-effect">
+      <profile_COMMON>
+        <newparam sid="twn_a_h249_dfxx_c.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_a_h249_dfxx_c.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_a_h249_dfxx_c.dds-image-sampler">
+          <sampler2D>
+            <source>twn_a_h249_dfxx_c.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_a_h249_dfxx_c.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="twn_a_blk05_rf.xno14-effect" name="twn_a_blk05_rf.xno14-effect">
+      <profile_COMMON>
+        <newparam sid="twn_a_h315_dfxx_c.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_a_h315_dfxx_c.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_a_h315_dfxx_c.dds-image-sampler">
+          <sampler2D>
+            <source>twn_a_h315_dfxx_c.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_mapA02_lm_.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_mapA02_lm_.dds-image-sampler">
+          <sampler2D>
+            <source>twn_mapA02_lm_.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_a_h315_dfxx_c.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="twn_a_blk05_rf.xno-geometry" name="twn_a_blk05_rf.xno-geometry">
+      <mesh>
+        <source id="twn_a_blk05_rf.xno-geometry-position">
+          <float_array id="twn_a_blk05_rf.xno-geometry-position-array" count="2112">18370.6 1579.9 -8583.43 18370.6 1579.9 -8583.43 18370.6 1579.9 -8583.43 18372.9 1579.9 -8589.69 18375.2 1579.9 -8595.95 18375.2 1579.9 -8595.95 18379.3 1587.25 -8589.29 18379.3 1587.25 -8589.29 18379.3 1587.25 -8589.29 18406.2 1320.12 -8004.39 18406.2 1320.12 -8004.39 18406.2 1320.12 -4935.85 18406.2 1320.12 -4935.85 18421.8 1320.12 -7989.28 18421.8 1320.12 -7989.28 18421.8 1320.12 -4954.24 18421.8 1320.12 -4954.24 18421.8 1320.12 -4954.24 18421.8 1320.12 -4954.24 18421.8 1320.12 -4954.24 18421.8 1320.12 -4964.55 18421.8 1320.12 -7968.66 18421.8 1320.12 -7968.66 18421.8 1320.12 -7993.16 18421.8 1320.12 -7993.16 18421.8 1320.12 -7993.16 18421.8 1320.12 -4974.86 18421.8 1320.12 -4974.86 18421.8 1320.12 -7978.97 18421.8 1320.12 -7978.97 18428.9 1328.99 -4966.6 18428.9 1328.99 -4966.6 18428.9 1328.99 -7976.92 18428.9 1328.99 -7976.92 18638.6 1804.45 -9191.21 18651.1 1804.45 -9197.04 18651.1 1804.45 -9197.04 18676.7 1804.45 -9295.77 18676.7 1804.45 -9295.77 18682.5 1804.45 -9283.26 18682.5 1804.45 -9283.26 18682.5 1804.45 -9283.26 18747.2 1804.45 -9162.08 18747.2 1804.45 -9162.08 18747.2 1804.45 -9162.08 18753 1804.45 -9149.58 18753 1804.45 -9149.58 18769.1 1320.12 -4935.85 18774.3 1320.12 -4954.24 18774.3 1320.12 -4954.24 18778.6 1804.45 -9248.31 18778.6 1804.45 -9248.31 18791.1 1804.45 -9254.14 18803.9 1579.9 -8434.83 18906.3 1804.45 -9926.58 18918.8 1804.45 -9932.41 18918.8 1804.45 -9932.41 18944.4 1804.45 -10031.1 18944.4 1804.45 -10031.1 18950.2 1804.45 -10018.6 18950.2 1804.45 -10018.6 18950.2 1804.45 -10018.6 19007.8 1513.53 -7791.73 19007.8 1513.53 -7791.73 19007.8 1513.53 -7791.73 19007.8 1513.53 -5348.54 19007.8 1513.53 -5348.54 19007.8 1513.53 -5348.54 19007.9 1520.08 -5337.41 19007.9 1520.08 -5337.41 19007.9 1520.08 -7802.86 19007.9 1520.08 -7802.86 19011.3 1518.72 -5349.57 19011.3 1518.72 -5349.57 19011.3 1518.72 -5349.57 19011.3 1518.72 -7790.71 19011.3 1518.72 -7790.71 19011.3 1518.72 -7790.71 19014.8 1804.45 -9897.45 19014.8 1804.45 -9897.45 19014.8 1804.45 -9897.45 19014.9 1522.38 -5339.43 19014.9 1522.38 -5339.43 19014.9 1522.38 -7800.84 19014.9 1522.38 -7800.84 19014.9 1520.97 -7789.68 19014.9 1520.97 -7789.68 19014.9 1520.97 -7789.68 19014.9 1520.97 -7789.68 19014.9 1520.97 -5350.59 19014.9 1520.97 -5350.59 19014.9 1520.97 -5350.59 19014.9 1520.97 -5350.59 19014.9 1515.86 -5328.26 19014.9 1515.86 -5328.26 19014.9 1515.86 -7812.01 19014.9 1515.86 -7812.01 19018.4 1518.72 -5349.57 19018.4 1518.72 -5349.57 19018.4 1518.72 -7790.71 19018.4 1518.72 -7790.71 19020.7 1804.45 -9884.95 19020.7 1804.45 -9884.95 19021.8 1520.08 -5337.41 19021.8 1520.08 -7802.86 19021.9 1513.53 -7791.73 19021.9 1513.53 -7791.73 19021.9 1513.53 -7791.73 19021.9 1513.53 -5348.54 19021.9 1513.53 -5348.54 19021.9 1513.53 -5348.54 19046.2 1804.45 -9983.68 19046.2 1804.45 -9983.68 19058.7 1804.45 -9989.51 19173.9 1804.45 -10662 19178.5 1579.9 -8431.57 19186.5 1804.45 -10667.8 19186.5 1804.45 -10667.8 19210.1 1065.08 -4070.37 19210.1 1065.08 -4070.37 19210.1 1065.08 -4070.37 19210.1 1065.08 -4070.37 19212 1804.45 -10766.5 19212 1804.45 -10766.5 19215.3 1065.95 -4059.45 19215.3 1065.95 -4059.45 19217.8 1804.45 -10754 19217.8 1804.45 -10754 19217.8 1804.45 -10754 19219.7 1077.13 -4063.52 19219.7 1077.13 -4063.52 19219.7 1077.13 -4063.52 19221.3 1065.95 -4069.03 19221.3 1065.95 -4069.03 19257.9 1065.08 -4057.05 19257.9 1065.08 -4057.05 19282.5 1804.45 -10632.8 19282.5 1804.45 -10632.8 19282.5 1804.45 -10632.8 19288.3 1804.45 -10620.3 19288.3 1804.45 -10620.3 19295 1925.61 -8834.32 19295 1925.61 -8834.32 19297.5 1931.11 -8841.14 19297.5 1931.11 -8841.14 19300 1925.61 -8847.97 19300 1925.61 -8847.97 19300 1925.61 -8847.97 19302.7 1925.61 -8831.52 19305.2 1933.18 -8838.35 19307.7 1934.25 -8845.17 19307.7 1934.25 -8845.17 19307.7 1934.25 -8845.17 19307.7 1934.25 -8845.17 19310.4 1925.61 -8828.73 19310.4 1925.61 -8828.73 19312.9 1931.11 -8835.55 19312.9 1931.11 -8835.55 19313.9 1804.45 -10719.1 19313.9 1804.45 -10719.1 19315.4 1925.61 -8842.38 19315.4 1925.61 -8842.38 19315.4 1925.61 -8842.38 19326.4 1804.45 -10724.9 19367.7 1579.9 -11323 19367.7 1579.9 -11323 19370 1579.9 -11329.3 19372.3 1579.9 -11335.5 19372.3 1579.9 -11335.5 19372.3 1579.9 -11335.5 19375.2 1587.25 -11325.5 19375.2 1587.25 -11325.5 19375.2 1587.25 -11325.5 19590 1328.99 -7977.02 19590 1328.99 -5358.32 19597.1 1320.12 -7989.38 19597.1 1320.12 -7989.38 19597.1 1320.12 -7979.07 19597.1 1320.12 -7979.07 19597.1 1320.13 -5366.58 19597.1 1320.13 -5366.58 19597.1 1320.12 -7993.27 19597.1 1320.12 -7993.27 19597.1 1320.12 -7968.76 19597.1 1320.12 -7968.76 19597.1 1320.12 -5345.96 19597.1 1320.12 -5345.96 19597.1 1320.12 -5345.96 19597.1 1320.12 -5345.96 19597.1 1320.13 -5356.27 19612.6 1320.12 -8004.39 19612.6 1320.12 -8004.39 19612.6 1320.12 -5327.57 19612.6 1320.12 -5327.57 19662.6 1214.88 -3600.46 19662.6 1214.88 -3600.46 19667.2 1218.12 -3602.6 19667.2 1218.12 -3602.6 19671.8 1227.6 -3604.77 19671.8 1227.6 -3604.77 19671.8 1227.6 -3604.77 19671.8 1227.6 -3604.77 19671.8 1227.6 -3604.77 19673.3 1214.88 -3610.78 19673.3 1214.88 -3610.78 19677.4 1214.88 -3602.04 19677.4 1214.88 -3602.04 19680.5 1587.25 -8430.3 19680.5 1587.25 -8430.3 19680.5 1587.25 -8430.3 19686.6 1579.9 -8421.79 19686.6 1579.9 -8421.79 19686.6 1579.9 -8421.79 19691.5 1579.9 -8435.16 19691.5 1579.9 -8435.16 19691.5 1579.9 -8435.16 19726.5 1065.95 -2962.17 19726.5 1065.95 -2962.17 19731.6 1065.08 -2950.63 19731.6 1065.08 -2950.63 19731.6 1065.08 -2950.63 19731.6 1065.08 -2950.63 19732.7 1077.13 -2963.34 19732.7 1077.13 -2963.34 19732.7 1077.13 -2963.34 19737.9 1065.95 -2961.37 19737.9 1065.95 -2961.37 19752.1 1065.08 -2995.76 19752.1 1065.08 -2995.76 20082.4 1925.61 -10767.6 20082.4 1925.61 -10767.6 20082.4 1925.61 -10767.6 20084.9 1931.11 -10774.5 20084.9 1931.11 -10774.5 20087.4 1925.61 -10781.3 20087.4 1925.61 -10781.3 20090.1 1934.25 -10764.8 20090.1 1934.25 -10764.8 20090.1 1934.25 -10764.8 20090.1 1934.25 -10764.8 20092.6 1933.18 -10771.7 20095.1 1925.61 -10778.5 20097.8 1925.61 -10762 20097.8 1925.61 -10762 20097.8 1925.61 -10762 20100.3 1931.11 -10768.9 20100.3 1931.11 -10768.9 20102.8 1925.61 -10775.7 20102.8 1925.61 -10775.7 20210.2 1525.53 -5965.05 20210.2 1525.53 -5965.05 20210.2 1525.53 -7979.25 20245.9 1525.53 -7979.25 20245.9 1525.53 -7979.25 20245.9 1525.53 -6021.13 20245.9 1525.53 -6021.13 20245.9 1525.53 -6004.17 20245.9 1525.53 -6004.17 20245.9 1525.53 -6004.17 20245.9 1525.53 -6004.17 20261.4 1525.53 -6004.15 20261.4 1525.53 -6004.15 20280.8 1525.53 -8316.32 20280.8 1525.53 -8316.32 20301.9 1530.82 -8280.77 20304.1 1525.53 -8254.21 20304.1 1525.53 -8254.21 20307.9 1525.53 -8270.76 20307.9 1525.53 -8270.76 20307.9 1525.53 -8270.76 20307.9 1525.53 -8270.76 20318.4 1539.76 -8274.76 20318.4 1539.76 -8274.76 20323 1525.53 -8267.26 20323 1525.53 -8267.26 20355.9 1539.76 -8290.83 20355.9 1539.76 -8290.83 20355.9 1539.76 -8290.83 20355.9 1539.76 -8290.83 20355.9 1539.76 -8290.83 20361 1539.76 -8304.93 20363.8 1554.99 -8304.95 20363.8 1554.99 -8304.95 20363.8 1554.99 -8304.95 20366.2 1539.76 -8319.02 20366.2 1539.76 -8319.02 20366.2 1539.76 -8319.02 20431.2 1789.63 -6224.03 20431.2 1789.63 -6224.03 20431.2 1789.63 -6224.03 20431.2 1789.63 -6207.04 20431.2 1789.63 -6207.04 20431.2 1789.63 -6207.04 20431.2 1789.63 -6207.04 20442 1807.79 -6218.87 20442 1807.79 -6218.87 20442 1807.79 -6218.87 20442 1807.79 -6218.87 20446.7 1789.63 -6207.04 20446.7 1789.63 -6207.04 20446.7 1789.63 -6207.04 20545.7 1789.63 -7928.86 20545.7 1789.63 -7928.86 20545.7 1789.63 -7928.86 20545.7 1789.63 -7945.84 20545.7 1789.63 -7945.84 20545.7 1789.63 -7945.84 20545.7 1789.63 -7945.84 20556.5 1807.79 -7934.01 20556.5 1807.79 -7934.01 20556.5 1807.79 -7934.01 20556.5 1807.79 -7934.01 20561.2 1789.63 -7945.84 20561.2 1789.63 -7945.84 20561.2 1789.63 -7945.84 20561.2 1789.63 -7945.84 20575.2 1587.25 -10896.8 20575.2 1587.25 -10896.8 20575.2 1587.25 -10896.8 20579.3 1579.9 -10890.2 20579.3 1579.9 -10890.2 20581.6 1579.9 -10896.4 20583.9 1579.9 -10902.7 20583.9 1579.9 -10902.7 20583.9 1579.9 -10902.7 20643.2 1653.48 -9041.25 20806.9 1653.48 -9490.97 21036.5 1530.82 -10299.6 21047 1539.76 -10277 21047 1539.76 -10277 21054.4 1539.76 -10210.4 21054.4 1539.76 -10210.4 21054.4 1539.76 -10210.4 21059.5 1539.76 -10224.5 21061.6 1554.99 -10222.7 21061.6 1554.99 -10222.7 21061.6 1554.99 -10222.7 21064.7 1539.76 -10238.6 21064.7 1539.76 -10238.6 21064.7 1539.76 -10238.6 21064.7 1539.76 -10238.6 21064.7 1539.76 -10238.6 21169.6 1833.19 -8304.31 21169.6 1833.19 -8304.31 21169.6 1833.19 -8304.31 21174.6 1822.89 -8318.4 21174.6 1822.89 -8318.4 21174.6 1822.89 -8318.4 21174.6 1822.89 -8318.4 21179.3 1065.08 -4953.06 21179.3 1065.08 -4953.06 21183.7 1830.05 -8290.35 21183.7 1830.05 -8290.35 21188.8 1840.32 -8304.44 21188.8 1840.32 -8304.44 21188.8 1840.32 -8304.44 21194 1837.87 -8318.54 21194 1837.87 -8318.54 21194 1837.87 -8318.54 21194 1837.87 -8318.54 21199.8 1065.08 -4998.19 21199.8 1065.08 -4998.19 21199.8 1065.08 -4998.19 21203.5 1833.19 -8291.97 21203.5 1833.19 -8291.97 21203.5 1833.19 -8291.97 21208.7 1822.89 -8306.02 21208.7 1822.89 -8306.02 21208.7 1822.89 -8306.02 21208.7 1822.89 -8306.02 21215 1771.03 -8833.14 21378.7 1771.03 -9282.87 21521.4 1214.88 -4507.7 21521.4 1214.88 -4507.7 21521.4 1227.6 -4512.55 21521.4 1227.6 -4512.55 21521.4 1227.6 -4512.55 21521.4 1227.6 -4512.55 21521.4 1218.12 -4512.52 21521.4 1218.12 -4512.52 21521.4 1218.12 -4512.52 21521.4 1214.88 -4517.34 21521.4 1214.88 -4517.34 21679.1 1822.89 -9704.31 21679.1 1822.89 -9704.31 21679.1 1822.89 -9704.31 21679.1 1822.89 -9704.31 21684.3 1833.19 -9718.36 21684.3 1833.19 -9718.36 21684.3 1833.19 -9718.36 21693.8 1837.87 -9691.79 21693.8 1837.87 -9691.79 21693.8 1837.87 -9691.79 21693.8 1837.87 -9691.79 21698.9 1840.32 -9705.88 21698.9 1840.32 -9705.88 21698.9 1840.32 -9705.88 21704 1830.05 -9719.98 21704 1830.05 -9719.98 21704 1830.05 -9719.98 21713.1 1822.89 -9691.92 21713.1 1822.89 -9691.92 21713.1 1822.89 -9691.92 21713.1 1822.89 -9691.92 21718.2 1833.19 -9706.02 21718.2 1833.19 -9706.02 21718.2 1833.19 -9706.02 21745.3 1539.76 -7747.66 21745.3 1539.76 -7747.66 21745.3 1539.76 -7747.66 21745.3 1539.76 -7747.66 21745.3 1539.76 -7747.66 21748.4 1554.99 -7763.55 21748.4 1554.99 -7763.55 21748.4 1554.99 -7763.55 21748.4 1554.99 -7763.55 21750.8 1539.76 -7761.65 21750.8 1539.76 -7761.65 21754.4 1539.76 -7714.62 21754.4 1539.76 -7714.62 21754.4 1539.76 -7714.62 21754.4 1539.76 -7714.62 21756.2 1539.76 -7775.64 21756.2 1539.76 -7775.64 21756.2 1539.76 -7775.64 21782.6 1539.76 -7734.09 21782.6 1539.76 -7734.09 21782.6 1539.76 -7734.09 21782.6 1539.76 -7734.09 21782.6 1539.76 -7734.09 21790.5 1554.99 -7748.2 21790.5 1554.99 -7748.2 21790.5 1554.99 -7748.2 21792.9 1539.76 -7762.28 21792.9 1539.76 -7762.28 21792.9 1539.76 -7762.28 21824.6 1065.08 -3973.41 21824.6 1065.08 -3973.41 21824.6 1065.08 -3941.16 21824.6 1065.08 -3941.16 21824.6 1065.08 -3941.16 21824.6 1065.08 -3941.16 22204.3 1214.88 -4507.7 22204.3 1214.88 -4507.7 22204.3 1214.88 -4517.34 22204.3 1214.88 -4517.34 22208.2 1227.6 -4512.55 22208.2 1227.6 -4512.55 22208.2 1227.6 -4512.55 22208.2 1227.6 -4512.55 22208.2 1227.6 -4512.55 22208.2 1227.6 -4512.55 22212.4 1218.12 -4512.52 22212.4 1218.12 -4512.52 22212.4 1218.12 -4512.52 22217.3 1214.88 -4512.52 22217.3 1214.88 -4512.52 22388.2 1047.28 -5032.55 22395.5 1321.81 -4473.69 22395.5 1328.51 -4485.59 22395.5 1328.51 -4485.59 22395.5 1322.34 -4497.5 22395.5 1047.28 -3968.32 22401.8 1065.08 -3973.41 22401.8 1065.08 -3973.41 22402.4 1065.08 -4949.63 22402.4 1065.08 -4949.63 22424 1328.51 -4485.59 22424 1328.51 -4485.59 22424 1328.51 -4485.59 22424 1328.51 -4485.59 22424 1047.28 -3968.32 22424 1047.28 -3968.32 22424 1321.81 -4473.69 22424 1321.81 -4473.69 22424 1321.81 -4473.69 22424 1322.34 -4497.5 22424 1322.34 -4497.5 22424 1322.34 -4497.5 22424 1047.28 -5032.55 22424 1047.28 -5032.55 22429.6 1065.95 -3947.58 22429.6 1065.95 -3947.58 22430.3 1065.95 -4975.85 22430.3 1065.95 -4975.85 22433.6 1077.13 -3951.49 22433.6 1077.13 -3951.49 22433.6 1077.13 -3951.49 22434.2 1077.13 -4971.66 22434.2 1077.13 -4971.66 22434.2 1077.13 -4971.66 22439.5 1065.08 -3941.16 22439.5 1065.08 -3941.16 22439.5 1065.08 -3941.16 22439.5 1065.08 -3941.16 22439.7 1065.95 -3952.91 22439.7 1065.95 -3952.91 22440 1065.08 -4981.88 22440 1065.08 -4981.88 22440 1065.08 -4981.88 22440 1065.08 -4981.88 22440.1 1065.95 -4970.07 22440.1 1065.95 -4970.07 22493.2 1539.76 -9679.9 22493.2 1539.76 -9679.9 22493.2 1539.76 -9679.9 22496 1554.99 -9693.81 22496 1554.99 -9693.81 22496 1554.99 -9693.81 22503.9 1539.76 -9707.92 22503.9 1539.76 -9707.92 22503.9 1539.76 -9707.92 22503.9 1539.76 -9707.92 22503.9 1539.76 -9707.92 22530.4 1539.76 -9666.37 22530.4 1539.76 -9666.37 22530.4 1539.76 -9666.37 22532.8 1539.76 -9729.33 22532.8 1539.76 -9729.33 22532.8 1539.76 -9729.33 22532.8 1539.76 -9729.33 22538.2 1554.99 -9678.46 22538.2 1554.99 -9678.46 22538.2 1554.99 -9678.46 22538.9 1530.82 -9746.03 22538.9 1530.82 -9746.03 22541.2 1539.76 -9694.35 22541.2 1539.76 -9694.35 22541.2 1539.76 -9694.35 22541.2 1539.76 -9694.35 22541.2 1539.76 -9694.35 22595.1 1833.19 -7777.94 22595.1 1833.19 -7777.94 22595.1 1833.19 -7777.94 22600.2 1822.89 -7792.03 22600.2 1822.89 -7792.03 22600.2 1822.89 -7792.03 22600.2 1822.89 -7792.03 22609.3 1830.05 -7763.98 22609.3 1830.05 -7763.98 22614.4 1840.32 -7778.07 22614.4 1840.32 -7778.07 22614.4 1840.32 -7778.07 22619.5 1837.87 -7792.17 22619.5 1837.87 -7792.17 22619.5 1837.87 -7792.17 22619.5 1837.87 -7792.17 22629.1 1833.19 -7765.6 22629.1 1833.19 -7765.6 22629.1 1833.19 -7765.6 22634.2 1822.89 -7779.65 22634.2 1822.89 -7779.65 22634.2 1822.89 -7779.65 22634.2 1822.89 -7779.65 22786.3 1789.63 -6207.08 22786.3 1789.63 -6207.08 22786.3 1789.63 -6207.08 22794.2 1807.79 -6623.05 22794.2 1807.79 -6623.05 22794.2 1807.79 -6623.05 22794.2 1807.79 -6623.05 22796.8 1807.8 -6218.9 22796.8 1807.8 -6218.9 22796.8 1807.8 -6218.9 22800.2 1789.63 -6207.08 22800.2 1789.63 -6207.08 22811.6 1789.63 -6215.8 22811.6 1789.63 -6215.8 22811.6 1789.63 -6215.8 22811.6 1789.63 -6215.8 22811.7 1789.63 -6610.4 22811.7 1789.63 -6610.4 22811.7 1789.63 -6610.4 22815.5 1789.63 -6634.06 22815.5 1789.63 -6634.06 22815.5 1789.63 -6634.06 22824.4 1789.63 -6620.14 22824.4 1789.63 -6620.14 22824.4 1789.63 -6620.14 22824.4 1789.63 -6620.14 22882.3 1789.63 -7037.52 22882.3 1789.63 -7037.52 22882.3 1789.63 -7037.52 22884.2 1807.79 -7023.03 22884.2 1807.79 -7023.03 22884.2 1807.79 -7023.03 22894.8 1789.63 -7030.71 22894.8 1789.63 -7030.71 22894.8 1789.63 -7030.71 22894.8 1789.63 -7030.71 22895.9 1789.63 -7015.62 22895.9 1789.63 -7015.62 22895.9 1789.63 -7015.62 22961.7 1754.96 -8190.56 23054.5 1525.53 -6004.19 23054.5 1525.53 -6004.19 23067.7 1525.53 -6572.01 23067.7 1525.53 -6572.01 23068.4 1525.53 -6004.19 23068.4 1525.53 -6004.19 23068.4 1525.53 -6004.19 23069.7 1525.53 -6560.58 23069.7 1525.53 -6560.58 23073.5 1525.53 -6584.23 23073.5 1525.53 -6584.23 23079.7 1525.53 -6012.91 23079.7 1525.53 -6012.91 23082.4 1525.53 -6570.32 23082.4 1525.53 -6570.32 23100.2 1525.53 -5965.05 23100.2 1525.53 -5965.05 23100.9 1525.53 -6565.52 23100.9 1525.53 -6565.52 23104.6 1822.89 -9177.94 23104.6 1822.89 -9177.94 23104.6 1822.89 -9177.94 23104.6 1822.89 -9177.94 23109.8 1833.19 -9191.99 23109.8 1833.19 -9191.99 23109.8 1833.19 -9191.99 23119.3 1837.87 -9165.42 23119.3 1837.87 -9165.42 23119.3 1837.87 -9165.42 23119.3 1837.87 -9165.42 23124.5 1840.32 -9179.51 23124.5 1840.32 -9179.51 23124.5 1840.32 -9179.51 23125.4 1754.96 -8640.28 23129.6 1830.05 -9193.61 23129.6 1830.05 -9193.61 23138.7 1822.89 -9165.55 23138.7 1822.89 -9165.55 23138.7 1822.89 -9165.55 23138.7 1822.89 -9165.55 23143.7 1833.19 -9179.65 23143.7 1833.19 -9179.65 23143.7 1833.19 -9179.65 23158.4 1525.53 -7169.35 23158.4 1525.53 -7169.35 23171.9 1525.53 -7147.44 23171.9 1525.53 -7147.44 23173.7 1525.53 -7162.41 23173.7 1525.53 -7162.41 23173.7 1525.53 -7162.41 23173.7 1525.53 -7162.41 23176.7 1539.76 -7204.8 23176.7 1539.76 -7204.8 23176.7 1539.76 -7204.8 23176.7 1539.76 -7204.8 23176.7 1539.76 -7204.8 23179.8 1554.99 -7220.69 23179.8 1554.99 -7220.69 23179.8 1554.99 -7220.69 23181.9 1539.76 -7218.89 23187 1539.76 -7232.99 23187 1539.76 -7232.99 23187 1539.76 -7232.99 23195.1 1539.76 -7168.37 23195.1 1539.76 -7168.37 23195.1 1539.76 -7168.37 23211.7 1530.82 -7162.36 23220.5 1525.53 -7201.54 23220.5 1525.53 -7201.54 23455.4 1653.48 -8010.88 23619.1 1653.48 -8460.6 23891.9 1539.76 -9170.81 23891.9 1539.76 -9170.81 23891.9 1539.76 -9170.81 23894.3 1554.99 -9184.88 23894.3 1554.99 -9184.88 23894.3 1554.99 -9184.88 23894.3 1554.99 -9184.88 23897.1 1539.76 -9184.9 23897.1 1539.76 -9184.9 23902.2 1539.76 -9199 23902.2 1539.76 -9199 23902.2 1539.76 -9199 23902.2 1539.76 -9199 23902.2 1539.76 -9199 23940.4 1539.76 -9217.01 23940.4 1539.76 -9217.01 23963 1530.82 -9227.65 24160.9 1328.51 -4485.59 24160.9 1328.51 -4485.59 24160.9 1328.51 -4485.59 24160.9 1328.51 -4485.59 24160.9 1321.81 -4473.69 24160.9 1321.81 -4473.69 24160.9 1321.81 -4473.69 24160.9 1321.81 -4473.69 24160.9 1047.28 -3968.32 24160.9 1047.28 -3968.32 24160.9 1322.34 -4497.49 24160.9 1322.34 -4497.49 24160.9 1322.34 -4497.49 24168.2 1047.28 -5032.55 24168.2 1047.28 -5032.55 24178.3 1321.81 -4473.69 24178.3 1321.81 -4473.69 24178.3 1328.51 -4485.59 24178.3 1328.51 -4485.59 24178.3 1322.33 -4497.49 24178.3 1047.28 -3968.32 24185.6 1047.28 -5032.55 </float_array>
+          <technique_common>
+            <accessor source="#twn_a_blk05_rf.xno-geometry-position-array" count="704" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_a_blk05_rf.xno-geometry-normal">
+          <float_array id="twn_a_blk05_rf.xno-geometry-normal-array" count="831">-0.721415 0.640858 -0.262415 -0.126235 0.781227 0.61135 -0.525519 0.781561 -0.336142 -0.544269 0.709545 -0.447569 -0.0369395 0.649777 0.759227 -1.6035e-005 1 7.47738e-006 -0.0814504 0.991636 0.100123 -0.780672 0.624941 3.2783e-006 -0.503758 0.847816 0.165636 -0.370722 0.842582 -0.390667 -0.548077 0.820449 -0.16271 -0.356377 0.913825 0.19473 -0.466183 0.884645 0.00873078 0.0306244 0.974403 0.222714 -0.127446 0.822173 0.554787 -0.602385 0.775697 0.188218 -0.549835 0.826602 -0.120046 -0.305555 0.950246 0.0605645 -0.338054 0.937894 -0.0779371 -0.635055 0.770505 -0.055028 -0.68369 0.721959 0.106504 3.59897e-005 0.995139 0.0984791 2.56374e-005 0.995139 -0.098482 0.000153895 0.99852 0.0543929 0.00012674 0.99852 -0.0543838 0.130917 0.840746 0.525364 -1.39247e-005 0.804706 -0.593673 0.683784 0.721871 -0.106494 0.683877 0.721777 0.106532 0.346457 0.926802 0.144933 0.340347 0.937119 -0.0772746 0.605161 0.773716 0.187466 0.573088 0.788588 -0.222932 -0.0106355 0.758469 0.651623 -0.213831 0.970806 -0.108681 -1.92029e-008 -1 6.88027e-008 -0.836223 0.14272 -0.529492 -0.702436 0.474293 0.530688 -0.701925 0.476239 0.52962 0.570296 0.426731 -0.701899 0.570497 0.426357 -0.701964 -0.191278 0.777845 0.59864 -0.427876 0.621464 -0.656281 -0.305891 0.846786 0.435182 -0.4944 0.771142 -0.401135 -0.246791 0.69223 0.678168 -0.138726 0.914078 0.381072 -0.611386 0.676304 -0.410876 -0.049798 0.989342 0.136827 0.672955 0.686949 0.274286 -0.0858737 0.765458 0.63773 0.0370145 0.833786 0.550845 0.771473 0.60412 -0.199668 0.668963 0.735515 0.107265 -0.574303 0.817115 -0.0499886 -0.72138 0.640799 -0.262654 -0.721295 0.640826 -0.262821 0.163558 0.728435 -0.665306 -0.67551 0.725843 0.129761 0.0842459 0.79303 -0.603329 0.469869 0.882705 0.00748325 0.458048 0.883613 -0.0970597 0.780668 0.624946 6.55768e-006 0.461734 0.873007 -0.157034 0.372384 0.841346 -0.391749 0.507644 0.845809 0.164027 0.167412 0.978502 0.12045 -0.709692 0.622061 0.330722 -0.210203 0.972603 0.0992832 -0.708712 0.623267 0.330554 -0.412995 0.347242 -0.841937 0.411098 0.361007 0.837062 0.581822 0.404773 -0.705437 0.913848 0.405968 0.00844494 -0.412972 0.347379 -0.841892 0.581996 0.404435 -0.705488 0.411067 0.361194 0.836997 0.913769 0.406145 0.00849001 -0.0484298 0.738687 0.672307 0.598196 0.783757 0.166993 -0.0166232 0.754377 0.656231 0.608298 0.761679 0.223202 0.579895 0.792072 0.19064 -0.849379 0.488782 0.199117 -0.0692299 0.141346 0.987537 -0.0522531 0.971467 0.231347 -0.84833 0.490497 0.199373 0.904632 0.425979 0.0135586 0.904537 0.426177 0.0136096 -0.56698 0.823223 -0.0289411 -0.613443 0.708854 0.348156 -7.39019e-005 0.836328 -0.548229 0.180816 0.711449 -0.679077 -0.673011 0.686885 -0.274308 0.420075 0.883821 0.205906 0.138716 0.914086 -0.381059 0.246818 0.69223 -0.678158 0.594985 0.683255 0.423268 0.525729 0.842644 0.116448 0.343221 0.718915 -0.604451 -0.66073 0.745344 -0.0888714 -0.818676 0.574256 6.39497e-005 -0.000173204 0.987851 0.155404 -0.000580343 0.609447 0.792827 -0.426137 0.89127 -0.155064 -0.640081 0.754953 -0.142627 -0.637823 0.755913 -0.147569 0.0249492 0.993512 -0.110956 -0.217516 0.972842 -0.0791525 0.192185 0.683576 -0.704123 -0.926266 0.168385 -0.337162 -0.0634237 0.984844 0.161428 -0.25079 0.724902 0.641577 -0.221494 0.643207 -0.732956 -0.288701 0.830576 -0.476231 -0.832478 0.553777 -0.0176314 -0.832785 0.553597 9.57664e-005 -1.02352e-005 0.587515 0.809214 -0.854391 0.518334 -0.0366813 8.13251e-006 0.545666 0.838003 7.27762e-006 0.577875 0.816125 -0.780004 0.624323 -0.0425971 -0.778894 0.627154 -0.00132415 0 0.703784 -0.710414 -0.86351 0.502982 -0.0368671 0.210664 0.571169 -0.793339 0.181724 0.631253 -0.753987 0.620748 0.780754 0.0713796 0.650168 0.702233 0.290087 0.721408 0.640804 0.262566 0.578549 0.76965 -0.270038 -0.178238 0.981847 -0.0648737 -0.141787 0.941396 -0.306055 -0.106192 0.967988 -0.227427 -0.92627 0.168614 -0.337036 -0.521708 0.833849 0.180323 -0.926226 0.168622 -0.337153 -0.633699 0.645623 0.426142 0.20232 0.726922 -0.65624 -0.926178 0.168631 -0.337281 0.220205 0.710009 -0.668878 -0.293228 0.824815 0.483423 -0.264615 0.730212 -0.629896 -0.399905 0.837295 -0.372844 -0.213015 0.795961 0.566632 -0.466852 0.752283 -0.464886 -0.193252 0.825078 0.530943 0.656461 0.75227 -0.0561107 -0.59096 0.759871 -0.270857 0.626795 0.759892 0.172314 -0.069589 0.96408 -0.256336 -0.0877003 0.834216 0.544419 0.630003 0.718307 -0.29518 0.558647 0.829307 -0.0127995 0.223505 0.347235 0.910754 -0.223698 0.343594 -0.912087 0.202057 0.348823 0.915148 -0.000512755 0.998293 -0.0583974 -0.202433 0.345288 -0.916404 -0.545189 0.837748 0.0307658 -0.60439 0.731851 0.314811 0.084514 0.823018 -0.561693 -0.626807 0.759872 -0.17236 0.590947 0.759867 0.270894 -0.656462 0.752274 0.0560522 0.193245 0.825089 -0.530928 0.466829 0.752254 0.464957 0.217602 0.776759 -0.591012 0.402283 0.835148 0.375095 0.264681 0.730085 0.630016 0.302559 0.816964 -0.490945 -0.0617061 0.985377 0.15882 0.9156 0.189074 0.354863 -0.248223 0.723687 0.643943 0.67872 0.637797 -0.364079 0.560218 0.81552 -0.145197 -0.058084 0.985386 0.160126 -0.247186 0.636848 -0.73029 -0.230829 0.724305 0.649693 -0.303289 0.818584 -0.487786 0.0422068 0.97046 0.237543 -0.802204 0.411497 0.432595 0 0.35617 0.934421 -0.751438 0.421881 -0.507304 -6.69125e-007 0.352559 -0.93579 -0.802325 0.411269 0.432588 -0.751108 0.422428 -0.507337 0.812638 0.582639 0.0123353 0.213036 0.976848 -0.019595 0.813113 0.581685 0.0221213 -9.08551e-006 0.889362 -0.457204 -6.80051e-008 0.875169 0.483817 -6.85652e-008 0.871578 0.490256 0 0.887723 -0.460379 -1.71557e-007 0.888547 -0.458786 5.29372e-005 0.878714 0.477349 -4.87994e-005 0.878714 0.477349 -0.789108 0.435534 0.43315 0.460304 0.141072 0.876481 -0.733999 0.449929 -0.508733 0.502883 0.141911 -0.852626 -0.789251 0.435279 0.433145 0.846553 0.490919 -0.205781 -0.733625 0.450511 -0.508757 0.840932 0.477922 0.25382 0.157546 0.967742 0.196609 0.847067 0.489837 -0.206245 0.187054 0.957085 -0.221357 0.841487 0.476591 0.254481 0.291965 0.824209 0.485218 0.923159 0.152006 0.353089 0.215992 0.636435 0.740472 0.269641 0.726185 -0.632415 0.265619 0.711098 -0.650989 -0.915596 0.189095 -0.354861 -0.53595 0.829822 0.155413 0.0793453 0.973023 -0.216632 -0.651341 0.648026 0.394737 0.205383 0.725878 -0.656444 0.154595 0.893281 -0.422077 0.219501 0.711981 -0.667009 -0.281683 0.835124 0.472464 -0.275673 0.725652 -0.630424 -0.407359 0.833694 -0.372844 -0.2048 0.805713 0.555773 -0.0895336 0.835773 0.541726 0.630681 0.717888 -0.294751 0.559194 0.828927 -0.013478 0.652034 0.758174 -0.00491723 0.654794 0.739345 0.156886 0.479591 0.687487 0.545302 0.199397 0.638685 0.743184 0.634546 0.722528 0.274418 0.623652 0.734389 0.267826 0.667588 0.740549 -0.0769032 0.46422 0.646665 0.605247 0.632669 0.660465 -0.404372 0.321083 0.614976 -0.720215 0.332832 0.56705 -0.753444 0.818569 0.565606 0.100173 0.370971 0.63212 -0.680298 0.75334 0.655576 -0.0519545 0.759823 0.645909 0.0739662 0.178214 0.981852 0.0648651 2.27432e-005 0.609226 0.792997 0.0997569 0.967284 0.23326 0.63122 0.685172 0.363457 0.723339 0.660961 -0.199778 0.552621 0.780629 0.29194 0.488266 0.597041 0.636504 0.683309 0.585082 -0.436769 -0.555948 0.830891 0.0232787 -0.61601 0.725873 0.306007 0.0838864 0.817121 -0.570331 0.213971 0.778841 -0.589596 0.411091 0.830799 0.375201 0.275316 0.725706 0.630517 0.300376 0.81958 -0.487917 0.299188 0.658372 -0.690675 0.712284 0.694795 0.0995571 0.0617381 0.988773 -0.136072 0.708874 0.700655 0.0811223 -0.0627422 0.985776 0.155917 0.926305 0.168375 0.33706 -0.268613 0.720497 0.639321 0.684819 0.626456 -0.372258 0.926263 0.168382 0.337172 0.569175 0.806438 -0.160306 0.926224 0.168389 0.337275 0.220043 0.9722 0.0800484 0.426107 0.891293 0.155016 0.310476 0.822117 0.477208 0.241672 0.638258 0.730905 0.268734 0.727046 -0.631811 0.262493 0.710724 -0.652663 0.227785 0.96804 -0.104943 0.305538 0.941399 -0.142883 </float_array>
+          <technique_common>
+            <accessor source="#twn_a_blk05_rf.xno-geometry-normal-array" count="277" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_a_blk05_rf.xno-geometry-uv">
+          <float_array id="twn_a_blk05_rf.xno-geometry-uv-array" count="542">-0.000451967 89.9525 1.44604 0.0356502 0.499669 89.9525 -3.03791 0.0394609 0.999774 89.9525 0.499669 89.7423 0.499669 89.5322 0.342729 0.960926 4.09581 0.960926 4.98413 0.960926 5.8542 0.960926 0.376719 1 4.08448 1 0.00249743 0.000399649 3.9992 0.99771 4.95014 1 5.82021 1 3.99983 0.961954 8.15891 0.000749171 0 0 3.99943 1.00873 0.361218 -0.00225568 3.97591 0.961954 0.425384 0.474696 0.1999 0.1999 0.426748 0.558999 5.3552e-011 0.474696 0.997453 0.474696 5.3552e-011 0.558999 0.1999 9.98974e-005 0.997453 0.558999 9.99391e-005 0.1999 1.6675 0.000399709 -0.000316729 0.000609815 0.0943399 0.0356502 -0.00024894 0.996681 2.0238 0.997408 7.70151 1.48141 1.39406 1.48141 2.02352 0.961954 2.0119 0.997408 3.99826 0.978211 -0.00117657 0.978211 1.99999 0.961954 -0.00117657 0.963912 2 0.997342 3.99826 0.963912 2.5 0.7996 1.98727 0.998803 1.97647 0.961954 1.97619 0.997408 7.44364 1.48141 0.556358 1.48141 -0.806797 0.0356502 -0.325541 -2.26708 0.5 0.0535902 -1.03238 4.76837e-006 0.999347 0.0021919 -0.141408 1.17312 0.684053 0.02656 -0.118244 1.18287 0.714575 0.0499352 -0.112919 1.17312 0.750678 0.0242215 -0.998606 1.00001 0.999357 1 -1.01383 1.50367 0.0158104 45.3968 0.496244 45.3968 -1.79377 1.52658 0.960472 1.60609 0.976677 45.3968 0.0114969 44.8933 0.492817 44.8933 0.460472 1.6061 0.97414 44.8933 -1.0475 1.50367 5.8775 1.52609 3.72094 0.0363429 0.0240795 0.961954 0.000158411 0.961954 0.0989637 0.000749409 4.9975 -0.00745296 7.90103 0.000749409 2.35317 1 4.9975 0.000399768 2.31918 0.960926 0.683982 0.970561 0.751106 0.967124 0.0996384 0.945802 0.5 -1.75135 0.711677 0.99482 3.09862 0.501657 3.14436 0.501585 3.05187 0.501707 -2.1585 0.0356509 0.0479402 89.9364 1.08571 90.1429 1.12134 90.0506 6.67804 0.0275759 1.32554 -2.26708 1.99865 -1.60933e-005 0.717647 0.0365286 0.00792052 0.991149 1.96439 0.999984 3.07335 1.52666 0.458096 1.52666 0.861531 0.266122 12.1851 0.266123 5.0659 0.266123 -2.1721 0.00159729 5.17188 0.206349 1 3 4.0827 0.00243855 0.500003 3 1.02048 0.206349 12.0261 0.206349 -5.48658 0.00220889 0 3 3.64207 0.266122 12.8314 0.266123 0.617101 0.379997 -3.07083 -0.000511169 3.80103 0.206349 12.6724 0.206349 0.587511 0.230342 23.5796 0.151184 6.28023 0.00112158 0.000966942 0.999915 0.762878 -0.0032028 1.9937 0.00269526 23.2364 -0.0018456 -2.6472e-016 0.498062 0.0269488 0.5 2.95486 0.000999987 0.997878 0.0022977 0.998145 -18.7422 3.3695 1.50342 0.497194 0.000512302 0.998145 -18.4742 -0.000842069 -18.5681 1.78255 0.00249755 -4.6925 1.50341 0.000461218 0.000461042 0.998145 -18.3398 -2.11649 1.50362 0.998159 -47.6849 0.998159 -47.9529 -0.000828628 -47.859 0.00499547 4.9975 -0.000828622 152.23 0.998159 -48.0873 0.998159 151.913 5.04228 1.5036 -0.19725 0.0362321 1.77896 0.0376292 1.09195 0.0376295 23.7569 0.395598 23.5636 0.219257 15 0 0.0464412 0.000833154 15 0.5 14.9731 0.5 15 1 1.999 0.000999451 7.31317 0.5 2.57785 1.93236 7.3125 0 0.00037542 1 0.951748 1.91063 7.5 1 7.5 0.5 0 0.5 7.5 0 -3.82743 0.0535914 -0.0165143 0.00123584 7.68683 0.5 7.6875 0 1.78597 1.21939 1.08495 1.21939 3.05187 -1.82087 3.05187 -4.14345 3.09862 -1.82616 3.09862 -4.15397 -4.83625 0.943866 -3.97332 0.94641 -3.79071 0.94193 3.14436 -1.821 3.14436 -4.14358 0.422146 1.93236 10 1 10 0.5 1.04825 1.91063 10 0 7.30894 -0.00165844 6.98437 0.19632 23.5203 0.226217 5.29777 0.370996 0.986157 0.995567 -4.7827 0.0535901 -3.85532 0.0535899 0.72842 0.993126 -5.1053 0.942888 0.318621 7.99747 0.318621 3.94188 0.318621 4.00487 0.318621 4.06783 0.318621 0.0122363 0.282076 4.00487 0.28298 7.0198 0.318751 0 0.0294502 -0.00164652 0.282076 0.0122363 0.0317817 1.93841 0.282076 3.94188 0.320783 7.0198 0.28177 0 0.282076 4.06783 2.97245 1.93817 0.282076 7.99747 2.97049 -0.00165534 -5.75764 0.0525697 0.045145 0.00099951 0.436374 0.219173 6.9818 0.219258 7.075 0.395598 7.09091 0.395598 0.998146 47.8731 5.33708 1.50341 9.47299 3.58584 -0.000828568 56.7975 9.995 2.43947 -0.000842039 48.2296 0.998146 48.0589 -3.59938 1.50341 0.998146 48.3669 -2.27526 1.50341 0.998159 56.5863 -2.19469 1.50341 0.998159 57.0337 0.998159 56.8409 -4.42162 1.50336 0.998159 94.7254 9.27912 4.81617 -0.000828568 94.2767 0.998159 94.3667 -0.889068 1.50342 0.998159 93.9139 6.48657 0.00220889 6.1304 0.206349 13.4765 0.206349 10.6346 0.206349 13.6202 0.206349 -2.36126 0.00248468 -2.28069 0.00248092 -4.1958 0.00238419 10.5888 0.266123 13.6703 0.266123 5.97541 0.266123 13.6218 0.266123 -5.26689 0.00112176 -0.359847 0.00237757 2.03831 0.206349 13.7999 0.206349 1.95557 0.266122 13.8806 0.266123 0.28298 0.0200008 0.318751 7.00474 0.320783 0.0200008 2.97139 1.93832 0.28177 7.00474 </float_array>
+          <technique_common>
+            <accessor source="#twn_a_blk05_rf.xno-geometry-uv-array" count="271" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_a_blk05_rf.xno-geometry-uv2">
+          <float_array id="twn_a_blk05_rf.xno-geometry-uv2-array" count="814">0.438001 0.935277 0.251458 0.820621 0.251076 0.820968 0.226411 0.77164 0.226411 0.646596 0.22701 0.771025 0.22701 0.647346 0.453243 0.557962 0.453243 0.557122 0.453243 0.435124 0.869551 0.573202 0.453243 0.434125 0.452856 0.434787 0.227169 0.64785 0.452856 0.557458 0.227169 0.770521 0.125448 0.362779 0.125846 0.363176 0.125448 0.367313 0.125846 0.366915 0.130011 0.363176 0.130408 0.362779 0.240428 0.646596 0.240628 0.647346 0.130011 0.366915 0.130408 0.367313 0.255759 0.838409 0.270081 0.973486 0.269685 0.973885 0.265547 0.973502 0.265946 0.973898 0.428095 0.442333 0.428095 0.541894 0.247052 0.66296 0.427709 0.542265 0.247052 0.763428 0.427709 0.441962 0.247203 0.663455 0.247203 0.762933 0.2697 0.978049 0.858681 0.549034 0.270099 0.978445 0.247591 0.66296 0.247591 0.763428 0.26596 0.978063 0.265564 0.978461 0.265123 0.919524 0.255597 0.853674 0.265522 0.91992 0.282042 0.466881 0.211208 0.646596 0.265139 0.924058 0.602557 0.414584 0.94744 0.392098 0.265535 0.923659 0.602795 0.414123 0.94795 0.392155 0.721648 0.838508 0.722109 0.838731 0.210038 0.648243 0.269686 0.919905 0.270083 0.919506 0.233889 0.858049 0.40337 0.912036 0.233315 0.858554 0.94047 0.0128745 0.234051 0.85868 0.2697 0.923644 0.270099 0.92404 0.43973 0.816636 0.262996 0.476016 0.262545 0.475768 0.272017 0.770525 0.272017 0.663812 0.272406 0.771029 0.272406 0.770189 0.272406 0.664149 0.869551 0.525308 0.272406 0.663309 0.273006 0.77164 0.273006 0.662559 0.957045 0.368141 0.304763 0.476292 0.957706 0.368141 0.272726 0.409533 0.170852 0.132171 0.722088 0.81156 0.760143 0.471314 0.273272 0.409348 0.722606 0.811813 0.171401 0.132349 0.76067 0.471079 0.255089 0.874128 0.965123 0.0025 0.255542 0.874384 0.965581 0.00284469 0.946852 0.343316 0.56473 0.259024 0.330943 0.468153 0.161077 0.651137 0.947366 0.34324 0.56519 0.258777 0.760759 0.444358 0.761232 0.444168 0.162525 0.652545 0.401647 0.827582 0.244186 0.440646 0.244834 0.440975 0.941964 0.0973288 0.244831 0.440309 0.0888859 0.405148 0.170938 0.407243 0.369894 0.32313 0.170976 0.405787 0.370296 0.244075 0.370299 0.24339 0.783582 0.481448 0.0905164 0.403733 0.783583 0.48208 0.184743 0.404715 0.37353 0.130429 0.371641 0.334448 0.371756 0.33513 0.108991 0.667128 0.182915 0.403566 0.373522 0.129713 0.108933 0.667754 0.737276 0.636546 0.374648 0.128488 0.737887 0.636546 0.737926 0.635916 0.375297 0.128375 0.855008 0.643869 0.738498 0.636546 0.854171 0.64373 0.37587 0.128475 0.382979 0.251882 0.382983 0.251197 0.770011 0.488997 0.383795 0.251641 0.0110353 0.493123 0.76913 0.489437 0.770011 0.489629 0.386183 0.32114 0.386179 0.321825 0.122909 0.680961 0.386997 0.321314 0.123664 0.681546 0.122763 0.68155 0.963703 0.109406 0.262549 0.423839 0.964079 0.109755 0.262999 0.423587 0.230853 0.161745 0.230853 0.181247 0.461072 0.129495 0.0933467 0.772153 0.460343 0.128787 0.773646 0.471187 0.457885 0.1276 0.310445 0.200247 0.773646 0.470576 0.773017 0.470616 0.310557 0.201088 0.458456 0.127488 0.773646 0.469965 0.0921074 0.770958 0.459107 0.127587 0.858337 0.472669 0.386171 0.0973918 0.853938 0.67859 0.386781 0.0973879 0.8532 0.678625 0.217873 0.734283 0.385825 0.0966604 0.386436 0.0966538 0.387048 0.0966473 0.27961 0.556311 0.21932 0.735691 0.386155 0.0959217 0.183154 0.734337 0.386765 0.0959125 0.183886 0.734443 0.256107 0.161745 0.256107 0.181247 0.168115 0.216004 0.269592 0.325628 0.167565 0.21607 0.300851 0.56037 0.270135 0.325521 0.446878 0.0967423 0.345175 0.200797 0.345118 0.201533 0.447489 0.0967331 0.446596 0.0960075 0.447207 0.0960009 0.447818 0.0959944 0.842308 0.440912 0.446862 0.0952668 0.103777 0.351381 0.103809 0.352119 0.447473 0.0952629 0.372561 0.0677302 0.00536621 0.711383 0.446911 0.231667 0.373212 0.0678292 0.18401 0.701405 0.093071 0.423312 0.446904 0.232572 0.092439 0.423349 0.447334 0.232107 0.371413 0.066934 0.714898 0.225533 0.00421658 0.71059 0.373783 0.0676917 0.184858 0.70132 0.092439 0.422737 0.765096 0.24402 0.714108 0.224382 0.765747 0.24339 0.130851 0.42281 0.714012 0.22373 0.766318 0.24402 0.714127 0.22316 0.130011 0.422688 0.171405 0.745502 0.170169 0.745057 0.327855 0.562461 0.0883252 0.119584 0.171335 0.241129 0.265111 0.300709 0.0885702 0.119062 0.264539 0.300674 0.170803 0.241338 0.815163 0.309381 0.311718 0.586187 0.814526 0.30939 0.758207 0.726069 0.879554 0.137519 0.878998 0.137519 0.733144 0.725771 0.733691 0.725771 0.90299 0.137519 0.163438 0.767634 0.200861 0.78113 0.878998 0.138682 0.733144 0.724608 0.90299 0.138682 0.879554 0.138682 0.733691 0.724608 0.758207 0.724608 0.062986 0.119551 0.370186 0.963584 0.274456 0.283853 0.563034 0.31005 0.0631799 0.119079 0.370434 0.963124 0.805121 0.332701 0.27395 0.283802 0.563494 0.310276 0.80492 0.291858 0.161682 0.768632 0.337525 0.585434 0.804602 0.332639 0.201578 0.783018 0.299707 0.602383 0.804408 0.291915 0.137597 0.351847 0.456952 0.0651156 0.391663 0.971005 0.137474 0.352684 0.457524 0.0651956 0.391035 0.971575 0.0909706 0.708457 0.858337 0.410158 0.458174 0.0650826 0.391663 0.972227 0.880731 0.355374 0.850065 0.346787 0.713737 0.139951 0.0921816 0.707631 0.714558 0.137519 0.459388 0.0642611 0.881363 0.355949 0.84989 0.345952 0.713614 0.139378 0.460112 0.0642533 0.880731 0.356597 0.713731 0.138729 0.458156 0.0634658 0.8792 0.469177 0.683814 0.210899 0.129617 0.457502 0.683826 0.210289 0.128881 0.457554 0.683074 0.211226 0.683083 0.210614 0.683093 0.210003 0.682344 0.210876 0.321313 0.129764 0.682351 0.210266 0.322044 0.129869 0.770011 0.584971 0.0110353 0.590383 0.45668 0.276761 0.716316 0.0650679 0.0272843 0.587698 0.732775 0.0656656 0.76913 0.585398 0.770011 0.585537 0.73287 0.0666188 0.769794 0.586 0.716799 0.066111 0.715833 0.0661895 0.716393 0.0664626 0.12289 0.783121 0.699354 0.0675837 0.459389 0.293246 0.123794 0.783406 0.699963 0.0671306 0.122937 0.783695 0.700236 0.0679995 0.256107 0.250982 0.783583 0.595898 0.0362196 0.495029 0.285859 0.0475828 0.783583 0.596464 0.308995 0.0471802 0.0934525 0.288755 0.718349 0.0812125 0.717383 0.081291 0.740648 0.0822101 0.783366 0.596927 0.717943 0.0815641 0.310614 0.0484471 0.0918915 0.287418 0.0362045 0.493648 0.286149 0.0489331 0.684774 0.150196 0.817268 0.347883 0.684781 0.149586 0.817292 0.347145 0.684032 0.150459 0.684042 0.149848 0.256107 0.23148 0.863064 0.439668 0.684051 0.149236 0.683299 0.150173 0.897661 0.455047 0.683311 0.149563 0.898398 0.454997 0.108807 0.791656 0.693493 0.0829678 0.694376 0.0833836 0.693765 0.0834157 0.140745 0.285669 0.0606629 0.495132 0.653341 0.224262 0.00365527 0.649023 0.738498 0.633553 0.653457 0.223613 0.321745 0.0962224 0.737848 0.632923 0.737887 0.633553 0.322592 0.0961577 0.65336 0.223039 0.737276 0.633553 0.0025 0.647826 0.369901 0.0041644 0.65211 0.225381 0.369894 0.00344831 0.142387 0.283802 0.0625763 0.493545 0.234303 0.250982 0.234303 0.23148 0.654699 0.13902 0.89764 0.422253 0.562864 0.313489 0.89848 0.422377 0.654814 0.13845 0.273953 0.977381 0.563494 0.312917 0.273546 0.9769 0.562864 0.312878 0.0901217 0.647826 0.457522 0.00444967 0.8792 0.410158 0.654718 0.137798 0.273986 0.976476 0.0913272 0.646596 0.458732 0.00322384 0.459446 0.0025 0.878997 0.209462 0.733144 0.653828 0.198108 0.74311 0.879554 0.209462 0.174672 0.743109 0.90299 0.209462 0.733691 0.653828 0.758207 0.653531 0.198108 0.742401 0.879554 0.210171 0.878997 0.210171 0.733144 0.65312 0.733691 0.65312 0.174672 0.742401 0.758207 0.652822 </float_array>
+          <technique_common>
+            <accessor source="#twn_a_blk05_rf.xno-geometry-uv2-array" count="407" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_a_blk05_rf.xno-geometry-color">
+          <float_array id="twn_a_blk05_rf.xno-geometry-color-array" count="48">0.678431 0.678431 0.678431 1 0 0 0 1 0.223529 0.223529 0.223529 1 0.643137 0.643137 0.643137 1 0.27451 0.27451 0.27451 1 0.662745 0.662745 0.662745 1 0.658824 0.658824 0.658824 1 0.67451 0.67451 0.67451 1 0.337255 0.337255 0.337255 1 0.682353 0.682353 0.682353 1 0.341176 0.341176 0.341176 1 0.105882 0.105882 0.105882 1 </float_array>
+          <technique_common>
+            <accessor source="#twn_a_blk05_rf.xno-geometry-color-array" count="12" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="twn_a_blk05_rf.xno-geometry-vertex">
+          <input semantic="POSITION" source="#twn_a_blk05_rf.xno-geometry-position" />
+        </vertices>
+        <triangles material="twn_a_blk05_rf.xno0" count="47">
+          <input semantic="VERTEX" source="#twn_a_blk05_rf.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#twn_a_blk05_rf.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#twn_a_blk05_rf.xno-geometry-color" offset="4" set="0" />
+          <p>168 57 0 70 0 172 59 6 71 0 235 92 67 107 0 233 91 68 106 0 235 92 67 107 0 172 59 6 71 0 235 92 67 107 0 233 91 68 106 0 240 95 73 106 0 238 94 75 106 0 240 95 73 106 0 233 91 68 106 0 240 95 73 106 0 238 94 75 106 0 245 98 68 106 0 248 99 67 109 0 317 127 6 150 0 323 130 0 152 0 317 127 6 150 0 248 99 67 109 0 245 98 68 106 0 245 98 68 106 0 248 99 67 109 0 240 95 73 106 0 241 96 72 109 0 240 95 73 106 0 248 99 67 109 0 240 95 73 106 0 241 96 72 109 0 235 92 67 107 0 237 94 74 108 0 160 53 70 65 0 243 97 70 108 0 160 53 70 65 0 237 94 74 108 0 153 49 74 65 0 142 41 67 62 0 8 4 6 2 0 1 1 0 1 0 8 4 6 2 0 142 41 67 62 0 144 43 68 64 0 149 46 73 64 0 144 43 68 64 0 142 41 67 62 0 144 43 68 64 0 149 46 73 64 0 152 48 75 64 0 156 51 68 64 0 152 48 75 64 0 149 46 73 64 0 211 80 0 94 0 207 78 6 92 0 155 50 67 66 0 156 51 68 64 0 155 50 67 66 0 207 78 6 92 0 149 46 73 64 0 155 50 67 66 0 156 51 68 64 0 155 50 67 66 0 149 46 73 64 0 148 45 72 62 0 142 41 67 62 0 148 45 72 62 0 149 46 73 64 0 161 53 71 65 0 157 52 68 65 0 213 82 97 95 0 209 79 6 93 0 213 82 97 95 0 157 52 68 65 0 214 82 98 92 0 208 79 5 92 0 212 81 96 94 0 55 5 24 28 0 111 5 33 44 0 60 5 29 30 0 111 5 33 44 0 55 5 24 28 0 79 5 31 39 0 35 5 24 17 0 50 5 33 24 0 40 5 29 19 0 50 5 33 24 0 35 5 24 17 0 43 5 31 20 0 116 5 24 48 0 158 5 33 67 0 127 5 29 54 0 158 5 33 67 0 116 5 24 48 0 137 5 31 60 0 166 55 2 69 0 170 58 5 69 0 167 56 0 69 0 170 58 5 69 0 166 55 2 69 0 164 54 4 69 0 171 58 6 69 0 164 54 4 69 0 232 90 68 105 0 230 89 71 105 0 232 90 68 105 0 164 54 4 69 0 0 0 0 0 0 6 3 5 0 0 3 0 2 0 0 5 2 4 0 0 3 0 2 0 0 6 3 5 0 0 143 42 68 63 0 5 2 4 0 0 7 3 6 0 0 5 2 4 0 0 143 42 68 63 0 147 44 71 63 0 151 47 75 63 0 147 44 71 63 0 143 42 68 63 0 324 130 0 151 0 316 127 5 149 0 321 129 2 151 0 320 128 4 149 0 321 129 2 151 0 316 127 5 149 0 246 98 68 108 0 320 128 4 149 0 318 127 6 149 0 320 128 4 149 0 246 98 68 108 0 244 97 71 108 0 239 94 75 108 0 244 97 71 108 0 246 98 68 108 0 236 93 74 105 0 229 89 70 105 0 150 47 74 63 0 146 44 70 63 0 150 47 74 63 0 229 89 70 105 0 </p>
+        </triangles>
+        <triangles material="twn_a_blk05_rf.xno1" count="10">
+          <input semantic="VERTEX" source="#twn_a_blk05_rf.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#twn_a_blk05_rf.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#twn_a_blk05_rf.xno-geometry-color" offset="4" set="0" />
+          <p>2 1 1 1 0 53 14 34 26 0 141 41 66 62 0 115 33 53 47 0 141 41 66 62 0 53 14 34 26 0 141 41 66 62 0 115 33 53 47 0 154 50 76 66 0 210 80 95 94 0 154 50 76 66 0 115 33 53 47 0 165 54 78 69 0 4 2 3 0 0 231 89 105 105 0 145 44 69 63 0 231 89 105 105 0 4 2 3 0 0 234 92 66 107 0 247 99 76 109 0 169 57 1 70 0 322 130 95 152 0 169 57 1 70 0 247 99 76 109 0 319 128 154 149 0 242 97 106 108 0 215 82 99 95 0 162 53 77 65 0 215 82 99 95 0 242 97 106 108 0 </p>
+        </triangles>
+        <triangles material="twn_a_blk05_rf.xno2" count="4">
+          <input semantic="VERTEX" source="#twn_a_blk05_rf.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#twn_a_blk05_rf.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#twn_a_blk05_rf.xno-geometry-color" offset="4" set="0" />
+          <p>480 190 220 250 0 478 194 218 249 0 695 190 211 399 0 692 194 213 398 0 695 190 211 399 0 478 194 218 249 0 473 191 213 248 0 471 196 211 247 0 689 191 269 395 0 691 196 220 397 0 689 191 269 395 0 471 196 211 247 0 </p>
+        </triangles>
+        <triangles material="twn_a_blk05_rf.xno3" count="20">
+          <input semantic="VERTEX" source="#twn_a_blk05_rf.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#twn_a_blk05_rf.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#twn_a_blk05_rf.xno-geometry-color" offset="4" set="0" />
+          <p>462 195 207 242 0 472 196 212 247 0 458 191 204 238 0 474 191 214 248 0 458 191 204 238 0 472 196 212 247 0 458 191 204 238 0 474 191 214 248 0 459 192 205 239 0 467 192 208 245 0 459 192 205 239 0 474 191 214 248 0 683 192 266 392 0 468 192 209 245 0 688 191 268 395 0 475 191 215 248 0 688 191 268 395 0 468 192 209 245 0 698 191 204 401 0 699 192 205 402 0 687 191 214 395 0 682 192 208 392 0 687 191 214 395 0 699 192 205 402 0 684 193 208 393 0 700 193 205 403 0 694 194 217 398 0 701 194 206 404 0 694 194 217 398 0 700 193 205 403 0 703 190 203 406 0 694 194 217 398 0 701 194 206 404 0 694 194 217 398 0 703 190 203 406 0 696 190 219 399 0 461 194 206 241 0 479 190 219 250 0 457 190 203 237 0 479 190 219 250 0 461 194 206 241 0 477 194 217 249 0 460 193 205 240 0 477 194 217 249 0 461 194 206 241 0 477 194 217 249 0 460 193 205 240 0 469 193 208 246 0 690 196 212 396 0 697 191 204 400 0 686 191 214 394 0 697 191 204 400 0 690 196 212 396 0 702 196 207 405 0 476 194 216 249 0 685 193 267 393 0 693 194 270 398 0 685 193 267 393 0 476 194 216 249 0 470 193 210 246 0 </p>
+        </triangles>
+        <triangles material="twn_a_blk05_rf.xno4" count="77">
+          <input semantic="VERTEX" source="#twn_a_blk05_rf.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#twn_a_blk05_rf.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#twn_a_blk05_rf.xno-geometry-color" offset="4" set="0" />
+          <p>409 171 163 202 0 412 173 162 205 0 352 144 170 174 0 363 151 176 179 0 352 144 170 174 0 412 173 162 205 0 363 151 176 179 0 354 146 171 175 0 352 144 170 174 0 342 141 165 169 0 352 144 170 174 0 354 146 171 175 0 352 144 170 174 0 342 141 165 169 0 276 111 128 128 0 282 112 133 131 0 276 111 128 128 0 342 141 165 169 0 341 140 163 167 5 336 138 162 164 5 399 167 170 196 5 389 161 176 193 5 399 167 170 196 5 336 138 162 164 5 395 165 171 195 5 399 167 170 196 5 389 161 176 193 5 399 167 170 196 5 395 165 171 195 5 406 170 165 201 6 397 167 170 196 6 406 170 165 201 6 512 213 128 275 6 507 212 133 271 6 512 213 128 275 6 406 170 165 201 6 388 160 176 193 0 385 159 177 190 0 394 164 171 195 0 390 162 173 194 0 394 164 171 195 0 385 159 177 190 0 431 177 162 220 0 532 222 176 292 0 435 179 159 224 0 536 223 177 294 0 435 179 159 224 0 532 222 176 292 0 343 142 165 169 0 353 145 171 175 0 347 143 167 171 0 357 148 173 176 0 347 143 167 171 0 353 145 171 175 0 405 169 165 201 0 396 166 171 195 0 402 168 167 198 0 392 163 173 194 0 402 168 167 198 0 396 166 171 195 0 356 148 172 176 0 391 162 191 194 0 345 143 128 171 0 386 159 190 190 0 345 143 128 171 0 391 162 191 194 0 365 152 176 179 0 369 153 177 181 0 355 147 171 175 0 359 149 173 176 0 355 147 171 175 0 369 153 177 181 0 393 163 191 194 0 358 149 172 176 0 403 168 193 198 0 366 153 19 181 0 403 168 193 198 0 358 149 172 176 0 335 137 162 163 0 332 135 159 160 0 387 160 176 192 0 384 159 177 191 0 387 160 176 192 0 332 135 159 160 0 348 143 167 172 0 285 114 19 134 0 344 142 165 170 0 283 113 133 132 0 344 142 165 170 0 285 114 19 134 0 401 168 167 199 0 503 209 19 267 0 404 169 165 200 0 506 211 133 270 0 404 169 165 200 0 503 209 19 267 0 411 172 163 204 1 417 172 161 210 1 415 172 162 208 1 416 172 161 209 1 424 172 159 216 1 414 172 162 207 1 275 110 128 127 0 281 110 133 130 0 280 110 132 129 0 284 110 19 133 0 280 110 132 129 0 281 110 133 130 0 505 210 19 269 0 513 210 128 276 0 508 210 133 272 0 334 136 162 162 4 333 136 161 161 4 330 134 159 158 4 333 136 161 161 4 334 136 162 162 4 337 139 163 165 4 364 152 176 180 0 423 175 159 215 0 368 153 177 182 0 423 175 159 215 0 364 152 176 180 0 413 174 162 206 0 626 166 171 343 0 631 255 177 347 0 634 256 176 349 0 631 255 177 347 0 626 166 171 343 0 622 163 173 342 0 553 227 167 300 0 542 147 171 296 0 549 226 165 298 0 542 147 171 296 0 553 227 167 300 0 546 149 173 297 0 614 251 167 338 0 624 164 171 343 0 617 252 165 340 0 624 164 171 343 0 614 251 167 338 0 620 162 173 342 0 623 163 191 342 0 550 227 128 300 0 633 255 190 347 0 550 227 128 300 0 623 163 191 342 0 545 149 172 297 0 540 145 171 296 0 537 223 177 293 0 533 222 176 291 0 537 223 177 293 0 540 145 171 296 0 544 148 173 297 0 543 148 172 297 0 616 251 193 338 0 534 223 19 293 0 616 251 193 338 0 543 148 172 297 0 621 162 191 342 0 666 271 159 376 0 635 256 176 350 0 632 255 177 348 0 635 256 176 350 0 666 271 159 376 0 668 272 162 378 0 654 267 19 364 0 548 226 165 299 0 651 265 133 361 0 548 226 165 299 0 654 267 19 364 0 552 227 167 301 0 515 215 19 278 0 618 252 165 341 0 522 217 133 284 0 618 252 165 341 0 515 215 19 278 0 615 251 167 339 0 670 263 162 380 0 672 263 161 382 0 678 263 163 388 0 430 110 197 219 0 433 110 134 222 0 425 110 194 217 0 629 254 170 346 6 669 273 162 379 6 677 274 163 387 6 669 273 162 379 6 629 254 170 346 6 636 257 176 349 6 629 254 170 346 6 625 165 171 343 6 636 257 176 349 6 625 165 171 343 6 629 254 170 346 6 619 253 165 340 6 530 220 128 288 6 619 253 165 340 6 629 254 170 346 6 619 253 165 340 6 530 220 128 288 6 523 218 133 285 6 539 224 170 295 0 432 178 162 221 0 428 176 163 218 0 432 178 162 221 0 539 224 170 295 0 531 221 176 291 0 539 224 170 295 0 541 146 171 296 0 531 221 176 291 0 541 146 171 296 0 539 224 170 295 0 547 225 165 298 0 645 262 128 357 0 547 225 165 298 0 539 224 170 295 0 547 225 165 298 0 645 262 128 357 0 650 264 133 360 0 653 266 132 363 11 652 266 133 362 11 649 263 128 359 11 652 266 133 362 11 653 266 132 363 11 656 268 19 366 11 521 214 133 283 0 526 214 128 287 0 514 214 19 277 0 673 263 161 383 0 671 263 162 381 0 667 263 159 377 0 </p>
+        </triangles>
+        <triangles material="twn_a_blk05_rf.xno5" count="16">
+          <input semantic="VERTEX" source="#twn_a_blk05_rf.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#twn_a_blk05_rf.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#twn_a_blk05_rf.xno-geometry-color" offset="4" set="0" />
+          <p>593 243 178 322 0 663 243 155 373 0 627 243 179 344 0 664 243 156 374 0 627 243 179 344 0 663 243 155 373 0 351 144 169 174 0 278 111 130 128 0 407 171 19 202 0 286 114 134 135 0 383 159 189 190 0 331 135 160 159 0 383 159 189 190 0 286 114 134 135 0 346 143 166 171 0 511 213 143 274 6 340 140 164 168 5 398 167 192 197 5 400 168 189 198 0 367 153 166 181 0 504 209 222 268 0 422 175 134 214 0 504 209 222 268 0 367 153 166 181 0 538 224 169 295 0 426 176 19 218 0 647 262 130 357 0 655 267 134 365 0 630 255 189 347 0 551 227 166 300 0 630 255 189 347 0 655 267 134 365 0 665 271 160 375 0 676 274 164 386 6 529 220 143 290 6 628 254 192 345 6 434 179 134 223 0 535 223 166 293 0 516 215 222 279 0 613 251 189 338 0 516 215 222 279 0 535 223 166 293 0 326 131 156 154 0 325 131 155 153 0 371 131 179 184 0 370 131 178 183 0 371 131 179 184 0 325 131 155 153 0 </p>
+        </triangles>
+        <triangles material="twn_a_blk05_rf.xno6" count="24">
+          <input semantic="VERTEX" source="#twn_a_blk05_rf.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#twn_a_blk05_rf.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#twn_a_blk05_rf.xno-geometry-color" offset="4" set="0" />
+          <p>520 216 224 282 0 524 219 225 286 0 329 133 158 157 0 327 132 157 155 0 329 133 158 157 0 524 219 225 286 0 327 132 157 155 0 264 104 121 120 0 329 133 158 157 0 271 108 125 125 0 329 133 158 157 0 264 104 121 120 0 329 133 158 157 0 271 108 125 125 0 339 5 131 167 0 277 111 129 128 0 339 5 131 167 0 271 108 125 125 0 658 269 125 368 0 660 270 121 370 0 680 275 158 390 0 681 276 157 391 0 680 275 158 390 0 660 270 121 370 0 681 276 157 391 0 525 219 226 286 0 680 275 158 390 0 520 216 224 282 0 680 275 158 390 0 525 219 226 286 0 680 275 158 390 0 520 216 224 282 0 675 5 131 385 0 528 5 194 289 0 675 5 131 385 0 520 216 224 282 0 420 5 196 213 0 517 216 223 280 0 410 171 131 203 0 509 5 129 273 0 410 171 131 203 0 517 216 223 280 0 272 108 126 125 0 418 5 195 211 0 279 111 131 128 0 408 171 194 202 0 279 111 131 128 0 418 5 195 211 0 510 5 194 273 0 519 216 224 280 0 338 5 131 166 0 328 133 158 156 0 338 5 131 166 0 519 216 224 280 0 527 5 129 288 0 518 216 223 281 0 429 176 131 218 0 421 5 196 212 0 429 176 131 218 0 518 216 223 281 0 427 176 194 218 0 419 5 195 212 0 648 262 131 357 0 659 269 126 369 0 648 262 131 357 0 419 5 195 212 0 646 262 129 358 0 657 269 125 367 0 674 5 131 384 0 679 275 158 389 0 674 5 131 384 0 657 269 125 367 0 </p>
+        </triangles>
+        <triangles material="twn_a_blk05_rf.xno7" count="57">
+          <input semantic="VERTEX" source="#twn_a_blk05_rf.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#twn_a_blk05_rf.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#twn_a_blk05_rf.xno-geometry-color" offset="4" set="0" />
+          <p>193 5 86 80 0 187 66 84 78 0 47 5 8 22 0 49 13 12 23 0 47 5 8 22 0 187 66 84 78 0 18 6 15 6 0 47 5 8 22 0 49 13 12 23 0 47 5 8 22 0 18 6 15 6 0 11 5 9 4 0 191 5 10 79 0 186 66 11 78 0 192 5 7 80 0 186 66 11 78 0 191 5 10 79 0 176 5 16 74 0 100 28 48 38 0 83 22 43 38 0 87 23 45 38 0 83 22 43 38 0 100 28 48 38 0 104 30 49 43 0 106 31 50 43 0 104 30 49 43 0 100 28 48 38 0 104 30 49 43 0 106 31 50 43 0 173 60 79 72 0 183 65 35 75 0 173 60 79 72 0 106 31 50 43 0 173 60 79 72 0 183 65 35 75 0 178 62 80 75 0 181 64 35 74 0 173 60 79 72 0 177 62 80 74 0 173 60 79 72 0 181 64 35 74 0 104 30 49 43 0 95 26 45 35 0 104 30 49 43 0 181 64 35 74 0 104 30 49 43 0 95 26 45 35 0 83 22 43 38 0 70 18 39 35 0 83 22 43 38 0 95 26 45 35 0 83 22 43 38 0 70 18 39 35 0 76 20 40 38 0 70 18 39 35 0 95 26 45 35 0 32 12 22 15 0 24 9 20 5 0 32 12 22 15 0 95 26 45 35 0 89 24 45 37 0 81 21 43 37 0 97 27 48 37 0 103 29 49 42 0 97 27 48 37 0 81 21 43 37 0 97 27 48 37 0 103 29 49 42 0 109 32 50 42 0 174 61 79 73 0 109 32 50 42 0 103 29 49 42 0 109 32 50 42 0 174 61 79 73 0 179 63 35 76 0 174 61 79 73 0 189 62 80 78 0 179 63 35 76 0 189 62 80 78 0 174 61 79 73 0 185 66 35 78 0 103 29 49 42 0 185 66 35 78 0 174 61 79 73 0 185 66 35 78 0 103 29 49 42 0 93 25 45 33 0 81 21 43 37 0 93 25 45 33 0 103 29 49 42 0 93 25 45 33 0 81 21 43 37 0 68 17 39 33 0 72 19 40 37 0 68 17 39 33 0 81 21 43 37 0 30 11 22 13 0 93 25 45 33 0 68 17 39 33 0 93 25 45 33 0 30 11 22 13 0 16 6 14 6 0 25 9 20 11 0 28 7 17 12 0 33 12 22 12 0 190 5 9 79 0 10 5 8 3 0 175 5 15 74 0 14 5 12 5 0 175 5 15 74 0 10 5 8 3 0 19 6 16 6 0 13 5 11 5 0 12 5 10 4 0 9 5 7 3 0 12 5 10 4 0 13 5 11 5 0 92 24 46 34 0 86 23 44 36 0 74 19 41 34 0 75 20 42 36 0 74 19 41 34 0 86 23 44 36 0 62 15 35 31 0 74 19 41 34 0 75 20 42 36 0 74 19 41 34 0 62 15 35 31 0 67 16 14 32 0 98 27 41 37 0 85 23 44 38 0 91 24 46 37 0 85 23 44 38 0 98 27 41 37 0 99 28 42 38 0 110 32 14 42 0 99 28 42 38 0 98 27 41 37 0 99 28 42 38 0 110 32 14 42 0 105 31 35 43 0 82 21 43 34 0 90 24 45 34 0 73 19 40 34 0 69 17 39 34 0 66 16 36 32 0 31 11 22 14 0 27 10 14 8 0 31 11 22 14 0 66 16 36 32 0 20 7 17 8 0 31 11 22 14 0 27 10 14 8 0 31 11 22 14 0 20 7 17 8 0 17 6 14 7 0 77 20 40 36 0 88 23 45 36 0 84 22 43 36 0 77 20 40 36 0 71 18 39 36 0 63 15 36 31 0 33 12 22 12 0 63 15 36 31 0 71 18 39 36 0 63 15 36 31 0 33 12 22 12 0 21 8 14 9 0 29 7 17 9 0 21 8 14 9 0 33 12 22 12 0 </p>
+        </triangles>
+        <triangles material="twn_a_blk05_rf.xno8" count="7">
+          <input semantic="VERTEX" source="#twn_a_blk05_rf.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#twn_a_blk05_rf.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#twn_a_blk05_rf.xno-geometry-color" offset="4" set="0" />
+          <p>107 31 51 43 0 108 32 52 42 0 184 65 83 75 0 180 63 81 76 0 184 65 83 75 0 108 32 52 42 0 96 26 47 40 0 182 64 82 77 0 23 9 19 10 0 48 13 32 23 0 94 25 47 33 0 15 6 13 6 0 94 25 47 33 0 48 13 32 23 0 188 66 85 78 0 64 15 37 31 0 26 10 21 8 0 65 16 38 32 0 26 10 21 8 0 64 15 37 31 0 22 8 18 9 0 </p>
+        </triangles>
+        <triangles material="twn_a_blk05_rf.xno9" count="50">
+          <input semantic="VERTEX" source="#twn_a_blk05_rf.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#twn_a_blk05_rf.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#twn_a_blk05_rf.xno-geometry-color" offset="4" set="0" />
+          <p>125 37 59 53 0 194 67 87 81 0 130 38 61 56 0 198 69 91 83 0 130 38 61 56 0 194 67 87 81 0 198 69 91 83 0 195 67 88 81 0 222 86 102 100 0 216 83 63 96 0 222 86 102 100 0 195 67 88 81 0 132 36 62 52 2 124 36 58 52 2 129 36 60 55 2 380 157 186 188 0 218 85 55 98 0 441 180 200 227 0 218 85 55 98 0 380 157 186 188 0 196 68 89 82 0 119 34 55 49 0 196 68 89 82 0 360 150 174 177 0 379 157 185 188 0 360 150 174 177 0 196 68 89 82 0 452 188 202 235 0 360 150 174 177 0 379 157 185 188 0 360 150 174 177 0 452 188 202 235 0 499 207 221 265 0 200 71 92 85 0 373 154 181 185 0 377 156 183 187 0 373 154 181 185 0 200 71 92 85 0 205 76 94 90 0 490 204 61 260 8 455 189 87 236 8 502 208 59 266 8 455 189 87 236 8 490 204 61 260 8 450 187 91 234 8 497 35 19 264 1 464 35 65 243 1 465 35 103 244 1 464 35 65 243 1 497 35 19 264 1 492 35 57 261 1 361 35 175 178 1 466 35 65 244 1 349 35 168 173 1 466 35 65 244 1 361 35 175 178 1 498 35 57 264 1 463 35 103 243 1 439 35 57 226 1 437 35 198 225 1 439 35 57 226 1 463 35 103 243 1 491 35 19 261 1 494 205 100 262 0 500 207 54 265 0 454 188 90 235 0 378 157 184 188 0 440 180 199 227 0 453 188 186 235 0 493 205 200 262 0 453 188 186 235 0 440 180 199 227 0 374 155 182 186 0 448 184 183 232 0 381 158 187 189 0 445 184 188 230 0 381 158 187 189 0 448 184 183 232 0 376 156 182 187 0 372 154 180 185 0 449 182 183 233 0 443 182 181 229 0 449 182 183 233 0 372 154 180 185 0 489 200 60 259 1 501 200 58 254 1 484 200 62 254 1 483 199 63 253 7 447 186 91 232 7 488 203 61 258 7 447 186 91 232 7 483 199 63 253 7 444 183 88 230 7 495 198 58 252 9 486 198 60 256 9 482 198 62 252 9 481 197 59 251 0 485 201 102 255 0 442 181 87 228 0 446 185 201 231 0 442 181 87 228 0 485 201 102 255 0 451 187 201 234 8 487 202 102 257 10 456 189 88 236 8 496 206 63 263 10 456 189 88 236 8 487 202 102 257 10 227 35 103 104 1 220 35 19 99 1 135 35 65 59 1 121 35 57 50 1 135 35 65 59 1 220 35 19 99 1 134 35 64 59 1 120 35 56 50 1 350 35 65 173 1 362 35 57 178 1 350 35 65 173 1 120 35 56 50 1 228 35 104 104 1 436 35 103 225 1 221 35 101 99 1 438 35 19 226 1 221 35 101 99 1 436 35 103 225 1 197 68 90 82 0 118 34 54 49 0 219 85 100 98 0 133 40 63 58 0 201 72 91 86 0 204 75 88 89 0 201 72 91 86 0 133 40 63 58 0 131 39 61 57 0 217 84 58 97 3 225 84 62 97 3 223 84 60 101 3 226 88 59 103 0 206 77 87 91 0 224 87 102 102 0 202 73 91 87 0 224 87 102 102 0 206 77 87 91 0 203 74 93 88 0 199 70 92 84 0 382 158 188 189 0 375 155 183 186 0 382 158 188 189 0 199 70 92 84 0 </p>
+        </triangles>
+        <triangles material="twn_a_blk05_rf.xno10" count="3">
+          <input semantic="VERTEX" source="#twn_a_blk05_rf.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#twn_a_blk05_rf.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#twn_a_blk05_rf.xno-geometry-color" offset="4" set="0" />
+          <p>583 5 243 317 0 309 5 149 146 0 558 5 229 304 0 296 5 141 139 0 558 5 229 304 0 309 5 149 146 0 561 5 231 306 0 557 5 229 303 0 295 5 141 140 0 </p>
+        </triangles>
+        <triangles material="twn_a_blk05_rf.xno11" count="12">
+          <input semantic="VERTEX" source="#twn_a_blk05_rf.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#twn_a_blk05_rf.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#twn_a_blk05_rf.xno-geometry-color" offset="4" set="0" />
+          <p>597 5 250 325 0 599 245 251 327 0 612 5 259 337 0 609 5 256 334 0 612 5 259 337 0 599 245 251 327 0 600 245 252 328 0 258 102 115 117 0 610 5 257 335 0 249 5 107 110 0 610 5 257 335 0 258 102 115 117 0 662 5 265 372 0 643 260 263 356 0 611 5 258 336 0 596 5 249 324 0 611 5 258 336 0 643 260 263 356 0 270 107 124 124 0 642 260 262 355 0 263 5 120 119 0 661 5 264 371 0 263 5 120 119 0 642 260 262 355 0 250 5 108 110 0 259 102 116 117 0 251 5 109 111 0 253 5 111 113 0 251 5 109 111 0 259 102 116 117 0 269 107 123 124 0 251 5 109 111 0 253 5 111 113 0 251 5 109 111 0 269 107 123 124 0 262 5 119 119 0 </p>
+        </triangles>
+        <triangles material="twn_a_blk05_rf.xno12" count="11">
+          <input semantic="VERTEX" source="#twn_a_blk05_rf.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#twn_a_blk05_rf.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#twn_a_blk05_rf.xno-geometry-color" offset="4" set="0" />
+          <p>255 101 113 114 0 289 115 137 136 0 252 100 110 112 0 301 121 145 143 0 252 100 110 112 0 289 115 137 136 0 252 100 110 112 0 301 121 145 143 0 265 105 122 121 0 556 120 228 302 0 260 103 117 118 0 595 244 248 323 0 260 103 117 118 0 556 120 228 302 0 298 120 142 142 0 315 126 153 148 0 637 258 260 351 0 274 109 127 126 0 637 258 260 351 0 315 126 153 148 0 580 237 241 315 0 590 242 246 321 0 603 247 254 330 0 639 259 261 353 0 603 247 254 330 0 590 242 246 321 0 573 234 238 313 0 570 233 236 312 0 605 248 255 331 0 601 246 253 329 0 605 248 255 331 0 570 233 236 312 0 566 232 234 310 0 </p>
+        </triangles>
+        <triangles material="twn_a_blk05_rf.xno13" count="24">
+          <input semantic="VERTEX" source="#twn_a_blk05_rf.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#twn_a_blk05_rf.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#twn_a_blk05_rf.xno-geometry-color" offset="4" set="0" />
+          <p>59 5 28 30 0 57 5 26 29 0 56 5 25 28 0 54 5 23 27 0 56 5 25 28 0 57 5 26 29 0 56 5 25 28 0 54 5 23 27 0 80 5 30 39 0 102 5 27 41 0 80 5 30 39 0 54 5 23 27 0 38 5 27 18 0 41 5 30 19 0 52 5 23 25 0 51 5 25 24 0 52 5 23 25 0 41 5 30 19 0 52 5 23 25 0 51 5 25 24 0 45 5 26 21 0 42 5 28 20 0 45 5 26 21 0 51 5 25 24 0 39 5 28 19 0 37 5 26 18 0 36 5 25 17 0 34 5 23 16 0 36 5 25 17 0 37 5 26 18 0 36 5 25 17 0 34 5 23 16 0 44 5 30 20 0 46 5 27 21 0 44 5 30 20 0 34 5 23 16 0 123 5 27 51 0 128 5 30 54 0 163 5 23 68 0 159 5 25 67 0 163 5 23 68 0 128 5 30 54 0 163 5 23 68 0 159 5 25 67 0 139 5 26 61 0 136 5 28 60 0 139 5 26 61 0 159 5 25 67 0 126 5 28 54 0 122 5 26 51 0 117 5 25 48 0 114 5 23 46 0 117 5 25 48 0 122 5 26 51 0 117 5 25 48 0 114 5 23 46 0 138 5 30 60 0 140 5 27 61 0 138 5 30 60 0 114 5 23 46 0 58 5 27 29 0 61 5 30 30 0 113 5 23 45 0 112 5 25 44 0 113 5 23 45 0 61 5 30 30 0 113 5 23 45 0 112 5 25 44 0 101 5 26 41 0 78 5 28 39 0 101 5 26 41 0 112 5 25 44 0 </p>
+        </triangles>
+        <triangles material="twn_a_blk05_rf.xno14" count="40">
+          <input semantic="VERTEX" source="#twn_a_blk05_rf.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#twn_a_blk05_rf.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#twn_a_blk05_rf.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#twn_a_blk05_rf.xno-geometry-color" offset="4" set="0" />
+          <p>313 126 151 148 0 307 123 147 145 0 310 125 148 147 0 598 245 114 326 0 554 120 135 302 0 594 244 112 323 0 554 120 135 302 0 598 245 114 326 0 564 231 138 309 0 606 248 118 332 0 564 231 138 309 0 598 245 114 326 0 564 231 138 309 0 606 248 118 332 0 567 232 143 311 0 607 249 114 333 0 571 233 135 312 0 602 246 112 329 0 571 233 135 312 0 607 249 114 333 0 576 235 138 314 0 644 261 114 354 0 591 242 135 321 0 640 259 112 353 0 591 242 135 321 0 644 261 114 354 0 588 241 138 316 0 268 107 114 123 0 312 126 135 148 0 273 109 112 126 0 312 126 135 148 0 268 107 114 123 0 306 123 138 145 0 261 103 118 118 0 292 117 138 138 0 257 102 114 116 0 292 117 138 138 0 261 103 118 118 0 299 120 143 142 0 266 105 118 121 0 304 122 138 144 0 267 106 114 122 0 304 122 138 144 0 266 105 118 121 0 302 121 143 143 0 638 258 118 352 0 586 240 138 316 0 641 260 114 354 0 586 240 138 316 0 638 258 118 352 0 581 237 143 316 0 604 247 118 330 0 578 236 138 314 0 608 250 114 333 0 578 236 138 314 0 604 247 118 330 0 574 234 143 313 0 563 230 232 308 0 565 231 233 309 0 569 232 235 311 0 565 231 233 309 0 563 230 232 308 0 555 120 227 302 0 297 119 140 141 0 555 120 227 302 0 563 230 232 308 0 555 120 227 302 0 297 119 140 141 0 300 120 144 142 0 293 117 139 138 0 300 120 144 142 0 297 119 140 141 0 305 122 147 144 0 303 121 146 143 0 308 124 148 146 0 288 115 136 136 0 308 124 148 146 0 303 121 146 143 0 308 124 148 146 0 288 115 136 136 0 294 118 140 139 0 291 116 139 137 0 294 118 140 139 0 288 115 136 136 0 577 235 240 314 0 560 229 230 305 0 572 233 237 312 0 562 230 232 307 0 572 233 237 312 0 560 229 230 305 0 572 233 237 312 0 562 230 232 307 0 568 232 235 310 0 287 115 135 136 0 256 101 114 115 0 290 116 138 137 0 256 101 114 115 0 287 115 135 136 0 254 101 112 114 0 584 238 244 318 0 314 126 152 148 0 311 125 150 147 0 314 126 152 148 0 584 238 244 318 0 582 237 242 315 0 587 240 245 320 0 582 237 242 315 0 584 238 244 318 0 589 241 245 316 0 585 239 244 319 0 592 242 247 321 0 559 228 230 305 0 592 242 247 321 0 585 239 244 319 0 592 242 247 321 0 559 228 230 305 0 575 234 239 313 0 579 236 240 314 0 575 234 239 313 0 559 228 230 305 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="twn_a_blk05_rf.xno-controller">
+      <skin source="#twn_a_blk05_rf.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="twn_a_blk05_rf.xno-controller-Joints">
+          <Name_array id="twn_a_blk05_rf.xno-controller-Joints-array" count="1">twn_a_blk05_rf.xno0 </Name_array>
+          <technique_common>
+            <accessor source="#twn_a_blk05_rf.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_a_blk05_rf.xno-controller-Matrices">
+          <float_array id="twn_a_blk05_rf.xno-controller-Matrices-array" count="16">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#twn_a_blk05_rf.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_a_blk05_rf.xno-controller-Weights">
+          <float_array id="twn_a_blk05_rf.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#twn_a_blk05_rf.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#twn_a_blk05_rf.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#twn_a_blk05_rf.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="704">
+          <input semantic="JOINT" offset="0" source="#twn_a_blk05_rf.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#twn_a_blk05_rf.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="twn_a_blk05_rf.xno0" sid="twn_a_blk05_rf.xno0" name="twn_a_blk05_rf.xno0" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="twn_a_blk05_rf.xno" sid="twn_a_blk05_rf.xno" name="twn_a_blk05_rf.xno">
+        <instance_controller url="#twn_a_blk05_rf.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="twn_a_blk05_rf.xno0" target="#twn_a_blk05_rf.xno0ID" />
+              <instance_material symbol="twn_a_blk05_rf.xno1" target="#twn_a_blk05_rf.xno1ID" />
+              <instance_material symbol="twn_a_blk05_rf.xno2" target="#twn_a_blk05_rf.xno2ID" />
+              <instance_material symbol="twn_a_blk05_rf.xno3" target="#twn_a_blk05_rf.xno3ID" />
+              <instance_material symbol="twn_a_blk05_rf.xno4" target="#twn_a_blk05_rf.xno4ID" />
+              <instance_material symbol="twn_a_blk05_rf.xno5" target="#twn_a_blk05_rf.xno5ID" />
+              <instance_material symbol="twn_a_blk05_rf.xno6" target="#twn_a_blk05_rf.xno6ID" />
+              <instance_material symbol="twn_a_blk05_rf.xno7" target="#twn_a_blk05_rf.xno7ID" />
+              <instance_material symbol="twn_a_blk05_rf.xno8" target="#twn_a_blk05_rf.xno8ID" />
+              <instance_material symbol="twn_a_blk05_rf.xno9" target="#twn_a_blk05_rf.xno9ID" />
+              <instance_material symbol="twn_a_blk05_rf.xno10" target="#twn_a_blk05_rf.xno10ID" />
+              <instance_material symbol="twn_a_blk05_rf.xno11" target="#twn_a_blk05_rf.xno11ID" />
+              <instance_material symbol="twn_a_blk05_rf.xno12" target="#twn_a_blk05_rf.xno12ID" />
+              <instance_material symbol="twn_a_blk05_rf.xno13" target="#twn_a_blk05_rf.xno13ID" />
+              <instance_material symbol="twn_a_blk05_rf.xno14" target="#twn_a_blk05_rf.xno14ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

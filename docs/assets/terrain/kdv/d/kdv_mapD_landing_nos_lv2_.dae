@@ -1,0 +1,292 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="kdv_fence01_dfpt_p_k.dds-image" name="kdv_fence01_dfpt_p_k.dds-image">
+      <init_from>./textures/kdv_fence01_dfpt_p_k.dds</init_from>
+    </image>
+    <image id="kdv_fence02_dfpt_p_k.dds-image" name="kdv_fence02_dfpt_p_k.dds-image">
+      <init_from>./textures/kdv_fence02_dfpt_p_k.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="kdv_mapD_landing_nos_lv2_.xno0ID" name="kdv_mapD_landing_nos_lv2_.xno0">
+      <instance_effect url="#kdv_mapD_landing_nos_lv2_.xno0-effect" />
+    </material>
+    <material id="kdv_mapD_landing_nos_lv2_.xno1ID" name="kdv_mapD_landing_nos_lv2_.xno1">
+      <instance_effect url="#kdv_mapD_landing_nos_lv2_.xno1-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="kdv_mapD_landing_nos_lv2_.xno0-effect" name="kdv_mapD_landing_nos_lv2_.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_fence01_dfpt_p_k.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_fence01_dfpt_p_k.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_fence01_dfpt_p_k.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_fence01_dfpt_p_k.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_fence01_dfpt_p_k.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="kdv_mapD_landing_nos_lv2_.xno1-effect" name="kdv_mapD_landing_nos_lv2_.xno1-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_fence02_dfpt_p_k.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_fence02_dfpt_p_k.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_fence02_dfpt_p_k.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_fence02_dfpt_p_k.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_fence02_dfpt_p_k.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="kdv_mapD_landing_nos_lv2_.xno-geometry" name="kdv_mapD_landing_nos_lv2_.xno-geometry">
+      <mesh>
+        <source id="kdv_mapD_landing_nos_lv2_.xno-geometry-position">
+          <float_array id="kdv_mapD_landing_nos_lv2_.xno-geometry-position-array" count="798">19969.1 791.347 33.4028 19969.1 791.347 33.4028 19969.1 482.319 33.403 19969.1 482.319 33.4028 19969.1 941.737 33.4028 19969.1 941.737 33.4028 20581.7 482.319 -113.668 20581.7 482.319 -113.668 20581.7 941.737 -113.668 20581.7 941.737 -113.668 20581.7 791.346 -113.668 20581.7 791.346 -113.668 20581.7 791.346 -113.668 20581.7 791.346 -113.668 20581.7 791.346 -113.668 20581.7 791.346 -113.668 20581.7 941.737 -113.668 20581.7 941.737 -113.668 20581.7 482.319 -113.668 20581.7 482.319 -113.668 21194.2 791.346 -260.738 21194.2 791.346 -260.738 21194.2 791.346 -260.738 21194.2 941.736 -260.738 21194.2 941.736 -260.738 21194.2 482.318 -260.738 21194.2 482.318 -260.738 21194.2 791.346 -260.738 21194.2 791.346 -260.738 21194.2 791.346 -260.738 21194.2 941.736 -260.738 21194.2 941.736 -260.738 21194.2 482.318 -260.738 21194.2 482.318 -260.738 21806.8 941.737 -407.808 21806.8 941.737 -407.808 21806.8 941.737 -407.809 21806.8 941.737 -407.809 21806.8 791.346 -407.808 21806.8 791.346 -407.808 21806.8 791.346 -407.808 21806.8 482.319 -407.808 21806.8 482.319 -407.808 21806.8 791.346 -407.809 21806.8 791.346 -407.809 21806.8 791.346 -407.809 21806.8 482.319 -407.809 21806.8 482.319 -407.809 22400 941.737 -550.21 22400 791.346 -550.21 22400 791.346 -550.21 22400 482.319 -550.21 22400 482.319 -550.21 22400 791.346 -550.21 22400 791.346 -550.21 22400 941.737 -550.21 -4980.18 1382.32 -318.133 -4980.18 1382.32 -318.133 -4980.18 1691.35 -318.133 -4980.18 1691.35 -318.133 -4980.18 1841.74 -318.133 -4980.18 1841.74 -318.133 -4464.12 1382.32 -679.486 -4464.12 1382.32 -679.486 -4464.12 1691.35 -679.486 -4464.12 1691.35 -679.486 -4464.12 1691.35 -679.486 -4464.12 1841.74 -679.486 -4464.12 1841.74 -679.486 -4464.12 1841.74 -679.487 -4464.12 1841.74 -679.487 -4464.12 1691.35 -679.487 -4464.12 1691.35 -679.487 -4464.12 1691.35 -679.487 -4464.12 1382.32 -679.487 -4464.12 1382.32 -679.487 -3948.05 1691.35 -1040.84 -3948.05 1691.35 -1040.84 -3948.05 1691.35 -1040.84 -3948.05 1382.32 -1040.84 -3948.05 1382.32 -1040.84 -3948.05 1841.74 -1040.84 -3948.05 1841.74 -1040.84 -3948.05 1382.32 -1040.84 -3948.05 1382.32 -1040.84 -3948.05 1841.74 -1040.84 -3948.05 1841.74 -1040.84 -3948.05 1691.35 -1040.84 -3948.05 1691.35 -1040.84 -3948.05 1691.35 -1040.84 -3431.99 1841.74 -1402.19 -3431.99 1841.74 -1402.19 -3431.99 1691.35 -1402.19 -3431.99 1691.35 -1402.19 -3431.99 1691.35 -1402.19 -3431.99 1382.32 -1402.19 -3431.99 1382.32 -1402.19 -3431.99 1691.35 -1402.19 -3431.99 1691.35 -1402.19 -3431.99 1691.35 -1402.19 -3431.99 1382.32 -1402.19 -3431.99 1382.32 -1402.19 -3431.99 1841.74 -1402.19 -3431.99 1841.74 -1402.19 -2932.3 1691.35 -1752.07 -2932.3 1691.35 -1752.07 -2932.3 1382.32 -1752.07 -2932.3 1841.74 -1752.07 -2932.3 1382.32 -1752.07 -2932.3 1691.35 -1752.07 -2932.3 1691.35 -1752.07 -2932.3 1841.74 -1752.07 -5197.99 482.319 12111.5 -5197.99 482.319 12111.5 -5197.99 791.347 12111.5 -5197.99 791.347 12111.5 -5197.99 941.737 12111.5 -5197.99 941.737 12111.5 -4685.1 482.319 11745.7 -4685.1 482.319 11745.7 -4685.1 791.346 11745.7 -4685.1 791.346 11745.7 -4685.1 791.346 11745.7 -4685.1 941.737 11745.7 -4685.1 941.737 11745.7 -4685.1 482.319 11745.7 -4685.1 482.319 11745.7 -4685.1 941.737 11745.7 -4685.1 941.737 11745.7 -4685.1 791.346 11745.7 -4685.1 791.346 11745.7 -4685.1 791.346 11745.7 -4172.21 791.346 11379.8 -4172.21 791.346 11379.8 -4172.21 791.346 11379.8 -4172.21 941.736 11379.8 -4172.21 941.736 11379.8 -4172.21 482.318 11379.8 -4172.21 482.318 11379.8 -4172.21 791.346 11379.8 -4172.21 791.346 11379.8 -4172.21 791.346 11379.8 -4172.21 941.736 11379.8 -4172.21 941.736 11379.8 -4172.21 482.318 11379.8 -4172.21 482.318 11379.8 -3659.31 941.737 11014 -3659.31 941.737 11014 -3659.31 791.346 11014 -3659.31 791.346 11014 -3659.31 791.346 11014 -3659.31 482.319 11014 -3659.31 482.319 11014 -3659.31 482.319 11014 -3659.31 482.319 11014 -3659.31 791.346 11014 -3659.31 791.346 11014 -3659.31 791.346 11014 -3659.31 941.737 11014 -3659.31 941.737 11014 -3162.7 941.737 10659.8 -3162.7 482.319 10659.8 -3162.7 791.346 10659.8 -3162.7 791.346 10659.8 -3162.7 941.737 10659.8 -3162.7 791.346 10659.8 -3162.7 791.346 10659.8 -3162.7 482.319 10659.8 -1444.07 482.319 16078.2 -1444.07 482.319 16078.2 -1444.07 791.347 16078.2 -1444.07 791.347 16078.2 -1444.07 941.737 16078.2 -1444.07 941.737 16078.2 -931.179 482.319 15712.4 -931.179 482.319 15712.4 -931.179 941.737 15712.4 -931.179 941.737 15712.4 -931.179 791.346 15712.4 -931.179 791.346 15712.4 -931.179 791.346 15712.4 -931.178 941.737 15712.4 -931.178 941.737 15712.4 -931.178 791.346 15712.4 -931.178 791.346 15712.4 -931.178 791.346 15712.4 -931.178 482.319 15712.4 -931.178 482.319 15712.4 -418.286 791.346 15346.5 -418.286 791.346 15346.5 -418.286 791.346 15346.5 -418.286 482.318 15346.5 -418.286 482.318 15346.5 -418.286 941.736 15346.5 -418.286 941.736 15346.5 -418.286 791.346 15346.5 -418.286 791.346 15346.5 -418.286 791.346 15346.5 -418.286 482.318 15346.5 -418.286 482.318 15346.5 -418.286 941.736 15346.5 -418.286 941.736 15346.5 94.6064 941.737 14980.7 94.6067 791.346 14980.7 94.6067 791.346 14980.7 94.6067 482.319 14980.7 94.6074 482.319 14980.7 94.6074 791.346 14980.7 94.6074 791.346 14980.7 94.6074 941.737 14980.7 -22840.8 482.319 4317.47 -22840.8 791.346 4317.47 -22840.8 791.346 4317.47 -22840.8 791.346 4317.47 -22840.8 791.346 4317.47 -22840.8 482.319 4317.47 -22840.8 941.737 4317.47 -22840.8 941.737 4317.47 -22477.9 791.346 4826.29 -22477.9 791.346 4826.29 -22477.9 791.346 4826.29 -22477.9 482.319 4826.29 -22477.9 482.319 4826.29 -22477.9 941.737 4826.29 -22477.9 941.737 4826.29 -22477.9 791.346 4826.29 -22477.9 791.346 4826.29 -22477.9 791.346 4826.29 -22477.9 941.737 4826.29 -22477.9 941.737 4826.29 -22477.9 482.319 4826.29 -22477.9 482.319 4826.29 -22103.3 941.736 5351.4 -22103.3 941.736 5351.4 -22103.3 791.346 5351.4 -22103.3 791.346 5351.4 -22103.3 791.346 5351.4 -22103.3 791.346 5351.4 -22103.3 791.346 5351.4 -22103.3 791.346 5351.4 -22103.3 941.736 5351.4 -22103.3 941.736 5351.4 -22103.3 482.318 5351.4 -22103.3 482.318 5351.4 -22103.3 482.318 5351.4 -22103.3 482.318 5351.4 -21728.8 791.346 5876.5 -21728.8 791.346 5876.5 -21728.8 791.346 5876.5 -21728.8 482.319 5876.5 -21728.8 482.319 5876.5 -21728.8 482.319 5876.5 -21728.8 482.319 5876.5 -21728.8 791.346 5876.5 -21728.8 791.346 5876.5 -21728.8 791.346 5876.5 -21728.8 941.737 5876.5 -21728.8 941.737 5876.5 -21728.8 941.737 5876.5 -21728.8 941.737 5876.5 -21354.2 791.347 6401.61 -21354.2 791.347 6401.61 -21354.2 482.319 6401.61 -21354.2 482.319 6401.61 -21354.2 941.737 6401.61 -21354.2 941.737 6401.61 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_landing_nos_lv2_.xno-geometry-position-array" count="266" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapD_landing_nos_lv2_.xno-geometry-normal">
+          <float_array id="kdv_mapD_landing_nos_lv2_.xno-geometry-normal-array" count="24">-0.233445 -1.52429e-008 -0.97237 0.233445 1.05222e-009 0.97237 -0.573577 -4.01948e-008 -0.819152 0.573576 -9.2272e-008 0.819152 -0.580703 4.25475e-007 -0.814115 0.580702 -5.6223e-007 0.814116 -0.814116 -1.39782e-008 0.580703 0.814116 3.02372e-008 -0.580703 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_landing_nos_lv2_.xno-geometry-normal-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapD_landing_nos_lv2_.xno-geometry-uv">
+          <float_array id="kdv_mapD_landing_nos_lv2_.xno-geometry-uv-array" count="36">0.994493 -0.00236177 0.00550246 -0.00236177 0.994502 -0.996879 0.0054978 -0.996879 0.994484 0.978067 0.0055164 0.978067 -1.0054 -0.99902 -2.99747 0.978617 -2.99744 -0.00314248 -1.00542 -0.00315368 2.00542 -0.00315368 3.99744 -0.00314248 3.99747 0.978617 2.0054 -0.99902 -2.9391 0.978617 -2.93906 -0.00314248 3.93906 -0.00314248 3.9391 0.978617 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_landing_nos_lv2_.xno-geometry-uv-array" count="18" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapD_landing_nos_lv2_.xno-geometry-uv2">
+          <float_array id="kdv_mapD_landing_nos_lv2_.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_landing_nos_lv2_.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapD_landing_nos_lv2_.xno-geometry-color">
+          <float_array id="kdv_mapD_landing_nos_lv2_.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_landing_nos_lv2_.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="kdv_mapD_landing_nos_lv2_.xno-geometry-vertex">
+          <input semantic="POSITION" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-position" />
+        </vertices>
+        <triangles material="kdv_mapD_landing_nos_lv2_.xno0" count="16">
+          <input semantic="VERTEX" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-color" offset="4" set="0" />
+          <p>4 0 4 0 0 8 0 7 0 0 0 0 0 0 0 10 0 8 0 0 0 0 0 0 0 8 0 7 0 0 45 1 11 0 0 37 1 12 0 0 27 1 1 0 0 23 1 5 0 0 27 1 1 0 0 37 1 12 0 0 9 0 4 0 0 30 0 7 0 0 12 0 0 0 0 20 0 8 0 0 12 0 0 0 0 30 0 7 0 0 35 0 4 0 0 48 0 14 0 0 40 0 0 0 0 49 0 15 0 0 40 0 0 0 0 48 0 14 0 0 31 0 4 0 0 34 0 7 0 0 22 0 0 0 0 38 0 8 0 0 22 0 0 0 0 34 0 7 0 0 15 1 11 0 0 17 1 12 0 0 1 1 1 0 0 5 1 5 0 0 1 1 1 0 0 17 1 12 0 0 29 1 11 0 0 24 1 12 0 0 13 1 1 0 0 16 1 5 0 0 13 1 1 0 0 24 1 12 0 0 54 1 16 0 0 55 1 17 0 0 43 1 1 0 0 36 1 5 0 0 43 1 1 0 0 55 1 17 0 0 </p>
+        </triangles>
+        <triangles material="kdv_mapD_landing_nos_lv2_.xno0" count="16">
+          <input semantic="VERTEX" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-color" offset="4" set="0" />
+          <p>60 2 4 0 0 67 2 7 0 0 58 2 0 0 0 64 2 8 0 0 58 2 0 0 0 67 2 7 0 0 99 3 11 0 0 103 3 12 0 0 87 3 1 0 0 85 3 5 0 0 87 3 1 0 0 103 3 12 0 0 68 2 4 0 0 81 2 7 0 0 66 2 0 0 0 76 2 8 0 0 66 2 0 0 0 81 2 7 0 0 91 2 4 0 0 107 2 14 0 0 94 2 0 0 0 104 2 15 0 0 94 2 0 0 0 107 2 14 0 0 82 2 4 0 0 90 2 7 0 0 78 2 0 0 0 92 2 8 0 0 78 2 0 0 0 90 2 7 0 0 73 3 11 0 0 70 3 12 0 0 59 3 1 0 0 61 3 5 0 0 59 3 1 0 0 70 3 12 0 0 89 3 11 0 0 86 3 12 0 0 71 3 1 0 0 69 3 5 0 0 71 3 1 0 0 86 3 12 0 0 110 3 16 0 0 111 3 17 0 0 97 3 1 0 0 102 3 5 0 0 97 3 1 0 0 111 3 17 0 0 </p>
+        </triangles>
+        <triangles material="kdv_mapD_landing_nos_lv2_.xno0" count="28">
+          <input semantic="VERTEX" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-color" offset="4" set="0" />
+          <p>172 4 4 0 0 176 4 7 0 0 170 4 0 0 0 178 4 8 0 0 170 4 0 0 0 176 4 7 0 0 157 5 11 0 0 159 5 12 0 0 139 5 1 0 0 142 5 5 0 0 139 5 1 0 0 159 5 12 0 0 177 4 4 0 0 193 4 7 0 0 180 4 0 0 0 188 4 8 0 0 180 4 0 0 0 193 4 7 0 0 194 4 4 0 0 202 4 7 0 0 190 4 0 0 0 203 4 8 0 0 190 4 0 0 0 202 4 7 0 0 185 5 11 0 0 182 5 12 0 0 171 5 1 0 0 173 5 5 0 0 171 5 1 0 0 182 5 12 0 0 197 5 11 0 0 201 5 12 0 0 183 5 1 0 0 181 5 5 0 0 183 5 1 0 0 201 5 12 0 0 208 5 11 0 0 209 5 12 0 0 195 5 1 0 0 200 5 5 0 0 195 5 1 0 0 209 5 12 0 0 116 4 4 0 0 123 4 7 0 0 114 4 0 0 0 120 4 8 0 0 114 4 0 0 0 123 4 7 0 0 124 4 4 0 0 135 4 7 0 0 122 4 0 0 0 132 4 8 0 0 122 4 0 0 0 135 4 7 0 0 147 4 4 0 0 160 4 14 0 0 150 4 0 0 0 162 4 15 0 0 150 4 0 0 0 160 4 14 0 0 136 4 4 0 0 146 4 7 0 0 134 4 0 0 0 148 4 8 0 0 134 4 0 0 0 146 4 7 0 0 131 5 11 0 0 128 5 12 0 0 115 5 1 0 0 117 5 5 0 0 115 5 1 0 0 128 5 12 0 0 141 5 11 0 0 143 5 12 0 0 129 5 1 0 0 127 5 5 0 0 129 5 1 0 0 143 5 12 0 0 166 5 16 0 0 164 5 17 0 0 155 5 1 0 0 158 5 5 0 0 155 5 1 0 0 164 5 17 0 0 </p>
+        </triangles>
+        <triangles material="kdv_mapD_landing_nos_lv2_.xno0" count="16">
+          <input semantic="VERTEX" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-color" offset="4" set="0" />
+          <p>264 6 4 0 0 256 6 7 0 0 260 6 0 0 0 246 6 8 0 0 260 6 0 0 0 256 6 7 0 0 220 7 11 0 0 224 7 12 0 0 237 7 1 0 0 232 7 5 0 0 237 7 1 0 0 224 7 12 0 0 257 6 4 0 0 240 6 7 0 0 248 6 0 0 0 234 6 8 0 0 248 6 0 0 0 240 6 7 0 0 229 6 4 0 0 217 6 14 0 0 227 6 0 0 0 211 6 15 0 0 227 6 0 0 0 217 6 14 0 0 241 6 4 0 0 228 6 7 0 0 236 6 0 0 0 225 6 8 0 0 236 6 0 0 0 228 6 7 0 0 255 7 11 0 0 259 7 12 0 0 261 7 1 0 0 265 7 5 0 0 261 7 1 0 0 259 7 12 0 0 239 7 11 0 0 233 7 12 0 0 253 7 1 0 0 258 7 5 0 0 253 7 1 0 0 233 7 12 0 0 214 7 16 0 0 216 7 17 0 0 218 7 1 0 0 223 7 5 0 0 218 7 1 0 0 216 7 17 0 0 </p>
+        </triangles>
+        <triangles material="kdv_mapD_landing_nos_lv2_.xno1" count="16">
+          <input semantic="VERTEX" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-color" offset="4" set="0" />
+          <p>0 0 0 0 0 11 0 9 0 0 2 0 2 0 0 6 0 6 0 0 2 0 2 0 0 11 0 9 0 0 47 1 13 0 0 44 1 10 0 0 32 1 3 0 0 27 1 1 0 0 32 1 3 0 0 44 1 10 0 0 12 0 0 0 0 21 0 9 0 0 7 0 2 0 0 25 0 6 0 0 7 0 2 0 0 21 0 9 0 0 40 0 0 0 0 50 0 9 0 0 42 0 2 0 0 51 0 6 0 0 42 0 2 0 0 50 0 9 0 0 22 0 0 0 0 39 0 9 0 0 26 0 2 0 0 41 0 6 0 0 26 0 2 0 0 39 0 9 0 0 19 1 13 0 0 14 1 10 0 0 3 1 3 0 0 1 1 1 0 0 3 1 3 0 0 14 1 10 0 0 33 1 13 0 0 28 1 10 0 0 18 1 3 0 0 13 1 1 0 0 18 1 3 0 0 28 1 10 0 0 52 1 13 0 0 53 1 10 0 0 46 1 3 0 0 43 1 1 0 0 46 1 3 0 0 53 1 10 0 0 </p>
+        </triangles>
+        <triangles material="kdv_mapD_landing_nos_lv2_.xno1" count="16">
+          <input semantic="VERTEX" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-color" offset="4" set="0" />
+          <p>58 2 0 0 0 65 2 9 0 0 56 2 2 0 0 62 2 6 0 0 56 2 2 0 0 65 2 9 0 0 101 3 13 0 0 98 3 10 0 0 83 3 3 0 0 87 3 1 0 0 83 3 3 0 0 98 3 10 0 0 66 2 0 0 0 77 2 9 0 0 63 2 2 0 0 79 2 6 0 0 63 2 2 0 0 77 2 9 0 0 94 2 0 0 0 105 2 9 0 0 96 2 2 0 0 106 2 6 0 0 96 2 2 0 0 105 2 9 0 0 78 2 0 0 0 93 2 9 0 0 80 2 2 0 0 95 2 6 0 0 80 2 2 0 0 93 2 9 0 0 75 3 13 0 0 72 3 10 0 0 57 3 3 0 0 59 3 1 0 0 57 3 3 0 0 72 3 10 0 0 84 3 13 0 0 88 3 10 0 0 74 3 3 0 0 71 3 1 0 0 74 3 3 0 0 88 3 10 0 0 108 3 13 0 0 109 3 10 0 0 100 3 3 0 0 97 3 1 0 0 100 3 3 0 0 109 3 10 0 0 </p>
+        </triangles>
+        <triangles material="kdv_mapD_landing_nos_lv2_.xno1" count="28">
+          <input semantic="VERTEX" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-color" offset="4" set="0" />
+          <p>170 4 0 0 0 179 4 9 0 0 168 4 2 0 0 174 4 6 0 0 168 4 2 0 0 179 4 9 0 0 154 5 13 0 0 156 5 10 0 0 144 5 3 0 0 139 5 1 0 0 144 5 3 0 0 156 5 10 0 0 180 4 0 0 0 189 4 9 0 0 175 4 2 0 0 191 4 6 0 0 175 4 2 0 0 189 4 9 0 0 190 4 0 0 0 204 4 9 0 0 192 4 2 0 0 205 4 6 0 0 192 4 2 0 0 204 4 9 0 0 187 5 13 0 0 184 5 10 0 0 169 5 3 0 0 171 5 1 0 0 169 5 3 0 0 184 5 10 0 0 199 5 13 0 0 196 5 10 0 0 186 5 3 0 0 183 5 1 0 0 186 5 3 0 0 196 5 10 0 0 206 5 13 0 0 207 5 10 0 0 198 5 3 0 0 195 5 1 0 0 198 5 3 0 0 207 5 10 0 0 114 4 0 0 0 121 4 9 0 0 112 4 2 0 0 118 4 6 0 0 112 4 2 0 0 121 4 9 0 0 122 4 0 0 0 133 4 9 0 0 119 4 2 0 0 137 4 6 0 0 119 4 2 0 0 133 4 9 0 0 150 4 0 0 0 163 4 9 0 0 152 4 2 0 0 161 4 6 0 0 152 4 2 0 0 163 4 9 0 0 134 4 0 0 0 149 4 9 0 0 138 4 2 0 0 151 4 6 0 0 138 4 2 0 0 149 4 9 0 0 126 5 13 0 0 130 5 10 0 0 113 5 3 0 0 115 5 1 0 0 113 5 3 0 0 130 5 10 0 0 145 5 13 0 0 140 5 10 0 0 125 5 3 0 0 129 5 1 0 0 125 5 3 0 0 140 5 10 0 0 167 5 13 0 0 165 5 10 0 0 153 5 3 0 0 155 5 1 0 0 153 5 3 0 0 165 5 10 0 0 </p>
+        </triangles>
+        <triangles material="kdv_mapD_landing_nos_lv2_.xno1" count="16">
+          <input semantic="VERTEX" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#kdv_mapD_landing_nos_lv2_.xno-geometry-color" offset="4" set="0" />
+          <p>260 6 0 0 0 247 6 9 0 0 263 6 2 0 0 249 6 6 0 0 263 6 2 0 0 247 6 9 0 0 231 7 13 0 0 219 7 10 0 0 242 7 3 0 0 237 7 1 0 0 242 7 3 0 0 219 7 10 0 0 248 6 0 0 0 235 6 9 0 0 250 6 2 0 0 244 6 6 0 0 250 6 2 0 0 235 6 9 0 0 227 6 0 0 0 212 6 9 0 0 222 6 2 0 0 210 6 6 0 0 222 6 2 0 0 212 6 9 0 0 236 6 0 0 0 226 6 9 0 0 245 6 2 0 0 221 6 6 0 0 245 6 2 0 0 226 6 9 0 0 252 7 13 0 0 254 7 10 0 0 262 7 3 0 0 261 7 1 0 0 262 7 3 0 0 254 7 10 0 0 243 7 13 0 0 238 7 10 0 0 251 7 3 0 0 253 7 1 0 0 251 7 3 0 0 238 7 10 0 0 215 7 13 0 0 213 7 10 0 0 230 7 3 0 0 218 7 1 0 0 230 7 3 0 0 213 7 10 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="kdv_mapD_landing_nos_lv2_.xno-controller">
+      <skin source="#kdv_mapD_landing_nos_lv2_.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="kdv_mapD_landing_nos_lv2_.xno-controller-Joints">
+          <Name_array id="kdv_mapD_landing_nos_lv2_.xno-controller-Joints-array" count="5">kdv_mapD_landing_nos_lv2_.xno0 kdv_mapD_landing_nos_lv2_.xno1 kdv_mapD_landing_nos_lv2_.xno2 kdv_mapD_landing_nos_lv2_.xno3 kdv_mapD_landing_nos_lv2_.xno4 </Name_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_landing_nos_lv2_.xno-controller-Joints-array" count="5">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapD_landing_nos_lv2_.xno-controller-Matrices">
+          <float_array id="kdv_mapD_landing_nos_lv2_.xno-controller-Matrices-array" count="80">1 0 0 -1959.08 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 -21179.7 0 1 0 -710 0 0 1 257.235 0 0 0 1 1 0 0 3960.34 0 1 0 -1610 0 0 1 1032.23 0 0 0 1 1 0 0 2550 0 1 0 -710 0 0 1 -13550 0 0 0 1 1 0 0 22088.8 0 1 0 -710 0 0 1 -5371.75 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_landing_nos_lv2_.xno-controller-Matrices-array" count="5" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapD_landing_nos_lv2_.xno-controller-Weights">
+          <float_array id="kdv_mapD_landing_nos_lv2_.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_landing_nos_lv2_.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#kdv_mapD_landing_nos_lv2_.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#kdv_mapD_landing_nos_lv2_.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="266">
+          <input semantic="JOINT" offset="0" source="#kdv_mapD_landing_nos_lv2_.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#kdv_mapD_landing_nos_lv2_.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="kdv_mapD_landing_nos_lv2_.xno0" sid="kdv_mapD_landing_nos_lv2_.xno0" name="kdv_mapD_landing_nos_lv2_.xno0" type="JOINT">
+        <matrix>1 0 0 1959.08 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <node id="kdv_mapD_landing_nos_lv2_.xno4" sid="kdv_mapD_landing_nos_lv2_.xno4" name="kdv_mapD_landing_nos_lv2_.xno4" type="JOINT">
+          <matrix>1 0 0 -24047.9 0 1 0 710 0 0 1 5371.75 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="kdv_mapD_landing_nos_lv2_.xno3" sid="kdv_mapD_landing_nos_lv2_.xno3" name="kdv_mapD_landing_nos_lv2_.xno3" type="JOINT">
+          <matrix>1 0 0 -4509.08 0 1 0 710 0 0 1 13550 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="kdv_mapD_landing_nos_lv2_.xno2" sid="kdv_mapD_landing_nos_lv2_.xno2" name="kdv_mapD_landing_nos_lv2_.xno2" type="JOINT">
+          <matrix>1 0 0 -5919.42 0 1 0 1610 0 0 1 -1032.23 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="kdv_mapD_landing_nos_lv2_.xno1" sid="kdv_mapD_landing_nos_lv2_.xno1" name="kdv_mapD_landing_nos_lv2_.xno1" type="JOINT">
+          <matrix>1 0 0 19220.6 0 1 0 710 0 0 1 -257.235 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="kdv_mapD_landing_nos_lv2_.xno" sid="kdv_mapD_landing_nos_lv2_.xno" name="kdv_mapD_landing_nos_lv2_.xno">
+        <instance_controller url="#kdv_mapD_landing_nos_lv2_.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="kdv_mapD_landing_nos_lv2_.xno0" target="#kdv_mapD_landing_nos_lv2_.xno0ID" />
+              <instance_material symbol="kdv_mapD_landing_nos_lv2_.xno1" target="#kdv_mapD_landing_nos_lv2_.xno1ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

@@ -1,0 +1,212 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="kdv_tree10_dfpt_p_n.dds-image" name="kdv_tree10_dfpt_p_n.dds-image">
+      <init_from>./textures/kdv_tree10_dfpt_p_n.dds</init_from>
+    </image>
+    <image id="kdv_tree11_dfpt_p_n.dds-image" name="kdv_tree11_dfpt_p_n.dds-image">
+      <init_from>./textures/kdv_tree11_dfpt_p_n.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="kdv_mapD_fartree_nos_.xno0ID" name="kdv_mapD_fartree_nos_.xno0">
+      <instance_effect url="#kdv_mapD_fartree_nos_.xno0-effect" />
+    </material>
+    <material id="kdv_mapD_fartree_nos_.xno1ID" name="kdv_mapD_fartree_nos_.xno1">
+      <instance_effect url="#kdv_mapD_fartree_nos_.xno1-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="kdv_mapD_fartree_nos_.xno0-effect" name="kdv_mapD_fartree_nos_.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_tree10_dfpt_p_n.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_tree10_dfpt_p_n.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_tree10_dfpt_p_n.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_tree10_dfpt_p_n.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_tree10_dfpt_p_n.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="kdv_mapD_fartree_nos_.xno1-effect" name="kdv_mapD_fartree_nos_.xno1-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_tree11_dfpt_p_n.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_tree11_dfpt_p_n.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_tree11_dfpt_p_n.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_tree11_dfpt_p_n.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_tree11_dfpt_p_n.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="kdv_mapD_fartree_nos_.xno-geometry" name="kdv_mapD_fartree_nos_.xno-geometry">
+      <mesh>
+        <source id="kdv_mapD_fartree_nos_.xno-geometry-position">
+          <float_array id="kdv_mapD_fartree_nos_.xno-geometry-position-array" count="432">-5304.1 9553.24 4927.94 -5099.86 10063.6 1698.66 -4858.24 10330.5 3491.41 -4849.05 9567.98 441.907 -4377.58 8439.28 2483.39 -4126.76 7943.65 1226.64 -3987.62 10263.6 5720.9 -3936.91 7678.24 4337.81 -3849.17 10632 1724.09 -3720.1 10624 217.431 -3598.36 10136.4 467.339 -3541.75 11040.9 4284.37 -3491.04 8455.49 2901.28 -3432.61 8791.21 795.578 -3256.43 11816.5 4495.19 -3126.89 9007.7 2508.83 -2884.84 10417.1 -853.782 -2876.08 8512.08 1252.08 -2814.25 9538.54 3905.06 -2648.2 11031 974.627 -2620.42 8388.61 5130.77 -2597.35 8584.32 -275.635 -2522.83 12331.1 3058.66 -2360.71 9198.21 1552.77 -2174.56 9165.86 3694.24 -2080.65 10053.1 2468.53 -1812.94 10824.1 -96.5854 -1762.9 11901 5288.15 -1525.45 8991.31 481.562 -1444.14 11104.1 -730.089 -1426.85 11718.6 3932.86 -1400.54 9840.49 3434.9 -1320.72 9623.02 4698.02 -1029.31 12415.6 3851.62 -1024.01 9412.23 128.465 -1018.55 10211.5 -2531.56 -977.527 11391.7 5189.53 -951.215 9513.6 4691.57 -898.264 10942.6 -1374.38 -671.019 10748.6 -1808.92 -669.272 9208.46 4318.4 -587.127 10137.6 3261.48 -543.349 11494.9 5017.87 -358.109 8636.29 -1605.04 -347.785 11678.9 -133.824 -269.688 10714.6 -2010.77 -250.891 9056.74 -950.369 -237.822 9367.35 -447.864 -128.5 11850.8 3503 -102.188 9972.66 3005.04 72.3434 9987.07 724.73 108.054 8729.49 5744.2 224.628 8423.09 -1522.98 233.977 11016 6443.66 268.078 10547.5 -2877.53 320.83 11523.9 4759.67 347.142 9645.76 4261.71 388.364 11278.5 -1720.36 425.337 11323.4 -1212.66 822.102 11205 -813.273 832.185 9360.56 3550.92 845.466 9631.58 -354.104 928.519 8972.24 -1951.02 958.109 11647 4250.38 976.25 10739.4 -3156.88 1048.81 9703.3 -793.844 1316.42 8913.53 -325.483 1470.57 8447.89 -2669.09 1609.51 8881.58 4976.71 1735.44 11168.1 5676.18 2068.04 11229.8 -1959.38 2562.36 8938.33 -1471.59 3364.22 7427.54 -2017.48 3969.82 5113.5 -2125.09 4171.92 7706.88 -3479.03 4253.8 8481.44 -2053.56 4294.21 10951.2 -1143.85 4320.52 9073.11 -1641.81 4434.29 10869 -2053.56 4743.54 10624.3 112.818 4769.85 8746.21 -385.143 4777.52 5392.85 -3586.64 4789.28 7760.9 -1166.23 5097.94 8417.63 -3519.82 5278.42 10805.2 -3519.82 5394.88 5446.86 -1273.84 5524.13 8366.41 -3249.29 5592.56 11083.4 -1573.7 5596.98 8040.25 -2627.78 5618.88 9205.27 -2071.67 5715.89 8370.91 -1207.02 5896.37 10758.5 -1207.02 5974.55 10254.1 -3347.64 6041.89 10756.5 -317.038 6068.21 8878.37 -814.999 6202.58 5726.21 -2735.39 6324.81 8118.64 -4338.1 6560.02 8307.1 -2673.28 6594.39 8154.56 -2414.04 6740.51 10694.7 -2673.28 6775.23 10006.3 -4436.45 7044.81 10042.3 -2512.39 7395.06 7906.78 -3502.85 7845.48 9794.48 -3601.2 8134.77 9545.33 -6781.55 8447.48 7205.67 -6379.94 9000.9 9412.42 -8230.24 9313.61 7072.76 -7828.63 9440.2 6822.27 -7674.18 9440.2 8744.11 -7961.37 9572.63 9879.81 -5952.58 9885.35 7540.15 -5550.96 9894.88 7380.88 -2466.15 9910.15 7013.1 -6397.19 9910.15 8934.94 -6684.38 10200.5 9297.35 -2564.5 10382.3 6819.57 -6408.65 10438.8 9746.9 -7401.27 10712.1 7194.68 -3554.96 10731.4 6752.82 -8138.97 10731.4 8674.66 -8426.16 10751.5 7407.25 -6999.65 10978.1 7250.99 -1630.9 11017.7 9111.15 -3653.31 11062.6 9115.29 -6408.65 11194 6579.06 -7874.9 11201.3 6943.65 -6861.98 11201.3 8865.48 -7149.17 11283.8 9167.46 -1729.25 11788.1 6402.99 -5562.1 11795.3 7064.79 -2719.71 11807.4 6811.17 -3340.57 11874.2 8874.78 -7874.9 12101 8981.26 -2818.06 12113.7 9151.67 -3742.18 12468.4 8698.71 -5562.1 12599.8 6162.48 -7028.36 12609.2 6457.64 -4789.25 12915.5 8798.15 -5190.87 13280.1 8458.2 -7028.36 13282.8 6760.31 -2511.59 13589.1 9100.82 -2913.2 14084.6 6406.79 -3960.28 14390.9 8747.29 -4361.89 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_fartree_nos_.xno-geometry-position-array" count="144" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapD_fartree_nos_.xno-geometry-normal">
+          <float_array id="kdv_mapD_fartree_nos_.xno-geometry-normal-array" count="102">-0.363607 0.0279305 -0.931134 0.514556 0.547584 0.659837 -0.736036 -0.621294 0.268785 0.772703 0.0374638 -0.633661 0.121778 0.315921 0.940938 -0.317381 0.17961 -0.931134 0.981469 0.102978 -0.161599 -0.930143 -0.250179 0.268785 0.166343 0.478765 0.862041 0.436927 0.236242 -0.86792 0.600223 -0.203335 -0.773555 0.899395 -0.100215 0.425494 0.724027 0.549102 0.417458 0.962073 0.112884 -0.24834 -0.302429 -0.263563 0.916008 0.0643787 -0.194471 -0.978793 -0.95172 0.136521 -0.274938 -0.976337 -0.215185 -0.0214632 -0.257834 -0.0225577 -0.965926 -0.932497 -0.255894 0.254887 -0.258083 0.0195097 -0.965926 -0.963178 0.072811 0.258819 0.138732 0.0184856 0.990157 0.962821 -0.236536 -0.130486 -0.238783 -0.195202 -0.951251 -0.96225 -0.0841861 0.258819 -0.422619 0.133948 0.896355 0.136926 0.0289771 0.990157 -0.906308 -0.0624608 -0.417977 -0.248154 0.0735331 -0.965926 0.978014 -0.162668 -0.130487 -0.926122 0.274429 0.258819 -0.281322 -0.126409 -0.951251 -0.951047 0.168884 0.258819 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_fartree_nos_.xno-geometry-normal-array" count="34" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapD_fartree_nos_.xno-geometry-uv">
+          <float_array id="kdv_mapD_fartree_nos_.xno-geometry-uv-array" count="8">1 1 0 1 0 0 1 0 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_fartree_nos_.xno-geometry-uv-array" count="4" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapD_fartree_nos_.xno-geometry-uv2">
+          <float_array id="kdv_mapD_fartree_nos_.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_fartree_nos_.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapD_fartree_nos_.xno-geometry-color">
+          <float_array id="kdv_mapD_fartree_nos_.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_fartree_nos_.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="kdv_mapD_fartree_nos_.xno-geometry-vertex">
+          <input semantic="POSITION" source="#kdv_mapD_fartree_nos_.xno-geometry-position" />
+        </vertices>
+        <triangles material="kdv_mapD_fartree_nos_.xno0" count="36">
+          <input semantic="VERTEX" source="#kdv_mapD_fartree_nos_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#kdv_mapD_fartree_nos_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_fartree_nos_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_fartree_nos_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#kdv_mapD_fartree_nos_.xno-geometry-color" offset="4" set="0" />
+          <p>64 17 1 0 0 67 17 2 0 0 59 17 0 0 0 66 17 3 0 0 59 17 0 0 0 67 17 2 0 0 99 20 1 0 0 97 20 2 0 0 78 20 0 0 0 75 20 3 0 0 78 20 0 0 0 97 20 2 0 0 70 15 1 0 0 71 15 2 0 0 45 15 0 0 0 52 15 3 0 0 45 15 0 0 0 71 15 2 0 0 2 2 1 0 0 12 2 2 0 0 6 2 0 0 0 20 2 3 0 0 6 2 0 0 0 12 2 2 0 0 11 0 1 0 0 24 0 2 0 0 0 0 0 0 0 7 0 3 0 0 0 0 0 0 0 24 0 2 0 0 42 14 1 0 0 40 14 2 0 0 69 14 0 0 0 68 14 3 0 0 69 14 0 0 0 40 14 2 0 0 63 16 1 0 0 60 16 2 0 0 53 16 0 0 0 51 16 3 0 0 53 16 0 0 0 60 16 2 0 0 22 7 1 0 0 25 7 2 0 0 27 7 0 0 0 32 7 3 0 0 27 7 0 0 0 25 7 2 0 0 33 5 1 0 0 41 5 2 0 0 14 5 0 0 0 18 5 3 0 0 14 5 0 0 0 41 5 2 0 0 132 31 1 0 0 125 31 2 0 0 135 31 0 0 0 129 31 3 0 0 135 31 0 0 0 125 31 2 0 0 139 29 1 0 0 136 29 2 0 0 124 29 0 0 0 116 29 3 0 0 124 29 0 0 0 136 29 2 0 0 106 25 1 0 0 107 25 2 0 0 110 25 0 0 0 111 25 3 0 0 110 25 0 0 0 107 25 2 0 0 117 24 1 0 0 121 24 2 0 0 104 24 0 0 0 105 24 3 0 0 104 24 0 0 0 121 24 2 0 0 74 19 1 0 0 81 19 2 0 0 82 19 0 0 0 85 19 3 0 0 82 19 0 0 0 81 19 2 0 0 88 18 1 0 0 95 18 2 0 0 72 18 0 0 0 73 18 3 0 0 72 18 0 0 0 95 18 2 0 0 138 33 1 0 0 137 33 2 0 0 141 33 0 0 0 140 33 3 0 0 141 33 0 0 0 137 33 2 0 0 143 32 1 0 0 142 32 2 0 0 134 32 0 0 0 131 32 3 0 0 134 32 0 0 0 142 32 2 0 0 84 21 1 0 0 83 21 2 0 0 91 21 0 0 0 90 21 3 0 0 91 21 0 0 0 83 21 2 0 0 </p>
+        </triangles>
+        <triangles material="kdv_mapD_fartree_nos_.xno1" count="36">
+          <input semantic="VERTEX" source="#kdv_mapD_fartree_nos_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#kdv_mapD_fartree_nos_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_fartree_nos_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_fartree_nos_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#kdv_mapD_fartree_nos_.xno-geometry-color" offset="4" set="0" />
+          <p>29 8 1 0 0 34 8 2 0 0 58 8 0 0 0 61 8 3 0 0 58 8 0 0 0 34 8 2 0 0 109 26 1 0 0 108 26 2 0 0 127 26 0 0 0 126 26 3 0 0 127 26 0 0 0 108 26 2 0 0 44 13 1 0 0 50 13 2 0 0 39 13 0 0 0 46 13 3 0 0 39 13 0 0 0 50 13 2 0 0 38 12 1 0 0 47 12 2 0 0 54 12 0 0 0 62 12 3 0 0 54 12 0 0 0 47 12 2 0 0 57 10 1 0 0 65 10 2 0 0 35 10 0 0 0 43 10 3 0 0 35 10 0 0 0 65 10 2 0 0 36 11 1 0 0 37 11 2 0 0 48 11 0 0 0 49 11 3 0 0 48 11 0 0 0 37 11 2 0 0 55 9 1 0 0 56 9 2 0 0 30 9 0 0 0 31 9 3 0 0 30 9 0 0 0 56 9 2 0 0 1 1 1 0 0 4 1 2 0 0 10 1 0 0 0 17 1 3 0 0 10 1 0 0 0 4 1 2 0 0 8 3 1 0 0 15 3 2 0 0 3 3 0 0 0 5 3 3 0 0 3 3 0 0 0 15 3 2 0 0 9 4 1 0 0 13 4 2 0 0 26 4 0 0 0 28 4 3 0 0 26 4 0 0 0 13 4 2 0 0 19 6 1 0 0 23 6 2 0 0 16 6 0 0 0 21 6 3 0 0 16 6 0 0 0 23 6 2 0 0 115 27 1 0 0 112 27 2 0 0 133 27 0 0 0 130 27 3 0 0 133 27 0 0 0 112 27 2 0 0 128 30 1 0 0 122 30 2 0 0 123 30 0 0 0 118 30 3 0 0 123 30 0 0 0 122 30 2 0 0 92 22 1 0 0 86 22 2 0 0 103 22 0 0 0 102 22 3 0 0 103 22 0 0 0 86 22 2 0 0 101 23 1 0 0 98 23 2 0 0 100 23 0 0 0 96 23 3 0 0 100 23 0 0 0 98 23 2 0 0 79 11 1 0 0 80 11 2 0 0 87 11 0 0 0 89 11 3 0 0 87 11 0 0 0 80 11 2 0 0 93 9 1 0 0 94 9 2 0 0 76 9 0 0 0 77 9 3 0 0 76 9 0 0 0 94 9 2 0 0 120 28 1 0 0 119 28 2 0 0 114 28 0 0 0 113 28 3 0 0 114 28 0 0 0 119 28 2 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="kdv_mapD_fartree_nos_.xno-controller">
+      <skin source="#kdv_mapD_fartree_nos_.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="kdv_mapD_fartree_nos_.xno-controller-Joints">
+          <Name_array id="kdv_mapD_fartree_nos_.xno-controller-Joints-array" count="1">kdv_mapD_fartree_nos_.xno0 </Name_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_fartree_nos_.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapD_fartree_nos_.xno-controller-Matrices">
+          <float_array id="kdv_mapD_fartree_nos_.xno-controller-Matrices-array" count="16">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_fartree_nos_.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapD_fartree_nos_.xno-controller-Weights">
+          <float_array id="kdv_mapD_fartree_nos_.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_fartree_nos_.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#kdv_mapD_fartree_nos_.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#kdv_mapD_fartree_nos_.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="144">
+          <input semantic="JOINT" offset="0" source="#kdv_mapD_fartree_nos_.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#kdv_mapD_fartree_nos_.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="kdv_mapD_fartree_nos_.xno0" sid="kdv_mapD_fartree_nos_.xno0" name="kdv_mapD_fartree_nos_.xno0" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="kdv_mapD_fartree_nos_.xno" sid="kdv_mapD_fartree_nos_.xno" name="kdv_mapD_fartree_nos_.xno">
+        <instance_controller url="#kdv_mapD_fartree_nos_.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="kdv_mapD_fartree_nos_.xno0" target="#kdv_mapD_fartree_nos_.xno0ID" />
+              <instance_material symbol="kdv_mapD_fartree_nos_.xno1" target="#kdv_mapD_fartree_nos_.xno1ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

@@ -122,6 +122,32 @@ function create_placement_node(node, value) {
   return div;
 }
 
+function create_terrain_node(node) {
+
+  var div = document.createElement("div");
+  div.classList.add("terrain-node");
+  div.style.opacity = 1;
+
+  var button = document.createElement("button");
+  button.classList.add("placement-button");
+
+  button.innerText = node.name;
+  button.addEventListener("click", (e) => {
+    if(div.style.opacity == 1) {
+      div.style.opacity = 0.5;
+      node.visible = false
+    } else {
+      div.style.opacity = 1;      
+      node.visible = true
+    }
+  })
+  div.appendChild(button);
+
+  return div;
+}
+
+
+
 function update_collision_heirarchy(collisionGroup) {
   var collision_container = document.getElementById("collision-hierarchy")
   collision_container.innerHTML = ""
@@ -170,6 +196,17 @@ function update_placement_heirarchy(placement_table) {
   })
 }
 
+function update_terrain_heirarchy(placement_table) {
+  var terrain_container = document.getElementById("terrain-hierarchy")
+  terrain_container.innerHTML = ""
+  
+  placement_table.forEach(k => {
+    terrain_container.appendChild(
+      create_terrain_node(k)
+    )
+  })
+}
+
 function addEventListeners(environment) {
 
   document.getElementById("load-collision").addEventListener("click", () => {
@@ -191,6 +228,30 @@ function addEventListeners(environment) {
       document.getElementById("placement-dropdown-input").value,  
       update_placement_heirarchy
     );
+  })
+
+  
+  document.getElementById("load-terrain").addEventListener("click", () => {
+
+
+
+    environment.load_terrain(
+      document.getElementById("collision-dropdown-input").value,
+      update_terrain_heirarchy
+    );
+  })
+
+  
+  document.getElementById("clear-all").addEventListener("click", () => {
+
+    environment.terrain_group.children = []
+    environment.collision_group.children = []
+
+    var placement_container = document.getElementById("collision-hierarchy")
+    placement_container.innerHTML = ""
+
+    var placement_container = document.getElementById("terrain-hierarchy")
+    placement_container.innerHTML = ""
   })
 
   

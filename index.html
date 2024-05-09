@@ -20,27 +20,34 @@
   <script type="module" src="./scripts/main.js" defer></script>
   <div id="framing-grid">
     <div id="toolbar">
-      <div>
-        <p>Collision</p>
+      <div style="display: flex; flex-direction: column; align-items: center;" id="zoo">
+        <p><strong>Stage</strong></p>
+        <p style="font-size: 12px;">Select Stage</p>
         <div id="collision-dropdown"></div>
-        <button id="load-collision">Load</button>
+        <button style="width: 100%;" id="load-collision">Load Collision</button>
+        <button style="width: 100%;" id="load-terrain">Load Terrain</button>
       </div>
-      <div>
-        <p>Placement</p>
-        <div id="placement-dropdown"></div>
-        <button id="load-placement">Load</button>
-        <button id="clear-placement">Clear</button>
-        <button id="open-placement">Open</button>
+      <div >
+        <p style="font-size: 12px;">Collison Hierarchy</p>
+        <div id="collision-hierarchy"></div>
       </div>
+      <div >
+        <p style="font-size: 12px;">Terrain Hierarchy</p>
+        <div id="terrain-hierarchy"></div>
+      </div>
+      <button style="width: 100%;" id="clear-all">Clear All</button>
+
     </div>
     <div id="viewport">
       <span id="speedometer" style="position: absolute; top: 0; left: 0; color: white;">speed: 1</span>
     </div>
     <div id="hierarchy">
-      <p><strong>Hierarchy</strong></p>
-      <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
-        <p style="font-size: 12px;">Collision</p>
-        <div id="collision-hierarchy"></div>
+      <p><strong>Placement</strong></p>
+      <div>
+        <div id="placement-dropdown"></div>
+        <button id="load-placement">Load</button>
+        <button id="clear-placement">Clear</button>
+        <button id="open-placement">Open</button>
       </div>
       <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
         <p style="font-size: 12px;">Placement</p>

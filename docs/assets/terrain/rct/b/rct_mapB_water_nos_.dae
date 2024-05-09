@@ -1,0 +1,208 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="kdv_water03_ntxx_y.dds-image" name="kdv_water03_ntxx_y.dds-image">
+      <init_from>./textures/kdv_water03_ntxx_y.dds</init_from>
+    </image>
+    <image id="kdv_water04_ntxx_y.dds-image" name="kdv_water04_ntxx_y.dds-image">
+      <init_from>./textures/kdv_water04_ntxx_y.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="rct_mapB_water_nos_.xno0ID" name="rct_mapB_water_nos_.xno0">
+      <instance_effect url="#rct_mapB_water_nos_.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="rct_mapB_water_nos_.xno0-effect" name="rct_mapB_water_nos_.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_water03_ntxx_y.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_water03_ntxx_y.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_water03_ntxx_y.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_water03_ntxx_y.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_water04_ntxx_y.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_water04_ntxx_y.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_water04_ntxx_y.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_water04_ntxx_y.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_water04_ntxx_y.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_water04_ntxx_y.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_water04_ntxx_y.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_water04_ntxx_y.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_water03_ntxx_y.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_water03_ntxx_y.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_water03_ntxx_y.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_water03_ntxx_y.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_water03_ntxx_y.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="rct_mapB_water_nos_.xno-geometry" name="rct_mapB_water_nos_.xno-geometry">
+      <mesh>
+        <source id="rct_mapB_water_nos_.xno-geometry-position">
+          <float_array id="rct_mapB_water_nos_.xno-geometry-position-array" count="240">-83392.8 -3070.92 27922 -78516.8 -3070.92 18610.7 -78516.8 -3070.92 27922 -78516.8 -3070.92 32577.6 -78516.8 -3070.92 23266.3 -78516.8 -3070.92 51200.3 -78516.8 -3070.92 37233.3 -78516.8 -3070.92 13955 -78516.8 -3070.92 46544.6 -73640.8 -3070.92 9299.35 -73640.8 -3070.92 51200.3 -73640.8 -3070.92 55855.9 -73640.8 -3070.92 4643.69 -68764.8 -3070.92 46544.6 -68764.8 -3070.92 18610.7 -68764.8 -3070.92 27922 -68764.8 -3070.92 -11.9688 -68764.8 -3070.92 60511.6 -68764.8 -3070.92 55855.9 -68764.8 -3070.92 37233.3 -68764.8 -3070.92 9299.35 -66791.9 -3070.92 -4667.63 -64819 -3070.92 -9323.29 -63888.8 -3070.92 65167.2 -59012.8 -3070.92 46544.6 -59012.8 -3070.92 18610.7 -59012.8 -3070.92 37233.3 -59012.8 -3070.92 -9323.29 -59012.8 -3070.92 -4667.63 -59012.8 -3070.92 55855.9 -59012.8 -3070.92 -11.9688 -59012.8 -3070.92 65167.2 -59012.8 -3070.92 27922 -59012.8 -3070.92 9299.35 -54136.9 -3070.92 -6682.14 -54136.9 -3070.92 65167.2 -49260.9 -3070.92 27922 -49260.9 -3070.92 69822.9 -49260.9 -3070.92 46544.6 -49260.9 -3070.92 9299.35 -49260.9 -3070.92 37233.3 -49260.9 -3070.92 55855.9 -49260.9 -3070.92 18610.7 -49260.9 -3070.92 -11.9688 -49260.9 -3070.92 65167.2 -47594.9 -3070.92 69822.9 -45928.8 -3070.92 65167.2 -45466.5 -3070.92 46544.6 -45268.3 -3070.92 60511.6 -45037.1 -3070.92 51200.3 -44607.7 -3070.92 55855.9 -44384.9 -3070.92 -11.9688 -44079.2 -3070.92 41889 -42691.9 -3070.92 37233.3 -39508.9 -3070.92 18610.7 -39508.9 -3070.92 4643.69 -39508.9 -3070.92 27922 -39508.9 -3070.92 9299.35 -39508.9 -3070.92 31775.9 -34632.9 -3070.92 4643.69 -34632.9 -3070.92 33196.2 -29756.9 -3070.92 18610.7 -29756.9 -3070.92 27922 -29756.9 -3070.92 9299.35 -29756.9 -3070.92 34616.5 -24880.9 -3070.92 13955 -24880.9 -3070.92 9299.35 -23336.1 -3070.92 37233.3 -20004.9 -3070.92 37233.3 -20004.9 -3070.92 27922 -20004.9 -3070.92 39604.1 -20004.9 -3070.92 18610.7 -10253 -3070.92 18610.7 -10253 -3070.92 46544.6 -10253 -3070.92 27922 -10253 -3070.92 37233.3 -7652.21 -3070.92 49501.6 -7103.83 -3070.92 46544.6 -6240.41 -3070.92 32577.6 -6240.41 -3070.92 37233.3 </float_array>
+          <technique_common>
+            <accessor source="#rct_mapB_water_nos_.xno-geometry-position-array" count="80" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_mapB_water_nos_.xno-geometry-normal">
+          <float_array id="rct_mapB_water_nos_.xno-geometry-normal-array" count="3">0 1 0 </float_array>
+          <technique_common>
+            <accessor source="#rct_mapB_water_nos_.xno-geometry-normal-array" count="1" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_mapB_water_nos_.xno-geometry-uv">
+          <float_array id="rct_mapB_water_nos_.xno-geometry-uv-array" count="160">0.934737 8.30203 1.86947 9.96244 1.86947 8.30203 1.86947 7.47183 1.86947 9.13223 1.86947 4.15101 1.86947 6.64162 1.86947 10.7926 1.86947 4.98122 2.80421 11.6228 2.80421 4.15101 2.80421 3.32081 2.80421 12.453 3.73895 4.98122 3.73895 9.96244 3.73895 8.30203 3.73895 13.2832 3.73895 2.49061 3.73895 3.32081 3.73895 6.64162 3.73895 11.6228 4.11716 14.1135 4.49537 14.9437 4.67369 1.66041 5.60842 4.98122 5.60842 9.96244 5.60842 6.64162 5.60842 14.9437 5.60842 14.1135 5.60842 3.32081 5.60842 13.2832 5.60842 1.66041 5.60842 8.30203 5.60842 11.6228 6.54316 14.4727 6.54316 1.66041 7.4779 8.30203 7.4779 0.830202 7.4779 4.98122 7.4779 11.6228 7.4779 6.64162 7.4779 3.32081 7.4779 9.96244 7.4779 13.2832 7.4779 1.66041 7.79728 0.830202 8.11665 1.66041 8.20529 4.98122 8.24329 2.49061 8.28761 4.15101 8.36993 3.32081 8.41263 13.2832 8.47124 5.81142 8.73718 6.64162 9.34737 9.96244 9.34737 12.453 9.34737 8.30203 9.34737 11.6228 9.34737 7.61479 10.2821 12.453 10.2821 7.36152 11.2168 9.96244 11.2168 8.30203 11.2168 11.6228 11.2168 7.10825 12.1516 10.7926 12.1516 11.6228 12.4477 6.64162 13.0863 6.64162 13.0863 8.30203 13.0863 6.21886 13.0863 9.96244 14.9558 9.96244 14.9558 4.98122 14.9558 8.30203 14.9558 6.64162 15.4544 4.45392 15.5595 4.98122 15.725 7.47183 15.725 6.64162 </float_array>
+          <technique_common>
+            <accessor source="#rct_mapB_water_nos_.xno-geometry-uv-array" count="80" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_mapB_water_nos_.xno-geometry-uv2">
+          <float_array id="rct_mapB_water_nos_.xno-geometry-uv2-array" count="160">1.06229 10.271 2.12458 12.3252 2.12458 10.271 2.12458 9.24388 2.12458 11.2981 2.12458 5.13549 2.12458 8.21678 2.12458 13.3523 2.12458 6.16259 3.18688 14.3794 3.18688 5.13549 3.18688 4.10839 3.18688 15.4065 4.24917 6.16259 4.24917 12.3252 4.24917 10.271 4.24917 16.4336 4.24917 3.08129 4.24917 4.10839 4.24917 8.21678 4.24917 14.3794 4.67899 17.4607 5.10881 18.4878 5.31146 2.0542 6.37375 6.16259 6.37375 12.3252 6.37375 8.21678 6.37375 18.4878 6.37375 17.4607 6.37375 4.10839 6.37375 16.4336 6.37375 2.0542 6.37375 10.271 6.37375 14.3794 7.43605 17.9051 7.43605 2.0542 8.49834 10.271 8.49834 1.0271 8.49834 6.16259 8.49834 14.3794 8.49834 8.21678 8.49834 4.10839 8.49834 12.3252 8.49834 16.4336 8.49834 2.0542 8.8613 1.0271 9.22426 2.0542 9.325 6.16259 9.36818 3.08129 9.41854 5.13549 9.51209 4.10839 9.56063 16.4336 9.62723 7.18968 9.92946 8.21678 10.6229 12.3252 10.6229 15.4065 10.6229 10.271 10.6229 14.3794 10.6229 9.42075 11.6852 15.4065 11.6852 9.10741 12.7475 12.3252 12.7475 10.271 12.7475 14.3794 12.7475 8.79408 13.8098 13.3523 13.8098 14.3794 14.1463 8.21678 14.8721 8.21678 14.8721 10.271 14.8721 7.69375 14.8721 12.3252 16.9967 12.3252 16.9967 6.16259 16.9967 10.271 16.9967 8.21678 17.5633 5.51024 17.6828 6.16259 17.8709 9.24388 17.8709 8.21678 </float_array>
+          <technique_common>
+            <accessor source="#rct_mapB_water_nos_.xno-geometry-uv2-array" count="80" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_mapB_water_nos_.xno-geometry-color">
+          <float_array id="rct_mapB_water_nos_.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#rct_mapB_water_nos_.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="rct_mapB_water_nos_.xno-geometry-vertex">
+          <input semantic="POSITION" source="#rct_mapB_water_nos_.xno-geometry-position" />
+        </vertices>
+        <triangles material="rct_mapB_water_nos_.xno0" count="108">
+          <input semantic="VERTEX" source="#rct_mapB_water_nos_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#rct_mapB_water_nos_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#rct_mapB_water_nos_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#rct_mapB_water_nos_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#rct_mapB_water_nos_.xno-geometry-color" offset="4" set="0" />
+          <p>8 0 8 8 0 5 0 5 5 0 13 0 13 13 0 10 0 10 10 0 13 0 13 13 0 5 0 5 5 0 13 0 13 13 0 10 0 10 10 0 18 0 18 18 0 11 0 11 11 0 18 0 18 18 0 10 0 10 10 0 17 0 17 17 0 18 0 18 18 0 11 0 11 11 0 18 0 18 18 0 17 0 17 17 0 29 0 29 29 0 23 0 23 23 0 29 0 29 29 0 17 0 17 17 0 31 0 31 31 0 29 0 29 29 0 23 0 23 23 0 29 0 29 29 0 31 0 31 31 0 35 0 35 35 0 62 0 62 62 0 64 0 64 64 0 67 0 67 67 0 64 0 64 64 0 62 0 62 62 0 60 0 60 60 0 60 0 60 60 0 62 0 62 62 0 58 0 58 58 0 56 0 56 56 0 58 0 58 58 0 62 0 62 62 0 36 0 36 36 0 58 0 58 58 0 56 0 56 56 0 58 0 58 58 0 36 0 36 36 0 53 0 53 53 0 63 0 63 63 0 65 0 65 65 0 66 0 66 66 0 63 0 63 63 0 59 0 59 59 0 57 0 57 57 0 55 0 55 55 0 57 0 57 57 0 59 0 59 59 0 51 0 51 51 0 57 0 57 57 0 55 0 55 55 0 57 0 57 57 0 51 0 51 51 0 39 0 39 39 0 43 0 43 43 0 39 0 39 39 0 51 0 51 51 0 39 0 39 39 0 43 0 43 43 0 33 0 33 33 0 69 0 69 69 0 68 0 68 68 0 75 0 75 75 0 13 0 13 13 0 18 0 18 18 0 24 0 24 24 0 29 0 29 29 0 24 0 24 24 0 18 0 18 18 0 76 0 76 76 0 77 0 77 77 0 73 0 73 73 0 75 0 75 75 0 73 0 73 73 0 77 0 77 77 0 73 0 73 73 0 75 0 75 75 0 70 0 70 70 0 68 0 68 68 0 70 0 70 70 0 75 0 75 75 0 70 0 70 70 0 68 0 68 68 0 67 0 67 67 0 69 0 69 69 0 67 0 67 67 0 68 0 68 68 0 67 0 67 67 0 69 0 69 69 0 62 0 62 62 0 61 0 61 61 0 62 0 62 62 0 69 0 69 69 0 62 0 62 62 0 61 0 61 61 0 56 0 56 56 0 54 0 54 54 0 56 0 56 56 0 61 0 61 61 0 56 0 56 56 0 54 0 54 54 0 36 0 36 36 0 42 0 42 42 0 36 0 36 36 0 54 0 54 54 0 36 0 36 36 0 42 0 42 42 0 32 0 32 32 0 25 0 25 25 0 32 0 32 32 0 42 0 42 42 0 32 0 32 32 0 25 0 25 25 0 15 0 15 15 0 14 0 14 14 0 15 0 15 15 0 25 0 25 25 0 15 0 15 15 0 14 0 14 14 0 2 0 2 2 0 4 0 4 4 0 2 0 2 2 0 14 0 14 14 0 0 0 0 0 0 2 0 2 2 0 4 0 4 4 0 3 0 3 3 0 2 0 2 2 0 0 0 0 0 0 2 0 2 2 0 3 0 3 3 0 15 0 15 15 0 19 0 19 19 0 15 0 15 15 0 3 0 3 3 0 15 0 15 15 0 19 0 19 19 0 32 0 32 32 0 26 0 26 26 0 32 0 32 32 0 19 0 19 19 0 32 0 32 32 0 26 0 26 26 0 36 0 36 36 0 40 0 40 40 0 36 0 36 36 0 26 0 26 26 0 36 0 36 36 0 40 0 40 40 0 53 0 53 53 0 53 0 53 53 0 40 0 40 40 0 52 0 52 52 0 38 0 38 38 0 52 0 52 52 0 40 0 40 40 0 52 0 52 52 0 38 0 38 38 0 47 0 47 47 0 47 0 47 47 0 38 0 38 38 0 49 0 49 49 0 41 0 41 41 0 49 0 49 49 0 38 0 38 38 0 49 0 49 49 0 41 0 41 41 0 50 0 50 50 0 50 0 50 50 0 41 0 41 41 0 48 0 48 48 0 44 0 44 44 0 48 0 48 48 0 41 0 41 41 0 48 0 48 48 0 44 0 44 44 0 46 0 46 46 0 37 0 37 37 0 46 0 46 46 0 44 0 44 44 0 46 0 46 46 0 37 0 37 37 0 45 0 45 45 0 37 0 37 37 0 44 0 44 44 0 35 0 35 35 0 41 0 41 41 0 35 0 35 35 0 44 0 44 44 0 35 0 35 35 0 41 0 41 41 0 29 0 29 29 0 38 0 38 38 0 29 0 29 29 0 41 0 41 41 0 29 0 29 29 0 38 0 38 38 0 24 0 24 24 0 40 0 40 40 0 24 0 24 24 0 38 0 38 38 0 26 0 26 26 0 24 0 24 24 0 40 0 40 40 0 24 0 24 24 0 26 0 26 26 0 13 0 13 13 0 19 0 19 19 0 13 0 13 13 0 26 0 26 26 0 13 0 13 13 0 19 0 19 19 0 8 0 8 8 0 8 0 8 8 0 19 0 19 19 0 6 0 6 6 0 3 0 3 3 0 6 0 6 6 0 19 0 19 19 0 77 0 77 77 0 79 0 79 79 0 75 0 75 75 0 78 0 78 78 0 75 0 75 75 0 79 0 79 79 0 74 0 74 74 0 75 0 75 75 0 78 0 78 78 0 75 0 75 75 0 74 0 74 74 0 69 0 69 69 0 72 0 72 72 0 69 0 69 69 0 74 0 74 74 0 71 0 71 71 0 69 0 69 69 0 72 0 72 72 0 69 0 69 69 0 71 0 71 71 0 61 0 61 61 0 65 0 65 65 0 61 0 61 61 0 71 0 71 71 0 63 0 63 63 0 61 0 61 61 0 65 0 65 65 0 61 0 61 61 0 63 0 63 63 0 54 0 54 54 0 57 0 57 57 0 54 0 54 54 0 63 0 63 63 0 54 0 54 54 0 57 0 57 57 0 42 0 42 42 0 39 0 39 39 0 42 0 42 42 0 57 0 57 57 0 42 0 42 42 0 39 0 39 39 0 25 0 25 25 0 33 0 33 33 0 25 0 25 25 0 39 0 39 39 0 25 0 25 25 0 33 0 33 33 0 14 0 14 14 0 14 0 14 14 0 33 0 33 33 0 20 0 20 20 0 20 0 20 20 0 33 0 33 33 0 30 0 30 30 0 43 0 43 43 0 30 0 30 30 0 33 0 33 33 0 30 0 30 30 0 43 0 43 43 0 28 0 28 28 0 34 0 34 34 0 28 0 28 28 0 43 0 43 43 0 27 0 27 27 0 28 0 28 28 0 34 0 34 34 0 22 0 22 22 0 28 0 28 28 0 27 0 27 27 0 21 0 21 21 0 28 0 28 28 0 22 0 22 22 0 28 0 28 28 0 21 0 21 21 0 30 0 30 30 0 16 0 16 16 0 30 0 30 30 0 21 0 21 21 0 30 0 30 30 0 16 0 16 16 0 20 0 20 20 0 12 0 12 12 0 20 0 20 20 0 16 0 16 16 0 9 0 9 9 0 20 0 20 20 0 12 0 12 12 0 7 0 7 7 0 20 0 20 20 0 9 0 9 9 0 20 0 20 20 0 7 0 7 7 0 14 0 14 14 0 1 0 1 1 0 14 0 14 14 0 7 0 7 7 0 14 0 14 14 0 1 0 1 1 0 4 0 4 4 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="rct_mapB_water_nos_.xno-controller">
+      <skin source="#rct_mapB_water_nos_.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="rct_mapB_water_nos_.xno-controller-Joints">
+          <Name_array id="rct_mapB_water_nos_.xno-controller-Joints-array" count="1">rct_mapB_water_nos_ </Name_array>
+          <technique_common>
+            <accessor source="#rct_mapB_water_nos_.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_mapB_water_nos_.xno-controller-Matrices">
+          <float_array id="rct_mapB_water_nos_.xno-controller-Matrices-array" count="16">1 0 0 44384.9 0 1 0 3070.92 0 0 1 -32577.6 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#rct_mapB_water_nos_.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_mapB_water_nos_.xno-controller-Weights">
+          <float_array id="rct_mapB_water_nos_.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#rct_mapB_water_nos_.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#rct_mapB_water_nos_.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#rct_mapB_water_nos_.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="80">
+          <input semantic="JOINT" offset="0" source="#rct_mapB_water_nos_.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#rct_mapB_water_nos_.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="rct_mapB_water_nos_" sid="rct_mapB_water_nos_" name="rct_mapB_water_nos_" type="JOINT">
+        <matrix>1 0 0 -44384.9 0 1 0 -3070.92 0 0 1 32577.6 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="rct_mapB_water_nos_.xno" sid="rct_mapB_water_nos_.xno" name="rct_mapB_water_nos_.xno">
+        <instance_controller url="#rct_mapB_water_nos_.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="rct_mapB_water_nos_.xno0" target="#rct_mapB_water_nos_.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

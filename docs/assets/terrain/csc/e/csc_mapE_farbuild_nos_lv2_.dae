@@ -1,0 +1,175 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="csc_build04_dfpt_p_j.dds-image" name="csc_build04_dfpt_p_j.dds-image">
+      <init_from>./textures/csc_build04_dfpt_p_j.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="csc_mapE_farbuild_nos_lv2_.xno0ID" name="csc_mapE_farbuild_nos_lv2_.xno0">
+      <instance_effect url="#csc_mapE_farbuild_nos_lv2_.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="csc_mapE_farbuild_nos_lv2_.xno0-effect" name="csc_mapE_farbuild_nos_lv2_.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="csc_build04_dfpt_p_j.dds-image-surface">
+          <surface type="2D">
+            <init_from>csc_build04_dfpt_p_j.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="csc_build04_dfpt_p_j.dds-image-sampler">
+          <sampler2D>
+            <source>csc_build04_dfpt_p_j.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="csc_build04_dfpt_p_j.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="csc_mapE_farbuild_nos_lv2_.xno-geometry" name="csc_mapE_farbuild_nos_lv2_.xno-geometry">
+      <mesh>
+        <source id="csc_mapE_farbuild_nos_lv2_.xno-geometry-position">
+          <float_array id="csc_mapE_farbuild_nos_lv2_.xno-geometry-position-array" count="492">-239427 395.522 17259.2 -239427 33247.3 17259.2 -232664 1125.9 -27794.3 -232664 54416 -27794.3 -230451 1125.9 40970.4 -230451 54416 40970.4 -228299 -180.786 -1099.37 -228299 32671 -1099.37 -227477 388.733 10618.6 -227477 33240.5 10618.6 -224113 432.841 -10381.5 -224113 52330.9 -10381.5 -223112 -767.328 54827.7 -223112 53548.1 54827.7 -216902 33240.5 -29597 -216902 388.733 -29597 -216632 32671 38813.1 -216632 -180.786 38813.1 -215216 -795.857 34973.5 -215216 32055.9 34973.5 -210936 49256.8 -48076.2 -210936 -1076.2 -48076.2 -199547 33247.3 52971.8 -199547 395.522 52971.8 -198934 33537.5 -34320.5 -198934 685.742 -34320.5 -195893 432.842 -40959 -195893 52330.9 -40959 -180069 -795.858 34887.3 -180069 32055.9 34887.3 -178663 39634.9 -40457.8 -178663 -1162.89 -40457.8 -174164 -795.857 39462.5 -174164 46332.3 39462.5 -168934 685.742 -34320.5 -168934 33537.5 -34320.5 -164973 49256.8 -48076.2 -164973 -1076.2 -48076.2 -161429 -1529.14 44843.6 -161429 57398.5 44843.6 -152876 -42.1602 -30951.5 -152876 50870.9 -30951.5 -145577 -767.328 54827.7 -145577 53548.1 54827.7 -141407 -1162.89 -40457.8 -141407 39634.9 -40457.8 -131767 52778.6 -39942.7 -131767 816.139 -39942.7 -125468 46332.3 39462.5 -125468 -795.857 39462.5 -117361 50870.9 -30951.5 -117361 -42.1602 -30951.5 -117041 -846.609 50949.9 -117041 65612.8 50949.9 -109515 33921.8 -31437.3 -109515 -1553.53 -31437.3 -102102 57398.5 44843.6 -102102 -1529.14 44843.6 -100523 -767.328 36431.1 -100523 53548.1 36431.1 -79515.2 -1553.53 -31437.3 -79515.2 33921.8 -31437.3 -67370.2 52778.6 -39942.7 -67370.2 816.139 -39942.7 -66957.7 803.674 -33590.7 -66957.7 33655.4 -33590.7 -62662.3 39182.8 34131.3 -62662.3 -1189.42 34131.3 -61910.8 65612.8 50949.9 -61910.8 -846.609 50949.9 -58327.6 -840.559 -46129 -58327.6 55581.6 -46129 -41618 53548.1 36431.1 -41618 -767.328 36431.1 -31031.6 33655.4 -33590.7 -31031.6 803.674 -33590.7 -29438.5 579.244 -37374.1 -29438.5 52946 -37374.1 -27182.9 -795.858 39462.5 -27182.9 46332.3 39462.5 -10346 55581.6 -46129 -10346 -840.559 -46129 -7078.41 46332.3 47272.1 -7078.41 -795.856 47272.1 -663.898 39182.8 34131.3 -663.898 -1189.42 34131.3 1055.73 90.5273 -29203.4 1055.73 32942.3 -29203.4 10535.1 52946 -37374.1 10535.1 579.244 -37374.1 16487.5 50870.3 30825.7 16487.5 -1027.74 30825.7 17026.9 46332.3 39462.5 17026.9 -795.857 39462.5 20540.8 -611.16 -40003.8 20540.8 66409.5 -40003.8 37068.5 90.5273 -29203.4 37068.5 32942.3 -29203.4 46133.3 55238.9 39614.5 46133.3 923.434 39614.5 46720.3 -795.857 47272.1 46720.3 46332.3 47272.1 58097.5 50870.3 30825.7 58097.5 -1027.74 30825.7 64130.6 -1427.46 49088.3 64130.6 59558.5 49088.3 69531.9 36118.1 -32052.7 69531.9 642.762 -32052.7 99531.9 642.762 -32052.7 99531.9 36118.1 -32052.7 100768 -42.1621 -44138.3 100768 56145.6 -44138.3 103860 66409.5 -40003.8 103860 -611.16 -40003.8 107473 55238.9 39614.5 107473 923.434 39614.5 123928 158.889 -33446.7 123928 47313.5 -33446.7 126195 50870.3 39589.4 126195 -1027.74 39589.4 143101 -1427.46 49088.3 143101 59558.5 49088.3 150298 56145.6 -44138.3 150298 -42.1621 -44138.3 153142 46574.4 53124.3 153142 -795.857 53124.3 159944 -900.985 -38205.6 159944 31950.8 -38205.6 166989 158.889 -33446.7 166989 47313.5 -33446.7 177656 -795.857 45275.5 177656 32055.9 45275.5 186831 -840.559 -28570.6 186831 53481.6 -28570.6 189765 -1027.74 39589.4 189765 50870.3 39589.4 200471 -900.985 -38205.6 200471 31950.8 -38205.6 204063 32395.5 67274.9 204063 -456.253 67274.9 204130 -795.856 53124.3 204130 46574.4 53124.3 208191 32664.2 -42549.9 208191 -187.574 -42549.9 216831 53481.6 -28570.6 216831 -840.559 -28570.6 219785 -795.856 45275.5 219785 32055.9 45275.5 221147 683.679 48995.9 221147 33535.5 48995.9 225637 33383.4 -19219.9 225637 531.635 -19219.9 228324 33383.4 22276 228324 531.635 22276 232814 683.679 9083.37 232814 33535.5 9083.37 234966 546.281 49142.2 234966 48656.2 49142.2 237180 546.281 -19622.5 237180 48656.2 -19622.5 237457 -187.574 -13009.5 237457 32664.2 -13009.5 243943 -456.253 31562.3 243943 32395.5 31562.3 </float_array>
+          <technique_common>
+            <accessor source="#csc_mapE_farbuild_nos_lv2_.xno-geometry-position-array" count="164" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="csc_mapE_farbuild_nos_lv2_.xno-geometry-normal">
+          <float_array id="csc_mapE_farbuild_nos_lv2_.xno-geometry-normal-array" count="39">0.667112 -3.10385e-008 -0.744957 0.999482 6.8436e-010 -0.0321692 0.959832 7.18532e-009 -0.280575 0.967123 0 0.254309 0.734858 0 0.678221 -2.75629e-015 1.18905e-007 -1 -0.00245191 1.18905e-007 -0.999997 0 1.55216e-007 1 -0.667112 0 -0.744958 -0.710398 -1.20159e-008 0.7038 -0.959832 -3.55025e-009 -0.280575 -0.997909 0 0.0646272 -0.999482 1.30596e-009 -0.0321687 </float_array>
+          <technique_common>
+            <accessor source="#csc_mapE_farbuild_nos_lv2_.xno-geometry-normal-array" count="13" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="csc_mapE_farbuild_nos_lv2_.xno-geometry-uv">
+          <float_array id="csc_mapE_farbuild_nos_lv2_.xno-geometry-uv-array" count="144">2.03246 0.00480598 2.03246 0.995194 1.78151 0.00480604 1.78151 0.995194 2.36315 0.00480574 2.36315 0.995194 1.03734 0.00480586 1.03734 0.995194 2.0035 0.0048058 2.0035 0.995194 -0.0163558 0.00480586 -0.0163558 0.995194 2 0.00480586 2 0.995194 0.995194 0.00480586 0.995194 0.995194 0.0434036 1 0.0434036 0 2.5379 0.995194 2.5379 0.00480556 0.974033 0.00480586 0.974033 0.995194 0.0048058 0.00480586 0.0048058 0.995194 0.995614 0 0.995614 1 0.956596 0 0.956596 1 1 0.0048058 1 0.995194 -0.0074102 0.00480586 -0.0074102 0.995194 0.00438581 1 0.00438581 0 2.36789 0.0048058 2.36789 0.995194 -0.00409028 0.995194 -0.00409028 0.0048058 1.2401 0.00480586 1.2401 0.995194 -0.996784 0.995194 -0.996784 0.00480586 1.3432 0.995194 1.3432 0.0048058 -0.0885102 0.995194 -0.0885102 0.00480586 1.22077 0.0048058 1.22077 0.995194 -0.480181 0.00480586 -0.480181 0.995194 0.799949 0.995194 0.799949 0.00480586 1.04997 0.995194 1.04997 0.00480586 0.230378 0.0048058 0.230378 0.995194 -1.97641 0.00480586 -1.97641 0.995194 0.195968 0.00480586 0.195968 0.995194 -3.98306 0.995194 -3.98306 0.00480586 2.80301 0.00480586 2.80301 0.995194 0.0384213 0.995194 0.0384213 0.00480586 -0.803759 0.0048058 -0.803759 0.995194 0.534171 0.0048058 0.534171 0.995194 1.52335 0.00480586 1.52335 0.995194 </float_array>
+          <technique_common>
+            <accessor source="#csc_mapE_farbuild_nos_lv2_.xno-geometry-uv-array" count="72" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="csc_mapE_farbuild_nos_lv2_.xno-geometry-uv2">
+          <float_array id="csc_mapE_farbuild_nos_lv2_.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#csc_mapE_farbuild_nos_lv2_.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="csc_mapE_farbuild_nos_lv2_.xno-geometry-color">
+          <float_array id="csc_mapE_farbuild_nos_lv2_.xno-geometry-color-array" count="44">0.666667 0.635294 0.6 1 0.803922 0.780392 0.745098 1 0.745098 0.713726 0.678431 1 0.878431 0.858824 0.823529 1 0.709804 0.682353 0.647059 1 0.909804 0.890196 0.854902 1 0.839216 0.815686 0.776471 1 1 1 0.929412 1 0.733333 0.67451 0.596078 1 0.909804 0.894118 0.854902 1 0.87451 0.854902 0.819608 1 </float_array>
+          <technique_common>
+            <accessor source="#csc_mapE_farbuild_nos_lv2_.xno-geometry-color-array" count="11" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="csc_mapE_farbuild_nos_lv2_.xno-geometry-vertex">
+          <input semantic="POSITION" source="#csc_mapE_farbuild_nos_lv2_.xno-geometry-position" />
+        </vertices>
+        <triangles material="csc_mapE_farbuild_nos_lv2_.xno0" count="82">
+          <input semantic="VERTEX" source="#csc_mapE_farbuild_nos_lv2_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#csc_mapE_farbuild_nos_lv2_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#csc_mapE_farbuild_nos_lv2_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#csc_mapE_farbuild_nos_lv2_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#csc_mapE_farbuild_nos_lv2_.xno-geometry-color" offset="4" set="0" />
+          <p>13 5 13 0 7 43 5 31 0 5 12 5 12 0 6 42 5 30 0 4 12 5 12 0 6 43 5 31 0 5 79 5 49 0 9 92 5 50 0 9 78 5 48 0 8 93 5 51 0 8 78 5 48 0 8 92 5 50 0 9 33 5 25 0 9 48 5 32 0 9 32 5 24 0 8 49 5 33 0 8 32 5 24 0 8 48 5 32 0 9 37 7 26 0 0 36 7 27 0 1 21 7 17 0 2 20 7 16 0 3 21 7 17 0 2 36 7 27 0 1 44 7 26 0 0 45 7 27 0 1 31 7 17 0 2 30 7 16 0 3 31 7 17 0 2 45 7 27 0 1 53 5 35 0 7 68 5 42 0 5 52 5 34 0 6 69 5 43 0 4 52 5 34 0 6 68 5 42 0 5 39 5 29 0 7 56 5 36 0 5 38 5 28 0 6 57 5 37 0 4 38 5 28 0 6 56 5 36 0 5 152 11 9 0 3 150 11 7 0 1 153 11 8 0 2 151 11 6 0 0 153 11 8 0 2 150 11 7 0 1 149 10 9 0 3 155 10 7 0 1 148 10 8 0 2 154 10 6 0 0 148 10 8 0 2 155 10 7 0 1 157 12 5 0 3 159 12 3 0 1 156 12 4 0 2 158 12 2 0 0 156 12 4 0 2 159 12 3 0 1 104 5 58 0 4 105 5 59 0 5 120 5 62 0 6 121 5 63 0 7 120 5 62 0 6 105 5 59 0 5 138 8 18 0 3 163 8 1 0 1 139 8 19 0 2 162 8 0 0 0 139 8 19 0 2 163 8 1 0 1 161 9 9 0 3 142 9 7 0 1 160 9 8 0 2 143 9 6 0 0 160 9 8 0 2 142 9 7 0 1 91 5 10 0 4 90 5 11 0 5 103 5 20 0 6 102 5 21 0 7 103 5 20 0 6 90 5 11 0 5 119 5 43 0 4 118 5 42 0 5 134 5 34 0 6 135 5 35 0 7 134 5 34 0 6 118 5 42 0 5 125 5 65 0 4 124 5 64 0 5 140 5 70 0 6 141 5 71 0 7 140 5 70 0 6 124 5 64 0 5 130 5 22 0 4 131 5 23 0 5 146 5 14 0 6 147 5 15 0 7 146 5 14 0 6 131 5 23 0 5 99 5 45 0 4 98 5 44 0 5 115 5 38 0 6 114 5 39 0 7 115 5 38 0 6 98 5 44 0 5 122 7 15 0 3 111 7 23 0 1 123 7 14 0 2 110 7 22 0 0 123 7 14 0 2 111 7 23 0 1 112 7 60 0 10 95 7 57 0 10 113 7 61 0 8 94 7 56 0 8 113 7 61 0 8 95 7 57 0 10 137 7 69 0 3 127 7 67 0 1 136 7 68 0 2 126 7 66 0 0 136 7 68 0 2 127 7 67 0 1 129 7 15 0 3 117 7 23 0 1 128 7 14 0 2 116 7 22 0 0 128 7 14 0 2 117 7 23 0 1 109 7 15 0 3 106 7 23 0 1 108 7 14 0 2 107 7 22 0 0 108 7 14 0 2 106 7 23 0 1 97 7 47 0 3 87 7 55 0 1 96 7 46 0 2 86 7 54 0 0 96 7 46 0 2 87 7 55 0 1 144 7 23 0 10 133 7 15 0 10 145 7 22 0 8 132 7 14 0 8 145 7 22 0 8 133 7 15 0 10 83 5 51 0 8 82 5 50 0 9 100 5 48 0 8 101 5 49 0 9 100 5 48 0 8 82 5 50 0 9 67 5 41 0 4 66 5 40 0 5 85 5 53 0 6 84 5 52 0 7 85 5 53 0 6 66 5 40 0 5 74 7 15 0 3 65 7 23 0 1 75 7 14 0 2 64 7 22 0 0 75 7 14 0 2 65 7 23 0 1 63 7 22 0 0 62 7 23 0 1 47 7 14 0 2 46 7 15 0 3 47 7 14 0 2 62 7 23 0 1 6 2 6 0 0 7 2 7 0 1 17 2 8 0 2 16 2 9 0 3 17 2 8 0 2 7 2 7 0 1 2 1 2 0 0 3 1 3 0 1 4 1 4 0 2 5 1 5 0 3 4 1 4 0 2 3 1 3 0 1 0 0 0 0 0 1 0 1 0 1 23 0 19 0 2 22 0 18 0 3 23 0 19 0 2 1 0 1 0 1 15 3 6 0 0 14 3 7 0 1 8 3 8 0 2 9 3 9 0 3 8 3 8 0 2 14 3 7 0 1 27 4 21 0 7 11 4 11 0 5 26 4 20 0 6 10 4 10 0 4 26 4 20 0 6 11 4 11 0 5 19 6 15 0 7 29 6 23 0 5 18 6 14 0 6 28 6 22 0 4 18 6 14 0 6 29 6 23 0 5 59 5 39 0 7 72 5 44 0 5 58 5 38 0 6 73 5 45 0 4 58 5 38 0 6 72 5 44 0 5 51 7 22 0 0 50 7 23 0 1 40 7 14 0 2 41 7 15 0 3 40 7 14 0 2 50 7 23 0 1 34 7 26 0 0 35 7 27 0 1 25 7 17 0 2 24 7 16 0 3 25 7 17 0 2 35 7 27 0 1 60 7 22 0 0 61 7 23 0 1 55 7 14 0 2 54 7 15 0 3 55 7 14 0 2 61 7 23 0 1 89 7 54 0 0 88 7 55 0 1 76 7 46 0 2 77 7 47 0 3 76 7 46 0 2 88 7 55 0 1 81 7 14 0 8 80 7 15 0 10 70 7 22 0 8 71 7 23 0 10 70 7 22 0 8 80 7 15 0 10 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="csc_mapE_farbuild_nos_lv2_.xno-controller">
+      <skin source="#csc_mapE_farbuild_nos_lv2_.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="csc_mapE_farbuild_nos_lv2_.xno-controller-Joints">
+          <Name_array id="csc_mapE_farbuild_nos_lv2_.xno-controller-Joints-array" count="1">csc_mapE_farbuild_nos_lv2_.xno0 </Name_array>
+          <technique_common>
+            <accessor source="#csc_mapE_farbuild_nos_lv2_.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="csc_mapE_farbuild_nos_lv2_.xno-controller-Matrices">
+          <float_array id="csc_mapE_farbuild_nos_lv2_.xno-controller-Matrices-array" count="16">1 0 0 5000 0 1 0 -1473.97 0 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#csc_mapE_farbuild_nos_lv2_.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="csc_mapE_farbuild_nos_lv2_.xno-controller-Weights">
+          <float_array id="csc_mapE_farbuild_nos_lv2_.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#csc_mapE_farbuild_nos_lv2_.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#csc_mapE_farbuild_nos_lv2_.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#csc_mapE_farbuild_nos_lv2_.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="164">
+          <input semantic="JOINT" offset="0" source="#csc_mapE_farbuild_nos_lv2_.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#csc_mapE_farbuild_nos_lv2_.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="csc_mapE_farbuild_nos_lv2_.xno0" sid="csc_mapE_farbuild_nos_lv2_.xno0" name="csc_mapE_farbuild_nos_lv2_.xno0" type="JOINT">
+        <matrix>1 0 0 -5000 0 1 0 1473.97 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="csc_mapE_farbuild_nos_lv2_.xno" sid="csc_mapE_farbuild_nos_lv2_.xno" name="csc_mapE_farbuild_nos_lv2_.xno">
+        <instance_controller url="#csc_mapE_farbuild_nos_lv2_.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="csc_mapE_farbuild_nos_lv2_.xno0" target="#csc_mapE_farbuild_nos_lv2_.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

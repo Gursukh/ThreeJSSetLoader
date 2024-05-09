@@ -1,0 +1,198 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="rct_waterfall01_dfpt_pm.dds-image" name="rct_waterfall01_dfpt_pm.dds-image">
+      <init_from>./textures/rct_waterfall01_dfpt_pm.dds</init_from>
+    </image>
+    <image id="rct_waterfall01_ptxx_r.dds-image" name="rct_waterfall01_ptxx_r.dds-image">
+      <init_from>./textures/rct_waterfall01_ptxx_r.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="rct_boss_watmerfall_nos_.xno0ID" name="rct_boss_watmerfall_nos_.xno0">
+      <instance_effect url="#rct_boss_watmerfall_nos_.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="rct_boss_watmerfall_nos_.xno0-effect" name="rct_boss_watmerfall_nos_.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="rct_waterfall01_dfpt_pm.dds-image-surface">
+          <surface type="2D">
+            <init_from>rct_waterfall01_dfpt_pm.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="rct_waterfall01_dfpt_pm.dds-image-sampler">
+          <sampler2D>
+            <source>rct_waterfall01_dfpt_pm.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="rct_waterfall01_ptxx_r.dds-image-surface">
+          <surface type="2D">
+            <init_from>rct_waterfall01_ptxx_r.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="rct_waterfall01_ptxx_r.dds-image-sampler">
+          <sampler2D>
+            <source>rct_waterfall01_ptxx_r.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="rct_waterfall01_ptxx_r.dds-image-surface">
+          <surface type="2D">
+            <init_from>rct_waterfall01_ptxx_r.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="rct_waterfall01_ptxx_r.dds-image-sampler">
+          <sampler2D>
+            <source>rct_waterfall01_ptxx_r.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="rct_waterfall01_dfpt_pm.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="rct_boss_watmerfall_nos_.xno-geometry" name="rct_boss_watmerfall_nos_.xno-geometry">
+      <mesh>
+        <source id="rct_boss_watmerfall_nos_.xno-geometry-position">
+          <float_array id="rct_boss_watmerfall_nos_.xno-geometry-position-array" count="225">103.677 -1699.42 14700.1 468.631 166.517 15045 694.891 2184.5 15276.6 818.253 3920.24 15320.9 925.326 -1699.42 15083.2 1116.13 5774.4 15446.8 1185.75 166.517 15379.4 1322.05 2184.5 15569 1383.13 8693.01 15790.8 1385.97 7250.38 15590.1 1427.38 9055.64 15852.7 1490.51 9430.73 15957.1 1538.38 3920.24 15656.7 1572.72 10495.1 19068 1596.95 9680.8 16028.6 1696.81 10206.2 16454.7 1702.73 10326.1 16741.5 1705.89 10008.9 16203 1743.32 -1699.42 15464.7 1824.52 5774.4 15777.1 1857.71 166.517 15692.8 1888.28 8693.01 16026.3 1889.31 10481.8 17557.1 1908.27 9055.64 16076.9 1964.72 7250.38 15860 1969.81 9430.73 16180.6 1996.13 2184.5 15883.3 2071.11 10495.1 19300.5 2117.98 9680.8 16271.5 2172.39 10206.2 16676.5 2183.22 3920.24 15957.4 2206.2 10326.1 16976.2 2212.35 10008.9 16439.2 2295.63 10481.8 17746.6 2413.2 7250.38 16069.1 2432.31 5774.4 16060.6 2447.46 -1699.43 15793 2462.96 8693.01 16294.3 2495.66 9055.64 16350.8 2523.61 166.517 16003.3 2556.27 9430.73 16454 2612.21 10495.1 19552.8 2653.61 2184.5 16189.9 2660.42 10008.9 16648.1 2669.36 9680.8 16528.7 2720.58 10206.2 16932.1 2723.87 10481.8 17946.3 2724.61 10326.1 17218 2806.76 3920.24 16248.2 2971.89 5774.4 16312.2 3069.03 10495.1 19765.8 3082.13 7250.38 16381 3122.46 -1699.43 16107.8 3153.81 166.517 16297.2 3161.59 9055.64 16661.4 3168.2 8693.01 16623.2 3168.26 10008.9 16884.9 3182.49 10481.8 18160.2 3186.44 10326.1 17433.3 3193.18 10206.2 17152.5 3194.54 9430.73 16751.7 3213.96 9680.8 16782.6 3320.18 2184.5 16500.8 3427.72 10495.1 19933 3459.11 3920.24 16552.4 3507.85 5774.4 16562.1 3517.21 10481.8 18316.2 3606.65 10326.1 17629.3 3664.55 10206.2 17372.3 3681.13 10008.9 17124.1 3689.09 7250.38 16664.1 3720.43 9680.8 17018.8 3769.23 9055.64 16944.7 3769.89 9430.73 17020 3772.62 8693.01 16905 </float_array>
+          <technique_common>
+            <accessor source="#rct_boss_watmerfall_nos_.xno-geometry-position-array" count="75" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_boss_watmerfall_nos_.xno-geometry-normal">
+          <float_array id="rct_boss_watmerfall_nos_.xno-geometry-normal-array" count="117">0.421104 0.0845888 -0.903059 0.421513 0.0722757 -0.903938 0.422464 0.0270341 -0.905977 0.422609 -0.00663685 -0.906288 0.422618 0.00114481 -0.906307 0.421565 0.0705517 -0.904049 0.422488 0.0248273 -0.906028 0.419805 0.115191 -0.900275 0.421756 0.0638517 -0.904458 0.418745 0.135085 -0.898001 0.418392 0.141073 -0.897244 0.00373247 0.999961 -0.00800431 0.416734 0.166296 -0.893688 0.239692 0.823607 -0.514022 0.153334 0.93186 -0.328826 0.364007 0.508073 -0.780616 0.422617 0.00217822 -0.906306 0.419849 0.114282 -0.90037 0.062223 0.989102 -0.133438 0.418425 0.140512 -0.897316 0.421628 0.068418 -0.904184 0.419099 0.128784 -0.898761 0.413842 0.202729 -0.887488 0.228219 0.841657 -0.489418 0.138439 0.944825 -0.296884 0.349407 0.562545 -0.749305 0.0506758 0.992785 -0.108675 0.421588 0.0697859 -0.904098 0.422509 0.0227727 -0.906073 0.422617 0.00261265 -0.906305 0.0407637 0.995337 -0.087418 0.132188 0.949825 -0.283477 0.220558 0.853016 -0.472988 0.343293 0.58324 -0.736194 0.421483 0.0732379 -0.903874 0.414328 0.197097 -0.88853 0.418338 0.141962 -0.897129 0.41901 0.130403 -0.898569 0.419879 0.113678 -0.900433 </float_array>
+          <technique_common>
+            <accessor source="#rct_boss_watmerfall_nos_.xno-geometry-normal-array" count="39" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_boss_watmerfall_nos_.xno-geometry-uv">
+          <float_array id="rct_boss_watmerfall_nos_.xno-geometry-uv-array" count="150">1 0 1 2.51416 1 4.76987 1 6.51367 0.75 0 1 8.04278 0.75 2.51416 0.75 4.76987 1 10.9987 1 9.65444 1 11.7258 1 12.0959 0.75 6.51367 1 15 1 12.3693 1 12.7894 1 13.0414 1 12.5636 0.5 0 0.75 8.04278 0.5 2.51416 0.75 10.9987 1 13.8721 0.75 11.7258 0.75 9.65444 0.75 12.0959 0.5 4.76987 0.75 15 0.75 12.3693 0.75 12.7894 0.5 6.51367 0.75 13.0414 0.75 12.5636 0.75 13.8721 0.5 9.65444 0.5 8.04278 0.25 0 0.5 10.9987 0.5 11.7258 0.25 2.51416 0.5 12.0959 0.5 15 0.25 4.76987 0.5 12.5636 0.5 12.3693 0.5 12.7894 0.5 13.8721 0.5 13.0414 0.25 6.51367 0.25 8.04278 0.25 15 0.25 9.65444 0 0 0 2.51416 0.25 11.7258 0.25 10.9987 0.25 12.5636 0.25 13.8721 0.25 13.0414 0.25 12.7894 0.25 12.0959 0.25 12.3693 0 4.76987 0 15 0 6.51367 0 8.04278 0 13.8721 0 13.0414 0 12.7894 0 12.5636 0 9.65444 0 12.3693 0 11.7258 0 12.0959 0 10.9987 </float_array>
+          <technique_common>
+            <accessor source="#rct_boss_watmerfall_nos_.xno-geometry-uv-array" count="75" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_boss_watmerfall_nos_.xno-geometry-uv2">
+          <float_array id="rct_boss_watmerfall_nos_.xno-geometry-uv2-array" count="150">1.00163 0 0.964481 1.45335 0.934147 2.68522 0.917434 3.50965 0.744574 0 0.88847 4.12629 0.717883 1.45335 0.696802 2.68522 0.73582 5.31127 0.821381 4.73477 0.651439 5.83199 0.578124 6.26208 0.686943 3.50965 0.531708 9 0.525762 6.56669 0.465966 7.32534 0.462991 7.85739 0.48987 6.87729 0.49672 0 0.663524 4.12629 0.482348 1.45335 0.52159 5.31127 0.489883 8.40915 0.442927 5.83199 0.601764 4.73477 0.374836 6.26208 0.472096 2.68522 0.388509 9 0.326379 6.56669 0.277258 7.32534 0.470082 3.50965 0.284614 7.85739 0.294778 6.87729 0.327643 8.40915 0.397094 4.73477 0.452888 4.12629 0.267258 0 0.322374 5.31127 0.248401 5.83199 0.26894 1.45335 0.184159 6.26208 0.250987 9 0.272666 2.68522 0.110784 6.87729 0.138632 6.56669 0.0995783 7.32534 0.17384 8.40915 0.116701 7.85739 0.280482 3.50965 0.270871 4.12629 0.124822 9 0.222316 4.73477 0.0469922 0 0.0665942 1.45335 0.0818447 5.83199 0.153185 5.31127 -0.051012 6.87729 0.0369087 8.40915 -0.0302858 7.85739 -0.0560432 7.32534 0.0187012 6.26208 -0.0258408 6.56669 0.085875 2.68522 0.00433453 9 0.104513 3.50965 0.103164 4.12629 -0.0915869 8.40915 -0.16681 7.85739 -0.200636 7.32534 -0.20171 6.87729 0.0624845 4.73477 -0.178677 6.56669 -0.0707261 5.83199 -0.134146 6.26208 -0.000990886 5.31127 </float_array>
+          <technique_common>
+            <accessor source="#rct_boss_watmerfall_nos_.xno-geometry-uv2-array" count="75" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_boss_watmerfall_nos_.xno-geometry-color">
+          <float_array id="rct_boss_watmerfall_nos_.xno-geometry-color-array" count="184">0.952941 0.992157 1 0 0.984314 1 1 0.00784314 1 1 1 0.0196078 1 1 1 0.00784314 0.956863 1 1 0.45098 0.996078 1 1 0 0.976471 1 1 0.478431 0.94902 0.984314 1 0.505882 0.992157 1 1 0 0.976471 1 1 0.501961 0.968627 1 1 0.901961 0.980392 1 1 0.498039 0.992157 1 1 0.94902 1 1 1 0.486275 1 1 1 0.47451 0.984314 1 1 0.490196 1 1 1 0.462745 0.964706 0.996078 1 0.996078 1 1 1 0.498039 1 1 1 0.454902 0.956863 0.988235 1 0.996078 1 1 1 0.45098 0.921569 0.952941 0.976471 0.984314 0.996078 1 1 0.972549 1 1 1 0.94902 0.941176 0.972549 1 0.47451 1 1 1 0.92549 1 1 1 0.992157 0.921569 0.941176 0.968627 0.498039 1 1 1 0.901961 1 1 1 0.913725 1 1 1 0.996078 0.960784 0.984314 1 0.498039 0.984314 1 1 0.498039 1 1 1 0.501961 0.94902 0.972549 1 0.490196 0.980392 1 1 0 0.858824 0.878431 0.909804 0 0.862745 0.870588 0.886275 0 0.905882 0.913725 0.92549 0 0.956863 0.980392 1 0 1 1 1 0.00392157 1 1 1 0 0.890196 0.901961 0.921569 0 0.984314 1 1 0 0.960784 0.992157 1 0 </float_array>
+          <technique_common>
+            <accessor source="#rct_boss_watmerfall_nos_.xno-geometry-color-array" count="46" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="rct_boss_watmerfall_nos_.xno-geometry-vertex">
+          <input semantic="POSITION" source="#rct_boss_watmerfall_nos_.xno-geometry-position" />
+        </vertices>
+        <triangles material="rct_boss_watmerfall_nos_.xno0" count="112">
+          <input semantic="VERTEX" source="#rct_boss_watmerfall_nos_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#rct_boss_watmerfall_nos_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#rct_boss_watmerfall_nos_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#rct_boss_watmerfall_nos_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#rct_boss_watmerfall_nos_.xno-geometry-color" offset="4" set="0" />
+          <p>20 5 20 20 12 6 5 6 6 6 26 6 26 26 17 7 6 7 7 7 26 6 26 26 17 6 5 6 6 6 12 3 12 12 9 26 6 26 26 17 7 6 7 7 7 26 6 26 26 17 12 3 12 12 9 30 3 30 30 20 30 3 30 30 20 12 3 12 12 9 35 16 35 35 20 19 16 19 19 11 35 16 35 35 20 12 3 12 12 9 24 20 24 24 15 35 16 35 35 20 19 16 19 19 11 35 16 35 35 20 24 20 24 24 15 34 20 34 34 22 34 20 34 34 22 24 20 24 24 15 37 17 37 37 23 21 17 21 21 13 37 17 37 37 23 24 20 24 24 15 23 19 23 23 14 37 17 37 37 23 21 17 21 21 13 37 17 37 37 23 23 19 23 23 14 38 19 38 38 24 38 19 38 38 24 23 19 23 23 14 40 21 40 40 26 25 21 25 25 16 40 21 40 40 26 23 19 23 23 14 28 22 28 28 19 40 21 40 40 26 25 21 25 25 16 40 21 40 40 26 28 22 28 28 19 44 22 44 44 30 44 22 44 44 30 28 22 28 28 19 43 25 43 43 29 32 25 32 32 21 43 25 43 43 29 28 22 28 28 19 29 23 29 29 14 43 25 43 43 29 32 25 32 32 21 43 25 43 43 29 29 23 29 29 14 45 23 45 45 24 45 23 45 45 24 29 23 29 29 14 47 24 47 47 31 31 24 31 31 18 47 24 47 47 31 29 23 29 29 14 33 26 33 33 18 47 24 47 47 31 31 24 31 31 18 46 26 46 46 31 47 24 47 47 31 33 26 33 33 18 57 26 57 57 34 47 24 47 47 31 46 26 46 46 31 58 24 58 58 34 47 24 47 47 31 57 26 57 57 34 59 23 59 59 14 47 24 47 47 31 58 24 58 58 34 47 24 47 47 31 59 23 59 59 14 45 23 45 45 24 45 23 45 45 24 59 23 59 59 14 43 25 43 43 29 56 25 56 56 21 43 25 43 43 29 59 23 59 59 14 61 22 61 61 19 43 25 43 43 29 56 25 56 56 21 43 25 43 43 29 61 22 61 61 19 44 22 44 44 30 44 22 44 44 30 61 22 61 61 19 40 21 40 40 26 60 21 60 60 16 40 21 40 40 26 61 22 61 61 19 54 19 54 54 14 40 21 40 40 26 60 21 60 60 16 40 21 40 40 26 54 19 54 54 14 38 19 38 38 24 38 19 38 38 24 54 19 54 54 14 37 17 37 37 23 55 17 55 55 13 37 17 37 37 23 54 19 54 54 14 51 20 51 51 35 37 17 37 37 23 55 17 55 55 13 37 17 37 37 23 51 20 51 51 35 34 20 34 34 22 34 20 34 34 22 51 20 51 51 35 35 16 35 35 20 49 16 49 49 33 35 16 35 35 20 51 20 51 51 35 48 3 48 48 32 35 16 35 35 20 49 16 49 49 33 35 16 35 35 20 48 3 48 48 32 30 3 30 30 20 30 3 30 30 20 48 3 48 48 32 26 6 26 26 17 42 6 42 42 28 26 6 26 26 17 48 3 48 48 32 39 5 39 39 25 26 6 26 26 17 42 6 42 42 28 26 6 26 26 17 39 5 39 39 25 20 5 20 20 12 18 0 18 18 10 20 5 20 20 12 39 5 39 39 25 20 5 20 20 12 18 0 18 18 10 6 5 6 6 6 4 0 4 4 4 6 5 6 6 6 18 0 18 18 10 0 0 0 0 0 6 5 6 6 6 4 0 4 4 4 1 1 1 1 1 6 5 6 6 6 0 0 0 0 0 2 2 2 2 2 6 5 6 6 6 1 1 1 1 1 6 5 6 6 6 2 2 2 2 2 7 6 7 7 7 7 6 7 7 7 2 2 2 2 2 12 3 12 12 9 3 3 3 3 3 12 3 12 12 9 2 2 2 2 2 5 4 5 5 5 12 3 12 12 9 3 3 3 3 3 12 3 12 12 9 5 4 5 5 5 19 16 19 19 11 19 16 19 19 11 5 4 5 5 5 24 20 24 24 15 9 8 9 9 8 24 20 24 24 15 5 4 5 5 5 8 7 8 8 5 24 20 24 24 15 9 8 9 9 8 24 20 24 24 15 8 7 8 8 5 21 17 21 21 13 21 17 21 21 13 8 7 8 8 5 23 19 23 23 14 10 9 10 10 5 23 19 23 23 14 8 7 8 8 5 11 10 11 11 5 23 19 23 23 14 10 9 10 10 5 23 19 23 23 14 11 10 11 11 5 25 21 25 25 16 25 21 25 25 16 11 10 11 11 5 28 22 28 28 19 14 12 14 14 5 28 22 28 28 19 11 10 11 11 5 17 15 17 17 5 28 22 28 28 19 14 12 14 14 5 28 22 28 28 19 17 15 17 17 5 32 25 32 32 21 32 25 32 32 21 17 15 17 17 5 29 23 29 29 14 15 13 15 15 5 29 23 29 29 14 17 15 17 17 5 16 14 16 16 5 29 23 29 29 14 15 13 15 15 5 29 23 29 29 14 16 14 16 16 5 31 24 31 31 18 31 24 31 31 18 16 14 16 16 5 33 26 33 33 18 22 18 22 22 5 33 26 33 33 18 16 14 16 16 5 13 11 13 13 5 33 26 33 33 18 22 18 22 22 5 27 11 27 27 18 33 26 33 33 18 13 11 13 13 5 41 11 41 41 27 33 26 33 33 18 27 11 27 27 18 33 26 33 33 18 41 11 41 41 27 46 26 46 46 31 46 26 46 46 31 41 11 41 41 27 57 26 57 57 34 50 11 50 50 34 57 26 57 57 34 41 11 41 41 27 63 11 63 63 3 57 26 57 57 34 50 11 50 50 34 66 30 66 66 3 57 26 57 57 34 63 11 63 63 3 67 31 67 67 41 57 26 57 57 34 66 30 66 66 3 57 26 57 57 34 67 31 67 67 41 58 24 58 58 34 58 24 58 58 34 67 31 67 67 41 59 23 59 59 14 68 32 68 68 42 59 23 59 59 14 67 31 67 67 41 69 33 69 69 5 59 23 59 59 14 68 32 68 68 42 59 23 59 59 14 69 33 69 69 5 56 25 56 56 21 56 25 56 56 21 69 33 69 69 5 61 22 61 61 19 71 35 71 71 5 61 22 61 61 19 69 33 69 69 5 73 37 73 73 5 61 22 61 61 19 71 35 71 71 5 61 22 61 61 19 73 37 73 73 5 60 21 60 60 16 60 21 60 60 16 73 37 73 73 5 54 19 54 54 14 72 36 72 72 44 54 19 54 54 14 73 37 73 73 5 74 38 74 74 45 54 19 54 54 14 72 36 72 72 44 54 19 54 54 14 74 38 74 74 45 55 17 55 55 13 55 17 55 55 13 74 38 74 74 45 51 20 51 51 35 70 34 70 70 43 51 20 51 51 35 74 38 74 74 45 65 29 65 65 40 51 20 51 51 35 70 34 70 70 43 51 20 51 51 35 65 29 65 65 40 49 16 49 49 33 49 16 49 49 33 65 29 65 65 40 48 3 48 48 32 64 3 64 64 39 48 3 48 48 32 65 29 65 65 40 62 28 62 62 38 48 3 48 48 32 64 3 64 64 39 48 3 48 48 32 62 28 62 62 38 42 6 42 42 28 42 6 42 42 28 62 28 62 62 38 39 5 39 39 25 53 27 53 53 37 39 5 39 39 25 62 28 62 62 38 52 0 52 52 36 39 5 39 39 25 53 27 53 53 37 36 0 36 36 21 39 5 39 39 25 52 0 52 52 36 39 5 39 39 25 36 0 36 36 21 18 0 18 18 10 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="rct_boss_watmerfall_nos_.xno-controller">
+      <skin source="#rct_boss_watmerfall_nos_.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="rct_boss_watmerfall_nos_.xno-controller-Joints">
+          <Name_array id="rct_boss_watmerfall_nos_.xno-controller-Joints-array" count="1">rct_boss_watmerfall_nos_ </Name_array>
+          <technique_common>
+            <accessor source="#rct_boss_watmerfall_nos_.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_boss_watmerfall_nos_.xno-controller-Matrices">
+          <float_array id="rct_boss_watmerfall_nos_.xno-controller-Matrices-array" count="16">0.906308 0 0.422618 -9236.78 0 1 0 -10310.8 -0.422618 0 0.906308 -14153.9 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#rct_boss_watmerfall_nos_.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_boss_watmerfall_nos_.xno-controller-Weights">
+          <float_array id="rct_boss_watmerfall_nos_.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#rct_boss_watmerfall_nos_.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#rct_boss_watmerfall_nos_.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#rct_boss_watmerfall_nos_.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="75">
+          <input semantic="JOINT" offset="0" source="#rct_boss_watmerfall_nos_.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#rct_boss_watmerfall_nos_.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="rct_boss_watmerfall_nos_" sid="rct_boss_watmerfall_nos_" name="rct_boss_watmerfall_nos_" type="JOINT">
+        <matrix>0.906312 -0 -0.422609 2389.67 0 1 -0 10310.8 0.422609 0 0.906312 16731.4 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="rct_boss_watmerfall_nos_.xno" sid="rct_boss_watmerfall_nos_.xno" name="rct_boss_watmerfall_nos_.xno">
+        <instance_controller url="#rct_boss_watmerfall_nos_.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="rct_boss_watmerfall_nos_.xno0" target="#rct_boss_watmerfall_nos_.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

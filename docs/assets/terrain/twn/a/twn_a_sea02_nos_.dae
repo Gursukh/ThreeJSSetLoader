@@ -1,0 +1,208 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="twn_water01_ntxx_b.dds-image" name="twn_water01_ntxx_b.dds-image">
+      <init_from>./textures/twn_water01_ntxx_b.dds</init_from>
+    </image>
+    <image id="twn_water02_ntxx_b.dds-image" name="twn_water02_ntxx_b.dds-image">
+      <init_from>./textures/twn_water02_ntxx_b.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="twn_a_sea02.xno0ID" name="twn_a_sea02.xno0">
+      <instance_effect url="#twn_a_sea02.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="twn_a_sea02.xno0-effect" name="twn_a_sea02.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="twn_water01_ntxx_b.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_water01_ntxx_b.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_water01_ntxx_b.dds-image-sampler">
+          <sampler2D>
+            <source>twn_water01_ntxx_b.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_water02_ntxx_b.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_water02_ntxx_b.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_water02_ntxx_b.dds-image-sampler">
+          <sampler2D>
+            <source>twn_water02_ntxx_b.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_water02_ntxx_b.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_water02_ntxx_b.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_water02_ntxx_b.dds-image-sampler">
+          <sampler2D>
+            <source>twn_water02_ntxx_b.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_water02_ntxx_b.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_water02_ntxx_b.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_water02_ntxx_b.dds-image-sampler">
+          <sampler2D>
+            <source>twn_water02_ntxx_b.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_water01_ntxx_b.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="twn_a_sea02.xno-geometry" name="twn_a_sea02.xno-geometry">
+      <mesh>
+        <source id="twn_a_sea02.xno-geometry-position">
+          <float_array id="twn_a_sea02.xno-geometry-position-array" count="264">-187692 -100 74110.7 -187692 -100 0 -187692 -100 -37186.7 -187692 -100 -74235.8 -187692 -100 37186.7 -150182 -100 111160 -150182 -100 -74235.8 -150182 -100 -111285 -150182 -100 74110.7 -150182 -100 -37186.7 -150182 -100 37186.7 -150182 -100 0 -112671 -100 148209 -112671 -100 -111285 -112671 -100 111160 -112671 -100 -74235.8 -112671 -100 -37186.7 -112671 -100 -148334 -112671 -100 74110.7 -112671 -100 37186.7 -112671 -100 0 -75160.5 -100 185258 -75160.5 -100 0 -75160.5 -100 -148334 -75160.5 -100 -185383 -75160.5 -100 -37186.7 -75160.5 -100 37186.7 -75160.5 -100 148209 -75160.5 -100 -111285 -75160.5 -100 -74235.8 -75160.5 -100 111160 -75160.5 -100 74110.7 -37649.9 -100 -185383 -37649.9 -100 148209 -37649.9 -100 -74235.8 -37649.9 -100 111160 -37649.9 -100 -111285 -37649.9 -100 185258 -37649.9 -100 74110.7 -37649.9 -100 -148334 0.000699338 -100 -111285 0.000699338 -100 -74235.8 0.000699338 -100 -185383 0.000699338 -100 -148334 0.00154468 -100 74110.7 0.00154468 -100 148209 0.00154468 -100 185258 0.00154468 -100 111160 37649.9 -100 -111285 37649.9 -100 -74235.8 37649.9 -100 -185383 37649.9 -100 -148334 37649.9 -100 185258 37649.9 -100 148209 37649.9 -100 111160 37649.9 -100 74110.7 75160.5 -100 -37186.7 75160.5 -100 148209 75160.5 -100 -111285 75160.5 -100 -74235.8 75160.5 -100 111160 75160.5 -100 -185383 75160.5 -100 185258 75160.5 -100 0 75160.5 -100 74110.7 75160.5 -100 -148334 75160.5 -100 37186.7 112671 -100 -148334 112671 -100 -74235.8 112671 -100 -111285 112671 -100 -37186.7 112671 -100 0 112671 -100 111160 112671 -100 148209 112671 -100 37186.7 112671 -100 74110.7 150182 -100 -111285 150182 -100 37186.7 150182 -100 -37186.7 150182 -100 0 150182 -100 111160 150182 -100 74110.7 150182 -100 -74235.8 187692 -100 0 187692 -100 -74235.8 187692 -100 -37186.7 187692 -100 37186.7 187692 -100 74110.7 </float_array>
+          <technique_common>
+            <accessor source="#twn_a_sea02.xno-geometry-position-array" count="88" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_a_sea02.xno-geometry-normal">
+          <float_array id="twn_a_sea02.xno-geometry-normal-array" count="3">0 1 0 </float_array>
+          <technique_common>
+            <accessor source="#twn_a_sea02.xno-geometry-normal-array" count="1" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_a_sea02.xno-geometry-uv">
+          <float_array id="twn_a_sea02.xno-geometry-uv-array" count="176">-40.6345 -15.9538 -40.6345 0.499999 -40.6345 8.72689 -40.6345 16.9538 -40.6345 -7.72689 -32.4076 -24.1807 -32.4076 16.9538 -32.4076 25.1807 -32.4076 -15.9538 -32.4076 8.72689 -32.4076 -7.72689 -32.4076 0.499999 -24.1807 -32.4076 -24.1807 25.1807 -24.1807 -24.1807 -24.1807 16.9538 -24.1807 8.72689 -24.1807 33.4076 -24.1807 -15.9538 -24.1807 -7.72689 -24.1807 0.499999 -15.9538 -40.6345 -15.9538 0.499999 -15.9538 33.4076 -15.9538 41.6345 -15.9538 8.72689 -15.9538 -7.72689 -15.9538 -32.4076 -15.9538 25.1807 -15.9538 16.9538 -15.9538 -24.1807 -15.9538 -15.9538 -7.7269 41.6345 -7.7269 -32.4076 -7.7269 16.9538 -7.7269 -24.1807 -7.7269 25.1807 -7.7269 -40.6345 -7.7269 -15.9538 -7.7269 33.4076 0.499996 25.1807 0.499996 16.9538 0.499996 41.6345 0.499996 33.4076 0.499996 -15.9538 0.499996 -32.4076 0.499996 -40.6345 0.499996 -24.1807 8.72689 25.1807 8.72689 16.9538 8.72689 41.6345 8.72689 33.4076 8.72689 -40.6345 8.72689 -32.4076 8.72689 -24.1807 8.72689 -15.9538 16.9538 8.72689 16.9538 -32.4076 16.9538 25.1807 16.9538 16.9538 16.9538 -24.1807 16.9538 41.6345 16.9538 -40.6345 16.9538 0.499999 16.9538 -15.9538 16.9538 33.4076 16.9538 -7.72689 25.1807 33.4076 25.1807 16.9538 25.1807 25.1807 25.1807 8.72689 25.1807 0.499999 25.1807 -24.1807 25.1807 -32.4076 25.1807 -7.72689 25.1807 -15.9538 33.4076 25.1807 33.4076 -7.72689 33.4076 8.72689 33.4076 0.499999 33.4076 -24.1807 33.4076 -15.9538 33.4076 16.9538 41.6345 0.499999 41.6345 16.9538 41.6345 8.72689 41.6345 -7.72689 41.6345 -15.9538 </float_array>
+          <technique_common>
+            <accessor source="#twn_a_sea02.xno-geometry-uv-array" count="88" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_a_sea02.xno-geometry-uv2">
+          <float_array id="twn_a_sea02.xno-geometry-uv2-array" count="176">-37.6821 -14.7817 -37.6821 0.487644 -37.6821 8.14937 -37.6821 15.7827 -37.6821 -7.17408 -30.0513 -22.4151 -30.0513 15.7827 -30.0513 23.4161 -30.0513 -14.7817 -30.0513 8.14937 -30.0513 -7.17408 -30.0513 0.487644 -22.4205 -30.0484 -22.4205 23.4161 -22.4205 -22.4151 -22.4205 15.7827 -22.4205 8.14937 -22.4205 31.0495 -22.4205 -14.7817 -22.4205 -7.17408 -22.4205 0.487644 -14.7897 -37.6818 -14.7897 0.487644 -14.7897 31.0495 -14.7897 38.6829 -14.7897 8.14937 -14.7897 -7.17408 -14.7897 -30.0484 -14.7897 23.4161 -14.7897 15.7827 -14.7897 -22.4151 -14.7897 -14.7817 -7.1589 38.6829 -7.1589 -30.0484 -7.1589 15.7827 -7.1589 -22.4151 -7.1589 23.4161 -7.1589 -37.6818 -7.1589 -14.7817 -7.1589 31.0495 0.50024 23.4161 0.50024 15.7827 0.50024 38.6829 0.50024 31.0495 0.50024 -14.7817 0.50024 -30.0484 0.50024 -37.6818 0.50024 -22.4151 8.15938 23.4161 8.15938 15.7827 8.15938 38.6829 8.15938 31.0495 8.15938 -37.6818 8.15938 -30.0484 8.15938 -22.4151 8.15938 -14.7817 15.7902 8.14937 15.7902 -30.0484 15.7902 23.4161 15.7902 15.7827 15.7902 -22.4151 15.7902 38.6829 15.7902 -37.6818 15.7902 0.487644 15.7902 -14.7817 15.7902 31.0495 15.7902 -7.17408 23.421 31.0495 23.421 15.7827 23.421 23.4161 23.421 8.14937 23.421 0.487644 23.421 -22.4151 23.421 -30.0484 23.421 -7.17408 23.421 -14.7817 31.0518 23.4161 31.0518 -7.17408 31.0518 8.14937 31.0518 0.487644 31.0518 -22.4151 31.0518 -14.7817 31.0518 15.7827 38.6826 0.487644 38.6826 15.7827 38.6826 8.14937 38.6826 -7.17408 38.6826 -14.7817 </float_array>
+          <technique_common>
+            <accessor source="#twn_a_sea02.xno-geometry-uv2-array" count="88" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_a_sea02.xno-geometry-color">
+          <float_array id="twn_a_sea02.xno-geometry-color-array" count="8">1 1 1 0 1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#twn_a_sea02.xno-geometry-color-array" count="2" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="twn_a_sea02.xno-geometry-vertex">
+          <input semantic="POSITION" source="#twn_a_sea02.xno-geometry-position" />
+        </vertices>
+        <triangles material="twn_a_sea02.xno0" count="132">
+          <input semantic="VERTEX" source="#twn_a_sea02.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#twn_a_sea02.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#twn_a_sea02.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#twn_a_sea02.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#twn_a_sea02.xno-geometry-color" offset="4" set="0" />
+          <p>76 0 76 76 0 82 0 82 82 1 84 0 84 84 0 78 0 78 78 1 84 0 84 84 0 82 0 82 82 1 84 0 84 84 0 78 0 78 78 1 85 0 85 85 0 79 0 79 79 1 85 0 85 85 0 78 0 78 78 1 85 0 85 85 0 79 0 79 79 1 83 0 83 83 0 77 0 77 77 1 83 0 83 83 0 79 0 79 79 1 83 0 83 83 0 77 0 77 77 1 86 0 86 86 0 81 0 81 81 1 86 0 86 86 0 77 0 77 77 1 86 0 86 86 0 81 0 81 81 1 87 0 87 87 0 87 0 87 87 0 81 0 81 81 1 80 0 80 80 0 72 0 72 72 1 80 0 80 80 0 81 0 81 81 1 80 0 80 80 0 72 0 72 72 1 73 0 73 73 0 57 0 57 57 1 73 0 73 73 0 72 0 72 72 1 73 0 73 73 0 57 0 57 57 1 62 0 62 62 0 62 0 62 62 0 57 0 57 57 1 52 0 52 52 0 53 0 53 53 1 52 0 52 52 0 57 0 57 57 1 52 0 52 52 0 53 0 53 53 1 46 0 46 46 0 45 0 45 45 1 46 0 46 46 0 53 0 53 53 1 46 0 46 46 0 45 0 45 45 1 37 0 37 37 0 33 0 33 33 1 37 0 37 37 0 45 0 45 45 1 37 0 37 37 0 33 0 33 33 1 21 0 21 21 0 27 0 27 27 1 21 0 21 21 0 33 0 33 33 1 21 0 21 21 0 27 0 27 27 1 12 0 12 12 0 14 0 14 14 1 12 0 12 12 0 27 0 27 27 1 12 0 12 12 0 14 0 14 14 1 5 0 5 5 0 8 0 8 8 1 5 0 5 5 0 14 0 14 14 1 5 0 5 5 0 8 0 8 8 1 0 0 0 0 0 10 0 10 10 1 0 0 0 0 0 8 0 8 8 1 0 0 0 0 0 10 0 10 10 1 4 0 4 4 0 11 0 11 11 1 4 0 4 4 0 10 0 10 10 1 4 0 4 4 0 11 0 11 11 1 1 0 1 1 0 9 0 9 9 1 1 0 1 1 0 11 0 11 11 1 1 0 1 1 0 9 0 9 9 1 2 0 2 2 0 6 0 6 6 1 2 0 2 2 0 9 0 9 9 1 2 0 2 2 0 6 0 6 6 1 3 0 3 3 0 3 0 3 3 0 6 0 6 6 1 7 0 7 7 0 13 0 13 13 1 7 0 7 7 0 6 0 6 6 1 7 0 7 7 0 13 0 13 13 1 17 0 17 17 0 23 0 23 23 1 17 0 17 17 0 13 0 13 13 1 17 0 17 17 0 23 0 23 23 1 24 0 24 24 0 24 0 24 24 0 23 0 23 23 1 32 0 32 32 0 39 0 39 39 1 32 0 32 32 0 23 0 23 23 1 32 0 32 32 0 39 0 39 39 1 42 0 42 42 0 43 0 43 43 1 42 0 42 42 0 39 0 39 39 1 42 0 42 42 0 43 0 43 43 1 50 0 50 50 0 51 0 51 51 1 50 0 50 50 0 43 0 43 43 1 50 0 50 50 0 51 0 51 51 1 61 0 61 61 0 65 0 65 65 1 61 0 61 61 0 51 0 51 51 1 61 0 61 61 0 65 0 65 65 1 67 0 67 67 0 69 0 69 69 1 67 0 67 67 0 65 0 65 65 1 67 0 67 67 0 69 0 69 69 1 76 0 76 76 0 76 0 76 76 0 69 0 69 69 1 82 0 82 82 1 68 0 68 68 1 82 0 82 82 1 69 0 69 69 1 70 0 70 70 1 82 0 82 82 1 68 0 68 68 1 82 0 82 82 1 70 0 70 70 1 78 0 78 78 1 71 0 71 71 1 78 0 78 78 1 70 0 70 70 1 78 0 78 78 1 71 0 71 71 1 79 0 79 79 1 74 0 74 74 1 79 0 79 79 1 71 0 71 71 1 79 0 79 79 1 74 0 74 74 1 77 0 77 77 1 75 0 75 75 1 77 0 77 77 1 74 0 74 74 1 77 0 77 77 1 75 0 75 75 1 81 0 81 81 1 81 0 81 81 1 75 0 75 75 1 72 0 72 72 1 60 0 60 60 1 72 0 72 72 1 75 0 75 75 1 72 0 72 72 1 60 0 60 60 1 57 0 57 57 1 57 0 57 57 1 60 0 60 60 1 53 0 53 53 1 54 0 54 54 1 53 0 53 53 1 60 0 60 60 1 53 0 53 53 1 54 0 54 54 1 45 0 45 45 1 47 0 47 47 1 45 0 45 45 1 54 0 54 54 1 45 0 45 45 1 47 0 47 47 1 33 0 33 33 1 35 0 35 35 1 33 0 33 33 1 47 0 47 47 1 33 0 33 33 1 35 0 35 35 1 27 0 27 27 1 30 0 30 30 1 27 0 27 27 1 35 0 35 35 1 27 0 27 27 1 30 0 30 30 1 14 0 14 14 1 14 0 14 14 1 30 0 30 30 1 31 0 31 31 1 31 0 31 31 1 30 0 30 30 1 38 0 38 38 1 35 0 35 35 1 38 0 38 38 1 30 0 30 30 1 38 0 38 38 1 35 0 35 35 1 44 0 44 44 1 47 0 47 47 1 44 0 44 44 1 35 0 35 35 1 44 0 44 44 1 47 0 47 47 1 55 0 55 55 1 54 0 54 54 1 55 0 55 55 1 47 0 47 47 1 55 0 55 55 1 54 0 54 54 1 64 0 64 64 1 60 0 60 60 1 64 0 64 64 1 54 0 54 54 1 75 0 75 75 1 64 0 64 64 1 60 0 60 60 1 74 0 74 74 1 64 0 64 64 1 75 0 75 75 1 64 0 64 64 1 74 0 74 74 1 66 0 66 66 1 71 0 71 71 1 66 0 66 66 1 74 0 74 74 1 66 0 66 66 1 71 0 71 71 1 63 0 63 63 1 70 0 70 70 1 63 0 63 63 1 71 0 71 71 1 63 0 63 63 1 70 0 70 70 1 56 0 56 56 1 68 0 68 68 1 56 0 56 56 1 70 0 70 70 1 56 0 56 56 1 68 0 68 68 1 59 0 59 59 1 69 0 69 69 1 59 0 59 59 1 68 0 68 68 1 59 0 59 59 1 69 0 69 69 1 58 0 58 58 1 65 0 65 65 1 58 0 58 58 1 69 0 69 69 1 58 0 58 58 1 65 0 65 65 1 48 0 48 48 1 51 0 51 51 1 48 0 48 48 1 65 0 65 65 1 48 0 48 48 1 51 0 51 51 1 40 0 40 40 1 43 0 43 43 1 40 0 40 40 1 51 0 51 51 1 40 0 40 40 1 43 0 43 43 1 36 0 36 36 1 39 0 39 39 1 36 0 36 36 1 43 0 43 43 1 36 0 36 36 1 39 0 39 39 1 28 0 28 28 1 23 0 23 23 1 28 0 28 28 1 39 0 39 39 1 13 0 13 13 1 28 0 28 28 1 23 0 23 23 1 28 0 28 28 1 13 0 13 13 1 15 0 15 15 1 6 0 6 6 1 15 0 15 15 1 13 0 13 13 1 9 0 9 9 1 15 0 15 15 1 6 0 6 6 1 15 0 15 15 1 9 0 9 9 1 16 0 16 16 1 11 0 11 11 1 16 0 16 16 1 9 0 9 9 1 16 0 16 16 1 11 0 11 11 1 20 0 20 20 1 10 0 10 10 1 20 0 20 20 1 11 0 11 11 1 20 0 20 20 1 10 0 10 10 1 19 0 19 19 1 8 0 8 8 1 19 0 19 19 1 10 0 10 10 1 19 0 19 19 1 8 0 8 8 1 18 0 18 18 1 14 0 14 14 1 18 0 18 18 1 8 0 8 8 1 31 0 31 31 1 18 0 18 18 1 14 0 14 14 1 26 0 26 26 1 18 0 18 18 1 31 0 31 31 1 18 0 18 18 1 26 0 26 26 1 19 0 19 19 1 22 0 22 22 1 19 0 19 19 1 26 0 26 26 1 19 0 19 19 1 22 0 22 22 1 20 0 20 20 1 25 0 25 25 1 20 0 20 20 1 22 0 22 22 1 20 0 20 20 1 25 0 25 25 1 16 0 16 16 1 29 0 29 29 1 16 0 16 16 1 25 0 25 25 1 16 0 16 16 1 29 0 29 29 1 15 0 15 15 1 15 0 15 15 1 29 0 29 29 1 28 0 28 28 1 28 0 28 28 1 29 0 29 29 1 36 0 36 36 1 34 0 34 34 1 36 0 36 36 1 29 0 29 29 1 36 0 36 36 1 34 0 34 34 1 40 0 40 40 1 41 0 41 41 1 40 0 40 40 1 34 0 34 34 1 40 0 40 40 1 41 0 41 41 1 48 0 48 48 1 49 0 49 49 1 48 0 48 48 1 41 0 41 41 1 48 0 48 48 1 49 0 49 49 1 58 0 58 58 1 59 0 59 59 1 58 0 58 58 1 49 0 49 49 1 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="twn_a_sea02.xno-controller">
+      <skin source="#twn_a_sea02.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="twn_a_sea02.xno-controller-Joints">
+          <Name_array id="twn_a_sea02.xno-controller-Joints-array" count="1">twn_a_sea02.xno0 </Name_array>
+          <technique_common>
+            <accessor source="#twn_a_sea02.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_a_sea02.xno-controller-Matrices">
+          <float_array id="twn_a_sea02.xno-controller-Matrices-array" count="16">1 0 0 -0.000236294 0 1 0 100 0 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#twn_a_sea02.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_a_sea02.xno-controller-Weights">
+          <float_array id="twn_a_sea02.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#twn_a_sea02.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#twn_a_sea02.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#twn_a_sea02.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="88">
+          <input semantic="JOINT" offset="0" source="#twn_a_sea02.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#twn_a_sea02.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="twn_a_sea02.xno0" sid="twn_a_sea02.xno0" name="twn_a_sea02.xno0" type="JOINT">
+        <matrix>1 0 0 0.000236294 0 1 0 -100 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="twn_a_sea02.xno" sid="twn_a_sea02.xno" name="twn_a_sea02.xno">
+        <instance_controller url="#twn_a_sea02.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="twn_a_sea02.xno0" target="#twn_a_sea02.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

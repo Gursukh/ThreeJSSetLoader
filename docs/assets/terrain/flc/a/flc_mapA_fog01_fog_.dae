@@ -1,0 +1,207 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="flc_fog01_dfpt_n.dds-image" name="flc_fog01_dfpt_n.dds-image">
+      <init_from>./textures/flc_fog01_dfpt_n.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="flc_mapA_fog01_fog_.xno0ID" name="flc_mapA_fog01_fog_.xno0">
+      <instance_effect url="#flc_mapA_fog01_fog_.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="flc_mapA_fog01_fog_.xno0-effect" name="flc_mapA_fog01_fog_.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="flc_fog01_dfpt_n.dds-image-surface">
+          <surface type="2D">
+            <init_from>flc_fog01_dfpt_n.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="flc_fog01_dfpt_n.dds-image-sampler">
+          <sampler2D>
+            <source>flc_fog01_dfpt_n.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="flc_fog01_dfpt_n.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="flc_mapA_fog01_fog_.xno-geometry" name="flc_mapA_fog01_fog_.xno-geometry">
+      <mesh>
+        <source id="flc_mapA_fog01_fog_.xno-geometry-position">
+          <float_array id="flc_mapA_fog01_fog_.xno-geometry-position-array" count="138">24546.6 -1263.76 -36538.3 25190.4 -1263.76 -48855.5 26944.9 -1263.76 -27434.8 26966.6 -1263.76 -25045 28856.2 -1263.76 -22338.2 31077.3 -1263.76 -16409.7 31467.9 -1263.76 -19859.3 32732.2 -1263.76 -23497.6 33390.7 -1263.76 -14298 34213.9 -1484.59 -29695.1 34816.4 -1263.76 -17933.5 35804 -1263.76 -12561.1 37194.6 -1642.07 -40851.7 37505.3 -1263.76 -16798.7 39468.9 -1263.76 -21689.6 39969 -1263.76 -48835 41112.5 -1263.76 -15276.4 43229.8 -1758.51 -32498.7 47800.6 -1959.3 -44468.6 49839.1 -1959.3 -34553.9 52608.4 -1263.76 -18163.2 17086.3 -1886.14 23161.8 20576.6 -2633.94 16888.1 22240.6 -3726.7 12858.2 23416.7 -5141.4 10777.7 25216.5 -1886.14 38270.5 28548.9 -6556.1 5711.97 32807.3 -2633.94 34098 37497.3 -6556.1 6473.41 39550.3 -5778.48 13688.3 42045.7 -4565.57 25546.4 -36378 -3105.48 11861.4 -36285.9 -2076.93 -3340.87 -31320.5 -410.836 -2480.98 -28390 -1691.75 8834.5 -27608.5 -143.603 -14890 -24609.9 -2561.27 19822.7 -21801.9 -4523.98 15001.5 -18729.2 -1146.29 3769.33 -14843.5 -5481.06 8830.5 -14447.6 462.852 -21235.3 -8296.24 -6557.04 7841.46 -7450.45 -513.876 -1118.08 -4347.58 -1146.06 -16947.1 -2404.64 -3875.23 8337.15 -1343.67 -156.897 -2062.6 </float_array>
+          <technique_common>
+            <accessor source="#flc_mapA_fog01_fog_.xno-geometry-position-array" count="46" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flc_mapA_fog01_fog_.xno-geometry-normal">
+          <float_array id="flc_mapA_fog01_fog_.xno-geometry-normal-array" count="111">0.0224744 0.99974 0.00390408 0 1 0 0.0181697 0.999769 -0.0114547 0.00629237 0.999876 -0.0144044 0.0223044 0.999532 -0.020928 0.0400149 0.998765 0.0294606 0.00685656 0.999778 -0.0199436 0.0387675 0.998065 0.048622 0.0231614 0.999471 -0.0228325 0.0369186 0.999115 0.0201551 0.0220343 0.999498 -0.0227446 0.008248 0.999494 -0.0307323 0.108087 0.992439 -0.058163 0.133858 0.982771 -0.127448 0.145539 0.942268 -0.301579 0.109479 0.906162 -0.408515 0.0773559 0.995667 -0.0516074 0.058713 0.9825 -0.176767 0.0975425 0.992814 -0.0693212 0.00934168 0.993912 -0.109783 0.0916987 0.983945 -0.153113 0.127671 0.985406 -0.112587 -0.140079 0.985965 0.0908319 -0.284701 0.957266 0.0508585 -0.189815 0.97931 0.0701544 -0.0206521 0.990535 0.135696 -0.0785494 0.996908 -0.00202844 0.232047 0.9727 -0.00285431 0.364207 0.922077 0.130872 0.121206 0.95148 0.282833 0.307694 0.822321 0.478656 0.0756578 0.990571 0.114215 -0.0569297 0.830181 0.554579 -0.0134034 0.978007 0.208141 0.0319189 0.999014 0.0308473 -0.277488 0.848895 0.449865 -0.0378232 0.990802 0.129926 </float_array>
+          <technique_common>
+            <accessor source="#flc_mapA_fog01_fog_.xno-geometry-normal-array" count="37" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flc_mapA_fog01_fog_.xno-geometry-uv">
+          <float_array id="flc_mapA_fog01_fog_.xno-geometry-uv-array" count="92">4.9953 -1.76975 4.63267 -4.29449 4.52105 -0.0533289 4.46106 0.460845 4.32964 0.994146 3.95141 2.10564 4.24586 1.33412 3.43316 0.557344 3.37182 2.417 3.42053 -0.565906 3.17854 1.63511 2.85865 2.69268 3.38387 -2.93788 2.62504 1.79121 2.23216 0.670095 3.34495 -5.28237 1.88252 2.0006 2.05553 -1.20167 2.03261 -3.91741 1.05489 -1.66773 -0.11035 0.890012 -0.96948 -0.231464 -0.54613 0.61866 -0.321096 1.17318 -0.157663 1.4623 0.116061 -2.34769 0.555538 2.16626 1.16803 -1.75992 1.79776 2.05768 2.0814 1.0535 2.41848 -0.59695 -1.01821 0.640719 -0.726951 2.13194 0.143096 1.34717 0.0154195 0.474122 -0.00327049 2.31384 -0.644239 0.030625 -0.34534 -0.0203158 0.380059 0.686604 0.201806 -0.0100965 0.660505 2.58779 0.816926 0.00139219 0.802824 0.932957 1.39147 2.30653 1.28647 0.122695 1.63844 0.888804 </float_array>
+          <technique_common>
+            <accessor source="#flc_mapA_fog01_fog_.xno-geometry-uv-array" count="46" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flc_mapA_fog01_fog_.xno-geometry-uv2">
+          <float_array id="flc_mapA_fog01_fog_.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#flc_mapA_fog01_fog_.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flc_mapA_fog01_fog_.xno-geometry-color">
+          <float_array id="flc_mapA_fog01_fog_.xno-geometry-color-array" count="12">1 1 1 1 1 1 1 0 1 1 1 0.972549 </float_array>
+          <technique_common>
+            <accessor source="#flc_mapA_fog01_fog_.xno-geometry-color-array" count="3" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="flc_mapA_fog01_fog_.xno-geometry-vertex">
+          <input semantic="POSITION" source="#flc_mapA_fog01_fog_.xno-geometry-position" />
+        </vertices>
+        <triangles material="flc_mapA_fog01_fog_.xno0" count="26">
+          <input semantic="VERTEX" source="#flc_mapA_fog01_fog_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#flc_mapA_fog01_fog_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#flc_mapA_fog01_fog_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#flc_mapA_fog01_fog_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#flc_mapA_fog01_fog_.xno-geometry-color" offset="4" set="0" />
+          <p>1 1 1 0 1 0 0 0 0 0 15 7 15 0 1 12 5 12 0 0 15 7 15 0 1 0 0 0 0 0 15 7 15 0 1 12 5 12 0 0 18 9 18 0 0 17 8 17 0 0 18 9 18 0 0 12 5 12 0 0 18 9 18 0 0 17 8 17 0 0 19 10 19 0 0 14 6 14 0 0 19 10 19 0 0 17 8 17 0 0 19 10 19 0 0 14 6 14 0 0 20 11 20 0 0 20 11 20 0 0 14 6 14 0 0 16 1 16 0 0 13 1 13 0 0 16 1 16 0 0 14 6 14 0 0 16 1 16 0 0 13 1 13 0 0 11 1 11 0 0 11 1 11 0 0 13 1 13 0 0 8 1 8 0 0 10 1 10 0 0 8 1 8 0 0 13 1 13 0 0 8 1 8 0 0 10 1 10 0 0 5 1 5 0 0 5 1 5 0 0 10 1 10 0 0 6 1 6 0 0 7 3 7 0 0 6 1 6 0 0 10 1 10 0 0 6 1 6 0 0 7 3 7 0 0 4 1 4 0 0 4 1 4 0 0 7 3 7 0 0 3 1 3 0 0 3 1 3 0 0 7 3 7 0 0 2 2 2 0 0 9 4 9 0 0 2 2 2 0 0 7 3 7 0 0 2 2 2 0 0 9 4 9 0 0 0 0 0 0 0 0 0 0 0 0 9 4 9 0 0 12 5 12 0 0 12 5 12 0 0 9 4 9 0 0 17 8 17 0 0 17 8 17 0 0 9 4 9 0 0 14 6 14 0 0 7 3 7 0 0 14 6 14 0 0 9 4 9 0 0 10 1 10 0 0 14 6 14 0 0 7 3 7 0 0 14 6 14 0 0 10 1 10 0 0 13 1 13 0 0 </p>
+        </triangles>
+        <triangles material="flc_mapA_fog01_fog_.xno0" count="8">
+          <input semantic="VERTEX" source="#flc_mapA_fog01_fog_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#flc_mapA_fog01_fog_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#flc_mapA_fog01_fog_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#flc_mapA_fog01_fog_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#flc_mapA_fog01_fog_.xno-geometry-color" offset="4" set="0" />
+          <p>28 19 28 0 0 26 17 26 0 0 29 20 29 0 0 24 15 24 0 0 29 20 29 0 0 26 17 26 0 0 23 14 23 0 0 29 20 29 0 0 24 15 24 0 0 29 20 29 0 0 23 14 23 0 0 30 21 30 0 0 22 13 22 0 0 30 21 30 0 0 23 14 23 0 0 30 21 30 0 0 22 13 22 0 0 27 18 27 0 0 27 18 27 0 0 22 13 22 0 0 25 16 25 0 0 21 12 21 0 0 25 16 25 0 0 22 13 22 0 0 </p>
+        </triangles>
+        <triangles material="flc_mapA_fog01_fog_.xno0" count="17">
+          <input semantic="VERTEX" source="#flc_mapA_fog01_fog_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#flc_mapA_fog01_fog_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#flc_mapA_fog01_fog_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#flc_mapA_fog01_fog_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#flc_mapA_fog01_fog_.xno-geometry-color" offset="4" set="0" />
+          <p>43 34 43 0 2 40 31 40 0 2 33 24 33 0 2 35 26 35 0 2 33 24 33 0 2 40 31 40 0 2 32 23 32 0 1 33 24 33 0 2 35 26 35 0 2 33 24 33 0 2 32 23 32 0 1 34 25 34 0 2 31 22 31 0 1 34 25 34 0 2 32 23 32 0 1 36 27 36 0 1 34 25 34 0 2 31 22 31 0 1 37 28 37 0 2 34 25 34 0 2 36 27 36 0 1 34 25 34 0 2 37 28 37 0 2 38 29 38 0 2 39 30 39 0 2 38 29 38 0 2 37 28 37 0 2 38 29 38 0 2 39 30 39 0 2 42 33 42 0 2 41 32 41 0 2 42 33 42 0 2 39 30 39 0 2 44 35 44 0 2 42 33 42 0 2 41 32 41 0 2 45 36 45 0 2 42 33 42 0 2 44 35 44 0 2 43 34 43 0 2 42 33 42 0 2 45 36 45 0 2 33 24 33 0 2 42 33 42 0 2 43 34 43 0 2 42 33 42 0 2 33 24 33 0 2 38 29 38 0 2 34 25 34 0 2 38 29 38 0 2 33 24 33 0 2 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="flc_mapA_fog01_fog_.xno-controller">
+      <skin source="#flc_mapA_fog01_fog_.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="flc_mapA_fog01_fog_.xno-controller-Joints">
+          <Name_array id="flc_mapA_fog01_fog_.xno-controller-Joints-array" count="3">flc_mapA_fog01_fog_.xno0 flc_mapA_fog01_fog_.xno1 flc_mapA_fog01_fog_.xno2 </Name_array>
+          <technique_common>
+            <accessor source="#flc_mapA_fog01_fog_.xno-controller-Joints-array" count="3">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flc_mapA_fog01_fog_.xno-controller-Matrices">
+          <float_array id="flc_mapA_fog01_fog_.xno-controller-Matrices-array" count="48">1 0 0 -35391.1 0 1 0 1379.68 0 0 1 28232.7 0 0 0 1 1 0 0 -27031.3 0 1 0 3874.3 0 0 1 -15876.2 0 0 0 1 0.928622 0 -0.371026 20662 0 1 0 3666.38 0.371026 0 0.928623 -8842.66 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#flc_mapA_fog01_fog_.xno-controller-Matrices-array" count="3" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flc_mapA_fog01_fog_.xno-controller-Weights">
+          <float_array id="flc_mapA_fog01_fog_.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#flc_mapA_fog01_fog_.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#flc_mapA_fog01_fog_.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#flc_mapA_fog01_fog_.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="46">
+          <input semantic="JOINT" offset="0" source="#flc_mapA_fog01_fog_.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#flc_mapA_fog01_fog_.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="flc_mapA_fog01_fog_.xno0" sid="flc_mapA_fog01_fog_.xno0" name="flc_mapA_fog01_fog_.xno0" type="JOINT">
+        <matrix>1 0 0 35391.1 0 1 0 -1379.68 0 0 1 -28232.7 0 0 0 1 </matrix>
+        <node id="flc_mapA_fog01_fog_.xno2" sid="flc_mapA_fog01_fog_.xno2" name="flc_mapA_fog01_fog_.xno2" type="JOINT">
+          <matrix>0.928613 0 0.37105 -51297.4 0 1 0 -2286.7 -0.37105 0 0.928613 44110.4 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="flc_mapA_fog01_fog_.xno1" sid="flc_mapA_fog01_fog_.xno1" name="flc_mapA_fog01_fog_.xno1" type="JOINT">
+          <matrix>1 0 0 -8359.76 0 1 0 -2494.62 0 0 1 44108.9 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="flc_mapA_fog01_fog_.xno" sid="flc_mapA_fog01_fog_.xno" name="flc_mapA_fog01_fog_.xno">
+        <instance_controller url="#flc_mapA_fog01_fog_.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="flc_mapA_fog01_fog_.xno0" target="#flc_mapA_fog01_fog_.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

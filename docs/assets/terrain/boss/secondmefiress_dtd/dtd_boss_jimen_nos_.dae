@@ -1,0 +1,175 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="dtd_rock03_dfxx_pm.dds-image" name="dtd_rock03_dfxx_pm.dds-image">
+      <init_from>./textures/dtd_rock03_dfxx_pm.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="dtd_boss_jimen_nos_.xno0ID" name="dtd_boss_jimen_nos_.xno0">
+      <instance_effect url="#dtd_boss_jimen_nos_.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="dtd_boss_jimen_nos_.xno0-effect" name="dtd_boss_jimen_nos_.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="dtd_rock03_dfxx_pm.dds-image-surface">
+          <surface type="2D">
+            <init_from>dtd_rock03_dfxx_pm.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="dtd_rock03_dfxx_pm.dds-image-sampler">
+          <sampler2D>
+            <source>dtd_rock03_dfxx_pm.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="dtd_rock03_dfxx_pm.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="dtd_boss_jimen_nos_.xno-geometry" name="dtd_boss_jimen_nos_.xno-geometry">
+      <mesh>
+        <source id="dtd_boss_jimen_nos_.xno-geometry-position">
+          <float_array id="dtd_boss_jimen_nos_.xno-geometry-position-array" count="201">-8718.03 -1500 -3148.01 -8718.03 -1500 1851.99 -8718.03 -1500 -5648.01 -8718.03 -1500 -648.014 -8718.03 -1500 4351.99 -7468.03 -1500 4351.99 -7468.03 -1500 -3148.01 -7468.03 -1500 6851.99 -7468.03 -1500 -5648.01 -7468.03 -1500 -8148.01 -7468.03 -1500 -648.014 -7468.03 -1500 1851.99 -4968.03 -1500 6851.99 -4968.03 -1500 -3148.01 -4968.03 -1500 -648.014 -4968.03 -1500 4351.99 -4968.03 -1500 -8148.01 -4968.03 -1500 -5648.01 -4968.03 -1500 1851.99 -4851.44 -1500 -14.5135 -4483.71 -1500 -648.014 -3745.41 -1500 1851.99 -3032.52 -1500 -3148.01 -2468.03 -1500 -5648.01 -2468.03 -1500 -4120.49 -2468.03 -1500 -10648 -2468.03 -1500 6851.99 -2468.03 -1500 4351.99 -2468.03 -1500 4007.67 -2468.03 -1500 -8148.01 31.9722 -1500 -5648.01 31.9722 -1500 4028.61 31.9722 -1500 6851.99 31.9722 -1500 -8148.01 31.9722 -1500 4351.99 31.9722 -1500 -10648 31.9722 -1500 -4047.17 2531.97 -1500 -8148.01 2531.97 -1500 -3973.85 2531.97 -1500 6851.99 2531.97 -1500 4351.99 2531.97 -1500 4049.56 2531.97 -1500 -5648.01 2531.97 -1500 -10648 2985.54 -1500 -3148.01 3770.87 -1500 1851.99 4358.61 -1500 -648.014 4764.08 -1500 90.2306 5031.97 -1500 -8148.01 5031.97 -1500 -5648.01 5031.97 -1500 1851.99 5031.97 -1500 4351.99 5031.97 -1500 -648.014 5031.97 -1500 6851.99 5031.97 -1500 -3148.01 7531.97 -1500 -5648.01 7531.97 -1500 6851.99 7531.97 -1500 4351.99 7531.97 -1500 1851.99 7531.97 -1500 -648.014 7531.97 -1500 -3148.01 7531.97 -1500 -8148.01 8781.97 -1500 1851.99 8781.97 -1500 4351.99 8781.97 -1500 -5648.01 8781.97 -1500 -3148.01 8781.97 -1500 -648.014 </float_array>
+          <technique_common>
+            <accessor source="#dtd_boss_jimen_nos_.xno-geometry-position-array" count="67" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="dtd_boss_jimen_nos_.xno-geometry-normal">
+          <float_array id="dtd_boss_jimen_nos_.xno-geometry-normal-array" count="3">-8.13802e-009 1 -9.43789e-009 </float_array>
+          <technique_common>
+            <accessor source="#dtd_boss_jimen_nos_.xno-geometry-normal-array" count="1" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="dtd_boss_jimen_nos_.xno-geometry-uv">
+          <float_array id="dtd_boss_jimen_nos_.xno-geometry-uv-array" count="134">-0.628483 2.65238 -0.628483 1.19422 -0.628483 3.38146 -0.628483 1.9233 -0.628483 0.465138 -0.263942 0.465138 -0.263942 2.65238 -0.263942 -0.263942 -0.263942 3.38146 -0.263942 4.11054 -0.263942 1.9233 -0.263942 1.19422 0.465138 -0.263942 0.465138 2.65238 0.465138 1.9233 0.465138 0.465138 0.465138 4.11054 0.465138 3.38146 0.465138 1.19422 0.499139 1.73855 0.606381 1.9233 0.821692 1.19422 1.02959 2.65238 1.19422 3.38146 1.19422 2.93598 1.19422 4.83962 1.19422 -0.263942 1.19422 0.465138 1.19422 0.565553 1.19422 4.11054 1.9233 3.38146 1.9233 0.559444 1.9233 -0.263942 1.9233 4.11054 1.9233 0.465138 1.9233 4.83962 1.9233 2.9146 2.65238 4.11054 2.65238 2.89322 2.65238 -0.263942 2.65238 0.465138 2.65238 0.553335 2.65238 3.38146 2.65238 4.83962 2.78466 2.65238 3.01368 1.19422 3.18509 1.9233 3.30333 1.708 3.38146 4.11054 3.38146 3.38146 3.38146 1.19422 3.38146 0.465138 3.38146 1.9233 3.38146 -0.263942 3.38146 2.65238 4.11054 3.38146 4.11054 -0.263942 4.11054 0.465138 4.11054 1.19422 4.11054 1.9233 4.11054 2.65238 4.11054 4.11054 4.47508 1.19422 4.47508 0.465138 4.47508 3.38146 4.47508 2.65238 4.47508 1.9233 </float_array>
+          <technique_common>
+            <accessor source="#dtd_boss_jimen_nos_.xno-geometry-uv-array" count="67" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="dtd_boss_jimen_nos_.xno-geometry-uv2">
+          <float_array id="dtd_boss_jimen_nos_.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#dtd_boss_jimen_nos_.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="dtd_boss_jimen_nos_.xno-geometry-color">
+          <float_array id="dtd_boss_jimen_nos_.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#dtd_boss_jimen_nos_.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="dtd_boss_jimen_nos_.xno-geometry-vertex">
+          <input semantic="POSITION" source="#dtd_boss_jimen_nos_.xno-geometry-position" />
+        </vertices>
+        <triangles material="dtd_boss_jimen_nos_.xno0" count="90">
+          <input semantic="VERTEX" source="#dtd_boss_jimen_nos_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#dtd_boss_jimen_nos_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#dtd_boss_jimen_nos_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#dtd_boss_jimen_nos_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#dtd_boss_jimen_nos_.xno-geometry-color" offset="4" set="0" />
+          <p>37 0 37 0 0 43 0 43 0 0 33 0 33 0 0 35 0 35 0 0 33 0 33 0 0 43 0 43 0 0 25 0 25 0 0 33 0 33 0 0 35 0 35 0 0 29 0 29 0 0 33 0 33 0 0 25 0 25 0 0 30 0 30 0 0 33 0 33 0 0 29 0 29 0 0 33 0 33 0 0 30 0 30 0 0 37 0 37 0 0 42 0 42 0 0 37 0 37 0 0 30 0 30 0 0 49 0 49 0 0 42 0 42 0 0 54 0 54 0 0 42 0 42 0 0 49 0 49 0 0 37 0 37 0 0 37 0 37 0 0 49 0 49 0 0 48 0 48 0 0 48 0 48 0 0 49 0 49 0 0 61 0 61 0 0 61 0 61 0 0 49 0 49 0 0 55 0 55 0 0 54 0 54 0 0 55 0 55 0 0 49 0 49 0 0 55 0 55 0 0 54 0 54 0 0 60 0 60 0 0 52 0 52 0 0 60 0 60 0 0 54 0 54 0 0 60 0 60 0 0 52 0 52 0 0 59 0 59 0 0 50 0 50 0 0 59 0 59 0 0 52 0 52 0 0 59 0 59 0 0 50 0 50 0 0 58 0 58 0 0 51 0 51 0 0 58 0 58 0 0 50 0 50 0 0 57 0 57 0 0 58 0 58 0 0 51 0 51 0 0 63 0 63 0 0 58 0 58 0 0 57 0 57 0 0 62 0 62 0 0 58 0 58 0 0 63 0 63 0 0 58 0 58 0 0 62 0 62 0 0 59 0 59 0 0 66 0 66 0 0 59 0 59 0 0 62 0 62 0 0 59 0 59 0 0 66 0 66 0 0 60 0 60 0 0 65 0 65 0 0 60 0 60 0 0 66 0 66 0 0 60 0 60 0 0 65 0 65 0 0 55 0 55 0 0 64 0 64 0 0 55 0 55 0 0 65 0 65 0 0 4 0 4 0 0 5 0 5 0 0 1 0 1 0 0 11 0 11 0 0 1 0 1 0 0 5 0 5 0 0 1 0 1 0 0 11 0 11 0 0 3 0 3 0 0 10 0 10 0 0 3 0 3 0 0 11 0 11 0 0 3 0 3 0 0 10 0 10 0 0 0 0 0 0 0 6 0 6 0 0 0 0 0 0 0 10 0 10 0 0 0 0 0 0 0 6 0 6 0 0 2 0 2 0 0 2 0 2 0 0 6 0 6 0 0 8 0 8 0 0 17 0 17 0 0 8 0 8 0 0 6 0 6 0 0 8 0 8 0 0 17 0 17 0 0 9 0 9 0 0 9 0 9 0 0 17 0 17 0 0 16 0 16 0 0 16 0 16 0 0 17 0 17 0 0 29 0 29 0 0 23 0 23 0 0 29 0 29 0 0 17 0 17 0 0 29 0 29 0 0 23 0 23 0 0 30 0 30 0 0 24 0 24 0 0 30 0 30 0 0 23 0 23 0 0 36 0 36 0 0 30 0 30 0 0 24 0 24 0 0 30 0 30 0 0 36 0 36 0 0 42 0 42 0 0 38 0 38 0 0 42 0 42 0 0 36 0 36 0 0 44 0 44 0 0 42 0 42 0 0 38 0 38 0 0 42 0 42 0 0 44 0 44 0 0 54 0 54 0 0 46 0 46 0 0 54 0 54 0 0 44 0 44 0 0 54 0 54 0 0 46 0 46 0 0 52 0 52 0 0 47 0 47 0 0 52 0 52 0 0 46 0 46 0 0 52 0 52 0 0 47 0 47 0 0 50 0 50 0 0 45 0 45 0 0 50 0 50 0 0 47 0 47 0 0 50 0 50 0 0 45 0 45 0 0 51 0 51 0 0 51 0 51 0 0 45 0 45 0 0 40 0 40 0 0 41 0 41 0 0 40 0 40 0 0 45 0 45 0 0 40 0 40 0 0 41 0 41 0 0 34 0 34 0 0 31 0 31 0 0 34 0 34 0 0 41 0 41 0 0 34 0 34 0 0 31 0 31 0 0 27 0 27 0 0 28 0 28 0 0 27 0 27 0 0 31 0 31 0 0 27 0 27 0 0 28 0 28 0 0 15 0 15 0 0 15 0 15 0 0 28 0 28 0 0 18 0 18 0 0 21 0 21 0 0 18 0 18 0 0 28 0 28 0 0 19 0 19 0 0 18 0 18 0 0 21 0 21 0 0 18 0 18 0 0 19 0 19 0 0 14 0 14 0 0 20 0 20 0 0 14 0 14 0 0 19 0 19 0 0 14 0 14 0 0 20 0 20 0 0 13 0 13 0 0 22 0 22 0 0 13 0 13 0 0 20 0 20 0 0 24 0 24 0 0 13 0 13 0 0 22 0 22 0 0 23 0 23 0 0 13 0 13 0 0 24 0 24 0 0 17 0 17 0 0 13 0 13 0 0 23 0 23 0 0 6 0 6 0 0 13 0 13 0 0 17 0 17 0 0 13 0 13 0 0 6 0 6 0 0 14 0 14 0 0 10 0 10 0 0 14 0 14 0 0 6 0 6 0 0 11 0 11 0 0 14 0 14 0 0 10 0 10 0 0 14 0 14 0 0 11 0 11 0 0 18 0 18 0 0 18 0 18 0 0 11 0 11 0 0 15 0 15 0 0 5 0 5 0 0 15 0 15 0 0 11 0 11 0 0 7 0 7 0 0 15 0 15 0 0 5 0 5 0 0 12 0 12 0 0 15 0 15 0 0 7 0 7 0 0 15 0 15 0 0 12 0 12 0 0 27 0 27 0 0 26 0 26 0 0 27 0 27 0 0 12 0 12 0 0 32 0 32 0 0 27 0 27 0 0 26 0 26 0 0 27 0 27 0 0 32 0 32 0 0 34 0 34 0 0 34 0 34 0 0 32 0 32 0 0 40 0 40 0 0 39 0 39 0 0 40 0 40 0 0 32 0 32 0 0 53 0 53 0 0 40 0 40 0 0 39 0 39 0 0 40 0 40 0 0 53 0 53 0 0 51 0 51 0 0 51 0 51 0 0 53 0 53 0 0 57 0 57 0 0 56 0 56 0 0 57 0 57 0 0 53 0 53 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="dtd_boss_jimen_nos_.xno-controller">
+      <skin source="#dtd_boss_jimen_nos_.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="dtd_boss_jimen_nos_.xno-controller-Joints">
+          <Name_array id="dtd_boss_jimen_nos_.xno-controller-Joints-array" count="1">dtd_boss_jimen_nos_.xno0 </Name_array>
+          <technique_common>
+            <accessor source="#dtd_boss_jimen_nos_.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="dtd_boss_jimen_nos_.xno-controller-Matrices">
+          <float_array id="dtd_boss_jimen_nos_.xno-controller-Matrices-array" count="16">1 0 0 0 0 1 0 0 0 0 1 1236.86 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#dtd_boss_jimen_nos_.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="dtd_boss_jimen_nos_.xno-controller-Weights">
+          <float_array id="dtd_boss_jimen_nos_.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#dtd_boss_jimen_nos_.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#dtd_boss_jimen_nos_.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#dtd_boss_jimen_nos_.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="67">
+          <input semantic="JOINT" offset="0" source="#dtd_boss_jimen_nos_.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#dtd_boss_jimen_nos_.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="dtd_boss_jimen_nos_.xno0" sid="dtd_boss_jimen_nos_.xno0" name="dtd_boss_jimen_nos_.xno0" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -1236.86 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="dtd_boss_jimen_nos_.xno" sid="dtd_boss_jimen_nos_.xno" name="dtd_boss_jimen_nos_.xno">
+        <instance_controller url="#dtd_boss_jimen_nos_.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="dtd_boss_jimen_nos_.xno0" target="#dtd_boss_jimen_nos_.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

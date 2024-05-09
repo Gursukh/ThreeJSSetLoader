@@ -1,0 +1,214 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="kdv_waterfall01_dfxx_r.dds-image" name="kdv_waterfall01_dfxx_r.dds-image">
+      <init_from>./textures/kdv_waterfall01_dfxx_r.dds</init_from>
+    </image>
+    <image id="kdv_waterfall01_ptxx_r.dds-image" name="kdv_waterfall01_ptxx_r.dds-image">
+      <init_from>./textures/kdv_waterfall01_ptxx_r.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="kdv_mapA_waterfall_nos_lv1_.xno0ID" name="kdv_mapA_waterfall_nos_lv1_.xno0">
+      <instance_effect url="#kdv_mapA_waterfall_nos_lv1_.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="kdv_mapA_waterfall_nos_lv1_.xno0-effect" name="kdv_mapA_waterfall_nos_lv1_.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_waterfall01_dfxx_r.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_waterfall01_dfxx_r.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_waterfall01_dfxx_r.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_waterfall01_dfxx_r.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_waterfall01_ptxx_r.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_waterfall01_ptxx_r.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_waterfall01_ptxx_r.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_waterfall01_ptxx_r.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_waterfall01_ptxx_r.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_waterfall01_ptxx_r.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_waterfall01_ptxx_r.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_waterfall01_ptxx_r.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_waterfall01_dfxx_r.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="kdv_mapA_waterfall_nos_lv1_.xno-geometry" name="kdv_mapA_waterfall_nos_lv1_.xno-geometry">
+      <mesh>
+        <source id="kdv_mapA_waterfall_nos_lv1_.xno-geometry-position">
+          <float_array id="kdv_mapA_waterfall_nos_lv1_.xno-geometry-position-array" count="180">21569.7 14858.2 24614.3 21583.8 15149.4 24327.5 21668.3 15214 24130.7 22011.9 14648 24463.8 22044.1 14447.7 24773.4 22142.6 14793.6 24248.4 22341.3 13203.3 24706.3 22345.8 13203.3 24359.2 22513.4 13203.3 24106.2 22683.1 10828.9 25142.9 22754 8486.81 25515.4 22784.2 10771 24806.1 22849.5 10467.2 24436.2 22969.2 8462.49 25117.3 23087.9 8403.43 24737.7 23287.8 8103.69 25219.1 23360 8095.6 25661.3 23438.4 8110.56 24836.2 24077.3 6808.93 24898.3 24094.3 6808.93 25326.1 24130.1 -6231.71 24601.5 24139.6 -6231.71 23774.5 24146.2 -6231.71 25419.2 24194.1 6808.93 24497.4 24409.8 3511.93 24706.4 24415.3 3511.93 24252.5 24491.9 106.584 24669.3 24504.2 106.585 24071 24516.6 3511.93 25072.1 24537.1 106.584 25182.6 21344.3 10838.2 21830.6 21353.1 15162.1 22045.9 21381 14427.3 21959.9 21557.9 15175.8 22128.6 21570.2 12587.9 21813.8 21585 10907.5 21953.9 21599.1 8436.42 21772.2 21601.4 14377.2 22063.1 21715 15189.6 22249.7 21749.3 12606 21958.3 21774.1 14327 22204.6 21800.5 10922.6 22151.3 21926.2 12624.1 22128.4 21965.6 8404.94 22008 22416.1 8429.26 22197.8 23053.3 8235.84 20984.8 23094 8288.08 21308.6 23390.2 8220.89 21759 23486.9 6808.93 20999.4 23605.3 -10011.8 20333.9 23666 6808.93 21249.2 23741.6 6808.93 21625.9 23896.7 -10011.8 21014.3 23929.1 4406.24 20514.9 24176.7 -10011.8 21704.9 24231.7 4406.24 20844.4 24323.8 4406.24 21187.5 24450 1929.57 20403.9 24557.9 1761.95 20847.9 24619.4 1478.9 21195.3 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapA_waterfall_nos_lv1_.xno-geometry-position-array" count="60" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapA_waterfall_nos_lv1_.xno-geometry-normal">
+          <float_array id="kdv_mapA_waterfall_nos_lv1_.xno-geometry-normal-array" count="180">0.504254 0.677741 0.535159 0.497567 0.63491 0.59103 0.522253 0.718097 0.459988 0.731875 0.437717 0.522267 0.88374 0.433715 0.175769 0.625575 0.50064 0.598344 0.98201 0.18838 0.0129828 0.948204 0.207954 0.240133 0.879831 0.169609 0.443994 0.956471 0.145759 0.252819 0.765809 0.588339 0.259601 0.955302 0.159369 0.248996 0.989396 0.127269 0.0699894 0.84692 0.438621 0.300562 0.919186 0.362896 0.152985 0.765496 0.620559 0.170068 0.766555 0.637144 -0.0802605 0.735098 0.635069 0.237315 0.948374 0.317038 0.0085233 0.945879 0.322326 -0.0376552 0.998117 -0.0583695 -0.018831 0.998253 -0.0579512 0.0115057 0.997865 -0.0622648 -0.0197078 0.939005 0.259103 0.22613 0.996954 0.051751 -0.0583536 0.999154 0.0383463 0.0148884 0.99967 -0.0078412 -0.0244616 0.999395 -0.0300805 0.0174354 0.976274 0.0803464 -0.20108 0.992551 -0.0242513 -0.119396 0.456072 -0.000398864 -0.889943 0.364665 0.1219 -0.923125 0.416129 0.111845 -0.902401 0.472032 0.106349 -0.875143 0.545349 0.0216285 -0.83793 0.576838 0.00458047 -0.816845 0.462344 0.474665 -0.748953 0.56952 0.0991762 -0.815973 0.624371 0.090909 -0.77582 0.66145 0.0178233 -0.749777 0.659869 0.0920954 -0.745715 0.615091 0.00986846 -0.788394 0.692143 0.0163029 -0.721577 0.373424 0.692686 -0.617042 0.254021 0.857957 -0.446523 0.419598 0.89596 -0.14558 0.550309 0.778896 -0.300799 0.757117 0.600937 -0.256218 0.819266 0.292807 -0.493019 0.917478 -0.0625979 -0.392831 0.879536 0.289967 -0.377274 0.947047 0.258872 -0.189967 0.948352 -0.0578059 -0.31191 0.835562 0.194871 -0.513675 0.925457 -0.0523002 -0.375225 0.883525 0.192008 -0.42722 0.94983 0.208018 -0.233563 0.961904 0.0302533 -0.271709 0.956356 0.0632378 -0.285278 0.971765 0.0273294 -0.234362 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapA_waterfall_nos_lv1_.xno-geometry-normal-array" count="60" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapA_waterfall_nos_lv1_.xno-geometry-uv">
+          <float_array id="kdv_mapA_waterfall_nos_lv1_.xno-geometry-uv-array" count="102">0.242264 7.9714 0.364391 8.02532 0.486518 8.07925 0.374328 6.91498 0.237606 6.88505 0.51105 6.94491 0.384768 5.59673 0.530105 5.60248 0.675442 5.60823 0.235584 3.90098 0.0633376 2.00442 0.451942 3.57089 0.709086 3.25415 0.308457 1.93812 0.633979 1.87964 0.313934 0.509776 0.0397647 0.50255 0.66614 0.590005 0.506828 -1.4317 0.233612 -1.44195 0.669414 -9.15818 1.131 -9.1398 0.273889 -9.17223 0.891817 -1.41766 0.642778 -3.22529 1.04652 -3.20897 0.640255 -5.29691 1.0643 -5.28032 0.341975 -3.23708 0.309083 -5.30931 0.709086 3.52881 0.486518 8.58278 0.51105 7.25008 0.364391 8.52886 0.675442 5.79134 0.451942 3.84554 0.374328 7.22015 0.242264 8.47493 0.530105 5.78559 0.237606 7.19022 0.235584 4.17564 0.384768 5.77983 1.2816 -12.9617 0.820836 -12.9781 1.04652 -3.39 0.408307 -12.9933 0.642778 -3.40631 0.341975 -3.41811 1.0643 -5.45129 0.640255 -5.46787 0.309083 -5.48028 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapA_waterfall_nos_lv1_.xno-geometry-uv-array" count="51" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapA_waterfall_nos_lv1_.xno-geometry-uv2">
+          <float_array id="kdv_mapA_waterfall_nos_lv1_.xno-geometry-uv2-array" count="120">0.316839 5.29825 0.406639 5.3379 0.496438 5.37755 0.413945 4.63367 0.313414 4.61166 0.514476 4.65568 0.421621 3.87754 0.528487 3.88177 0.635352 3.886 0.311927 2.69798 0.185276 1.39321 0.471014 2.45527 0.660091 2.22237 0.365511 1.34446 0.604865 1.30146 0.369538 0.294209 0.167943 0.288896 0.628513 0.353201 0.511372 -1.13334 0.310478 -1.14089 0.63092 -6.39554 0.970322 -6.38203 0.340089 -6.40587 0.794452 -1.12302 0.611335 -2.32891 0.908203 -2.31692 0.60948 -3.55637 0.921277 -3.54417 0.390156 -2.33759 0.365971 -3.56549 0.628565 1.63703 0.50282 4.06135 0.51668 3.50669 0.433822 4.03088 0.609557 2.9153 0.483286 1.81598 0.586132 0.92944 0.439436 3.48978 0.364824 4.00042 0.527446 2.91205 0.362192 3.47287 0.361049 2.00247 0.445334 2.9088 0.402221 0.962478 0.263735 0.999938 0.604302 0.200832 0.405315 0.155505 0.250417 0.151422 0.731803 -0.93344 0.952022 -7.03693 0.514295 -0.941373 0.359936 -0.947166 0.691701 -7.04622 0.819205 -1.85078 0.458633 -7.05478 0.591103 -1.86 0.421157 -1.86666 0.829251 -2.79376 0.589678 -2.80313 0.402575 -2.81014 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapA_waterfall_nos_lv1_.xno-geometry-uv2-array" count="60" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapA_waterfall_nos_lv1_.xno-geometry-color">
+          <float_array id="kdv_mapA_waterfall_nos_lv1_.xno-geometry-color-array" count="108">0.988235 0.988235 0.988235 0 0.988235 0.988235 0.988235 0.996078 0.988235 0.988235 0.988235 0.988235 0.988235 0.988235 0.988235 0.0156863 0.988235 0.988235 0.988235 0.913725 0.988235 0.988235 0.988235 0.00784314 0.988235 0.988235 0.988235 0.00392157 0.988235 0.988235 0.988235 0.901961 0.988235 0.988235 0.988235 0.972549 0.988235 0.988235 0.988235 0.0196078 0.945098 0.945098 0.945098 0.0117647 0.988235 0.988235 0.988235 0.054902 0.988235 0.988235 0.988235 1 0.988235 0.988235 0.988235 0.168627 0.988235 0.988235 0.988235 0.0627451 0.988235 0.988235 0.988235 0.196078 0.988235 0.988235 0.988235 0.984314 0.988235 0.988235 0.988235 0.0666667 0.988235 0.988235 0.988235 0.0392157 0.988235 0.988235 0.988235 0.372549 0.988235 0.988235 0.988235 0.223529 0.988235 0.988235 0.988235 0.027451 0.976471 0.976471 0.976471 0.0470588 0.988235 0.988235 0.988235 0.0117647 0.972549 0.972549 0.972549 1 0.988235 0.988235 0.988235 0.180392 0.968627 0.968627 0.968627 0.00784314 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapA_waterfall_nos_lv1_.xno-geometry-color-array" count="27" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="kdv_mapA_waterfall_nos_lv1_.xno-geometry-vertex">
+          <input semantic="POSITION" source="#kdv_mapA_waterfall_nos_lv1_.xno-geometry-position" />
+        </vertices>
+        <triangles material="kdv_mapA_waterfall_nos_lv1_.xno0" count="36">
+          <input semantic="VERTEX" source="#kdv_mapA_waterfall_nos_lv1_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#kdv_mapA_waterfall_nos_lv1_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#kdv_mapA_waterfall_nos_lv1_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#kdv_mapA_waterfall_nos_lv1_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#kdv_mapA_waterfall_nos_lv1_.xno-geometry-color" offset="4" set="0" />
+          <p>22 22 22 22 0 20 20 20 20 7 29 29 29 29 0 26 26 26 26 1 29 29 29 29 0 20 20 20 20 7 24 24 24 24 1 29 29 29 29 0 26 26 26 26 1 29 29 29 29 0 24 24 24 24 1 28 28 28 28 0 18 18 18 18 8 28 28 28 28 0 24 24 24 24 1 28 28 28 28 0 18 18 18 18 8 19 19 19 19 0 19 19 19 19 0 18 18 18 18 8 16 16 16 16 0 15 15 15 15 7 16 16 16 16 0 18 18 18 18 8 16 16 16 16 0 15 15 15 15 7 10 10 10 10 6 13 13 13 13 1 10 10 10 10 6 15 15 15 15 7 10 10 10 10 6 13 13 13 13 1 9 9 9 9 5 11 11 11 11 1 9 9 9 9 5 13 13 13 13 1 7 7 7 7 4 9 9 9 9 5 11 11 11 11 1 9 9 9 9 5 7 7 7 7 4 6 6 6 6 0 6 6 6 6 0 7 7 7 7 4 4 4 4 4 0 3 3 3 3 2 4 4 4 4 0 7 7 7 7 4 4 4 4 4 0 3 3 3 3 2 0 0 0 0 0 0 0 0 0 0 3 3 3 3 2 1 1 1 1 1 5 5 5 5 3 1 1 1 1 1 3 3 3 3 2 1 1 1 1 1 5 5 5 5 3 2 2 2 2 0 5 5 5 5 3 3 3 3 3 2 8 8 8 8 0 7 7 7 7 4 8 8 8 8 0 3 3 3 3 2 11 11 11 11 1 8 8 8 8 0 7 7 7 7 4 8 8 8 8 0 11 11 11 11 1 12 12 12 12 0 12 12 12 12 0 11 11 11 11 1 14 14 14 14 0 13 13 13 13 1 14 14 14 14 0 11 11 11 11 1 14 14 14 14 0 13 13 13 13 1 17 17 17 17 0 15 15 15 15 7 17 17 17 17 0 13 13 13 13 1 17 17 17 17 0 15 15 15 15 7 23 23 23 23 0 18 18 18 18 8 23 23 23 23 0 15 15 15 15 7 24 24 24 24 1 23 23 23 23 0 18 18 18 18 8 23 23 23 23 0 24 24 24 24 1 25 25 25 25 0 26 26 26 26 1 25 25 25 25 0 24 24 24 24 1 25 25 25 25 0 26 26 26 26 1 27 27 27 27 9 20 20 20 20 7 27 27 27 27 9 26 26 26 26 1 27 27 27 27 9 20 20 20 20 7 21 21 21 21 0 </p>
+        </triangles>
+        <triangles material="kdv_mapA_waterfall_nos_lv1_.xno0" count="36">
+          <input semantic="VERTEX" source="#kdv_mapA_waterfall_nos_lv1_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#kdv_mapA_waterfall_nos_lv1_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#kdv_mapA_waterfall_nos_lv1_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#kdv_mapA_waterfall_nos_lv1_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#kdv_mapA_waterfall_nos_lv1_.xno-geometry-color" offset="4" set="0" />
+          <p>54 54 45 54 26 52 52 43 52 24 59 59 50 59 0 58 58 49 58 12 59 59 50 59 0 52 52 43 52 24 55 55 46 55 12 59 59 50 59 0 58 58 49 58 12 59 59 50 59 0 55 55 46 55 12 56 56 47 56 0 50 50 18 50 12 56 56 47 56 0 55 55 46 55 12 56 56 47 56 0 50 50 18 50 12 51 51 19 51 23 51 51 19 51 23 50 50 18 50 12 47 47 16 47 20 46 46 15 46 2 47 47 16 47 20 50 50 18 50 12 47 47 16 47 20 46 46 15 46 2 44 44 10 44 0 43 43 13 43 12 44 44 10 44 0 46 46 15 46 2 44 44 10 44 0 43 43 13 43 12 41 41 40 41 0 35 35 35 35 12 41 41 40 41 0 43 43 13 43 12 39 39 38 39 16 41 41 40 41 0 35 35 35 35 12 41 41 40 41 0 39 39 38 39 16 42 42 41 42 18 42 42 41 42 18 39 39 38 39 16 40 40 39 40 17 37 37 36 37 12 40 40 39 40 17 39 39 38 39 16 40 40 39 40 17 37 37 36 37 12 38 38 37 38 15 38 38 37 38 15 37 37 36 37 12 33 33 33 33 12 32 32 32 32 11 33 33 33 33 12 37 37 36 37 12 33 33 33 33 12 32 32 32 32 11 31 31 31 31 10 32 32 32 32 11 37 37 36 37 12 34 34 34 34 13 39 39 38 39 16 34 34 34 34 13 37 37 36 37 12 35 35 35 35 12 34 34 34 34 13 39 39 38 39 16 34 34 34 34 13 35 35 35 35 12 30 30 30 30 0 30 30 30 30 0 35 35 35 35 12 36 36 14 36 14 43 43 13 43 12 36 36 14 36 14 35 35 35 35 12 36 36 14 36 14 43 43 13 43 12 45 45 17 45 19 46 46 15 46 2 45 45 17 45 19 43 43 13 43 12 45 45 17 45 19 46 46 15 46 2 48 48 23 48 21 50 50 18 50 12 48 48 23 48 21 46 46 15 46 2 55 55 46 55 12 48 48 23 48 21 50 50 18 50 12 48 48 23 48 21 55 55 46 55 12 53 53 44 53 25 58 58 49 58 12 53 53 44 53 25 55 55 46 55 12 53 53 44 53 25 58 58 49 58 12 57 57 48 57 21 52 52 43 52 24 57 57 48 57 21 58 58 49 58 12 57 57 48 57 21 52 52 43 52 24 49 49 42 49 22 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="kdv_mapA_waterfall_nos_lv1_.xno-controller">
+      <skin source="#kdv_mapA_waterfall_nos_lv1_.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="kdv_mapA_waterfall_nos_lv1_.xno-controller-Joints">
+          <Name_array id="kdv_mapA_waterfall_nos_lv1_.xno-controller-Joints-array" count="2">kdv_mapA_waterfall_nos_lv1_.xno0 kdv_mapA_waterfall_nos_lv1_.xno1 </Name_array>
+          <technique_common>
+            <accessor source="#kdv_mapA_waterfall_nos_lv1_.xno-controller-Joints-array" count="2">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapA_waterfall_nos_lv1_.xno-controller-Matrices">
+          <float_array id="kdv_mapA_waterfall_nos_lv1_.xno-controller-Matrices-array" count="32">1 0 0 -25036.7 0 1 0 -703.883 0 0 1 -26127.8 0 0 0 1 1 0 0 -25409.9 0 1 0 -703.883 0 0 1 -21829.7 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapA_waterfall_nos_lv1_.xno-controller-Matrices-array" count="2" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapA_waterfall_nos_lv1_.xno-controller-Weights">
+          <float_array id="kdv_mapA_waterfall_nos_lv1_.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapA_waterfall_nos_lv1_.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#kdv_mapA_waterfall_nos_lv1_.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#kdv_mapA_waterfall_nos_lv1_.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="60">
+          <input semantic="JOINT" offset="0" source="#kdv_mapA_waterfall_nos_lv1_.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#kdv_mapA_waterfall_nos_lv1_.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="kdv_mapA_waterfall_nos_lv1_.xno0" sid="kdv_mapA_waterfall_nos_lv1_.xno0" name="kdv_mapA_waterfall_nos_lv1_.xno0" type="JOINT">
+        <matrix>1 0 0 25036.7 0 1 0 703.883 0 0 1 26127.8 0 0 0 1 </matrix>
+        <node id="kdv_mapA_waterfall_nos_lv1_.xno1" sid="kdv_mapA_waterfall_nos_lv1_.xno1" name="kdv_mapA_waterfall_nos_lv1_.xno1" type="JOINT">
+          <matrix>1 0 0 373.188 0 1 0 -0.00012207 0 0 1 -4298.05 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="kdv_mapA_waterfall_nos_lv1_.xno" sid="kdv_mapA_waterfall_nos_lv1_.xno" name="kdv_mapA_waterfall_nos_lv1_.xno">
+        <instance_controller url="#kdv_mapA_waterfall_nos_lv1_.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="kdv_mapA_waterfall_nos_lv1_.xno0" target="#kdv_mapA_waterfall_nos_lv1_.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

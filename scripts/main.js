@@ -11,6 +11,5 @@ function animate() {
   environment.render();
 };
 
-environment.load_terrain_test()
 
 animate();

@@ -1,0 +1,211 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="kdv_water01_ntxx_z.dds-image" name="kdv_water01_ntxx_z.dds-image">
+      <init_from>./textures/kdv_water01_ntxx_z.dds</init_from>
+    </image>
+    <image id="kdv_water02_ntxx_z.dds-image" name="kdv_water02_ntxx_z.dds-image">
+      <init_from>./textures/kdv_water02_ntxx_z.dds</init_from>
+    </image>
+    <image id="kdv_water02_nt_z.dds-image" name="kdv_water02_nt_z.dds-image">
+      <init_from>./textures/kdv_water02_nt_z.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="kdv_mapD_water_lv1_nos_.xno0ID" name="kdv_mapD_water_lv1_nos_.xno0">
+      <instance_effect url="#kdv_mapD_water_lv1_nos_.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="kdv_mapD_water_lv1_nos_.xno0-effect" name="kdv_mapD_water_lv1_nos_.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_water01_ntxx_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_water01_ntxx_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_water01_ntxx_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_water01_ntxx_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_water02_ntxx_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_water02_ntxx_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_water02_ntxx_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_water02_ntxx_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_water02_ntxx_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_water02_ntxx_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_water02_ntxx_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_water02_ntxx_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_water02_nt_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_water02_nt_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_water02_nt_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_water02_nt_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_water01_ntxx_z.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="kdv_mapD_water_lv1_nos_.xno-geometry" name="kdv_mapD_water_lv1_nos_.xno-geometry">
+      <mesh>
+        <source id="kdv_mapD_water_lv1_nos_.xno-geometry-position">
+          <float_array id="kdv_mapD_water_lv1_nos_.xno-geometry-position-array" count="207">-25162.5 -800 -7363.34 -24584 -800 5654.25 -23909 -800 -2542.01 -23330.4 -800 10186.3 -21112.6 -800 -9870.43 -21016.2 -800 -806.333 -19955.5 -800 1507.9 -19473.4 -800 -13727.5 -19184.1 -800 15489.8 -17881.9 -800 5210.95 -15809.1 -800 7004.22 -14073.5 -800 16261.2 -13398.5 -800 18961.1 -13109.2 -800 6136.38 -12916.3 -800 -13631.1 -10505.7 -800 7679.2 -9927.12 -800 -12281.1 -8673.58 -800 2761.45 -7516.46 -800 157.933 -6761.39 -800 23966.5 -6166.49 -800 7197.07 -6166.49 -800 -999.186 -4346.47 -800 -11264.4 -4261.7 -800 1473.07 -4141.53 -800 -3795.56 -2780.6 -800 -16533.4 -2502.28 -800 -7652.62 -1152.31 -800 11729.1 -14.9491 -800 6145.15 4.8128 -800 20214.7 1258.36 -800 17418.3 1854.8 -800 9835.85 4163.21 -800 19100.1 4260.71 -800 19894.2 5936.02 -800 17552.4 6148.29 -800 18856.4 6245.79 -800 19650.4 6363.65 -800 20946.6 6658.35 -800 15217.6 6658.35 -800 15217.6 7375.06 -800 22487.8 7613.87 -800 1278.72 7627.25 -800 17768.3 8000.6 -800 20526.8 8121.22 -800 16472.6 8121.22 -800 16472.6 8292.17 -800 23882.8 8810.05 -800 -8306.37 9222.29 -800 -18435.6 9338.31 -800 22561.5 9690.62 -800 26573.8 10374.7 -800 24694.4 10442.4 -800 26847.4 11126.4 -800 24968 12495 -800 19998.6 13094 -800 23983.5 13117.4 -800 25735.5 14331.6 -800 -3146.73 14457 -800 23529.1 14547.6 -800 20421.3 14658.2 -800 -18392.7 14680.2 -800 22004.9 15968.5 -800 24714.8 16493 -800 21714.6 16979.8 -800 -679.153 23084.5 -800 12891.9 23113.3 -800 18613.6 23199.8 -800 -1870.28 23258.2 -800 -9341.19 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_water_lv1_nos_.xno-geometry-position-array" count="69" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapD_water_lv1_nos_.xno-geometry-normal">
+          <float_array id="kdv_mapD_water_lv1_nos_.xno-geometry-normal-array" count="3">-1.78083e-007 1 1.58949e-007 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_water_lv1_nos_.xno-geometry-normal-array" count="1" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapD_water_lv1_nos_.xno-geometry-uv">
+          <float_array id="kdv_mapD_water_lv1_nos_.xno-geometry-uv-array" count="134">-16.5813 11.7886 -16.2022 2.66754 -15.7599 8.41042 -15.3808 -0.507936 -13.9275 13.5452 -13.8643 7.19428 -13.1693 5.57276 -12.8534 16.2478 -12.6638 -4.22392 -11.8105 2.97814 -10.4523 1.72165 -9.31501 -4.76443 -8.87271 -6.6562 -8.68316 2.32972 -8.55678 16.1802 -6.97716 1.24871 -6.59804 15.2343 -5.77664 4.69443 -5.01842 6.51864 -4.52366 -10.1634 -4.13383 1.58652 -4.13383 7.3294 -2.94123 14.5219 -2.88569 5.59716 -2.80694 9.28874 -1.91517 18.2138 -1.7328 11.9913 -0.84821 -1.58896 -0.102938 2.32357 -0.0899912 -7.53453 0.731415 -5.57519 1.12224 -0.2624 2.63487 -6.75361 2.69875 -7.30997 3.79653 -5.66917 3.93562 -6.58284 3.99951 -7.1392 4.07674 -8.04739 4.26985 -4.03327 4.73948 -9.12729 4.89597 5.73333 4.90473 -5.8204 5.14938 -7.75321 5.22842 -4.9126 5.34043 -10.1047 5.67979 12.4493 5.94992 19.5466 6.02594 -9.17889 6.25679 -11.9902 6.70502 -10.6734 6.74939 -12.1819 7.19761 -10.8651 8.0944 -7.38315 8.48692 -10.1753 8.50227 -11.4029 9.2979 8.83412 9.38004 -9.85685 9.43938 -7.67933 9.51191 19.5165 9.5263 -8.78891 10.3705 -10.6877 10.7142 -8.58547 11.0331 7.10516 15.0333 -2.40368 15.0522 -6.41269 15.1089 7.93974 15.1472 13.1744 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_water_lv1_nos_.xno-geometry-uv-array" count="67" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapD_water_lv1_nos_.xno-geometry-uv2">
+          <float_array id="kdv_mapD_water_lv1_nos_.xno-geometry-uv2-array" count="134">-16.5813 11.7886 -16.2022 2.66754 -15.7599 8.41042 -15.3808 -0.507936 -13.9275 13.5452 -13.8643 7.19428 -13.1693 5.57276 -12.8534 16.2478 -12.6638 -4.22392 -11.8105 2.97814 -10.4523 1.72165 -9.31501 -4.76443 -8.87271 -6.6562 -8.68316 2.32972 -8.55678 16.1802 -6.97716 1.24871 -6.59804 15.2343 -5.77664 4.69443 -5.01842 6.51864 -4.52366 -10.1634 -4.13383 1.58652 -4.13383 7.3294 -2.94123 14.5219 -2.88569 5.59716 -2.80694 9.28874 -1.91517 18.2138 -1.7328 11.9913 -0.84821 -1.58896 -0.102938 2.32357 -0.0899912 -7.53453 0.731415 -5.57519 1.12224 -0.2624 2.63487 -6.75361 2.69875 -7.30997 3.79653 -5.66917 3.93562 -6.58284 3.99951 -7.1392 4.07674 -8.04739 4.26985 -4.03327 4.73948 -9.12729 4.89597 5.73333 4.90473 -5.8204 5.14938 -7.75321 5.22842 -4.9126 5.34043 -10.1047 5.67979 12.4493 5.94992 19.5466 6.02594 -9.17889 6.25679 -11.9902 6.70502 -10.6734 6.74939 -12.1819 7.19761 -10.8651 8.0944 -7.38315 8.48692 -10.1753 8.50227 -11.4029 9.2979 8.83412 9.38004 -9.85685 9.43938 -7.67933 9.51191 19.5165 9.5263 -8.78891 10.3705 -10.6877 10.7142 -8.58547 11.0331 7.10516 15.0333 -2.40368 15.0522 -6.41269 15.1089 7.93974 15.1472 13.1744 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_water_lv1_nos_.xno-geometry-uv2-array" count="67" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapD_water_lv1_nos_.xno-geometry-color">
+          <float_array id="kdv_mapD_water_lv1_nos_.xno-geometry-color-array" count="68">0.996078 0.996078 0.996078 1 0 0 0 0.227451 0 0 0 0.14902 0.498039 0.533333 0.588235 1 0.454902 0.494118 0.552941 1 0.466667 0.505882 0.564706 0.133333 0.360784 0.403922 0.47451 1 1 1 1 0.356863 0.427451 0.466667 0.529412 1 0 0 0 0.137255 0.4 0.439216 0.505882 0.243137 0 0 0 0.231373 0.372549 0.415686 0.486275 0.12549 0.372549 0.411765 0.482353 1 0.423529 0.462745 0.52549 1 1 1 1 0.337255 0.431373 0.470588 0.533333 1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_water_lv1_nos_.xno-geometry-color-array" count="17" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="kdv_mapD_water_lv1_nos_.xno-geometry-vertex">
+          <input semantic="POSITION" source="#kdv_mapD_water_lv1_nos_.xno-geometry-position" />
+        </vertices>
+        <triangles material="kdv_mapD_water_lv1_nos_.xno0" count="67">
+          <input semantic="VERTEX" source="#kdv_mapD_water_lv1_nos_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#kdv_mapD_water_lv1_nos_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_water_lv1_nos_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_water_lv1_nos_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#kdv_mapD_water_lv1_nos_.xno-geometry-color" offset="4" set="0" />
+          <p>45 0 43 43 7 39 0 38 38 7 42 0 41 41 8 34 0 34 34 3 42 0 41 41 8 39 0 38 38 7 42 0 41 41 8 34 0 34 34 3 35 0 35 35 4 51 0 49 49 10 52 0 50 50 11 53 0 51 51 12 52 0 50 50 11 51 0 49 49 10 50 0 48 48 9 58 0 56 56 8 63 0 61 61 0 61 0 59 59 15 63 0 61 61 0 58 0 56 56 8 62 0 60 60 16 58 0 56 56 8 56 0 54 54 14 62 0 60 60 16 56 0 54 54 14 58 0 56 56 8 53 0 51 51 12 55 0 53 53 13 53 0 51 51 12 58 0 56 56 8 53 0 51 51 12 55 0 53 53 13 51 0 49 49 10 49 0 47 47 6 51 0 49 49 10 55 0 53 53 13 51 0 49 49 10 49 0 47 47 6 46 0 44 44 6 46 0 44 44 6 49 0 47 47 6 40 0 39 39 6 43 0 42 42 6 40 0 39 39 6 49 0 47 47 6 40 0 39 39 6 43 0 42 42 6 37 0 37 37 6 37 0 37 37 6 43 0 42 42 6 36 0 36 36 5 42 0 41 41 8 36 0 36 36 5 43 0 42 42 6 35 0 35 35 4 36 0 36 36 5 42 0 41 41 8 36 0 36 36 5 35 0 35 35 4 33 0 33 33 2 32 0 32 32 1 33 0 33 33 2 35 0 35 35 4 60 0 58 58 0 48 0 46 46 0 68 0 66 66 0 57 0 55 55 0 68 0 66 66 0 48 0 46 46 0 68 0 66 66 0 57 0 55 55 0 67 0 65 65 0 64 0 62 62 0 67 0 65 65 0 57 0 55 55 0 67 0 65 65 0 64 0 62 62 0 65 0 63 63 0 65 0 63 63 0 64 0 62 62 0 41 0 40 40 0 57 0 55 55 0 41 0 40 40 0 64 0 62 62 0 57 0 55 55 0 48 0 46 46 0 47 0 45 45 0 21 0 21 21 0 47 0 45 45 0 48 0 46 46 0 47 0 45 45 0 21 0 21 21 0 23 0 23 23 0 14 0 14 14 0 24 0 24 24 0 16 0 16 16 0 24 0 24 24 0 14 0 14 14 0 4 0 4 4 0 7 0 7 7 0 4 0 4 4 0 14 0 14 14 0 31 0 31 31 0 65 0 63 63 0 28 0 28 28 0 41 0 40 40 0 28 0 28 28 0 65 0 63 63 0 1 0 1 1 0 3 0 3 3 0 6 0 6 6 0 11 0 11 11 0 6 0 6 6 0 3 0 3 3 0 6 0 6 6 0 11 0 11 11 0 9 0 9 9 0 10 0 10 10 0 9 0 9 9 0 11 0 11 11 0 9 0 9 9 0 10 0 10 10 0 6 0 6 6 0 24 0 24 24 0 6 0 6 6 0 10 0 10 10 0 6 0 6 6 0 24 0 24 24 0 5 0 5 5 0 4 0 4 4 0 5 0 5 5 0 24 0 24 24 0 5 0 5 5 0 4 0 4 4 0 2 0 2 2 0 0 0 0 0 0 2 0 2 2 0 4 0 4 4 0 13 0 13 13 0 17 0 17 17 0 10 0 10 10 0 18 0 18 18 0 10 0 10 10 0 17 0 17 17 0 21 0 21 21 0 10 0 10 10 0 18 0 18 18 0 10 0 10 10 0 21 0 21 21 0 24 0 24 24 0 48 0 46 46 0 24 0 24 24 0 21 0 21 21 0 24 0 24 24 0 48 0 46 46 0 26 0 26 26 0 26 0 26 26 0 48 0 46 46 0 22 0 22 22 0 25 0 25 25 0 22 0 22 22 0 48 0 46 46 0 38 0 38 38 0 44 0 43 43 0 31 0 31 31 0 54 0 52 52 0 31 0 31 31 0 44 0 43 43 0 59 0 57 57 0 31 0 31 31 0 54 0 52 52 0 31 0 31 31 0 59 0 57 57 0 65 0 63 63 0 66 0 64 64 0 65 0 63 63 0 59 0 57 57 0 10 0 10 10 0 11 0 11 11 0 15 0 15 15 0 30 0 30 30 0 15 0 15 15 0 11 0 11 11 0 15 0 15 15 0 30 0 30 30 0 20 0 20 20 0 27 0 27 27 0 20 0 20 20 0 30 0 30 30 0 29 0 29 29 0 30 0 30 30 0 19 0 19 19 0 11 0 11 11 0 19 0 19 19 0 30 0 30 30 0 19 0 19 19 0 11 0 11 11 0 12 0 12 12 0 11 0 11 11 0 3 0 3 3 0 8 0 8 8 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="kdv_mapD_water_lv1_nos_.xno-controller">
+      <skin source="#kdv_mapD_water_lv1_nos_.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="kdv_mapD_water_lv1_nos_.xno-controller-Joints">
+          <Name_array id="kdv_mapD_water_lv1_nos_.xno-controller-Joints-array" count="1">kdv_mapD_water_lv1_nos_.xno0 </Name_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_water_lv1_nos_.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapD_water_lv1_nos_.xno-controller-Matrices">
+          <float_array id="kdv_mapD_water_lv1_nos_.xno-controller-Matrices-array" count="16">1 -3.0571e-014 -1.74846e-007 952.142 3.0571e-014 1 1.88617e-028 800 1.74846e-007 -5.3452e-021 1 -2765.48 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_water_lv1_nos_.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapD_water_lv1_nos_.xno-controller-Weights">
+          <float_array id="kdv_mapD_water_lv1_nos_.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_water_lv1_nos_.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#kdv_mapD_water_lv1_nos_.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#kdv_mapD_water_lv1_nos_.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="69">
+          <input semantic="JOINT" offset="0" source="#kdv_mapD_water_lv1_nos_.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#kdv_mapD_water_lv1_nos_.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="kdv_mapD_water_lv1_nos_.xno0" sid="kdv_mapD_water_lv1_nos_.xno0" name="kdv_mapD_water_lv1_nos_.xno0" type="JOINT">
+        <matrix>1 0 0 -952.141 0 1 0 -800 0 0 1 2765.48 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="kdv_mapD_water_lv1_nos_.xno" sid="kdv_mapD_water_lv1_nos_.xno" name="kdv_mapD_water_lv1_nos_.xno">
+        <instance_controller url="#kdv_mapD_water_lv1_nos_.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="kdv_mapD_water_lv1_nos_.xno0" target="#kdv_mapD_water_lv1_nos_.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

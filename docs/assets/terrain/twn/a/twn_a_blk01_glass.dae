@@ -1,0 +1,195 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="twn_a_h705_dfsp_v.dds-image" name="twn_a_h705_dfsp_v.dds-image">
+      <init_from>./textures/twn_a_h705_dfsp_v.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="blk01_glass.xno0ID" name="blk01_glass.xno0">
+      <instance_effect url="#blk01_glass.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="blk01_glass.xno0-effect" name="blk01_glass.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="twn_a_h705_dfsp_v.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_a_h705_dfsp_v.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_a_h705_dfsp_v.dds-image-sampler">
+          <sampler2D>
+            <source>twn_a_h705_dfsp_v.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_a_h705_dfsp_v.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_a_h705_dfsp_v.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_a_h705_dfsp_v.dds-image-sampler">
+          <sampler2D>
+            <source>twn_a_h705_dfsp_v.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_a_h705_dfsp_v.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_a_h705_dfsp_v.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_a_h705_dfsp_v.dds-image-sampler">
+          <sampler2D>
+            <source>twn_a_h705_dfsp_v.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_a_h705_dfsp_v.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="blk01_glass.xno-geometry" name="blk01_glass.xno-geometry">
+      <mesh>
+        <source id="blk01_glass.xno-geometry-position">
+          <float_array id="blk01_glass.xno-geometry-position-array" count="48">-2022.48 534.056 -4305.9 -2022.48 281.117 -4305.9 -2022.48 534.056 -4122.19 -2022.47 534.056 -1619.31 -2022.47 281.117 -2426.07 -2022.47 281.117 -1803.43 -2022.47 281.117 -1619.31 -2022.47 534.056 -2242.36 -2022.47 534.056 -2426.07 -2022.47 534.056 -1803.43 -2022.47 281.117 -2242.36 -2022.47 281.117 -4122.19 -2022.47 534.056 -3499.14 -2022.47 534.056 -3683.26 -2022.47 281.117 -3683.26 -2022.47 281.117 -3499.14 </float_array>
+          <technique_common>
+            <accessor source="#blk01_glass.xno-geometry-position-array" count="16" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="blk01_glass.xno-geometry-normal">
+          <float_array id="blk01_glass.xno-geometry-normal-array" count="3">-1 0 0 </float_array>
+          <technique_common>
+            <accessor source="#blk01_glass.xno-geometry-normal-array" count="1" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="blk01_glass.xno-geometry-uv">
+          <float_array id="blk01_glass.xno-geometry-uv-array" count="32">0.0916094 0.971162 0.091453 0.0781221 0.915858 0.972117 -0.0675412 0.957331 0.106313 0.0692135 -0.892079 0.0636657 -0.0675412 0.0636657 0.931323 0.963088 0.106513 0.962519 -0.892325 0.957009 0.931583 0.0693332 0.917044 0.0788425 0.911636 0.957331 0.0868518 0.957009 0.0870984 0.0636657 0.911636 0.0636657 </float_array>
+          <technique_common>
+            <accessor source="#blk01_glass.xno-geometry-uv-array" count="16" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="blk01_glass.xno-geometry-uv2">
+          <float_array id="blk01_glass.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#blk01_glass.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="blk01_glass.xno-geometry-color">
+          <float_array id="blk01_glass.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#blk01_glass.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="blk01_glass.xno-geometry-vertex">
+          <input semantic="POSITION" source="#blk01_glass.xno-geometry-position" />
+        </vertices>
+        <triangles material="blk01_glass.xno0" count="8">
+          <input semantic="VERTEX" source="#blk01_glass.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#blk01_glass.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#blk01_glass.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#blk01_glass.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#blk01_glass.xno-geometry-color" offset="4" set="0" />
+          <p>13 0 13 0 0 14 0 14 0 0 12 0 12 0 0 15 0 15 0 0 12 0 12 0 0 14 0 14 0 0 8 0 8 0 0 4 0 4 0 0 7 0 7 0 0 10 0 10 0 0 7 0 7 0 0 4 0 4 0 0 0 0 0 0 0 1 0 1 0 0 2 0 2 0 0 11 0 11 0 0 2 0 2 0 0 1 0 1 0 0 9 0 9 0 0 5 0 5 0 0 3 0 3 0 0 6 0 6 0 0 3 0 3 0 0 5 0 5 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="blk01_glass.xno-controller">
+      <skin source="#blk01_glass.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="blk01_glass.xno-controller-Joints">
+          <Name_array id="blk01_glass.xno-controller-Joints-array" count="1">blk01_glass </Name_array>
+          <technique_common>
+            <accessor source="#blk01_glass.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="blk01_glass.xno-controller-Matrices">
+          <float_array id="blk01_glass.xno-controller-Matrices-array" count="16">1 0 0 2022.47 0 1 0 0 0 0 1 2962.6 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#blk01_glass.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="blk01_glass.xno-controller-Weights">
+          <float_array id="blk01_glass.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#blk01_glass.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#blk01_glass.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#blk01_glass.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="16">
+          <input semantic="JOINT" offset="0" source="#blk01_glass.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#blk01_glass.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="blk01_glass" sid="blk01_glass" name="blk01_glass" type="JOINT">
+        <matrix>1 0 0 -2022.47 0 1 0 0 0 0 1 -2962.6 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="blk01_glass.xno" sid="blk01_glass.xno" name="blk01_glass.xno">
+        <instance_controller url="#blk01_glass.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="blk01_glass.xno0" target="#blk01_glass.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

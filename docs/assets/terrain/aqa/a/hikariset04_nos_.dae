@@ -1,0 +1,206 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="aqa_waterkira01_dfxx_y.dds-image" name="aqa_waterkira01_dfxx_y.dds-image">
+      <init_from>./textures/aqa_waterkira01_dfxx_y.dds</init_from>
+    </image>
+    <image id="aqa_waterkira01_ptxx_y.dds-image" name="aqa_waterkira01_ptxx_y.dds-image">
+      <init_from>./textures/aqa_waterkira01_ptxx_y.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="hikariset04_nos_.xno0ID" name="hikariset04_nos_.xno0">
+      <instance_effect url="#hikariset04_nos_.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="hikariset04_nos_.xno0-effect" name="hikariset04_nos_.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="aqa_waterkira01_dfxx_y.dds-image-surface">
+          <surface type="2D">
+            <init_from>aqa_waterkira01_dfxx_y.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="aqa_waterkira01_dfxx_y.dds-image-sampler">
+          <sampler2D>
+            <source>aqa_waterkira01_dfxx_y.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="aqa_waterkira01_ptxx_y.dds-image-surface">
+          <surface type="2D">
+            <init_from>aqa_waterkira01_ptxx_y.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="aqa_waterkira01_ptxx_y.dds-image-sampler">
+          <sampler2D>
+            <source>aqa_waterkira01_ptxx_y.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="aqa_waterkira01_ptxx_y.dds-image-surface">
+          <surface type="2D">
+            <init_from>aqa_waterkira01_ptxx_y.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="aqa_waterkira01_ptxx_y.dds-image-sampler">
+          <sampler2D>
+            <source>aqa_waterkira01_ptxx_y.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="aqa_waterkira01_dfxx_y.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="hikariset04_nos_.xno-geometry" name="hikariset04_nos_.xno-geometry">
+      <mesh>
+        <source id="hikariset04_nos_.xno-geometry-position">
+          <float_array id="hikariset04_nos_.xno-geometry-position-array" count="111">23014.5 1857.1 -10885.8 23014.5 1857.1 -10489.7 23014.5 1857.1 -11281.9 23407.4 1857.1 -11678.1 23407.4 1857.1 -11281.9 23407.4 1857.1 -10489.7 23407.4 1857.1 -10885.8 23407.4 1857.1 -10093.5 23800.2 1857.1 -12074.2 23800.2 1857.1 -10489.7 23800.2 1857.1 -10885.8 23800.2 1857.1 -11678.1 23800.2 1857.1 -9697.39 23800.2 1857.1 -11281.9 23800.2 1857.1 -10093.5 24193.1 1857.1 -9697.39 24193.1 1857.1 -12074.2 24193.1 1857.1 -10885.8 24193.1 1857.1 -11281.9 24193.1 1857.1 -10093.5 24193.1 1857.1 -11678.1 24193.1 1857.1 -10489.7 24585.9 1857.1 -10489.7 24585.9 1857.1 -10885.8 24585.9 1857.1 -10093.5 24585.9 1857.1 -11281.9 24585.9 1857.1 -11678.1 24585.9 1857.1 -9697.39 24585.9 1857.1 -12074.2 24978.8 1857.1 -10885.8 24978.8 1857.1 -10093.5 24978.8 1857.1 -11281.9 24978.8 1857.1 -10489.7 24978.8 1857.1 -11678.1 25371.7 1857.1 -10885.8 25371.7 1857.1 -11281.9 25371.7 1857.1 -10489.7 </float_array>
+          <technique_common>
+            <accessor source="#hikariset04_nos_.xno-geometry-position-array" count="37" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="hikariset04_nos_.xno-geometry-normal">
+          <float_array id="hikariset04_nos_.xno-geometry-normal-array" count="3">0 -1 -1.38986e-014 </float_array>
+          <technique_common>
+            <accessor source="#hikariset04_nos_.xno-geometry-normal-array" count="1" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="hikariset04_nos_.xno-geometry-uv">
+          <float_array id="hikariset04_nos_.xno-geometry-uv-array" count="74">-1.00038 0.800585 -1.00038 1.38061 -1.00038 0.220556 -0.406766 -0.359473 -0.406766 0.220556 -0.406766 1.38061 -0.406766 0.800585 -0.406766 1.96064 0.186844 -0.939501 0.186844 1.38061 0.186844 0.800585 0.186844 -0.359473 0.186844 2.54067 0.186844 0.220556 0.186844 1.96064 0.780453 2.54067 0.780453 -0.939501 0.780453 0.800585 0.780453 0.220556 0.780453 1.96064 0.780453 -0.359473 0.780453 1.38061 1.37406 1.38061 1.37406 0.800585 1.37406 1.96064 1.37406 0.220556 1.37406 -0.359473 1.37406 2.54067 1.37406 -0.939501 1.96767 0.800585 1.96767 1.96064 1.96767 0.220556 1.96767 1.38061 1.96767 -0.359473 2.56128 0.800585 2.56128 0.220556 2.56128 1.38061 </float_array>
+          <technique_common>
+            <accessor source="#hikariset04_nos_.xno-geometry-uv-array" count="37" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="hikariset04_nos_.xno-geometry-uv2">
+          <float_array id="hikariset04_nos_.xno-geometry-uv2-array" count="74">-0.195225 0.265445 -0.195225 -0.0305357 -0.195225 0.561427 0.0807366 0.857408 0.0807366 0.561427 0.0807366 -0.0305357 0.0807366 0.265445 0.0807366 -0.326517 0.356698 1.15339 0.356698 -0.0305357 0.356698 0.265445 0.356698 0.857408 0.356698 -0.622498 0.356698 0.561427 0.356698 -0.326517 0.632659 -0.622498 0.632659 1.15339 0.632659 0.265445 0.632659 0.561427 0.632659 -0.326517 0.632659 0.857408 0.632659 -0.0305357 0.90862 -0.0305357 0.90862 0.265445 0.90862 -0.326517 0.90862 0.561427 0.90862 0.857408 0.90862 -0.622498 0.90862 1.15339 1.18458 0.265445 1.18458 -0.326517 1.18458 0.561427 1.18458 -0.0305357 1.18458 0.857408 1.46054 0.265445 1.46054 0.561427 1.46054 -0.0305357 </float_array>
+          <technique_common>
+            <accessor source="#hikariset04_nos_.xno-geometry-uv2-array" count="37" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="hikariset04_nos_.xno-geometry-color">
+          <float_array id="hikariset04_nos_.xno-geometry-color-array" count="20">1 1 1 0 1 1 1 0.0823529 1 1 1 0.184314 1 1 1 0.247059 1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#hikariset04_nos_.xno-geometry-color-array" count="5" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="hikariset04_nos_.xno-geometry-vertex">
+          <input semantic="POSITION" source="#hikariset04_nos_.xno-geometry-position" />
+        </vertices>
+        <triangles material="hikariset04_nos_.xno0" count="56">
+          <input semantic="VERTEX" source="#hikariset04_nos_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#hikariset04_nos_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#hikariset04_nos_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#hikariset04_nos_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#hikariset04_nos_.xno-geometry-color" offset="4" set="0" />
+          <p>20 0 20 20 3 26 0 26 26 2 18 0 18 18 4 25 0 25 25 4 18 0 18 18 4 26 0 26 26 2 18 0 18 18 4 25 0 25 25 4 17 0 17 17 4 23 0 23 23 4 17 0 17 17 4 25 0 25 25 4 17 0 17 17 4 23 0 23 23 4 21 0 21 21 4 22 0 22 22 4 21 0 21 21 4 23 0 23 23 4 21 0 21 21 4 22 0 22 22 4 19 0 19 19 3 24 0 24 24 2 19 0 19 19 3 22 0 22 22 4 19 0 19 19 3 24 0 24 24 2 15 0 15 15 0 27 0 27 27 0 15 0 15 15 0 24 0 24 24 2 24 0 24 24 2 30 0 30 30 1 27 0 27 27 0 30 0 30 30 1 24 0 24 24 2 32 0 32 32 2 22 0 22 22 4 32 0 32 32 2 24 0 24 24 2 32 0 32 32 2 22 0 22 22 4 29 0 29 29 3 23 0 23 23 4 29 0 29 29 3 22 0 22 22 4 29 0 29 29 3 23 0 23 23 4 31 0 31 31 2 25 0 25 25 4 31 0 31 31 2 23 0 23 23 4 31 0 31 31 2 25 0 25 25 4 33 0 33 33 1 26 0 26 26 2 33 0 33 33 1 25 0 25 25 4 33 0 33 33 1 26 0 26 26 2 28 0 28 28 0 20 0 20 20 3 28 0 28 28 0 26 0 26 26 2 28 0 28 28 0 20 0 20 20 3 16 0 16 16 0 11 0 11 11 2 16 0 16 16 0 20 0 20 20 3 16 0 16 16 0 11 0 11 11 2 8 0 8 8 0 11 0 11 11 2 3 0 3 3 1 8 0 8 8 0 3 0 3 3 1 11 0 11 11 2 4 0 4 4 2 13 0 13 13 4 4 0 4 4 2 11 0 11 11 2 4 0 4 4 2 13 0 13 13 4 6 0 6 6 3 10 0 10 10 4 6 0 6 6 3 13 0 13 13 4 6 0 6 6 3 10 0 10 10 4 5 0 5 5 2 9 0 9 9 4 5 0 5 5 2 10 0 10 10 4 5 0 5 5 2 9 0 9 9 4 7 0 7 7 1 14 0 14 14 2 7 0 7 7 1 9 0 9 9 4 7 0 7 7 1 14 0 14 14 2 12 0 12 12 0 15 0 15 15 0 12 0 12 12 0 19 0 19 19 3 14 0 14 14 2 19 0 19 19 3 12 0 12 12 0 19 0 19 19 3 14 0 14 14 2 21 0 21 21 4 9 0 9 9 4 21 0 21 21 4 14 0 14 14 2 21 0 21 21 4 9 0 9 9 4 17 0 17 17 4 10 0 10 10 4 17 0 17 17 4 9 0 9 9 4 17 0 17 17 4 10 0 10 10 4 18 0 18 18 4 13 0 13 13 4 18 0 18 18 4 10 0 10 10 4 18 0 18 18 4 13 0 13 13 4 20 0 20 20 3 11 0 11 11 2 20 0 20 20 3 13 0 13 13 4 32 0 32 32 2 36 0 36 36 0 30 0 30 30 1 36 0 36 36 0 32 0 32 32 2 34 0 34 34 0 29 0 29 29 3 34 0 34 34 0 32 0 32 32 2 34 0 34 34 0 29 0 29 29 3 35 0 35 35 0 31 0 31 31 2 35 0 35 35 0 29 0 29 29 3 35 0 35 35 0 31 0 31 31 2 33 0 33 33 1 1 0 1 1 0 5 0 5 5 2 7 0 7 7 1 5 0 5 5 2 1 0 1 1 0 6 0 6 6 3 0 0 0 0 0 6 0 6 6 3 1 0 1 1 0 6 0 6 6 3 0 0 0 0 0 4 0 4 4 2 2 0 2 2 0 4 0 4 4 2 0 0 0 0 0 4 0 4 4 2 2 0 2 2 0 3 0 3 3 1 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="hikariset04_nos_.xno-controller">
+      <skin source="#hikariset04_nos_.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="hikariset04_nos_.xno-controller-Joints">
+          <Name_array id="hikariset04_nos_.xno-controller-Joints-array" count="2">hikariset04_nos_.xno0 hikariset04_nos_.xno1 </Name_array>
+          <technique_common>
+            <accessor source="#hikariset04_nos_.xno-controller-Joints-array" count="2">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="hikariset04_nos_.xno-controller-Matrices">
+          <float_array id="hikariset04_nos_.xno-controller-Matrices-array" count="32">1 0 0 -24176.9 0 1 0 -1857.1 0 0 1 10862.2 0 0 0 1 1 0 0 -24176.9 0 1 0 -1857.1 0 0 1 10862.2 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#hikariset04_nos_.xno-controller-Matrices-array" count="2" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="hikariset04_nos_.xno-controller-Weights">
+          <float_array id="hikariset04_nos_.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#hikariset04_nos_.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#hikariset04_nos_.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#hikariset04_nos_.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="37">
+          <input semantic="JOINT" offset="0" source="#hikariset04_nos_.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#hikariset04_nos_.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="hikariset04_nos_.xno0" sid="hikariset04_nos_.xno0" name="hikariset04_nos_.xno0" type="JOINT">
+        <matrix>1 0 0 24176.9 0 1 0 1857.1 0 0 1 -10862.2 0 0 0 1 </matrix>
+        <node id="hikariset04_nos_.xno1" sid="hikariset04_nos_.xno1" name="hikariset04_nos_.xno1" type="JOINT">
+          <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="hikariset04_nos_.xno" sid="hikariset04_nos_.xno" name="hikariset04_nos_.xno">
+        <instance_controller url="#hikariset04_nos_.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="hikariset04_nos_.xno0" target="#hikariset04_nos_.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

@@ -1,0 +1,175 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="csc_fog02_dfpt_i.dds-image" name="csc_fog02_dfpt_i.dds-image">
+      <init_from>./textures/csc_fog02_dfpt_i.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="csc_mapE_fog02_fog_.xno0ID" name="csc_mapE_fog02_fog_.xno0">
+      <instance_effect url="#csc_mapE_fog02_fog_.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="csc_mapE_fog02_fog_.xno0-effect" name="csc_mapE_fog02_fog_.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="csc_fog02_dfpt_i.dds-image-surface">
+          <surface type="2D">
+            <init_from>csc_fog02_dfpt_i.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="csc_fog02_dfpt_i.dds-image-sampler">
+          <sampler2D>
+            <source>csc_fog02_dfpt_i.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="csc_fog02_dfpt_i.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="csc_mapE_fog02_fog_.xno-geometry" name="csc_mapE_fog02_fog_.xno-geometry">
+      <mesh>
+        <source id="csc_mapE_fog02_fog_.xno-geometry-position">
+          <float_array id="csc_mapE_fog02_fog_.xno-geometry-position-array" count="90">-406661 26920.5 -50987.7 -406661 26920.5 50987.7 -406661 26920.5 0.00193269 -369678 21862 50987.7 -369676 21845.1 -50987.7 -369664 21740.1 0.00149131 -332694 16800 50987.7 -332690 16766.2 -50987.7 -332666 16556.2 0.00104971 -295709 11734.5 50987.7 -295704 11683.8 -50987.7 -295667 11368.8 0.000607922 -258725 6665.56 50987.7 -258717 6597.94 -50987.7 -258666 6168.99 8.29646e-005 312144 6392.25 50987.7 312144 6415.27 -0.000371946 312144 6430.57 -50987.7 348347 13753.8 0.000204516 348347 13765.3 -50987.7 348347 13736.5 50987.7 384551 21077.3 50987.7 384551 21088.8 0.000780777 384551 21096.5 -50987.7 420755 28420.4 0.00135683 420755 28414.7 50987.7 420755 28424.2 -50987.7 456959 35748.5 50987.7 456959 35748.5 -50987.7 456959 35748.5 0.00193269 </float_array>
+          <technique_common>
+            <accessor source="#csc_mapE_fog02_fog_.xno-geometry-position-array" count="30" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="csc_mapE_fog02_fog_.xno-geometry-normal">
+          <float_array id="csc_mapE_fog02_fog_.xno-geometry-normal-array" count="66">0.137291 0.99053 0.00135853 0.135517 0.990775 0 0.137893 0.990447 -0.000788509 0.136337 0.99066 -0.00231857 0.136666 0.990611 0.00335533 0.137991 0.990433 -0.000949307 0.136425 0.990636 -0.00542567 0.136753 0.990587 0.00603112 0.13808 0.99042 -0.00116483 0.136515 0.990601 -0.00853267 0.136896 0.990547 0.00876192 0.138255 0.990396 -0.00140791 0.137442 0.990449 -0.010956 0.136217 0.990619 0.0109247 0.138438 0.99037 -0.00159107 -0.198809 0.980038 0.000589824 -0.198728 0.980055 0.000480096 -0.198637 0.980073 0.000332619 -0.198547 0.980091 0.000185055 -0.198425 0.980116 0.000195765 -0.198466 0.980108 7.53045e-005 -0.198365 0.980128 2.50941e-005 </float_array>
+          <technique_common>
+            <accessor source="#csc_mapE_fog02_fog_.xno-geometry-normal-array" count="22" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="csc_mapE_fog02_fog_.xno-geometry-uv">
+          <float_array id="csc_mapE_fog02_fog_.xno-geometry-uv-array" count="30">0.000499457 0.000499785 0.9995 0.000499427 0.5 0.000499606 0.9995 0.25025 0.000499569 0.25025 0.5 0.25025 0.9995 0.5 0.000499591 0.5 0.5 0.5 0.9995 0.74975 0.000499614 0.74975 0.5 0.74975 0.9995 0.999501 0.000499636 0.999501 0.5 0.999501 </float_array>
+          <technique_common>
+            <accessor source="#csc_mapE_fog02_fog_.xno-geometry-uv-array" count="15" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="csc_mapE_fog02_fog_.xno-geometry-uv2">
+          <float_array id="csc_mapE_fog02_fog_.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#csc_mapE_fog02_fog_.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="csc_mapE_fog02_fog_.xno-geometry-color">
+          <float_array id="csc_mapE_fog02_fog_.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#csc_mapE_fog02_fog_.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="csc_mapE_fog02_fog_.xno-geometry-vertex">
+          <input semantic="POSITION" source="#csc_mapE_fog02_fog_.xno-geometry-position" />
+        </vertices>
+        <triangles material="csc_mapE_fog02_fog_.xno0" count="32">
+          <input semantic="VERTEX" source="#csc_mapE_fog02_fog_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#csc_mapE_fog02_fog_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#csc_mapE_fog02_fog_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#csc_mapE_fog02_fog_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#csc_mapE_fog02_fog_.xno-geometry-color" offset="4" set="0" />
+          <p>24 20 5 0 0 26 20 3 0 0 22 18 8 0 0 23 19 6 0 0 22 18 8 0 0 26 20 3 0 0 19 18 9 0 0 22 18 8 0 0 23 19 6 0 0 22 18 8 0 0 19 18 9 0 0 18 17 11 0 0 17 17 12 0 0 18 17 11 0 0 19 18 9 0 0 18 17 11 0 0 17 17 12 0 0 16 16 14 0 0 20 16 10 0 0 16 16 14 0 0 15 15 13 0 0 16 16 14 0 0 20 16 10 0 0 18 17 11 0 0 21 17 7 0 0 18 17 11 0 0 20 16 10 0 0 18 17 11 0 0 21 17 7 0 0 22 18 8 0 0 25 18 4 0 0 22 18 8 0 0 21 17 7 0 0 22 18 8 0 0 25 18 4 0 0 24 20 5 0 0 27 20 0 0 0 24 20 5 0 0 25 18 4 0 0 29 21 2 0 0 24 20 5 0 0 27 20 0 0 0 24 20 5 0 0 29 21 2 0 0 26 20 3 0 0 28 21 1 0 0 26 20 3 0 0 29 21 2 0 0 5 5 5 0 0 0 0 0 0 0 2 2 2 0 0 0 0 0 0 0 5 5 5 0 0 4 4 4 0 0 8 8 8 0 0 4 4 4 0 0 5 5 5 0 0 4 4 4 0 0 8 8 8 0 0 7 7 7 0 0 11 11 11 0 0 7 7 7 0 0 8 8 8 0 0 7 7 7 0 0 11 11 11 0 0 10 10 10 0 0 14 14 14 0 0 10 10 10 0 0 11 11 11 0 0 10 10 10 0 0 14 14 14 0 0 13 13 13 0 0 3 3 3 0 0 2 2 2 0 0 1 1 1 0 0 2 2 2 0 0 3 3 3 0 0 5 5 5 0 0 6 6 6 0 0 5 5 5 0 0 3 3 3 0 0 5 5 5 0 0 6 6 6 0 0 8 8 8 0 0 9 9 9 0 0 8 8 8 0 0 6 6 6 0 0 8 8 8 0 0 9 9 9 0 0 11 11 11 0 0 12 12 12 0 0 11 11 11 0 0 9 9 9 0 0 11 11 11 0 0 12 12 12 0 0 14 14 14 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="csc_mapE_fog02_fog_.xno-controller">
+      <skin source="#csc_mapE_fog02_fog_.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="csc_mapE_fog02_fog_.xno-controller-Joints">
+          <Name_array id="csc_mapE_fog02_fog_.xno-controller-Joints-array" count="1">csc_mapE_fog02_fog_.xno0 </Name_array>
+          <technique_common>
+            <accessor source="#csc_mapE_fog02_fog_.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="csc_mapE_fog02_fog_.xno-controller-Matrices">
+          <float_array id="csc_mapE_fog02_fog_.xno-controller-Matrices-array" count="16">1 0 0 5000 0 1 0 0 0 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#csc_mapE_fog02_fog_.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="csc_mapE_fog02_fog_.xno-controller-Weights">
+          <float_array id="csc_mapE_fog02_fog_.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#csc_mapE_fog02_fog_.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#csc_mapE_fog02_fog_.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#csc_mapE_fog02_fog_.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="30">
+          <input semantic="JOINT" offset="0" source="#csc_mapE_fog02_fog_.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#csc_mapE_fog02_fog_.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="csc_mapE_fog02_fog_.xno0" sid="csc_mapE_fog02_fog_.xno0" name="csc_mapE_fog02_fog_.xno0" type="JOINT">
+        <matrix>1 0 0 -5000 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="csc_mapE_fog02_fog_.xno" sid="csc_mapE_fog02_fog_.xno" name="csc_mapE_fog02_fog_.xno">
+        <instance_controller url="#csc_mapE_fog02_fog_.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="csc_mapE_fog02_fog_.xno0" target="#csc_mapE_fog02_fog_.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

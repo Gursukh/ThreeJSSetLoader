@@ -1,0 +1,268 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="kdv_fence06_dfpt_p_k.dds-image" name="kdv_fence06_dfpt_p_k.dds-image">
+      <init_from>./textures/kdv_fence06_dfpt_p_k.dds</init_from>
+    </image>
+    <image id="kdv_fence07_dfpt_p_k.dds-image" name="kdv_fence07_dfpt_p_k.dds-image">
+      <init_from>./textures/kdv_fence07_dfpt_p_k.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="kdv_mapD_furiko_nos_lv2_.xno0ID" name="kdv_mapD_furiko_nos_lv2_.xno0">
+      <instance_effect url="#kdv_mapD_furiko_nos_lv2_.xno0-effect" />
+    </material>
+    <material id="kdv_mapD_furiko_nos_lv2_.xno1ID" name="kdv_mapD_furiko_nos_lv2_.xno1">
+      <instance_effect url="#kdv_mapD_furiko_nos_lv2_.xno1-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="kdv_mapD_furiko_nos_lv2_.xno0-effect" name="kdv_mapD_furiko_nos_lv2_.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_fence06_dfpt_p_k.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_fence06_dfpt_p_k.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_fence06_dfpt_p_k.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_fence06_dfpt_p_k.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_fence06_dfpt_p_k.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="kdv_mapD_furiko_nos_lv2_.xno1-effect" name="kdv_mapD_furiko_nos_lv2_.xno1-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_fence07_dfpt_p_k.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_fence07_dfpt_p_k.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_fence07_dfpt_p_k.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_fence07_dfpt_p_k.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_fence07_dfpt_p_k.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="kdv_mapD_furiko_nos_lv2_.xno-geometry" name="kdv_mapD_furiko_nos_lv2_.xno-geometry">
+      <mesh>
+        <source id="kdv_mapD_furiko_nos_lv2_.xno-geometry-position">
+          <float_array id="kdv_mapD_furiko_nos_lv2_.xno-geometry-position-array" count="360">10212.1 5905.48 8337.62 10212.1 5905.48 8337.62 10212.1 5394.71 8337.62 10212.1 6416.24 8337.62 10226.2 5264.03 8237.82 10226.2 5116.21 8237.82 10355.4 5394.71 8501.64 10355.4 6416.24 8501.64 10355.4 5905.48 8501.64 10355.4 5905.48 8501.64 10376.1 5905.48 8194.33 10376.1 5905.48 8194.33 10376.1 6416.24 8194.33 10376.1 5394.71 8194.33 10398.1 6416.24 5579.15 10398.1 5394.71 5579.15 10398.1 5905.48 5579.15 10398.1 5905.48 5579.15 10398.7 5264.03 5679.93 10398.7 5116.21 5679.93 10518.6 5116.21 8257.54 10518.6 5264.03 8257.54 10519.4 5394.71 8358.34 10519.4 5905.48 8358.34 10519.4 5905.48 8358.34 10519.4 6416.24 8358.34 10541.4 5394.71 5743.16 10541.4 6416.24 5743.16 10541.4 5905.48 5743.16 10541.4 5905.48 5743.16 10562.1 5394.71 5435.85 10562.1 5905.48 5435.85 10562.1 5905.48 5435.85 10562.1 6416.24 5435.85 10691.1 5264.03 5699.65 10691.1 5116.21 5699.65 10705.4 5394.71 5599.87 10705.4 6416.24 5599.87 10705.4 5905.48 5599.87 10705.4 5905.48 5599.87 12906.1 5905.48 8552.08 12906.1 5905.48 8552.08 12906.1 5394.71 8552.08 12906.1 6416.24 8552.08 12920.2 5264.03 8452.28 12920.2 5116.21 8452.28 13049.4 5394.71 8716.1 13049.4 6416.24 8716.1 13049.4 5905.48 8716.1 13049.4 5905.48 8716.1 13070.1 5905.48 8408.79 13070.1 5905.48 8408.79 13070.1 6416.24 8408.79 13070.1 5394.71 8408.79 13092.1 6416.24 5793.61 13092.1 5394.71 5793.61 13092.1 5905.48 5793.61 13092.1 5905.48 5793.61 13092.6 5264.03 5894.39 13092.6 5116.21 5894.39 13212.6 5116.21 8472 13212.6 5264.03 8472 13213.4 5394.71 8572.81 13213.4 5905.48 8572.81 13213.4 5905.48 8572.81 13213.4 6416.24 8572.81 13235.4 5394.71 5957.62 13235.4 6416.24 5957.62 13235.4 5905.48 5957.62 13235.4 5905.48 5957.62 13256.1 5394.71 5650.32 13256.1 5905.48 5650.32 13256.1 5905.48 5650.32 13256.1 6416.24 5650.32 13385.1 5264.03 5914.11 13385.1 5116.21 5914.11 13399.4 5394.71 5814.33 13399.4 6416.24 5814.33 13399.4 5905.48 5814.33 13399.4 5905.48 5814.33 -11972.1 4397.06 -6909.03 -11972.1 5418.58 -6909.03 -11972.1 4907.82 -6909.03 -11972.1 4907.82 -6909.03 -11936.1 4397.06 -7123.81 -11936.1 4907.82 -7123.81 -11936.1 4907.82 -7123.81 -11936.1 5418.58 -7123.81 -11907.9 4118.55 -6831.41 -11907.9 4266.38 -6831.41 -11757.4 5418.58 -6873 -11757.4 4397.06 -6873 -11757.4 4907.82 -6873 -11757.4 4907.82 -6873 -11721.3 5418.58 -7087.78 -11721.3 4907.82 -7087.78 -11721.3 4907.82 -7087.78 -11721.3 4397.06 -7087.78 -11669.2 4266.38 -7001.51 -11669.2 4118.55 -7001.51 -10419.9 4118.55 -4743.66 -10419.9 4266.38 -4743.66 -10367.5 5418.58 -4657.57 -10367.5 4907.82 -4657.57 -10367.5 4907.82 -4657.57 -10367.5 4397.06 -4657.57 -10331.5 4397.06 -4872.35 -10331.5 5418.58 -4872.35 -10331.5 4907.82 -4872.35 -10331.5 4907.82 -4872.35 -10181.3 4266.38 -4913.77 -10181.3 4118.55 -4913.77 -10152.8 5418.58 -4621.53 -10152.8 4397.06 -4621.53 -10152.8 4907.82 -4621.53 -10152.8 4907.82 -4621.53 -10116.7 4397.06 -4836.32 -10116.7 4907.82 -4836.32 -10116.7 4907.82 -4836.32 -10116.7 5418.58 -4836.32 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-position-array" count="120" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapD_furiko_nos_lv2_.xno-geometry-normal">
+          <float_array id="kdv_mapD_furiko_nos_lv2_.xno-geometry-normal-array" count="24">-0.0672803 -3.28904e-010 0.997734 -0.997734 -5.14941e-008 -0.0672801 0.0672803 2.02276e-007 -0.997734 0.997734 -4.11953e-007 0.0672802 -0.580378 1.52145e-007 -0.814347 -0.814347 4.26758e-007 0.580378 0.814347 -5.75866e-007 -0.580378 0.580378 0 0.814347 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-normal-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapD_furiko_nos_lv2_.xno-geometry-uv">
+          <float_array id="kdv_mapD_furiko_nos_lv2_.xno-geometry-uv-array" count="24">-1.2197e-010 0.0106885 0.500025 0.986832 0.500025 0.00149053 -1.2197e-010 0.985348 22.0015 1 22.0015 0 1 0.00149053 0.500026 0.985348 0.500026 0.0106885 1 0.986832 0 1 0 0 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-uv-array" count="12" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapD_furiko_nos_lv2_.xno-geometry-uv2">
+          <float_array id="kdv_mapD_furiko_nos_lv2_.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapD_furiko_nos_lv2_.xno-geometry-color">
+          <float_array id="kdv_mapD_furiko_nos_lv2_.xno-geometry-color-array" count="32">0.592157 0.592157 0.592157 1 1 1 1 1 0.929412 0.929412 0.929412 1 0.686275 0.686275 0.686275 1 0.937255 0.937255 0.937255 1 0.705882 0.705882 0.705882 1 0.65098 0.65098 0.65098 1 0.921569 0.921569 0.921569 1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-color-array" count="8" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="kdv_mapD_furiko_nos_lv2_.xno-geometry-vertex">
+          <input semantic="POSITION" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-position" />
+        </vertices>
+        <triangles material="kdv_mapD_furiko_nos_lv2_.xno0" count="4">
+          <input semantic="VERTEX" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-color" offset="4" set="0" />
+          <p>35 3 5 0 4 34 3 4 0 2 20 3 11 0 0 21 3 10 0 3 20 3 11 0 0 34 3 4 0 2 5 1 5 0 0 4 1 4 0 0 19 1 11 0 0 18 1 10 0 0 19 1 11 0 0 4 1 4 0 0 </p>
+        </triangles>
+        <triangles material="kdv_mapD_furiko_nos_lv2_.xno0" count="4">
+          <input semantic="VERTEX" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-color" offset="4" set="0" />
+          <p>75 3 5 0 4 74 3 4 0 4 60 3 11 0 5 61 3 10 0 5 60 3 11 0 5 74 3 4 0 4 45 1 5 0 0 44 1 4 0 0 59 1 11 0 0 58 1 10 0 0 59 1 11 0 0 44 1 4 0 0 </p>
+        </triangles>
+        <triangles material="kdv_mapD_furiko_nos_lv2_.xno0" count="4">
+          <input semantic="VERTEX" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-color" offset="4" set="0" />
+          <p>99 6 5 0 4 98 6 4 0 4 111 6 11 0 4 110 6 10 0 4 111 6 11 0 4 98 6 4 0 4 100 5 5 0 6 101 5 4 0 6 88 5 11 0 6 89 5 10 0 6 88 5 11 0 6 101 5 4 0 6 </p>
+        </triangles>
+        <triangles material="kdv_mapD_furiko_nos_lv2_.xno1" count="16">
+          <input semantic="VERTEX" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-color" offset="4" set="0" />
+          <p>17 2 1 0 2 39 2 9 0 2 15 2 2 0 2 36 2 6 0 2 15 2 2 0 2 39 2 9 0 2 8 1 8 0 0 7 1 7 0 1 10 1 0 0 0 12 1 3 0 1 10 1 0 0 0 7 1 7 0 1 14 2 3 0 1 37 2 7 0 1 16 2 0 0 2 38 2 8 0 2 16 2 0 0 2 37 2 7 0 1 29 1 1 0 0 32 1 9 0 0 26 1 2 0 0 30 1 6 0 0 26 1 2 0 0 32 1 9 0 0 27 1 3 0 1 33 1 7 0 1 28 1 0 0 0 31 1 8 0 0 28 1 0 0 0 33 1 7 0 1 22 0 6 0 0 24 0 9 0 0 2 0 2 0 0 1 0 1 0 0 2 0 2 0 0 24 0 9 0 0 23 0 8 0 0 25 0 7 0 1 0 0 0 0 0 3 0 3 0 1 0 0 0 0 0 25 0 7 0 1 6 1 6 0 0 9 1 9 0 0 13 1 2 0 0 11 1 1 0 0 13 1 2 0 0 9 1 9 0 0 </p>
+        </triangles>
+        <triangles material="kdv_mapD_furiko_nos_lv2_.xno1" count="16">
+          <input semantic="VERTEX" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-color" offset="4" set="0" />
+          <p>57 2 1 0 2 79 2 9 0 2 55 2 2 0 2 76 2 6 0 2 55 2 2 0 2 79 2 9 0 2 48 1 8 0 0 47 1 7 0 1 50 1 0 0 0 52 1 3 0 1 50 1 0 0 0 47 1 7 0 1 54 2 3 0 1 77 2 7 0 1 56 2 0 0 2 78 2 8 0 2 56 2 0 0 2 77 2 7 0 1 69 1 1 0 0 72 1 9 0 0 66 1 2 0 0 70 1 6 0 0 66 1 2 0 0 72 1 9 0 0 67 1 3 0 1 73 1 7 0 1 68 1 0 0 0 71 1 8 0 0 68 1 0 0 0 73 1 7 0 1 62 0 6 0 0 64 0 9 0 0 42 0 2 0 0 41 0 1 0 0 42 0 2 0 0 64 0 9 0 0 63 0 8 0 0 65 0 7 0 1 40 0 0 0 0 43 0 3 0 1 40 0 0 0 0 65 0 7 0 1 46 1 6 0 0 49 1 9 0 0 53 1 2 0 0 51 1 1 0 0 53 1 2 0 0 49 1 9 0 0 </p>
+        </triangles>
+        <triangles material="kdv_mapD_furiko_nos_lv2_.xno1" count="16">
+          <input semantic="VERTEX" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#kdv_mapD_furiko_nos_lv2_.xno-geometry-color" offset="4" set="0" />
+          <p>83 4 1 0 6 96 4 9 0 6 80 4 2 0 6 97 4 6 0 6 80 4 2 0 6 96 4 9 0 6 114 5 8 0 6 112 5 7 0 6 108 5 0 0 6 107 5 3 0 6 108 5 0 0 6 112 5 7 0 6 81 4 3 0 6 94 4 7 0 6 82 4 0 0 6 95 4 8 0 6 82 4 0 0 6 94 4 7 0 6 93 5 1 0 6 86 5 9 0 6 91 5 2 0 6 84 5 6 0 6 91 5 2 0 6 86 5 9 0 6 90 5 3 0 6 87 5 7 0 6 92 5 0 0 6 85 5 8 0 6 92 5 0 0 6 87 5 7 0 6 116 7 6 0 7 118 7 9 0 7 105 7 2 0 7 104 7 1 0 7 105 7 2 0 7 118 7 9 0 7 117 7 8 0 7 119 7 7 0 7 103 7 0 0 7 102 7 3 0 7 103 7 0 0 7 119 7 7 0 7 113 5 6 0 6 115 5 9 0 6 106 5 2 0 6 109 5 1 0 6 106 5 2 0 6 115 5 9 0 6 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="kdv_mapD_furiko_nos_lv2_.xno-controller">
+      <skin source="#kdv_mapD_furiko_nos_lv2_.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="kdv_mapD_furiko_nos_lv2_.xno-controller-Joints">
+          <Name_array id="kdv_mapD_furiko_nos_lv2_.xno-controller-Joints-array" count="4">kdv_mapD_furiko_nos_lv2_.xno0 kdv_mapD_furiko_nos_lv2_.xno1 kdv_mapD_furiko_nos_lv2_.xno2 kdv_mapD_furiko_nos_lv2_.xno3 </Name_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_furiko_nos_lv2_.xno-controller-Joints-array" count="4">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapD_furiko_nos_lv2_.xno-controller-Matrices">
+          <float_array id="kdv_mapD_furiko_nos_lv2_.xno-controller-Matrices-array" count="64">1 0 0 0 0 1 0 0 0 0 1 1118.97 0 0 0 1 1 0 0 -10312.4 0 1 0 -5176.84 0 0 1 -6958.88 0 0 0 1 1 0 0 -13006.4 0 1 0 -5176.84 0 0 1 -7173.34 0 0 0 1 1 0 0 11163.9 0 1 0 -4179.19 0 0 1 5787.53 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_furiko_nos_lv2_.xno-controller-Matrices-array" count="4" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_mapD_furiko_nos_lv2_.xno-controller-Weights">
+          <float_array id="kdv_mapD_furiko_nos_lv2_.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_mapD_furiko_nos_lv2_.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#kdv_mapD_furiko_nos_lv2_.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#kdv_mapD_furiko_nos_lv2_.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="120">
+          <input semantic="JOINT" offset="0" source="#kdv_mapD_furiko_nos_lv2_.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#kdv_mapD_furiko_nos_lv2_.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="kdv_mapD_furiko_nos_lv2_.xno0" sid="kdv_mapD_furiko_nos_lv2_.xno0" name="kdv_mapD_furiko_nos_lv2_.xno0" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -1118.97 0 0 0 1 </matrix>
+        <node id="kdv_mapD_furiko_nos_lv2_.xno3" sid="kdv_mapD_furiko_nos_lv2_.xno3" name="kdv_mapD_furiko_nos_lv2_.xno3" type="JOINT">
+          <matrix>1 0 0 -11163.9 0 1 0 4179.19 0 0 1 -4668.56 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="kdv_mapD_furiko_nos_lv2_.xno2" sid="kdv_mapD_furiko_nos_lv2_.xno2" name="kdv_mapD_furiko_nos_lv2_.xno2" type="JOINT">
+          <matrix>1 0 0 13006.4 0 1 0 5176.84 0 0 1 8292.31 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="kdv_mapD_furiko_nos_lv2_.xno1" sid="kdv_mapD_furiko_nos_lv2_.xno1" name="kdv_mapD_furiko_nos_lv2_.xno1" type="JOINT">
+          <matrix>1 0 0 10312.4 0 1 0 5176.84 0 0 1 8077.85 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="kdv_mapD_furiko_nos_lv2_.xno" sid="kdv_mapD_furiko_nos_lv2_.xno" name="kdv_mapD_furiko_nos_lv2_.xno">
+        <instance_controller url="#kdv_mapD_furiko_nos_lv2_.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="kdv_mapD_furiko_nos_lv2_.xno0" target="#kdv_mapD_furiko_nos_lv2_.xno0ID" />
+              <instance_material symbol="kdv_mapD_furiko_nos_lv2_.xno1" target="#kdv_mapD_furiko_nos_lv2_.xno1ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>
