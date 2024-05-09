@@ -1,4 +1,4 @@
-import { MeshLambertMaterial, Vector3 } from "three";
+import { MeshLambertMaterial, MeshPhongMaterial, Vector3 } from "three";
 import { hexToRgb, rgbToHex } from "./util.js";
 
 var speed = 1;
@@ -154,7 +154,7 @@ function update_collision_heirarchy(collisionGroup) {
 
   collisionGroup.children.forEach(mesh => {
 
-    mesh.material = new MeshLambertMaterial()
+    mesh.material = new MeshPhongMaterial()
     mesh.material.shininess = 1
 
 
