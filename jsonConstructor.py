@@ -40,7 +40,7 @@ if __name__ == "__main__":
     collision_directory = "./docs/assets/collision"
     placement_directory = "./docs/assets/placement"
     terrain_directory = "./docs/assets/terrain/"
-    output_file_path = "collisionHierarchy.json"
+    output_file_path = "./docs/assets/collisionHierarchy.json"
 
     data = {}
     data["collision"] = traverse_directory(collision_directory)

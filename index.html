@@ -21,21 +21,27 @@
   <div id="framing-grid">
     <div id="toolbar">
       <div style="display: flex; flex-direction: column; align-items: center;" id="zoo">
-        <p><strong>Stage</strong></p>
-        <p style="font-size: 12px;">Select Stage</p>
+        <p><strong>Collision</strong></p>
         <div id="collision-dropdown"></div>
         <button style="width: 100%;" id="load-collision">Load Collision</button>
-        <button style="width: 100%;" id="load-terrain">Load Terrain</button>
       </div>
       <div >
         <p style="font-size: 12px;">Collison Hierarchy</p>
         <div id="collision-hierarchy"></div>
       </div>
-      <div >
-        <p style="font-size: 12px;">Terrain Hierarchy</p>
+      <button style="width: 100%;" id="clear-collision">Clear Collision</button>
+      <br /><br />
+      <div style="display: flex; flex-direction: column; align-items: center;" >
+      <p><strong>Terrain</strong></p>
+      <div id="terrain-dropdown"></div>
+      <button style="width: 100%;" id="load-terrain">Load Terrain</button>
+      </div>
+
+      <div>
+        <p style="font-size: 12px;" id="terrain-title">Terrain Hierarchy</p>
         <div id="terrain-hierarchy"></div>
       </div>
-      <button style="width: 100%;" id="clear-all">Clear All</button>
+      <button style="width: 100%;" id="clear-terrain">Clear Terrain</button>
 
     </div>
     <div id="viewport">

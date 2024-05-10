@@ -8,6 +8,7 @@ import { rgbToHex } from "./util.js";
 
 const manager = new THREE.LoadingManager();
 manager.addHandler(/./g, new DDSLoader())
+var loader = new ColladaLoader(manager);
 
 export class Environment {
 
@@ -54,7 +55,6 @@ export class Environment {
   load_collision(collision, callback) {
 
     this.collision_group.children = []
-    this.placement_group.children = []
 
     var objectLoader = new OBJLoader(manager);
 
@@ -83,7 +83,7 @@ export class Environment {
     let object_table = {}
 
     for (let i = 0; i < xml_dom.childElementCount; i++) {
-      let [type, object] = this.conceptualise_asset(xml_dom.children[i]);
+      let [type, object] = await this.conceptualise_asset(xml_dom.children[i]);
 
       if (object_table[type]) {
         if (object != null) object_table[type].children.push(object)
@@ -132,7 +132,51 @@ export class Environment {
     return cube;
   }
 
-  conceptualise_asset(node) {
+  async import_collada(path) {
+    let result = await loader.loadAsync("docs/assets/" + path)
+    var objects = []
+    result.scene.children.forEach((node) => {
+
+      if (node.type != "SkinnedMesh") return;
+
+      let model = new THREE.Mesh(node.geometry, node.material)
+      model.scale.set(0.001, 0.001, 0.001)
+      model.name = node.name.split(".")[0]
+      model.geometry.computeVertexNormals()
+
+      objects.push(model)
+    })
+
+    return objects;
+  }
+
+
+  async load_asset(path, node) {
+
+    let model = (await this.import_collada("objects/" + path))[0]
+
+    console.log(node)
+
+    model.position.set(
+      node.children[2].children[0].children[0].children[0].innerHTML * 0.001,
+      (node.children[2].children[0].children[0].children[1].innerHTML * 0.001),
+      node.children[2].children[0].children[0].children[2].innerHTML * 0.001
+    );
+
+
+    model.rotation.setFromQuaternion(new THREE.Quaternion(
+      node.children[2].children[0].children[1].children[0].innerHTML,
+      node.children[2].children[0].children[1].children[1].innerHTML,
+      node.children[2].children[0].children[1].children[2].innerHTML,
+      node.children[2].children[0].children[1].children[3].innerHTML,
+    ).normalize());
+
+    return model
+
+  }
+
+
+  async conceptualise_asset(node) {
 
     let type = node.getAttribute("type");
 
@@ -143,22 +187,29 @@ export class Environment {
       case "cameraeventbox":
         return [type, this.create_box(node, [1, 0, 0, 0.5])];
 
+      // case "ring":
+        // return [type, await this.load_asset("ring/ring.dae", node)];
+
       default:
         return [type, null];
     }
   }
 
-  async load_terrain(terrain, callback) {
+  async load_terrain(terrain, callback, progress_report) {
 
     var resourceData = await (await fetch("docs/assets/collisionHierarchy.json")).json();
-    var loader = new ColladaLoader(manager);
+
 
     this.terrain_group.children = [];
     let files = resourceData["terrain"][terrain];
 
+    let len = files.length;
 
-    for(let i = 0; i < files.length; i++) {
+    for (let i = 0; i < len; i++) {
       let result = await loader.loadAsync("docs/assets/terrain/" + terrain + "/" + files[i])
+
+      progress_report((((i + 1) / len) * 100).toPrecision(3))
+
       result.scene.children.forEach((node) => {
 
         let mats = node.material

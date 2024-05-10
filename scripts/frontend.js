@@ -38,6 +38,20 @@ function createCollisionDropdowns(div, json) {
   div.appendChild(dropdown);
 }
 
+
+function createTerrainDropdown(div, json) {
+  const dropdown = document.createElement('select');
+  dropdown.id = 'terrain-dropdown-input';
+
+  Object.keys(json).forEach(key => {
+    const option = document.createElement('option');
+    option.text = key;
+    dropdown.add(option);
+  })
+
+  div.appendChild(dropdown);
+}
+
 function createPlacementDropdowns(div, json) {
   const dropdown = document.createElement('select');
   dropdown.id = "placement-dropdown-input";
@@ -211,10 +225,6 @@ function addEventListeners(environment) {
 
   document.getElementById("load-collision").addEventListener("click", () => {
 
-
-    var placement_container = document.getElementById("placement-hierarchy")
-    placement_container.innerHTML = ""
-
     environment.load_collision(
       document.getElementById("collision-dropdown-input").value, 
       update_collision_heirarchy
@@ -230,25 +240,33 @@ function addEventListeners(environment) {
     );
   })
 
+  function set_text(prog) {
+    document.getElementById("terrain-title").innerText = `Terrain Hierarchy ${prog}%`
+  }
   
   document.getElementById("load-terrain").addEventListener("click", () => {
 
-
-
     environment.load_terrain(
       document.getElementById("collision-dropdown-input").value,
-      update_terrain_heirarchy
+      update_terrain_heirarchy,
+      set_text
     );
   })
 
   
-  document.getElementById("clear-all").addEventListener("click", () => {
+  document.getElementById("clear-collision").addEventListener("click", () => {
 
-    environment.terrain_group.children = []
     environment.collision_group.children = []
 
     var placement_container = document.getElementById("collision-hierarchy")
     placement_container.innerHTML = ""
+  })
+
+
+  
+  document.getElementById("clear-terrain").addEventListener("click", () => {
+
+    environment.terrain_group.children = []
 
     var placement_container = document.getElementById("terrain-hierarchy")
     placement_container.innerHTML = ""
@@ -290,6 +308,7 @@ export default async function initializeUI(environment) {
   controls = environment.controls;
   createCollisionDropdowns(document.getElementById("collision-dropdown"), resourceData["collision"])
   createPlacementDropdowns(document.getElementById("placement-dropdown"), resourceData["placement"])
+  createTerrainDropdown(document.getElementById("terrain-dropdown"), resourceData["terrain"])
   addEventListeners(environment);
 }
 

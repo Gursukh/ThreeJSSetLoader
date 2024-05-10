@@ -11,5 +11,4 @@ function animate() {
   environment.render();
 };
 
-
 animate();
