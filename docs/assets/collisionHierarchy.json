@@ -783,7 +783,19 @@
             "flc_boss1_map_nos_.dae"
         ],
         "boss/iblis01": [
-            "collision.obj"
+            "csc_mapIblis01_farbuild_nos_lv2_.dae",
+            "csc_mapIblis01_gimmcbuild_nos_lv2_.dae",
+            "csc_mapIblis01_ground01_nos_lv2_.dae",
+            "csc_mapIblis01_ground02_nos_lv2_.dae",
+            "csc_mapIblis01_highway_nos_lv2_.dae",
+            "csc_mapIblis01_mantlebuild_nos_lv2_.dae",
+            "csc_mapIblis01_mantle_nos_lv1_.dae",
+            "csc_mapIblis01_middlebuild_nos_lv2_.dae",
+            "csc_mapIblis01_rust_nos_lv2.dae",
+            "csc_mapIblis01_scrap01_nos_lv2.dae",
+            "csc_mapIblis01_shadow_sdw_.dae",
+            "csc_mapIblis01_trunado_nos_.dae",
+            "csc_sky_L1.dae"
         ],
         "boss/secondiblis_flc": [
             "flcD_sky_L1.dae",

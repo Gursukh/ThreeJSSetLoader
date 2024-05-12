@@ -62,7 +62,7 @@ export class Environment {
 
   display_info = (event) => {
 
-    if(this.controls.isLocked) return
+    if (this.controls.isLocked) return
 
     event.preventDefault();
 
@@ -253,6 +253,30 @@ export class Environment {
 
       case "goalring":
         return [type, await this.load_asset("common/cmn_goalring.dae", node, "goalring")];
+
+      case "common_dashring":
+        return [type, await this.load_asset("common/cmn_dashring.dae", node, "dashring")];
+
+      case "dashpanel":
+        return [type, await this.load_asset("common/cmn_dashpanel.dae", node, "dashpanel")];
+
+      case "savepoint":
+        return [type, await this.load_asset("common/cmn_savepoint.dae", node, "savepoint")];
+
+      case "spring":
+        return [type, await this.load_asset("common/cmn_spring.dae", node, "spring")];
+
+        case "common_hint":
+          return [type, await this.load_asset("common/cmn_Hint.dae", node, node.children[1].children[0].innerHTML)];
+
+      case "common_hint_collision":
+        let temp = node.children[1].children[0].innerHTML;
+        node.children[1].children[0].innerHTML = node.children[1].children[1].innerHTML
+        node.children[1].children[1].innerHTML = node.children[1].children[2].innerHTML
+        node.children[1].children[2].innerHTML = node.children[1].children[3].innerHTML
+        node.children[1].children[3].innerHTML = temp
+
+        return [type, this.create_box(node, [1, 1, 0, 0.5], node.children[1].children[3].innerHTML)];
 
       default:
         return [type, null];

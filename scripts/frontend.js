@@ -246,6 +246,9 @@ function addEventListeners(environment) {
   
   document.getElementById("load-terrain").addEventListener("click", () => {
 
+    var terrain_container = document.getElementById("terrain-hierarchy")
+    terrain_container.innerHTML = ""
+
     environment.load_terrain(
       document.getElementById("terrain-dropdown-input").value,
       update_terrain_heirarchy,
