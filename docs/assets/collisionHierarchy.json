@@ -88,9 +88,6 @@
             }
         },
         "other": {
-            "night": {
-                "collision": "collision.obj"
-            },
             "test002": {
                 "collision": "collision.obj"
             },
@@ -1148,18 +1145,6 @@
             "kdv_mapD_wateredge_lv1_.dae",
             "kdv_mapD_water_lv1_nos_.dae",
             "kdv_sky_L1.dae"
-        ],
-        "other/night": [
-            "e0031ac01_EventEffect.dae",
-            "e0031bc01_EventEffect.dae",
-            "e0031c01_CameraNull.dae",
-            "e0031c01_EventObject.dae",
-            "e0031c01_EventSound.dae",
-            "eve_obj_e0031dset01.dae",
-            "eve_obj_e0031dset02.dae",
-            "eve_obj_e0031dset03.dae",
-            "eve_obj_e0031dset04.dae",
-            "eve_obj_e0031dset05.dae"
         ],
         "other/test002": [
             "collision.obj"

@@ -47,6 +47,7 @@ export class Environment {
   }
 
   addEventFunctionality() {
+
     this.renderer.domElement.addEventListener("mousemove", this.display_info)
   }
 
@@ -60,6 +61,9 @@ export class Environment {
   }
 
   display_info = (event) => {
+
+    if(this.controls.isLocked) return
+
     event.preventDefault();
 
     this.mouse.x = ((event.clientX - this.offset.left) / event.target.width) * 2 - 1;
@@ -141,7 +145,7 @@ export class Environment {
 
     Object.values(object_table).forEach(group => {
       this.placement_group.add(group)
-    })  
+    })
 
     callback(object_table)
   }
@@ -271,11 +275,10 @@ export class Environment {
       try {
         result = await loader.loadAsync("docs/assets/terrain/" + terrain + "/" + files[i])
       } catch (error) {
+        console.log(files[i], result)
         console.error("Error loading:" + error)
         continue;
       }
-
-      console.log(result)
 
       progress_report((((i + 1) / len) * 100).toPrecision(3))
 

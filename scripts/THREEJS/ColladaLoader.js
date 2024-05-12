@@ -1111,7 +1111,15 @@ class ColladaLoader extends Loader {
 
 			const data = {
 				surfaces: {},
-				samplers: {}
+				samplers: {},
+				technique: {
+					type: null,
+					parameters: {
+						transparent: true,
+						transparency: null
+					}
+				},
+				extra: {}
 			};
 
 			for ( let i = 0, l = xml.childNodes.length; i < l; i ++ ) {
