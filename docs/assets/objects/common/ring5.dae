@@ -1,0 +1,183 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="cmn_ring5_dflu_r.dds-image" name="cmn_ring5_dflu_r.dds-image">
+      <init_from>./textures/cmn_ring5_dflu_r.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="ring5.xno0ID" name="ring5.xno0">
+      <instance_effect url="#ring5.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="ring5.xno0-effect" name="ring5.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="cmn_ring5_dflu_r.dds-image-surface">
+          <surface type="2D">
+            <init_from>cmn_ring5_dflu_r.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="cmn_ring5_dflu_r.dds-image-sampler">
+          <sampler2D>
+            <source>cmn_ring5_dflu_r.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="cmn_ring5_dflu_r.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="ring5.xno-geometry" name="ring5.xno-geometry">
+      <mesh>
+        <source id="ring5.xno-geometry-position">
+          <float_array id="ring5.xno-geometry-position-array" count="219">-32.6804 28.0538 14.0047 -32.6804 -26.9419 14.0047 -31.3553 -26.9419 19.2249 -31.3553 -26.9419 19.2249 -31.3553 -26.9419 19.2249 -31.3553 28.0538 19.2249 -31.3553 28.0538 19.2249 -28.5133 23.2465 10.829 -28.5133 23.2465 10.829 -28.5133 -22.1346 10.829 -28.5133 -22.1346 10.829 -27.7515 -29.1982 17.1186 -27.7515 -29.1982 17.1186 -27.7515 -29.1982 17.1186 -27.7515 30.31 17.1186 -27.7515 30.31 17.1186 -27.7515 30.31 17.1186 -27.532 -26.9419 22.9723 -27.532 28.0538 22.9724 -22.7238 -22.1346 20.8911 -22.7238 -22.1346 20.8911 -22.7238 23.2464 20.8911 -22.7238 23.2464 20.8911 -5.81375 -22.1346 -29.6851 -5.81375 -22.1346 -29.6851 -5.81374 23.2465 -29.6851 -5.81374 23.2465 -29.6851 -5.28132 -26.9419 -34.8973 -5.28131 28.0538 -34.8973 -0.0328776 -26.9419 -36.3856 -0.0328776 -26.9419 -36.3856 -0.0328776 -26.9419 -36.3856 -0.0328751 28.0538 -36.3856 -0.0328751 28.0538 -36.3856 -0.0328751 28.0538 -36.3856 -0.0234693 -29.1982 -32.1871 -0.0234693 -29.1982 -32.1871 -0.0234693 -29.1982 -32.1871 -0.0234647 30.3101 -32.1871 -0.0234647 30.3101 -32.1871 -0.0234647 30.3101 -32.1871 5.22349 -26.9419 -34.9253 5.2235 28.0538 -34.9253 5.77333 -22.1346 -29.7149 5.77333 -22.1346 -29.7149 5.77333 23.2465 -29.7149 5.77333 23.2465 -29.7149 22.9791 -22.1346 20.9092 22.9791 -22.1346 20.9092 22.9791 23.2464 20.9092 22.9791 23.2464 20.9092 27.7856 -26.9419 22.9943 27.7856 28.0538 22.9943 27.9791 -29.1982 17.1624 27.9791 -29.1982 17.1624 27.9791 -29.1982 17.1624 27.9791 30.31 17.1625 27.9791 30.31 17.1625 27.9791 30.31 17.1625 28.7086 -22.1346 10.9012 28.7086 -22.1346 10.9012 28.7086 23.2464 10.9012 28.7086 23.2464 10.9012 31.5891 -26.9419 19.2666 31.5891 -26.9419 19.2666 31.5891 -26.9419 19.2666 31.5891 -26.9419 19.2666 31.5891 28.0538 19.2667 31.5891 28.0538 19.2667 31.5891 28.0538 19.2667 31.5891 28.0538 19.2667 32.8863 -26.9419 14.063 32.8863 28.0538 14.063 </float_array>
+          <technique_common>
+            <accessor source="#ring5.xno-geometry-position-array" count="73" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ring5.xno-geometry-normal">
+          <float_array id="ring5.xno-geometry-normal-array" count="108">-0.865719 0.458712 -0.200284 -0.865816 -0.458592 -0.200142 -0.761849 -0.476772 0.438492 -0.761848 0.476772 0.438493 -0.775929 -0.154334 -0.61165 -0.775929 0.154334 -0.61165 -0.220762 -0.966911 0.127855 -0.220779 0.966928 0.127699 -0.255674 -0.458514 0.851114 -0.255674 0.458514 0.851114 0.153946 0.154334 0.975952 0.153947 -0.154334 0.975952 -0.926804 0.154334 -0.342368 -0.926804 -0.154334 -0.342368 -0.614848 -0.459103 -0.641238 -0.614919 0.459221 -0.641085 -0.00233095 -0.477672 -0.878535 -0.00233093 0.477672 -0.878535 -0.000412347 -0.967633 -0.252361 -0.000742471 0.967628 -0.25238 0.612144 -0.459197 -0.643753 0.612049 0.459043 -0.643953 0.925655 0.154334 -0.345461 0.925655 -0.154334 -0.345461 -0.154722 0.154334 0.975829 -0.154722 -0.154334 0.975829 0.255511 -0.458176 0.851345 0.255511 0.458176 0.851346 0.220824 -0.966986 0.127182 0.220802 0.966964 0.127389 0.773881 0.154334 -0.614238 0.773881 -0.154334 -0.614238 0.762801 -0.476686 0.436927 0.762801 0.476686 0.436928 0.865148 -0.458378 -0.203492 0.865276 0.45822 -0.203304 </float_array>
+          <technique_common>
+            <accessor source="#ring5.xno-geometry-normal-array" count="36" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ring5.xno-geometry-uv">
+          <float_array id="ring5.xno-geometry-uv-array" count="132">0.0637376 1.09964 0.0637376 1.89781 -0.00044367 1.95849 -0.00044367 1.95565 -0.00044367 1.89781 -0.00044367 1.09964 -0.00044367 1.04554 0.120709 1.12178 0.870812 -0.131478 0.121905 1.87881 0.870815 -0.866571 -0.0616114 1.98554 0.0637376 1.98554 1.05238 0.0318593 -0.0616114 1.00461 0.0637376 1.00461 -0.0616114 1.89781 -0.0616114 1.09964 -0.121565 1.87881 0.13067 -0.866574 -0.121565 1.12178 0.130667 -0.13148 0.871838 1.87881 0.871838 1.12178 0.935789 1.89781 0.935789 1.09964 0.972255 1.95174 0.990481 1.89781 1.02503 1.95007 0.972572 1.04554 0.991943 1.09964 1.02416 1.04554 0.935789 1.98554 0.996643 0.131701 1.04403 1.98554 0.935789 1.00461 0.939773 0.0318576 1.04403 1.00461 1.04403 1.89781 1.04403 1.09964 0.870101 -0.867281 1.12447 1.87881 0.870096 -0.130765 1.12568 1.12178 -0.877236 1.87659 -0.877236 1.11957 -0.937095 1.89781 -0.937095 1.09964 -0.937095 1.98554 1.93969 1.98554 -0.937095 1.00461 1.93969 1.00461 0.131387 -0.867287 1.87475 1.87881 0.131381 -0.13077 1.872 1.12178 -0.998348 1.93906 -0.997241 1.89781 2.0009 1.89781 2.0009 1.94509 -0.997241 1.09964 -0.997241 1.04554 2.0009 1.09964 2.0009 1.04554 1.93969 1.89781 1.93969 1.09964 </float_array>
+          <technique_common>
+            <accessor source="#ring5.xno-geometry-uv-array" count="66" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ring5.xno-geometry-uv2">
+          <float_array id="ring5.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#ring5.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ring5.xno-geometry-color">
+          <float_array id="ring5.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#ring5.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="ring5.xno-geometry-vertex">
+          <input semantic="POSITION" source="#ring5.xno-geometry-position" />
+        </vertices>
+        <triangles material="ring5.xno0" count="68">
+          <input semantic="VERTEX" source="#ring5.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#ring5.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#ring5.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#ring5.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#ring5.xno-geometry-color" offset="4" set="0" />
+          <p>7 4 7 0 0 0 0 0 0 0 26 13 23 0 0 28 15 25 0 0 26 13 23 0 0 0 0 0 0 0 26 13 23 0 0 28 15 25 0 0 24 12 22 0 0 27 14 24 0 0 24 12 22 0 0 28 15 25 0 0 24 12 22 0 0 27 14 24 0 0 9 5 9 0 0 1 1 1 0 0 9 5 9 0 0 27 14 24 0 0 9 5 9 0 0 1 1 1 0 0 7 4 7 0 0 7 4 7 0 0 1 1 1 0 0 0 0 0 0 0 4 2 4 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 4 2 4 0 0 5 3 5 0 0 17 8 16 0 0 5 3 5 0 0 4 2 4 0 0 5 3 5 0 0 17 8 16 0 0 18 9 17 0 0 56 29 50 0 0 52 27 47 0 0 68 33 61 0 0 52 27 47 0 0 56 29 50 0 0 18 9 17 0 0 14 7 14 0 0 18 9 17 0 0 56 29 50 0 0 18 9 17 0 0 14 7 14 0 0 6 3 6 0 0 6 3 6 0 0 15 7 15 0 0 0 0 0 0 0 38 19 35 0 0 0 0 0 0 0 15 7 15 0 0 0 0 0 0 0 38 19 35 0 0 28 15 25 0 0 34 17 31 0 0 28 15 25 0 0 38 19 35 0 0 33 17 30 0 0 27 14 24 0 0 28 15 25 0 0 27 14 24 0 0 33 17 30 0 0 30 16 27 0 0 42 21 39 0 0 30 16 27 0 0 33 17 30 0 0 30 16 27 0 0 42 21 39 0 0 41 20 38 0 0 46 23 43 0 0 41 20 38 0 0 42 21 39 0 0 44 22 41 0 0 41 20 38 0 0 46 23 43 0 0 41 20 38 0 0 44 22 41 0 0 71 34 64 0 0 60 30 53 0 0 71 34 64 0 0 44 22 41 0 0 71 34 64 0 0 60 30 53 0 0 72 35 65 0 0 62 31 55 0 0 72 35 65 0 0 60 30 53 0 0 72 35 65 0 0 62 31 55 0 0 42 21 39 0 0 46 23 43 0 0 42 21 39 0 0 62 31 55 0 0 3 2 3 0 0 1 1 1 0 0 12 6 12 0 0 27 14 24 0 0 12 6 12 0 0 1 1 1 0 0 12 6 12 0 0 27 14 24 0 0 35 18 32 0 0 31 16 28 0 0 35 18 32 0 0 27 14 24 0 0 29 16 26 0 0 41 20 38 0 0 37 18 34 0 0 71 34 64 0 0 37 18 34 0 0 41 20 38 0 0 37 18 34 0 0 71 34 64 0 0 55 28 49 0 0 66 32 59 0 0 55 28 49 0 0 71 34 64 0 0 63 32 56 0 0 51 26 46 0 0 53 28 48 0 0 17 8 16 0 0 53 28 48 0 0 51 26 46 0 0 53 28 48 0 0 17 8 16 0 0 11 6 11 0 0 2 2 2 0 0 11 6 11 0 0 17 8 16 0 0 49 25 45 0 0 52 27 47 0 0 21 11 20 0 0 18 9 17 0 0 21 11 20 0 0 52 27 47 0 0 21 11 20 0 0 18 9 17 0 0 19 10 18 0 0 17 8 16 0 0 19 10 18 0 0 18 9 17 0 0 19 10 18 0 0 17 8 16 0 0 47 24 44 0 0 51 26 46 0 0 47 24 44 0 0 17 8 16 0 0 47 24 44 0 0 51 26 46 0 0 49 25 45 0 0 49 25 45 0 0 51 26 46 0 0 52 27 47 0 0 64 32 57 0 0 52 27 47 0 0 51 26 46 0 0 52 27 47 0 0 64 32 57 0 0 67 33 60 0 0 71 34 64 0 0 69 33 62 0 0 65 32 58 0 0 69 33 62 0 0 71 34 64 0 0 72 35 65 0 0 70 33 63 0 0 72 35 65 0 0 58 29 51 0 0 42 21 39 0 0 58 29 51 0 0 72 35 65 0 0 58 29 51 0 0 42 21 39 0 0 40 19 37 0 0 32 17 29 0 0 40 19 37 0 0 42 21 39 0 0 48 24 10 0 0 50 25 8 0 0 20 10 19 0 0 22 11 21 0 0 20 10 19 0 0 50 25 8 0 0 13 6 13 0 0 36 18 33 0 0 54 28 36 0 0 39 19 36 0 0 16 7 13 0 0 57 29 33 0 0 25 13 21 0 0 23 12 19 0 0 8 4 8 0 0 10 5 10 0 0 8 4 8 0 0 23 12 19 0 0 43 22 40 0 0 45 23 42 0 0 59 30 52 0 0 61 31 54 0 0 59 30 52 0 0 45 23 42 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="ring5.xno-controller">
+      <skin source="#ring5.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="ring5.xno-controller-Joints">
+          <Name_array id="ring5.xno-controller-Joints-array" count="2">ring5 item </Name_array>
+          <technique_common>
+            <accessor source="#ring5.xno-controller-Joints-array" count="2">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ring5.xno-controller-Matrices">
+          <float_array id="ring5.xno-controller-Matrices-array" count="32">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 -4.53633e-008 -8.74228e-008 0 4.53633e-008 1 2.559e-007 0 8.74228e-008 -2.559e-007 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#ring5.xno-controller-Matrices-array" count="2" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ring5.xno-controller-Weights">
+          <float_array id="ring5.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#ring5.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#ring5.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#ring5.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="73">
+          <input semantic="JOINT" offset="0" source="#ring5.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#ring5.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="ring5" sid="ring5" name="ring5" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <node id="item" sid="item" name="item" type="JOINT">
+          <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="ring5.xno" sid="ring5.xno" name="ring5.xno">
+        <instance_controller url="#ring5.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="ring5.xno0" target="#ring5.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

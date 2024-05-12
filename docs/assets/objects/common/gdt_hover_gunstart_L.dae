@@ -1,0 +1,275 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="gdt_hover_tex02_df.dds-image" name="gdt_hover_tex02_df.dds-image">
+      <init_from>./textures/gdt_hover_tex02_df.dds</init_from>
+    </image>
+    <image id="gdt_hover_tex02_sp.dds-image" name="gdt_hover_tex02_sp.dds-image">
+      <init_from>./textures/gdt_hover_tex02_sp.dds</init_from>
+    </image>
+    <image id="gdt_hover_tex02_nw.dds-image" name="gdt_hover_tex02_nw.dds-image">
+      <init_from>./textures/gdt_hover_tex02_nw.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="gdt_hover_gunstart_L_GunUnder_L.xno0ID" name="gdt_hover_gunstart_L_GunUnder_L.xno0">
+      <instance_effect url="#gdt_hover_gunstart_L_GunUnder_L.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="gdt_hover_gunstart_L_GunUnder_L.xno0-effect" name="gdt_hover_gunstart_L_GunUnder_L.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="gdt_hover_tex02_df.dds-image-surface">
+          <surface type="2D">
+            <init_from>gdt_hover_tex02_df.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="gdt_hover_tex02_df.dds-image-sampler">
+          <sampler2D>
+            <source>gdt_hover_tex02_df.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="gdt_hover_tex02_sp.dds-image-surface">
+          <surface type="2D">
+            <init_from>gdt_hover_tex02_sp.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="gdt_hover_tex02_sp.dds-image-sampler">
+          <sampler2D>
+            <source>gdt_hover_tex02_sp.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="gdt_hover_tex02_nw.dds-image-surface">
+          <surface type="2D">
+            <init_from>gdt_hover_tex02_nw.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="gdt_hover_tex02_nw.dds-image-sampler">
+          <sampler2D>
+            <source>gdt_hover_tex02_nw.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="gdt_hover_tex02_nw.dds-image-surface">
+          <surface type="2D">
+            <init_from>gdt_hover_tex02_nw.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="gdt_hover_tex02_nw.dds-image-sampler">
+          <sampler2D>
+            <source>gdt_hover_tex02_nw.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="gdt_hover_tex02_df.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="gdt_hover_gunstart_L_GunUnder_L.xno-geometry" name="gdt_hover_gunstart_L_GunUnder_L.xno-geometry">
+      <mesh>
+        <source id="gdt_hover_gunstart_L_GunUnder_L.xno-geometry-position">
+          <float_array id="gdt_hover_gunstart_L_GunUnder_L.xno-geometry-position-array" count="747">-8.4069 -9.26346 -14.8358 -8.4069 -9.26346 -14.8358 -8.4069 -9.26346 -14.8358 -8.4069 -3.06412 -13.5108 -8.4069 -3.06412 -13.5108 -8.4069 -3.06412 -13.5108 -8.4069 -3.1394 -40.2964 -8.4069 -3.1394 -40.2964 -8.4069 -3.1394 -40.2964 -8.4069 12.5963 -3.05597 -8.4069 12.5963 -3.05597 -8.4069 12.5963 -3.05597 -8.4069 8.19076 0.451904 -8.4069 8.19076 0.451904 -8.4069 8.19076 0.451904 -8.4069 -9.25169 -40.2617 -8.4069 -9.25169 -40.2617 -8.4069 -9.25169 -40.2617 -8.4069 12.5963 -10.1636 -8.4069 12.5963 -10.1636 -8.4069 12.5963 -10.1636 -8.4069 -9.26346 -3.27868 -8.4069 -9.26346 -3.27868 -8.4069 -9.26346 -3.27868 -5.68222 -6.16705 23.0194 -5.68222 -6.16705 23.0194 -5.68222 -6.16705 23.0194 -5.68222 8.29305 31.477 -5.68222 8.29305 31.477 -5.68222 8.29305 31.477 -5.68222 8.29304 -13.7568 -5.68222 8.29304 -13.7568 -5.68222 8.29304 -13.7568 -5.68222 -6.16705 6.3533 -5.68222 -6.16705 6.3533 -5.68222 -6.16705 6.3533 -5.68222 -0.57193 -13.7568 -5.68222 -0.57193 -13.7568 -5.68222 -0.57193 -13.7568 -5.68222 -0.571926 6.3533 -5.68222 -0.571926 6.3533 -5.68222 -0.571926 6.3533 -5.68222 -0.571926 31.477 -5.68222 -0.571926 31.477 -5.68222 -0.571926 31.477 -3.55857 -12.5963 43.6309 -3.55857 -12.5963 43.6309 -3.55857 -12.5963 43.6309 -3.55857 -3.16334 43.6309 -3.55857 -3.16334 43.6309 -3.55857 -3.16334 43.6309 -3.55857 -3.16334 30.2439 -3.55857 -3.16334 30.2439 -3.55857 -3.16334 30.2439 -3.55857 -12.5963 30.2439 -3.55857 -12.5963 30.2439 -3.55857 -12.5963 30.2439 -3.54299 7.35642 -9.63666 -3.54299 7.35642 -9.63666 -3.54299 7.35642 -9.63666 -3.54299 7.32974 23.8458 -3.54299 7.32974 23.8458 -2.84872 -7.86549 38.7818 -2.84872 -7.86548 -38.8175 -1.89399 14.2051 -5.69658 -1.89399 14.2051 -5.69658 -1.89399 14.2051 -5.69658 -1.89399 14.1784 27.7859 -1.89399 14.1784 27.7859 -0.0322876 -4.59787 -38.8175 -0.0322876 -4.59787 -38.8175 -0.0322876 -4.59787 38.7818 -0.0322876 -4.59787 38.7818 -0.0322876 -11.1331 38.7818 -0.0322876 -11.1331 -38.8175 1.81926 14.1784 27.7859 1.81926 14.1784 27.7859 1.81926 14.2051 -5.69658 1.81926 14.2051 -5.69658 1.81926 14.2051 -5.69658 2.78413 -7.86548 -38.8175 2.78413 -7.86549 38.7818 3.46826 7.35642 -9.63666 3.46826 7.35642 -9.63666 3.46826 7.35642 -9.63666 3.46827 7.32974 23.8458 3.46827 7.32974 23.8458 3.4826 -3.16334 43.6309 3.4826 -3.16334 43.6309 3.4826 -3.16334 43.6309 3.4826 -12.5963 30.2439 3.4826 -12.5963 30.2439 3.4826 -12.5963 30.2439 3.4826 -12.5963 43.6309 3.4826 -12.5963 43.6309 3.4826 -12.5963 43.6309 3.4826 -3.16334 30.2439 3.4826 -3.16334 30.2439 3.4826 -3.16334 30.2439 5.61621 -0.57193 -13.7568 5.61621 -0.57193 -13.7568 5.61621 -0.57193 -13.7568 5.61621 8.29305 31.477 5.61621 8.29305 31.477 5.61621 8.29305 31.477 5.61621 -6.16705 23.0194 5.61621 -6.16705 23.0194 5.61621 -6.16705 23.0194 5.61621 8.29304 -13.7568 5.61621 8.29304 -13.7568 5.61621 8.29304 -13.7568 5.61621 -0.571926 31.477 5.61621 -0.571926 31.477 5.61621 -0.571926 31.477 5.61621 -0.571926 6.3533 5.61621 -0.571926 6.3533 5.61621 -0.571926 6.3533 5.61621 -6.16705 6.3533 5.61621 -6.16705 6.3533 5.61621 -6.16705 6.3533 8.4069 -9.26346 -3.27868 8.4069 -9.26346 -3.27868 8.4069 -9.26346 -3.27868 8.4069 -9.25169 -40.2617 8.4069 -9.25169 -40.2617 8.4069 -9.25169 -40.2617 8.4069 12.5963 -3.05597 8.4069 12.5963 -3.05597 8.4069 12.5963 -3.05597 8.4069 8.19076 0.451905 8.4069 8.19076 0.451905 8.4069 8.19076 0.451905 8.4069 -9.26346 -14.8358 8.4069 -9.26346 -14.8358 8.4069 -9.26346 -14.8358 8.4069 -3.1394 -40.2964 8.4069 -3.1394 -40.2964 8.4069 -3.1394 -40.2964 8.4069 12.5963 -10.1636 8.4069 12.5963 -10.1636 8.4069 12.5963 -10.1636 8.4069 -3.06412 -13.5108 8.4069 -3.06412 -13.5108 8.4069 -3.06412 -13.5108 -3.69488 -10.3755 -36.1917 -3.69488 -10.3755 -36.1917 -3.69488 -10.3755 -36.1917 -3.69488 -10.1554 -45.3373 -3.69488 -10.1554 -45.3373 -3.69488 -10.1554 -45.3373 -3.69487 0.0436442 -54.9405 -3.69487 0.0436442 -54.9405 -3.69487 0.0436442 -54.9405 -3.69487 5.31205 -54.5988 -3.69487 5.31205 -54.5988 -3.69487 5.31205 -54.5988 -3.69487 -6.56168 -34.0329 -3.69487 -6.56168 -34.0329 -3.69487 -6.56168 -34.0329 3.64605 -6.56168 -34.0329 3.64605 -6.56168 -34.0329 3.64605 -6.56168 -34.0329 3.64605 -10.3755 -36.1917 3.64605 -10.3755 -36.1917 3.64605 -10.3755 -36.1917 3.64605 -10.1554 -45.3373 3.64605 -10.1554 -45.3373 3.64605 -10.1554 -45.3373 3.64605 5.31205 -54.5988 3.64605 5.31205 -54.5988 3.64605 5.31205 -54.5988 3.64605 0.0436442 -54.9405 3.64605 0.0436442 -54.9405 3.64605 0.0436442 -54.9405 -12.5187 2.99227 -49.9733 -12.5187 2.99227 -49.9733 -12.5187 2.99227 -49.9733 -12.5187 22.1393 -38.9188 -12.5187 22.1393 -38.9188 -12.5187 22.1393 -38.9188 -6.27666 27.5451 -48.2818 -6.27666 27.5451 -48.2818 -6.27666 27.5451 -48.2818 -6.27666 8.39802 -59.3364 -6.27666 8.39802 -59.3364 -6.27666 8.39802 -59.3364 -6.27666 16.7336 -29.5558 -6.27666 16.7336 -29.5558 -6.27666 16.7336 -29.5558 -6.27666 -2.41348 -40.6103 -6.27666 -2.41348 -40.6103 -6.27666 -2.41348 -40.6103 6.20738 27.5451 -48.2818 6.20738 27.5451 -48.2818 6.20738 27.5451 -48.2818 6.20738 8.39802 -59.3364 6.20738 8.39802 -59.3364 6.20738 8.39802 -59.3364 6.20738 16.7336 -29.5558 6.20738 16.7336 -29.5558 6.20738 16.7336 -29.5558 6.20738 -2.41348 -40.6103 6.20738 -2.41348 -40.6103 6.20738 -2.41348 -40.6103 12.4494 22.1393 -38.9188 12.4494 22.1393 -38.9188 12.4494 22.1393 -38.9188 12.4494 2.99227 -49.9733 12.4494 2.99227 -49.9733 12.4494 2.99227 -49.9733 -4.41705 8.12819 23.0865 -4.41705 8.12819 23.0865 -4.41705 8.12819 23.0865 -4.41705 8.12819 23.0865 -4.41705 8.12819 48.1228 -4.41705 8.12819 48.1228 -4.41705 8.12819 48.1228 -2.2272 15.0308 27.0375 -2.2272 15.0308 27.0375 -2.2272 15.0308 27.0375 -2.2272 15.0308 48.1228 -2.2272 15.0308 48.1228 -2.2272 15.0308 48.1228 -2.2272 1.22556 48.1228 -2.2272 1.22556 48.1228 -2.2272 1.22556 48.1228 -2.2272 1.22556 23.0865 -2.2272 1.22556 23.0865 -2.2272 1.22556 23.0865 -0.0373535 8.12819 44.1044 2.1525 15.0308 27.0375 2.1525 15.0308 27.0375 2.1525 15.0308 27.0375 2.1525 1.22556 23.0865 2.1525 1.22556 23.0865 2.1525 1.22556 23.0865 2.1525 1.22556 48.1228 2.1525 1.22556 48.1228 2.1525 1.22556 48.1228 2.1525 15.0308 48.1228 2.1525 15.0308 48.1228 2.1525 15.0308 48.1228 4.34234 8.12819 48.1228 4.34234 8.12819 48.1228 4.34234 8.12819 48.1228 4.34234 8.12819 23.0865 4.34234 8.12819 23.0865 4.34234 8.12819 23.0865 4.34234 8.12819 23.0865 </float_array>
+          <technique_common>
+            <accessor source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-position-array" count="249" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="gdt_hover_gunstart_L_GunUnder_L.xno-geometry-normal">
+          <float_array id="gdt_hover_gunstart_L_GunUnder_L.xno-geometry-normal-array" count="138">-1 0 0 -1.04959e-010 -1 -0.000462623 0 -1 1.14445e-007 -1.13439e-007 0.999996 -0.00281057 0 0.209014 -0.977913 -2.26875e-007 -0.00566739 -0.999984 -5.68513e-008 0.622904 0.782298 0 1 0 -7.1067e-008 -0.209014 0.977913 0 -0.834015 0.551742 0 0 1 0 0 -1 -0.97224 0.233985 0.000186448 -2.71317e-007 0.498669 -0.866792 5.44081e-007 -1 -0.000796835 -1.02814e-006 1 0.000796721 0.97224 0.233986 0.000186227 1 -4.45138e-008 -3.30735e-015 -1 1.97359e-006 4.74875e-008 0 -0.999711 -0.0240545 0 -0.492612 0.870249 0 -0.685516 -0.728057 0 0.0647231 -0.997903 0 0.866025 0.5 1 0 0 -0.866025 -0.25 0.433013 -0.866025 0.25 -0.433013 0 -0.866026 -0.5 0 0.866025 0.5 0 0.5 -0.866026 1.52783e-007 -0.5 0.866025 0.866025 0.25 -0.433013 0.866025 -0.25 0.433013 -0.953183 0.302395 0 -0.953183 -0.302395 -0 0 0.496768 -0.867884 0.676063 3.01816e-009 0.736844 0.263835 -0.421405 0.867646 0 -1 -1.52367e-007 0.263835 0.421405 0.867646 -1.38599e-009 -5.01527e-009 1 0.953183 0.302395 0 0.953183 -0.302395 0 -0.263835 0.421405 0.867646 -0.263835 -0.421405 0.867646 -0.676063 3.01816e-009 0.736844 </float_array>
+          <technique_common>
+            <accessor source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-normal-array" count="46" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="gdt_hover_gunstart_L_GunUnder_L.xno-geometry-uv">
+          <float_array id="gdt_hover_gunstart_L_GunUnder_L.xno-geometry-uv-array" count="318">0.285291 0.655614 0.309875 0.650474 0.285303 0.424726 0.309633 0.756752 0.285303 0.780621 0.285302 0.318447 0.371989 0.608959 0.285303 0.516468 0.354503 0.59505 0.285303 0.538812 0.285341 0.756498 0.372005 0.63716 0.285303 0.488266 0.285279 0.609759 0.0702798 0.506499 0.0036993 0.545291 0.0701327 0.593923 0.0040493 0.337221 0.189137 0.28556 0.0697823 0.801993 0.0704083 0.429837 0.0448275 0.337289 0.14836 0.285492 0.0446715 0.429793 0.0704527 0.4041 0.0558569 0.285336 0.044477 0.545359 0.0702009 0.553145 0.427588 0.563706 0.427619 0.524175 0.388052 0.56371 0.427586 0.662149 0.483736 0.524175 0.483714 0.662133 0.4837 0.563702 0.523268 0.662117 0.446181 0.667407 0.419217 0.647595 0.322223 0.667405 0.446182 0.834643 0.322215 0.834642 0.175152 0.667671 0.175152 0.821381 0.410981 0.687059 0.410982 0.854296 0.137246 0.821381 0.183931 0.821381 0.137246 0.667671 0.183931 0.667671 0.162454 0.667671 0.162454 0.821381 0.392435 0.854296 0.392434 0.68706 0.149871 0.821381 0.149871 0.667671 0.384198 0.647595 0.357238 0.667407 0.357235 0.834643 0.388052 0.593226 0.427588 0.632694 0.523268 0.632601 0.483685 0.593208 0.427581 0.593217 0.483716 0.632647 0.148272 0.337463 0.122104 0.594011 0.1887 0.545602 0.122251 0.506586 0.18905 0.337532 0.121754 0.80208 0.122173 0.553233 0.147923 0.545533 0.122424 0.404187 0.0557683 0.337308 0.148118 0.429968 0.122381 0.429924 0.21859 0.609629 0.218575 0.756368 0.21859 0.516468 0.131856 0.608746 0.21859 0.538812 0.149335 0.594828 0.21859 0.655485 0.21859 0.780621 0.218588 0.318449 0.194291 0.756506 0.21859 0.488266 0.131856 0.636947 0.21859 0.424726 0.193992 0.650228 0.757365 0.19414 0.7742 0.177447 0.740529 0.224991 0.7742 0.142301 0.756016 0.276533 0.7742 0.0884826 0.7742 0.285516 0.7742 0.0682001 0.7742 0.194283 0.802402 0.194283 0.802402 0.177447 0.819238 0.19414 0.802402 0.142301 0.836074 0.224991 0.802402 0.0682001 0.802402 0.285516 0.802402 0.0884826 0.820587 0.276533 0.88997 0.944464 0.542697 0.186339 0.998702 0.944464 0.770774 0.143669 0.998702 0.997634 0.740076 0.0904982 0.998765 0.66211 0.88997 0.997634 0.573395 0.133168 0.890033 0.66211 0.998692 0.891291 0.740076 0.19684 0.88996 0.891291 0.573395 0.23951 0.678679 0.0904982 0.998765 0.723511 0.634791 0.133168 0.890033 0.723511 0.678679 0.19684 0.998724 0.829876 0.634791 0.23951 0.889991 0.829876 0.647982 0.143669 0.998765 0.776688 0.665489 0.186339 0.890032 0.776688 0.903791 0.539035 0.890218 0.556166 0.988693 0.539035 0.259808 0.888073 0.91719 0.563593 0.988693 0.563593 0.284432 0.939555 0.988693 0.514477 0.988693 0.642413 0.285181 0.835919 0.903791 0.514477 0.86681 0.563593 0.903791 0.642413 0.301072 0.88773 0.91719 0.578445 0.86681 0.578445 0.903791 0.62756 0.31644 0.83588 0.988693 0.62756 0.317497 0.939487 0.988693 0.578445 0.34207 0.887539 0.988693 0.603003 0.890218 0.585871 0.903791 0.603003 </float_array>
+          <technique_common>
+            <accessor source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-uv-array" count="159" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="gdt_hover_gunstart_L_GunUnder_L.xno-geometry-uv2">
+          <float_array id="gdt_hover_gunstart_L_GunUnder_L.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="gdt_hover_gunstart_L_GunUnder_L.xno-geometry-color">
+          <float_array id="gdt_hover_gunstart_L_GunUnder_L.xno-geometry-color-array" count="4">0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="gdt_hover_gunstart_L_GunUnder_L.xno-geometry-vertex">
+          <input semantic="POSITION" source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-position" />
+        </vertices>
+        <triangles material="gdt_hover_gunstart_L_GunUnder_L.xno0" count="82">
+          <input semantic="VERTEX" source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-color" offset="4" set="0" />
+          <p>33 0 20 0 0 24 0 14 0 0 39 0 23 0 0 42 0 26 0 0 39 0 23 0 0 24 0 14 0 0 39 0 23 0 0 42 0 26 0 0 27 0 15 0 0 30 0 17 0 0 39 0 23 0 0 27 0 15 0 0 39 0 23 0 0 30 0 17 0 0 36 0 21 0 0 143 17 89 0 0 125 17 77 0 0 137 17 85 0 0 125 17 77 0 0 143 17 89 0 0 134 17 82 0 0 143 17 89 0 0 122 17 76 0 0 134 17 82 0 0 122 17 76 0 0 143 17 89 0 0 131 17 81 0 0 140 17 87 0 0 131 17 81 0 0 143 17 89 0 0 131 17 81 0 0 140 17 87 0 0 128 17 79 0 0 123 5 77 0 0 7 5 4 0 0 135 5 83 0 0 7 5 4 0 0 123 5 77 0 0 16 5 10 0 0 0 0 0 0 0 6 0 3 0 0 15 0 10 0 0 6 0 3 0 0 0 0 0 0 0 3 0 1 0 0 21 0 13 0 0 3 0 1 0 0 0 0 0 0 0 12 0 8 0 0 3 0 1 0 0 21 0 13 0 0 3 0 1 0 0 12 0 8 0 0 18 0 11 0 0 9 0 6 0 0 18 0 11 0 0 12 0 8 0 0 5 4 2 0 0 20 4 12 0 0 142 4 88 0 0 139 4 86 0 0 142 4 88 0 0 20 4 12 0 0 8 3 5 0 0 4 3 2 0 0 136 3 84 0 0 141 3 88 0 0 136 3 84 0 0 4 3 2 0 0 124 1 77 0 0 132 1 82 0 0 17 1 10 0 0 1 1 0 0 0 17 1 10 0 0 132 1 82 0 0 127 7 78 0 0 138 7 86 0 0 11 7 7 0 0 19 7 12 0 0 11 7 7 0 0 138 7 86 0 0 26 2 14 0 0 35 2 20 0 0 106 2 67 0 0 118 2 75 0 0 106 2 67 0 0 35 2 20 0 0 25 9 14 0 0 105 9 67 0 0 43 9 27 0 0 111 9 70 0 0 43 9 27 0 0 105 9 67 0 0 114 11 72 0 0 117 11 75 0 0 40 11 24 0 0 34 11 20 0 0 40 11 24 0 0 117 11 75 0 0 112 10 70 0 0 102 10 65 0 0 44 10 27 0 0 28 10 16 0 0 44 10 27 0 0 102 10 65 0 0 29 7 16 0 0 103 7 65 0 0 32 7 19 0 0 109 7 69 0 0 32 7 19 0 0 103 7 65 0 0 115 2 73 0 0 41 2 25 0 0 100 2 64 0 0 38 2 22 0 0 100 2 64 0 0 41 2 25 0 0 54 0 34 0 0 45 0 28 0 0 51 0 32 0 0 48 0 29 0 0 51 0 32 0 0 45 0 28 0 0 89 17 59 0 0 95 17 62 0 0 98 17 63 0 0 92 17 61 0 0 98 17 63 0 0 95 17 62 0 0 94 2 62 0 0 47 2 28 0 0 91 2 61 0 0 56 2 34 0 0 91 2 61 0 0 47 2 28 0 0 90 11 60 0 0 55 11 35 0 0 96 11 63 0 0 52 11 33 0 0 96 11 63 0 0 55 11 35 0 0 97 7 63 0 0 53 7 33 0 0 88 7 59 0 0 50 7 31 0 0 88 7 59 0 0 53 7 33 0 0 87 10 58 0 0 49 10 30 0 0 93 10 62 0 0 46 10 28 0 0 93 10 62 0 0 49 10 30 0 0 108 11 68 0 0 99 11 64 0 0 31 11 18 0 0 37 11 22 0 0 31 11 18 0 0 99 11 64 0 0 58 13 37 0 0 66 13 43 0 0 82 13 55 0 0 78 13 52 0 0 82 13 55 0 0 66 13 43 0 0 57 12 36 0 0 60 12 39 0 0 64 12 43 0 0 67 12 44 0 0 64 12 43 0 0 60 12 39 0 0 65 15 43 0 0 68 15 44 0 0 77 15 52 0 0 75 15 51 0 0 77 15 52 0 0 68 15 44 0 0 79 16 52 0 0 76 16 51 0 0 84 16 56 0 0 86 16 57 0 0 84 16 56 0 0 76 16 51 0 0 121 2 76 0 0 23 2 13 0 0 133 2 82 0 0 2 2 0 0 0 133 2 82 0 0 23 2 13 0 0 83 14 56 0 0 85 14 57 0 0 59 14 38 0 0 61 14 40 0 0 59 14 38 0 0 85 14 57 0 0 72 7 48 0 0 70 7 46 0 0 62 0 41 0 0 63 0 42 0 0 62 0 41 0 0 70 7 46 0 0 62 0 41 0 0 63 0 42 0 0 73 2 49 0 0 74 2 50 0 0 73 2 49 0 0 63 0 42 0 0 73 2 49 0 0 74 2 50 0 0 81 17 54 0 0 80 17 53 0 0 81 17 54 0 0 74 2 50 0 0 81 17 54 0 0 80 17 53 0 0 71 7 47 0 0 69 7 45 0 0 71 7 47 0 0 80 17 53 0 0 101 17 64 0 0 110 17 68 0 0 116 17 74 0 0 104 17 66 0 0 116 17 74 0 0 110 17 68 0 0 113 17 71 0 0 116 17 74 0 0 104 17 66 0 0 116 17 74 0 0 113 17 71 0 0 119 17 75 0 0 107 17 67 0 0 119 17 75 0 0 113 17 71 0 0 129 8 80 0 0 13 8 9 0 0 120 8 76 0 0 22 8 13 0 0 120 8 76 0 0 13 8 9 0 0 14 6 9 0 0 130 6 80 0 0 10 6 7 0 0 126 6 78 0 0 10 6 7 0 0 130 6 80 0 0 </p>
+        </triangles>
+        <triangles material="gdt_hover_gunstart_L_GunUnder_L.xno0" count="16">
+          <input semantic="VERTEX" source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-color" offset="4" set="0" />
+          <p>173 24 107 0 0 170 24 105 0 0 167 24 103 0 0 161 24 99 0 0 167 24 103 0 0 170 24 105 0 0 167 24 103 0 0 161 24 99 0 0 164 24 101 0 0 146 20 91 0 0 160 20 99 0 0 158 20 98 0 0 160 20 99 0 0 146 20 91 0 0 163 20 100 0 0 148 21 93 0 0 171 21 106 0 0 165 21 102 0 0 171 21 106 0 0 148 21 93 0 0 151 21 95 0 0 152 22 95 0 0 168 22 104 0 0 172 22 106 0 0 168 22 104 0 0 152 22 95 0 0 154 22 97 0 0 159 23 99 0 0 155 23 96 0 0 157 23 98 0 0 155 23 96 0 0 159 23 99 0 0 169 23 105 0 0 149 19 93 0 0 162 19 100 0 0 145 19 91 0 0 162 19 100 0 0 149 19 93 0 0 166 19 102 0 0 147 18 92 0 0 153 18 96 0 0 150 18 94 0 0 153 18 96 0 0 147 18 92 0 0 156 18 98 0 0 144 18 90 0 0 156 18 98 0 0 147 18 92 0 0 </p>
+        </triangles>
+        <triangles material="gdt_hover_gunstart_L_GunUnder_L.xno0" count="20">
+          <input semantic="VERTEX" source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-color" offset="4" set="0" />
+          <p>201 27 128 0 0 190 27 121 0 0 207 27 132 0 0 176 27 109 0 0 207 27 132 0 0 190 27 121 0 0 184 27 116 0 0 207 27 132 0 0 176 27 109 0 0 207 27 132 0 0 184 27 116 0 0 195 27 124 0 0 209 31 133 0 0 194 31 123 0 0 206 31 131 0 0 194 31 123 0 0 209 31 133 0 0 197 31 125 0 0 179 28 111 0 0 192 28 122 0 0 181 28 113 0 0 192 28 122 0 0 179 28 111 0 0 204 28 130 0 0 204 28 130 0 0 179 28 111 0 0 198 28 126 0 0 187 28 119 0 0 198 28 126 0 0 179 28 111 0 0 208 32 133 0 0 205 32 131 0 0 203 32 129 0 0 200 32 127 0 0 203 32 129 0 0 205 32 131 0 0 199 30 127 0 0 188 30 118 0 0 202 30 129 0 0 191 30 120 0 0 202 30 129 0 0 188 30 118 0 0 189 25 120 0 0 186 25 118 0 0 174 25 108 0 0 177 25 110 0 0 174 25 108 0 0 186 25 118 0 0 175 26 108 0 0 178 26 110 0 0 183 26 115 0 0 180 26 112 0 0 183 26 115 0 0 178 26 110 0 0 182 29 114 0 0 193 29 123 0 0 185 29 117 0 0 196 29 125 0 0 185 29 117 0 0 193 29 123 0 0 </p>
+        </triangles>
+        <triangles material="gdt_hover_gunstart_L_GunUnder_L.xno0" count="22">
+          <input semantic="VERTEX" source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry-color" offset="4" set="0" />
+          <p>246 35 157 0 0 213 35 135 0 0 231 35 148 0 0 219 35 138 0 0 231 35 148 0 0 213 35 135 0 0 232 41 148 0 0 241 41 154 0 0 248 41 158 0 0 244 41 156 0 0 248 41 158 0 0 241 41 154 0 0 242 45 155 0 0 239 44 153 0 0 229 40 147 0 0 222 37 140 0 0 229 40 147 0 0 239 44 153 0 0 229 40 147 0 0 222 37 140 0 0 216 36 137 0 0 216 36 137 0 0 225 39 143 0 0 229 40 147 0 0 236 43 151 0 0 229 40 147 0 0 225 39 143 0 0 229 40 147 0 0 236 43 151 0 0 242 45 155 0 0 245 11 157 0 0 227 11 145 0 0 212 11 135 0 0 227 11 145 0 0 245 11 157 0 0 233 11 149 0 0 243 42 156 0 0 235 42 150 0 0 247 42 158 0 0 235 42 150 0 0 243 42 156 0 0 238 42 152 0 0 224 38 142 0 0 234 38 150 0 0 237 38 152 0 0 234 38 150 0 0 224 38 142 0 0 228 38 146 0 0 223 34 141 0 0 211 34 134 0 0 226 34 144 0 0 211 34 134 0 0 223 34 141 0 0 215 34 136 0 0 214 33 136 0 0 217 33 138 0 0 210 33 134 0 0 217 33 138 0 0 214 33 136 0 0 220 33 139 0 0 240 7 154 0 0 218 7 138 0 0 221 7 139 0 0 218 7 138 0 0 240 7 154 0 0 230 7 148 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="gdt_hover_gunstart_L_GunUnder_L.xno-controller">
+      <skin source="#gdt_hover_gunstart_L_GunUnder_L.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="gdt_hover_gunstart_L_GunUnder_L.xno-controller-Joints">
+          <Name_array id="gdt_hover_gunstart_L_GunUnder_L.xno-controller-Joints-array" count="6">GunUnder_L GunTop_L GunCylinder_L GunCannon_L pReload_L MissilePoint_L </Name_array>
+          <technique_common>
+            <accessor source="#gdt_hover_gunstart_L_GunUnder_L.xno-controller-Joints-array" count="6">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="gdt_hover_gunstart_L_GunUnder_L.xno-controller-Matrices">
+          <float_array id="gdt_hover_gunstart_L_GunUnder_L.xno-controller-Matrices-array" count="96">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0.0244141 0 0.5 -0.866025 -29.9547 0 0.866025 0.5 24.5765 0 0 0 1 1 0 0 0.0346375 0 0.5 -0.866025 -44.7743 0 0.866025 0.5 11.3407 0 0 0 1 1 0 0 0.0373535 0 1 0 -8.12819 0 0 1 -35.6046 0 0 0 1 1 0 0 0 0 1 0 -3 0 0 1 15 0 0 0 1 1 0 0 0.0174255 0 1 0 -8.1434 0 0 1 -48.1552 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#gdt_hover_gunstart_L_GunUnder_L.xno-controller-Matrices-array" count="6" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="gdt_hover_gunstart_L_GunUnder_L.xno-controller-Weights">
+          <float_array id="gdt_hover_gunstart_L_GunUnder_L.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#gdt_hover_gunstart_L_GunUnder_L.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#gdt_hover_gunstart_L_GunUnder_L.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#gdt_hover_gunstart_L_GunUnder_L.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="249">
+          <input semantic="JOINT" offset="0" source="#gdt_hover_gunstart_L_GunUnder_L.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#gdt_hover_gunstart_L_GunUnder_L.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="GunUnder_L" sid="GunUnder_L" name="GunUnder_L" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <node id="MissilePoint_L" sid="MissilePoint_L" name="MissilePoint_L" type="JOINT">
+          <matrix>1 0 0 -0.0174255 0 1 0 8.1434 0 0 1 48.1552 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="pReload_L" sid="pReload_L" name="pReload_L" type="JOINT">
+          <matrix>1 0 0 0 0 1 0 3 0 0 1 -15 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="GunCannon_L" sid="GunCannon_L" name="GunCannon_L" type="JOINT">
+          <matrix>1 0 0 -0.0373535 0 1 0 8.12819 0 0 1 35.6046 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="GunTop_L" sid="GunTop_L" name="GunTop_L" type="JOINT">
+          <matrix>1 -0 0 -0.0244141 0 0.499972 0.866041 -6.30652 -0 -0.866041 0.499972 -38.2298 0 0 0 1 </matrix>
+          <node id="GunCylinder_L" sid="GunCylinder_L" name="GunCylinder_L" type="JOINT">
+            <matrix>1 0 0 -0.0102234 0 1 0 14.8196 0 0 1 13.2358 0 0 0 1 </matrix>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="gdt_hover_gunstart_L_GunUnder_L.xno" sid="gdt_hover_gunstart_L_GunUnder_L.xno" name="gdt_hover_gunstart_L_GunUnder_L.xno">
+        <instance_controller url="#gdt_hover_gunstart_L_GunUnder_L.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="gdt_hover_gunstart_L_GunUnder_L.xno0" target="#gdt_hover_gunstart_L_GunUnder_L.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

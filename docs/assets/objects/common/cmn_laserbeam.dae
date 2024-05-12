@@ -1,0 +1,175 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="cmn_laserbeam_dflu_j.dds-image" name="cmn_laserbeam_dflu_j.dds-image">
+      <init_from>./textures/cmn_laserbeam_dflu_j.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="cmn_laserbeam.xno0ID" name="cmn_laserbeam.xno0">
+      <instance_effect url="#cmn_laserbeam.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="cmn_laserbeam.xno0-effect" name="cmn_laserbeam.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="cmn_laserbeam_dflu_j.dds-image-surface">
+          <surface type="2D">
+            <init_from>cmn_laserbeam_dflu_j.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="cmn_laserbeam_dflu_j.dds-image-sampler">
+          <sampler2D>
+            <source>cmn_laserbeam_dflu_j.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="cmn_laserbeam_dflu_j.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="cmn_laserbeam.xno-geometry" name="cmn_laserbeam.xno-geometry">
+      <mesh>
+        <source id="cmn_laserbeam.xno-geometry-position">
+          <float_array id="cmn_laserbeam.xno-geometry-position-array" count="132">-7.02314 -1.47471e-006 15 -7.02314 -6.13982e-007 -2.04443e-014 -6.08222 3.51157 15 -6.08222 3.51157 1.16928e-007 -6.08222 -3.51157 -1.16928e-007 -6.08222 -3.51157 15 -3.51157 6.08221 15 -3.51157 6.08222 2.02525e-007 -3.51157 -6.08222 -2.02525e-007 -3.51157 -6.08222 15 -2.89362 -0.0391767 -1.71247e-009 -2.89362 -0.0391774 15 -2.05139 1.99415 8.71673e-008 -2.05139 1.99415 15 -2.05139 -2.07251 -9.05922e-008 -2.05139 -2.07251 15 -0.0180594 2.83639 1.23982e-007 -0.0180594 2.83639 1.23982e-007 -0.0180594 2.83639 15 -0.0180594 2.83639 15 -0.0180589 -2.91474 -1.27407e-007 -0.0180589 -2.91474 15 -3.06991e-007 7.02314 15 -3.06991e-007 7.02314 15 -3.06991e-007 7.02314 2.33856e-007 -3.06991e-007 7.02314 2.33856e-007 9.20973e-007 -7.02314 15 9.20973e-007 -7.02314 -2.33856e-007 2.01527 1.99415 15 2.01527 1.99415 8.71673e-008 2.01527 -2.07251 15 2.01527 -2.07251 -9.05922e-008 2.85751 -0.0391771 15 2.85751 -0.0391765 -1.71246e-009 3.51157 6.08222 15 3.51157 6.08222 2.02525e-007 3.51157 -6.08222 -2.02525e-007 3.51157 -6.08222 15 6.08222 3.51157 15 6.08222 3.51157 1.16928e-007 6.08222 -3.51157 15 6.08222 -3.51157 -1.16928e-007 7.02314 -8.60723e-007 15 7.02314 0 0 </float_array>
+          <technique_common>
+            <accessor source="#cmn_laserbeam.xno-geometry-position-array" count="44" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cmn_laserbeam.xno-geometry-normal">
+          <float_array id="cmn_laserbeam.xno-geometry-normal-array" count="48">-1 -9.2778e-008 7.04532e-010 -0.866025 0.5 2.19148e-008 -0.866025 -0.5 -2.8779e-008 -0.5 0.866025 2.75302e-008 -0.5 -0.866025 -5.01233e-008 -0.707107 0.707107 3.37175e-008 -0.707107 -0.707107 -3.29708e-008 -6.35046e-008 1 3.17891e-008 7.36219e-008 -1 -4.76837e-008 0.707107 0.707107 3.29708e-008 0.707107 -0.707107 -3.29708e-008 1 6.79718e-008 7.46645e-010 0.5 0.866025 2.75302e-008 0.5 -0.866025 -4.10187e-008 0.866025 0.5 2.19148e-008 0.866025 -0.5 -3.10846e-008 </float_array>
+          <technique_common>
+            <accessor source="#cmn_laserbeam.xno-geometry-normal-array" count="16" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cmn_laserbeam.xno-geometry-uv">
+          <float_array id="cmn_laserbeam.xno-geometry-uv-array" count="88">1.88745e-008 0.17013 1 0.17013 1.2583e-008 0.155091 1 0.155091 1 0.185168 2.5166e-008 0.185168 6.29149e-009 0.140053 1 0.140053 1 0.200206 3.14575e-008 0.200206 1 0.724186 1.88745e-008 0.724186 1 0.690862 9.43724e-009 0.690862 1 0.75751 2.83117e-008 0.75751 1 0.657538 1 0.92413 1.9984e-015 0.657538 7.54979e-008 0.92413 1 0.790834 3.7749e-008 0.790834 1.9984e-015 0.125014 7.54979e-008 0.305475 1 0.125014 1 0.305475 3.7749e-008 0.215245 1 0.215245 6.60607e-008 0.890806 1 0.890806 4.71862e-008 0.824158 1 0.824158 5.66234e-008 0.857482 1 0.857482 6.92064e-008 0.290437 1 0.290437 1 0.230283 4.40404e-008 0.230283 6.29149e-008 0.275398 1 0.275398 5.03319e-008 0.245322 1 0.245322 5.66234e-008 0.26036 1 0.26036 </float_array>
+          <technique_common>
+            <accessor source="#cmn_laserbeam.xno-geometry-uv-array" count="44" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cmn_laserbeam.xno-geometry-uv2">
+          <float_array id="cmn_laserbeam.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#cmn_laserbeam.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cmn_laserbeam.xno-geometry-color">
+          <float_array id="cmn_laserbeam.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#cmn_laserbeam.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="cmn_laserbeam.xno-geometry-vertex">
+          <input semantic="POSITION" source="#cmn_laserbeam.xno-geometry-position" />
+        </vertices>
+        <triangles material="cmn_laserbeam.xno0" count="40">
+          <input semantic="VERTEX" source="#cmn_laserbeam.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#cmn_laserbeam.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#cmn_laserbeam.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#cmn_laserbeam.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#cmn_laserbeam.xno-geometry-color" offset="4" set="0" />
+          <p>17 7 17 0 0 19 7 19 0 0 29 9 29 0 0 28 9 28 0 0 29 9 29 0 0 19 7 19 0 0 29 9 29 0 0 28 9 28 0 0 33 11 33 0 0 32 11 32 0 0 33 11 33 0 0 28 9 28 0 0 33 11 33 0 0 32 11 32 0 0 31 10 31 0 0 30 10 30 0 0 31 10 31 0 0 32 11 32 0 0 31 10 31 0 0 30 10 30 0 0 20 8 20 0 0 21 8 21 0 0 20 8 20 0 0 30 10 30 0 0 20 8 20 0 0 21 8 21 0 0 14 6 14 0 0 15 6 15 0 0 14 6 14 0 0 21 8 21 0 0 14 6 14 0 0 15 6 15 0 0 10 0 10 0 0 11 0 11 0 0 10 0 10 0 0 15 6 15 0 0 10 0 10 0 0 11 0 11 0 0 12 5 12 0 0 13 5 13 0 0 12 5 12 0 0 11 0 11 0 0 12 5 12 0 0 13 5 13 0 0 16 7 16 0 0 18 7 18 0 0 16 7 16 0 0 13 5 13 0 0 25 7 25 0 0 23 7 23 0 0 35 12 35 0 0 34 12 34 0 0 35 12 35 0 0 23 7 23 0 0 35 12 35 0 0 34 12 34 0 0 39 14 39 0 0 38 14 38 0 0 39 14 39 0 0 34 12 34 0 0 39 14 39 0 0 38 14 38 0 0 43 11 43 0 0 42 11 42 0 0 43 11 43 0 0 38 14 38 0 0 43 11 43 0 0 42 11 42 0 0 41 15 41 0 0 40 15 40 0 0 41 15 41 0 0 42 11 42 0 0 41 15 41 0 0 40 15 40 0 0 36 13 36 0 0 37 13 37 0 0 36 13 36 0 0 40 15 40 0 0 36 13 36 0 0 37 13 37 0 0 27 8 27 0 0 26 8 26 0 0 27 8 27 0 0 37 13 37 0 0 27 8 27 0 0 26 8 26 0 0 8 4 8 0 0 9 4 9 0 0 8 4 8 0 0 26 8 26 0 0 8 4 8 0 0 9 4 9 0 0 4 2 4 0 0 5 2 5 0 0 4 2 4 0 0 9 4 9 0 0 4 2 4 0 0 5 2 5 0 0 1 0 1 0 0 0 0 0 0 0 1 0 1 0 0 5 2 5 0 0 1 0 1 0 0 0 0 0 0 0 3 1 3 0 0 2 1 2 0 0 3 1 3 0 0 0 0 0 0 0 3 1 3 0 0 2 1 2 0 0 7 3 7 0 0 6 3 6 0 0 7 3 7 0 0 2 1 2 0 0 7 3 7 0 0 6 3 6 0 0 24 7 24 0 0 22 7 22 0 0 24 7 24 0 0 6 3 6 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="cmn_laserbeam.xno-controller">
+      <skin source="#cmn_laserbeam.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="cmn_laserbeam.xno-controller-Joints">
+          <Name_array id="cmn_laserbeam.xno-controller-Joints-array" count="1">cmn_laserbeam </Name_array>
+          <technique_common>
+            <accessor source="#cmn_laserbeam.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cmn_laserbeam.xno-controller-Matrices">
+          <float_array id="cmn_laserbeam.xno-controller-Matrices-array" count="16">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#cmn_laserbeam.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cmn_laserbeam.xno-controller-Weights">
+          <float_array id="cmn_laserbeam.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#cmn_laserbeam.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#cmn_laserbeam.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#cmn_laserbeam.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="44">
+          <input semantic="JOINT" offset="0" source="#cmn_laserbeam.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#cmn_laserbeam.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="cmn_laserbeam" sid="cmn_laserbeam" name="cmn_laserbeam" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="cmn_laserbeam.xno" sid="cmn_laserbeam.xno" name="cmn_laserbeam.xno">
+        <instance_controller url="#cmn_laserbeam.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="cmn_laserbeam.xno0" target="#cmn_laserbeam.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

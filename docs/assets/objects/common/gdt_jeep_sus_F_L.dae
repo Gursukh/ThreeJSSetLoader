@@ -1,0 +1,211 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="gdt_jeep_tex01_df.dds-image" name="gdt_jeep_tex01_df.dds-image">
+      <init_from>./textures/gdt_jeep_tex01_df.dds</init_from>
+    </image>
+    <image id="gdt_jeep_tex01_sp.dds-image" name="gdt_jeep_tex01_sp.dds-image">
+      <init_from>./textures/gdt_jeep_tex01_sp.dds</init_from>
+    </image>
+    <image id="gdt_jeep_tex01_nw.dds-image" name="gdt_jeep_tex01_nw.dds-image">
+      <init_from>./textures/gdt_jeep_tex01_nw.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="gdt_jeep_sus_F_L_Suspension_F_L.xno0ID" name="gdt_jeep_sus_F_L_Suspension_F_L.xno0">
+      <instance_effect url="#gdt_jeep_sus_F_L_Suspension_F_L.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="gdt_jeep_sus_F_L_Suspension_F_L.xno0-effect" name="gdt_jeep_sus_F_L_Suspension_F_L.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="gdt_jeep_tex01_df.dds-image-surface">
+          <surface type="2D">
+            <init_from>gdt_jeep_tex01_df.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="gdt_jeep_tex01_df.dds-image-sampler">
+          <sampler2D>
+            <source>gdt_jeep_tex01_df.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="gdt_jeep_tex01_sp.dds-image-surface">
+          <surface type="2D">
+            <init_from>gdt_jeep_tex01_sp.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="gdt_jeep_tex01_sp.dds-image-sampler">
+          <sampler2D>
+            <source>gdt_jeep_tex01_sp.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="gdt_jeep_tex01_nw.dds-image-surface">
+          <surface type="2D">
+            <init_from>gdt_jeep_tex01_nw.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="gdt_jeep_tex01_nw.dds-image-sampler">
+          <sampler2D>
+            <source>gdt_jeep_tex01_nw.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="gdt_jeep_tex01_nw.dds-image-surface">
+          <surface type="2D">
+            <init_from>gdt_jeep_tex01_nw.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="gdt_jeep_tex01_nw.dds-image-sampler">
+          <sampler2D>
+            <source>gdt_jeep_tex01_nw.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="gdt_jeep_tex01_df.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry" name="gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry">
+      <mesh>
+        <source id="gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry-position">
+          <float_array id="gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry-position-array" count="240">10.4165 -43.8372 133.359 10.4165 -43.8372 133.359 10.4165 -43.8372 124.356 10.4165 -43.8372 124.356 10.4165 -34.3247 124.356 10.4165 -34.3247 124.356 10.4165 -34.3247 133.359 10.4165 -34.3247 133.359 36.8427 -36.6219 117.131 36.8427 -36.6219 117.131 36.8427 -36.6219 117.131 36.8427 -25.0758 117.13 36.8427 -25.0758 117.13 36.8427 -25.0758 117.13 36.959 -36.6219 140.985 36.959 -36.6219 140.985 36.959 -36.6219 140.985 36.959 -25.0758 140.985 36.959 -25.0758 140.985 36.959 -25.0758 140.985 36.9719 -39.1144 137.862 36.9719 -39.1144 137.862 36.9719 -39.1145 119.217 36.9719 -39.1145 119.217 38.3678 -55.2134 137.862 38.3678 -55.2134 137.862 38.3678 -55.2134 137.862 38.3678 -55.2134 119.217 38.3678 -55.2134 119.217 42 9.16932 128.867 42 9.16932 128.867 42 -32.4046 128.867 42 -32.4046 128.867 44.2125 -32.4046 132.699 44.2125 -32.4046 125.035 44.2125 9.16932 132.699 44.2125 9.16932 125.034 45.1181 -36.6219 117.131 45.1181 -36.6219 117.131 45.1181 -25.0758 117.13 45.1181 -25.0758 117.13 45.1181 -36.6219 140.985 45.1181 -36.6219 140.985 45.1181 -25.0758 140.985 45.1181 -25.0758 140.985 48.6375 -32.4046 132.699 48.6375 -32.4046 125.035 48.6375 9.16932 132.699 48.6375 9.16932 125.034 50.8499 -32.4046 128.867 50.8499 9.16932 128.867 50.9047 -34.1686 124.356 50.9047 -34.1686 124.356 50.9047 -34.1686 133.359 50.9047 -34.1686 133.359 53.4712 -25.0758 121.686 53.4712 -25.0758 121.686 53.4712 -36.6219 121.686 53.4712 -36.6219 121.686 53.4712 -25.0758 136.429 53.4712 -25.0758 136.429 53.4712 -36.6219 136.429 53.4712 -36.6219 136.429 55.8892 -25.0758 129.058 55.8892 -25.0758 129.058 55.8893 -36.6219 129.058 55.8893 -36.6219 129.058 57.5821 -51.3697 124.356 57.5821 -51.3697 124.356 57.5821 -51.3697 124.356 57.5821 -51.3697 133.359 57.5821 -51.3697 133.359 57.5821 -51.3697 133.359 88.5972 -60.5347 143.276 88.5972 -60.5347 143.276 88.5972 -39.0076 143.276 88.5972 -39.0076 143.276 88.5972 -39.0076 113.971 88.5972 -39.0076 113.971 88.5972 -60.5347 113.971 </float_array>
+          <technique_common>
+            <accessor source="#gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry-position-array" count="80" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry-normal">
+          <float_array id="gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry-normal-array" count="84">-0.157705 -0.987486 1.25513e-006 -2.27546e-006 2.86419e-007 1 -5.56943e-007 -2.38151e-006 -1 -0.00385459 0.999993 -2.11838e-006 -0.999988 -6.44658e-009 0.00487803 -6.83658e-007 -1 1.36235e-006 -1.97197e-006 1 -1.94062e-006 -0.756662 -0.065611 0.650505 -0.00207017 0.999998 -1.63677e-006 -0.756601 -0.0640898 -0.650729 -0.606833 -0.572041 0.551836 -0.606652 -0.572221 -0.551849 -1 -5.34581e-009 8.29832e-008 -0.500001 1.3173e-006 0.866025 -0.500001 -1.18834e-006 -0.866025 0.247068 -2.43682e-006 -0.968998 0.247067 1.24477e-006 0.968998 0.499999 1.22554e-006 0.866026 0.499999 -1.09824e-006 -0.866026 1 7.74529e-007 -3.02218e-007 0.563261 0.826279 -1.43612e-006 0.768546 -6.6645e-007 -0.639795 0.768546 1.40461e-006 0.639795 0.932223 0.361884 -6.13291e-007 -0.149433 -0.698795 0.699539 -0.106601 -0.00177536 0.9943 -0.101103 -1.76296e-006 -0.994876 -0.145595 -0.700422 -0.698721 </float_array>
+          <technique_common>
+            <accessor source="#gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry-normal-array" count="28" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry-uv">
+          <float_array id="gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry-uv-array" count="136">0.733617 0.608417 0.778387 0.462558 0.75568 0.608252 0.711692 0.462473 0.733833 0.463695 0.755748 0.463759 0.876831 0.798638 0.202266 0.444211 0.808992 0.766064 0.876667 0.766064 0.198431 0.38027 0.809015 0.798638 0.666573 0.766064 0.282445 0.444026 0.666573 0.798638 0.121242 0.380479 0.236522 0.21537 0.236579 0.173739 0.236199 0.252015 0.244426 0.0978769 0.274927 0.215367 0.234962 0.137805 0.274993 0.173891 0.936153 0.120586 0.936153 0.216474 0.995935 0.120586 0.995935 0.216474 0.995935 0.135556 0.995935 0.200814 0.936153 0.135556 0.936153 0.200814 0.202065 0.415676 0.783818 0.766064 0.1985 0.409302 0.783983 0.798638 0.282567 0.415676 0.691329 0.766064 0.121072 0.40911 0.691329 0.798638 0.995935 0.153097 0.995935 0.183282 0.936153 0.153097 0.936153 0.183282 0.995935 0.168321 0.936153 0.168321 0.733843 0.565137 0.755826 0.565347 0.183682 0.438786 0.758711 0.798638 0.21744 0.386762 0.75857 0.766064 0.135901 0.438595 0.716749 0.798638 0.267193 0.386762 0.716691 0.766064 0.159895 0.44713 0.737804 0.798638 0.242316 0.378391 0.737688 0.766064 0.755604 0.727823 0.692743 0.579781 0.733428 0.727649 0.795696 0.579292 0.118776 0.277822 0.133212 0.0510579 0.114515 0.229545 0.114204 0.163761 0.116259 0.115576 </float_array>
+          <technique_common>
+            <accessor source="#gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry-uv-array" count="68" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry-uv2">
+          <float_array id="gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry-color">
+          <float_array id="gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry-color-array" count="4">0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry-vertex">
+          <input semantic="POSITION" source="#gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry-position" />
+        </vertices>
+        <triangles material="gdt_jeep_sus_F_L_Suspension_F_L.xno0" count="56">
+          <input semantic="VERTEX" source="#gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry-color" offset="4" set="0" />
+          <p>4 3 4 0 0 6 3 5 0 0 52 20 45 0 0 54 20 46 0 0 52 20 45 0 0 6 3 5 0 0 72 23 2 0 0 52 20 45 0 0 54 20 46 0 0 52 20 45 0 0 72 23 2 0 0 69 23 0 0 0 1 1 1 0 0 53 1 46 0 0 7 1 5 0 0 53 1 46 0 0 1 1 1 0 0 71 1 62 0 0 68 2 60 0 0 5 2 4 0 0 51 2 45 0 0 5 2 4 0 0 68 2 60 0 0 3 2 3 0 0 14 4 11 0 0 11 4 9 0 0 8 4 6 0 0 11 4 9 0 0 14 4 11 0 0 17 4 8 0 0 43 6 37 0 0 12 6 10 0 0 19 6 15 0 0 12 6 10 0 0 43 6 37 0 0 39 6 33 0 0 59 6 51 0 0 39 6 33 0 0 43 6 37 0 0 39 6 33 0 0 59 6 51 0 0 55 6 47 0 0 63 6 55 0 0 55 6 47 0 0 59 6 51 0 0 32 12 26 0 0 30 12 24 0 0 34 14 28 0 0 36 14 30 0 0 34 14 28 0 0 30 12 24 0 0 34 14 28 0 0 36 14 30 0 0 46 18 40 0 0 48 18 42 0 0 46 18 40 0 0 36 14 30 0 0 46 18 40 0 0 48 18 42 0 0 49 19 43 0 0 50 19 44 0 0 49 19 43 0 0 48 18 42 0 0 49 19 43 0 0 50 19 44 0 0 45 17 39 0 0 47 17 41 0 0 45 17 39 0 0 50 19 44 0 0 45 17 39 0 0 47 17 41 0 0 33 13 27 0 0 35 13 29 0 0 33 13 27 0 0 47 17 41 0 0 33 13 27 0 0 35 13 29 0 0 31 12 25 0 0 29 12 23 0 0 31 12 25 0 0 35 13 29 0 0 74 24 64 0 0 25 10 19 0 0 79 27 67 0 0 27 11 21 0 0 79 27 67 0 0 25 10 19 0 0 22 9 17 0 0 79 27 67 0 0 27 11 21 0 0 79 27 67 0 0 22 9 17 0 0 77 26 66 0 0 22 9 17 0 0 28 11 22 0 0 20 7 16 0 0 26 10 20 0 0 20 7 16 0 0 28 11 22 0 0 24 10 18 0 0 75 25 65 0 0 20 7 16 0 0 75 25 65 0 0 24 10 18 0 0 73 24 63 0 0 37 5 31 0 0 16 5 13 0 0 9 5 7 0 0 16 5 13 0 0 37 5 31 0 0 41 5 35 0 0 57 5 49 0 0 41 5 35 0 0 37 5 31 0 0 41 5 35 0 0 57 5 49 0 0 61 5 53 0 0 65 5 57 0 0 61 5 53 0 0 57 5 49 0 0 10 2 8 0 0 13 2 11 0 0 38 15 32 0 0 40 15 34 0 0 38 15 32 0 0 13 2 11 0 0 38 15 32 0 0 40 15 34 0 0 58 21 50 0 0 56 21 48 0 0 58 21 50 0 0 40 15 34 0 0 58 21 50 0 0 56 21 48 0 0 66 19 58 0 0 64 19 56 0 0 66 19 58 0 0 56 21 48 0 0 66 19 58 0 0 64 19 56 0 0 62 22 54 0 0 60 22 52 0 0 62 22 54 0 0 64 19 56 0 0 62 22 54 0 0 60 22 52 0 0 42 16 36 0 0 44 16 38 0 0 42 16 36 0 0 60 22 52 0 0 42 16 36 0 0 44 16 38 0 0 15 1 12 0 0 18 1 14 0 0 15 1 12 0 0 44 16 38 0 0 2 0 2 0 0 67 0 59 0 0 0 0 0 0 0 70 0 61 0 0 0 0 0 0 0 67 0 59 0 0 76 8 65 0 0 78 8 66 0 0 21 8 16 0 0 23 8 17 0 0 21 8 16 0 0 78 8 66 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="gdt_jeep_sus_F_L_Suspension_F_L.xno-controller">
+      <skin source="#gdt_jeep_sus_F_L_Suspension_F_L.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="gdt_jeep_sus_F_L_Suspension_F_L.xno-controller-Joints">
+          <Name_array id="gdt_jeep_sus_F_L_Suspension_F_L.xno-controller-Joints-array" count="1">Suspension_F_L </Name_array>
+          <technique_common>
+            <accessor source="#gdt_jeep_sus_F_L_Suspension_F_L.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="gdt_jeep_sus_F_L_Suspension_F_L.xno-controller-Matrices">
+          <float_array id="gdt_jeep_sus_F_L_Suspension_F_L.xno-controller-Matrices-array" count="16">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#gdt_jeep_sus_F_L_Suspension_F_L.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="gdt_jeep_sus_F_L_Suspension_F_L.xno-controller-Weights">
+          <float_array id="gdt_jeep_sus_F_L_Suspension_F_L.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#gdt_jeep_sus_F_L_Suspension_F_L.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#gdt_jeep_sus_F_L_Suspension_F_L.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#gdt_jeep_sus_F_L_Suspension_F_L.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="80">
+          <input semantic="JOINT" offset="0" source="#gdt_jeep_sus_F_L_Suspension_F_L.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#gdt_jeep_sus_F_L_Suspension_F_L.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="Suspension_F_L" sid="Suspension_F_L" name="Suspension_F_L" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="gdt_jeep_sus_F_L_Suspension_F_L.xno" sid="gdt_jeep_sus_F_L_Suspension_F_L.xno" name="gdt_jeep_sus_F_L_Suspension_F_L.xno">
+        <instance_controller url="#gdt_jeep_sus_F_L_Suspension_F_L.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="gdt_jeep_sus_F_L_Suspension_F_L.xno0" target="#gdt_jeep_sus_F_L_Suspension_F_L.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

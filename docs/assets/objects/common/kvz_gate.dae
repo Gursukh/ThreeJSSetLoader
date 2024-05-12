@@ -1,0 +1,268 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="kvz_512gate_d.dds-image" name="kvz_512gate_d.dds-image">
+      <init_from>./textures/kvz_512gate_d.dds</init_from>
+    </image>
+    <image id="kvz_256gate_s.dds-image" name="kvz_256gate_s.dds-image">
+      <init_from>./textures/kvz_256gate_s.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="Object0ID" name="Object0">
+      <instance_effect url="#Object0-effect" />
+    </material>
+    <material id="Object1ID" name="Object1">
+      <instance_effect url="#Object1-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Object0-effect" name="Object0-effect">
+      <profile_COMMON>
+        <newparam sid="kvz_512gate_d.dds-image-surface">
+          <surface type="2D">
+            <init_from>kvz_512gate_d.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kvz_512gate_d.dds-image-sampler">
+          <sampler2D>
+            <source>kvz_512gate_d.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kvz_256gate_s.dds-image-surface">
+          <surface type="2D">
+            <init_from>kvz_256gate_s.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kvz_256gate_s.dds-image-sampler">
+          <sampler2D>
+            <source>kvz_256gate_s.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kvz_256gate_s.dds-image-surface">
+          <surface type="2D">
+            <init_from>kvz_256gate_s.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kvz_256gate_s.dds-image-sampler">
+          <sampler2D>
+            <source>kvz_256gate_s.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kvz_512gate_d.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Object1-effect" name="Object1-effect">
+      <profile_COMMON>
+        <newparam sid="kvz_512gate_d.dds-image-surface">
+          <surface type="2D">
+            <init_from>kvz_512gate_d.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kvz_512gate_d.dds-image-sampler">
+          <sampler2D>
+            <source>kvz_512gate_d.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kvz_256gate_s.dds-image-surface">
+          <surface type="2D">
+            <init_from>kvz_256gate_s.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kvz_256gate_s.dds-image-sampler">
+          <sampler2D>
+            <source>kvz_256gate_s.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kvz_256gate_s.dds-image-surface">
+          <surface type="2D">
+            <init_from>kvz_256gate_s.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kvz_256gate_s.dds-image-sampler">
+          <sampler2D>
+            <source>kvz_256gate_s.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kvz_512gate_d.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="Object-geometry" name="Object-geometry">
+      <mesh>
+        <source id="Object-geometry-position">
+          <float_array id="Object-geometry-position-array" count="144">-399.461 -0.165344 -13.7443 -399.461 -0.165344 -13.7443 -399.461 -0.165344 -13.7443 -399.461 799.835 -13.7443 -399.461 799.835 -13.7443 -399.461 799.835 -13.7443 -399.439 799.835 14.0645 -399.439 799.835 14.0645 -399.439 799.835 14.0645 -399.439 -0.165351 14.0645 -399.439 -0.165351 14.0645 -399.439 -0.165351 14.0645 -0.305419 -0.165316 13.7444 -0.305419 -0.165316 13.7444 -0.305419 -0.165316 13.7444 -0.305358 799.835 13.7444 -0.305358 799.835 13.7444 -0.305358 799.835 13.7444 -0.283173 -0.165309 -14.0645 -0.283173 -0.165309 -14.0645 -0.283173 -0.165309 -14.0645 -0.283112 799.835 -14.0645 -0.283112 799.835 -14.0645 -0.283112 799.835 -14.0645 0.538544 799.835 -14.0644 0.538544 799.835 -14.0644 0.538544 799.835 -14.0644 0.538544 -0.165344 -14.0644 0.538544 -0.165344 -14.0644 0.538544 -0.165344 -14.0644 0.560791 799.835 13.7444 0.560791 799.835 13.7444 0.560791 799.835 13.7444 0.560791 -0.165351 13.7444 0.560791 -0.165351 13.7444 0.560791 -0.165351 13.7444 399.694 -0.165351 14.0645 399.694 -0.165351 14.0645 399.694 -0.165351 14.0645 399.694 799.835 14.0645 399.694 799.835 14.0645 399.694 799.835 14.0645 399.717 -0.165344 -13.7443 399.717 -0.165344 -13.7443 399.717 -0.165344 -13.7443 399.717 799.835 -13.7443 399.717 799.835 -13.7443 399.717 799.835 -13.7443 </float_array>
+          <technique_common>
+            <accessor source="#Object-geometry-position-array" count="48" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Object-geometry-normal">
+          <float_array id="Object-geometry-normal-array" count="30">-1 0 0.000800321 -0.000800319 0 -1 -8.72404e-008 -1 -2.40127e-007 0 1 0 0.000800319 0 1 -1 7.62939e-008 -0.000799965 -0.00080032 6.36921e-011 1 0.00080032 -6.10629e-011 -1 1 0 -0.000800008 1 -8.74232e-008 0.000800321 </float_array>
+          <technique_common>
+            <accessor source="#Object-geometry-normal-array" count="10" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Object-geometry-uv">
+          <float_array id="Object-geometry-uv-array" count="38">0.460812 0.00356543 0.5004 0.000666738 0.00838661 0.00135297 0.460812 0.96479 0.5004 0.999668 0.0586831 0.592604 0.501511 0.96479 0.0060855 0.592065 0.5004 0.995927 0.501511 0.00356543 0.0084364 0.0706886 0.00463741 0.000666678 0.499095 0.0706901 0.00463735 0.995927 0.00636141 0.00381392 0.499044 0.00135458 0.000899144 0.000667274 0.0585818 0.00552821 0.000899114 0.999668 </float_array>
+          <technique_common>
+            <accessor source="#Object-geometry-uv-array" count="19" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Object-geometry-uv2">
+          <float_array id="Object-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#Object-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Object-geometry-color">
+          <float_array id="Object-geometry-color-array" count="12">0.752941 0 0.101961 0.00392157 0 0 0 0 0.501961 0.643137 0.101961 0.00392157 </float_array>
+          <technique_common>
+            <accessor source="#Object-geometry-color-array" count="3" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Object-geometry-vertex">
+          <input semantic="POSITION" source="#Object-geometry-position" />
+        </vertices>
+        <triangles material="Object0" count="12">
+          <input semantic="VERTEX" source="#Object-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#Object-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#Object-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#Object-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#Object-geometry-color" offset="4" set="0" />
+          <p>25 3 17 0 1 5 3 5 0 1 30 3 14 0 1 7 3 7 0 1 30 3 14 0 1 5 3 5 0 1 28 2 15 0 1 33 2 12 0 1 2 2 2 0 1 10 2 10 0 1 2 2 2 0 1 33 2 12 0 1 32 8 6 0 1 35 8 9 0 1 26 8 3 0 1 29 8 0 0 2 26 8 3 0 1 35 8 9 0 1 34 4 11 0 1 31 4 13 0 1 11 4 1 0 1 8 4 8 0 1 11 4 1 0 1 31 4 13 0 1 1 1 1 0 1 4 1 4 0 1 27 1 16 0 1 24 1 18 0 1 27 1 16 0 1 4 1 4 0 1 9 0 9 0 1 6 0 6 0 1 0 0 0 0 0 3 0 3 0 1 0 0 0 0 0 6 0 6 0 1 </p>
+        </triangles>
+        <triangles material="Object1" count="12">
+          <input semantic="VERTEX" source="#Object-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#Object-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#Object-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#Object-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#Object-geometry-color" offset="4" set="0" />
+          <p>40 3 7 0 1 45 3 5 0 1 17 3 14 0 1 22 3 17 0 1 17 3 14 0 1 45 3 5 0 1 37 2 10 0 1 14 2 12 0 1 42 2 2 0 1 19 2 15 0 1 42 2 2 0 1 14 2 12 0 1 18 5 0 0 1 12 5 9 0 1 21 5 3 0 1 15 5 6 0 1 21 5 3 0 1 12 5 9 0 1 39 6 8 0 1 16 6 13 0 1 36 6 1 0 1 13 6 11 0 1 36 6 1 0 1 16 6 13 0 1 23 7 18 0 1 46 7 4 0 1 20 7 16 0 1 43 7 1 0 1 20 7 16 0 1 46 7 4 0 1 47 9 3 0 1 41 9 6 0 1 44 9 0 0 1 38 9 9 0 1 44 9 0 0 1 41 9 6 0 1 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="Object-controller">
+      <skin source="#Object-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="Object-controller-Joints">
+          <Name_array id="Object-controller-Joints-array" count="3">Object0 Object1 Object2 </Name_array>
+          <technique_common>
+            <accessor source="#Object-controller-Joints-array" count="3">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Object-controller-Matrices">
+          <float_array id="Object-controller-Matrices-array" count="48">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 399.451 0 1 0 0 0 0 1 1.07892 0 0 0 1 -4.37114e-008 0 -1 -1.0789 0 1 0 0 1 0 -4.37114e-008 -399.707 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#Object-controller-Matrices-array" count="3" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Object-controller-Weights">
+          <float_array id="Object-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#Object-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#Object-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#Object-controller-Matrices" />
+        </joints>
+        <vertex_weights count="48">
+          <input semantic="JOINT" offset="0" source="#Object-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#Object-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="Object0" sid="Object0" name="Object0" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <node id="Object2" sid="Object2" name="Object2" type="JOINT">
+          <matrix>5.96046e-008 0 1 399.707 0 1 0 0 -1 0 5.96046e-008 -1.07892 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="Object1" sid="Object1" name="Object1" type="JOINT">
+          <matrix>1 0 0 -399.451 0 1 0 0 0 0 1 -1.07892 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="Object" sid="Object" name="Object">
+        <instance_controller url="#Object-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Object0" target="#Object0ID" />
+              <instance_material symbol="Object1" target="#Object1ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

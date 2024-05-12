@@ -1,0 +1,240 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="cmn_itembox04_dfsp_r.dds-image" name="cmn_itembox04_dfsp_r.dds-image">
+      <init_from>./textures/cmn_itembox04_dfsp_r.dds</init_from>
+    </image>
+    <image id="cmn_itembox04_dfsp_r.dds-image" name="cmn_itembox04_dfsp_r.dds-image">
+      <init_from>./textures/cmn_itembox04_dfsp_r.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="cmn_Itembox_ground.xno0ID" name="cmn_Itembox_ground.xno0">
+      <instance_effect url="#cmn_Itembox_ground.xno0-effect" />
+    </material>
+    <material id="cmn_Itembox_ground.xno1ID" name="cmn_Itembox_ground.xno1">
+      <instance_effect url="#cmn_Itembox_ground.xno1-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="cmn_Itembox_ground.xno0-effect" name="cmn_Itembox_ground.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="cmn_itembox04_dfsp_r.dds-image-surface">
+          <surface type="2D">
+            <init_from>cmn_itembox04_dfsp_r.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="cmn_itembox04_dfsp_r.dds-image-sampler">
+          <sampler2D>
+            <source>cmn_itembox04_dfsp_r.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="cmn_itembox04_dfsp_r.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="cmn_Itembox_ground.xno1-effect" name="cmn_Itembox_ground.xno1-effect">
+      <profile_COMMON>
+        <newparam sid="cmn_itembox04_dfsp_r.dds-image-surface">
+          <surface type="2D">
+            <init_from>cmn_itembox04_dfsp_r.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="cmn_itembox04_dfsp_r.dds-image-sampler">
+          <sampler2D>
+            <source>cmn_itembox04_dfsp_r.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="cmn_itembox04_dfsp_r.dds-image-surface">
+          <surface type="2D">
+            <init_from>cmn_itembox04_dfsp_r.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="cmn_itembox04_dfsp_r.dds-image-sampler">
+          <sampler2D>
+            <source>cmn_itembox04_dfsp_r.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="cmn_itembox04_dfsp_r.dds-image-surface">
+          <surface type="2D">
+            <init_from>cmn_itembox04_dfsp_r.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="cmn_itembox04_dfsp_r.dds-image-sampler">
+          <sampler2D>
+            <source>cmn_itembox04_dfsp_r.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="cmn_itembox04_dfsp_r.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="cmn_Itembox_ground.xno-geometry" name="cmn_Itembox_ground.xno-geometry">
+      <mesh>
+        <source id="cmn_Itembox_ground.xno-geometry-position">
+          <float_array id="cmn_Itembox_ground.xno-geometry-position-array" count="285">-67.0686 -0.0150576 -30.3877 -67.0686 -0.0150576 -30.3877 -65.8901 -0.0150587 -40.5188 -57.7055 -0.0150586 -46.6049 -57.7055 -0.0150586 -46.6049 -57.6811 9.21625 -30.3578 -57.6811 9.21625 -30.3578 -57.6811 9.21625 -30.3578 -52.9356 9.21625 -38.5774 -52.9356 9.21625 -38.5774 -52.9356 9.21625 -38.5774 -46.9039 0.0563613 5.89082 -45.5781 0.0563633 -12.5087 -41.0876 0.0563638 23.3971 -40.9165 -0.0150615 -7.91765 -40.8742 21.25 -11.2155 -38.5167 15.0286 -12.0835 -38.5167 15.0286 -12.0835 -37.3121 0.0563606 -29.0002 -36.847 21.25 20.9853 -29.0147 0.0563632 37.3449 -27.5777 15.0286 -31.0304 -27.5777 15.0286 -31.0304 -27.1219 31.3125 3.41678 -27.1219 31.3125 3.41678 -25.1699 -0.0150644 -35.1916 -23.3642 0.010623 -41.0731 -21.5747 31.3125 -16.7616 -21.5747 31.3125 -16.7616 -20.9524 21.25 -36.8325 -16.7761 31.3125 21.6075 -16.7761 31.3125 21.6075 -15.7374 -0.015065 39.9104 -12.5232 0.0563595 45.611 -11.23 21.25 40.907 -10.9299 15.0286 39.9151 -10.9299 15.0286 39.9151 -9.35388 -0.0150668 73.7938 -9.35388 -0.0150668 73.7938 -5.85799 0.010616 -46.8894 -4.73496 9.21624 65.747 -4.73496 9.21624 65.747 -4.73496 9.21624 65.747 -3.38396 31.3125 -27.1073 -3.38396 31.3125 -27.1073 0.00916837 37.6806 0.0236643 0.00916926 -0.0150678 77.8388 3.40229 31.3125 27.1547 3.40229 31.3125 27.1547 4.75615 9.21624 65.747 4.75615 9.21624 65.747 4.75615 9.21624 65.747 5.87632 0.0563626 46.9368 9.37222 -0.0150696 73.7938 9.37222 -0.0150696 73.7938 10.9482 15.0285 39.9151 10.9482 15.0285 39.9151 11.2483 21.25 -40.8597 12.5415 0.0563611 -45.5636 15.7558 -0.0150697 39.9104 16.7944 31.3125 -21.5602 16.7944 31.3125 -21.5602 20.9708 21.25 36.8798 21.593 31.3125 16.8089 21.593 31.3125 16.8089 23.3826 0.0563556 41.1204 26.1552 -0.0150721 -35.1507 27.1402 31.3125 -3.36946 27.1402 31.3125 -3.36946 27.1402 31.3125 -3.36946 28.5631 15.0285 -30.9895 28.5631 15.0285 -30.9895 29.033 0.0563594 -37.2976 36.8653 21.25 -20.9379 37.3304 0.0563601 29.0475 39.5021 15.0285 -12.0425 39.5021 15.0285 -12.0425 40.8925 21.25 11.2628 40.8925 21.25 11.2628 41.1059 0.0563569 -23.3497 41.9019 -0.015074 -7.87674 45.5965 0.0563593 12.556 45.5965 0.0563593 12.556 46.9222 0.0563613 -5.84349 53.9195 9.21623 -38.547 53.9195 9.21623 -38.547 53.9195 9.21623 -38.547 58.6651 9.21623 -30.3275 58.6651 9.21623 -30.3275 58.6651 9.21623 -30.3275 58.6909 -0.0150761 -46.564 58.6909 -0.0150761 -46.564 66.8755 -0.0150787 -40.4779 68.0539 -0.015078 -30.3467 68.0539 -0.015078 -30.3467 </float_array>
+          <technique_common>
+            <accessor source="#cmn_Itembox_ground.xno-geometry-position-array" count="95" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cmn_Itembox_ground.xno-geometry-normal">
+          <float_array id="cmn_Itembox_ground.xno-geometry-normal-array" count="180">-0.717974 0.667499 0.197382 -0.568841 0.75424 -0.327935 -0.188528 0.665447 -0.722245 -0.525325 0.847866 0.0718083 -0.197846 0.846265 -0.494663 -0.952555 0.280083 0.119131 -0.939655 0.22432 -0.258319 -0.847095 0.224321 0.481777 -0.621763 0.299572 0.723649 -0.798483 0.560571 -0.219509 -0.500165 0.78794 0.359146 -0.757638 0.279921 -0.589601 -0.719829 0.560572 0.409396 -0.58932 0.280083 0.757796 0.0612233 0.788008 -0.612614 -0.429787 0.901329 0.0537509 0.315817 0.299572 -0.900287 -0.48146 0.22386 -0.847398 -0.341913 0.901329 -0.265897 -0.409352 0.560408 -0.719981 -0.265897 0.901329 0.341913 -0.93758 0.299572 0.176638 -0.258319 0.22432 0.939655 -0.219509 0.560572 0.798483 -0.561391 0.787964 0.25289 -0.53303 0.663604 0.52489 -0.119465 0.279609 -0.952652 -0.328537 0.846013 0.41991 -0.053751 0.901329 -0.429787 9.80974e-008 1 -3.32475e-008 -1.16836e-005 0.751275 0.659989 0.0537511 0.901329 0.429787 0.328668 0.845968 0.4199 0.119131 0.280082 0.952555 0.533067 0.663544 0.524927 0.561392 0.787966 0.252882 0.219412 0.560503 -0.798558 0.257907 0.22432 -0.939768 0.93758 0.299572 0.176638 0.265897 0.901329 -0.341913 0.409396 0.560572 0.719829 0.341913 0.901329 0.265898 0.481778 0.22432 0.847095 -0.315817 0.299572 -0.900287 0.429787 0.901329 -0.0537511 -0.0612753 0.788014 -0.612601 0.58932 0.280082 -0.757797 0.719829 0.560571 -0.409396 0.757797 0.280082 0.58932 0.500174 0.787933 0.359149 0.798483 0.560571 0.219509 0.847095 0.22432 -0.481778 0.621763 0.299571 0.723649 0.939655 0.22432 0.258319 0.952555 0.280082 -0.119131 0.197593 0.846061 -0.495115 0.525199 0.847976 0.0714329 0.188566 0.665124 -0.722532 0.569003 0.754119 -0.327934 0.717893 0.66758 0.197399 </float_array>
+          <technique_common>
+            <accessor source="#cmn_Itembox_ground.xno-geometry-normal-array" count="60" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cmn_Itembox_ground.xno-geometry-uv">
+          <float_array id="cmn_Itembox_ground.xno-geometry-uv-array" count="114">-0.692367 0.0942737 -0.415141 0.0938079 -0.492869 0.0931427 -0.570598 0.0938079 -0.777702 0.231273 -0.454949 0.231724 -0.152004 -0.113889 -0.53079 0.231724 -0.152003 -0.210205 1.68516 0.0959553 1.49792 0.0959553 1.8724 0.0959553 -0.989648 0.094273 1.49785 0.356136 -0.989619 0.279868 -0.478977 -0.0467215 1.31067 0.0959553 1.87233 0.356136 2.05965 0.0959553 -0.478975 -0.277377 -0.55627 0.885526 1.68515 0.463552 1.12343 0.0959554 -0.520689 0.706646 1.31065 0.463552 1.12336 0.356136 -0.707918 0.986854 2.05964 0.463552 2.24689 0.0959553 2.2468 0.356136 0.936184 0.0959554 -0.622016 0.554999 0.936167 0.463552 -0.754407 0.753136 -0.886797 0.951272 2.43412 0.463552 2.43413 0.0959553 0.748897 0.356136 0.74894 0.0959554 -0.800896 0.519418 0.561708 0.463552 2.62123 0.356869 -0.988125 0.799625 2.82856 0.463926 2.62138 0.0959553 -0.952543 0.620745 0.18721 0.463552 3.1854 0.463566 0.561696 0.0959553 0.374391 0.356136 2.80862 0.0959553 -3.06943e-005 0.356136 2.99531 0.356677 0.374453 0.0959553 -3.48969e-005 0.0959553 2.99587 0.0959553 0.187209 0.0959553 </float_array>
+          <technique_common>
+            <accessor source="#cmn_Itembox_ground.xno-geometry-uv-array" count="57" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cmn_Itembox_ground.xno-geometry-uv2">
+          <float_array id="cmn_Itembox_ground.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#cmn_Itembox_ground.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cmn_Itembox_ground.xno-geometry-color">
+          <float_array id="cmn_Itembox_ground.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#cmn_Itembox_ground.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="cmn_Itembox_ground.xno-geometry-vertex">
+          <input semantic="POSITION" source="#cmn_Itembox_ground.xno-geometry-position" />
+        </vertices>
+        <triangles material="cmn_Itembox_ground.xno0" count="67">
+          <input semantic="VERTEX" source="#cmn_Itembox_ground.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#cmn_Itembox_ground.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#cmn_Itembox_ground.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#cmn_Itembox_ground.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#cmn_Itembox_ground.xno-geometry-color" offset="4" set="0" />
+          <p>54 34 1 0 0 50 32 5 0 0 46 30 2 0 0 41 27 7 0 0 46 30 2 0 0 50 32 5 0 0 46 30 2 0 0 41 27 7 0 0 38 25 3 0 0 55 35 14 0 0 53 34 0 0 0 59 38 12 0 0 53 34 0 0 0 55 35 14 0 0 49 32 4 0 0 37 25 0 0 0 35 24 14 0 0 32 21 12 0 0 35 24 14 0 0 37 25 0 0 0 40 27 4 0 0 76 49 19 0 0 86 55 6 0 0 71 45 15 0 0 86 55 6 0 0 76 49 19 0 0 89 56 8 0 0 92 58 2 0 0 88 56 7 0 0 94 59 3 0 0 88 56 7 0 0 92 58 2 0 0 85 55 5 0 0 91 57 1 0 0 85 55 5 0 0 92 58 2 0 0 66 43 12 0 0 70 45 14 0 0 90 57 0 0 0 84 55 4 0 0 90 57 0 0 0 70 45 14 0 0 80 52 12 0 0 93 59 0 0 0 75 49 14 0 0 87 56 4 0 0 75 49 14 0 0 93 59 0 0 0 17 10 15 0 0 22 14 19 0 0 7 3 6 0 0 10 4 8 0 0 7 3 6 0 0 22 14 19 0 0 82 53 55 0 0 78 50 52 0 0 74 48 50 0 0 62 40 41 0 0 74 48 50 0 0 78 50 52 0 0 74 48 50 0 0 62 40 41 0 0 65 42 44 0 0 65 42 44 0 0 62 40 41 0 0 52 33 36 0 0 34 23 29 0 0 52 33 36 0 0 62 40 41 0 0 52 33 36 0 0 34 23 29 0 0 33 22 28 0 0 33 22 28 0 0 34 23 29 0 0 20 13 18 0 0 19 12 17 0 0 20 13 18 0 0 34 23 29 0 0 20 13 18 0 0 19 12 17 0 0 13 7 11 0 0 13 7 11 0 0 19 12 17 0 0 11 5 9 0 0 15 9 13 0 0 11 5 9 0 0 19 12 17 0 0 11 5 9 0 0 15 9 13 0 0 12 6 10 0 0 12 6 10 0 0 15 9 13 0 0 18 11 16 0 0 29 19 25 0 0 18 11 16 0 0 15 9 13 0 0 18 11 16 0 0 29 19 25 0 0 26 17 22 0 0 26 17 22 0 0 29 19 25 0 0 39 26 30 0 0 57 36 37 0 0 39 26 30 0 0 29 19 25 0 0 39 26 30 0 0 57 36 37 0 0 58 37 38 0 0 58 37 38 0 0 57 36 37 0 0 72 46 48 0 0 73 47 49 0 0 72 46 48 0 0 57 36 37 0 0 72 46 48 0 0 73 47 49 0 0 79 51 53 0 0 79 51 53 0 0 73 47 49 0 0 83 54 56 0 0 77 50 51 0 0 83 54 56 0 0 73 47 49 0 0 83 54 56 0 0 77 50 51 0 0 81 53 54 0 0 64 41 43 0 0 78 50 52 0 0 69 44 47 0 0 78 50 52 0 0 64 41 43 0 0 62 40 41 0 0 48 31 35 0 0 62 40 41 0 0 64 41 43 0 0 62 40 41 0 0 48 31 35 0 0 34 23 29 0 0 31 20 27 0 0 34 23 29 0 0 48 31 35 0 0 34 23 29 0 0 31 20 27 0 0 19 12 17 0 0 24 15 21 0 0 19 12 17 0 0 31 20 27 0 0 19 12 17 0 0 24 15 21 0 0 15 9 13 0 0 28 18 24 0 0 15 9 13 0 0 24 15 21 0 0 15 9 13 0 0 28 18 24 0 0 29 19 25 0 0 44 28 32 0 0 29 19 25 0 0 28 18 24 0 0 29 19 25 0 0 44 28 32 0 0 57 36 37 0 0 61 39 40 0 0 57 36 37 0 0 44 28 32 0 0 57 36 37 0 0 61 39 40 0 0 73 47 49 0 0 68 44 46 0 0 73 47 49 0 0 61 39 40 0 0 73 47 49 0 0 68 44 46 0 0 77 50 51 0 0 21 14 14 0 0 3 2 0 0 0 8 4 4 0 0 3 2 0 0 0 21 14 14 0 0 25 16 12 0 0 0 0 0 0 0 16 10 14 0 0 5 3 4 0 0 16 10 14 0 0 0 0 0 0 0 14 8 12 0 0 2 1 2 0 0 9 4 7 0 0 4 2 3 0 0 9 4 7 0 0 2 1 2 0 0 6 3 5 0 0 1 0 1 0 0 6 3 5 0 0 2 1 2 0 0 42 27 8 0 0 51 32 6 0 0 36 24 19 0 0 56 35 15 0 0 36 24 19 0 0 51 32 6 0 0 </p>
+        </triangles>
+        <triangles material="cmn_Itembox_ground.xno1" count="8">
+          <input semantic="VERTEX" source="#cmn_Itembox_ground.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#cmn_Itembox_ground.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#cmn_Itembox_ground.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#cmn_Itembox_ground.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#cmn_Itembox_ground.xno-geometry-color" offset="4" set="0" />
+          <p>27 18 23 0 0 23 15 20 0 0 45 29 33 0 0 30 20 26 0 0 45 29 33 0 0 23 15 20 0 0 45 29 33 0 0 30 20 26 0 0 47 31 34 0 0 47 31 34 0 0 63 41 42 0 0 45 29 33 0 0 67 44 45 0 0 45 29 33 0 0 63 41 42 0 0 67 44 45 0 0 60 39 39 0 0 45 29 33 0 0 43 28 31 0 0 45 29 33 0 0 60 39 39 0 0 45 29 33 0 0 43 28 31 0 0 27 18 23 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="cmn_Itembox_ground.xno-controller">
+      <skin source="#cmn_Itembox_ground.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="cmn_Itembox_ground.xno-controller-Joints">
+          <Name_array id="cmn_Itembox_ground.xno-controller-Joints-array" count="2">cmn_Itembox_ground Itempoint_ground </Name_array>
+          <technique_common>
+            <accessor source="#cmn_Itembox_ground.xno-controller-Joints-array" count="2">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cmn_Itembox_ground.xno-controller-Matrices">
+          <float_array id="cmn_Itembox_ground.xno-controller-Matrices-array" count="32">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 -8.74228e-008 0 0 1 0 -80.1311 8.74228e-008 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#cmn_Itembox_ground.xno-controller-Matrices-array" count="2" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cmn_Itembox_ground.xno-controller-Weights">
+          <float_array id="cmn_Itembox_ground.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#cmn_Itembox_ground.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#cmn_Itembox_ground.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#cmn_Itembox_ground.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="95">
+          <input semantic="JOINT" offset="0" source="#cmn_Itembox_ground.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#cmn_Itembox_ground.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="cmn_Itembox_ground" sid="cmn_Itembox_ground" name="cmn_Itembox_ground" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <node id="Itempoint_ground" sid="Itempoint_ground" name="Itempoint_ground" type="JOINT">
+          <matrix>1 0 0 0 0 1 0 80.1311 0 0 1 -0 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="cmn_Itembox_ground.xno" sid="cmn_Itembox_ground.xno" name="cmn_Itembox_ground.xno">
+        <instance_controller url="#cmn_Itembox_ground.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="cmn_Itembox_ground.xno0" target="#cmn_Itembox_ground.xno0ID" />
+              <instance_material symbol="cmn_Itembox_ground.xno1" target="#cmn_Itembox_ground.xno1ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

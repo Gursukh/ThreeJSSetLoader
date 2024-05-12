@@ -247,7 +247,7 @@ function addEventListeners(environment) {
   document.getElementById("load-terrain").addEventListener("click", () => {
 
     environment.load_terrain(
-      document.getElementById("collision-dropdown-input").value,
+      document.getElementById("terrain-dropdown-input").value,
       update_terrain_heirarchy,
       set_text
     );

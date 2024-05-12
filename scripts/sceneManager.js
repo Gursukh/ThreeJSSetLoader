@@ -65,8 +65,6 @@ export class Environment {
     this.mouse.x = ((event.clientX - this.offset.left) / event.target.width) * 2 - 1;
     this.mouse.y = -((event.clientY - this.offset.top) / event.target.height) * 2 + 1;
 
-    console.log(this.mouse.x, this.mouse.y);
-
     this.raycaster.setFromCamera(this.mouse, this.camera);
 
     var intersects = this.raycaster.intersectObject(this.scene, true);
@@ -122,19 +120,28 @@ export class Environment {
     let object_table = {}
 
     for (let i = 0; i < xml_dom.childElementCount; i++) {
-      let [type, object] = await this.conceptualise_asset(xml_dom.children[i]);
+      let result;
 
-      if (object_table[type]) {
-        if (object != null) object_table[type].children.push(object)
-      } else {
-        object_table[type] = new THREE.Group();
-        object_table[type].name = type;
+      try {
+        result = await this.conceptualise_asset(xml_dom.children[i]);
+        let [type, object] = result
+        if (object_table[type]) {
+          if (object != null) object_table[type].children.push(object)
+        } else {
+          object_table[type] = new THREE.Group();
+          object_table[type].name = type;
+          if (object != null) object_table[type].children.push(object)
+        }
+      } catch (error) {
+        console.error(error);
+        continue;
       }
+
     }
 
     Object.values(object_table).forEach(group => {
       this.placement_group.add(group)
-    })
+    })  
 
     callback(object_table)
   }
@@ -202,7 +209,6 @@ export class Environment {
 
     let model = (await this.import_collada("objects/" + path))[0];
 
-
     model.position.set(
       node.children[2].children[0].children[0].children[0].innerHTML * 0.001,
       (node.children[2].children[0].children[0].children[1].innerHTML * 0.001),
@@ -235,8 +241,14 @@ export class Environment {
       case "cameraeventbox":
         return [type, this.create_box(node, [1, 0, 0, 0.5], "cameraeventbox")];
 
+      case "amigo_collision":
+        return [type, this.create_box(node, [1, 0, 1, 0.5], "amigo_collision")];
+
       case "ring":
-        return [type, await this.load_asset("ring/ring.dae", node, "ring")];
+        return [type, await this.load_asset("common/ring.dae", node, "ring")];
+
+      case "goalring":
+        return [type, await this.load_asset("common/cmn_goalring.dae", node, "goalring")];
 
       default:
         return [type, null];
@@ -254,26 +266,36 @@ export class Environment {
     let len = files.length;
 
     for (let i = 0; i < len; i++) {
-      let result = await loader.loadAsync("docs/assets/terrain/" + terrain + "/" + files[i])
+      this.info_box.innerText = ("loading: " + terrain + "/" + files[i])
+      let result
+      try {
+        result = await loader.loadAsync("docs/assets/terrain/" + terrain + "/" + files[i])
+      } catch (error) {
+        console.error("Error loading:" + error)
+        continue;
+      }
+
+      console.log(result)
 
       progress_report((((i + 1) / len) * 100).toPrecision(3))
 
       result.scene.children.forEach((node) => {
 
-        let mats = node.material
+        if (node.type != "SkinnedMesh") return
 
-        if (node.type == "SkinnedMesh") {
-          let model = new THREE.Mesh(node.geometry, mats)
-          model.scale.set(0.001, 0.001, 0.001)
-          model.position.set(0, 0, 0);
-          model.name = node.name.split(".")[0]
+        let model = new THREE.Mesh(node.geometry, node.material)
+        model.info = node.name
+        model.scale.set(0.001, 0.001, 0.001)
+        model.position.set(0, 0, 0);
+        model.name = node.name.split(".")[0]
 
-          model.geometry.computeVertexNormals()
-          this.terrain_group.add(model);
-        }
+        model.geometry.computeVertexNormals()
+        this.terrain_group.add(model);
+
       })
     }
 
+    this.info_box.innerText = "Finished Loading " + terrain
     callback(this.terrain_group.children);
 
   }

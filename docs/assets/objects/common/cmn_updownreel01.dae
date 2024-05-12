@@ -1,0 +1,175 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="cmn_updownreel01_dfsp_z.dds-image" name="cmn_updownreel01_dfsp_z.dds-image">
+      <init_from>./textures/cmn_updownreel01_dfsp_z.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="cmn_updownreel01.xno0ID" name="cmn_updownreel01.xno0">
+      <instance_effect url="#cmn_updownreel01.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="cmn_updownreel01.xno0-effect" name="cmn_updownreel01.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="cmn_updownreel01_dfsp_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>cmn_updownreel01_dfsp_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="cmn_updownreel01_dfsp_z.dds-image-sampler">
+          <sampler2D>
+            <source>cmn_updownreel01_dfsp_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="cmn_updownreel01_dfsp_z.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="cmn_updownreel01.xno-geometry" name="cmn_updownreel01.xno-geometry">
+      <mesh>
+        <source id="cmn_updownreel01.xno-geometry-position">
+          <float_array id="cmn_updownreel01.xno-geometry-position-array" count="156">-24.2809 10.4616 -5.36846e-007 -24.2809 10.4616 -5.36846e-007 -18.7891 10.4616 -12.3523 -18.7891 10.4616 -12.3523 -18.7891 10.4616 12.3523 -18.7891 10.4616 12.3523 -18.7757 10.4616 -2.67519e-007 -18.7757 10.4616 -2.67519e-007 -15.3338 10.4616 -7.74169 -15.3338 10.4616 -7.74169 -15.3338 10.4616 7.74169 -15.3338 10.4616 7.74169 -13.9807 -10.4616 2.59707e-008 -13.9807 -10.4616 2.59707e-008 -11.7606 -10.4616 6.64277 -11.7606 -10.4616 6.64277 -11.7606 -10.4616 -6.64277 -11.7606 -10.4616 -6.64277 -9.53674e-007 10.4616 9.80599 -9.53674e-007 10.4616 9.80599 -9.53674e-007 10.4616 -9.80599 -9.53674e-007 10.4616 -9.80599 -9.53674e-007 10.4616 -9.80599 -9.53674e-007 10.4616 -14.8818 -9.53674e-007 10.4616 -14.8818 -9.53674e-007 10.4616 -14.8818 -9.53674e-007 -10.4616 8.00305 -9.53674e-007 -10.4616 8.00305 -9.53674e-007 10.4616 14.8818 -9.53674e-007 10.4616 14.8818 -9.53674e-007 -10.4616 -8.00305 -9.53674e-007 -10.4616 -8.00305 11.7606 -10.4616 -6.64277 11.7606 -10.4616 -6.64277 11.7606 -10.4616 -6.64277 11.7606 -10.4616 6.64277 11.7606 -10.4616 6.64277 13.9807 -10.4616 2.59707e-008 13.9807 -10.4616 2.59707e-008 15.3338 10.4616 7.74169 15.3338 10.4616 7.74169 15.3338 10.4616 -7.74169 15.3338 10.4616 -7.74169 18.7757 10.4616 -2.67519e-007 18.7757 10.4616 -2.67519e-007 18.7891 10.4616 12.3523 18.7891 10.4616 12.3523 18.7891 10.4616 -12.3523 18.7891 10.4616 -12.3523 18.7891 10.4616 -12.3523 24.2809 10.4616 -5.36846e-007 24.2809 10.4616 -5.36846e-007 </float_array>
+          <technique_common>
+            <accessor source="#cmn_updownreel01.xno-geometry-position-array" count="52" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cmn_updownreel01.xno-geometry-normal">
+          <float_array id="cmn_updownreel01.xno-geometry-normal-array" count="51">-0.906988 -0.421157 -2.56717e-008 0 1 0 -0.571083 -0.389083 -0.722827 -0.571083 -0.389083 0.722827 -0.597773 -0.801665 5.63819e-010 -0.387214 -0.75583 0.528002 -0.387214 -0.75583 -0.528002 -2.01933e-009 -0.306056 -0.952014 -1.25458e-009 -0.789926 0.613203 3.59333e-009 -0.306056 0.952014 1.25458e-009 -0.789926 -0.613203 0.387214 -0.75583 -0.528002 0.387214 -0.75583 0.528002 0.597773 -0.801665 5.3292e-009 0.571083 -0.389083 0.722827 0.571083 -0.389083 -0.722827 0.906987 -0.421158 -1.06875e-008 </float_array>
+          <technique_common>
+            <accessor source="#cmn_updownreel01.xno-geometry-normal-array" count="17" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cmn_updownreel01.xno-geometry-uv">
+          <float_array id="cmn_updownreel01.xno-geometry-uv-array" count="104">1.77186 1 0.283563 -1.05125 1.24985 1 0.0293912 -1.05134 2.29388 1 0.531148 -1.05116 0.285968 -1.00274 1.34152 -0.126412 0.0295815 -1.00274 1.34853 -0.110651 0.53057 -1.00273 1.34853 -0.142174 0.467536 0.367716 1.77186 0.704275 0.467536 0.464921 2.29388 0.704275 0.467536 0.27051 1.24985 0.704275 0.771235 -1.00274 1.3725 -0.145401 -0.155664 -1.00274 1.3725 -0.107423 1.63446 -1.00275 0.771321 1 -0.155304 -1.05078 1.64054 -1.05142 0.241365 0.464921 2.76952 0.704275 0.771235 -1.05089 2.76952 1 0.241365 0.27051 0.771321 0.704275 0.015195 0.27051 0.292793 0.704275 4.29943 0.704275 0.015195 0.464921 3.24516 0.704275 0.015195 0.367716 3.77229 0.704275 1.03589 -1.00273 1.39648 -0.142174 1.39648 -0.110651 1.49384 -1.00274 1.26883 -1.00274 1.40348 -0.126412 1.03665 -1.05116 3.24516 1 1.49513 -1.05134 0.292793 1 4.29943 1 1.26712 -1.05125 3.77229 1 </float_array>
+          <technique_common>
+            <accessor source="#cmn_updownreel01.xno-geometry-uv-array" count="52" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cmn_updownreel01.xno-geometry-uv2">
+          <float_array id="cmn_updownreel01.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#cmn_updownreel01.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cmn_updownreel01.xno-geometry-color">
+          <float_array id="cmn_updownreel01.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#cmn_updownreel01.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="cmn_updownreel01.xno-geometry-vertex">
+          <input semantic="POSITION" source="#cmn_updownreel01.xno-geometry-position" />
+        </vertices>
+        <triangles material="cmn_updownreel01.xno0" count="44">
+          <input semantic="VERTEX" source="#cmn_updownreel01.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#cmn_updownreel01.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#cmn_updownreel01.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#cmn_updownreel01.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#cmn_updownreel01.xno-geometry-color" offset="4" set="0" />
+          <p>25 1 25 0 0 22 1 22 0 0 47 1 47 0 0 42 1 42 0 0 47 1 47 0 0 22 1 22 0 0 47 1 47 0 0 42 1 42 0 0 50 1 50 0 0 43 1 43 0 0 50 1 50 0 0 42 1 42 0 0 50 1 50 0 0 43 1 43 0 0 45 1 45 0 0 39 1 39 0 0 45 1 45 0 0 43 1 43 0 0 45 1 45 0 0 39 1 39 0 0 28 1 28 0 0 18 1 18 0 0 28 1 28 0 0 39 1 39 0 0 28 1 28 0 0 18 1 18 0 0 5 1 5 0 0 10 1 10 0 0 5 1 5 0 0 18 1 18 0 0 5 1 5 0 0 10 1 10 0 0 1 1 1 0 0 6 1 6 0 0 1 1 1 0 0 10 1 10 0 0 1 1 1 0 0 6 1 6 0 0 3 1 3 0 0 8 1 8 0 0 3 1 3 0 0 6 1 6 0 0 3 1 3 0 0 8 1 8 0 0 24 1 24 0 0 20 1 20 0 0 24 1 24 0 0 8 1 8 0 0 35 12 35 0 0 26 8 26 0 0 37 13 37 0 0 30 10 30 0 0 37 13 37 0 0 26 8 26 0 0 37 13 37 0 0 30 10 30 0 0 32 11 32 0 0 12 4 12 0 0 26 8 26 0 0 14 5 14 0 0 26 8 26 0 0 12 4 12 0 0 30 10 30 0 0 16 6 16 0 0 30 10 30 0 0 12 4 12 0 0 48 15 48 0 0 33 11 33 0 0 23 7 23 0 0 31 10 31 0 0 23 7 23 0 0 33 11 33 0 0 17 6 17 0 0 23 7 23 0 0 31 10 31 0 0 23 7 23 0 0 17 6 17 0 0 2 2 2 0 0 2 2 2 0 0 17 6 17 0 0 0 0 0 0 0 13 4 13 0 0 0 0 0 0 0 17 6 17 0 0 15 5 15 0 0 0 0 0 0 0 13 4 13 0 0 0 0 0 0 0 15 5 15 0 0 4 3 4 0 0 4 3 4 0 0 15 5 15 0 0 29 9 29 0 0 27 8 27 0 0 29 9 29 0 0 15 5 15 0 0 36 12 36 0 0 29 9 29 0 0 27 8 27 0 0 29 9 29 0 0 36 12 36 0 0 46 14 46 0 0 46 14 46 0 0 36 12 36 0 0 51 16 51 0 0 38 13 38 0 0 51 16 51 0 0 36 12 36 0 0 34 11 34 0 0 51 16 51 0 0 38 13 38 0 0 51 16 51 0 0 34 11 34 0 0 49 15 49 0 0 41 1 41 0 0 40 1 40 0 0 44 1 44 0 0 40 1 40 0 0 41 1 41 0 0 19 1 19 0 0 21 1 21 0 0 19 1 19 0 0 41 1 41 0 0 19 1 19 0 0 21 1 21 0 0 11 1 11 0 0 9 1 9 0 0 11 1 11 0 0 21 1 21 0 0 11 1 11 0 0 9 1 9 0 0 7 1 7 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="cmn_updownreel01.xno-controller">
+      <skin source="#cmn_updownreel01.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="cmn_updownreel01.xno-controller-Joints">
+          <Name_array id="cmn_updownreel01.xno-controller-Joints-array" count="1">cmn_updownreel01 </Name_array>
+          <technique_common>
+            <accessor source="#cmn_updownreel01.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cmn_updownreel01.xno-controller-Matrices">
+          <float_array id="cmn_updownreel01.xno-controller-Matrices-array" count="16">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#cmn_updownreel01.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cmn_updownreel01.xno-controller-Weights">
+          <float_array id="cmn_updownreel01.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#cmn_updownreel01.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#cmn_updownreel01.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#cmn_updownreel01.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="52">
+          <input semantic="JOINT" offset="0" source="#cmn_updownreel01.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#cmn_updownreel01.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="cmn_updownreel01" sid="cmn_updownreel01" name="cmn_updownreel01" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="cmn_updownreel01.xno" sid="cmn_updownreel01.xno" name="cmn_updownreel01.xno">
+        <instance_controller url="#cmn_updownreel01.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="cmn_updownreel01.xno0" target="#cmn_updownreel01.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>
