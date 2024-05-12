@@ -40,10 +40,21 @@ body {
 
 #viewport {
   background-color: black;
+  height: calc(100% - 20px);
+  flex-grow: 1;
+  position: relative;
+}
+
+
+#viewport-container {
+  background-color: black;
   height: 100%;
   flex-grow: 1;
-  overflow: hidden;
   position: relative;
+}
+
+#viewport > canvas {
+  width: 100%;
 }
 
 #toolbar {
@@ -162,5 +173,15 @@ width: 100%;
 
 .placement-node > button {
   width: 100%;
+  font-size: 12px;
+}
+
+#info-container {
+  display: flex;
+  padding-left: 2px;
+}
+
+#info-box {
+  color: white;
   font-size: 12px;
 }

@@ -18,24 +18,64 @@ export class Environment {
     this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     this.renderer = new THREE.WebGLRenderer();
     this.controls = new PointerLockControls(this.camera, this.renderer.domElement);
+    this.raycaster = new THREE.Raycaster();
+    this.mouse = new THREE.Vector2();
+    this.offset = this.getPageTopLeft(viewport)
 
     this.placement_group = new THREE.Group();
     this.collision_group = new THREE.Group();
     this.terrain_group = new THREE.Group();
+    this.info_box = document.getElementById("info-box")
+
+    this.objectCache = {}
 
     this.renderer.setSize(viewport.clientWidth, viewport.clientHeight);
     viewport.appendChild(this.renderer.domElement);
 
     this.addLighting();
+    this.addEventFunctionality();
 
-    var geometry = new THREE.BoxGeometry(0.5, 0.5, 0.5);
-    var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+    var geometry = new THREE.SphereGeometry(0.1);
+    var material = new THREE.MeshBasicMaterial({ color: 0xee00ee });
     var cube = new THREE.Mesh(geometry, material);
+    cube.info = "world origin (0, 0, 0)";
     this.scene.add(cube);
 
     this.scene.add(this.placement_group)
     this.scene.add(this.terrain_group)
     this.scene.add(this.collision_group)
+  }
+
+  addEventFunctionality() {
+    this.renderer.domElement.addEventListener("mousemove", this.display_info)
+  }
+
+  getPageTopLeft(el) {
+    var rect = el.getBoundingClientRect();
+    var docEl = document.documentElement;
+    return {
+      left: rect.left + (window.pageXOffset || docEl.scrollLeft || 0),
+      top: rect.top + (window.pageYOffset || docEl.scrollTop || 0)
+    };
+  }
+
+  display_info = (event) => {
+    event.preventDefault();
+
+    this.mouse.x = ((event.clientX - this.offset.left) / event.target.width) * 2 - 1;
+    this.mouse.y = -((event.clientY - this.offset.top) / event.target.height) * 2 + 1;
+
+    console.log(this.mouse.x, this.mouse.y);
+
+    this.raycaster.setFromCamera(this.mouse, this.camera);
+
+    var intersects = this.raycaster.intersectObject(this.scene, true);
+
+    if (intersects.length > 0 && intersects[0].object.info) {
+      this.info_box.innerHTML = intersects[0].object.info
+    } else {
+      this.info_box.innerHTML = ""
+    }
   }
 
   addLighting() {
@@ -61,11 +101,10 @@ export class Environment {
     objectLoader.load('docs/assets/collision/' + collision + "/collision.obj", (object) => {
       object.scale.set(0.001, 0.001, 0.001)
       object.position.set(0, 0, 0);
+      object.children.forEach(collision => collision.info = "collision: " + collision.name)
       this.collision_group.add(object);
       callback(object)
     });
-
-    console.log(this.scene)
   }
 
   clear_placement() {
@@ -100,7 +139,7 @@ export class Environment {
     callback(object_table)
   }
 
-  create_box(node, colour) {
+  create_box(node, colour, info = null) {
 
     var geometry = new THREE.BoxGeometry(
       node.children[1].children[1].innerHTML * 0.001,
@@ -128,12 +167,20 @@ export class Environment {
     Rotation.normalize();
 
     cube.rotation.setFromQuaternion(Rotation);
+    cube.info = "event: " + (info == "" ? "undefined" : info);
 
     return cube;
   }
 
   async import_collada(path) {
-    let result = await loader.loadAsync("docs/assets/" + path)
+    let result; // = await loader.loadAsync("docs/assets/" + path)
+    if (this.objectCache[path]) {
+      result = this.objectCache[path];
+    } else {
+      result = await loader.loadAsync("docs/assets/" + path)
+      this.objectCache[path] = { ...result };
+    }
+
     var objects = []
     result.scene.children.forEach((node) => {
 
@@ -151,11 +198,10 @@ export class Environment {
   }
 
 
-  async load_asset(path, node) {
+  async load_asset(path, node, info = null) {
 
-    let model = (await this.import_collada("objects/" + path))[0]
+    let model = (await this.import_collada("objects/" + path))[0];
 
-    console.log(node)
 
     model.position.set(
       node.children[2].children[0].children[0].children[0].innerHTML * 0.001,
@@ -171,6 +217,8 @@ export class Environment {
       node.children[2].children[0].children[1].children[3].innerHTML,
     ).normalize());
 
+    model.info = info
+
     return model
 
   }
@@ -182,13 +230,13 @@ export class Environment {
 
     switch (type) {
       case "eventbox":
-        return [type, this.create_box(node, [0, 1, 0, 0.5])];
+        return [type, this.create_box(node, [0, 1, 0, 0.5], node.children[1].children[3].innerHTML)];
 
       case "cameraeventbox":
-        return [type, this.create_box(node, [1, 0, 0, 0.5])];
+        return [type, this.create_box(node, [1, 0, 0, 0.5], "cameraeventbox")];
 
-      // case "ring":
-        // return [type, await this.load_asset("ring/ring.dae", node)];
+      case "ring":
+        return [type, await this.load_asset("ring/ring.dae", node, "ring")];
 
       default:
         return [type, null];

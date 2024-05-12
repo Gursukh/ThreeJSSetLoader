@@ -1,5 +1,5 @@
 import { MeshLambertMaterial, MeshPhongMaterial, Vector3 } from "three";
-import { hexToRgb, rgbToHex } from "./util.js";
+import { hexToRgb, rgbToHex, showXML } from "./util.js";
 
 var speed = 1;
 var controls;
