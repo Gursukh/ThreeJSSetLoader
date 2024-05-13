@@ -1,0 +1,208 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="rct_eggtrain05br_dfsp_r.dds-image" name="rct_eggtrain05br_dfsp_r.dds-image">
+      <init_from>./textures/rct_eggtrain05br_dfsp_r.dds</init_from>
+    </image>
+    <image id="rct_eggtrain05br_ntxx_r.dds-image" name="rct_eggtrain05br_ntxx_r.dds-image">
+      <init_from>./textures/rct_eggtrain05br_ntxx_r.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="rct_obj_splinter_S.xno0ID" name="rct_obj_splinter_S.xno0">
+      <instance_effect url="#rct_obj_splinter_S.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="rct_obj_splinter_S.xno0-effect" name="rct_obj_splinter_S.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="rct_eggtrain05br_dfsp_r.dds-image-surface">
+          <surface type="2D">
+            <init_from>rct_eggtrain05br_dfsp_r.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="rct_eggtrain05br_dfsp_r.dds-image-sampler">
+          <sampler2D>
+            <source>rct_eggtrain05br_dfsp_r.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="rct_eggtrain05br_ntxx_r.dds-image-surface">
+          <surface type="2D">
+            <init_from>rct_eggtrain05br_ntxx_r.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="rct_eggtrain05br_ntxx_r.dds-image-sampler">
+          <sampler2D>
+            <source>rct_eggtrain05br_ntxx_r.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="rct_eggtrain05br_ntxx_r.dds-image-surface">
+          <surface type="2D">
+            <init_from>rct_eggtrain05br_ntxx_r.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="rct_eggtrain05br_ntxx_r.dds-image-sampler">
+          <sampler2D>
+            <source>rct_eggtrain05br_ntxx_r.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="rct_eggtrain05br_ntxx_r.dds-image-surface">
+          <surface type="2D">
+            <init_from>rct_eggtrain05br_ntxx_r.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="rct_eggtrain05br_ntxx_r.dds-image-sampler">
+          <sampler2D>
+            <source>rct_eggtrain05br_ntxx_r.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="rct_eggtrain05br_dfsp_r.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="rct_obj_splinter_S.xno-geometry" name="rct_obj_splinter_S.xno-geometry">
+      <mesh>
+        <source id="rct_obj_splinter_S.xno-geometry-position">
+          <float_array id="rct_obj_splinter_S.xno-geometry-position-array" count="195">-11.3251 6.28477 -2.84362 -11.3251 6.28477 -2.84362 -11.3251 6.28477 -2.84362 -6.89282 -9.92638 -3.9016 -6.89282 -9.92638 -3.9016 -6.89282 -9.92638 -3.9016 -5.76969 12.8812 -14.5996 -5.76969 12.8812 -14.5996 -5.20486 7.15593 -1.28726 -5.20486 7.15593 -1.28726 -5.20486 7.15593 -1.28726 -3.86444 -0.433836 10.7903 -3.86444 -0.433836 10.7903 -3.61038 -12.6916 5.9035 -3.61038 -12.6916 5.9035 -2.65397 -3.28771 -12.5802 -2.65397 -3.28771 -12.5802 -2.37844 13.3963 -10.0445 -2.37844 13.3963 -10.0445 -1.80433 -7.67013 -3.14761 -1.80433 -7.67013 -3.14761 -1.80433 -7.67013 -3.14761 0.651274 0.219885 6.76103 0.651274 0.219885 6.76103 0.66223 -0.257102 -1.28427 0.66223 -0.257102 -1.28427 0.761969 12.7567 -19.357 0.761969 12.7567 -19.357 0.848742 -10.419 3.41492 0.848742 -10.419 3.41492 0.87466 -1.68208 -8.60715 0.87466 -1.68208 -8.60715 1.93192 -13.3963 13.9152 1.93192 -13.3963 13.9152 1.93486 7.73225 -7.69489 2.08034 4.65591 -16.8931 2.08034 4.65591 -16.8931 2.20394 13.1701 -13.5794 2.20394 13.1701 -13.5794 4.9338 5.23859 -11.2067 4.9338 5.23859 -11.2067 5.0214 -11.5484 9.37003 5.0214 -11.5484 9.37003 6.56662 1.2286 16.2674 6.56662 1.2286 16.2674 6.56662 1.2286 16.2674 8.27066 1.14655 10.7695 8.27066 1.14655 10.7695 8.27066 1.14655 10.7695 9.06623 12.3731 -13.4914 9.06623 12.3731 -13.4914 9.06623 12.3731 -13.4914 9.48324 -11.1627 19.5328 9.48324 -11.1627 19.5328 9.48324 -11.1627 19.5328 9.54701 12.0046 -19.5328 9.54701 12.0046 -19.5328 9.54701 12.0046 -19.5328 10.1468 -4.86804 18.2226 10.1468 -4.86804 18.2226 11.0459 -10.5344 13.8331 11.0459 -10.5344 13.8331 11.0459 -10.5344 13.8331 11.3251 -5.1305 12.5194 11.3251 -5.1305 12.5194 </float_array>
+          <technique_common>
+            <accessor source="#rct_obj_splinter_S.xno-geometry-position-array" count="65" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_obj_splinter_S.xno-geometry-normal">
+          <float_array id="rct_obj_splinter_S.xno-geometry-normal-array" count="195">-0.917214 -0.219696 0.332343 -0.823528 -0.209963 -0.526989 -0.289336 0.828425 0.479579 -0.93329 -0.270581 0.236128 -0.818038 -0.188189 -0.543506 0.385372 -0.819841 -0.423496 -0.664172 -0.25549 -0.702567 -0.22625 0.971797 0.0664999 -0.190055 0.829186 0.52567 0.545154 0.523803 0.654551 0.783633 0.620197 -0.035703 -0.77833 -0.120653 0.616153 0.0130425 0.960576 0.277712 -0.876636 -0.229583 0.422848 0.255229 -0.911182 -0.323429 -0.745607 -0.206438 -0.633603 0.649578 -0.660971 -0.375722 -0.259525 0.954813 0.144844 0.493901 0.626317 0.603149 0.457834 -0.770292 -0.443889 0.88194 -0.184412 -0.433791 0.937601 -0.335203 0.092427 0.0776388 0.970221 0.229442 0.885319 0.182411 -0.42771 0.955029 -0.0198679 0.295846 0.95807 0.260848 -0.118579 -0.33366 -0.323609 -0.885408 0.0409526 0.996567 -0.0719506 0.287781 -0.882616 -0.371713 0.917085 0.0485748 -0.395722 0.704612 -0.614549 -0.354756 0.955977 -0.210243 0.204709 -0.680328 -0.130349 0.721224 0.263614 -0.949575 -0.169752 0.660593 0.327639 0.675477 -0.379987 -0.258629 -0.8881 0.690337 -0.660883 -0.294396 0.0418361 0.995261 -0.0877798 0.259014 0.703436 0.661883 0.692015 -0.159321 0.704082 0.747819 -0.622677 -0.230304 0.260489 -0.936778 -0.233651 0.685576 0.0945585 -0.721834 -0.466111 0.00999988 0.88467 -0.118249 0.992477 -0.0317303 0.801455 0.547682 0.240236 -0.0972538 0.994243 -0.044982 0.467317 -0.0189953 -0.883886 0.832612 0.514331 0.205478 0.0958899 0.992869 -0.0708284 0.358553 0.462114 0.811105 0.874476 -0.474951 0.0985591 -0.491546 0.0939551 0.865768 0.29932 -0.953874 -0.0230844 0.971939 -0.0247992 0.233921 -0.044541 -0.297338 -0.953733 0.0840962 0.994994 -0.0539925 0.797663 -0.601295 -0.0466712 -0.420081 0.167541 0.891887 0.956548 0.20356 0.208756 0.298062 -0.95142 -0.0771898 0.489981 -0.0961625 -0.866413 0.963884 0.0148492 0.265907 0.392574 -0.186179 -0.900679 0.946594 0.254212 0.198335 </float_array>
+          <technique_common>
+            <accessor source="#rct_obj_splinter_S.xno-geometry-normal-array" count="65" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_obj_splinter_S.xno-geometry-uv">
+          <float_array id="rct_obj_splinter_S.xno-geometry-uv-array" count="94">0.656082 0.531318 0.962423 0.878092 0.632567 0.493988 0.95899 0.995942 0.703287 0.525398 0.938891 0.878005 0.960659 0.886843 0.655079 0.528371 0.598035 0.527662 0.977246 0.901399 0.598568 0.494501 0.970156 0.980471 0.66879 0.493157 0.938983 0.993296 0.941917 0.88587 0.703194 0.524738 0.955306 0.988482 0.96885 0.905334 0.639005 0.510801 0.720422 0.509165 0.925526 0.885119 0.962637 0.976342 0.940753 0.984732 0.669722 0.493157 0.572144 0.49538 0.976993 0.963401 0.691129 0.505746 0.70174 0.494512 0.922887 0.985118 0.931293 0.891171 0.702107 0.495143 0.927154 0.976457 0.968154 0.96234 0.555964 0.52651 0.976534 0.92317 0.967465 0.923538 0.924695 0.90381 0.734181 0.493914 0.915105 0.965202 0.545721 0.49626 0.978215 0.945995 0.91737 0.899641 0.908855 0.972262 0.544497 0.513289 0.976042 0.93444 0.969173 0.947136 0.967057 0.936259 </float_array>
+          <technique_common>
+            <accessor source="#rct_obj_splinter_S.xno-geometry-uv-array" count="47" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_obj_splinter_S.xno-geometry-uv2">
+          <float_array id="rct_obj_splinter_S.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#rct_obj_splinter_S.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_obj_splinter_S.xno-geometry-color">
+          <float_array id="rct_obj_splinter_S.xno-geometry-color-array" count="104">0.643137 0.623529 0.611765 1 0.639216 0.619608 0.607843 1 0.407843 0.376471 0.356863 1 0.411765 0.380392 0.360784 1 0.764706 0.752941 0.745098 1 0.478431 0.45098 0.431373 1 0.921569 0.917647 0.913725 1 1 1 1 1 0.45098 0.423529 0.403922 1 0.309804 0.27451 0.25098 1 0.254902 0.215686 0.192157 1 0.392157 0.360784 0.341176 1 0.458824 0.431373 0.411765 1 0.968627 0.968627 0.968627 1 0.466667 0.439216 0.419608 1 0.266667 0.227451 0.203922 1 0.933333 0.929412 0.92549 1 0.662745 0.643137 0.635294 1 0.866667 0.858824 0.854902 1 0.835294 0.823529 0.819608 1 0.376471 0.345098 0.32549 1 0.443137 0.415686 0.396078 1 0.501961 0.47451 0.458824 1 0.529412 0.501961 0.486275 1 0.486275 0.458824 0.439216 1 0.556863 0.533333 0.517647 1 </float_array>
+          <technique_common>
+            <accessor source="#rct_obj_splinter_S.xno-geometry-color-array" count="26" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="rct_obj_splinter_S.xno-geometry-vertex">
+          <input semantic="POSITION" source="#rct_obj_splinter_S.xno-geometry-position" />
+        </vertices>
+        <triangles material="rct_obj_splinter_S.xno0" count="52">
+          <input semantic="VERTEX" source="#rct_obj_splinter_S.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#rct_obj_splinter_S.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#rct_obj_splinter_S.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#rct_obj_splinter_S.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#rct_obj_splinter_S.xno-geometry-color" offset="4" set="0" />
+          <p>47 47 33 0 1 63 63 43 0 25 23 23 8 0 13 61 61 39 0 24 23 23 8 0 13 63 63 43 0 25 61 61 39 0 24 42 42 24 0 7 23 23 8 0 13 29 29 10 0 12 23 23 8 0 13 42 42 24 0 7 23 23 8 0 13 29 29 10 0 12 25 25 18 0 14 20 20 2 0 12 25 25 18 0 14 29 29 10 0 12 10 10 7 0 5 23 23 8 0 13 25 25 18 0 14 21 21 2 0 12 31 31 23 0 16 24 24 18 0 14 34 34 26 0 17 24 24 18 0 14 31 31 23 0 16 24 24 18 0 14 34 34 26 0 17 9 9 7 0 5 18 18 15 0 11 9 9 7 0 5 34 34 26 0 17 34 34 26 0 17 38 38 19 0 10 18 18 15 0 11 38 38 19 0 10 34 34 26 0 17 50 50 37 0 10 50 50 37 0 10 34 34 26 0 17 39 39 30 0 19 31 31 23 0 16 39 39 30 0 19 34 34 26 0 17 4 4 2 0 2 1 1 0 0 0 15 15 12 0 9 6 6 4 0 4 15 15 12 0 9 1 1 0 0 0 15 15 12 0 9 6 6 4 0 4 35 35 27 0 18 26 26 19 0 10 35 35 27 0 18 6 6 4 0 4 35 35 27 0 18 26 26 19 0 10 55 55 37 0 21 40 40 31 0 19 57 57 42 0 22 51 51 38 0 10 57 57 42 0 22 40 40 31 0 19 36 36 28 0 7 30 30 22 0 16 36 36 28 0 7 40 40 31 0 19 36 36 28 0 7 30 30 22 0 16 16 16 13 0 10 19 19 16 0 12 16 16 13 0 10 30 30 22 0 16 16 16 13 0 10 19 19 16 0 12 5 5 3 0 3 28 28 21 0 12 5 5 3 0 3 19 19 16 0 12 5 5 3 0 3 28 28 21 0 12 14 14 11 0 8 41 41 32 0 7 14 14 11 0 8 28 28 21 0 12 14 14 11 0 8 41 41 32 0 7 33 33 25 0 7 60 60 45 0 24 33 33 25 0 7 41 41 32 0 7 33 33 25 0 7 60 60 45 0 24 53 53 40 0 12 64 64 46 0 25 54 54 40 0 12 62 62 45 0 24 54 54 40 0 12 64 64 46 0 25 59 59 44 0 23 48 48 35 0 1 59 59 44 0 23 64 64 46 0 25 59 59 44 0 23 48 48 35 0 1 45 45 34 0 20 22 22 17 0 13 44 44 34 0 20 46 46 35 0 1 44 44 34 0 20 22 22 17 0 13 12 12 9 0 7 8 8 6 0 5 12 12 9 0 7 22 22 17 0 13 12 12 9 0 7 8 8 6 0 5 2 2 1 0 1 17 17 14 0 11 2 2 1 0 1 8 8 6 0 5 2 2 1 0 1 17 17 14 0 11 7 7 5 0 4 37 37 29 0 10 7 7 5 0 4 17 17 14 0 11 7 7 5 0 4 37 37 29 0 10 27 27 20 0 15 49 49 36 0 10 27 27 20 0 15 37 37 29 0 10 27 27 20 0 15 49 49 36 0 10 56 56 41 0 22 11 11 8 0 6 58 58 43 0 23 43 43 33 0 20 58 58 43 0 23 11 11 8 0 6 52 52 39 0 12 11 11 8 0 6 32 32 24 0 7 52 52 39 0 12 32 32 24 0 7 11 11 8 0 6 13 13 10 0 5 0 0 0 0 0 13 13 10 0 5 11 11 8 0 6 13 13 10 0 5 0 0 0 0 0 3 3 2 0 2 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="rct_obj_splinter_S.xno-controller">
+      <skin source="#rct_obj_splinter_S.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="rct_obj_splinter_S.xno-controller-Joints">
+          <Name_array id="rct_obj_splinter_S.xno-controller-Joints-array" count="1">rct_obj_splinter_S </Name_array>
+          <technique_common>
+            <accessor source="#rct_obj_splinter_S.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_obj_splinter_S.xno-controller-Matrices">
+          <float_array id="rct_obj_splinter_S.xno-controller-Matrices-array" count="16">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#rct_obj_splinter_S.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_obj_splinter_S.xno-controller-Weights">
+          <float_array id="rct_obj_splinter_S.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#rct_obj_splinter_S.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#rct_obj_splinter_S.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#rct_obj_splinter_S.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="65">
+          <input semantic="JOINT" offset="0" source="#rct_obj_splinter_S.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#rct_obj_splinter_S.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="rct_obj_splinter_S" sid="rct_obj_splinter_S" name="rct_obj_splinter_S" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="rct_obj_splinter_S.xno" sid="rct_obj_splinter_S.xno" name="rct_obj_splinter_S.xno">
+        <instance_controller url="#rct_obj_splinter_S.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="rct_obj_splinter_S.xno0" target="#rct_obj_splinter_S.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

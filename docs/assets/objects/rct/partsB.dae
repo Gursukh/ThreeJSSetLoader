@@ -1,0 +1,191 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="rct_train04Abrk_dfsp_j.dds-image" name="rct_train04Abrk_dfsp_j.dds-image">
+      <init_from>./textures/rct_train04Abrk_dfsp_j.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="partsB.xno0ID" name="partsB.xno0">
+      <instance_effect url="#partsB.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="partsB.xno0-effect" name="partsB.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="rct_train04Abrk_dfsp_j.dds-image-surface">
+          <surface type="2D">
+            <init_from>rct_train04Abrk_dfsp_j.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="rct_train04Abrk_dfsp_j.dds-image-sampler">
+          <sampler2D>
+            <source>rct_train04Abrk_dfsp_j.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="rct_train04Abrk_dfsp_j.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="partsB.xno-geometry" name="partsB.xno-geometry">
+      <mesh>
+        <source id="partsB.xno-geometry-position">
+          <float_array id="partsB.xno-geometry-position-array" count="213">-54.8379 23.1226 0.406019 -54.8379 23.1226 0.406019 -54.8379 23.1226 0.406019 -54.8379 23.1226 -2.09398 -54.8379 23.1226 -2.09398 -54.8379 23.1226 -2.09398 -40.8309 -10.086 0.406019 -40.8309 -10.086 0.406019 -40.8309 -10.086 0.406019 -40.8309 -10.086 -2.09398 -40.8309 -10.086 -2.09398 -40.8309 -10.086 -2.09398 -39.3887 42.461 -2.09398 -39.3887 42.461 -2.09398 -39.3887 42.461 -2.09398 -39.3887 42.461 0.406019 -39.3887 42.461 0.406019 -39.3887 42.461 0.406019 -31.336 68.5214 0.406021 -31.336 68.5214 0.406021 -31.336 68.5214 0.406021 -31.336 68.5214 -2.09398 -31.336 68.5214 -2.09398 -31.336 68.5214 -2.09398 6.77627 -15.3773 0.406019 6.77627 -15.3773 0.406019 6.77627 -15.3773 -2.09398 6.77627 -15.3773 -2.09398 6.77627 -15.3773 -2.09398 15.9161 24.0433 -2.09398 15.9161 24.0433 -2.09398 15.9161 24.0433 -2.09398 15.9161 24.0433 0.40602 15.9161 24.0433 0.40602 15.9161 24.0433 0.40602 15.9996 87.9024 -2.09398 15.9996 87.9024 -2.09398 15.9996 87.9024 -2.09398 15.9996 87.9024 0.406021 15.9996 87.9024 0.406021 15.9996 87.9024 0.406021 -22.8519 -51.3736 -1.91783 -22.8519 -51.3736 -1.91783 -22.8519 -51.3736 -1.91783 -22.8519 -51.3736 0.582166 -22.8519 -51.3736 0.582166 -22.8519 -51.3736 0.582166 -5.32111 -3.86034 -1.91783 -5.32111 -3.86034 -1.91783 -5.32111 -3.86034 -1.91783 -5.32111 -3.86034 0.582167 -5.32111 -3.86034 0.582167 -5.32111 -3.86034 0.582167 23.5795 -46.8317 0.582166 23.5795 -46.8317 0.582166 23.5795 -46.8317 0.582166 23.5795 -46.8317 -1.91783 23.5795 -46.8317 -1.91783 23.5795 -46.8317 -1.91783 38.8522 18.4962 0.582169 38.8522 18.4962 0.582169 38.8522 18.4962 0.582169 38.8522 18.4962 -1.91783 38.8522 18.4962 -1.91783 38.8522 18.4962 -1.91783 53.0992 -12.5973 0.582169 53.0992 -12.5973 0.582169 53.0992 -12.5973 0.582169 53.0992 -12.5973 -1.91783 53.0992 -12.5973 -1.91783 53.0992 -12.5973 -1.91783 </float_array>
+          <technique_common>
+            <accessor source="#partsB.xno-geometry-position-array" count="71" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="partsB.xno-geometry-normal">
+          <float_array id="partsB.xno-geometry-normal-array" count="48">-0.921392 -0.388633 -0 -0.781292 0.624166 0 -3.02997e-008 -1.27801e-008 1 -9.17677e-009 2.2413e-008 -1 -0.110466 -0.99388 -0 -0.955427 0.295227 0 -0.378909 0.925434 0 0.974159 -0.225863 0 0.999999 -0.00130744 0 -0.938177 0.346156 0 -3.0554e-009 3.12349e-008 -1 0.0973553 -0.99525 0 -2.72021e-008 -3.18024e-008 1 -0.451569 0.892236 0 0.757331 -0.653032 0 0.909111 0.416554 0 </float_array>
+          <technique_common>
+            <accessor source="#partsB.xno-geometry-normal-array" count="16" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="partsB.xno-geometry-uv">
+          <float_array id="partsB.xno-geometry-uv-array" count="72">0.448088 0.694092 0.452061 0.695002 0.452657 0.695228 0.468617 0.645419 0.47107 0.649935 0.472007 0.649699 0.473027 0.721247 0.474 0.721742 0.470731 0.722435 0.482534 0.760631 0.483955 0.756613 0.485124 0.757471 0.538394 0.637663 0.535678 0.642754 0.537776 0.642445 0.550402 0.696491 0.548081 0.696252 0.55179 0.695441 0.548195 0.782915 0.550517 0.784042 0.551912 0.789038 0.490993 0.592719 0.490121 0.600381 0.491598 0.598786 0.464976 0.662238 0.468275 0.667224 0.467729 0.662565 0.534893 0.644183 0.537939 0.644955 0.538185 0.642201 0.493082 0.72412 0.49261 0.729333 0.498056 0.729325 0.534893 0.704966 0.541031 0.707526 0.538185 0.708456 </float_array>
+          <technique_common>
+            <accessor source="#partsB.xno-geometry-uv-array" count="36" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="partsB.xno-geometry-uv2">
+          <float_array id="partsB.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#partsB.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="partsB.xno-geometry-color">
+          <float_array id="partsB.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#partsB.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="partsB.xno-geometry-vertex">
+          <input semantic="POSITION" source="#partsB.xno-geometry-position" />
+        </vertices>
+        <triangles material="partsB.xno0" count="24">
+          <input semantic="VERTEX" source="#partsB.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#partsB.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#partsB.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#partsB.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#partsB.xno-geometry-color" offset="4" set="0" />
+          <p>28 7 13 0 0 30 7 16 0 0 25 7 12 0 0 33 7 17 0 0 25 7 12 0 0 30 7 16 0 0 7 4 3 0 0 26 4 13 0 0 25 7 12 0 0 26 4 13 0 0 7 4 3 0 0 10 4 4 0 0 14 3 7 0 0 11 3 5 0 0 5 3 2 0 0 11 3 5 0 0 14 3 7 0 0 27 3 14 0 0 23 3 11 0 0 27 3 14 0 0 14 3 7 0 0 27 3 14 0 0 23 3 11 0 0 29 3 15 0 0 36 3 19 0 0 29 3 15 0 0 23 3 11 0 0 24 2 12 0 0 32 2 17 0 0 8 2 3 0 0 2 2 0 0 0 8 2 3 0 0 17 2 8 0 0 32 2 17 0 0 17 2 8 0 0 8 2 3 0 0 17 2 8 0 0 32 2 17 0 0 20 2 9 0 0 39 2 20 0 0 20 2 9 0 0 32 2 17 0 0 16 1 8 0 0 13 1 6 0 0 1 1 0 0 0 4 1 1 0 0 1 1 0 0 0 13 1 6 0 0 3 0 1 0 0 9 0 4 0 0 0 0 0 0 0 6 0 3 0 0 0 0 0 0 0 9 0 4 0 0 15 5 8 0 0 18 5 9 0 0 12 5 6 0 0 21 5 10 0 0 12 5 6 0 0 18 5 9 0 0 34 8 17 0 0 31 8 16 0 0 40 8 20 0 0 37 8 18 0 0 40 8 20 0 0 31 8 16 0 0 35 6 18 0 0 22 6 10 0 0 38 6 20 0 0 19 6 9 0 0 38 6 20 0 0 22 6 10 0 0 </p>
+        </triangles>
+        <triangles material="partsB.xno0" count="16">
+          <input semantic="VERTEX" source="#partsB.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#partsB.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#partsB.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#partsB.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#partsB.xno-geometry-color" offset="4" set="0" />
+          <p>42 10 22 0 0 49 10 25 0 0 56 10 28 0 0 63 10 32 0 0 56 10 28 0 0 49 10 25 0 0 56 10 28 0 0 63 10 32 0 0 68 10 34 0 0 52 12 26 0 0 65 12 33 0 0 60 12 30 0 0 65 12 33 0 0 52 12 26 0 0 53 12 27 0 0 45 12 23 0 0 53 12 27 0 0 52 12 26 0 0 50 9 26 0 0 47 9 24 0 0 44 9 23 0 0 41 9 21 0 0 44 9 23 0 0 47 9 24 0 0 43 11 21 0 0 57 11 29 0 0 46 11 23 0 0 54 11 27 0 0 46 11 23 0 0 57 11 29 0 0 67 15 33 0 0 70 15 35 0 0 61 15 30 0 0 64 15 31 0 0 61 15 30 0 0 70 15 35 0 0 62 13 31 0 0 48 13 24 0 0 59 13 30 0 0 51 13 26 0 0 59 13 30 0 0 48 13 24 0 0 66 14 33 0 0 55 14 27 0 0 69 14 35 0 0 58 14 29 0 0 69 14 35 0 0 55 14 27 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="partsB.xno-controller">
+      <skin source="#partsB.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="partsB.xno-controller-Joints">
+          <Name_array id="partsB.xno-controller-Joints-array" count="2">partsB partsB01 </Name_array>
+          <technique_common>
+            <accessor source="#partsB.xno-controller-Joints-array" count="2">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="partsB.xno-controller-Matrices">
+          <float_array id="partsB.xno-controller-Matrices-array" count="32">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 -14 0 1 0 20 0 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#partsB.xno-controller-Matrices-array" count="2" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="partsB.xno-controller-Weights">
+          <float_array id="partsB.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#partsB.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#partsB.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#partsB.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="71">
+          <input semantic="JOINT" offset="0" source="#partsB.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#partsB.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="partsB" sid="partsB" name="partsB" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <node id="partsB01" sid="partsB01" name="partsB01" type="JOINT">
+          <matrix>1 0 0 14 0 1 0 -20 0 0 1 -0 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="partsB.xno" sid="partsB.xno" name="partsB.xno">
+        <instance_controller url="#partsB.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="partsB.xno0" target="#partsB.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

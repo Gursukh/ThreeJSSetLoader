@@ -1,0 +1,268 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="kdv_window01_dfsp_n.dds-image" name="kdv_window01_dfsp_n.dds-image">
+      <init_from>./textures/kdv_window01_dfsp_n.dds</init_from>
+    </image>
+    <image id="kdv_window01_ntxx_n.dds-image" name="kdv_window01_ntxx_n.dds-image">
+      <init_from>./textures/kdv_window01_ntxx_n.dds</init_from>
+    </image>
+    <image id="kdv_window01_xxpt_p_n.dds-image" name="kdv_window01_xxpt_p_n.dds-image">
+      <init_from>./textures/kdv_window01_xxpt_p_n.dds</init_from>
+    </image>
+    <image id="kdv_window01_xxlu_n.dds-image" name="kdv_window01_xxlu_n.dds-image">
+      <init_from>./textures/kdv_window01_xxlu_n.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="kdv_obj_stained01.xno0ID" name="kdv_obj_stained01.xno0">
+      <instance_effect url="#kdv_obj_stained01.xno0-effect" />
+    </material>
+    <material id="kdv_obj_stained01.xno1ID" name="kdv_obj_stained01.xno1">
+      <instance_effect url="#kdv_obj_stained01.xno1-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="kdv_obj_stained01.xno0-effect" name="kdv_obj_stained01.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_window01_dfsp_n.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_window01_dfsp_n.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_window01_dfsp_n.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_window01_dfsp_n.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_window01_xxlu_n.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_window01_xxlu_n.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_window01_xxlu_n.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_window01_xxlu_n.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_window01_xxlu_n.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_window01_xxlu_n.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_window01_xxlu_n.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_window01_xxlu_n.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_window01_dfsp_n.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="kdv_obj_stained01.xno1-effect" name="kdv_obj_stained01.xno1-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_window01_dfsp_n.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_window01_dfsp_n.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_window01_dfsp_n.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_window01_dfsp_n.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_window01_ntxx_n.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_window01_ntxx_n.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_window01_ntxx_n.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_window01_ntxx_n.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_window01_xxpt_p_n.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_window01_xxpt_p_n.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_window01_xxpt_p_n.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_window01_xxpt_p_n.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_window01_ntxx_n.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_window01_ntxx_n.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_window01_ntxx_n.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_window01_ntxx_n.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_window01_dfsp_n.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="kdv_obj_stained01.xno-geometry" name="kdv_obj_stained01.xno-geometry">
+      <mesh>
+        <source id="kdv_obj_stained01.xno-geometry-position">
+          <float_array id="kdv_obj_stained01.xno-geometry-position-array" count="54">-358.92 358.91 4.98765 -358.835 -769.972 4.98957 -283.762 562.309 4.96115 -159.794 688.792 4.91468 0.303143 769.972 4.85253 160.411 688.792 4.79414 284.474 561.599 4.74547 358.884 358.91 4.71769 358.92 -769.971 4.71967 -358.92 358.91 -4.71963 -358.835 -769.972 -4.71771 -283.762 562.309 -4.74613 -159.794 688.792 -4.7926 0.303149 769.972 -4.85474 160.41 688.792 -4.91314 284.474 561.599 -4.9618 358.884 358.91 -4.98958 358.92 -769.971 -4.9876 </float_array>
+          <technique_common>
+            <accessor source="#kdv_obj_stained01.xno-geometry-position-array" count="18" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_obj_stained01.xno-geometry-normal">
+          <float_array id="kdv_obj_stained01.xno-geometry-normal-array" count="6">0.000376025 1.73133e-006 1 -0.000379546 9.9726e-006 -1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_obj_stained01.xno-geometry-normal-array" count="2" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_obj_stained01.xno-geometry-uv">
+          <float_array id="kdv_obj_stained01.xno-geometry-uv-array" count="18">0.49975 0.732834 0.499691 0.000499487 0.447452 0.864784 0.36119 0.946836 0.249789 0.999501 0.13838 0.946836 0.0520519 0.864323 0.000275135 0.732834 0.000249743 0.000500143 </float_array>
+          <technique_common>
+            <accessor source="#kdv_obj_stained01.xno-geometry-uv-array" count="9" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_obj_stained01.xno-geometry-uv2">
+          <float_array id="kdv_obj_stained01.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_obj_stained01.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_obj_stained01.xno-geometry-color">
+          <float_array id="kdv_obj_stained01.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_obj_stained01.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="kdv_obj_stained01.xno-geometry-vertex">
+          <input semantic="POSITION" source="#kdv_obj_stained01.xno-geometry-position" />
+        </vertices>
+        <triangles material="kdv_obj_stained01.xno0" count="7">
+          <input semantic="VERTEX" source="#kdv_obj_stained01.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#kdv_obj_stained01.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#kdv_obj_stained01.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#kdv_obj_stained01.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#kdv_obj_stained01.xno-geometry-color" offset="4" set="0" />
+          <p>4 0 4 0 0 3 0 3 0 0 5 0 5 0 0 2 0 2 0 0 5 0 5 0 0 3 0 3 0 0 5 0 5 0 0 2 0 2 0 0 6 0 6 0 0 0 0 0 0 0 6 0 6 0 0 2 0 2 0 0 6 0 6 0 0 0 0 0 0 0 7 0 7 0 0 7 0 7 0 0 0 0 0 0 0 8 0 8 0 0 1 0 1 0 0 8 0 8 0 0 0 0 0 0 0 </p>
+        </triangles>
+        <triangles material="kdv_obj_stained01.xno1" count="7">
+          <input semantic="VERTEX" source="#kdv_obj_stained01.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#kdv_obj_stained01.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#kdv_obj_stained01.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#kdv_obj_stained01.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#kdv_obj_stained01.xno-geometry-color" offset="4" set="0" />
+          <p>9 1 0 0 0 17 1 8 0 0 10 1 1 0 0 17 1 8 0 0 9 1 0 0 0 16 1 7 0 0 16 1 7 0 0 9 1 0 0 0 15 1 6 0 0 11 1 2 0 0 15 1 6 0 0 9 1 0 0 0 15 1 6 0 0 11 1 2 0 0 14 1 5 0 0 12 1 3 0 0 14 1 5 0 0 11 1 2 0 0 14 1 5 0 0 12 1 3 0 0 13 1 4 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="kdv_obj_stained01.xno-controller">
+      <skin source="#kdv_obj_stained01.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="kdv_obj_stained01.xno-controller-Joints">
+          <Name_array id="kdv_obj_stained01.xno-controller-Joints-array" count="1">kdv_obj_stained01 </Name_array>
+          <technique_common>
+            <accessor source="#kdv_obj_stained01.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_obj_stained01.xno-controller-Matrices">
+          <float_array id="kdv_obj_stained01.xno-controller-Matrices-array" count="16">1 0 -1.74846e-007 0 0 1 0 0 1.74846e-007 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_obj_stained01.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_obj_stained01.xno-controller-Weights">
+          <float_array id="kdv_obj_stained01.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_obj_stained01.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#kdv_obj_stained01.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#kdv_obj_stained01.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="18">
+          <input semantic="JOINT" offset="0" source="#kdv_obj_stained01.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#kdv_obj_stained01.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="kdv_obj_stained01" sid="kdv_obj_stained01" name="kdv_obj_stained01" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="kdv_obj_stained01.xno" sid="kdv_obj_stained01.xno" name="kdv_obj_stained01.xno">
+        <instance_controller url="#kdv_obj_stained01.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="kdv_obj_stained01.xno0" target="#kdv_obj_stained01.xno0ID" />
+              <instance_material symbol="kdv_obj_stained01.xno1" target="#kdv_obj_stained01.xno1ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

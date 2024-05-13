@@ -1,0 +1,198 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="dtd_sand01_dfpt_a.dds-image" name="dtd_sand01_dfpt_a.dds-image">
+      <init_from>./textures/dtd_sand01_dfpt_a.dds</init_from>
+    </image>
+    <image id="dtd_sand02_xxpt_a.dds-image" name="dtd_sand02_xxpt_a.dds-image">
+      <init_from>./textures/dtd_sand02_xxpt_a.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="dtd_obj_flowingsandB.xno0ID" name="dtd_obj_flowingsandB.xno0">
+      <instance_effect url="#dtd_obj_flowingsandB.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="dtd_obj_flowingsandB.xno0-effect" name="dtd_obj_flowingsandB.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="dtd_sand01_dfpt_a.dds-image-surface">
+          <surface type="2D">
+            <init_from>dtd_sand01_dfpt_a.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="dtd_sand01_dfpt_a.dds-image-sampler">
+          <sampler2D>
+            <source>dtd_sand01_dfpt_a.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="dtd_sand02_xxpt_a.dds-image-surface">
+          <surface type="2D">
+            <init_from>dtd_sand02_xxpt_a.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="dtd_sand02_xxpt_a.dds-image-sampler">
+          <sampler2D>
+            <source>dtd_sand02_xxpt_a.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="dtd_sand02_xxpt_a.dds-image-surface">
+          <surface type="2D">
+            <init_from>dtd_sand02_xxpt_a.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="dtd_sand02_xxpt_a.dds-image-sampler">
+          <sampler2D>
+            <source>dtd_sand02_xxpt_a.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="dtd_sand01_dfpt_a.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="dtd_obj_flowingsandB.xno-geometry" name="dtd_obj_flowingsandB.xno-geometry">
+      <mesh>
+        <source id="dtd_obj_flowingsandB.xno-geometry-position">
+          <float_array id="dtd_obj_flowingsandB.xno-geometry-position-array" count="186">-217.613 150.829 -89.6477 -217.266 150.829 90.4851 -211.825 521.12 -83.8596 -211.487 521.12 84.6429 -184.431 1849.14 -75.9782 -184.137 1849.14 76.6879 -161.542 1969.86 20.6125 -161.542 1969.86 -22.126 -161.542 2143.47 20.6125 -161.542 2143.47 -22.126 -134.844 2170.86 -22.126 -134.827 2170.86 20.6126 -90.4851 150.829 -217.266 -89.6476 150.829 217.613 -88.0782 521.12 -203.238 -87.2631 521.12 203.563 -76.6879 1849.14 -184.137 -75.9782 1849.14 184.431 -58.1318 1979.21 -54.4972 -58.1318 2107.97 53.976 -58.1318 2107.97 -54.4972 -58.1318 2187.26 -54.4972 -58.1318 1969.68 53.976 -58.1318 2187.26 53.976 1.62165 2332.65 -108.923 1.62166 1943.71 -108.923 13.519 2352.44 128.642 13.519 1927.42 128.642 75.9782 1849.14 -184.431 75.9782 1849.14 -184.431 76.6879 1849.14 184.137 87.2631 521.12 -203.563 87.2631 521.12 -203.563 88.0783 521.12 203.238 89.6477 150.829 -217.613 89.6477 150.829 -217.613 90.4851 150.829 217.266 97.1328 2472.63 247.83 97.1328 1803.68 247.83 97.4831 1911.56 -250.763 97.4831 1911.56 -250.763 97.5901 1074.83 -250.877 97.6957 2478.02 -251 97.6972 238.09 -250.992 109.065 2501.12 257.783 109.178 1325.88 257.799 109.29 150.637 257.816 184.137 1849.14 -76.6879 184.431 1849.14 75.9782 186.774 2720.63 294.314 211.487 521.12 -84.6429 211.825 521.12 83.8596 212.392 2008.97 -327.946 212.411 2727.35 -327.935 217.266 150.829 -90.4851 217.613 150.829 89.6476 219.938 2722.91 317.569 225.969 1131.98 -342.718 239.545 254.995 -357.49 246.92 2619.07 353.001 261.984 1391.58 363.599 277.047 164.089 374.197 </float_array>
+          <technique_common>
+            <accessor source="#dtd_obj_flowingsandB.xno-geometry-position-array" count="62" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="dtd_obj_flowingsandB.xno-geometry-normal">
+          <float_array id="dtd_obj_flowingsandB.xno-geometry-normal-array" count="3">0 0 0 </float_array>
+          <technique_common>
+            <accessor source="#dtd_obj_flowingsandB.xno-geometry-normal-array" count="1" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="dtd_obj_flowingsandB.xno-geometry-uv">
+          <float_array id="dtd_obj_flowingsandB.xno-geometry-uv-array" count="122">-0.238806 -0.999572 0.135495 -0.999572 -0.238806 -0.151164 0.135495 -0.151164 -0.238806 2.47978 0.135495 2.47978 0.990061 -0.24827 2.00536 -1.26195 0.990061 0.581842 2.00536 -0.473866 1.76312 -0.3413 1.23155 0.712782 -0.61089 -0.999572 0.509786 -0.999572 -0.61089 -0.151164 0.509786 -0.151164 -0.61089 2.47978 0.509786 2.47978 0.986604 -1.21993 2.02215 0.412113 0.986604 -0.642991 0.986604 -0.269741 2.02215 -0.24911 2.02215 0.79123 0.00390289 1.95634 0.00390289 1.36142 0.983284 2.2366 0.983284 1.13882 -0.983388 2.47978 2.00676 2.47978 0.884061 2.47978 -0.986972 -0.151164 2.00676 -0.151164 0.884061 -0.151164 -0.986972 -0.999572 2.00676 -0.999572 0.884061 -0.999572 2.02559 2.54702 2.02559 0.81922 -0.984833 1.31224 -0.985832 0.0323499 -0.986862 2.17872 -0.986832 -1.24754 0.00804745 1.96092 0.00834379 0.39791 0.00864013 -1.1651 1.63255 2.47978 1.25832 2.47978 0.256717 2.25018 1.63255 -0.151164 1.25832 -0.151164 -2.00404 1.47183 -2.00233 2.5601 1.63255 -0.999572 1.25832 -0.999572 0.592665 2.25324 -1.99572 0.119781 -1.98174 -1.22169 1.01728 2.09012 1.02332 0.457782 1.02796 -1.19657 </float_array>
+          <technique_common>
+            <accessor source="#dtd_obj_flowingsandB.xno-geometry-uv-array" count="61" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="dtd_obj_flowingsandB.xno-geometry-uv2">
+          <float_array id="dtd_obj_flowingsandB.xno-geometry-uv2-array" count="122">-0.238806 -0.999572 0.135495 -0.999572 -0.238806 -0.151164 0.135495 -0.151164 -0.238806 2.47978 0.135495 2.47978 0.990061 -0.24827 2.00536 -1.26195 0.990061 0.581842 2.00536 -0.473866 1.76312 -0.3413 1.23155 0.712782 -0.61089 -0.999572 0.509786 -0.999572 -0.61089 -0.151164 0.509786 -0.151164 -0.61089 2.47978 0.509786 2.47978 0.986604 -1.21993 2.02215 0.412113 0.986604 -0.642991 0.986604 -0.269741 2.02215 -0.24911 2.02215 0.79123 0.00390289 1.95634 0.00390289 1.36142 0.983284 2.2366 0.983284 1.13882 -0.983388 2.47978 2.00676 2.47978 0.884061 2.47978 -0.986972 -0.151164 2.00676 -0.151164 0.884061 -0.151164 -0.986972 -0.999572 2.00676 -0.999572 0.884061 -0.999572 2.02559 2.54702 2.02559 0.81922 -0.984833 1.31224 -0.985832 0.0323499 -0.986862 2.17872 -0.986832 -1.24754 0.00804745 1.96092 0.00834379 0.39791 0.00864013 -1.1651 1.63255 2.47978 1.25832 2.47978 0.256717 2.25018 1.63255 -0.151164 1.25832 -0.151164 -2.00404 1.47183 -2.00233 2.5601 1.63255 -0.999572 1.25832 -0.999572 0.592665 2.25324 -1.99572 0.119781 -1.98174 -1.22169 1.01728 2.09012 1.02332 0.457782 1.02796 -1.19657 </float_array>
+          <technique_common>
+            <accessor source="#dtd_obj_flowingsandB.xno-geometry-uv2-array" count="61" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="dtd_obj_flowingsandB.xno-geometry-color">
+          <float_array id="dtd_obj_flowingsandB.xno-geometry-color-array" count="20">1 1 1 0 1 1 1 0.972549 1 1 1 1 0 0 0 0 0.498039 0.498039 0.498039 1 </float_array>
+          <technique_common>
+            <accessor source="#dtd_obj_flowingsandB.xno-geometry-color-array" count="5" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="dtd_obj_flowingsandB.xno-geometry-vertex">
+          <input semantic="POSITION" source="#dtd_obj_flowingsandB.xno-geometry-position" />
+        </vertices>
+        <triangles material="dtd_obj_flowingsandB.xno0" count="56">
+          <input semantic="VERTEX" source="#dtd_obj_flowingsandB.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#dtd_obj_flowingsandB.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#dtd_obj_flowingsandB.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#dtd_obj_flowingsandB.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#dtd_obj_flowingsandB.xno-geometry-color" offset="4" set="0" />
+          <p>56 0 55 55 2 49 0 48 48 2 59 0 58 58 2 44 0 43 43 2 59 0 58 58 2 49 0 48 48 2 59 0 58 58 2 44 0 43 43 2 60 0 59 59 2 45 0 44 44 2 60 0 59 59 2 44 0 43 43 2 60 0 59 59 2 45 0 44 44 2 61 0 60 60 0 46 0 45 45 0 61 0 60 60 0 45 0 44 44 2 28 0 28 28 2 31 0 31 31 1 16 0 16 16 2 14 0 14 14 1 16 0 16 16 2 31 0 31 31 1 16 0 16 16 2 14 0 14 14 1 4 0 4 4 2 2 0 2 2 1 4 0 4 4 2 14 0 14 14 1 4 0 4 4 2 2 0 2 2 1 5 0 5 5 2 3 0 3 3 1 5 0 5 5 2 2 0 2 2 1 5 0 5 5 2 3 0 3 3 1 17 0 17 17 2 15 0 15 15 1 17 0 17 17 2 3 0 3 3 1 17 0 17 17 2 15 0 15 15 1 30 0 30 30 2 33 0 33 33 1 30 0 30 30 2 15 0 15 15 1 51 0 50 50 1 30 0 30 30 2 33 0 33 33 1 30 0 30 30 2 51 0 50 50 1 48 0 47 47 2 48 0 47 47 2 51 0 50 50 1 47 0 46 46 2 50 0 49 49 1 47 0 46 46 2 51 0 50 50 1 47 0 46 46 2 50 0 49 49 1 29 0 29 29 2 32 0 32 32 1 29 0 29 29 2 50 0 49 49 1 50 0 49 49 1 35 0 35 35 0 32 0 32 32 1 35 0 35 35 0 50 0 49 49 1 54 0 53 53 0 51 0 50 50 1 54 0 53 53 0 50 0 49 49 1 54 0 53 53 0 51 0 50 50 1 55 0 54 54 0 33 0 33 33 1 55 0 54 54 0 51 0 50 50 1 55 0 54 54 0 33 0 33 33 1 36 0 36 36 0 15 0 15 15 1 36 0 36 36 0 33 0 33 33 1 36 0 36 36 0 15 0 15 15 1 13 0 13 13 0 3 0 3 3 1 13 0 13 13 0 15 0 15 15 1 13 0 13 13 0 3 0 3 3 1 1 0 1 1 0 2 0 2 2 1 1 0 1 1 0 3 0 3 3 1 1 0 1 1 0 2 0 2 2 1 0 0 0 0 0 14 0 14 14 1 0 0 0 0 0 2 0 2 2 1 0 0 0 0 0 14 0 14 14 1 12 0 12 12 0 31 0 31 31 1 12 0 12 12 0 14 0 14 14 1 12 0 12 12 0 31 0 31 31 1 34 0 34 34 0 19 0 19 19 2 6 0 6 6 3 22 0 22 22 3 6 0 6 6 3 19 0 19 19 2 8 0 8 8 2 23 0 23 23 2 8 0 8 8 2 19 0 19 19 2 8 0 8 8 2 23 0 23 23 2 11 0 11 11 2 41 0 40 40 4 58 0 57 57 3 43 0 42 42 3 58 0 57 57 3 41 0 40 40 4 57 0 56 56 4 40 0 39 39 2 57 0 56 56 4 41 0 40 40 4 57 0 56 56 4 40 0 39 39 2 52 0 51 51 2 42 0 41 41 2 52 0 51 51 2 40 0 39 39 2 52 0 51 51 2 42 0 41 41 2 53 0 52 52 2 9 0 9 9 2 18 0 18 18 3 7 0 7 7 3 18 0 18 18 3 9 0 9 9 2 20 0 20 20 2 10 0 10 10 2 20 0 20 20 2 9 0 9 9 2 20 0 20 20 2 10 0 10 10 2 21 0 21 21 2 42 0 41 41 2 25 0 25 25 3 24 0 24 24 2 25 0 25 25 3 42 0 41 41 2 39 0 39 39 3 37 0 37 37 2 27 0 27 27 3 38 0 38 38 3 27 0 27 27 3 37 0 37 37 2 26 0 26 26 2 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="dtd_obj_flowingsandB.xno-controller">
+      <skin source="#dtd_obj_flowingsandB.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="dtd_obj_flowingsandB.xno-controller-Joints">
+          <Name_array id="dtd_obj_flowingsandB.xno-controller-Joints-array" count="1">dtd_obj_flowingsandB </Name_array>
+          <technique_common>
+            <accessor source="#dtd_obj_flowingsandB.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="dtd_obj_flowingsandB.xno-controller-Matrices">
+          <float_array id="dtd_obj_flowingsandB.xno-controller-Matrices-array" count="16">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#dtd_obj_flowingsandB.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="dtd_obj_flowingsandB.xno-controller-Weights">
+          <float_array id="dtd_obj_flowingsandB.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#dtd_obj_flowingsandB.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#dtd_obj_flowingsandB.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#dtd_obj_flowingsandB.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="62">
+          <input semantic="JOINT" offset="0" source="#dtd_obj_flowingsandB.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#dtd_obj_flowingsandB.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="dtd_obj_flowingsandB" sid="dtd_obj_flowingsandB" name="dtd_obj_flowingsandB" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="dtd_obj_flowingsandB.xno" sid="dtd_obj_flowingsandB.xno" name="dtd_obj_flowingsandB.xno">
+        <instance_controller url="#dtd_obj_flowingsandB.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="dtd_obj_flowingsandB.xno0" target="#dtd_obj_flowingsandB.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

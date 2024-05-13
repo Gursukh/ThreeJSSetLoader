@@ -1,0 +1,228 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="dtd_movingfloor01_dfsp_a.dds-image" name="dtd_movingfloor01_dfsp_a.dds-image">
+      <init_from>./textures/dtd_movingfloor01_dfsp_a.dds</init_from>
+    </image>
+    <image id="dtd_pillar07_dfsp_a.dds-image" name="dtd_pillar07_dfsp_a.dds-image">
+      <init_from>./textures/dtd_pillar07_dfsp_a.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="dtd_obj_movingfloor.xno0ID" name="dtd_obj_movingfloor.xno0">
+      <instance_effect url="#dtd_obj_movingfloor.xno0-effect" />
+    </material>
+    <material id="dtd_obj_movingfloor.xno1ID" name="dtd_obj_movingfloor.xno1">
+      <instance_effect url="#dtd_obj_movingfloor.xno1-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="dtd_obj_movingfloor.xno0-effect" name="dtd_obj_movingfloor.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="dtd_movingfloor01_dfsp_a.dds-image-surface">
+          <surface type="2D">
+            <init_from>dtd_movingfloor01_dfsp_a.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="dtd_movingfloor01_dfsp_a.dds-image-sampler">
+          <sampler2D>
+            <source>dtd_movingfloor01_dfsp_a.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="dtd_movingfloor01_dfsp_a.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="dtd_obj_movingfloor.xno1-effect" name="dtd_obj_movingfloor.xno1-effect">
+      <profile_COMMON>
+        <newparam sid="dtd_pillar07_dfsp_a.dds-image-surface">
+          <surface type="2D">
+            <init_from>dtd_pillar07_dfsp_a.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="dtd_pillar07_dfsp_a.dds-image-sampler">
+          <sampler2D>
+            <source>dtd_pillar07_dfsp_a.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="dtd_pillar07_dfsp_a.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="dtd_obj_movingfloor.xno-geometry" name="dtd_obj_movingfloor.xno-geometry">
+      <mesh>
+        <source id="dtd_obj_movingfloor.xno-geometry-position">
+          <float_array id="dtd_obj_movingfloor.xno-geometry-position-array" count="228">-350 -90 0 -350 -90 0 -350 90 0 -350 90 0 -350 90 80 -350 90 80 -350 90 80 -350 -90 80 -350 -90 80 -350 -90 80 -300.122 -90 80 -300.122 -90 80 -300.122 -90 80 -300.122 90 80 -300.122 90 80 -300.122 90 80 -300.061 -30.0735 80 -300.061 -30.0735 80 -300.061 -30.0735 80 -300.061 -30.0735 80 -300.061 30.0735 80 -300.061 30.0735 80 -300.061 30.0735 80 -300.061 30.0735 80 -300 30 0 -300 30 0 -300 -30 0 -300 -30 0 300 30 0 300 30 0 300 -30 0 300 -30 0 300.037 -30.0443 80 300.037 -30.0443 80 300.037 -30.0443 80 300.037 -30.0443 80 300.037 30.0443 80 300.037 30.0443 80 300.037 30.0443 80 300.037 30.0443 80 300.074 -90 80 300.074 -90 80 300.074 -90 80 300.074 90 80 300.074 90 80 300.074 90 80 350 90 80 350 90 80 350 90 80 350 -90 80 350 -90 80 350 -90 80 350 -90 0 350 -90 0 350 90 0 350 90 0 -300 -30 70 -300 -30 70 -300 30 70 -300 30 70 -300 30 680 -300 30 680 -300 30 680 -300 -30 680 -300 -30 680 -300 -30 680 300 -30 680 300 -30 680 300 -30 680 300 30 70 300 30 70 300 30 680 300 30 680 300 30 680 300 -30 70 300 -30 70 </float_array>
+          <technique_common>
+            <accessor source="#dtd_obj_movingfloor.xno-geometry-position-array" count="76" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="dtd_obj_movingfloor.xno-geometry-normal">
+          <float_array id="dtd_obj_movingfloor.xno-geometry-normal-array" count="36">-1 0 0 0 -1 0 0 1 0 -6.35326e-009 3.91292e-012 1 -4.8693e-005 1 0.000918446 1 0 0.000765228 -4.11055e-006 -1 0.000887651 -1 0 0.000460815 -4.8693e-005 -1 0.000553249 -4.10992e-006 1 0.000584053 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#dtd_obj_movingfloor.xno-geometry-normal-array" count="12" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="dtd_obj_movingfloor.xno-geometry-uv">
+          <float_array id="dtd_obj_movingfloor.xno-geometry-uv-array" count="86">2.75289 1.00091 1.99982 1.00091 1.99982 0.734936 -3.9925e-005 0.297524 2.75289 0.734936 0.998903 0.297524 -3.9925e-005 0.743512 0.998903 0.50218 2.88781 0.734936 -3.9925e-005 0.50218 1.84763 0.734936 1.60408 0.734936 0.667242 0.50218 1.47066 0.734936 0.334359 0.50218 1.47077 1.00091 1.60447 1.00091 0.133845 1.00091 0.000145178 1.00091 2.94145 1.00091 0.000145178 0.734936 2.94135 0.734936 1.99675 0.50218 0.134042 0.734936 1.99675 0.743512 4.61424 0.734936 0.145848 0.734936 5.50441 0.734936 4.75409 0.734936 4.75409 1.00091 5.50441 1.00091 -1.03214 -0.992337 1 1.01667 -1.03214 -0.69189 0 1.01667 0.993667 -0.692545 0 0 0.993667 -0.993003 1 0 2.99259 -0.993003 5.02802 -0.692545 2.99259 -0.692545 5.02802 -0.993003 </float_array>
+          <technique_common>
+            <accessor source="#dtd_obj_movingfloor.xno-geometry-uv-array" count="43" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="dtd_obj_movingfloor.xno-geometry-uv2">
+          <float_array id="dtd_obj_movingfloor.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#dtd_obj_movingfloor.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="dtd_obj_movingfloor.xno-geometry-color">
+          <float_array id="dtd_obj_movingfloor.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#dtd_obj_movingfloor.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="dtd_obj_movingfloor.xno-geometry-vertex">
+          <input semantic="POSITION" source="#dtd_obj_movingfloor.xno-geometry-position" />
+        </vertices>
+        <triangles material="dtd_obj_movingfloor.xno0" count="32">
+          <input semantic="VERTEX" source="#dtd_obj_movingfloor.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#dtd_obj_movingfloor.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#dtd_obj_movingfloor.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#dtd_obj_movingfloor.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#dtd_obj_movingfloor.xno-geometry-color" offset="4" set="0" />
+          <p>6 2 2 0 0 15 2 10 0 0 3 2 1 0 0 45 2 26 0 0 3 2 1 0 0 15 2 10 0 0 3 2 1 0 0 45 2 26 0 0 54 2 18 0 0 47 2 20 0 0 54 2 18 0 0 45 2 26 0 0 40 3 7 0 0 49 3 5 0 0 34 3 12 0 0 46 3 3 0 0 34 3 12 0 0 49 3 5 0 0 34 3 12 0 0 46 3 3 0 0 38 3 14 0 0 43 3 9 0 0 38 3 14 0 0 46 3 3 0 0 11 3 7 0 0 18 3 12 0 0 8 3 5 0 0 22 3 14 0 0 8 3 5 0 0 18 3 12 0 0 8 3 5 0 0 22 3 14 0 0 5 3 3 0 0 13 3 9 0 0 5 3 3 0 0 22 3 14 0 0 9 1 4 0 0 1 1 0 0 0 12 1 8 0 0 52 1 29 0 0 12 1 8 0 0 1 1 0 0 0 12 1 8 0 0 52 1 29 0 0 42 1 25 0 0 50 1 28 0 0 42 1 25 0 0 52 1 29 0 0 21 3 9 0 0 39 3 22 0 0 14 3 6 0 0 44 3 24 0 0 14 3 6 0 0 39 3 22 0 0 17 3 9 0 0 10 3 6 0 0 35 3 22 0 0 41 3 24 0 0 35 3 22 0 0 10 3 6 0 0 37 8 23 0 0 20 6 13 0 0 29 8 17 0 0 24 6 15 0 0 29 8 17 0 0 20 6 13 0 0 19 5 11 0 0 27 5 16 0 0 23 5 13 0 0 25 5 15 0 0 23 5 13 0 0 27 5 16 0 0 16 4 11 0 0 33 9 21 0 0 26 4 16 0 0 31 9 19 0 0 26 4 16 0 0 33 9 21 0 0 36 7 23 0 0 28 7 17 0 0 32 7 20 0 0 30 7 18 0 0 32 7 20 0 0 28 7 17 0 0 2 0 1 0 0 0 0 0 0 0 4 0 2 0 0 7 0 4 0 0 4 0 2 0 0 0 0 0 0 0 48 10 27 0 0 51 10 28 0 0 55 10 30 0 0 53 10 29 0 0 55 10 30 0 0 51 10 28 0 0 </p>
+        </triangles>
+        <triangles material="dtd_obj_movingfloor.xno0" count="6">
+          <input semantic="VERTEX" source="#dtd_obj_movingfloor.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#dtd_obj_movingfloor.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#dtd_obj_movingfloor.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#dtd_obj_movingfloor.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#dtd_obj_movingfloor.xno-geometry-color" offset="4" set="0" />
+          <p>63 0 37 0 0 60 0 35 0 0 56 0 31 0 0 58 0 33 0 0 56 0 31 0 0 60 0 35 0 0 67 11 39 0 0 71 11 41 0 0 65 11 37 0 0 61 11 35 0 0 65 11 37 0 0 71 11 41 0 0 75 10 42 0 0 70 10 40 0 0 68 10 39 0 0 73 10 41 0 0 68 10 39 0 0 70 10 40 0 0 </p>
+        </triangles>
+        <triangles material="dtd_obj_movingfloor.xno1" count="4">
+          <input semantic="VERTEX" source="#dtd_obj_movingfloor.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#dtd_obj_movingfloor.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#dtd_obj_movingfloor.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#dtd_obj_movingfloor.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#dtd_obj_movingfloor.xno-geometry-color" offset="4" set="0" />
+          <p>72 2 38 0 0 69 2 32 0 0 62 2 36 0 0 59 2 34 0 0 62 2 36 0 0 69 2 32 0 0 57 1 32 0 0 74 1 34 0 0 64 1 38 0 0 66 1 36 0 0 64 1 38 0 0 74 1 34 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="dtd_obj_movingfloor.xno-controller">
+      <skin source="#dtd_obj_movingfloor.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="dtd_obj_movingfloor.xno-controller-Joints">
+          <Name_array id="dtd_obj_movingfloor.xno-controller-Joints-array" count="2">dtd_obj_movingfloor part01 </Name_array>
+          <technique_common>
+            <accessor source="#dtd_obj_movingfloor.xno-controller-Joints-array" count="2">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="dtd_obj_movingfloor.xno-controller-Matrices">
+          <float_array id="dtd_obj_movingfloor.xno-controller-Matrices-array" count="32">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#dtd_obj_movingfloor.xno-controller-Matrices-array" count="2" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="dtd_obj_movingfloor.xno-controller-Weights">
+          <float_array id="dtd_obj_movingfloor.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#dtd_obj_movingfloor.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#dtd_obj_movingfloor.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#dtd_obj_movingfloor.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="76">
+          <input semantic="JOINT" offset="0" source="#dtd_obj_movingfloor.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#dtd_obj_movingfloor.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="dtd_obj_movingfloor" sid="dtd_obj_movingfloor" name="dtd_obj_movingfloor" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <node id="part01" sid="part01" name="part01" type="JOINT">
+          <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="dtd_obj_movingfloor.xno" sid="dtd_obj_movingfloor.xno" name="dtd_obj_movingfloor.xno">
+        <instance_controller url="#dtd_obj_movingfloor.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="dtd_obj_movingfloor.xno0" target="#dtd_obj_movingfloor.xno0ID" />
+              <instance_material symbol="dtd_obj_movingfloor.xno1" target="#dtd_obj_movingfloor.xno1ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

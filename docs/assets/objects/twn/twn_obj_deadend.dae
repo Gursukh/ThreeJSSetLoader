@@ -1,0 +1,198 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="twn_deadend_dfpt_p_a.dds-image" name="twn_deadend_dfpt_p_a.dds-image">
+      <init_from>./textures/twn_deadend_dfpt_p_a.dds</init_from>
+    </image>
+    <image id="twn_deadend_xxlu_a.dds-image" name="twn_deadend_xxlu_a.dds-image">
+      <init_from>./textures/twn_deadend_xxlu_a.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="twn_obj_deadend.xno0ID" name="twn_obj_deadend.xno0">
+      <instance_effect url="#twn_obj_deadend.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="twn_obj_deadend.xno0-effect" name="twn_obj_deadend.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="twn_deadend_dfpt_p_a.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_deadend_dfpt_p_a.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_deadend_dfpt_p_a.dds-image-sampler">
+          <sampler2D>
+            <source>twn_deadend_dfpt_p_a.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_deadend_xxlu_a.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_deadend_xxlu_a.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_deadend_xxlu_a.dds-image-sampler">
+          <sampler2D>
+            <source>twn_deadend_xxlu_a.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_deadend_xxlu_a.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_deadend_xxlu_a.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_deadend_xxlu_a.dds-image-sampler">
+          <sampler2D>
+            <source>twn_deadend_xxlu_a.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_deadend_dfpt_p_a.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="twn_obj_deadend.xno-geometry" name="twn_obj_deadend.xno-geometry">
+      <mesh>
+        <source id="twn_obj_deadend.xno-geometry-position">
+          <float_array id="twn_obj_deadend.xno-geometry-position-array" count="36">-100 -8.74228e-006 -3.82137e-013 -86.6025 50 2.18557e-006 -86.6025 -50 -2.18557e-006 -50 86.6025 3.78552e-006 -50 -86.6025 -3.78552e-006 -4.37114e-006 100 4.37114e-006 1.31134e-005 -100 -4.37114e-006 50 86.6025 3.78552e-006 50 -86.6025 -3.78552e-006 86.6025 50 2.18557e-006 86.6025 -50 -2.18557e-006 100 0 0 </float_array>
+          <technique_common>
+            <accessor source="#twn_obj_deadend.xno-geometry-position-array" count="12" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_obj_deadend.xno-geometry-normal">
+          <float_array id="twn_obj_deadend.xno-geometry-normal-array" count="3">-5.60057e-016 -4.37114e-008 1 </float_array>
+          <technique_common>
+            <accessor source="#twn_obj_deadend.xno-geometry-normal-array" count="1" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_obj_deadend.xno-geometry-uv">
+          <float_array id="twn_obj_deadend.xno-geometry-uv-array" count="24">0.5 0 0.75 0.0669873 0.25 0.0669873 0.933013 0.25 0.0669873 0.25 1 0.5 0 0.5 0.933013 0.75 0.0669874 0.75 0.75 0.933013 0.25 0.933013 0.5 1 </float_array>
+          <technique_common>
+            <accessor source="#twn_obj_deadend.xno-geometry-uv-array" count="12" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_obj_deadend.xno-geometry-uv2">
+          <float_array id="twn_obj_deadend.xno-geometry-uv2-array" count="24">0.5 0 0.75 0.0669873 0.25 0.0669873 0.933013 0.25 0.0669873 0.25 1 0.5 0 0.5 0.933013 0.75 0.0669874 0.75 0.75 0.933013 0.25 0.933013 0.5 1 </float_array>
+          <technique_common>
+            <accessor source="#twn_obj_deadend.xno-geometry-uv2-array" count="12" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_obj_deadend.xno-geometry-color">
+          <float_array id="twn_obj_deadend.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#twn_obj_deadend.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="twn_obj_deadend.xno-geometry-vertex">
+          <input semantic="POSITION" source="#twn_obj_deadend.xno-geometry-position" />
+        </vertices>
+        <triangles material="twn_obj_deadend.xno0" count="10">
+          <input semantic="VERTEX" source="#twn_obj_deadend.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#twn_obj_deadend.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#twn_obj_deadend.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#twn_obj_deadend.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#twn_obj_deadend.xno-geometry-color" offset="4" set="0" />
+          <p>6 0 6 6 0 8 0 8 8 0 4 0 4 4 0 10 0 10 10 0 4 0 4 4 0 8 0 8 8 0 4 0 4 4 0 10 0 10 10 0 2 0 2 2 0 2 0 2 2 0 10 0 10 10 0 0 0 0 0 0 11 0 11 11 0 0 0 0 0 0 10 0 10 10 0 9 0 9 9 0 0 0 0 0 0 11 0 11 11 0 0 0 0 0 0 9 0 9 9 0 1 0 1 1 0 7 0 7 7 0 1 0 1 1 0 9 0 9 9 0 1 0 1 1 0 7 0 7 7 0 3 0 3 3 0 5 0 5 5 0 3 0 3 3 0 7 0 7 7 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="twn_obj_deadend.xno-controller">
+      <skin source="#twn_obj_deadend.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="twn_obj_deadend.xno-controller-Joints">
+          <Name_array id="twn_obj_deadend.xno-controller-Joints-array" count="1">twn_obj_deadend </Name_array>
+          <technique_common>
+            <accessor source="#twn_obj_deadend.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_obj_deadend.xno-controller-Matrices">
+          <float_array id="twn_obj_deadend.xno-controller-Matrices-array" count="16">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#twn_obj_deadend.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_obj_deadend.xno-controller-Weights">
+          <float_array id="twn_obj_deadend.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#twn_obj_deadend.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#twn_obj_deadend.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#twn_obj_deadend.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="12">
+          <input semantic="JOINT" offset="0" source="#twn_obj_deadend.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#twn_obj_deadend.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="twn_obj_deadend" sid="twn_obj_deadend" name="twn_obj_deadend" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="twn_obj_deadend.xno" sid="twn_obj_deadend.xno" name="twn_obj_deadend.xno">
+        <instance_controller url="#twn_obj_deadend.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="twn_obj_deadend.xno0" target="#twn_obj_deadend.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

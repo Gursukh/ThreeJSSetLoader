@@ -1,0 +1,286 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="kdv_decoration03_dfsp_z.dds-image" name="kdv_decoration03_dfsp_z.dds-image">
+      <init_from>./textures/kdv_decoration03_dfsp_z.dds</init_from>
+    </image>
+    <image id="kdv_decoration03_nt_z.dds-image" name="kdv_decoration03_nt_z.dds-image">
+      <init_from>./textures/kdv_decoration03_nt_z.dds</init_from>
+    </image>
+    <image id="kdv_debris05_dfsp_z.dds-image" name="kdv_debris05_dfsp_z.dds-image">
+      <init_from>./textures/kdv_debris05_dfsp_z.dds</init_from>
+    </image>
+    <image id="kdv_debris05_nt_z.dds-image" name="kdv_debris05_nt_z.dds-image">
+      <init_from>./textures/kdv_debris05_nt_z.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="test_kdv_obj_D_piller_1.xno0ID" name="test_kdv_obj_D_piller_1.xno0">
+      <instance_effect url="#test_kdv_obj_D_piller_1.xno0-effect" />
+    </material>
+    <material id="test_kdv_obj_D_piller_1.xno1ID" name="test_kdv_obj_D_piller_1.xno1">
+      <instance_effect url="#test_kdv_obj_D_piller_1.xno1-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="test_kdv_obj_D_piller_1.xno0-effect" name="test_kdv_obj_D_piller_1.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_decoration03_dfsp_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_decoration03_dfsp_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_decoration03_dfsp_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_decoration03_dfsp_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_decoration03_nt_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_decoration03_nt_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_decoration03_nt_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_decoration03_nt_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_decoration03_nt_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_decoration03_nt_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_decoration03_nt_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_decoration03_nt_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_decoration03_nt_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_decoration03_nt_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_decoration03_nt_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_decoration03_nt_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_decoration03_dfsp_z.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="test_kdv_obj_D_piller_1.xno1-effect" name="test_kdv_obj_D_piller_1.xno1-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_debris05_dfsp_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_debris05_dfsp_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_debris05_dfsp_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_debris05_dfsp_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_debris05_nt_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_debris05_nt_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_debris05_nt_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_debris05_nt_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_debris05_nt_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_debris05_nt_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_debris05_nt_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_debris05_nt_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_debris05_nt_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_debris05_nt_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_debris05_nt_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_debris05_nt_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_debris05_dfsp_z.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="test_kdv_obj_D_piller_1.xno-geometry" name="test_kdv_obj_D_piller_1.xno-geometry">
+      <mesh>
+        <source id="test_kdv_obj_D_piller_1.xno-geometry-position">
+          <float_array id="test_kdv_obj_D_piller_1.xno-geometry-position-array" count="120">-84.1721 333.443 66.5982 -84.1721 333.443 66.5982 -84.1721 333.443 66.5982 -84.1721 333.443 66.5982 -83.9955 -0.166931 62.8682 -83.9955 -0.166931 62.8682 -83.9955 -0.166931 62.8682 -83.9465 678.922 70.2635 -83.9465 678.922 70.2635 -83.9465 678.922 70.2635 -81.1958 334.314 -72.3356 -81.1958 334.314 -72.3356 -81.1958 334.314 -72.3356 -81.1958 334.314 -72.3356 -81.0459 -0.166931 -72.214 -81.0459 -0.166931 -72.214 -81.0459 -0.166931 -72.214 -80.7843 678.922 -72.5154 -80.7843 678.922 -72.5154 -80.7843 678.922 -72.5154 83.2124 334.314 -70.9016 83.2124 334.314 -70.9016 83.2124 334.314 -70.9016 83.2124 334.314 -70.9016 83.3622 -0.166931 -70.7698 83.3622 -0.166931 -70.7698 83.3622 -0.166931 -70.7698 83.6214 678.922 -70.8888 83.6214 678.922 -70.8888 83.6214 678.922 -70.8888 83.765 333.443 68.0629 83.765 333.443 68.0629 83.765 333.443 68.0629 83.765 333.443 68.0629 83.9415 -0.166931 64.3435 83.9415 -0.166931 64.3435 83.9415 -0.166931 64.3435 83.9881 678.922 71.9247 83.9881 678.922 71.9247 83.9881 678.922 71.9247 </float_array>
+          <technique_common>
+            <accessor source="#test_kdv_obj_D_piller_1.xno-geometry-position-array" count="40" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_kdv_obj_D_piller_1.xno-geometry-normal">
+          <float_array id="test_kdv_obj_D_piller_1.xno-geometry-normal-array" count="63">-0.99977 0.000234891 -0.0214662 -0.00889838 -0.0110846 0.999899 -0.999762 -0.00028512 -0.0218306 -0.00878377 -0.0111843 0.999899 0 -1 0 -0.999758 0.00110838 -0.0219634 -0.00989114 -0.0106016 0.999895 0 1 0 0.00873072 -0.000456798 -0.999962 -0.999764 -0.000328032 -0.0217275 0.00878417 -0.000359543 -0.999961 -0.999754 0.00118235 -0.0221421 0.00956143 -0.000132566 -0.999954 0.00888766 -0.000382283 -0.99996 0.999993 -0.000152835 -0.00380082 0.999991 0.00057683 -0.00428759 0.00989344 2.54481e-005 -0.999951 0.999996 -0.00118697 -0.00256777 0.999992 -6.31642e-005 -0.00401577 -0.00955384 -0.0107658 0.999896 0.999995 -0.00104362 -0.00291363 </float_array>
+          <technique_common>
+            <accessor source="#test_kdv_obj_D_piller_1.xno-geometry-normal-array" count="21" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_kdv_obj_D_piller_1.xno-geometry-uv">
+          <float_array id="test_kdv_obj_D_piller_1.xno-geometry-uv-array" count="28">0.5 1 1 0 0.5 -3.57628e-007 0.0533709 0.994012 1 1 0.422096 0.971181 -2.2715e-008 1 -7.18049e-008 -5.96046e-007 0.9741 0.999501 0.97875 0.620382 0.999501 0.0735372 0.566012 0.000499249 0.0793173 0.0481737 0.000499576 0.337991 </float_array>
+          <technique_common>
+            <accessor source="#test_kdv_obj_D_piller_1.xno-geometry-uv-array" count="14" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_kdv_obj_D_piller_1.xno-geometry-uv2">
+          <float_array id="test_kdv_obj_D_piller_1.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#test_kdv_obj_D_piller_1.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_kdv_obj_D_piller_1.xno-geometry-color">
+          <float_array id="test_kdv_obj_D_piller_1.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#test_kdv_obj_D_piller_1.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="test_kdv_obj_D_piller_1.xno-geometry-vertex">
+          <input semantic="POSITION" source="#test_kdv_obj_D_piller_1.xno-geometry-position" />
+        </vertices>
+        <triangles material="test_kdv_obj_D_piller_1.xno0" count="16">
+          <input semantic="VERTEX" source="#test_kdv_obj_D_piller_1.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#test_kdv_obj_D_piller_1.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#test_kdv_obj_D_piller_1.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#test_kdv_obj_D_piller_1.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#test_kdv_obj_D_piller_1.xno-geometry-color" offset="4" set="0" />
+          <p>30 3 6 0 0 2 1 0 0 0 34 3 7 0 0 5 3 2 0 0 34 3 7 0 0 2 1 0 0 0 13 8 1 0 0 19 12 4 0 0 21 13 2 0 0 28 16 0 0 0 21 13 2 0 0 19 12 4 0 0 10 0 6 0 0 14 9 7 0 0 0 0 0 0 0 4 2 2 0 0 0 0 0 0 0 14 9 7 0 0 36 15 7 0 0 26 15 2 0 0 32 18 6 0 0 22 14 0 0 0 32 18 6 0 0 26 15 2 0 0 20 13 6 0 0 25 8 7 0 0 12 8 0 0 0 16 10 2 0 0 12 8 0 0 0 25 8 7 0 0 33 18 2 0 0 23 14 1 0 0 39 20 0 0 0 29 17 4 0 0 39 20 0 0 0 23 14 1 0 0 31 3 2 0 0 37 19 0 0 0 3 1 1 0 0 8 6 4 0 0 3 1 1 0 0 37 19 0 0 0 1 0 1 0 0 7 5 4 0 0 11 0 2 0 0 17 11 0 0 0 11 0 2 0 0 7 5 4 0 0 </p>
+        </triangles>
+        <triangles material="test_kdv_obj_D_piller_1.xno1" count="4">
+          <input semantic="VERTEX" source="#test_kdv_obj_D_piller_1.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#test_kdv_obj_D_piller_1.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#test_kdv_obj_D_piller_1.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#test_kdv_obj_D_piller_1.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#test_kdv_obj_D_piller_1.xno-geometry-color" offset="4" set="0" />
+          <p>6 4 3 0 0 15 4 8 0 0 35 4 12 0 0 24 4 10 0 0 35 4 12 0 0 15 4 8 0 0 38 7 13 0 0 27 7 11 0 0 9 7 5 0 0 18 7 9 0 0 9 7 5 0 0 27 7 11 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="test_kdv_obj_D_piller_1.xno-controller">
+      <skin source="#test_kdv_obj_D_piller_1.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="test_kdv_obj_D_piller_1.xno-controller-Joints">
+          <Name_array id="test_kdv_obj_D_piller_1.xno-controller-Joints-array" count="2">test_kdv_obj_D_piller_1.xno0 test_kdv_obj_D_piller_1.xno1 </Name_array>
+          <technique_common>
+            <accessor source="#test_kdv_obj_D_piller_1.xno-controller-Joints-array" count="2">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_kdv_obj_D_piller_1.xno-controller-Matrices">
+          <float_array id="test_kdv_obj_D_piller_1.xno-controller-Matrices-array" count="32">1 0 0 0 0 1 0 0 0 0 1 -1.4892e-005 0 0 0 1 1 0 0 0.0956993 0 1 0 -562.098 0 0 1 0.295346 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#test_kdv_obj_D_piller_1.xno-controller-Matrices-array" count="2" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_kdv_obj_D_piller_1.xno-controller-Weights">
+          <float_array id="test_kdv_obj_D_piller_1.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#test_kdv_obj_D_piller_1.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#test_kdv_obj_D_piller_1.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#test_kdv_obj_D_piller_1.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="40">
+          <input semantic="JOINT" offset="0" source="#test_kdv_obj_D_piller_1.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#test_kdv_obj_D_piller_1.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="test_kdv_obj_D_piller_1.xno0" sid="test_kdv_obj_D_piller_1.xno0" name="test_kdv_obj_D_piller_1.xno0" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 1.4892e-005 0 0 0 1 </matrix>
+        <node id="test_kdv_obj_D_piller_1.xno1" sid="test_kdv_obj_D_piller_1.xno1" name="test_kdv_obj_D_piller_1.xno1" type="JOINT">
+          <matrix>1 0 0 -0.0956993 0 1 0 562.098 0 0 1 -0.295361 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="test_kdv_obj_D_piller_1.xno" sid="test_kdv_obj_D_piller_1.xno" name="test_kdv_obj_D_piller_1.xno">
+        <instance_controller url="#test_kdv_obj_D_piller_1.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="test_kdv_obj_D_piller_1.xno0" target="#test_kdv_obj_D_piller_1.xno0ID" />
+              <instance_material symbol="test_kdv_obj_D_piller_1.xno1" target="#test_kdv_obj_D_piller_1.xno1ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

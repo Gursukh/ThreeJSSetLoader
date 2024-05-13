@@ -1,0 +1,342 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="eve_feather01_df.dds-image" name="eve_feather01_df.dds-image">
+      <init_from>./textures/eve_feather01_df.dds</init_from>
+    </image>
+    <image id="eve_feather01_sp.dds-image" name="eve_feather01_sp.dds-image">
+      <init_from>./textures/eve_feather01_sp.dds</init_from>
+    </image>
+    <image id="eve_feather01_rf.dds-image" name="eve_feather01_rf.dds-image">
+      <init_from>./textures/eve_feather01_rf.dds</init_from>
+    </image>
+    <image id="eve_feather01_nt.dds-image" name="eve_feather01_nt.dds-image">
+      <init_from>./textures/eve_feather01_nt.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="eve_obj_feather.xno0ID" name="eve_obj_feather.xno0">
+      <instance_effect url="#eve_obj_feather.xno0-effect" />
+    </material>
+    <material id="eve_obj_feather.xno1ID" name="eve_obj_feather.xno1">
+      <instance_effect url="#eve_obj_feather.xno1-effect" />
+    </material>
+    <material id="eve_obj_feather.xno2ID" name="eve_obj_feather.xno2">
+      <instance_effect url="#eve_obj_feather.xno2-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="eve_obj_feather.xno0-effect" name="eve_obj_feather.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="eve_feather01_df.dds-image-surface">
+          <surface type="2D">
+            <init_from>eve_feather01_df.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="eve_feather01_df.dds-image-sampler">
+          <sampler2D>
+            <source>eve_feather01_df.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="eve_feather01_sp.dds-image-surface">
+          <surface type="2D">
+            <init_from>eve_feather01_sp.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="eve_feather01_sp.dds-image-sampler">
+          <sampler2D>
+            <source>eve_feather01_sp.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="eve_feather01_rf.dds-image-surface">
+          <surface type="2D">
+            <init_from>eve_feather01_rf.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="eve_feather01_rf.dds-image-sampler">
+          <sampler2D>
+            <source>eve_feather01_rf.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="eve_feather01_nt.dds-image-surface">
+          <surface type="2D">
+            <init_from>eve_feather01_nt.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="eve_feather01_nt.dds-image-sampler">
+          <sampler2D>
+            <source>eve_feather01_nt.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="eve_feather01_df.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="eve_obj_feather.xno1-effect" name="eve_obj_feather.xno1-effect">
+      <profile_COMMON>
+        <newparam sid="eve_feather01_df.dds-image-surface">
+          <surface type="2D">
+            <init_from>eve_feather01_df.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="eve_feather01_df.dds-image-sampler">
+          <sampler2D>
+            <source>eve_feather01_df.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="eve_feather01_sp.dds-image-surface">
+          <surface type="2D">
+            <init_from>eve_feather01_sp.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="eve_feather01_sp.dds-image-sampler">
+          <sampler2D>
+            <source>eve_feather01_sp.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="eve_feather01_rf.dds-image-surface">
+          <surface type="2D">
+            <init_from>eve_feather01_rf.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="eve_feather01_rf.dds-image-sampler">
+          <sampler2D>
+            <source>eve_feather01_rf.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="eve_feather01_nt.dds-image-surface">
+          <surface type="2D">
+            <init_from>eve_feather01_nt.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="eve_feather01_nt.dds-image-sampler">
+          <sampler2D>
+            <source>eve_feather01_nt.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="eve_feather01_df.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="eve_obj_feather.xno2-effect" name="eve_obj_feather.xno2-effect">
+      <profile_COMMON>
+        <newparam sid="eve_feather01_df.dds-image-surface">
+          <surface type="2D">
+            <init_from>eve_feather01_df.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="eve_feather01_df.dds-image-sampler">
+          <sampler2D>
+            <source>eve_feather01_df.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="eve_feather01_sp.dds-image-surface">
+          <surface type="2D">
+            <init_from>eve_feather01_sp.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="eve_feather01_sp.dds-image-sampler">
+          <sampler2D>
+            <source>eve_feather01_sp.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="eve_feather01_rf.dds-image-surface">
+          <surface type="2D">
+            <init_from>eve_feather01_rf.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="eve_feather01_rf.dds-image-sampler">
+          <sampler2D>
+            <source>eve_feather01_rf.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="eve_feather01_nt.dds-image-surface">
+          <surface type="2D">
+            <init_from>eve_feather01_nt.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="eve_feather01_nt.dds-image-sampler">
+          <sampler2D>
+            <source>eve_feather01_nt.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="eve_feather01_df.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="eve_obj_feather.xno-geometry" name="eve_obj_feather.xno-geometry">
+      <mesh>
+        <source id="eve_obj_feather.xno-geometry-position">
+          <float_array id="eve_obj_feather.xno-geometry-position-array" count="297">-4.49288 -2.74826 -3.22107 -4.49288 -2.74826 -3.22107 -3.82406 -2.10319 -8.53606 -3.82406 -2.10319 -8.53606 -3.39565 -0.520141 10.6582 -3.39565 -0.520141 10.6582 -2.50432 -1.39751 -10.4251 -2.50432 -1.39751 -10.4251 -2.20118 1.01998 10.9048 -2.10003 0.732542 -2.54431 -2.10003 -2.33697 -3.03581 -1.82683 -1.69334 10.4704 -1.78248 -0.128102 14.0725 -1.78248 -0.128102 14.0725 -1.41863 1.22073 14.2885 -1.26089 0.862279 -8.09577 -1.14573 -2.02281 13.7691 -1.09641 -2.2076 -8.58496 -0.291948 -0.351813 -12.0884 -0.291948 -0.351813 -12.0884 -0.188463 -0.190947 -2.7318 -0.188463 -0.190947 -2.7318 -0.188463 -0.190947 -2.7318 -0.188463 -0.190947 -2.7318 -0.135158 1.03967 -10.0747 0.0382349 -1.96827 -10.5397 0.466393 0.0146784 -7.87031 0.466393 0.0146784 -7.87031 0.466393 0.0146784 -7.87031 0.466393 0.0146784 -7.87031 0.559101 -0.931509 10.2244 0.559101 -0.931509 10.2244 0.559101 -0.931509 10.2244 0.559101 -0.931509 10.2244 0.559101 -0.931509 10.2244 1.05036 -0.19323 15.3777 1.05919 -0.030693 15.417 1.1967 -0.105494 15.3743 1.1967 -0.105494 15.3743 1.1967 -0.105494 15.3743 1.1967 -0.105494 15.3743 1.19897 -0.341921 15.3381 1.19897 -0.341921 15.3381 1.19897 0.0255766 15.3993 1.19897 0.0255766 15.3993 1.26199 0.150118 -9.78833 1.26199 0.150118 -9.78833 1.26199 0.150118 -9.78833 1.26199 0.150118 -9.78833 1.33422 -0.180296 15.3317 1.34305 -0.0177589 15.371 1.36541 0.048896 17.5048 1.37509 0.230971 17.4831 1.52397 -0.0950883 17.5051 1.52397 0.306 17.4276 1.67489 0.0425983 17.4439 1.68457 0.224674 17.4222 1.79485 0.914994 -7.61244 1.81155 0.350663 19.5161 1.82178 0.542475 19.4891 1.94126 -1.45012 -12.2462 1.97555 0.217456 19.5067 1.97555 0.639311 19.4157 1.97557 0.931071 -11.872 2.11884 0.797083 -2.35269 2.13708 0.34086 19.4451 2.14731 0.532673 19.418 2.24041 1.07776 -9.48448 2.33329 0.759801 21.6423 2.34521 0.984855 21.6586 2.52112 0.629759 21.5909 2.52112 1.13247 21.5909 2.59601 0.232332 -12.3726 2.60384 0.235147 -12.3901 2.60384 0.235147 -12.3901 2.62852 -2.17364 -2.82838 2.63032 0.233436 -12.3795 2.68065 -1.71964 -8.03194 2.71119 0.765862 21.5525 2.7231 0.990917 21.5688 2.75548 1.35962 10.0916 2.78143 2.19702 13.625 3.10869 -1.82431 9.58178 3.11317 1.19951 -11.4241 3.13464 -1.88343 12.9716 3.13512 -1.55911 -9.89 3.78389 -0.128102 13.2527 3.78389 -0.128102 13.2527 3.80018 -1.43585 -11.839 4.36776 -0.806689 -11.3989 4.36776 -0.806689 -11.3989 4.51386 -1.07695 9.70144 4.51386 -1.07695 9.70144 4.57251 -2.28639 -2.88286 4.57251 -2.28639 -2.88286 4.69858 -1.29899 -9.72325 4.69858 -1.29899 -9.72325 4.76954 -1.63685 -7.74203 4.76954 -1.63685 -7.74203 </float_array>
+          <technique_common>
+            <accessor source="#eve_obj_feather.xno-geometry-position-array" count="99" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="eve_obj_feather.xno-geometry-normal">
+          <float_array id="eve_obj_feather.xno-geometry-normal-array" count="291">-0.447077 0.894292 0.0190815 0.447077 -0.894292 -0.0190814 -0.431017 0.901693 0.0342675 0.447323 -0.893453 -0.0405568 -0.0803348 -0.98343 0.162517 0.0848135 0.98355 -0.159485 -0.363993 0.929386 0.0612387 0.391961 -0.919959 -0.00648784 0.557654 0.823927 -0.100827 0.449879 0.891595 0.0516505 0.734825 -0.678122 0.0135116 0.298289 -0.952746 -0.0574397 -0.0530719 -0.988922 0.138627 0.0733458 0.984248 -0.160861 0.501733 0.841262 -0.201352 0.431079 0.885923 0.171205 0.493366 -0.869293 -0.0303436 0.75768 -0.608608 0.235624 -0.145429 0.913198 0.380684 0.145429 -0.913198 -0.380684 -0.0878464 0.995076 0.0458995 0.0475306 0.997614 0.0500747 0.0878464 -0.995076 -0.0458994 0.152472 -0.987335 -0.0438339 0.486759 0.799408 0.352154 0.747411 -0.535157 0.393679 -0.0772891 0.996089 0.0428155 -0.0364564 0.996118 0.0801249 0.0702178 -0.995495 -0.0637166 0.175695 -0.98371 0.0380247 -0.121676 -0.151082 -0.981004 -0.100839 0.99138 -0.0836448 -0.0430258 -0.990736 0.128804 0.0413097 0.991109 -0.126479 0.0414658 -0.998584 0.0333358 -0.914361 -0.3734 0.156578 -0.823116 0.567543 0.0193378 -0.00566443 0.981877 -0.189434 0.00197913 -0.98274 0.184981 0.0622789 -0.992497 0.105215 0.0842463 -0.994887 0.0557005 -0.232941 0.961019 -0.148936 -0.074564 0.986552 -0.145451 -0.100697 0.994321 0.0344284 -0.010176 0.998574 0.0524134 0.00765427 -0.999227 -0.0385571 0.120593 -0.992405 0.0242865 0.932058 -0.348713 -0.0983239 0.774912 0.593825 -0.216526 -0.906652 -0.361854 0.216898 -0.834729 0.545051 0.0784058 -0.00565992 -0.991382 0.130877 -0.0273791 0.98991 -0.139027 0.885695 -0.449864 -0.11475 0.846304 0.476956 -0.237238 -0.560886 0.827892 -0.000965517 -0.881502 -0.383941 0.274851 -0.854912 0.508584 0.102316 0.683812 -0.213721 0.697656 -0.000649737 -0.985424 0.170115 -0.0253339 0.982765 -0.183114 0.648948 0.0571867 0.758681 -0.441848 0.8963 0.0376417 0.861358 -0.491202 -0.129551 0.859033 0.418229 -0.295206 -0.61769 0.76205 -0.194266 -0.5441 -0.343115 0.765655 -0.493878 0.390583 0.776871 0.170448 -0.755557 0.632519 0.103962 0.871084 0.480005 -0.0682615 -0.990283 0.121163 -0.119525 -0.984018 -0.131997 0.124704 0.981466 0.145514 -0.567704 -0.821637 -0.0512383 -0.198455 0.975779 0.0920365 -0.631827 -0.755773 -0.172054 0.812007 -0.341163 0.473554 0.792508 0.377986 0.478599 -0.721899 0.687457 -0.0791545 -0.783209 0.619075 -0.0577097 -0.35677 -0.931861 0.0659544 -0.660178 0.685286 -0.307487 -0.629453 -0.77699 -0.00873442 -0.673492 -0.683215 -0.28218 -0.234327 0.926123 -0.295614 0.234327 -0.926123 0.295614 -0.730242 -0.619355 -0.288352 -0.42492 -0.887771 -0.176935 0.384915 0.899194 0.208065 -0.00828089 0.99025 -0.139058 0.00828087 -0.99025 0.139058 -0.358561 -0.931592 -0.0597603 0.358561 0.931592 0.0597603 -0.387358 -0.906174 -0.169714 0.366324 0.913732 0.175786 -0.360537 -0.920616 -0.149927 0.351033 0.92562 0.141432 </float_array>
+          <technique_common>
+            <accessor source="#eve_obj_feather.xno-geometry-normal-array" count="97" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="eve_obj_feather.xno-geometry-uv">
+          <float_array id="eve_obj_feather.xno-geometry-uv-array" count="134">0.0582439 0.702541 0.132516 0.839395 0.0263078 0.334998 0.205182 0.904478 0.492844 0.298747 0.461148 0.690565 0.476009 0.300617 0.063093 0.159262 0.499887 0.0777801 0.501888 0.842953 0.488794 0.842953 0.297067 0.955271 0.264462 0.693985 0.750984 0.686816 0.264049 0.693579 0.521067 0.898947 0.507973 0.898947 0.310601 0.8379 0.73968 0.832681 0.2296 0.0696139 0.76753 0.314795 0.236553 0.324858 0.720766 0.312924 0.226865 0.0681351 0.225858 0.0681351 0.234116 0.0707052 0.685519 0.0535651 0.780918 0.049824 0.734178 0.887158 0.345198 0.891474 0.345623 0.892116 0.232605 0.0707052 0.228931 0.0479882 0.229163 0.0451946 0.232076 0.0485179 0.231335 0.0482447 0.236465 0.0507063 0.236284 0.0478302 0.943162 0.818668 0.23244 0.0269986 0.232968 0.0240139 0.543082 0.977107 0.235341 0.0273641 0.556176 0.977107 0.983465 0.683068 0.239618 0.0305187 0.240041 0.0265993 0.924394 0.871628 0.237241 0.00558233 0.237787 0.00395173 0.240863 0.00745577 0.714248 0.988334 0.39176 0.967766 0.991796 0.822409 0.243548 0.010914 0.24408 0.00919741 0.998558 0.318909 0.955977 0.0789087 0.883679 0.989874 0.973029 0.875369 0.364283 0.182519 0.878067 0.993615 0.454286 0.925321 0.422482 0.329683 0.432794 0.693089 0.463433 0.881377 0.457848 0.828643 </float_array>
+          <technique_common>
+            <accessor source="#eve_obj_feather.xno-geometry-uv-array" count="67" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="eve_obj_feather.xno-geometry-uv2">
+          <float_array id="eve_obj_feather.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#eve_obj_feather.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="eve_obj_feather.xno-geometry-color">
+          <float_array id="eve_obj_feather.xno-geometry-color-array" count="12">0.501961 0.509804 0.0196078 0.00392157 0 0 0 0 0.847059 0.65098 0.0196078 0.00392157 </float_array>
+          <technique_common>
+            <accessor source="#eve_obj_feather.xno-geometry-color-array" count="3" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="eve_obj_feather.xno-geometry-vertex">
+          <input semantic="POSITION" source="#eve_obj_feather.xno-geometry-position" />
+        </vertices>
+        <triangles material="eve_obj_feather.xno0" count="46">
+          <input semantic="VERTEX" source="#eve_obj_feather.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#eve_obj_feather.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#eve_obj_feather.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#eve_obj_feather.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#eve_obj_feather.xno-geometry-color" offset="4" set="0" />
+          <p>41 39 19 0 1 35 35 23 0 1 30 30 19 0 1 36 36 23 0 1 30 30 19 0 1 35 35 23 0 1 30 30 19 0 1 36 36 23 0 1 44 42 19 0 1 44 42 19 0 1 50 48 31 0 1 30 30 19 0 1 49 47 31 0 1 30 30 19 0 1 50 48 31 0 1 30 30 19 0 1 49 47 31 0 1 41 39 19 0 1 53 51 34 0 1 41 39 19 0 1 49 47 31 0 1 41 39 19 0 1 53 51 34 0 1 35 35 23 0 1 51 49 32 0 1 35 35 23 0 1 53 51 34 0 1 35 35 23 0 1 51 49 32 0 1 36 36 23 0 1 52 50 33 0 1 36 36 23 0 1 51 49 32 0 1 36 36 23 0 1 52 50 33 0 1 44 42 19 0 1 54 52 35 0 1 44 42 19 0 1 52 50 33 0 1 44 42 19 0 1 54 52 35 0 1 50 48 31 0 1 56 54 37 0 1 50 48 31 0 1 54 52 35 0 1 50 48 31 0 1 56 54 37 0 1 55 53 36 0 1 65 63 45 0 1 55 53 36 0 1 56 54 37 0 1 55 53 36 0 1 65 63 45 0 1 61 59 42 0 1 70 68 50 0 1 61 59 42 0 1 65 63 45 0 1 61 59 42 0 1 70 68 50 0 1 58 56 39 0 1 68 66 48 0 1 58 56 39 0 1 70 68 50 0 1 58 56 39 0 1 68 66 48 0 1 59 57 40 0 1 69 67 49 0 1 59 57 40 0 1 68 66 48 0 1 59 57 40 0 1 69 67 49 0 1 71 69 50 0 1 70 68 50 0 1 71 69 50 0 1 69 67 49 0 1 71 69 50 0 1 70 68 50 0 1 78 76 54 0 1 65 63 45 0 1 78 76 54 0 1 70 68 50 0 1 78 76 54 0 1 65 63 45 0 1 66 64 46 0 1 56 54 37 0 1 66 64 46 0 1 65 63 45 0 1 66 64 46 0 1 56 54 37 0 1 62 60 42 0 1 54 52 35 0 1 62 60 42 0 1 56 54 37 0 1 62 60 42 0 1 54 52 35 0 1 59 57 40 0 1 52 50 33 0 1 59 57 40 0 1 54 52 35 0 1 59 57 40 0 1 52 50 33 0 1 58 56 39 0 1 51 49 32 0 1 58 56 39 0 1 52 50 33 0 1 58 56 39 0 1 51 49 32 0 1 61 59 42 0 1 53 51 34 0 1 61 59 42 0 1 51 49 32 0 1 61 59 42 0 1 53 51 34 0 1 55 53 36 0 1 49 47 31 0 1 55 53 36 0 1 53 51 34 0 1 55 53 36 0 1 49 47 31 0 1 50 48 31 0 1 69 67 49 0 1 68 66 48 0 1 70 68 50 0 1 71 69 50 0 1 78 76 54 0 1 79 77 55 0 1 66 64 46 0 1 79 77 55 0 1 78 76 54 0 1 79 77 55 0 1 66 64 46 0 1 71 69 50 0 1 62 60 42 0 1 71 69 50 0 1 66 64 46 0 1 71 69 50 0 1 62 60 42 0 1 59 57 40 0 1 </p>
+        </triangles>
+        <triangles material="eve_obj_feather.xno1" count="40">
+          <input semantic="VERTEX" source="#eve_obj_feather.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#eve_obj_feather.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#eve_obj_feather.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#eve_obj_feather.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#eve_obj_feather.xno-geometry-color" offset="4" set="0" />
+          <p>87 85 60 0 1 40 38 25 0 1 92 90 63 0 1 32 32 21 0 1 92 90 63 0 1 40 38 25 0 1 92 90 63 0 1 32 32 21 0 1 93 91 64 0 1 22 22 14 0 1 93 91 64 0 1 32 32 21 0 1 93 91 64 0 1 22 22 14 0 1 28 28 17 0 1 1 1 0 0 1 28 28 17 0 1 22 22 14 0 1 28 28 17 0 1 1 1 0 0 1 3 3 1 0 1 7 7 3 0 1 28 28 17 0 1 3 3 1 0 1 28 28 17 0 1 7 7 3 0 1 47 45 30 0 1 73 71 52 0 1 47 45 30 0 1 7 7 3 0 1 47 45 30 0 1 73 71 52 0 1 95 93 65 0 1 89 87 62 0 1 95 93 65 0 1 73 71 52 0 1 97 95 66 0 1 47 45 30 0 1 95 93 65 0 1 47 45 30 0 1 97 95 66 0 1 28 28 17 0 1 93 91 64 0 1 28 28 17 0 1 97 95 66 0 1 7 7 3 0 1 19 19 11 0 1 73 71 52 0 1 4 4 2 0 1 39 38 24 0 1 12 12 7 0 1 39 38 24 0 1 4 4 2 0 1 32 32 21 0 1 1 1 0 0 1 32 32 21 0 1 4 4 2 0 1 32 32 21 0 1 1 1 0 0 1 22 22 14 0 1 0 0 0 0 0 5 5 2 0 1 33 33 21 0 1 13 13 7 0 1 33 33 21 0 1 5 5 2 0 1 33 33 21 0 1 13 13 7 0 1 37 37 24 0 1 91 89 63 0 1 38 37 25 0 1 86 84 60 0 1 38 37 25 0 1 91 89 63 0 1 33 33 21 0 1 94 92 64 0 1 33 33 21 0 1 91 89 63 0 1 20 20 12 0 1 33 33 21 0 1 94 92 64 0 1 33 33 21 0 1 20 20 12 0 1 0 0 0 0 0 26 26 17 0 1 0 0 0 0 0 20 20 12 0 1 0 0 0 0 0 26 26 17 0 1 2 2 1 0 1 46 44 29 0 1 2 2 1 0 1 26 26 17 0 1 2 2 1 0 1 46 44 29 0 1 6 6 3 0 1 74 72 52 0 1 6 6 3 0 1 46 44 29 0 1 6 6 3 0 1 74 72 52 0 1 18 18 11 0 1 20 20 12 0 1 94 92 64 0 1 26 26 17 0 1 98 96 66 0 1 26 26 17 0 1 94 92 64 0 1 96 94 65 0 1 26 26 17 0 1 98 96 66 0 1 26 26 17 0 1 96 94 65 0 1 46 44 29 0 1 90 88 62 0 1 46 44 29 0 1 96 94 65 0 1 46 44 29 0 1 90 88 62 0 1 74 72 52 0 1 </p>
+        </triangles>
+        <triangles material="eve_obj_feather.xno2" count="40">
+          <input semantic="VERTEX" source="#eve_obj_feather.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#eve_obj_feather.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#eve_obj_feather.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#eve_obj_feather.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#eve_obj_feather.xno-geometry-color" offset="4" set="0" />
+          <p>9 9 5 0 1 8 8 4 0 1 31 31 20 0 1 14 14 8 0 1 31 31 20 0 1 8 8 4 0 1 31 31 20 0 1 14 14 8 0 1 43 41 27 0 1 43 41 27 0 1 81 79 57 0 1 31 31 20 0 1 80 78 56 0 1 31 31 20 0 1 81 79 57 0 1 80 78 56 0 1 64 62 44 0 1 31 31 20 0 1 21 21 13 0 1 31 31 20 0 1 64 62 44 0 1 31 31 20 0 1 21 21 13 0 1 9 9 5 0 1 27 27 18 0 1 9 9 5 0 1 21 21 13 0 1 9 9 5 0 1 27 27 18 0 1 15 15 9 0 1 45 43 28 0 1 15 15 9 0 1 27 27 18 0 1 15 15 9 0 1 45 43 28 0 1 24 24 15 0 1 76 74 51 0 1 24 24 15 0 1 45 43 28 0 1 24 24 15 0 1 76 74 51 0 1 63 61 43 0 1 21 21 13 0 1 64 62 44 0 1 27 27 18 0 1 57 55 38 0 1 27 27 18 0 1 64 62 44 0 1 67 65 47 0 1 27 27 18 0 1 57 55 38 0 1 27 27 18 0 1 67 65 47 0 1 45 43 28 0 1 83 81 58 0 1 45 43 28 0 1 67 65 47 0 1 45 43 28 0 1 83 81 58 0 1 76 74 51 0 1 84 82 57 0 1 42 40 26 0 1 82 80 56 0 1 75 73 44 0 1 82 80 56 0 1 34 34 22 0 1 42 40 26 0 1 34 34 22 0 1 82 80 56 0 1 34 34 22 0 1 42 40 26 0 1 16 16 8 0 1 16 16 8 0 1 11 11 6 0 1 34 34 22 0 1 10 10 5 0 1 34 34 22 0 1 11 11 6 0 1 23 23 13 0 1 34 34 22 0 1 10 10 5 0 1 34 34 22 0 1 23 23 13 0 1 75 73 44 0 1 29 29 18 0 2 75 73 44 0 1 23 23 13 0 1 75 73 44 0 1 29 29 18 0 2 77 75 53 0 1 48 46 28 0 1 77 75 53 0 1 29 29 18 0 2 77 75 53 0 1 48 46 28 0 1 85 83 59 0 1 72 70 51 0 1 85 83 59 0 1 48 46 28 0 1 85 83 59 0 1 72 70 51 0 1 88 86 61 0 1 23 23 13 0 1 10 10 5 0 1 29 29 18 0 2 17 17 10 0 1 29 29 18 0 2 10 10 5 0 1 25 25 16 0 1 29 29 18 0 2 17 17 10 0 1 29 29 18 0 2 25 25 16 0 1 48 46 28 0 1 48 46 28 0 1 25 25 16 0 1 72 70 51 0 1 60 58 41 0 1 72 70 51 0 1 25 25 16 0 1 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="eve_obj_feather.xno-controller">
+      <skin source="#eve_obj_feather.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="eve_obj_feather.xno-controller-Joints">
+          <Name_array id="eve_obj_feather.xno-controller-Joints-array" count="1">eve_obj_feather </Name_array>
+          <technique_common>
+            <accessor source="#eve_obj_feather.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="eve_obj_feather.xno-controller-Matrices">
+          <float_array id="eve_obj_feather.xno-controller-Matrices-array" count="16">1 -1.49012e-008 -6.06461e-017 0 1.49012e-008 1 -9.03697e-025 0 6.06461e-017 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#eve_obj_feather.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="eve_obj_feather.xno-controller-Weights">
+          <float_array id="eve_obj_feather.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#eve_obj_feather.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#eve_obj_feather.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#eve_obj_feather.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="99">
+          <input semantic="JOINT" offset="0" source="#eve_obj_feather.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#eve_obj_feather.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="eve_obj_feather" sid="eve_obj_feather" name="eve_obj_feather" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="eve_obj_feather.xno" sid="eve_obj_feather.xno" name="eve_obj_feather.xno">
+        <instance_controller url="#eve_obj_feather.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="eve_obj_feather.xno0" target="#eve_obj_feather.xno0ID" />
+              <instance_material symbol="eve_obj_feather.xno1" target="#eve_obj_feather.xno1ID" />
+              <instance_material symbol="eve_obj_feather.xno2" target="#eve_obj_feather.xno2ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

@@ -1,0 +1,528 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="kdv_pillar01_dfsp_z.dds-image" name="kdv_pillar01_dfsp_z.dds-image">
+      <init_from>./textures/kdv_pillar01_dfsp_z.dds</init_from>
+    </image>
+    <image id="kdv_rock10_dfsp_y.dds-image" name="kdv_rock10_dfsp_y.dds-image">
+      <init_from>./textures/kdv_rock10_dfsp_y.dds</init_from>
+    </image>
+    <image id="kdv_brick15_dfsp_y.dds-image" name="kdv_brick15_dfsp_y.dds-image">
+      <init_from>./textures/kdv_brick15_dfsp_y.dds</init_from>
+    </image>
+    <image id="kdv_brick16_dfsp_y.dds-image" name="kdv_brick16_dfsp_y.dds-image">
+      <init_from>./textures/kdv_brick16_dfsp_y.dds</init_from>
+    </image>
+    <image id="kdv_bridge03_dfsp_z.dds-image" name="kdv_bridge03_dfsp_z.dds-image">
+      <init_from>./textures/kdv_bridge03_dfsp_z.dds</init_from>
+    </image>
+    <image id="kdv_debris05_dfsp_z.dds-image" name="kdv_debris05_dfsp_z.dds-image">
+      <init_from>./textures/kdv_debris05_dfsp_z.dds</init_from>
+    </image>
+    <image id="kdv_bridge03_nt_z.dds-image" name="kdv_bridge03_nt_z.dds-image">
+      <init_from>./textures/kdv_bridge03_nt_z.dds</init_from>
+    </image>
+    <image id="kdv_bridge02_dfsp_z.dds-image" name="kdv_bridge02_dfsp_z.dds-image">
+      <init_from>./textures/kdv_bridge02_dfsp_z.dds</init_from>
+    </image>
+    <image id="kdv_wall13_dfsp_r.dds-image" name="kdv_wall13_dfsp_r.dds-image">
+      <init_from>./textures/kdv_wall13_dfsp_r.dds</init_from>
+    </image>
+    <image id="kdv_bridge05_ntxx_r.dds-image" name="kdv_bridge05_ntxx_r.dds-image">
+      <init_from>./textures/kdv_bridge05_ntxx_r.dds</init_from>
+    </image>
+    <image id="kdv_bridge04_dfsp_z.dds-image" name="kdv_bridge04_dfsp_z.dds-image">
+      <init_from>./textures/kdv_bridge04_dfsp_z.dds</init_from>
+    </image>
+    <image id="kdv_debris05_nt_z.dds-image" name="kdv_debris05_nt_z.dds-image">
+      <init_from>./textures/kdv_debris05_nt_z.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="test_bridge01_zama.xno0ID" name="test_bridge01_zama.xno0">
+      <instance_effect url="#test_bridge01_zama.xno0-effect" />
+    </material>
+    <material id="test_bridge01_zama.xno1ID" name="test_bridge01_zama.xno1">
+      <instance_effect url="#test_bridge01_zama.xno1-effect" />
+    </material>
+    <material id="test_bridge01_zama.xno2ID" name="test_bridge01_zama.xno2">
+      <instance_effect url="#test_bridge01_zama.xno2-effect" />
+    </material>
+    <material id="test_bridge01_zama.xno3ID" name="test_bridge01_zama.xno3">
+      <instance_effect url="#test_bridge01_zama.xno3-effect" />
+    </material>
+    <material id="test_bridge01_zama.xno4ID" name="test_bridge01_zama.xno4">
+      <instance_effect url="#test_bridge01_zama.xno4-effect" />
+    </material>
+    <material id="test_bridge01_zama.xno5ID" name="test_bridge01_zama.xno5">
+      <instance_effect url="#test_bridge01_zama.xno5-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="test_bridge01_zama.xno0-effect" name="test_bridge01_zama.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_pillar01_dfsp_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_pillar01_dfsp_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_pillar01_dfsp_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_pillar01_dfsp_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_rock10_dfsp_y.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_rock10_dfsp_y.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_rock10_dfsp_y.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_rock10_dfsp_y.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_rock10_dfsp_y.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_rock10_dfsp_y.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_rock10_dfsp_y.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_rock10_dfsp_y.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_pillar01_dfsp_z.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="test_bridge01_zama.xno1-effect" name="test_bridge01_zama.xno1-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_brick15_dfsp_y.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_brick15_dfsp_y.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_brick15_dfsp_y.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_brick15_dfsp_y.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_brick16_dfsp_y.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_brick16_dfsp_y.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_brick16_dfsp_y.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_brick16_dfsp_y.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_brick16_dfsp_y.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_brick16_dfsp_y.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_brick16_dfsp_y.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_brick16_dfsp_y.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_brick15_dfsp_y.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="test_bridge01_zama.xno2-effect" name="test_bridge01_zama.xno2-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_bridge04_dfsp_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_bridge04_dfsp_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_bridge04_dfsp_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_bridge04_dfsp_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_debris05_dfsp_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_debris05_dfsp_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_debris05_dfsp_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_debris05_dfsp_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_debris05_dfsp_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_debris05_dfsp_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_debris05_dfsp_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_debris05_dfsp_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_bridge04_dfsp_z.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="test_bridge01_zama.xno3-effect" name="test_bridge01_zama.xno3-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_bridge03_dfsp_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_bridge03_dfsp_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_bridge03_dfsp_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_bridge03_dfsp_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_debris05_dfsp_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_debris05_dfsp_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_debris05_dfsp_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_debris05_dfsp_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_bridge03_nt_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_bridge03_nt_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_bridge03_nt_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_bridge03_nt_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_bridge03_nt_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_bridge03_nt_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_bridge03_nt_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_bridge03_nt_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_bridge03_dfsp_z.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="test_bridge01_zama.xno4-effect" name="test_bridge01_zama.xno4-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_debris05_dfsp_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_debris05_dfsp_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_debris05_dfsp_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_debris05_dfsp_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_wall13_dfsp_r.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_wall13_dfsp_r.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_wall13_dfsp_r.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_wall13_dfsp_r.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_debris05_nt_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_debris05_nt_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_debris05_nt_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_debris05_nt_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_debris05_nt_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_debris05_nt_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_debris05_nt_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_debris05_nt_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_debris05_dfsp_z.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="test_bridge01_zama.xno5-effect" name="test_bridge01_zama.xno5-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_bridge02_dfsp_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_bridge02_dfsp_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_bridge02_dfsp_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_bridge02_dfsp_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_wall13_dfsp_r.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_wall13_dfsp_r.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_wall13_dfsp_r.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_wall13_dfsp_r.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_bridge05_ntxx_r.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_bridge05_ntxx_r.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_bridge05_ntxx_r.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_bridge05_ntxx_r.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_bridge05_ntxx_r.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_bridge05_ntxx_r.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_bridge05_ntxx_r.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_bridge05_ntxx_r.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_bridge02_dfsp_z.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="test_bridge01_zama.xno-geometry" name="test_bridge01_zama.xno-geometry">
+      <mesh>
+        <source id="test_bridge01_zama.xno-geometry-position">
+          <float_array id="test_bridge01_zama.xno-geometry-position-array" count="1272">-38.6465 -294.873 116.555 -13.9513 -294.873 -131.984 4.78805 -194.865 398.709 4.78805 -194.865 398.709 4.79253 -294.873 398.681 4.79253 -294.873 398.681 4.86263 -45.9474 398.267 9.45325 -45.056 -400.183 9.49831 -194.181 -399.938 9.49831 -194.181 -399.938 9.58171 -294.873 -399.503 9.58171 -294.873 -399.503 21.1864 -294.873 302.973 21.1864 -294.873 302.973 28.083 -294.873 -301.633 28.083 -294.873 -301.633 42.7551 -294.873 177.04 49.5759 -294.873 -187.942 1773.64 -320.064 368.234 1773.73 -320.064 392.442 1773.82 -320.064 416.65 1773.9 -320.064 -414.613 1773.99 -320.064 -390.405 1774.08 -320.064 -366.199 1774.21 -39.1492 368.468 1774.21 -39.1492 368.468 1774.21 -286.91 368.468 1774.21 -286.91 368.468 1774.39 -286.91 416.412 1774.39 -39.1492 416.412 1774.47 -39.1492 -414.379 1774.47 -39.1492 -414.379 1774.47 -286.91 -414.379 1774.47 -286.91 -414.379 1774.65 -286.91 -366.437 1774.65 -39.1492 -366.437 1790.69 -320.064 351.052 1790.95 -320.064 -431.794 1791 -320.064 433.704 1791.26 -320.064 -349.145 1792.49 -378.505 375.959 1792.61 -378.505 408.785 1792.75 -378.505 -406.889 1792.87 -378.505 -374.064 1807.75 -320.064 333.871 1807.98 -286.91 334.442 1807.98 -39.1492 334.442 1808.01 -320.064 -448.975 1808.18 -320.064 450.756 1808.25 -286.91 -448.407 1808.25 -39.1492 -448.407 1808.42 -39.1492 450.184 1808.42 -286.91 450.184 1808.44 -320.064 -332.091 1808.68 -39.1492 -332.662 1808.68 -286.91 -332.662 1815.61 -378.505 352.662 1815.87 -378.505 -430.186 1815.91 -378.505 431.907 1816.17 -378.505 -350.94 1831.95 -320.064 333.781 1832.21 -320.064 -449.067 1832.39 -320.064 450.665 1832.65 -320.064 -332.181 1848.44 -378.505 352.539 1848.7 -378.505 -430.308 1848.73 -378.505 431.786 1848.99 -378.505 -351.064 1855.93 -286.91 334.261 1855.93 -39.1492 334.261 1856.16 -320.064 333.691 1856.19 -286.91 -448.586 1856.19 -39.1492 -448.586 1856.36 -39.1492 450.006 1856.36 -286.91 450.006 1856.42 -320.064 -449.157 1856.6 -320.064 450.577 1856.62 -286.91 -332.842 1856.62 -39.1492 -332.842 1856.86 -320.064 -332.272 1871.73 -378.505 375.663 1871.86 -378.505 408.488 1871.99 -378.505 -407.184 1872.12 -378.505 -374.361 1873.34 -320.064 350.743 1873.6 -320.064 -432.103 1873.65 -320.064 433.396 1873.91 -320.064 -349.454 1889.95 -286.91 368.036 1889.95 -39.1492 368.036 1890.13 -39.1492 415.979 1890.13 -286.91 415.978 1890.22 -39.1492 -414.812 1890.22 -286.91 -414.812 1890.39 -39.1492 -366.869 1890.39 -286.91 -366.869 1890.52 -320.064 367.798 1890.61 -320.064 392.006 1890.7 -320.064 416.212 1890.78 -320.064 -415.051 1890.88 -320.064 -390.843 1890.97 -320.064 -366.635 3616.82 -294.872 196.146 3623.64 -294.872 -168.837 3636.91 -294.872 302.452 3636.91 -294.872 302.452 3646.47 -294.872 -302.155 3646.47 -294.872 -302.155 3655.42 -294.872 400.322 3655.42 -294.872 400.322 3655.5 -193.57 400.757 3655.5 -193.57 400.757 3655.55 -45.0538 401.005 3662.8 -45.9479 -397.444 3662.87 -294.872 -397.859 3662.87 -294.872 -397.859 3662.87 -194.254 -397.887 3662.87 -194.254 -397.887 3680.35 -294.872 140.188 3705.04 -294.872 -108.351 -38.6465 -294.873 116.555 -38.6465 -294.873 116.555 -38.6465 -294.873 116.555 -38.6465 -0.157686 116.555 -38.6465 -0.157686 116.555 -26.3017 -0.172878 0.419736 -26.3017 -0.172878 0.419736 -26.3017 -0.172878 0.419736 -26.3017 -0.172878 0.419736 -13.9513 -0.188041 -131.984 -13.9513 -0.188041 -131.984 -13.9513 -294.873 -131.984 0.286075 -34.1021 424.989 0.286075 -34.1021 424.989 0.286075 -34.1021 424.989 0.299647 -0.472596 424.91 0.299647 -0.472596 424.91 0.299647 -0.472596 424.91 2.81334 9.88064 410.236 2.81334 9.88064 410.236 4.57797 -0.582354 -425.972 4.57797 -0.582354 -425.972 4.57797 -0.582354 -425.972 4.60157 -34.0913 -425.842 4.60157 -34.0913 -425.842 4.60157 -34.0913 -425.842 4.78805 -194.865 398.709 4.78805 -194.865 398.709 4.79253 -294.873 398.681 4.86263 -45.9474 398.267 4.86263 -45.9474 398.267 7.24984 9.75794 -411.829 7.24984 9.75794 -411.829 9.37818 9.87024 371.906 9.37818 9.87024 371.906 9.37818 9.87024 371.906 9.37818 9.87024 371.906 9.45325 -45.056 -400.183 9.45325 -45.056 -400.183 9.45325 -45.056 -400.183 9.49831 -194.181 -399.938 9.49831 -194.181 -399.938 9.49831 -194.181 -399.938 9.58171 -294.873 -399.503 12.055 -0.129851 356.283 12.055 -0.129851 356.283 12.055 -0.129851 356.283 14.8322 9.7684 -371.724 14.8322 9.7684 -371.724 14.8322 9.7684 -371.724 18.042 -0.23151 -354.744 18.042 -0.23151 -354.744 18.042 -0.23151 -354.744 21.1864 -294.873 302.973 28.083 -294.873 -301.633 42.7551 -0.14573 177.04 42.7551 -0.14573 177.04 42.7551 -0.14573 177.04 42.7551 -294.873 177.04 42.7551 -294.873 177.04 49.5759 -294.873 -187.942 49.5759 -294.873 -187.942 49.5759 -0.197401 -187.942 49.5759 -0.197401 -187.942 49.5759 -0.197401 -187.942 1773.64 -320.064 368.234 1773.64 -320.064 368.234 1773.73 -320.064 392.442 1773.82 -320.064 416.65 1773.9 -320.064 -414.613 1773.9 -320.064 -414.613 1773.99 -320.064 -390.405 1774.08 -320.064 -366.199 1774.21 -39.1492 368.468 1774.21 -39.1492 368.468 1774.21 20.99 368.468 1774.21 20.99 368.468 1774.21 -286.91 368.468 1774.21 -286.91 368.468 1774.39 -286.91 416.412 1774.39 -39.1492 416.412 1774.39 20.99 416.412 1774.47 -286.91 -414.379 1774.47 -286.91 -414.379 1774.47 -39.1492 -414.379 1774.47 -39.1492 -414.379 1774.47 20.99 -414.379 1774.47 20.99 -414.379 1774.65 -39.1492 -366.437 1774.65 -286.91 -366.437 1774.65 20.99 -366.437 1780.59 23.0037 371.081 1780.59 23.0037 371.081 1780.59 23.0037 371.081 1780.59 23.0037 371.081 1780.74 23.0037 413.75 1780.74 23.0037 413.75 1780.85 23.0037 -411.765 1780.85 23.0037 -411.765 1780.85 23.0037 -411.765 1780.85 23.0037 -411.765 1781.01 23.0037 -369.097 1781.01 23.0037 -369.097 1790.69 -320.064 351.052 1790.95 -320.064 -431.794 1791 -320.064 433.704 1791.26 -320.064 -349.145 1792.49 -378.505 375.959 1792.49 -378.505 375.959 1792.49 -317.244 375.959 1792.49 -317.244 375.959 1792.61 -317.244 408.785 1792.61 -378.505 408.785 1792.75 -317.244 -406.889 1792.75 -317.244 -406.889 1792.75 -378.505 -406.889 1792.75 -378.505 -406.889 1792.87 -317.244 -374.064 1792.87 -378.505 -374.064 1807.75 -320.064 333.871 1807.98 -39.1492 334.442 1807.98 20.99 334.442 1807.98 -286.91 334.442 1808.01 -320.064 -448.975 1808.18 -320.064 450.756 1808.25 -39.1492 -448.407 1808.25 20.99 -448.407 1808.25 -286.91 -448.407 1808.42 -286.91 450.184 1808.42 -39.1492 450.184 1808.42 20.99 450.184 1808.44 -320.064 -332.091 1808.68 -286.91 -332.662 1808.68 -39.1492 -332.662 1808.68 20.99 -332.662 1810.64 23.0038 340.798 1810.64 23.0038 340.798 1810.91 23.0037 -442.051 1810.91 23.0037 -442.051 1811.03 23.0038 443.81 1811.03 23.0038 443.81 1811.29 23.0037 -339.038 1811.29 23.0037 -339.038 1815.61 -317.244 352.662 1815.61 -378.505 352.662 1815.87 -378.505 -430.186 1815.87 -317.244 -430.186 1815.91 -378.505 431.907 1815.91 -317.244 431.907 1816.17 -378.505 -350.94 1816.17 -317.244 -350.94 1831.95 -320.064 333.781 1832.17 39.5402 392.224 1832.17 39.5402 392.224 1832.17 39.5402 392.224 1832.17 39.5402 392.224 1832.17 39.5402 392.224 1832.17 39.5402 392.224 1832.17 39.5402 392.224 1832.17 39.5402 392.224 1832.21 -320.064 -449.067 1832.39 -320.064 450.665 1832.43 39.5402 -390.625 1832.43 39.5402 -390.625 1832.43 39.5402 -390.625 1832.43 39.5402 -390.625 1832.43 39.5402 -390.625 1832.43 39.5402 -390.625 1832.43 39.5402 -390.625 1832.43 39.5402 -390.625 1832.65 -320.064 -332.181 1848.44 -378.505 352.539 1848.44 -317.244 352.539 1848.7 -378.505 -430.308 1848.7 -317.244 -430.308 1848.73 -378.505 431.786 1848.73 -317.244 431.786 1848.99 -317.244 -351.064 1848.99 -378.505 -351.064 1853.31 23.0038 340.638 1853.31 23.0038 340.638 1853.57 23.0037 -442.21 1853.57 23.0037 -442.21 1853.7 23.0038 443.65 1853.7 23.0038 443.65 1853.96 23.0037 -339.197 1853.96 23.0037 -339.197 1855.93 -39.1492 334.261 1855.93 -286.91 334.261 1855.93 20.99 334.261 1856.16 -320.064 333.691 1856.19 -286.91 -448.586 1856.19 20.99 -448.586 1856.19 -39.1492 -448.586 1856.36 -286.91 450.006 1856.36 -39.1492 450.006 1856.36 20.99 450.006 1856.42 -320.064 -449.157 1856.6 -320.064 450.577 1856.62 -39.1492 -332.842 1856.62 -286.91 -332.842 1856.62 20.99 -332.842 1856.86 -320.064 -332.272 1871.73 -378.505 375.663 1871.73 -317.244 375.663 1871.86 -378.505 408.488 1871.86 -317.244 408.488 1871.99 -317.244 -407.184 1871.99 -378.505 -407.184 1872.12 -317.244 -374.361 1872.12 -378.505 -374.361 1873.34 -320.064 350.743 1873.6 -320.064 -432.103 1873.65 -320.064 433.396 1873.91 -320.064 -349.454 1883.6 23.0038 370.695 1883.6 23.0038 370.695 1883.76 23.0038 413.367 1883.76 23.0038 413.367 1883.86 23.0038 -412.151 1883.86 23.0038 -412.151 1884.02 23.0038 -369.483 1884.02 23.0038 -369.483 1889.95 -286.91 368.036 1889.95 20.99 368.036 1889.95 -39.1492 368.036 1890.13 -39.1492 415.979 1890.13 20.99 415.979 1890.13 -286.91 415.978 1890.22 20.99 -414.812 1890.22 -39.1492 -414.812 1890.22 -286.91 -414.812 1890.39 20.99 -366.869 1890.39 -39.1492 -366.869 1890.39 -286.91 -366.869 1890.52 -320.064 367.798 1890.61 -320.064 392.006 1890.7 -320.064 416.212 1890.78 -320.064 -415.051 1890.88 -320.064 -390.843 1890.97 -320.064 -366.635 3616.82 -294.872 196.146 3616.82 -0.197899 196.146 3616.82 -0.197899 196.146 3616.82 -0.197899 196.146 3623.64 -294.872 -168.837 3623.64 -0.146148 -168.837 3623.64 -0.146148 -168.837 3636.91 -294.872 302.452 3646.47 -294.872 -302.155 3646.47 -294.872 -302.155 3646.95 -0.230417 355.563 3646.95 -0.230417 355.563 3646.95 -0.230417 355.563 3650.16 9.76946 372.543 3650.16 9.76946 372.543 3650.16 9.76946 372.543 3655.42 -294.872 400.322 3655.5 -193.57 400.757 3655.5 -193.57 400.757 3655.5 -193.57 400.757 3655.55 -45.0538 401.005 3655.55 -45.0538 401.005 3655.61 -0.128617 -355.466 3655.61 -0.128617 -355.466 3655.61 -0.128617 -355.466 3657.75 9.75903 412.65 3657.75 9.75903 412.65 3658.28 9.87146 -371.088 3658.28 9.87146 -371.088 3658.28 9.87146 -371.088 3660.4 -34.0902 426.661 3660.4 -34.0902 426.661 3660.4 -34.0902 426.661 3660.42 -0.581274 426.791 3660.42 -0.581274 426.791 3660.42 -0.581274 426.791 3662.8 -45.9479 -397.444 3662.8 -45.9479 -397.444 3662.8 -45.9479 -397.444 3662.8 -45.9479 -397.444 3662.87 -294.872 -397.859 3662.87 -194.254 -397.887 3662.87 -194.254 -397.887 3662.87 -194.254 -397.887 3664.84 9.88189 -409.413 3664.84 9.88189 -409.413 3667.36 -0.471364 -424.088 3667.36 -0.471364 -424.088 3667.36 -0.471364 -424.088 3667.37 -34.1011 -424.169 3667.37 -34.1011 -424.169 3667.37 -34.1011 -424.169 3680.34 -0.188505 140.187 3680.34 -0.188505 140.187 3680.34 -0.188505 140.187 3680.35 -294.872 140.188 3692.7 -0.173287 5.77558 3692.7 -0.173287 5.77558 3692.7 -0.173287 5.77558 3692.7 -0.173287 5.77558 3705.04 -0.158047 -108.352 3705.04 -0.158047 -108.352 3705.04 -294.872 -108.351 </float_array>
+          <technique_common>
+            <accessor source="#test_bridge01_zama.xno-geometry-position-array" count="424" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_bridge01_zama.xno-geometry-normal">
+          <float_array id="test_bridge01_zama.xno-geometry-normal-array" count="309">-9.26288e-007 -1 9.3321e-007 -0.000598643 0.00124616 0.999999 -0.000449534 -0.000280818 1 -0.000750712 0.00296527 0.999995 0.000566307 -0.00152431 -0.999999 0.00056141 -0.00298386 -0.999995 0.000559427 -0.00425382 -0.999991 -0.925307 -1.07582e-014 -0.379218 -0.925265 0.00933948 -0.379205 -0.9224 0.00934182 0.386122 -0.922443 -7.244e-015 0.386133 -0.386119 0.00933773 -0.922402 -0.386137 -7.97036e-015 -0.922442 -0.379233 5.13544e-016 0.925301 -0.379217 0.00933905 0.925261 0.379202 0.00932356 -0.925267 0.379218 -5.1372e-016 -0.925307 0.386129 7.9703e-015 0.922445 0.386111 0.00934106 0.922405 0.922401 0.00932145 -0.38612 0.922442 7.24398e-015 -0.386136 0.925297 1.07582e-014 0.379242 0.925261 0.00933011 0.379216 -0.000557692 -0.00422867 0.999991 -0.000560103 -0.00298269 0.999995 -0.000565483 -0.00154793 0.999999 0.000750634 0.00298942 -0.999995 0.00044996 -0.000279117 -1 0.000598751 0.00125922 -0.999999 -0.995096 0.00271943 -0.0988744 -0.994398 -1.01866e-014 -0.105701 -0.596419 -2.16472e-015 0.802673 -4.60432e-005 1 -0.000135707 -0.995678 -1.01407e-014 -0.0928758 -0.660988 -9.86918e-015 -0.750397 5.06312e-005 1 -0.000109794 -0.985648 1.20813e-005 -0.168811 -0.000457126 0.0023391 0.999997 -8.06718e-005 -0.914243 0.405166 -0.000353218 0.817075 0.576531 -0.000187843 0.943275 0.332012 -0.982611 -5.06406e-005 0.185675 0.000279106 0.807221 -0.590249 0.000514102 -0.00382933 -0.999993 -0.982587 2.65451e-005 0.185804 0.000176661 -0.919523 -0.393036 7.62257e-005 0.861683 0.507448 0.000147066 0.938876 -0.344255 -8.36281e-005 0.84223 -0.539118 -3.36882e-005 1 -0.000251276 0.000112551 0.861668 -0.507473 -0.000118083 0.842232 0.539116 7.684e-007 1 2.01149e-006 -0.92514 0.0185747 -0.379171 -0.999845 0.0172033 0.00372387 -0.922288 0.0186376 0.386054 -0.779914 0.538116 -0.319632 -0.777512 0.538095 0.325467 -0.260921 0.95942 -0.106924 -0.260156 0.959406 0.108895 -0.709638 0.0171992 -0.704357 -0.704373 0.0172157 0.709621 -0.38608 0.018598 -0.922278 -0.325459 0.538112 -0.777504 -0.379173 0.0186335 0.925138 -0.31965 0.538096 0.779921 -0.108899 0.959414 -0.260126 -0.106948 0.959408 0.260955 -0.00374838 0.0171977 -0.999845 0.00370915 0.0172084 0.999845 0.106928 0.95942 -0.260922 0.108879 0.959415 0.26013 0.319626 0.538117 -0.779916 0.379155 0.0185747 -0.925147 0.325459 0.538122 0.777497 0.38602 0.0186376 0.922302 0.704342 0.0171946 -0.709652 0.709648 0.0172045 0.704346 0.260101 0.959423 -0.10888 0.260921 0.95942 0.106932 0.777495 0.538122 -0.325462 0.779905 0.538122 0.319644 0.92227 0.018598 -0.386099 0.999845 0.0172034 -0.00372643 0.925138 0.0186335 0.379173 0.660988 9.86918e-015 0.750397 -5.23812e-005 1 0.000108404 0.98259 2.64781e-005 -0.185787 0.596416 1.33196e-006 -0.802676 0.985647 3.18461e-006 0.168822 -2.83346e-005 1 0.000267197 -0.000176501 -0.919545 0.392984 -0.000150107 0.938863 0.344291 -0.000514078 -0.00386595 0.999992 -0.000279439 0.807186 0.590298 8.06865e-005 -0.914209 -0.405243 0.995804 6.23728e-006 0.0915128 0.000190031 0.943283 -0.331989 0.000352844 0.817107 -0.576485 0.00045689 0.00240001 -0.999997 0.994202 6.27189e-006 0.107524 0.995094 0.00339355 0.0988742 4.34578e-005 1 0.000138241 </float_array>
+          <technique_common>
+            <accessor source="#test_bridge01_zama.xno-geometry-normal-array" count="103" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_bridge01_zama.xno-geometry-uv">
+          <float_array id="test_bridge01_zama.xno-geometry-uv-array" count="508">1.39125 0.639745 2.09277 0.693217 -11.4535 3.18813 12.2479 -5.00911 12.2367 -6.01607 12.2377 -6.04358 -11.4529 3.53646 12.4395 -2.63958 12.1607 -1.99725 12.4398 -2.98849 12.1522 -3.02021 0.865056 0.769474 12.0979 -6.97711 2.57201 0.784492 11.997 -4.05403 1.21987 0.816698 2.25063 0.831181 0.304086 0.426942 0.234312 0.426664 0.164539 0.426387 -0.000709607 1.00547 1.00002 1.00547 -0.000709607 0.506164 1.00002 0.506163 0.124381 0.506164 0.124381 1.00547 0.353624 0.378932 0.115403 0.377984 0.2 0.3998 0.05872 0.34128 0.403162 0.330923 0.874926 0.506163 0.874926 1.00547 0.0662664 0.329582 0.249472 1.00547 0.249472 0.506164 0.34128 0.34128 0.000199795 0.2 0.403446 0.262749 0.0665506 0.261408 0.401765 0.197288 0.0587199 0.0587199 0.749835 0.506164 0.749835 1.00547 0.374563 1.00547 0.374563 0.506164 0.0668346 0.193235 0.34128 0.0587199 0.2 0.000199795 0.354594 0.146173 0.116373 0.145225 0.624744 0.506164 0.624744 1.00547 0.499654 1.00547 0.499653 0.506164 0.305458 0.0977706 0.235684 0.0974931 0.165911 0.0972154 1.16619 8.56273 2.19825 8.5762 -18.8152 -6.99271 0.865773 8.60655 -18.2787 -3.99961 2.57525 8.6252 -18.8592 -6.03818 -18.8592 -5.00383 -0.203435 3.1897 -0.203271 3.53686 1.18172 -2.63925 -18.3031 -2.98819 -18.3031 -1.99406 1.18154 -2.98717 1.32446 8.70019 2.02726 8.75282 -8.3882 2.3303 -8.3882 3.47605 0.663449 0.903447 -9.02807 3.47599 0.500883 0.920537 -9.66794 3.47594 0.315545 0.937627 -9.66794 2.3303 -6.25487 3.34409 -27.8753 7.00276 -6.25529 3.47483 -27.8752 7.26032 -6.33289 3.51508 -27.8576 7.53324 -11.6433 3.4744 -2.2153 4.27521 -11.6426 3.34413 -2.21547 4.00598 -6.39385 2.7191 -6.394 2.3303 -6.39619 3.29804 -27.8434 6.53512 -11.5692 3.5146 -2.23403 4.47186 -6.53559 3.51504 -27.8119 7.77896 -11.5082 3.3015 -2.24944 3.54324 -11.5069 2.72176 -11.5046 2.3303 -6.61821 3.47616 -27.7932 8.0033 0.99898 0.973968 -2.28713 4.78686 -11.3591 3.51464 0.00372209 0.981955 -2.3096 5.00434 -11.2701 3.47577 -6.90013 2.3303 -10.9918 2.3303 -7.56609 3.4761 0.748074 1.01652 -7.56609 2.3303 -10.3961 2.3303 -10.3961 3.4759 0.237189 1.02582 -0.99424 1.51603 1 1.51603 0.87536 1.51603 0.75072 1.51603 3.93235e-008 0.00674403 3.96898 0.00688291 3.90172e-007 0.399174 3.96898 0.399174 -0.99424 1.37914 1 1.37903 0.75036 1.37903 0.498061 0.00674409 0.496123 0.399174 4.14011e-007 0.486428 1.54618 -1.49758 3.96898 0.486428 4.55186 -1.49758 0.496123 0.486428 1.92189 -1.49758 -0.8696 1.51603 0.62608 1.51603 0.00516993 1.82321 1 1.82326 0.00192007 1.55906 1 1.55903 0.875 1.55891 0.875 1.82339 -0.74496 1.51603 3.47286 0.00688297 3.47286 0.399174 -0.74496 1.37914 0.50144 1.51603 0.50072 1.37903 0.99483 0.0067904 0.992245 0.399174 3.47286 0.486428 4.17615 -1.49758 0.992245 0.486428 2.2976 -1.49758 0.125 1.55891 0.125 1.82339 0.75 1.82339 0.75036 1.55903 -0.62032 1.51603 1.59721 -1.1038 1.97292 -1.1038 2.34863 -1.1038 2.72434 -1.1038 3.10005 -1.1038 3.47576 -1.1038 3.85147 -1.1038 4.22718 -1.1038 0.3768 1.51603 0.25 1.82339 0.25108 1.55903 0.625 1.82339 0.625 1.55891 2.97674 0.486429 3.80044 -1.49758 1.48837 0.486428 2.67331 -1.49758 2.97674 0.00688362 -0.49568 1.37914 2.97674 0.399175 -0.49568 1.51603 0.25108 1.37903 1.48837 0.00688303 1.48837 0.399174 0.25216 1.51603 0.375 1.82339 0.375 1.55891 0.501939 1.82326 0.50072 1.55903 -0.37104 1.51603 0.12752 1.51603 2.48061 0.486428 3.42473 -1.49758 1.98449 0.486428 3.04902 -1.49758 -0.2464 1.37914 2.48061 0.399174 2.48061 0.00688291 1.98449 0.00688285 1.98449 0.399174 0.00192007 1.37906 -0.2464 1.51603 -0.12176 1.51603 0.00287993 1.51603 -4.84865 2.31872 0.773148 5.97996 -4.84865 3.46431 -2.01866 2.31872 0.262263 5.98926 -2.01866 3.46451 -5.40567 2.31872 -1.31363 2.31872 0.996275 6.02188 -5.68397 3.46418 -2.4043 8.00473 -2.38184 7.78726 -5.77294 3.50306 -5.9185 2.31872 -5.92078 2.71254 -2.3442 6.54365 -5.92208 3.28993 -27.7375 5.00929 -1.03171 3.46458 0.0010148 6.03357 -2.32878 7.53898 -5.9831 3.50302 -27.7561 4.78496 -0.949106 3.50346 -2.31025 7.00639 -6.05651 3.33255 -2.31008 7.27563 -6.0572 3.46282 -0.809725 3.28645 -27.7876 3.54112 -0.80753 2.31872 -0.807383 2.70989 -27.8019 4.52875 -0.746424 3.5035 -27.8195 4.26632 -0.668823 3.46325 -27.8196 4.00877 -0.668396 3.33251 0.694792 6.06815 -4.12051 3.46435 -4.12051 2.31872 0.506642 6.08524 -3.48064 3.46441 0.346889 6.10233 -2.84077 3.46446 -2.84077 2.31872 </float_array>
+          <technique_common>
+            <accessor source="#test_bridge01_zama.xno-geometry-uv-array" count="254" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_bridge01_zama.xno-geometry-uv2">
+          <float_array id="test_bridge01_zama.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#test_bridge01_zama.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_bridge01_zama.xno-geometry-color">
+          <float_array id="test_bridge01_zama.xno-geometry-color-array" count="140">1 1 1 0.988235 1 1 1 0.0313726 1 1 1 1 1 1 1 0.956863 1 1 1 0.996078 1 1 1 0.945098 1 1 1 0.8 1 1 1 0.843137 1 1 1 0 1 1 1 0.796078 1 1 1 0.0470588 1 1 1 0.917647 1 1 1 0.67451 1 1 1 0.709804 1 1 1 0.368627 1 1 1 0.317647 1 1 1 0.305882 1 1 1 0.431373 1 1 1 0.254902 1 1 1 0.862745 1 1 1 0.498039 1 1 1 0.152941 1 1 1 0.905882 1 1 1 0.027451 1 1 1 0.894118 1 1 1 0.976471 1 1 1 0.92549 1 1 1 0.984314 1 1 1 0.427451 1 1 1 0.0823529 1 1 1 0.376471 1 1 1 0.921569 1 1 1 0.0117647 1 1 1 0.380392 1 1 1 0.0392157 </float_array>
+          <technique_common>
+            <accessor source="#test_bridge01_zama.xno-geometry-color-array" count="35" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="test_bridge01_zama.xno-geometry-vertex">
+          <input semantic="POSITION" source="#test_bridge01_zama.xno-geometry-position" />
+        </vertices>
+        <triangles material="test_bridge01_zama.xno0" count="40">
+          <input semantic="VERTEX" source="#test_bridge01_zama.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#test_bridge01_zama.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#test_bridge01_zama.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#test_bridge01_zama.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#test_bridge01_zama.xno-geometry-color" offset="4" set="0" />
+          <p>20 0 19 0 2 19 0 18 0 2 38 0 27 0 2 62 0 39 0 2 38 0 27 0 2 19 0 18 0 2 38 0 27 0 2 62 0 39 0 2 48 0 33 0 2 62 0 39 0 2 86 0 50 0 2 76 0 46 0 2 60 0 38 0 2 36 0 26 0 2 44 0 30 0 2 36 0 26 0 2 60 0 38 0 2 97 0 56 0 2 84 0 49 0 2 97 0 56 0 2 60 0 38 0 2 97 0 56 0 2 84 0 49 0 2 96 0 55 0 2 84 0 49 0 2 60 0 38 0 2 70 0 40 0 2 36 0 26 0 2 19 0 18 0 2 18 0 17 0 2 19 0 18 0 2 36 0 26 0 2 62 0 39 0 2 97 0 56 0 2 62 0 39 0 2 36 0 26 0 2 62 0 39 0 2 97 0 56 0 2 86 0 50 0 2 98 0 57 0 2 86 0 50 0 2 97 0 56 0 2 41 0 29 0 2 40 0 28 0 2 58 0 37 0 2 56 0 36 0 2 58 0 37 0 2 40 0 28 0 2 58 0 37 0 2 56 0 36 0 2 81 0 48 0 2 64 0 40 0 2 81 0 48 0 2 56 0 36 0 2 81 0 48 0 2 64 0 40 0 2 80 0 47 0 2 81 0 48 0 2 66 0 41 0 2 58 0 37 0 2 21 0 17 0 2 37 0 26 0 2 22 0 18 0 2 39 0 27 0 2 22 0 18 0 2 37 0 26 0 2 22 0 18 0 2 39 0 27 0 2 23 0 19 0 2 63 0 39 0 2 87 0 50 0 2 79 0 46 0 2 39 0 27 0 2 63 0 39 0 2 53 0 33 0 2 63 0 39 0 2 39 0 27 0 2 87 0 50 0 2 37 0 26 0 2 87 0 50 0 2 39 0 27 0 2 87 0 50 0 2 37 0 26 0 2 85 0 49 0 2 61 0 38 0 2 85 0 49 0 2 37 0 26 0 2 85 0 49 0 2 61 0 38 0 2 75 0 40 0 2 61 0 38 0 2 37 0 26 0 2 47 0 30 0 2 100 0 56 0 2 85 0 49 0 2 99 0 55 0 2 85 0 49 0 2 100 0 56 0 2 87 0 50 0 2 101 0 57 0 2 87 0 50 0 2 100 0 56 0 2 82 0 47 0 2 83 0 48 0 2 65 0 40 0 2 67 0 41 0 2 65 0 40 0 2 83 0 48 0 2 65 0 40 0 2 67 0 41 0 2 43 0 29 0 2 59 0 37 0 2 43 0 29 0 2 67 0 41 0 2 42 0 28 0 2 65 0 40 0 2 43 0 29 0 2 65 0 40 0 2 42 0 28 0 2 57 0 36 0 2 </p>
+        </triangles>
+        <triangles material="test_bridge01_zama.xno1" count="46">
+          <input semantic="VERTEX" source="#test_bridge01_zama.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#test_bridge01_zama.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#test_bridge01_zama.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#test_bridge01_zama.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#test_bridge01_zama.xno-geometry-color" offset="4" set="0" />
+          <p>105 0 61 0 2 12 0 11 0 3 102 0 58 0 2 16 0 15 0 2 102 0 58 0 2 12 0 11 0 3 102 0 58 0 2 16 0 15 0 2 17 0 16 0 2 17 0 16 0 2 16 0 15 0 2 1 0 1 0 1 0 0 0 0 0 1 0 1 0 1 16 0 15 0 2 119 0 73 0 2 118 0 72 0 7 103 0 59 0 2 102 0 58 0 2 103 0 59 0 2 118 0 72 0 7 17 0 16 0 2 103 0 59 0 2 102 0 58 0 2 103 0 59 0 2 17 0 16 0 2 107 0 63 0 2 14 0 13 0 2 107 0 63 0 2 17 0 16 0 2 33 8 23 0 2 31 7 21 0 2 49 11 31 0 2 50 12 32 0 2 49 11 31 0 2 31 7 21 0 2 72 16 43 0 2 49 11 31 0 2 50 12 32 0 2 49 11 31 0 2 72 16 43 0 2 71 15 42 0 2 71 15 42 0 2 72 16 43 0 2 93 19 51 0 2 92 20 52 0 2 93 19 51 0 2 72 16 43 0 2 94 21 53 0 2 93 19 51 0 2 92 20 52 0 2 93 19 51 0 2 94 21 53 0 2 95 22 54 0 2 78 17 44 0 2 95 22 54 0 2 94 21 53 0 2 95 22 54 0 2 78 17 44 0 2 77 18 45 0 2 77 18 45 0 2 78 17 44 0 2 55 14 35 0 2 54 13 34 0 2 55 14 35 0 2 78 17 44 0 2 35 10 25 0 2 55 14 35 0 2 54 13 34 0 2 55 14 35 0 2 35 10 25 0 2 34 9 24 0 2 30 7 20 0 2 34 9 24 0 2 35 10 25 0 2 34 9 24 0 2 30 7 20 0 2 32 8 22 0 2 2 1 2 0 2 112 25 67 0 4 6 3 6 0 2 112 25 67 0 4 2 1 2 0 2 111 24 66 0 2 28 9 24 0 2 24 7 20 0 2 26 8 22 0 2 24 7 20 0 2 28 9 24 0 2 29 10 25 0 2 52 14 35 0 2 29 10 25 0 2 28 9 24 0 2 29 10 25 0 2 52 14 35 0 2 51 13 34 0 4 51 13 34 0 4 52 14 35 0 2 73 17 44 0 2 74 18 45 0 2 73 17 44 0 2 52 14 35 0 2 73 17 44 0 2 74 18 45 0 2 90 21 53 0 2 91 22 54 0 2 90 21 53 0 2 74 18 45 0 2 90 21 53 0 2 91 22 54 0 2 89 20 52 0 5 88 19 51 0 2 89 20 52 0 5 91 22 54 0 2 89 20 52 0 5 88 19 51 0 2 69 16 43 0 2 68 15 42 0 2 69 16 43 0 2 88 19 51 0 2 45 11 31 0 2 69 16 43 0 2 68 15 42 0 2 69 16 43 0 2 45 11 31 0 2 46 12 32 0 2 46 12 32 0 2 45 11 31 0 2 25 7 21 0 2 27 8 23 0 2 25 7 21 0 2 45 11 31 0 2 9 5 9 0 2 7 4 7 0 2 117 28 71 0 2 113 26 68 0 6 117 28 71 0 2 7 4 7 0 2 </p>
+        </triangles>
+        <triangles material="test_bridge01_zama.xno2" count="8">
+          <input semantic="VERTEX" source="#test_bridge01_zama.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#test_bridge01_zama.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#test_bridge01_zama.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#test_bridge01_zama.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#test_bridge01_zama.xno-geometry-color" offset="4" set="0" />
+          <p>110 24 65 0 2 3 1 3 0 2 108 23 64 0 2 4 2 4 0 2 108 23 64 0 2 3 1 3 0 2 8 5 8 0 2 116 28 70 0 2 11 6 10 0 2 115 27 69 0 2 11 6 10 0 2 116 28 70 0 2 109 0 64 0 2 5 0 5 0 2 104 0 60 0 2 13 0 12 0 3 104 0 60 0 2 5 0 5 0 2 10 0 10 0 2 114 0 69 0 2 15 0 14 0 2 106 0 62 0 2 15 0 14 0 2 114 0 69 0 2 </p>
+        </triangles>
+        <triangles material="test_bridge01_zama.xno3" count="180">
+          <input semantic="VERTEX" source="#test_bridge01_zama.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#test_bridge01_zama.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#test_bridge01_zama.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#test_bridge01_zama.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#test_bridge01_zama.xno-geometry-color" offset="4" set="0" />
+          <p>374 90 219 0 29 155 49 99 0 11 386 92 228 0 31 139 40 87 0 10 386 92 228 0 31 155 49 99 0 11 137 39 85 0 2 386 92 228 0 31 139 40 87 0 10 386 92 228 0 31 137 39 85 0 2 395 94 234 0 2 381 91 223 0 4 134 38 83 0 2 150 38 95 0 2 134 38 83 0 2 381 91 223 0 4 392 91 232 0 2 383 51 225 0 30 167 51 107 0 2 171 46 110 0 12 167 51 107 0 2 383 51 225 0 30 388 51 230 0 8 152 47 97 0 8 407 98 242 0 2 141 42 89 0 2 407 98 242 0 2 152 47 97 0 8 405 97 240 0 4 169 49 107 0 2 405 97 240 0 4 152 47 97 0 8 405 97 240 0 4 169 49 107 0 2 390 90 230 0 8 187 54 122 0 2 198 8 129 0 2 186 53 121 0 2 198 8 129 0 2 187 54 122 0 2 199 9 130 0 2 188 55 123 0 2 199 9 130 0 2 187 54 122 0 2 225 61 140 0 2 199 9 130 0 2 188 55 123 0 2 199 9 130 0 2 225 61 140 0 2 248 14 152 0 2 244 64 151 0 2 248 14 152 0 2 225 61 140 0 2 281 69 172 0 2 248 14 152 0 2 244 64 151 0 2 248 14 152 0 2 281 69 172 0 2 314 18 185 0 2 318 75 188 0 2 314 18 185 0 2 281 69 172 0 2 333 77 194 0 2 314 18 185 0 2 318 75 188 0 2 314 18 185 0 2 333 77 194 0 2 348 22 204 0 2 357 84 207 0 2 348 22 204 0 2 333 77 194 0 2 356 83 206 0 2 348 22 204 0 2 357 84 207 0 2 348 22 204 0 2 356 83 206 0 2 343 19 199 0 2 355 82 205 0 2 343 19 199 0 2 356 83 206 0 2 331 76 193 0 2 343 19 199 0 2 355 82 205 0 2 343 19 199 0 2 331 76 193 0 2 308 15 182 0 2 310 73 184 0 2 308 15 182 0 2 331 76 193 0 2 271 68 163 0 2 308 15 182 0 2 310 73 184 0 2 308 15 182 0 2 271 68 163 0 2 242 11 150 0 2 239 62 147 0 2 242 11 150 0 2 271 68 163 0 2 223 60 139 0 2 242 11 150 0 2 239 62 147 0 2 242 11 150 0 2 223 60 139 0 2 197 8 128 0 2 185 53 120 0 2 197 8 128 0 2 223 60 139 0 2 306 71 180 0 23 284 52 166 0 8 262 67 158 0 4 283 52 165 0 8 222 59 138 0 2 262 67 158 0 4 282 52 164 0 8 218 58 134 0 19 222 59 138 0 2 340 78 196 0 2 286 52 168 0 8 342 79 198 0 26 285 52 167 0 8 306 71 180 0 23 342 79 198 0 26 189 53 120 0 2 202 8 128 0 2 224 60 139 0 2 247 11 150 0 2 224 60 139 0 2 202 8 128 0 2 224 60 139 0 2 247 11 150 0 2 243 62 147 0 2 243 62 147 0 2 247 11 150 0 2 280 68 163 0 2 311 15 182 0 2 280 68 163 0 2 247 11 150 0 2 280 68 163 0 2 311 15 182 0 2 317 73 184 0 2 317 73 184 0 2 311 15 182 0 2 332 76 193 0 2 351 19 199 0 2 332 76 193 0 2 311 15 182 0 2 332 76 193 0 2 351 19 199 0 2 358 82 205 0 2 358 82 205 0 2 351 19 199 0 2 359 83 206 0 2 354 22 204 0 2 359 83 206 0 2 351 19 199 0 2 359 83 206 0 2 354 22 204 0 2 360 84 207 0 2 360 84 207 0 2 354 22 204 0 2 334 77 194 0 2 320 18 185 0 2 334 77 194 0 2 354 22 204 0 2 334 77 194 0 2 320 18 185 0 2 322 75 188 0 2 322 75 188 0 2 320 18 185 0 2 290 69 172 0 2 252 14 152 0 2 290 69 172 0 2 320 18 185 0 2 290 69 172 0 2 252 14 152 0 2 251 64 151 0 2 251 64 151 0 2 252 14 152 0 2 226 61 140 0 2 209 9 130 0 2 226 61 140 0 2 252 14 152 0 2 226 61 140 0 2 209 9 130 0 2 192 55 123 0 2 192 55 123 0 2 209 9 130 0 2 191 54 122 0 2 203 8 129 0 2 191 54 122 0 2 209 9 130 0 2 191 54 122 0 2 203 8 129 0 2 190 53 121 0 2 256 66 156 0 21 214 58 136 0 18 279 52 171 0 8 256 66 156 0 21 278 52 170 0 8 300 70 178 0 2 277 52 169 0 8 336 78 196 0 23 300 70 178 0 2 142 43 89 0 2 408 99 242 0 2 145 43 91 0 2 411 99 244 0 2 145 43 91 0 2 408 99 242 0 2 227 7 141 0 2 229 7 143 0 2 264 12 160 0 2 263 12 159 0 2 264 12 160 0 2 229 7 143 0 2 264 12 160 0 2 263 12 159 0 2 291 16 173 0 2 292 16 174 0 2 291 16 173 0 2 263 12 159 0 2 291 16 173 0 2 292 16 174 0 2 323 20 189 0 2 324 20 190 0 2 323 20 189 0 2 292 16 174 0 2 323 20 189 0 2 324 20 190 0 2 325 21 191 0 2 326 21 192 0 2 325 21 191 0 2 324 20 190 0 2 296 17 176 0 2 325 21 191 0 2 326 21 192 0 2 325 21 191 0 2 296 17 176 0 2 295 17 175 0 2 295 17 175 0 2 296 17 176 0 2 267 13 161 0 2 268 13 162 0 2 267 13 161 0 2 296 17 176 0 2 267 13 161 0 2 268 13 162 0 2 232 10 146 0 2 231 10 145 0 2 232 10 146 0 2 268 13 162 0 2 232 10 146 0 2 231 10 145 0 2 228 7 142 0 2 230 7 144 0 2 228 7 142 0 2 231 10 145 0 2 275 52 167 0 8 304 71 180 0 2 338 79 198 0 25 336 78 196 0 23 276 52 168 0 8 338 79 198 0 25 272 52 164 0 8 212 58 134 0 18 216 59 138 0 8 273 52 165 0 8 216 59 138 0 8 260 67 158 0 8 304 71 180 0 2 274 52 166 0 8 260 67 158 0 8 194 7 125 0 2 196 56 127 0 15 240 12 148 0 2 241 63 149 0 2 240 12 148 0 2 196 56 127 0 15 309 72 183 0 2 240 12 148 0 2 241 63 149 0 2 240 12 148 0 2 309 72 183 0 2 307 16 181 0 2 307 16 181 0 2 309 72 183 0 2 345 20 201 0 5 344 80 200 0 23 345 20 201 0 5 309 72 183 0 2 347 81 203 0 27 345 20 201 0 5 344 80 200 0 23 345 20 201 0 5 347 81 203 0 27 346 21 202 0 2 316 74 187 0 2 346 21 202 0 2 347 81 203 0 27 346 21 202 0 2 316 74 187 0 2 315 17 186 0 2 250 65 154 0 20 315 17 186 0 2 316 74 187 0 2 315 17 186 0 2 250 65 154 0 20 249 13 153 0 4 201 57 132 0 16 249 13 153 0 4 250 65 154 0 20 249 13 153 0 4 201 57 132 0 16 200 10 131 0 2 195 56 126 0 15 200 10 131 0 2 201 57 132 0 16 200 10 131 0 2 195 56 126 0 15 193 7 124 0 2 255 66 155 0 21 196 56 127 0 15 213 58 135 0 18 196 56 127 0 15 255 66 155 0 21 241 63 149 0 2 299 70 177 0 2 241 63 149 0 2 255 66 155 0 21 241 63 149 0 2 299 70 177 0 2 309 72 183 0 2 309 72 183 0 2 299 70 177 0 2 344 80 200 0 23 335 78 195 0 23 344 80 200 0 23 299 70 177 0 2 337 79 197 0 25 344 80 200 0 23 335 78 195 0 23 344 80 200 0 23 337 79 197 0 25 347 81 203 0 27 303 71 179 0 2 347 81 203 0 27 337 79 197 0 25 347 81 203 0 27 303 71 179 0 2 316 74 187 0 2 259 67 157 0 8 316 74 187 0 2 303 71 179 0 2 316 74 187 0 2 259 67 157 0 8 250 65 154 0 20 250 65 154 0 20 259 67 157 0 8 201 57 132 0 16 215 59 137 0 8 201 57 132 0 16 259 67 157 0 8 201 57 132 0 16 215 59 137 0 8 195 56 126 0 15 211 58 133 0 18 195 56 126 0 15 215 59 137 0 8 235 7 141 0 2 233 7 143 0 2 265 12 160 0 2 266 12 159 0 2 265 12 160 0 2 233 7 143 0 2 265 12 160 0 2 266 12 159 0 2 293 16 173 0 2 294 16 174 0 2 293 16 173 0 2 266 12 159 0 2 293 16 173 0 2 294 16 174 0 2 328 20 189 0 2 327 20 190 0 2 328 20 189 0 2 294 16 174 0 2 328 20 189 0 2 327 20 190 0 2 330 21 191 0 2 329 21 192 0 2 330 21 191 0 2 327 20 190 0 2 297 17 176 0 2 330 21 191 0 2 329 21 192 0 2 330 21 191 0 2 297 17 176 0 2 298 17 175 0 2 298 17 175 0 2 297 17 176 0 2 269 13 161 0 2 270 13 162 0 2 269 13 161 0 2 297 17 176 0 2 269 13 161 0 2 270 13 162 0 2 238 10 146 0 2 237 10 145 0 2 238 10 146 0 2 270 13 162 0 2 238 10 146 0 2 237 10 145 0 2 236 7 142 0 2 234 7 144 0 2 236 7 142 0 2 237 10 145 0 2 287 52 169 0 8 340 78 196 0 2 302 70 178 0 22 258 66 156 0 8 288 52 170 0 8 302 70 178 0 22 258 66 156 0 8 220 58 136 0 19 289 52 171 0 8 257 66 155 0 8 207 56 127 0 17 219 58 135 0 19 207 56 127 0 17 257 66 155 0 8 246 63 149 0 8 301 70 177 0 22 246 63 149 0 8 257 66 155 0 8 246 63 149 0 8 301 70 177 0 22 312 72 183 0 24 339 78 195 0 2 312 72 183 0 24 301 70 177 0 22 312 72 183 0 24 339 78 195 0 2 349 80 200 0 2 341 79 197 0 26 349 80 200 0 2 339 78 195 0 2 349 80 200 0 2 341 79 197 0 26 352 81 203 0 0 352 81 203 0 0 341 79 197 0 26 321 74 187 0 23 305 71 179 0 23 321 74 187 0 23 341 79 197 0 26 321 74 187 0 23 305 71 179 0 23 254 65 154 0 5 261 67 157 0 4 254 65 154 0 5 305 71 179 0 23 221 59 137 0 2 254 65 154 0 5 261 67 157 0 4 254 65 154 0 5 221 59 137 0 2 210 57 132 0 2 217 58 133 0 19 210 57 132 0 2 221 59 137 0 2 206 56 126 0 17 210 57 132 0 2 217 58 133 0 19 210 57 132 0 2 206 56 126 0 17 208 10 131 0 2 204 7 124 0 2 208 10 131 0 2 206 56 126 0 17 253 13 153 0 2 210 57 132 0 2 208 10 131 0 2 210 57 132 0 2 253 13 153 0 2 254 65 154 0 5 319 17 186 0 2 254 65 154 0 5 253 13 153 0 2 254 65 154 0 5 319 17 186 0 2 321 74 187 0 23 353 21 202 0 2 321 74 187 0 23 319 17 186 0 2 321 74 187 0 23 353 21 202 0 2 352 81 203 0 0 350 20 201 0 2 352 81 203 0 0 353 21 202 0 2 352 81 203 0 0 350 20 201 0 2 349 80 200 0 2 349 80 200 0 2 350 20 201 0 2 312 72 183 0 24 313 16 181 0 2 312 72 183 0 24 350 20 201 0 2 245 12 148 0 2 312 72 183 0 24 313 16 181 0 2 312 72 183 0 24 245 12 148 0 2 246 63 149 0 8 246 63 149 0 8 245 12 148 0 2 207 56 127 0 17 205 7 125 0 2 207 56 127 0 17 245 12 148 0 2 156 50 99 0 11 375 50 219 0 29 373 50 218 0 28 165 48 105 0 4 154 48 99 0 11 373 50 218 0 28 144 45 91 0 2 410 95 244 0 2 159 45 101 0 2 398 95 237 0 6 159 45 101 0 2 410 95 244 0 2 133 37 83 0 2 391 93 232 0 2 136 37 85 0 2 394 93 234 0 2 136 37 85 0 2 391 93 232 0 2 </p>
+        </triangles>
+        <triangles material="test_bridge01_zama.xno4" count="50">
+          <input semantic="VERTEX" source="#test_bridge01_zama.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#test_bridge01_zama.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#test_bridge01_zama.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#test_bridge01_zama.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#test_bridge01_zama.xno-geometry-color" offset="4" set="0" />
+          <p>414 85 247 0 32 363 85 210 0 2 416 85 248 0 7 361 85 208 0 2 416 85 248 0 7 363 85 210 0 2 361 85 208 0 2 364 87 210 0 2 368 87 214 0 2 378 50 222 0 2 368 87 214 0 2 364 87 210 0 2 379 88 222 0 2 377 87 221 0 2 368 87 214 0 2 423 88 253 0 2 419 101 250 0 33 416 85 248 0 7 420 96 250 0 33 415 96 247 0 32 416 85 248 0 7 367 88 213 0 19 402 51 239 0 2 384 51 226 0 30 397 51 236 0 6 384 51 226 0 30 402 51 239 0 2 397 51 236 0 6 406 89 241 0 4 389 51 231 0 8 384 51 226 0 30 399 88 236 0 6 389 51 231 0 8 148 36 93 0 2 146 36 92 0 2 173 36 112 0 3 178 36 116 0 2 173 36 112 0 3 175 36 114 0 13 146 36 92 0 2 175 36 114 0 13 173 36 112 0 3 175 36 114 0 13 146 36 92 0 2 164 48 104 0 4 157 41 100 0 2 140 41 88 0 2 143 44 90 0 2 140 41 88 0 2 157 41 100 0 2 151 41 96 0 8 151 41 96 0 8 157 41 100 0 2 168 51 108 0 2 172 46 111 0 12 168 51 108 0 2 157 41 100 0 2 162 46 102 0 2 172 46 111 0 12 158 46 100 0 2 172 46 111 0 12 162 46 102 0 2 182 41 118 0 14 180 41 117 0 2 182 41 118 0 14 174 41 113 0 2 160 41 102 0 2 174 41 113 0 2 182 41 118 0 14 161 51 102 0 2 163 41 103 0 2 174 41 113 0 2 120 29 74 0 0 126 29 77 0 9 131 34 81 0 1 367 88 213 0 19 369 88 215 0 2 404 96 239 0 2 369 88 215 0 2 367 88 213 0 19 365 88 211 0 2 422 88 252 0 34 365 88 211 0 2 367 88 213 0 19 365 88 211 0 2 422 88 252 0 34 423 88 253 0 2 418 100 250 0 33 423 88 253 0 2 422 88 252 0 34 122 31 74 0 0 179 31 116 0 2 123 31 75 0 8 176 31 114 0 13 123 31 75 0 8 179 31 116 0 2 125 33 77 0 9 129 34 79 0 8 131 34 81 0 1 183 34 118 0 14 131 34 81 0 1 129 34 79 0 8 131 34 81 0 1 183 34 118 0 14 181 34 117 0 2 401 89 238 0 2 403 89 239 0 2 370 89 215 0 2 400 89 236 0 6 412 89 245 0 2 406 89 241 0 4 409 89 243 0 2 406 89 241 0 4 412 89 245 0 2 121 30 74 0 0 123 31 75 0 8 127 30 77 0 9 149 36 94 0 2 164 48 104 0 4 147 46 92 0 2 164 48 104 0 4 149 36 94 0 2 153 36 98 0 11 153 36 98 0 11 149 36 94 0 2 138 36 86 0 10 132 36 82 0 2 138 36 86 0 10 149 36 94 0 2 138 36 86 0 10 132 36 82 0 2 135 36 84 0 2 382 87 224 0 4 396 87 235 0 2 393 87 233 0 2 396 87 235 0 2 382 87 224 0 4 387 87 229 0 31 382 87 224 0 4 376 87 220 0 29 387 87 229 0 31 376 87 220 0 29 382 87 224 0 4 372 50 217 0 28 380 87 222 0 2 372 50 217 0 28 382 87 224 0 4 372 50 217 0 28 380 87 222 0 2 364 87 210 0 2 </p>
+        </triangles>
+        <triangles material="test_bridge01_zama.xno5" count="12">
+          <input semantic="VERTEX" source="#test_bridge01_zama.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#test_bridge01_zama.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#test_bridge01_zama.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#test_bridge01_zama.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#test_bridge01_zama.xno-geometry-color" offset="4" set="0" />
+          <p>385 86 227 0 30 170 49 109 0 12 366 86 212 0 19 184 49 119 0 14 366 86 212 0 19 170 49 109 0 12 366 86 212 0 19 184 49 119 0 14 128 32 78 0 9 130 35 80 0 8 128 32 78 0 9 184 49 119 0 14 417 86 249 0 33 366 86 212 0 19 128 32 78 0 9 366 86 212 0 19 417 86 249 0 33 421 102 251 0 34 362 86 209 0 2 166 52 106 0 4 371 90 216 0 28 166 52 106 0 4 362 86 209 0 2 177 32 115 0 13 124 32 76 0 8 177 32 115 0 13 128 32 78 0 9 362 86 209 0 2 128 32 78 0 9 177 32 115 0 13 128 32 78 0 9 362 86 209 0 2 417 86 249 0 33 413 86 246 0 32 417 86 249 0 33 362 86 209 0 2 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="test_bridge01_zama.xno-controller">
+      <skin source="#test_bridge01_zama.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="test_bridge01_zama.xno-controller-Joints">
+          <Name_array id="test_bridge01_zama.xno-controller-Joints-array" count="1">test_bridge01_zama.xno0 </Name_array>
+          <technique_common>
+            <accessor source="#test_bridge01_zama.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_bridge01_zama.xno-controller-Matrices">
+          <float_array id="test_bridge01_zama.xno-controller-Matrices-array" count="16">-0.906167 -1.07704e-014 -0.422921 0 -9.75979e-015 1 -4.55503e-015 0 0.422921 -3.34783e-023 -0.906167 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#test_bridge01_zama.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_bridge01_zama.xno-controller-Weights">
+          <float_array id="test_bridge01_zama.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#test_bridge01_zama.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#test_bridge01_zama.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#test_bridge01_zama.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="424">
+          <input semantic="JOINT" offset="0" source="#test_bridge01_zama.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#test_bridge01_zama.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="test_bridge01_zama.xno0" sid="test_bridge01_zama.xno0" name="test_bridge01_zama.xno0" type="JOINT">
+        <matrix>-0.90615 0 0.422956 0 0 1 0 0 -0.422956 0 -0.90615 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="test_bridge01_zama.xno" sid="test_bridge01_zama.xno" name="test_bridge01_zama.xno">
+        <instance_controller url="#test_bridge01_zama.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="test_bridge01_zama.xno0" target="#test_bridge01_zama.xno0ID" />
+              <instance_material symbol="test_bridge01_zama.xno1" target="#test_bridge01_zama.xno1ID" />
+              <instance_material symbol="test_bridge01_zama.xno2" target="#test_bridge01_zama.xno2ID" />
+              <instance_material symbol="test_bridge01_zama.xno3" target="#test_bridge01_zama.xno3ID" />
+              <instance_material symbol="test_bridge01_zama.xno4" target="#test_bridge01_zama.xno4ID" />
+              <instance_material symbol="test_bridge01_zama.xno5" target="#test_bridge01_zama.xno5ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

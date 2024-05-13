@@ -1,0 +1,353 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="tpj_moss03_dfsp_n.dds-image" name="tpj_moss03_dfsp_n.dds-image">
+      <init_from>./textures/tpj_moss03_dfsp_n.dds</init_from>
+    </image>
+    <image id="tpj_ruin12_dfsp_n.dds-image" name="tpj_ruin12_dfsp_n.dds-image">
+      <init_from>./textures/tpj_ruin12_dfsp_n.dds</init_from>
+    </image>
+    <image id="tpj_ruin11_dfsp_n.dds-image" name="tpj_ruin11_dfsp_n.dds-image">
+      <init_from>./textures/tpj_ruin11_dfsp_n.dds</init_from>
+    </image>
+    <image id="tpj_ruin11_ntxx_n.dds-image" name="tpj_ruin11_ntxx_n.dds-image">
+      <init_from>./textures/tpj_ruin11_ntxx_n.dds</init_from>
+    </image>
+    <image id="tpj_plant07_dfpt_p_n.dds-image" name="tpj_plant07_dfpt_p_n.dds-image">
+      <init_from>./textures/tpj_plant07_dfpt_p_n.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="tpj_obj_gateA.xno0ID" name="tpj_obj_gateA.xno0">
+      <instance_effect url="#tpj_obj_gateA.xno0-effect" />
+    </material>
+    <material id="tpj_obj_gateA.xno1ID" name="tpj_obj_gateA.xno1">
+      <instance_effect url="#tpj_obj_gateA.xno1-effect" />
+    </material>
+    <material id="tpj_obj_gateA.xno2ID" name="tpj_obj_gateA.xno2">
+      <instance_effect url="#tpj_obj_gateA.xno2-effect" />
+    </material>
+    <material id="tpj_obj_gateA.xno3ID" name="tpj_obj_gateA.xno3">
+      <instance_effect url="#tpj_obj_gateA.xno3-effect" />
+    </material>
+    <material id="tpj_obj_gateA.xno4ID" name="tpj_obj_gateA.xno4">
+      <instance_effect url="#tpj_obj_gateA.xno4-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="tpj_obj_gateA.xno0-effect" name="tpj_obj_gateA.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="tpj_ruin12_dfsp_n.dds-image-surface">
+          <surface type="2D">
+            <init_from>tpj_ruin12_dfsp_n.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="tpj_ruin12_dfsp_n.dds-image-sampler">
+          <sampler2D>
+            <source>tpj_ruin12_dfsp_n.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="tpj_ruin12_dfsp_n.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="tpj_obj_gateA.xno1-effect" name="tpj_obj_gateA.xno1-effect">
+      <profile_COMMON>
+        <newparam sid="tpj_ruin11_dfsp_n.dds-image-surface">
+          <surface type="2D">
+            <init_from>tpj_ruin11_dfsp_n.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="tpj_ruin11_dfsp_n.dds-image-sampler">
+          <sampler2D>
+            <source>tpj_ruin11_dfsp_n.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="tpj_ruin11_ntxx_n.dds-image-surface">
+          <surface type="2D">
+            <init_from>tpj_ruin11_ntxx_n.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="tpj_ruin11_ntxx_n.dds-image-sampler">
+          <sampler2D>
+            <source>tpj_ruin11_ntxx_n.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="tpj_ruin11_ntxx_n.dds-image-surface">
+          <surface type="2D">
+            <init_from>tpj_ruin11_ntxx_n.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="tpj_ruin11_ntxx_n.dds-image-sampler">
+          <sampler2D>
+            <source>tpj_ruin11_ntxx_n.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="tpj_ruin11_ntxx_n.dds-image-surface">
+          <surface type="2D">
+            <init_from>tpj_ruin11_ntxx_n.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="tpj_ruin11_ntxx_n.dds-image-sampler">
+          <sampler2D>
+            <source>tpj_ruin11_ntxx_n.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="tpj_ruin11_dfsp_n.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="tpj_obj_gateA.xno2-effect" name="tpj_obj_gateA.xno2-effect">
+      <profile_COMMON>
+        <newparam sid="tpj_moss03_dfsp_n.dds-image-surface">
+          <surface type="2D">
+            <init_from>tpj_moss03_dfsp_n.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="tpj_moss03_dfsp_n.dds-image-sampler">
+          <sampler2D>
+            <source>tpj_moss03_dfsp_n.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="tpj_moss03_dfsp_n.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="tpj_obj_gateA.xno3-effect" name="tpj_obj_gateA.xno3-effect">
+      <profile_COMMON>
+        <newparam sid="tpj_ruin11_dfsp_n.dds-image-surface">
+          <surface type="2D">
+            <init_from>tpj_ruin11_dfsp_n.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="tpj_ruin11_dfsp_n.dds-image-sampler">
+          <sampler2D>
+            <source>tpj_ruin11_dfsp_n.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="tpj_ruin11_dfsp_n.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="tpj_obj_gateA.xno4-effect" name="tpj_obj_gateA.xno4-effect">
+      <profile_COMMON>
+        <newparam sid="tpj_plant07_dfpt_p_n.dds-image-surface">
+          <surface type="2D">
+            <init_from>tpj_plant07_dfpt_p_n.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="tpj_plant07_dfpt_p_n.dds-image-sampler">
+          <sampler2D>
+            <source>tpj_plant07_dfpt_p_n.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="tpj_plant07_dfpt_p_n.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="tpj_obj_gateA.xno-geometry" name="tpj_obj_gateA.xno-geometry">
+      <mesh>
+        <source id="tpj_obj_gateA.xno-geometry-position">
+          <float_array id="tpj_obj_gateA.xno-geometry-position-array" count="654">-1528.88 -85.7046 226.838 -1528.88 -85.7046 226.838 -1528.88 84.4236 226.838 -1528.88 84.4236 226.838 -1528.88 84.4236 -226.837 -1528.88 84.4236 -226.837 -1528.88 -85.7046 -226.837 -1528.88 -85.7046 -226.837 -1478.64 84.4236 226.838 -1478.64 84.4236 226.838 -1478.64 84.4236 226.838 -1478.64 -85.7046 226.838 -1478.64 -85.7046 226.838 -1478.64 -85.7046 226.838 -1478.64 84.4236 -226.837 -1478.64 84.4236 -226.837 -1478.64 84.4236 -226.837 -1478.64 -85.7046 -226.837 -1478.64 -85.7046 -226.837 -1478.64 -85.7046 -226.837 -1478.01 77.7558 251.533 -1477.58 -100.641 250 -1477.58 -100.641 250 -1477.58 84.9885 250 -1477.58 -100.64 -250 -1477.58 -100.64 -250 -1477.58 84.9885 -250 -1465.06 -28.2726 251.533 -1451.07 99.3595 222.223 -1451.07 99.3595 -222.222 -1444.15 83.422 251.533 -1422.17 25.2994 251.533 -1412.56 -3.90884 251.533 -1410.81 -36.7508 251.533 -1399.65 -1.27249 251.533 -1388.66 -81.4478 251.533 -1377.95 39.0808 251.533 -1371.84 -69.9634 251.533 -1359.74 -100.078 251.533 -1341.66 -94.2316 251.533 -1336.08 17.8705 251.533 -1335.56 62.7746 251.533 -1335.46 -137.66 251.533 -1332.29 -39.2693 251.533 -1316.15 45.6423 251.533 -1308.1 -18.8625 251.533 -1301.26 -105.177 251.533 -1299.94 15.4546 251.533 -1276.03 -124.601 251.533 -1275.11 -29.3917 251.533 -1274.16 33.3159 251.533 -1265.56 -9.673 251.533 -1249.56 -36.6961 251.725 -1249.32 30.9983 251.533 -1241.75 -72.028 251.725 -1239.47 15.0326 251.533 -1237.87 -5.10804 251.725 -1236.58 70.5074 251.725 -1221.15 -55.8416 251.533 -1216.9 -4.80348 251.725 -1210.91 11.0952 251.725 -1205.19 -38.0341 251.725 -1197.54 -109.394 251.533 -1195.86 -48.8238 251.533 -1194.03 -88.1653 251.725 -1192.1 83.1252 251.725 -1183.03 129.787 -226.541 -1172.75 -66.0553 251.725 -1161.4 143.389 -223.539 -1158.85 126.812 -238.801 -1155.93 114.814 -134.383 -1150.34 -79.3228 251.725 -1149.61 120.755 -154.323 -1139.38 148.376 -219.998 -1138.33 -59.6112 251.725 -1137.13 123.141 -168.394 -1133.73 123.404 -329.063 -1130.21 124.338 -249.077 -1129.35 134.667 -304.62 -1129.17 131.099 -231.504 -1128.12 94.9099 251.725 -1126.98 128.993 -293.724 -1123.71 124.346 -161.56 -1122.43 135.141 -141.138 -1120.65 119.517 -188.303 -1119.21 131.715 -323.659 -1118.21 43.8351 250.648 -1117.27 -77.2398 251.725 -1116.53 130.311 -309.963 -1112.13 133.238 -200.811 -1106.67 131.961 -263.432 -1105.69 117.213 -174.289 -1104.47 131.374 -153.54 -1102.9 -52.2481 251.725 -1099.39 110.838 -215.069 -1098.19 127.794 -305.553 -1097.35 126.949 -203.707 -1096.73 87.7038 251.725 -1096.64 105.478 -228.946 -1092.39 125.939 -273.682 -1088.89 141.893 -129.663 -1088.79 136.633 -149.927 -1085.99 105.927 -205.888 -1085.77 67.5559 251.725 -1082.56 101.716 -225.374 -1082.3 115.753 -200.732 -1081.04 120.013 -172.689 -1079.34 116.118 -189.089 -1077.49 138.292 -110.431 -1076.13 135.831 -88.755 -1075.07 104.248 -266.114 -1072.32 117.82 -305.189 -1069.78 67.4032 251.725 -1068.17 -45.3543 251.725 -1067.72 112.697 -284.882 -1067.04 111.351 -326.831 -1066.79 101.332 -232.573 -1066.65 120.623 -261.525 -1062.95 125.182 -67.9702 -1061.42 130.205 -93.807 -1060.48 132.963 -125.833 -1059.08 91.3765 -342.853 -1057.53 94.1695 -206.55 -1057.08 94.5388 -208.916 -1056.57 95.7537 -209.151 -1056.11 94.4764 -208.558 -1056.05 95.0406 -207.176 -1055.93 109.013 -227.066 -1055.83 94.678 -209.18 -1055.62 94.255 -208.821 -1055.29 93.7372 -209.185 -1054.54 112.523 -194.347 -1053.77 105.15 -292.388 -1053.25 99.0548 -268.509 -1053.11 97.9442 -205.95 -1052.08 128.035 -76.9241 -1049.92 122.578 -184.757 -1047.59 103.987 -225.704 -1045.13 89.8154 251.725 -1044.95 108.601 -202.202 -1042.11 124.991 -160.426 -1039.95 103.668 -212.276 -1039.54 108.23 -228.561 -1038.48 99.4155 -232.19 -1037.22 106.722 -217.704 -1036.82 107.14 -293.745 -1036.39 114.566 -203.918 -1035.71 107.021 -181.568 -1035.01 103.597 -272.255 -1033 120.431 -248.6 -1032.22 136.389 -109.346 -1029.55 130.424 -132.078 -1026.83 99.3595 222.223 -1026.83 99.3595 -222.222 -1026.49 108.457 -235.572 -1025.78 125.323 -257.622 -1025.41 118.864 -185.57 -1024.79 118.928 -146.677 -1018.81 113.585 -202.588 -1015.04 119.876 -243.48 -1013.49 112.268 -226.523 -1011.81 121.907 -195.354 -1009.63 121.035 -163.181 -1009.25 116.792 -191.157 -1008.78 125.641 -275.114 -1005.18 140.341 -132.37 -1005.08 133.101 -205.261 -1003.43 116.182 -232.248 -1002.61 130.232 -244.75 -1002.59 121.357 -227.47 -1001.07 127.086 -224.571 -1000.32 84.9885 250.001 -1000.32 -100.641 250.001 -1000.32 84.9885 -249.999 -1000.32 -100.64 -249.999 -995.803 122.883 -184.31 -993.181 133.352 -280.852 -989.828 53.9568 251.725 -989.183 138.226 -209.732 -987.811 146.841 -126.577 -987.601 117.732 -210.518 -986.635 26.3965 251.725 -985.97 132.475 -271.545 -983.334 136.705 -132.185 -981.934 123.587 -196.996 -980.405 135.311 -267.69 -979.023 146.901 -115.721 -973.989 129.948 -137.225 -973.177 130.761 -148.173 -972.066 133.701 -288.443 -967.089 133.786 -244.524 -965.526 136.754 -108.772 -961.895 133.846 -223.89 -949.878 125.16 -235.422 -944.042 109.846 -224.611 -943.981 113.874 -210.42 -941 118.509 -201.721 -918.29 104.701 -210.514 -1478.64 84.4236 226.838 -1478.64 -85.7046 226.838 -1478.64 84.4236 -226.837 -1478.64 -85.7046 -226.837 -1477.58 84.9885 250 -1477.58 84.9885 250 -1477.58 -100.641 250 -1477.58 -100.641 250 -1477.58 -100.64 -250 -1477.58 -100.64 -250 -1477.58 84.9885 -250 -1477.58 84.9885 -250 -1000.32 84.9885 250.001 -1000.32 84.9885 250.001 -1000.32 -100.641 250.001 -1000.32 -100.641 250.001 -1000.32 84.9885 -249.999 -1000.32 84.9885 -249.999 -1000.32 -100.64 -249.999 -1000.32 -100.64 -249.999 </float_array>
+          <technique_common>
+            <accessor source="#tpj_obj_gateA.xno-geometry-position-array" count="218" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="tpj_obj_gateA.xno-geometry-normal">
+          <float_array id="tpj_obj_gateA.xno-geometry-normal-array" count="429">-9.11154e-007 -8.969e-008 1 6.34197e-015 -1 -1.52588e-008 0 1 0 -7.90696e-007 1.4197e-007 -1 -0.324697 0.945818 7.51242e-005 -0.99905 -0.0383574 0.0206728 -0.324697 0.945818 -7.51806e-005 -0.99905 -0.0383565 -0.0206733 -0.999254 -0.0256812 0.028856 -0.253895 0.936437 0.242121 -0.999254 -0.0256807 -0.0288564 -0.253895 0.936437 -0.242121 -0.189244 0.965417 0.179324 -0.189244 0.965417 -0.179325 -0.00561639 -0.00165442 -0.999983 -0.00719971 0.00188062 -0.999972 -0.0852286 0.653245 -0.752334 -0.0699311 0.40689 -0.910796 -0.0523639 0.939391 -0.338827 -0.328229 0.942789 -0.0584395 -0.071539 0.971507 0.225956 0.285205 0.642351 -0.711368 -0.00119193 -0.00440161 -0.99999 -0.0686345 0.996804 -0.0408863 -0.218268 0.963979 -0.152 0.290932 0.887004 -0.358585 0.321944 0.946759 0.000280765 0.392224 0.784699 -0.480008 0.00506367 0.0220575 -0.999744 0.0363108 0.993913 0.104008 -0.115644 0.953208 -0.279321 -0.37661 0.828537 -0.414357 0.227751 0.961197 -0.155663 -0.393855 0.90338 0.169656 0.00562469 0.00278605 -0.99998 0.075477 0.997064 -0.0128878 0.53024 0.652712 -0.541121 0.343233 0.938724 0.0314535 0.12497 0.918652 -0.374781 -0.0885474 0.847721 -0.523 0.00174099 -0.00856082 -0.999962 0.486235 0.744755 -0.457073 0.135946 0.98992 0.0397029 0.249186 0.536824 -0.806056 0.0128249 0.018257 -0.999751 0.475858 0.84268 -0.251891 0.271083 0.960354 0.0650745 0.315079 0.936588 -0.153388 0.377928 0.871946 -0.311257 0.36215 0.926193 -0.104949 0.00987722 0.0318575 -0.999444 0.351594 0.90771 -0.229008 0.395759 0.614556 -0.68242 -0.0507334 0.793333 -0.60667 0.4494 0.820795 -0.352611 0.34557 0.936868 0.0534806 0.394353 0.908768 0.136476 0.249836 0.937233 0.243261 0.579359 0.814372 -0.0337792 0.00647906 0.00541803 -0.999964 0.0052309 -0.00515368 -0.999973 0.462381 0.854047 0.238344 0.776241 0.600797 -0.191032 0.335497 0.939671 0.0667817 0.0782162 0.963569 0.255769 0.124989 0.972505 0.196499 0.135166 0.980028 0.145863 0.166931 0.970362 -0.174732 0.622595 0.735811 -0.266377 0.212841 0.917029 -0.337278 -0.141892 0.858146 0.493409 -0.517807 0.841684 -0.153112 0.255309 0.885378 -0.388487 0.0759076 0.994755 0.0685602 -0.328697 0.775715 0.538724 0.363067 0.812572 -0.455972 -0.308733 0.865962 -0.393438 -0.325216 0.931223 0.164491 0.0904991 0.640265 -0.762805 0.259497 0.965578 0.017924 0.0623169 0.98031 0.187376 -0.0696163 0.741873 -0.666917 -0.106275 0.9771 0.184338 0.111841 0.85056 -0.513847 0.0938524 0.816034 0.570334 -0.206539 0.578185 -0.789331 0.104632 0.953147 -0.283836 -0.512725 0.849897 -0.12161 -0.4473 0.884521 0.132459 -0.175468 0.982556 0.0616069 -0.256055 0.797599 0.546142 -0.117586 0.99298 -0.0128252 -0.522646 0.719299 -0.457658 -0.260915 0.93565 -0.237662 -0.184303 0.969683 0.160462 0.198658 0.769049 0.607535 -0.072693 0.996468 -0.0420341 0.0738761 0.922926 -0.377823 0.189305 0.965408 0.179308 0.189307 0.965408 -0.179307 -0.117534 0.923008 0.366391 0.0532616 0.86258 0.503109 0.0066193 0.947257 -0.320405 0.335762 0.805538 -0.488234 -0.19751 0.912005 -0.359495 -0.50846 0.859758 0.0477967 -0.316282 0.947037 0.0555635 -0.183027 0.833328 -0.5216 -0.0439122 0.952851 -0.300245 -0.0741037 0.976914 -0.200371 -0.267089 0.955769 -0.123164 -0.0951393 0.849672 -0.518658 -0.44013 0.827352 -0.348962 -0.34735 0.919022 0.186405 -0.370595 0.913 0.17056 -0.129138 0.940198 0.315199 -0.34661 0.925752 -0.151143 0.246352 0.936548 0.249377 0.246353 0.936547 -0.249378 -0.295651 0.948886 -0.110478 -0.186347 0.954125 0.23435 -0.232322 0.858084 -0.457951 0.452017 0.664437 -0.595151 -0.00159086 0.984765 -0.173881 -0.282706 0.955434 0.0849922 0.437598 0.758083 -0.483547 0.00826149 0.916387 -0.400208 -0.434045 0.900184 -0.0356931 0.660514 0.548558 -0.512646 0.560663 0.825324 -0.0670609 0.0471742 0.973417 -0.224128 -0.119962 0.992419 -0.0267008 0.0930617 0.885223 0.455762 0.593616 0.665216 -0.452888 -0.11964 0.757969 -0.641224 0.0266726 0.998323 -0.0513762 0.201631 0.952341 -0.228891 0.187285 0.899109 -0.395635 0.176185 0.847103 -0.501374 0.310512 0.873474 -0.375001 -0.998969 -3.18186e-010 0.0454032 -0.998969 4.0722e-009 -0.0454031 1 2.54391e-007 2.71766e-007 </float_array>
+          <technique_common>
+            <accessor source="#tpj_obj_gateA.xno-geometry-normal-array" count="143" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="tpj_obj_gateA.xno-geometry-uv">
+          <float_array id="tpj_obj_gateA.xno-geometry-uv-array" count="290">-0.16981 0.536149 -0.0881911 -0.668427 -0.16981 0.920894 -0.218516 -1.68323 3.17111 0.920971 -0.218516 -1.01591 3.17111 0.536073 -0.0875806 -0.0341791 -0.155515 -1.68309 -0.00543981 -1.96754 -0.0729489 0.921398 -0.0275873 -0.668518 -0.0729489 0.535644 -0.155515 -1.01605 -0.00543981 -1.04426 3.07421 0.920216 -0.0275872 -0.0353094 3.07421 0.536827 0.0101102 0.987571 -0.00422354 -0.69744 -0.00543981 -2.00551 -0.00422346 -0.00638819 -0.00543981 -1.00551 0.026924 0.849974 0.0501157 -1.94995 0.0501157 -1.06106 0.0540641 0.994923 0.0826032 0.919495 0.0950748 0.881592 0.0973409 0.838972 0.11184 0.885012 0.126105 0.780968 0.140008 0.937378 0.147937 0.795871 0.163641 0.75679 0.187114 0.764378 0.194363 0.909855 0.195039 0.968127 0.195169 0.70802 0.199276 0.835703 0.220238 0.945895 0.230677 0.862187 0.239565 0.750174 0.241274 0.906719 0.272322 0.724967 0.273508 0.848522 0.27474 0.929899 0.285906 0.874112 0.580821 0.707004 0.30699 0.926892 0.549114 0.672359 0.319785 0.906172 0.588183 0.750089 0.635818 0.835904 0.343559 0.814199 0.56481 0.764036 0.568389 0.785794 0.530066 0.734293 0.374219 0.744699 0.376391 0.823306 0.484981 0.685191 0.594002 0.878951 0.898046 0.453426 0.475416 0.723843 0.850783 0.404544 0.950898 0.375205 0.441602 0.723478 0.935652 0.413112 0.833311 0.314326 0.440892 0.753425 0.95946 0.338106 0.689848 0.011665 0.971584 0.273968 0.745856 0.0977783 0.89548 0.274798 0.529711 0.933711 0.746708 0.104592 0.978884 0.214318 0.658314 0.0511471 0.48542 0.882737 0.405774 0.747277 0.686808 0.0923592 0.81614 0.196687 0.779933 0.197089 0.896563 0.206304 0.825287 0.246228 0.405844 0.784687 0.897525 0.145507 0.626644 0.124026 0.826515 0.144112 0.489744 0.94598 0.970219 0.135948 0.687917 0.193151 0.977818 0.217469 0.961226 0.0916833 0.464345 0.930447 0.838386 0.0767868 0.954892 0.336031 0.934667 0.415333 0.446275 0.940646 0.371271 0.81497 0.861401 0.408159 0.610944 0.270541 0.897854 0.383969 0.898226 0.00482708 0.690074 0.486561 0.64517 0.405192 0.870699 0.437914 0.637582 0.348907 0.729109 0.383654 0.433108 0.98183 0.599314 0.209846 0.951194 0.0936792 0.978979 0.212503 0.773965 0.250849 0.939005 -1.94995 0.939005 -1.06106 0.687939 0.291183 0.751966 0.312768 0.767242 0.127423 0.977765 0.215681 0.896021 0.240551 0.99456 -2.00551 0.686828 -0.69744 0.99456 -1.00551 0.686828 -0.00638819 0.739457 0.0888602 0.347658 0.977413 0.652788 0.0923364 0.326178 0.948514 0.687893 0.0924124 0.612659 0.177119 0.752386 0.102935 0.765628 0.126366 0.937337 0.41594 0.745271 0.09512 0.642603 0.0904245 0.00300786 0.955007 0.00300786 0.502035 3.00207 0.502036 3.00207 0.955008 1.00131 0.955008 1.00131 0.502035 1.99962 0.955008 1.99962 0.502035 </float_array>
+          <technique_common>
+            <accessor source="#tpj_obj_gateA.xno-geometry-uv-array" count="145" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="tpj_obj_gateA.xno-geometry-uv2">
+          <float_array id="tpj_obj_gateA.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#tpj_obj_gateA.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="tpj_obj_gateA.xno-geometry-color">
+          <float_array id="tpj_obj_gateA.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#tpj_obj_gateA.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="tpj_obj_gateA.xno-geometry-vertex">
+          <input semantic="POSITION" source="#tpj_obj_gateA.xno-geometry-position" />
+        </vertices>
+        <triangles material="tpj_obj_gateA.xno0" count="12">
+          <input semantic="VERTEX" source="#tpj_obj_gateA.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#tpj_obj_gateA.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#tpj_obj_gateA.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#tpj_obj_gateA.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#tpj_obj_gateA.xno-geometry-color" offset="4" set="0" />
+          <p>18 3 17 0 0 6 3 6 0 0 16 3 15 0 0 4 3 4 0 0 16 3 15 0 0 6 3 6 0 0 172 1 123 0 0 22 1 19 0 0 174 1 125 0 0 25 1 21 0 0 174 1 125 0 0 22 1 19 0 0 14 6 13 0 0 5 2 5 0 0 8 4 8 0 0 3 2 3 0 0 8 4 8 0 0 5 2 5 0 0 10 0 10 0 0 2 0 2 0 0 12 0 12 0 0 0 0 0 0 0 12 0 12 0 0 2 0 2 0 0 13 1 11 0 0 1 1 1 0 0 19 1 16 0 0 7 1 7 0 0 19 1 16 0 0 1 1 1 0 0 21 8 19 0 0 11 5 11 0 0 24 10 21 0 0 17 7 16 0 0 24 10 21 0 0 11 5 11 0 0 </p>
+        </triangles>
+        <triangles material="tpj_obj_gateA.xno1" count="10">
+          <input semantic="VERTEX" source="#tpj_obj_gateA.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#tpj_obj_gateA.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#tpj_obj_gateA.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#tpj_obj_gateA.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#tpj_obj_gateA.xno-geometry-color" offset="4" set="0" />
+          <p>206 10 139 0 0 201 7 17 0 0 208 141 140 0 0 200 141 15 0 0 208 141 140 0 0 201 7 17 0 0 215 142 143 0 0 211 142 141 0 0 217 142 144 0 0 213 142 142 0 0 217 142 144 0 0 211 142 141 0 0 202 140 137 0 0 198 140 10 0 0 204 8 138 0 0 199 5 12 0 0 204 8 138 0 0 198 140 10 0 0 209 3 140 0 0 214 3 143 0 0 207 3 139 0 0 216 3 144 0 0 207 3 139 0 0 214 3 143 0 0 210 0 141 0 0 203 0 137 0 0 212 0 142 0 0 205 0 138 0 0 212 0 142 0 0 203 0 137 0 0 </p>
+        </triangles>
+        <triangles material="tpj_obj_gateA.xno2" count="12">
+          <input semantic="VERTEX" source="#tpj_obj_gateA.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#tpj_obj_gateA.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#tpj_obj_gateA.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#tpj_obj_gateA.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#tpj_obj_gateA.xno-geometry-color" offset="4" set="0" />
+          <p>152 98 115 0 0 153 99 116 0 0 28 12 24 0 0 29 13 25 0 0 28 12 24 0 0 153 99 116 0 0 28 12 24 0 0 29 13 25 0 0 15 6 14 0 0 29 13 25 0 0 26 11 22 0 0 15 6 14 0 0 26 11 22 0 0 29 13 25 0 0 173 118 124 0 0 153 99 116 0 0 173 118 124 0 0 29 13 25 0 0 173 118 124 0 0 153 99 116 0 0 171 117 122 0 0 152 98 115 0 0 171 117 122 0 0 153 99 116 0 0 171 117 122 0 0 152 98 115 0 0 23 9 20 0 0 28 12 24 0 0 23 9 20 0 0 152 98 115 0 0 23 9 20 0 0 28 12 24 0 0 9 4 9 0 0 15 6 14 0 0 9 4 9 0 0 28 12 24 0 0 </p>
+        </triangles>
+        <triangles material="tpj_obj_gateA.xno3" count="112">
+          <input semantic="VERTEX" source="#tpj_obj_gateA.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#tpj_obj_gateA.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#tpj_obj_gateA.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#tpj_obj_gateA.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#tpj_obj_gateA.xno-geometry-color" offset="4" set="0" />
+          <p>68 17 64 0 0 73 21 68 0 0 79 27 74 0 0 89 36 82 0 0 79 27 74 0 0 73 21 68 0 0 79 27 74 0 0 89 36 82 0 0 94 41 87 0 0 96 43 89 0 0 94 41 87 0 0 89 36 82 0 0 105 52 96 0 0 94 41 87 0 0 96 43 89 0 0 128 75 104 0 0 94 41 87 0 0 105 52 96 0 0 104 51 94 0 0 94 41 87 0 0 128 75 104 0 0 98 45 91 0 0 94 41 87 0 0 104 51 94 0 0 94 41 87 0 0 98 45 91 0 0 79 27 74 0 0 77 25 72 0 0 79 27 74 0 0 98 45 91 0 0 69 18 65 0 0 79 27 74 0 0 77 25 72 0 0 66 16 62 0 0 79 27 74 0 0 69 18 65 0 0 79 27 74 0 0 66 16 62 0 0 68 17 64 0 0 132 79 74 0 0 145 91 72 0 0 121 68 62 0 0 145 91 72 0 0 132 79 74 0 0 148 94 113 0 0 133 80 84 0 0 148 94 113 0 0 132 79 74 0 0 148 94 113 0 0 133 80 84 0 0 143 89 94 0 0 143 89 94 0 0 133 80 84 0 0 126 73 104 0 0 116 63 96 0 0 126 73 104 0 0 133 80 84 0 0 133 80 84 0 0 110 57 82 0 0 116 63 96 0 0 110 57 82 0 0 133 80 84 0 0 114 61 85 0 0 132 79 74 0 0 114 61 85 0 0 133 80 84 0 0 114 61 85 0 0 132 79 74 0 0 111 58 68 0 0 111 58 68 0 0 132 79 74 0 0 115 62 101 0 0 121 68 62 0 0 115 62 101 0 0 132 79 74 0 0 78 26 73 0 0 81 29 76 0 0 88 35 81 0 0 90 37 83 0 0 88 35 81 0 0 81 29 76 0 0 88 35 81 0 0 90 37 83 0 0 99 46 92 0 0 123 70 105 0 0 99 46 92 0 0 90 37 83 0 0 99 46 92 0 0 123 70 105 0 0 127 74 106 0 0 127 74 106 0 0 117 64 102 0 0 99 46 92 0 0 95 42 88 0 0 99 46 92 0 0 117 64 102 0 0 99 46 92 0 0 95 42 88 0 0 88 35 81 0 0 85 33 78 0 0 88 35 81 0 0 95 42 88 0 0 76 24 71 0 0 88 35 81 0 0 85 33 78 0 0 88 35 81 0 0 76 24 71 0 0 78 26 73 0 0 82 30 74 0 0 72 20 67 0 0 70 19 62 0 0 72 20 67 0 0 82 30 74 0 0 75 23 70 0 0 75 23 70 0 0 82 30 74 0 0 84 32 77 0 0 91 38 84 0 0 84 32 77 0 0 82 30 74 0 0 84 32 77 0 0 91 38 84 0 0 102 49 94 0 0 122 69 104 0 0 102 49 94 0 0 91 38 84 0 0 91 38 84 0 0 106 53 89 0 0 122 69 104 0 0 106 53 89 0 0 91 38 84 0 0 92 39 85 0 0 82 30 74 0 0 92 39 85 0 0 91 38 84 0 0 92 39 85 0 0 82 30 74 0 0 83 31 68 0 0 70 19 62 0 0 83 31 68 0 0 82 30 74 0 0 189 131 71 0 0 176 120 126 0 0 182 124 130 0 0 164 110 119 0 0 182 124 130 0 0 176 120 126 0 0 155 101 83 0 0 182 124 130 0 0 164 110 119 0 0 182 124 130 0 0 155 101 83 0 0 154 100 117 0 0 149 95 114 0 0 154 100 117 0 0 155 101 83 0 0 149 95 114 0 0 137 84 109 0 0 154 100 117 0 0 130 77 105 0 0 154 100 117 0 0 137 84 109 0 0 154 100 117 0 0 130 77 105 0 0 141 87 106 0 0 141 87 106 0 0 160 106 102 0 0 154 100 117 0 0 167 113 111 0 0 154 100 117 0 0 160 106 102 0 0 154 100 117 0 0 167 113 111 0 0 182 124 130 0 0 185 127 128 0 0 182 124 130 0 0 167 113 111 0 0 182 124 130 0 0 185 127 128 0 0 189 131 71 0 0 125 72 104 0 0 157 103 82 0 0 147 93 96 0 0 157 103 82 0 0 125 72 104 0 0 151 97 85 0 0 120 67 74 0 0 151 97 85 0 0 125 72 104 0 0 151 97 85 0 0 120 67 74 0 0 150 96 68 0 0 119 66 103 0 0 150 96 68 0 0 120 67 74 0 0 150 96 68 0 0 119 66 103 0 0 135 82 107 0 0 118 65 62 0 0 135 82 107 0 0 119 66 103 0 0 119 66 103 0 0 109 56 98 0 0 118 65 62 0 0 109 56 98 0 0 119 66 103 0 0 108 55 97 0 0 120 67 74 0 0 108 55 97 0 0 119 66 103 0 0 108 55 97 0 0 120 67 74 0 0 100 47 72 0 0 101 48 93 0 0 100 47 72 0 0 120 67 74 0 0 101 48 93 0 0 120 67 74 0 0 107 54 94 0 0 125 72 104 0 0 107 54 94 0 0 120 67 74 0 0 142 88 96 0 0 124 71 104 0 0 170 116 121 0 0 146 92 112 0 0 170 116 121 0 0 124 71 104 0 0 166 112 120 0 0 170 116 121 0 0 146 92 112 0 0 170 116 121 0 0 166 112 120 0 0 178 121 72 0 0 178 121 72 0 0 192 134 134 0 0 170 116 121 0 0 193 135 62 0 0 170 116 121 0 0 192 134 134 0 0 170 116 121 0 0 193 135 62 0 0 190 132 64 0 0 190 132 64 0 0 168 114 85 0 0 170 116 121 0 0 159 105 82 0 0 170 116 121 0 0 168 114 85 0 0 170 116 121 0 0 159 105 82 0 0 142 88 96 0 0 156 102 117 0 0 158 104 118 0 0 134 81 105 0 0 158 104 118 0 0 156 102 117 0 0 163 109 114 0 0 162 108 92 0 0 163 109 114 0 0 156 102 117 0 0 163 109 114 0 0 162 108 92 0 0 175 119 83 0 0 175 119 83 0 0 162 108 92 0 0 188 130 133 0 0 183 125 130 0 0 188 130 133 0 0 162 108 92 0 0 188 130 133 0 0 183 125 130 0 0 187 129 132 0 0 187 129 132 0 0 183 125 130 0 0 191 133 71 0 0 191 133 71 0 0 183 125 130 0 0 186 128 78 0 0 186 128 78 0 0 183 125 130 0 0 179 122 128 0 0 162 108 92 0 0 179 122 128 0 0 183 125 130 0 0 179 122 128 0 0 162 108 92 0 0 165 111 88 0 0 165 111 88 0 0 162 108 92 0 0 140 86 111 0 0 156 102 117 0 0 140 86 111 0 0 162 108 92 0 0 140 86 111 0 0 156 102 117 0 0 136 83 108 0 0 136 83 108 0 0 156 102 117 0 0 131 78 106 0 0 134 81 105 0 0 131 78 106 0 0 156 102 117 0 0 144 90 109 0 0 129 76 105 0 0 180 123 92 0 0 139 85 106 0 0 180 123 92 0 0 129 76 105 0 0 180 123 92 0 0 139 85 106 0 0 161 107 102 0 0 161 107 102 0 0 184 126 131 0 0 180 123 92 0 0 196 138 136 0 0 180 123 92 0 0 184 126 131 0 0 180 123 92 0 0 196 138 136 0 0 195 137 130 0 0 197 139 71 0 0 195 137 130 0 0 196 138 136 0 0 194 136 135 0 0 195 137 130 0 0 197 139 71 0 0 195 137 130 0 0 194 136 135 0 0 180 123 92 0 0 169 115 114 0 0 180 123 92 0 0 194 136 135 0 0 180 123 92 0 0 169 115 114 0 0 144 90 109 0 0 </p>
+        </triangles>
+        <triangles material="tpj_obj_gateA.xno4" count="48">
+          <input semantic="VERTEX" source="#tpj_obj_gateA.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#tpj_obj_gateA.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#tpj_obj_gateA.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#tpj_obj_gateA.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#tpj_obj_gateA.xno-geometry-color" offset="4" set="0" />
+          <p>181 3 129 0 0 113 60 100 0 0 177 3 127 0 0 138 3 110 0 0 177 3 127 0 0 112 59 99 0 0 113 60 100 0 0 112 59 99 0 0 177 3 127 0 0 112 59 99 0 0 113 60 100 0 0 86 34 79 0 0 93 40 86 0 0 86 34 79 0 0 113 60 100 0 0 74 22 69 0 0 93 40 86 0 0 87 3 80 0 0 93 40 86 0 0 74 22 69 0 0 86 34 79 0 0 60 14 56 0 0 86 34 79 0 0 74 22 69 0 0 86 34 79 0 0 60 14 56 0 0 65 15 61 0 0 57 3 53 0 0 65 15 61 0 0 60 14 56 0 0 80 28 75 0 0 97 44 90 0 0 86 34 79 0 0 103 50 95 0 0 86 34 79 0 0 97 44 90 0 0 86 34 79 0 0 103 50 95 0 0 112 59 99 0 0 64 3 60 0 0 61 3 57 0 0 67 3 63 0 0 61 3 57 0 0 64 3 60 0 0 54 3 50 0 0 67 3 63 0 0 74 22 69 0 0 71 3 66 0 0 74 22 69 0 0 67 3 63 0 0 60 14 56 0 0 60 14 56 0 0 67 3 63 0 0 59 3 55 0 0 61 3 57 0 0 59 3 55 0 0 67 3 63 0 0 59 3 55 0 0 61 3 57 0 0 56 3 52 0 0 52 3 48 0 0 56 3 52 0 0 61 3 57 0 0 37 0 33 0 0 38 0 34 0 0 39 0 35 0 0 42 0 38 0 0 46 0 42 0 0 39 0 35 0 0 45 0 41 0 0 40 0 36 0 0 43 0 39 0 0 34 0 30 0 0 43 0 39 0 0 40 0 36 0 0 43 0 39 0 0 34 0 30 0 0 32 0 28 0 0 31 0 27 0 0 32 0 28 0 0 34 0 30 0 0 32 0 28 0 0 31 0 27 0 0 27 0 23 0 0 27 0 23 0 0 31 0 27 0 0 20 0 18 0 0 30 0 26 0 0 20 0 18 0 0 31 0 27 0 0 44 0 40 0 0 41 0 37 0 0 40 0 36 0 0 36 0 32 0 0 40 0 36 0 0 41 0 37 0 0 40 0 36 0 0 36 0 32 0 0 34 0 30 0 0 58 0 54 0 0 51 0 47 0 0 49 0 45 0 0 55 0 51 0 0 58 0 54 0 0 63 0 59 0 0 58 0 54 0 0 55 0 51 0 0 51 0 47 0 0 50 0 46 0 0 51 0 47 0 0 55 0 51 0 0 51 0 47 0 0 50 0 46 0 0 47 0 43 0 0 50 0 46 0 0 55 0 51 0 0 53 0 49 0 0 37 0 33 0 0 33 0 29 0 0 35 0 31 0 0 33 0 29 0 0 37 0 33 0 0 32 0 28 0 0 32 0 28 0 0 37 0 33 0 0 43 0 39 0 0 39 0 35 0 0 43 0 39 0 0 37 0 33 0 0 43 0 39 0 0 39 0 35 0 0 49 0 45 0 0 46 0 42 0 0 49 0 45 0 0 39 0 35 0 0 49 0 45 0 0 46 0 42 0 0 58 0 54 0 0 48 0 44 0 0 58 0 54 0 0 46 0 42 0 0 58 0 54 0 0 48 0 44 0 0 62 0 58 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="tpj_obj_gateA.xno-controller">
+      <skin source="#tpj_obj_gateA.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="tpj_obj_gateA.xno-controller-Joints">
+          <Name_array id="tpj_obj_gateA.xno-controller-Joints-array" count="1">tpj_obj_gateA.xno0 </Name_array>
+          <technique_common>
+            <accessor source="#tpj_obj_gateA.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="tpj_obj_gateA.xno-controller-Matrices">
+          <float_array id="tpj_obj_gateA.xno-controller-Matrices-array" count="16">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#tpj_obj_gateA.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="tpj_obj_gateA.xno-controller-Weights">
+          <float_array id="tpj_obj_gateA.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#tpj_obj_gateA.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#tpj_obj_gateA.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#tpj_obj_gateA.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="218">
+          <input semantic="JOINT" offset="0" source="#tpj_obj_gateA.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#tpj_obj_gateA.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="tpj_obj_gateA.xno0" sid="tpj_obj_gateA.xno0" name="tpj_obj_gateA.xno0" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="tpj_obj_gateA.xno" sid="tpj_obj_gateA.xno" name="tpj_obj_gateA.xno">
+        <instance_controller url="#tpj_obj_gateA.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="tpj_obj_gateA.xno0" target="#tpj_obj_gateA.xno0ID" />
+              <instance_material symbol="tpj_obj_gateA.xno1" target="#tpj_obj_gateA.xno1ID" />
+              <instance_material symbol="tpj_obj_gateA.xno2" target="#tpj_obj_gateA.xno2ID" />
+              <instance_material symbol="tpj_obj_gateA.xno3" target="#tpj_obj_gateA.xno3ID" />
+              <instance_material symbol="tpj_obj_gateA.xno4" target="#tpj_obj_gateA.xno4ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

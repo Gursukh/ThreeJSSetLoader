@@ -1,0 +1,488 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="kdv_debris05_dfsp_z.dds-image" name="kdv_debris05_dfsp_z.dds-image">
+      <init_from>./textures/kdv_debris05_dfsp_z.dds</init_from>
+    </image>
+    <image id="kdv_debris05_nt_z.dds-image" name="kdv_debris05_nt_z.dds-image">
+      <init_from>./textures/kdv_debris05_nt_z.dds</init_from>
+    </image>
+    <image id="kdv_brick15_dfsp_y.dds-image" name="kdv_brick15_dfsp_y.dds-image">
+      <init_from>./textures/kdv_brick15_dfsp_y.dds</init_from>
+    </image>
+    <image id="kdv_brick15_nt_y.dds-image" name="kdv_brick15_nt_y.dds-image">
+      <init_from>./textures/kdv_brick15_nt_y.dds</init_from>
+    </image>
+    <image id="kdv_brick34_dfsp_z.dds-image" name="kdv_brick34_dfsp_z.dds-image">
+      <init_from>./textures/kdv_brick34_dfsp_z.dds</init_from>
+    </image>
+    <image id="kdv_brick34_nt_z.dds-image" name="kdv_brick34_nt_z.dds-image">
+      <init_from>./textures/kdv_brick34_nt_z.dds</init_from>
+    </image>
+    <image id="kdv_bridge04_dfsp_z.dds-image" name="kdv_bridge04_dfsp_z.dds-image">
+      <init_from>./textures/kdv_bridge04_dfsp_z.dds</init_from>
+    </image>
+    <image id="kdv_bridge04_nt_z.dds-image" name="kdv_bridge04_nt_z.dds-image">
+      <init_from>./textures/kdv_bridge04_nt_z.dds</init_from>
+    </image>
+    <image id="kdv_pillar06_dfsp_n.dds-image" name="kdv_pillar06_dfsp_n.dds-image">
+      <init_from>./textures/kdv_pillar06_dfsp_n.dds</init_from>
+    </image>
+    <image id="kdv_pillar06_nt_n.dds-image" name="kdv_pillar06_nt_n.dds-image">
+      <init_from>./textures/kdv_pillar06_nt_n.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="test_kdv_stairsR_brk_3.xno0ID" name="test_kdv_stairsR_brk_3.xno0">
+      <instance_effect url="#test_kdv_stairsR_brk_3.xno0-effect" />
+    </material>
+    <material id="test_kdv_stairsR_brk_3.xno1ID" name="test_kdv_stairsR_brk_3.xno1">
+      <instance_effect url="#test_kdv_stairsR_brk_3.xno1-effect" />
+    </material>
+    <material id="test_kdv_stairsR_brk_3.xno2ID" name="test_kdv_stairsR_brk_3.xno2">
+      <instance_effect url="#test_kdv_stairsR_brk_3.xno2-effect" />
+    </material>
+    <material id="test_kdv_stairsR_brk_3.xno3ID" name="test_kdv_stairsR_brk_3.xno3">
+      <instance_effect url="#test_kdv_stairsR_brk_3.xno3-effect" />
+    </material>
+    <material id="test_kdv_stairsR_brk_3.xno4ID" name="test_kdv_stairsR_brk_3.xno4">
+      <instance_effect url="#test_kdv_stairsR_brk_3.xno4-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="test_kdv_stairsR_brk_3.xno0-effect" name="test_kdv_stairsR_brk_3.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_debris05_dfsp_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_debris05_dfsp_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_debris05_dfsp_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_debris05_dfsp_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_debris05_nt_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_debris05_nt_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_debris05_nt_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_debris05_nt_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_debris05_nt_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_debris05_nt_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_debris05_nt_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_debris05_nt_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_debris05_nt_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_debris05_nt_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_debris05_nt_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_debris05_nt_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_debris05_dfsp_z.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="test_kdv_stairsR_brk_3.xno1-effect" name="test_kdv_stairsR_brk_3.xno1-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_brick15_dfsp_y.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_brick15_dfsp_y.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_brick15_dfsp_y.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_brick15_dfsp_y.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_brick15_nt_y.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_brick15_nt_y.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_brick15_nt_y.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_brick15_nt_y.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_brick15_nt_y.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_brick15_nt_y.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_brick15_nt_y.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_brick15_nt_y.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_brick15_nt_y.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_brick15_nt_y.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_brick15_nt_y.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_brick15_nt_y.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_brick15_dfsp_y.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="test_kdv_stairsR_brk_3.xno2-effect" name="test_kdv_stairsR_brk_3.xno2-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_brick34_dfsp_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_brick34_dfsp_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_brick34_dfsp_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_brick34_dfsp_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_brick34_nt_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_brick34_nt_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_brick34_nt_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_brick34_nt_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_brick34_nt_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_brick34_nt_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_brick34_nt_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_brick34_nt_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_brick34_nt_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_brick34_nt_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_brick34_nt_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_brick34_nt_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_brick34_dfsp_z.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="test_kdv_stairsR_brk_3.xno3-effect" name="test_kdv_stairsR_brk_3.xno3-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_bridge04_dfsp_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_bridge04_dfsp_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_bridge04_dfsp_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_bridge04_dfsp_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_bridge04_nt_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_bridge04_nt_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_bridge04_nt_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_bridge04_nt_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_bridge04_nt_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_bridge04_nt_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_bridge04_nt_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_bridge04_nt_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_bridge04_nt_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_bridge04_nt_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_bridge04_nt_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_bridge04_nt_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_bridge04_dfsp_z.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="test_kdv_stairsR_brk_3.xno4-effect" name="test_kdv_stairsR_brk_3.xno4-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_pillar06_dfsp_n.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_pillar06_dfsp_n.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_pillar06_dfsp_n.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_pillar06_dfsp_n.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_pillar06_nt_n.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_pillar06_nt_n.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_pillar06_nt_n.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_pillar06_nt_n.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_pillar06_nt_n.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_pillar06_nt_n.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_pillar06_nt_n.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_pillar06_nt_n.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_pillar06_nt_n.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_pillar06_nt_n.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_pillar06_nt_n.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_pillar06_nt_n.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_pillar06_dfsp_n.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="test_kdv_stairsR_brk_3.xno-geometry" name="test_kdv_stairsR_brk_3.xno-geometry">
+      <mesh>
+        <source id="test_kdv_stairsR_brk_3.xno-geometry-position">
+          <float_array id="test_kdv_stairsR_brk_3.xno-geometry-position-array" count="366">872.841 234.923 498.826 872.841 234.923 498.826 872.841 234.923 498.826 873.052 651.988 499.847 873.052 651.988 499.847 873.052 651.988 499.847 896.999 651.95 510.507 896.999 651.95 510.507 896.999 651.95 510.507 896.999 651.95 510.507 897.016 686.888 510.593 897.016 686.888 510.593 897.016 686.888 510.593 998.624 686.727 555.824 998.624 686.727 555.824 998.624 686.727 555.824 998.624 686.727 555.824 998.624 686.727 555.824 999.058 721.804 556.096 999.058 721.804 556.096 999.058 721.804 556.096 1040.2 257.023 100.041 1040.2 257.023 100.041 1040.2 257.023 100.041 1061.89 397.219 48.8597 1061.89 397.219 48.8597 1069.75 716.144 31.2969 1069.75 716.144 31.2969 1069.75 716.144 31.2969 1088.14 653.135 -12.7603 1088.14 653.135 -12.7603 1098.22 721.646 600.237 1098.22 721.646 600.237 1098.22 721.646 600.237 1098.22 721.646 600.237 1098.22 721.646 600.237 1098.23 755.817 600.321 1098.23 755.817 600.321 1098.23 755.817 600.321 1104.88 716.11 -52.4175 1104.88 716.11 -52.4175 1104.88 716.11 -52.4175 1105.09 659.801 -53.129 1105.09 659.801 -53.129 1105.09 659.801 -53.129 1106.35 388.156 -57.1173 1106.35 388.156 -57.1173 1106.35 388.156 -57.1173 1106.87 257.367 -58.8376 1106.87 257.367 -58.8376 1106.87 257.367 -58.8376 1109.13 653.102 -3.47543 1109.13 653.102 -3.47543 1109.15 688.04 -3.38983 1109.15 688.04 -3.38983 1192.34 790.123 642.29 1192.34 790.123 642.29 1192.34 790.123 642.29 1194.31 755.664 643.09 1194.31 755.664 643.09 1194.31 755.664 643.09 1194.31 755.664 643.09 1239.55 722.911 54.3745 1239.55 722.911 54.3745 1239.64 687.833 54.3349 1239.64 687.833 54.3349 1289.25 789.968 685.43 1289.25 789.968 685.43 1289.25 789.968 685.43 1289.27 824.915 685.515 1289.27 824.915 685.515 1289.27 824.915 685.515 1368.3 722.707 111.33 1368.3 722.707 111.33 1368.32 756.878 111.414 1368.32 756.878 111.414 1389.69 860.819 730.297 1389.69 860.819 730.297 1389.69 860.819 730.297 1391.17 824.753 730.879 1391.17 824.753 730.879 1391.17 824.753 730.879 1479.51 454.1 769.379 1479.51 454.1 769.379 1479.51 454.1 769.379 1479.72 860.675 770.375 1479.72 860.675 770.375 1479.72 860.675 770.375 1484.19 791.15 162.748 1484.19 791.15 162.748 1485.58 756.692 163.286 1485.58 756.692 163.286 1604.02 790.96 215.756 1604.02 790.96 215.756 1604.04 825.907 215.842 1604.04 825.907 215.842 1728.81 861.778 268.878 1728.81 861.778 268.878 1728.93 825.714 268.85 1728.93 825.714 268.85 1778.69 449.838 383.155 1778.69 449.838 383.155 1778.69 449.838 383.155 1814.8 595.157 336.984 1814.8 595.157 336.984 1827.51 906.414 321.543 1827.51 906.414 321.543 1827.51 906.414 321.543 1836.27 861.623 310.092 1836.27 861.623 310.092 1883.23 905.544 249.606 1883.23 905.544 249.606 1883.23 905.544 249.606 1883.88 848.154 248.594 1883.88 848.154 248.594 1883.88 848.154 248.594 1885.91 578.712 245.137 1885.91 578.712 245.137 1885.91 578.712 245.137 1886.59 448.098 243.852 1886.59 448.098 243.852 1886.59 448.098 243.852 </float_array>
+          <technique_common>
+            <accessor source="#test_kdv_stairsR_brk_3.xno-geometry-position-array" count="122" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_kdv_stairsR_brk_3.xno-geometry-normal">
+          <float_array id="test_kdv_stairsR_brk_3.xno-geometry-normal-array" count="129">-0.922115 0.00141171 -0.386914 -0.406687 -0.00203229 0.913565 0.241683 -0.96527 0.0992096 0.000503425 0.999997 0.00244868 -0.924367 0.00139953 -0.381502 -0.672619 -0.00147311 0.739987 -0.901738 -0.00110433 -0.432283 -0.677325 0.00269272 0.735679 -0.208406 0.973634 -0.0927529 -0.901257 0.0138483 -0.433064 0.227904 -0.97137 0.0670821 -0.37031 0.0603964 0.926943 -0.370183 0.0601691 0.927008 -0.210476 0.973565 -0.088716 -0.875316 0.00162471 -0.483548 -0.680353 -0.00145189 0.732883 0.358423 0.0134174 -0.933463 0.358191 0.014412 -0.933537 0.358573 0.0142276 -0.933393 0.214107 -0.971903 0.0977904 0.35894 0.0137081 -0.93326 -0.853195 -0.0600522 -0.518124 -0.85318 -0.060766 -0.518065 -0.901754 -0.001756 -0.432246 -0.8307 0.00178142 -0.556718 -0.806505 -0.0411109 -0.589797 -0.806508 -0.0427413 -0.589676 0.250618 -0.946224 0.204574 0.790552 -0.00189703 0.612392 -0.85342 -0.0425704 -0.519482 -0.853416 -0.0432845 -0.51943 -0.805775 -0.00223896 -0.592218 -0.80583 -0.00386321 -0.592134 0.209407 -0.967029 0.144928 -0.370713 0.0611127 0.926735 -0.37058 0.0608768 0.926803 -0.180369 0.972639 -0.146423 -0.178467 0.972445 -0.15 0.357333 0.0205043 -0.933752 0.357761 0.017905 -0.933642 0.358681 0.0131235 -0.933368 0.179206 -0.972162 0.150953 0.359113 0.011285 -0.933226 </float_array>
+          <technique_common>
+            <accessor source="#test_kdv_stairsR_brk_3.xno-geometry-normal-array" count="43" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_kdv_stairsR_brk_3.xno-geometry-uv">
+          <float_array id="test_kdv_stairsR_brk_3.xno-geometry-uv-array" count="214">13.6151 6.22657 3.61556 6.22657 1.14827 0.937341 13.6151 4.67482 3.61556 4.67482 1.71416 0.854733 1.08421 0.561829 3.69303 4.67482 1.71426 0.915665 1.08411 0.659634 3.69303 4.54483 1.08411 0.734506 1.52452 0.558126 4.02173 4.54483 1.08452 0.999215 1.5244 0.658802 4.02308 4.41431 12.2364 6.15031 0.9408 0.465568 5.41498 1.00008 12.0583 5.62945 0.17 14.7071 11.9949 4.44312 1.17 14.664 1.17935 5.33604 11.6184 4.67482 0.193635 0.936357 1.7148 0.563443 4.34386 4.41431 1.5248 0.921 1.71468 0.663931 4.34386 4.28718 11.7056 4.4445 0.831 5.33046 2.1334 5.33046 11.7036 4.65401 7.33245 0.5 1.81672 5.3349 11.6921 5.66476 7.32411 5.96046e-008 5.35156 4 11.6873 6.1514 5.44878 0.000268877 5.35774 5 -0.436418 0.561831 0.193583 0.989717 -0.436512 0.659635 1.08493 0.663418 4.64824 4.15898 1.08493 0.726832 1.08507 0.560773 4.65467 4.28718 1.71507 0.930656 0.00300663 0.658802 0.00310133 0.558126 -0.436899 0.999214 1.1753 0.566243 4.96174 4.15898 1.08532 0.997008 1.1752 0.66057 4.96174 4.02895 1.17617 0.719953 0.192625 0.563443 0.00262553 0.998878 0.192531 0.663931 1.53105 0.664806 5.28654 3.89477 1.5312 0.563169 5.29141 4.02895 1.1812 1.00059 5.57779 5.40749 0.217597 0.965186 1.999 0.0159349 5.57779 3.89477 1.54509 0.890945 1.999 0.901852 -0.437912 0.663417 -0.437817 0.560773 0.192183 0.989064 -0.348269 0.566243 -0.438269 0.997008 -0.348363 0.66057 0.0011586 0.664805 0.00125372 0.563169 -0.348746 1.00059 -0.192802 0.465568 9.05332 1.00008 0.530612 0.00491458 0.17 10.9599 0.353721 0.321353 1.17 10.8889 1.17935 9.11109 0.292114 0.999501 0.000798335 0.925512 0.248996 0.901851 0.830999 9.08896 2.1334 9.08896 0.0186197 0.997283 5.45092 0.5 1.81672 9.09781 0.0153028 0.872227 5.43707 5.96046e-008 9.12549 4 0.00467044 0.285107 9.25712 0.000270188 9.13493 5 0.000999272 0.000499487 </float_array>
+          <technique_common>
+            <accessor source="#test_kdv_stairsR_brk_3.xno-geometry-uv-array" count="107" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_kdv_stairsR_brk_3.xno-geometry-uv2">
+          <float_array id="test_kdv_stairsR_brk_3.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#test_kdv_stairsR_brk_3.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_kdv_stairsR_brk_3.xno-geometry-color">
+          <float_array id="test_kdv_stairsR_brk_3.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#test_kdv_stairsR_brk_3.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="test_kdv_stairsR_brk_3.xno-geometry-vertex">
+          <input semantic="POSITION" source="#test_kdv_stairsR_brk_3.xno-geometry-position" />
+        </vertices>
+        <triangles material="test_kdv_stairsR_brk_3.xno0" count="30">
+          <input semantic="VERTEX" source="#test_kdv_stairsR_brk_3.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#test_kdv_stairsR_brk_3.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#test_kdv_stairsR_brk_3.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#test_kdv_stairsR_brk_3.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#test_kdv_stairsR_brk_3.xno-geometry-color" offset="4" set="0" />
+          <p>21 0 17 0 0 0 0 0 0 0 24 0 20 0 0 3 0 3 0 0 24 0 20 0 0 0 0 0 0 0 24 0 20 0 0 3 0 3 0 0 29 0 25 0 0 42 0 35 0 0 26 0 22 0 0 39 0 32 0 0 26 0 22 0 0 42 0 35 0 0 24 0 20 0 0 45 0 38 0 0 24 0 20 0 0 42 0 35 0 0 24 0 20 0 0 45 0 38 0 0 21 0 17 0 0 48 0 41 0 0 21 0 17 0 0 45 0 38 0 0 112 28 97 0 0 107 28 92 0 0 115 28 100 0 0 104 28 89 0 0 115 28 100 0 0 107 28 92 0 0 115 28 100 0 0 104 28 89 0 0 118 28 103 0 0 121 28 106 0 0 118 28 103 0 0 102 28 87 0 0 104 28 89 0 0 102 28 87 0 0 118 28 103 0 0 102 28 87 0 0 104 28 89 0 0 84 28 72 0 0 109 28 94 0 0 84 28 72 0 0 104 28 89 0 0 84 28 72 0 0 109 28 94 0 0 87 28 75 0 0 37 1 31 0 0 33 1 28 0 0 59 15 51 0 0 70 1 60 0 0 67 1 57 0 0 80 1 68 0 0 82 1 70 0 0 80 1 68 0 0 67 1 57 0 0 85 1 73 0 0 80 1 68 0 0 82 1 70 0 0 80 1 68 0 0 85 1 73 0 0 77 1 66 0 0 1 1 1 0 0 7 5 7 0 0 4 1 4 0 0 7 5 7 0 0 1 1 1 0 0 14 7 13 0 0 14 7 13 0 0 1 1 1 0 0 32 15 28 0 0 82 1 70 0 0 32 15 28 0 0 1 1 1 0 0 32 15 28 0 0 82 1 70 0 0 60 1 51 0 0 67 1 57 0 0 60 1 51 0 0 82 1 70 0 0 60 1 51 0 0 67 1 57 0 0 56 1 48 0 0 11 1 10 0 0 8 1 7 0 0 15 8 13 0 0 17 3 13 0 0 35 3 28 0 0 19 1 16 0 0 </p>
+        </triangles>
+        <triangles material="test_kdv_stairsR_brk_3.xno1" count="4">
+          <input semantic="VERTEX" source="#test_kdv_stairsR_brk_3.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#test_kdv_stairsR_brk_3.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#test_kdv_stairsR_brk_3.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#test_kdv_stairsR_brk_3.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#test_kdv_stairsR_brk_3.xno-geometry-color" offset="4" set="0" />
+          <p>116 40 101 0 0 46 18 39 0 0 113 39 98 0 0 43 17 36 0 0 113 39 98 0 0 46 18 39 0 0 22 10 18 0 0 100 33 85 0 0 2 2 2 0 0 83 27 71 0 0 2 2 2 0 0 100 33 85 0 0 </p>
+        </triangles>
+        <triangles material="test_kdv_stairsR_brk_3.xno2" count="26">
+          <input semantic="VERTEX" source="#test_kdv_stairsR_brk_3.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#test_kdv_stairsR_brk_3.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#test_kdv_stairsR_brk_3.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#test_kdv_stairsR_brk_3.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#test_kdv_stairsR_brk_3.xno-geometry-color" offset="4" set="0" />
+          <p>65 3 55 0 0 54 3 46 0 0 16 3 14 0 0 12 3 11 0 0 16 3 14 0 0 54 3 46 0 0 79 26 67 0 0 76 25 65 0 0 98 32 83 0 0 96 31 82 0 0 98 32 83 0 0 76 25 65 0 0 9 3 8 0 0 52 3 45 0 0 5 3 5 0 0 30 3 26 0 0 5 3 5 0 0 52 3 45 0 0 53 4 46 0 0 51 4 44 0 0 10 4 9 0 0 6 4 6 0 0 10 4 9 0 0 51 4 44 0 0 66 24 56 0 0 69 24 59 0 0 92 24 79 0 0 94 24 81 0 0 92 24 79 0 0 69 24 59 0 0 74 14 64 0 0 72 14 62 0 0 36 14 30 0 0 31 14 27 0 0 36 14 30 0 0 72 14 62 0 0 73 3 63 0 0 63 3 53 0 0 34 3 29 0 0 20 3 15 0 0 34 3 29 0 0 63 3 53 0 0 91 3 78 0 0 75 3 64 0 0 61 3 52 0 0 38 3 30 0 0 61 3 52 0 0 75 3 64 0 0 78 3 65 0 0 86 3 74 0 0 97 3 82 0 0 108 3 93 0 0 97 3 82 0 0 86 3 74 0 0 57 3 49 0 0 68 3 58 0 0 89 3 76 0 0 93 3 80 0 0 89 3 76 0 0 68 3 58 0 0 71 3 61 0 0 81 3 69 0 0 95 3 81 0 0 99 3 84 0 0 95 3 81 0 0 81 3 69 0 0 13 6 12 0 0 18 9 15 0 0 64 6 54 0 0 62 23 53 0 0 64 6 54 0 0 18 9 15 0 0 58 22 50 0 0 55 21 47 0 0 90 30 77 0 0 88 29 76 0 0 90 30 77 0 0 55 21 47 0 0 </p>
+        </triangles>
+        <triangles material="test_kdv_stairsR_brk_3.xno3" count="4">
+          <input semantic="VERTEX" source="#test_kdv_stairsR_brk_3.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#test_kdv_stairsR_brk_3.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#test_kdv_stairsR_brk_3.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#test_kdv_stairsR_brk_3.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#test_kdv_stairsR_brk_3.xno-geometry-color" offset="4" set="0" />
+          <p>50 20 43 0 0 47 18 40 0 0 120 42 105 0 0 117 40 102 0 0 120 42 105 0 0 47 18 40 0 0 23 10 19 0 0 49 19 42 0 0 101 33 86 0 0 119 41 104 0 0 101 33 86 0 0 49 19 42 0 0 </p>
+        </triangles>
+        <triangles material="test_kdv_stairsR_brk_3.xno4" count="6">
+          <input semantic="VERTEX" source="#test_kdv_stairsR_brk_3.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#test_kdv_stairsR_brk_3.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#test_kdv_stairsR_brk_3.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#test_kdv_stairsR_brk_3.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#test_kdv_stairsR_brk_3.xno-geometry-color" offset="4" set="0" />
+          <p>28 13 24 0 0 106 36 91 0 0 40 8 33 0 0 110 37 95 0 0 40 8 33 0 0 106 36 91 0 0 44 17 37 0 0 41 16 34 0 0 114 39 99 0 0 111 38 96 0 0 114 39 99 0 0 41 16 34 0 0 27 12 23 0 0 25 11 21 0 0 105 35 90 0 0 103 34 88 0 0 105 35 90 0 0 25 11 21 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="test_kdv_stairsR_brk_3.xno-controller">
+      <skin source="#test_kdv_stairsR_brk_3.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="test_kdv_stairsR_brk_3.xno-controller-Joints">
+          <Name_array id="test_kdv_stairsR_brk_3.xno-controller-Joints-array" count="1">test_kdv_stairsR_brk_3.xno0 </Name_array>
+          <technique_common>
+            <accessor source="#test_kdv_stairsR_brk_3.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_kdv_stairsR_brk_3.xno-controller-Matrices">
+          <float_array id="test_kdv_stairsR_brk_3.xno-controller-Matrices-array" count="16">1 -2.38494e-007 6.33382e-007 -975.431 2.37685e-007 0.999999 0.00127604 -248.34 -6.33685e-007 -0.00127604 0.999999 -252.77 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#test_kdv_stairsR_brk_3.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_kdv_stairsR_brk_3.xno-controller-Weights">
+          <float_array id="test_kdv_stairsR_brk_3.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#test_kdv_stairsR_brk_3.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#test_kdv_stairsR_brk_3.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#test_kdv_stairsR_brk_3.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="122">
+          <input semantic="JOINT" offset="0" source="#test_kdv_stairsR_brk_3.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#test_kdv_stairsR_brk_3.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="test_kdv_stairsR_brk_3.xno0" sid="test_kdv_stairsR_brk_3.xno0" name="test_kdv_stairsR_brk_3.xno0" type="JOINT">
+        <matrix>1 0 0 975.431 0 0.999999 -0.00124636 248.017 0 0.00124636 0.999999 253.088 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="test_kdv_stairsR_brk_3.xno" sid="test_kdv_stairsR_brk_3.xno" name="test_kdv_stairsR_brk_3.xno">
+        <instance_controller url="#test_kdv_stairsR_brk_3.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="test_kdv_stairsR_brk_3.xno0" target="#test_kdv_stairsR_brk_3.xno0ID" />
+              <instance_material symbol="test_kdv_stairsR_brk_3.xno1" target="#test_kdv_stairsR_brk_3.xno1ID" />
+              <instance_material symbol="test_kdv_stairsR_brk_3.xno2" target="#test_kdv_stairsR_brk_3.xno2ID" />
+              <instance_material symbol="test_kdv_stairsR_brk_3.xno3" target="#test_kdv_stairsR_brk_3.xno3ID" />
+              <instance_material symbol="test_kdv_stairsR_brk_3.xno4" target="#test_kdv_stairsR_brk_3.xno4ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

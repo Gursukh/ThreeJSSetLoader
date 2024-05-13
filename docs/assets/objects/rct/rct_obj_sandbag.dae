@@ -1,0 +1,175 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="rct_cloth_dfxx_y.dds-image" name="rct_cloth_dfxx_y.dds-image">
+      <init_from>./textures/rct_cloth_dfxx_y.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="rct_obj_sandbag.xno0ID" name="rct_obj_sandbag.xno0">
+      <instance_effect url="#rct_obj_sandbag.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="rct_obj_sandbag.xno0-effect" name="rct_obj_sandbag.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="rct_cloth_dfxx_y.dds-image-surface">
+          <surface type="2D">
+            <init_from>rct_cloth_dfxx_y.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="rct_cloth_dfxx_y.dds-image-sampler">
+          <sampler2D>
+            <source>rct_cloth_dfxx_y.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="rct_cloth_dfxx_y.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="rct_obj_sandbag.xno-geometry" name="rct_obj_sandbag.xno-geometry">
+      <mesh>
+        <source id="rct_obj_sandbag.xno-geometry-position">
+          <float_array id="rct_obj_sandbag.xno-geometry-position-array" count="168">-51.0763 15 -71.0895 -51.0763 15 -71.0895 -50.8467 15 71.7756 -50.8467 15 71.7756 -47.6599 15 -48.8419 -47.6599 15 -48.8419 -47.5068 15 46.4224 -47.5068 15 46.4224 -40.2941 10.671 59.8341 -40.2922 19.0245 61.0251 -39.766 10.2435 -59.7343 -39.764 19.0701 -58.5405 -38.7534 3.56694 -46.0322 -38.753 26.0134 -45.784 -38.6083 3.56694 44.2201 -38.608 26.0085 44.423 -30.3467 15 -69.3597 -30.3467 15 -69.3597 -30.1263 15 67.8268 -30.1263 15 67.8268 -28.5669 3.8044 -59.3212 -28.565 25.0714 -58.1286 -28.3843 4.33541 54.2778 -28.3782 24.8214 58.0719 -27.4224 0 -44.0978 -27.4214 32 -43.4889 -27.2837 0 42.2042 -27.2827 32 42.8083 24.8362 0 -44.1817 24.8372 32 -43.5729 24.9749 0 42.1202 24.9759 32 42.7243 25.9337 25.0714 -58.2162 26.1143 4.33541 54.1902 26.1204 24.8214 57.9843 27.6793 15 -69.453 27.6793 15 -69.453 27.8998 15 67.7336 27.8998 15 67.7336 29.2606 3.8044 -62.1714 37.6178 25.6509 -46.5363 37.6184 3.56694 -46.155 37.7634 3.56694 44.0973 37.7637 26.0085 44.3003 39.142 11.2172 -60.2487 39.3066 19.2173 -60.275 39.4994 10.2143 59.7059 39.5013 18.94 60.8969 45.7091 15 -48.992 45.7091 15 -48.992 45.8622 15 46.2724 45.8622 15 46.2724 49.054 15 -71.2504 49.054 15 -71.2504 49.2836 15 71.6147 49.2836 15 71.6147 </float_array>
+          <technique_common>
+            <accessor source="#rct_obj_sandbag.xno-geometry-position-array" count="56" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_obj_sandbag.xno-geometry-normal">
+          <float_array id="rct_obj_sandbag.xno-geometry-normal-array" count="132">-0.721572 0.0243904 -0.691909 -0.678982 0.0051564 0.734137 -0.997957 -0.0638805 0.00128616 -0.997889 0.0648158 0.00397168 -0.00755798 -0.89373 0.448541 -0.476538 0.878829 0.0238754 -0.530223 -0.846617 -0.0458674 -0.0575503 0.878589 -0.474099 -0.552021 -0.822676 -0.135933 -0.567353 0.810732 -0.144306 -0.497511 -0.856725 0.136035 -0.601293 0.786839 0.13904 -0.0540525 0.122673 -0.990974 0.0449456 -0.108358 0.993095 -0.155464 -0.871465 -0.465166 -0.192649 0.827948 -0.526676 -0.142219 -0.884088 0.445153 -0.111996 0.845215 0.52256 -0.141697 -0.984022 -0.10781 -0.213974 0.95748 -0.193514 -0.14076 -0.976444 0.163538 -0.212753 0.95828 0.190883 0.147061 -0.982623 -0.113247 0.198929 0.960941 -0.192406 0.119699 -0.980341 0.156853 0.197031 0.960496 0.196538 0.14195 0.838395 -0.526255 0.0819507 -0.890987 0.446571 0.137053 0.831115 0.538948 0.137906 0.116973 -0.983514 -0.0180413 -0.0122719 0.999762 0.324154 -0.804216 -0.498158 0.587045 0.793554 -0.160157 0.515542 -0.83354 -0.198562 0.536508 -0.831812 0.142292 0.571024 0.812368 0.11828 0.416935 -0.865035 -0.279069 0.35177 0.889809 -0.290685 0.467266 -0.880165 0.0835034 0.0370992 0.89545 0.443614 0.995569 0.00692204 -0.0937773 0.999059 -0.0423291 -0.00945174 0.712309 -0.0106523 -0.701785 0.665599 0.00227385 0.746306 </float_array>
+          <technique_common>
+            <accessor source="#rct_obj_sandbag.xno-geometry-normal-array" count="44" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_obj_sandbag.xno-geometry-uv">
+          <float_array id="rct_obj_sandbag.xno-geometry-uv-array" count="112">0.0212725 0.000154436 0.983234 -0.00153542 0.0075195 -0.00153542 0.996987 0.000154436 0.173252 0.038887 0.831255 0.0371971 0.180635 0.0371971 0.823872 0.038887 0.0889591 0.13208 0.923682 0.13377 0.905559 0.139296 0.107101 0.140986 0.811968 0.149219 0.194234 0.150909 0.195579 0.149219 0.810314 0.150909 0.0384294 0.235496 0.959357 0.233806 0.0393763 0.233806 0.95841 0.235496 0.890778 0.251474 0.115153 0.253164 0.131892 0.251474 0.891806 0.253164 0.798632 0.262693 0.210033 0.264383 0.209222 0.262693 0.799411 0.264383 0.798632 0.7046 0.210033 0.70629 0.209222 0.7046 0.799411 0.70629 0.115153 0.71751 0.131892 0.71582 0.891806 0.71751 0.0384294 0.735178 0.959357 0.733488 0.0393763 0.733488 0.95841 0.735178 0.909609 0.749211 0.189934 0.834365 0.811968 0.832675 0.195579 0.832675 0.810314 0.834365 0.908206 0.848164 0.0961233 0.851503 0.0889591 0.849813 0.923682 0.851503 0.173252 0.964935 0.831255 0.963245 0.180635 0.963245 0.823872 0.964935 0.0212725 1.00319 0.983234 1.0015 0.0075195 1.0015 0.996987 1.00319 </float_array>
+          <technique_common>
+            <accessor source="#rct_obj_sandbag.xno-geometry-uv-array" count="56" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_obj_sandbag.xno-geometry-uv2">
+          <float_array id="rct_obj_sandbag.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#rct_obj_sandbag.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_obj_sandbag.xno-geometry-color">
+          <float_array id="rct_obj_sandbag.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#rct_obj_sandbag.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="rct_obj_sandbag.xno-geometry-vertex">
+          <input semantic="POSITION" source="#rct_obj_sandbag.xno-geometry-position" />
+        </vertices>
+        <triangles material="rct_obj_sandbag.xno0" count="84">
+          <input semantic="VERTEX" source="#rct_obj_sandbag.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#rct_obj_sandbag.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#rct_obj_sandbag.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#rct_obj_sandbag.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#rct_obj_sandbag.xno-geometry-color" offset="4" set="0" />
+          <p>31 25 31 0 0 23 17 23 0 0 34 28 34 0 0 23 17 23 0 0 31 25 31 0 0 27 21 27 0 0 29 23 29 0 0 27 21 27 0 0 31 25 31 0 0 27 21 27 0 0 29 23 29 0 0 25 19 25 0 0 32 26 32 0 0 25 19 25 0 0 29 23 29 0 0 25 19 25 0 0 32 26 32 0 0 21 15 21 0 0 27 21 27 0 0 9 5 9 0 0 23 17 23 0 0 9 5 9 0 0 27 21 27 0 0 15 11 15 0 0 25 19 25 0 0 15 11 15 0 0 27 21 27 0 0 15 11 15 0 0 25 19 25 0 0 13 9 13 0 0 21 15 21 0 0 13 9 13 0 0 25 19 25 0 0 13 9 13 0 0 21 15 21 0 0 11 7 11 0 0 45 37 45 0 0 52 42 52 0 0 35 29 35 0 0 52 42 52 0 0 45 37 45 0 0 48 40 48 0 0 40 32 40 0 0 48 40 48 0 0 45 37 45 0 0 48 40 48 0 0 40 32 40 0 0 51 41 51 0 0 43 35 43 0 0 51 41 51 0 0 40 32 40 0 0 51 41 51 0 0 43 35 43 0 0 55 43 55 0 0 47 39 47 0 0 55 43 55 0 0 43 35 43 0 0 55 43 55 0 0 47 39 47 0 0 38 30 38 0 0 34 28 34 0 0 38 30 38 0 0 47 39 47 0 0 38 30 38 0 0 34 28 34 0 0 19 13 19 0 0 23 17 23 0 0 19 13 19 0 0 34 28 34 0 0 19 13 19 0 0 23 17 23 0 0 3 1 3 0 0 9 5 9 0 0 3 1 3 0 0 23 17 23 0 0 3 1 3 0 0 9 5 9 0 0 7 3 7 0 0 15 11 15 0 0 7 3 7 0 0 9 5 9 0 0 7 3 7 0 0 15 11 15 0 0 4 2 4 0 0 13 9 13 0 0 4 2 4 0 0 15 11 15 0 0 4 2 4 0 0 13 9 13 0 0 0 0 0 0 0 11 7 11 0 0 0 0 0 0 0 13 9 13 0 0 0 0 0 0 0 11 7 11 0 0 16 12 16 0 0 21 15 21 0 0 16 12 16 0 0 11 7 11 0 0 16 12 16 0 0 21 15 21 0 0 35 29 35 0 0 32 26 32 0 0 35 29 35 0 0 21 15 21 0 0 35 29 35 0 0 32 26 32 0 0 45 37 45 0 0 29 23 29 0 0 45 37 45 0 0 32 26 32 0 0 45 37 45 0 0 29 23 29 0 0 40 32 40 0 0 31 25 31 0 0 40 32 40 0 0 29 23 29 0 0 40 32 40 0 0 31 25 31 0 0 43 35 43 0 0 34 28 34 0 0 43 35 43 0 0 31 25 31 0 0 43 35 43 0 0 34 28 34 0 0 47 39 47 0 0 33 27 33 0 0 42 34 42 0 0 46 38 46 0 0 42 34 42 0 0 33 27 33 0 0 30 24 30 0 0 22 16 22 0 0 30 24 30 0 0 33 27 33 0 0 30 24 30 0 0 22 16 22 0 0 26 20 26 0 0 8 4 8 0 0 26 20 26 0 0 22 16 22 0 0 26 20 26 0 0 8 4 8 0 0 14 10 14 0 0 24 18 24 0 0 14 10 14 0 0 12 8 12 0 0 14 10 14 0 0 24 18 24 0 0 26 20 26 0 0 28 22 28 0 0 26 20 26 0 0 24 18 24 0 0 26 20 26 0 0 28 22 28 0 0 30 24 30 0 0 41 33 41 0 0 30 24 30 0 0 28 22 28 0 0 30 24 30 0 0 41 33 41 0 0 42 34 42 0 0 44 36 44 0 0 53 42 53 0 0 49 40 49 0 0 53 42 53 0 0 44 36 44 0 0 36 29 36 0 0 39 31 39 0 0 36 29 36 0 0 44 36 44 0 0 36 29 36 0 0 39 31 39 0 0 17 12 17 0 0 20 14 20 0 0 17 12 17 0 0 39 31 39 0 0 17 12 17 0 0 20 14 20 0 0 1 0 1 0 0 10 6 10 0 0 1 0 1 0 0 20 14 20 0 0 1 0 1 0 0 10 6 10 0 0 5 2 5 0 0 12 8 12 0 0 5 2 5 0 0 10 6 10 0 0 5 2 5 0 0 12 8 12 0 0 6 3 6 0 0 14 10 14 0 0 6 3 6 0 0 12 8 12 0 0 6 3 6 0 0 14 10 14 0 0 2 1 2 0 0 8 4 8 0 0 2 1 2 0 0 14 10 14 0 0 2 1 2 0 0 8 4 8 0 0 18 13 18 0 0 22 16 22 0 0 18 13 18 0 0 8 4 8 0 0 18 13 18 0 0 22 16 22 0 0 37 30 37 0 0 33 27 33 0 0 37 30 37 0 0 22 16 22 0 0 37 30 37 0 0 33 27 33 0 0 54 43 54 0 0 46 38 46 0 0 54 43 54 0 0 33 27 33 0 0 54 43 54 0 0 46 38 46 0 0 50 41 50 0 0 42 34 42 0 0 50 41 50 0 0 46 38 46 0 0 50 41 50 0 0 42 34 42 0 0 49 40 49 0 0 41 33 41 0 0 49 40 49 0 0 42 34 42 0 0 49 40 49 0 0 41 33 41 0 0 44 36 44 0 0 28 22 28 0 0 44 36 44 0 0 41 33 41 0 0 44 36 44 0 0 28 22 28 0 0 39 31 39 0 0 24 18 24 0 0 39 31 39 0 0 28 22 28 0 0 39 31 39 0 0 24 18 24 0 0 20 14 20 0 0 12 8 12 0 0 20 14 20 0 0 24 18 24 0 0 20 14 20 0 0 12 8 12 0 0 10 6 10 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="rct_obj_sandbag.xno-controller">
+      <skin source="#rct_obj_sandbag.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="rct_obj_sandbag.xno-controller-Joints">
+          <Name_array id="rct_obj_sandbag.xno-controller-Joints-array" count="1">rct_obj_sandbag </Name_array>
+          <technique_common>
+            <accessor source="#rct_obj_sandbag.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_obj_sandbag.xno-controller-Matrices">
+          <float_array id="rct_obj_sandbag.xno-controller-Matrices-array" count="16">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#rct_obj_sandbag.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_obj_sandbag.xno-controller-Weights">
+          <float_array id="rct_obj_sandbag.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#rct_obj_sandbag.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#rct_obj_sandbag.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#rct_obj_sandbag.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="56">
+          <input semantic="JOINT" offset="0" source="#rct_obj_sandbag.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#rct_obj_sandbag.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="rct_obj_sandbag" sid="rct_obj_sandbag" name="rct_obj_sandbag" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="rct_obj_sandbag.xno" sid="rct_obj_sandbag.xno" name="rct_obj_sandbag.xno">
+        <instance_controller url="#rct_obj_sandbag.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="rct_obj_sandbag.xno0" target="#rct_obj_sandbag.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

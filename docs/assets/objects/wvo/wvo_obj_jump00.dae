@@ -1,0 +1,175 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="wvo_bridge02_dfxx_v.dds-image" name="wvo_bridge02_dfxx_v.dds-image">
+      <init_from>./textures/wvo_bridge02_dfxx_v.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="wvo_obj_jump00.xno0ID" name="wvo_obj_jump00.xno0">
+      <instance_effect url="#wvo_obj_jump00.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="wvo_obj_jump00.xno0-effect" name="wvo_obj_jump00.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="wvo_bridge02_dfxx_v.dds-image-surface">
+          <surface type="2D">
+            <init_from>wvo_bridge02_dfxx_v.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="wvo_bridge02_dfxx_v.dds-image-sampler">
+          <sampler2D>
+            <source>wvo_bridge02_dfxx_v.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="wvo_bridge02_dfxx_v.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="wvo_obj_jump00.xno-geometry" name="wvo_obj_jump00.xno-geometry">
+      <mesh>
+        <source id="wvo_obj_jump00.xno-geometry-position">
+          <float_array id="wvo_obj_jump00.xno-geometry-position-array" count="60">-316.926 -41.8361 -308.193 -316.926 -41.8361 -308.193 -316.926 -41.8361 -308.193 -316.926 -41.836 291.807 -316.926 -41.836 291.807 -316.926 -41.836 291.807 -316.926 6.02103 -308.193 -316.926 6.02103 -308.193 -316.926 6.02103 -308.193 -316.925 6.02113 291.807 -316.925 6.02113 291.807 -316.925 6.02113 291.807 -296.926 -41.8361 -308.193 -296.926 -41.8361 -308.193 -296.926 6.02106 -308.193 -296.926 6.02106 -308.193 -296.926 -41.836 291.807 -296.926 -41.836 291.807 -296.926 6.02113 291.807 -296.926 6.02113 291.807 </float_array>
+          <technique_common>
+            <accessor source="#wvo_obj_jump00.xno-geometry-position-array" count="20" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wvo_obj_jump00.xno-geometry-normal">
+          <float_array id="wvo_obj_jump00.xno-geometry-normal-array" count="12">-1 7.02589e-006 4.69885e-007 -4.37113e-008 -1 1.67668e-007 1 -4.50748e-006 -4.216e-007 -1.48217e-006 1 -1.67667e-007 </float_array>
+          <technique_common>
+            <accessor source="#wvo_obj_jump00.xno-geometry-normal-array" count="4" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wvo_obj_jump00.xno-geometry-uv">
+          <float_array id="wvo_obj_jump00.xno-geometry-uv-array" count="32">0.95083 0.746822 0.99646 -0.116268 1.05593 0.746782 -0.828419 0.747159 -0.960107 -0.116268 -0.932317 0.747346 0.950987 0.997139 0.996913 -0.116974 1.05561 0.997105 -0.828171 0.996339 -0.959832 -0.116923 -0.932315 0.996339 0.99646 -0.000413299 0.95132 0.746647 0.997054 0.000291646 -0.960107 -0.000413537 </float_array>
+          <technique_common>
+            <accessor source="#wvo_obj_jump00.xno-geometry-uv-array" count="16" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wvo_obj_jump00.xno-geometry-uv2">
+          <float_array id="wvo_obj_jump00.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#wvo_obj_jump00.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wvo_obj_jump00.xno-geometry-color">
+          <float_array id="wvo_obj_jump00.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#wvo_obj_jump00.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="wvo_obj_jump00.xno-geometry-vertex">
+          <input semantic="POSITION" source="#wvo_obj_jump00.xno-geometry-position" />
+        </vertices>
+        <triangles material="wvo_obj_jump00.xno0" count="12">
+          <input semantic="VERTEX" source="#wvo_obj_jump00.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#wvo_obj_jump00.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#wvo_obj_jump00.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#wvo_obj_jump00.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#wvo_obj_jump00.xno-geometry-color" offset="4" set="0" />
+          <p>2 2 2 0 0 8 2 8 0 0 13 2 13 0 0 15 2 6 0 0 13 2 13 0 0 8 2 8 0 0 13 2 13 0 0 15 2 6 0 0 17 2 3 0 0 19 2 9 0 0 17 2 3 0 0 15 2 6 0 0 17 2 3 0 0 19 2 9 0 0 5 2 5 0 0 11 2 11 0 0 5 2 5 0 0 19 2 9 0 0 7 3 7 0 0 10 3 10 0 0 14 3 14 0 0 18 3 15 0 0 14 3 14 0 0 10 3 10 0 0 12 1 12 0 0 16 1 15 0 0 1 1 1 0 0 4 1 4 0 0 1 1 1 0 0 16 1 15 0 0 0 0 0 0 0 3 0 3 0 0 6 0 6 0 0 9 0 9 0 0 6 0 6 0 0 3 0 3 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="wvo_obj_jump00.xno-controller">
+      <skin source="#wvo_obj_jump00.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="wvo_obj_jump00.xno-controller-Joints">
+          <Name_array id="wvo_obj_jump00.xno-controller-Joints-array" count="1">wvo_obj_jump00 </Name_array>
+          <technique_common>
+            <accessor source="#wvo_obj_jump00.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wvo_obj_jump00.xno-controller-Matrices">
+          <float_array id="wvo_obj_jump00.xno-controller-Matrices-array" count="16">-4.37114e-008 -1 -9.9557e-023 -17.9075 1 -4.37114e-008 -1.1952e-007 306.926 1.1952e-007 -5.22438e-015 1 8.19266 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#wvo_obj_jump00.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wvo_obj_jump00.xno-controller-Weights">
+          <float_array id="wvo_obj_jump00.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#wvo_obj_jump00.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#wvo_obj_jump00.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#wvo_obj_jump00.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="20">
+          <input semantic="JOINT" offset="0" source="#wvo_obj_jump00.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#wvo_obj_jump00.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="wvo_obj_jump00" sid="wvo_obj_jump00" name="wvo_obj_jump00" type="JOINT">
+        <matrix>5.96046e-008 1 0 -306.926 -1 5.96046e-008 -0 -17.9075 -0 0 1 -8.19263 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="wvo_obj_jump00.xno" sid="wvo_obj_jump00.xno" name="wvo_obj_jump00.xno">
+        <instance_controller url="#wvo_obj_jump00.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="wvo_obj_jump00.xno0" target="#wvo_obj_jump00.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

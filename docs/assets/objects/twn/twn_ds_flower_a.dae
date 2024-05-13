@@ -1,0 +1,286 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="twn_a1fpot01a_dfsp_c.dds-image" name="twn_a1fpot01a_dfsp_c.dds-image">
+      <init_from>./textures/twn_a1fpot01a_dfsp_c.dds</init_from>
+    </image>
+    <image id="twn_a1flower13a_dfsp_c.dds-image" name="twn_a1flower13a_dfsp_c.dds-image">
+      <init_from>./textures/twn_a1flower13a_dfsp_c.dds</init_from>
+    </image>
+    <image id="twn_a1flower14a_dfpt_p_c.dds-image" name="twn_a1flower14a_dfpt_p_c.dds-image">
+      <init_from>./textures/twn_a1flower14a_dfpt_p_c.dds</init_from>
+    </image>
+    <image id="twn_a1flower15a_dfpt_p_c.dds-image" name="twn_a1flower15a_dfpt_p_c.dds-image">
+      <init_from>./textures/twn_a1flower15a_dfpt_p_c.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="twn_ds_flower_a.xno0ID" name="twn_ds_flower_a.xno0">
+      <instance_effect url="#twn_ds_flower_a.xno0-effect" />
+    </material>
+    <material id="twn_ds_flower_a.xno1ID" name="twn_ds_flower_a.xno1">
+      <instance_effect url="#twn_ds_flower_a.xno1-effect" />
+    </material>
+    <material id="twn_ds_flower_a.xno2ID" name="twn_ds_flower_a.xno2">
+      <instance_effect url="#twn_ds_flower_a.xno2-effect" />
+    </material>
+    <material id="twn_ds_flower_a.xno3ID" name="twn_ds_flower_a.xno3">
+      <instance_effect url="#twn_ds_flower_a.xno3-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="twn_ds_flower_a.xno0-effect" name="twn_ds_flower_a.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="twn_a1fpot01a_dfsp_c.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_a1fpot01a_dfsp_c.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_a1fpot01a_dfsp_c.dds-image-sampler">
+          <sampler2D>
+            <source>twn_a1fpot01a_dfsp_c.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_a1fpot01a_dfsp_c.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="twn_ds_flower_a.xno1-effect" name="twn_ds_flower_a.xno1-effect">
+      <profile_COMMON>
+        <newparam sid="twn_a1flower13a_dfsp_c.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_a1flower13a_dfsp_c.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_a1flower13a_dfsp_c.dds-image-sampler">
+          <sampler2D>
+            <source>twn_a1flower13a_dfsp_c.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_a1flower13a_dfsp_c.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="twn_ds_flower_a.xno2-effect" name="twn_ds_flower_a.xno2-effect">
+      <profile_COMMON>
+        <newparam sid="twn_a1flower14a_dfpt_p_c.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_a1flower14a_dfpt_p_c.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_a1flower14a_dfpt_p_c.dds-image-sampler">
+          <sampler2D>
+            <source>twn_a1flower14a_dfpt_p_c.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_a1flower14a_dfpt_p_c.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="twn_ds_flower_a.xno3-effect" name="twn_ds_flower_a.xno3-effect">
+      <profile_COMMON>
+        <newparam sid="twn_a1flower15a_dfpt_p_c.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_a1flower15a_dfpt_p_c.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_a1flower15a_dfpt_p_c.dds-image-sampler">
+          <sampler2D>
+            <source>twn_a1flower15a_dfpt_p_c.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_a1flower15a_dfpt_p_c.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="twn_ds_flower_a.xno-geometry" name="twn_ds_flower_a.xno-geometry">
+      <mesh>
+        <source id="twn_ds_flower_a.xno-geometry-position">
+          <float_array id="twn_ds_flower_a.xno-geometry-position-array" count="540">-28.8346 35.8323 -21.8263 -28.4986 80.5289 53.3393 -27.1537 83.9261 22.851 -24.5328 77.384 28.0762 -23.9844 28.2552 -52.4483 -23.8 42.8192 -70 -23.8 42.8192 -70 -23.8 42.8192 -70 -23.8 57.4872 -70 -23.8 57.4872 -70 -23.8 57.4872 -70 -23.8 42.8192 70 -23.8 42.8192 70 -23.8 42.8192 70 -23.8 42.8192 70 -23.8 57.4871 70 -23.8 57.4871 70 -23.8 57.4871 70 -23.8 57.4871 70 -21.7789 44.096 17.0932 -21.2509 3.23132 67.8852 -21.2509 3.23132 67.8852 -21.2509 3.23132 67.8852 -21.2509 3.23132 67.8852 -21.2509 -2.96736e-006 67.8852 -21.2509 -2.96736e-006 67.8852 -21.2509 2.96736e-006 -67.8852 -21.2509 2.96736e-006 -67.8852 -21.2509 3.23132 -67.8852 -21.2509 3.23132 -67.8852 -21.2509 3.23132 -67.8852 -21.2509 3.23132 -67.8852 -20.4741 46.1047 31.5893 -20.1824 66.6884 -77.2795 -19.5427 85.8541 -38.4441 -19.0421 40 -35.5642 -19.0232 38.9541 -37.3494 -19.0186 51.6716 44.9874 -18.8173 42.8192 -65.3144 -18.8173 42.8192 -65.3144 -18.8173 42.8192 -65.3144 -18.8173 42.8192 -65.3144 -18.8173 5.57467 -65.3144 -18.8173 5.57467 -65.3144 -18.8173 5.57467 -65.3144 -18.8173 5.57467 -65.3144 -18.8173 42.8192 65.3144 -18.8173 42.8192 65.3144 -18.8173 42.8192 65.3144 -18.8173 42.8192 65.3144 -18.8173 5.57466 65.3144 -18.8173 5.57466 65.3144 -18.8173 5.57466 65.3144 -18.8173 5.57466 65.3144 -17.5277 41.2281 -7.3346 -17.5277 41.2281 -7.3346 -17.2198 57.4872 -62.9543 -17.2198 57.4872 -62.9543 -17.2198 57.4872 -62.9543 -17.2198 57.4872 -62.9543 -17.2198 57.4871 62.9543 -17.2198 57.4871 62.9543 -17.2198 57.4871 62.9543 -17.2198 57.4871 62.9543 -17.2198 46.3106 62.9543 -17.2198 46.3106 62.9543 -17.2198 46.3106 62.9543 -17.2198 46.3106 -62.9543 -17.2198 46.3106 -62.9543 -17.2198 46.3106 -62.9543 -16.8914 80.5634 18.3839 -16.3676 29.9843 29.7274 -16.0722 13.2752 6.06348 -15.9633 88.6283 -36.3464 -15.2308 86.1064 58.7488 -13.577 25.9871 -59.3606 -11.7343 95.9131 -26.2201 -11.2254 29.9795 6.25217 -10.7108 84.828 -5.8702 -10.7108 84.828 -5.8702 -10.0898 87.0698 -17.2014 -8.30549 84.8019 -71.1626 -7.94155 85.1007 3.92011 -7.7644 46.4317 -44.7941 -6.89968 91.2877 -63.5733 -6.60222 38.1321 0.974586 -4.54808 95.2801 2.03944 -4.04202 89.7278 8.58056 -3.56273 31.5306 68.8899 -3.07112 25.3276 3.92011 -1.26826 29.9849 -68.7724 -1.19794 27.4355 -4.16092 -1.09561 51.3315 -30.3433 0.236341 26.6722 56.3437 1.34201 37.5051 -29.9696 1.35233 87.3456 -12.0559 1.81413 80.5847 4.90805 4.10676 26.469 55.5674 4.13914 93.4886 0.88908 4.31261 76.9057 67.1073 4.79598 95.913 31.4279 8.54038 27.2737 -71.4394 9.55139 86.4354 -4.16091 11.4757 31.8849 -15.7771 11.8027 84.7126 58.7707 13.6755 39.7362 -44.2875 14.8253 86.9557 59.3707 14.8561 85.4689 55.5674 16.3268 34.4455 12.5406 17.2198 46.3106 -62.9543 17.2198 46.3106 -62.9543 17.2198 46.3106 -62.9543 17.2198 57.4871 62.9543 17.2198 57.4871 62.9543 17.2198 57.4871 62.9543 17.2198 57.4871 62.9543 17.2198 46.3106 62.9543 17.2198 46.3106 62.9543 17.2198 46.3106 62.9543 17.2198 57.4872 -62.9543 17.2198 57.4872 -62.9543 17.2198 57.4872 -62.9543 17.2198 57.4872 -62.9543 17.4765 81.2223 -64.1475 17.8723 37.5051 27.6784 18.1982 29.8174 -12.3326 18.7558 37.1144 -66.1876 18.8173 5.57466 65.3144 18.8173 5.57466 65.3144 18.8173 5.57466 65.3144 18.8173 5.57466 65.3144 18.8173 42.8192 65.3144 18.8173 42.8192 65.3144 18.8173 42.8192 65.3144 18.8173 42.8192 65.3144 18.8173 42.8192 -65.3144 18.8173 42.8192 -65.3144 18.8173 42.8192 -65.3144 18.8173 42.8192 -65.3144 18.8173 5.57467 -65.3144 18.8173 5.57467 -65.3144 18.8173 5.57467 -65.3144 18.8173 5.57467 -65.3144 19.1339 80.4597 15.7296 19.6062 34.0544 -1.51604 19.6958 27.1827 59.3707 19.9094 79.1355 -42.1262 19.9679 37.3128 60.422 21.2509 -2.96736e-006 67.8852 21.2509 -2.96736e-006 67.8852 21.2509 3.23132 67.8852 21.2509 3.23132 67.8852 21.2509 3.23132 67.8852 21.2509 3.23132 67.8852 21.2509 2.96736e-006 -67.8852 21.2509 2.96736e-006 -67.8852 21.2509 3.23132 -67.8852 21.2509 3.23132 -67.8852 21.2509 3.23132 -67.8852 21.2509 3.23132 -67.8852 21.8345 85.7427 -66.9698 21.8895 75.3178 -38.713 23.8 57.4871 70 23.8 57.4871 70 23.8 57.4871 70 23.8 57.4871 70 23.8 42.8192 70 23.8 42.8192 70 23.8 42.8192 70 23.8 42.8192 70 23.8 57.4872 -70 23.8 57.4872 -70 23.8 57.4872 -70 23.8 57.4872 -70 23.8 42.8192 -70 23.8 42.8192 -70 23.8 42.8192 -70 23.8 42.8192 -70 24.864 31.1117 45.2309 26.75 31.5865 20.4587 </float_array>
+          <technique_common>
+            <accessor source="#twn_ds_flower_a.xno-geometry-position-array" count="180" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_ds_flower_a.xno-geometry-normal">
+          <float_array id="twn_ds_flower_a.xno-geometry-normal-array" count="81">-0.793306 0.336048 -0.507679 0.72667 0.514346 0.455411 0.727229 0.532983 -0.432513 -0.63339 -0.0823045 0.769444 0.66343 -0.451248 -0.596854 -1 0 0 -7.14342e-007 -1 -5.44957e-008 0 0 -1 -9.73218e-008 1 9.08921e-008 0 -2.36108e-006 1 0.662684 -0.7417 0.103592 -0.693628 0.720333 5.44385e-008 0 0.739042 0.673659 0 0.739042 -0.67366 -0.983128 0.156873 -0.0940731 0.812298 0.583013 0.0163804 0.62802 -0.027252 0.77772 -0.960359 0.158663 -0.229209 -0.960669 0.157875 -0.228454 1 0 0 0.915065 0.22458 0.334993 -0.994191 0.103553 0.0293314 0.936206 0.226831 -0.268453 0.94608 0.27784 -0.166543 0.921567 0.075091 -0.380888 -0.979821 0.178516 0.0899103 0.693627 0.720334 5.44386e-008 </float_array>
+          <technique_common>
+            <accessor source="#twn_ds_flower_a.xno-geometry-normal-array" count="27" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_ds_flower_a.xno-geometry-uv">
+          <float_array id="twn_ds_flower_a.xno-geometry-uv-array" count="106">1 1 0 1 -0.0878417 0.306925 -0.0878416 0.443815 0.00196473 0.421126 0.914658 0.306925 0.914658 0.443815 0.997337 0.421126 1 0 0.998951 0.031442 -0.00116003 0.0314802 0.998951 0.00273514 -0.00116009 0.00227058 -0.000639131 0.00273514 -0.000639131 0.031442 0 0 0.000789219 0.329487 -0.123672 0.333269 -0.0537901 0.33327 -0.249538 0.329072 0.000789219 0.045567 0.0179003 0.0472798 -0.0210475 0.0475959 -0.249538 0.0440598 0.996522 0.329487 0.881036 0.33327 0.996522 0.045567 0.980413 0.0472798 -0.0450168 0.494874 0.0525901 0.494872 0.751263 -0.937327 0.000404059 -0.937327 0.947138 0.494872 0.749923 -0.937328 0.000499547 0.0014388 0.751263 -0.99929 0.749923 -0.99929 0.000500411 2.87856 0.000404121 -0.99929 0.9995 2.87856 1.00166 -0.99929 -0.343593 0.494872 1.00166 -0.937327 0.9995 0.00143862 -0.233881 0.0475956 -0.509742 0.0440596 -0.447362 0.333269 -0.509742 0.329071 -0.25377 0.00227088 -0.253769 0.0314803 -0.390575 0.421125 -0.483192 0.443814 -0.483192 0.306924 </float_array>
+          <technique_common>
+            <accessor source="#twn_ds_flower_a.xno-geometry-uv-array" count="53" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_ds_flower_a.xno-geometry-uv2">
+          <float_array id="twn_ds_flower_a.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#twn_ds_flower_a.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_ds_flower_a.xno-geometry-color">
+          <float_array id="twn_ds_flower_a.xno-geometry-color-array" count="16">0.603922 0.603922 0.603922 1 1 1 1 1 0.666667 0.666667 0.666667 1 0.901961 0.901961 0.901961 1 </float_array>
+          <technique_common>
+            <accessor source="#twn_ds_flower_a.xno-geometry-color-array" count="4" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="twn_ds_flower_a.xno-geometry-vertex">
+          <input semantic="POSITION" source="#twn_ds_flower_a.xno-geometry-position" />
+        </vertices>
+        <triangles material="twn_ds_flower_a.xno0" count="56">
+          <input semantic="VERTEX" source="#twn_ds_flower_a.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#twn_ds_flower_a.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#twn_ds_flower_a.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#twn_ds_flower_a.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#twn_ds_flower_a.xno-geometry-color" offset="4" set="0" />
+          <p>174 6 52 0 1 135 6 46 0 3 6 6 2 0 1 39 6 17 0 3 6 6 2 0 1 135 6 46 0 3 40 6 18 0 3 13 6 5 0 1 6 6 2 0 1 13 6 5 0 1 40 6 18 0 3 48 6 25 0 3 173 19 6 0 1 169 19 2 0 1 177 19 5 0 1 169 19 2 0 1 173 19 6 0 1 165 19 3 0 1 15 5 6 0 1 5 5 2 0 1 11 5 5 0 1 5 5 2 0 1 15 5 6 0 1 8 5 3 0 1 166 6 52 0 1 47 6 17 0 3 131 6 46 0 3 47 6 17 0 3 166 6 52 0 1 12 6 2 0 1 175 6 5 0 1 132 6 18 0 3 136 6 25 0 3 132 6 18 0 3 175 6 5 0 1 167 6 2 0 1 140 7 45 0 1 41 7 19 0 3 137 7 47 0 3 41 7 19 0 3 140 7 45 0 1 45 7 23 0 1 127 12 44 0 1 22 12 10 0 1 150 12 49 0 1 22 12 10 0 1 127 12 44 0 1 52 12 22 0 1 141 26 27 0 1 152 26 14 0 1 158 26 9 0 1 152 26 14 0 1 141 26 27 0 1 129 26 21 0 1 51 11 27 0 1 29 11 14 0 1 21 11 9 0 1 29 11 14 0 1 51 11 27 0 1 43 11 21 0 1 154 7 48 0 1 31 7 10 0 1 157 7 49 0 1 31 7 10 0 1 154 7 48 0 1 27 7 12 0 1 156 13 49 0 1 44 13 22 0 1 139 13 44 0 1 44 13 22 0 1 156 13 49 0 1 30 13 10 0 1 133 9 47 0 3 53 9 23 0 1 128 9 45 0 1 53 9 23 0 1 133 9 47 0 3 49 9 19 0 3 138 19 24 0 3 130 19 20 0 1 142 19 26 0 1 130 19 20 0 1 138 19 24 0 3 134 19 16 0 3 46 5 24 0 3 42 5 20 0 1 50 5 26 0 1 42 5 20 0 1 46 5 24 0 3 38 5 16 0 3 113 8 41 0 3 16 8 4 0 1 162 8 50 0 1 16 8 4 0 1 113 8 41 0 3 60 8 28 0 3 121 8 32 0 3 163 8 4 0 1 171 8 7 0 1 163 8 4 0 1 121 8 32 0 3 114 8 29 0 3 170 8 50 0 1 56 8 28 0 3 120 8 41 0 3 56 8 28 0 3 170 8 50 0 1 9 8 4 0 1 57 8 29 0 3 9 8 4 0 1 61 8 32 0 3 17 8 7 0 1 61 8 32 0 3 9 8 4 0 1 115 7 42 0 3 118 7 40 0 3 62 7 30 0 3 65 7 35 0 3 62 7 30 0 3 118 7 40 0 3 119 5 33 0 3 109 5 36 0 3 112 5 31 0 3 116 5 38 0 3 112 5 31 0 3 109 5 36 0 3 58 9 30 0 3 68 9 35 0 3 122 9 42 0 3 111 9 40 0 3 122 9 42 0 3 68 9 35 0 3 148 9 48 0 1 151 9 49 0 1 25 9 12 0 1 23 9 10 0 1 25 9 12 0 1 151 9 49 0 1 63 19 33 0 3 66 19 36 0 3 59 19 31 0 3 69 19 38 0 3 59 19 31 0 3 66 19 36 0 3 18 9 3 0 1 14 9 2 0 1 164 9 51 0 1 168 9 52 0 1 164 9 51 0 1 14 9 2 0 1 28 5 14 0 1 26 5 13 0 1 20 5 9 0 1 24 5 11 0 1 20 5 9 0 1 26 5 13 0 1 153 19 14 0 1 149 19 13 0 1 159 19 9 0 1 155 19 11 0 1 159 19 9 0 1 149 19 13 0 1 7 7 2 0 1 10 7 3 0 1 176 7 52 0 1 172 7 51 0 1 176 7 52 0 1 10 7 3 0 1 </p>
+        </triangles>
+        <triangles material="twn_ds_flower_a.xno1" count="2">
+          <input semantic="VERTEX" source="#twn_ds_flower_a.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#twn_ds_flower_a.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#twn_ds_flower_a.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#twn_ds_flower_a.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#twn_ds_flower_a.xno-geometry-color" offset="4" set="0" />
+          <p>67 8 37 0 3 64 8 34 0 3 110 8 39 0 3 117 8 43 0 3 110 8 39 0 3 64 8 34 0 3 </p>
+        </triangles>
+        <triangles material="twn_ds_flower_a.xno2" count="10">
+          <input semantic="VERTEX" source="#twn_ds_flower_a.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#twn_ds_flower_a.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#twn_ds_flower_a.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#twn_ds_flower_a.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#twn_ds_flower_a.xno-geometry-color" offset="4" set="0" />
+          <p>104 3 1 0 1 3 3 0 0 1 147 3 15 0 0 71 3 8 0 0 147 3 15 0 0 3 3 0 0 1 76 22 0 0 1 100 22 1 0 1 94 22 8 0 0 124 22 15 0 0 94 22 8 0 0 100 22 1 0 1 160 16 1 0 1 73 16 0 0 1 126 16 15 0 0 35 16 8 0 0 126 16 15 0 0 73 16 0 0 1 97 25 15 0 0 107 25 1 0 1 91 25 8 0 0 102 25 0 0 1 91 25 8 0 0 107 25 1 0 1 82 24 15 0 1 106 24 8 0 1 89 24 1 0 0 145 24 0 0 0 89 24 1 0 0 106 24 8 0 1 </p>
+        </triangles>
+        <triangles material="twn_ds_flower_a.xno3" count="22">
+          <input semantic="VERTEX" source="#twn_ds_flower_a.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#twn_ds_flower_a.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#twn_ds_flower_a.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#twn_ds_flower_a.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#twn_ds_flower_a.xno-geometry-color" offset="4" set="0" />
+          <p>34 15 0 0 1 70 15 1 0 1 105 15 8 0 0 108 15 15 0 0 105 15 8 0 0 70 15 1 0 1 81 23 0 0 1 95 23 1 0 1 101 23 8 0 0 125 23 15 0 0 101 23 8 0 0 95 23 1 0 1 96 1 0 0 1 1 1 1 0 1 179 1 8 0 0 88 1 15 0 0 179 1 8 0 0 1 1 1 0 1 33 4 15 0 1 146 4 8 0 1 4 4 1 0 0 103 4 0 0 0 4 4 1 0 0 146 4 8 0 1 2 2 1 0 1 99 2 0 0 1 85 2 15 0 0 178 2 8 0 0 85 2 15 0 0 99 2 0 0 1 161 10 1 0 1 143 10 0 0 1 36 10 15 0 0 19 10 8 0 2 36 10 15 0 0 143 10 0 0 1 37 17 0 0 2 87 17 8 0 1 72 17 1 0 0 92 17 15 0 2 72 17 1 0 0 87 17 8 0 1 79 18 8 0 1 83 18 15 0 2 55 18 1 0 0 32 14 0 0 2 78 14 8 0 1 54 14 1 0 0 0 0 0 0 0 80 0 8 0 1 90 0 1 0 0 123 0 15 0 1 90 0 1 0 0 80 0 8 0 1 77 21 8 0 0 86 21 0 0 1 75 21 15 0 0 84 21 1 0 1 75 21 15 0 0 86 21 0 0 1 98 20 0 0 1 74 20 1 0 1 144 20 8 0 0 93 20 15 0 0 144 20 8 0 0 74 20 1 0 1 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="twn_ds_flower_a.xno-controller">
+      <skin source="#twn_ds_flower_a.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="twn_ds_flower_a.xno-controller-Joints">
+          <Name_array id="twn_ds_flower_a.xno-controller-Joints-array" count="1">twn_ds_flower_a.xno0 </Name_array>
+          <technique_common>
+            <accessor source="#twn_ds_flower_a.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_ds_flower_a.xno-controller-Matrices">
+          <float_array id="twn_ds_flower_a.xno-controller-Matrices-array" count="16">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#twn_ds_flower_a.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_ds_flower_a.xno-controller-Weights">
+          <float_array id="twn_ds_flower_a.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#twn_ds_flower_a.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#twn_ds_flower_a.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#twn_ds_flower_a.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="180">
+          <input semantic="JOINT" offset="0" source="#twn_ds_flower_a.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#twn_ds_flower_a.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="twn_ds_flower_a.xno0" sid="twn_ds_flower_a.xno0" name="twn_ds_flower_a.xno0" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="twn_ds_flower_a.xno" sid="twn_ds_flower_a.xno" name="twn_ds_flower_a.xno">
+        <instance_controller url="#twn_ds_flower_a.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="twn_ds_flower_a.xno0" target="#twn_ds_flower_a.xno0ID" />
+              <instance_material symbol="twn_ds_flower_a.xno1" target="#twn_ds_flower_a.xno1ID" />
+              <instance_material symbol="twn_ds_flower_a.xno2" target="#twn_ds_flower_a.xno2ID" />
+              <instance_material symbol="twn_ds_flower_a.xno3" target="#twn_ds_flower_a.xno3ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

@@ -1,0 +1,319 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="rct_obj01_dfsp_pm.dds-image" name="rct_obj01_dfsp_pm.dds-image">
+      <init_from>./textures/rct_obj01_dfsp_pm.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="rct_obj_timber_brk.xno0ID" name="rct_obj_timber_brk.xno0">
+      <instance_effect url="#rct_obj_timber_brk.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="rct_obj_timber_brk.xno0-effect" name="rct_obj_timber_brk.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="rct_obj01_dfsp_pm.dds-image-surface">
+          <surface type="2D">
+            <init_from>rct_obj01_dfsp_pm.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="rct_obj01_dfsp_pm.dds-image-sampler">
+          <sampler2D>
+            <source>rct_obj01_dfsp_pm.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="rct_obj01_dfsp_pm.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="rct_obj_timber_brk.xno-geometry" name="rct_obj_timber_brk.xno-geometry">
+      <mesh>
+        <source id="rct_obj_timber_brk.xno-geometry-position">
+          <float_array id="rct_obj_timber_brk.xno-geometry-position-array" count="720">-254.059 0.00101244 -13.8387 -254.059 0.00101244 -13.8387 -254.059 0.00101244 -13.8387 -254.059 29.1594 -13.8387 -254.059 29.1594 -13.8387 -254.059 29.1594 -13.8387 -253.867 29.1594 16.553 -253.867 29.1594 16.553 -253.867 29.1594 16.553 -253.867 0.000969828 16.553 -253.867 0.000969828 16.553 -253.867 0.000969828 16.553 246.124 -0.00169627 -17.0078 246.124 -0.00169627 -17.0078 246.124 -0.00169627 -17.0078 246.124 29.1594 -17.0078 246.124 29.1594 -17.0078 246.124 29.1594 -17.0078 246.317 -0.00173889 13.3839 246.317 -0.00173889 13.3839 246.317 -0.00173889 13.3839 246.317 29.1594 13.3839 246.317 29.1594 13.3839 246.317 29.1594 13.3839 -213.71 61.7784 50.65 -213.71 61.7784 50.65 -213.71 61.7784 50.65 -213.71 90.9368 50.65 -213.71 90.9368 50.65 -213.71 90.9368 50.65 -212.777 90.9368 81.028 -212.777 90.9368 81.028 -212.777 90.9368 81.028 -212.777 61.7784 81.028 -212.777 61.7784 81.028 -212.777 61.7784 81.028 160.847 61.7763 39.1486 160.847 61.7763 39.1486 160.847 61.7763 39.1486 160.847 90.9369 39.1487 160.847 90.9369 39.1487 160.847 90.9369 39.1487 161.78 61.7763 69.5266 161.78 61.7763 69.5266 161.78 61.7763 69.5266 161.78 90.9368 69.5266 161.78 90.9368 69.5266 161.78 90.9368 69.5266 -211.546 61.7785 -11.089 -211.546 61.7785 -11.089 -211.546 61.7785 -11.089 -211.546 90.9369 -11.0889 -211.546 90.9369 -11.0889 -211.546 90.9369 -11.0889 -210.486 90.9369 19.2849 -210.486 90.9369 19.2849 -210.486 90.9369 19.2849 -210.486 61.7784 19.2848 -210.486 61.7784 19.2848 -210.486 61.7784 19.2848 162.958 61.7764 -24.1707 162.958 61.7764 -24.1707 162.958 61.7764 -24.1707 162.958 90.9369 -24.1706 162.958 90.9369 -24.1706 162.958 90.9369 -24.1706 164.019 61.7764 6.20311 164.019 61.7764 6.20311 164.019 61.7764 6.20311 164.019 90.9369 6.20313 164.019 90.9369 6.20313 164.019 90.9369 6.20313 -249.981 32.2158 67.2947 -249.981 32.2158 67.2947 -249.981 32.2158 67.2947 -249.981 61.3742 67.2948 -249.981 61.3742 67.2948 -249.981 61.3742 67.2948 -247.753 32.2158 36.9842 -247.753 32.2158 36.9842 -247.753 32.2158 36.9842 -247.753 61.3742 36.9843 -247.753 61.3742 36.9843 -247.753 61.3742 36.9843 248.867 32.213 103.958 248.867 32.213 103.958 248.867 32.213 103.958 248.867 61.3742 103.958 248.867 61.3742 103.958 248.867 61.3742 103.958 251.095 32.2131 73.6475 251.095 32.2131 73.6475 251.095 32.2131 73.6475 251.095 61.3742 73.6476 251.095 61.3742 73.6476 251.095 61.3742 73.6476 -252.635 61.3742 26.9764 -252.635 61.3742 26.9764 -252.635 61.3742 26.9764 -252.635 32.2131 26.9764 -252.635 32.2131 26.9764 -252.635 32.2131 26.9764 -250.477 61.3743 -3.33918 -250.477 61.3743 -3.33918 -250.477 61.3743 -3.33918 -250.477 32.2131 -3.33921 -250.477 32.2131 -3.33921 -250.477 32.2131 -3.33921 246.296 32.2158 62.4896 246.296 32.2158 62.4896 246.296 32.2158 62.4896 246.296 61.3742 62.4897 246.296 61.3742 62.4897 246.296 61.3742 62.4897 248.454 32.2158 32.1741 248.454 32.2158 32.1741 248.454 32.2158 32.1741 248.454 61.3742 32.1741 248.454 61.3742 32.1741 248.454 61.3742 32.1741 -251.955 29.1595 -47.0484 -251.955 29.1595 -47.0484 -251.955 29.1595 -47.0484 -251.955 -0.00168514 -47.0485 -251.955 -0.00168514 -47.0485 -251.955 -0.00168514 -47.0485 -251.433 29.1594 -16.6606 -251.433 29.1594 -16.6606 -251.433 29.1594 -16.6606 -251.433 -0.00170517 -16.6606 -251.433 -0.00170517 -16.6606 -251.433 -0.00170517 -16.6606 248.165 0.00105095 -55.6394 248.165 0.00105095 -55.6394 248.165 0.00105095 -55.6394 248.165 29.1595 -55.6394 248.165 29.1595 -55.6394 248.165 29.1595 -55.6394 248.686 0.00103283 -25.2516 248.686 0.00103283 -25.2516 248.686 0.00103283 -25.2516 248.686 29.1595 -25.2515 248.686 29.1595 -25.2515 248.686 29.1595 -25.2515 -251.747 29.1593 86.052 -251.747 29.1593 86.052 -251.747 29.1593 86.052 -251.747 -0.00180721 86.0519 -251.747 -0.00180721 86.0519 -251.747 -0.00180721 86.0519 -251.742 29.1594 55.6596 -251.742 29.1594 55.6596 -251.742 29.1594 55.6596 -251.742 -0.00178814 55.6596 -251.742 -0.00178814 55.6596 -251.742 -0.00178814 55.6596 248.447 0.000920296 86.1261 248.447 0.000920296 86.1261 248.447 0.000920296 86.1261 248.447 29.1593 86.1262 248.447 29.1593 86.1262 248.447 29.1593 86.1262 248.452 0.000937462 55.7338 248.452 0.000937462 55.7338 248.452 0.000937462 55.7338 248.452 29.1594 55.7339 248.452 29.1594 55.7339 248.452 29.1594 55.7339 -246.53 29.1589 50.8617 -246.53 29.1589 50.8617 -246.53 29.1589 50.8617 -246.53 0.000468254 50.8616 -246.53 0.000468254 50.8616 -246.53 0.000468254 50.8616 -246.526 0.000549316 20.4693 -246.526 0.000549316 20.4693 -246.526 0.000549316 20.4693 -246.526 29.159 20.4694 -246.526 29.159 20.4694 -246.526 29.159 20.4694 253.663 29.1616 50.9365 253.663 29.1616 50.9365 253.663 29.1616 50.9365 253.663 0.000466347 50.9364 253.663 0.000466347 50.9364 253.663 0.000466347 50.9364 253.668 29.1617 20.5442 253.668 29.1617 20.5442 253.668 29.1617 20.5442 253.668 0.000545502 20.5441 253.668 0.000545502 20.5441 253.668 0.000545502 20.5441 -246.514 29.159 -55.0611 -246.514 29.159 -55.0611 -246.514 29.159 -55.0611 -246.514 0.000577927 -55.0612 -246.514 0.000577927 -55.0612 -246.514 0.000577927 -55.0612 -246.509 0.000658989 -85.4535 -246.509 0.000658989 -85.4535 -246.509 0.000658989 -85.4535 -246.509 29.1591 -85.4534 -246.509 29.1591 -85.4534 -246.509 29.1591 -85.4534 253.68 29.1617 -54.9863 253.68 29.1617 -54.9863 253.68 29.1617 -54.9863 253.68 0.000576019 -54.9864 253.68 0.000576019 -54.9864 253.68 0.000576019 -54.9864 253.684 29.1618 -85.3786 253.684 29.1618 -85.3786 253.684 29.1618 -85.3786 253.684 0.000655174 -85.3787 253.684 0.000655174 -85.3787 253.684 0.000655174 -85.3787 -250.924 32.2155 -42.7633 -250.924 32.2155 -42.7633 -250.924 32.2155 -42.7633 -250.924 61.3766 -42.7633 -250.924 61.3766 -42.7633 -250.924 61.3766 -42.7633 -248.569 32.2154 -73.0643 -248.569 32.2154 -73.0643 -248.569 32.2154 -73.0643 -248.569 61.3766 -73.0643 -248.569 61.3766 -73.0643 -248.569 61.3766 -73.0643 247.767 61.3739 -4.01558 247.767 61.3739 -4.01558 247.767 61.3739 -4.01558 247.767 32.2154 -4.01557 247.767 32.2154 -4.01557 247.767 32.2154 -4.01557 250.121 61.3738 -34.3166 250.121 61.3738 -34.3166 250.121 61.3738 -34.3166 250.121 32.2154 -34.3166 250.121 32.2154 -34.3166 250.121 32.2154 -34.3166 </float_array>
+          <technique_common>
+            <accessor source="#rct_obj_timber_brk.xno-geometry-position-array" count="240" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_obj_timber_brk.xno-geometry-normal">
+          <float_array id="rct_obj_timber_brk.xno-geometry-normal-array" count="180">-0.99998 -8.27342e-009 0.00632396 -0.00633574 1.04649e-006 -0.99998 -5.42411e-006 -1 -1.36787e-006 -6.50504e-009 1 1.38074e-006 0.00633571 -1.30824e-006 0.99998 0.99998 6.63546e-009 -0.00634053 -0.999529 -3.81325e-008 0.0306814 -0.0306922 9.48046e-007 -0.999529 -5.6074e-006 -1 -1.02074e-006 -1.48554e-009 1 1.44415e-006 0.0306922 -1.24227e-006 0.999529 0.999529 2.10831e-008 -0.030698 -0.999391 -3.87988e-008 0.0348902 -0.0349094 9.80531e-007 -0.99939 -5.61933e-006 -1 -1.21664e-006 2.24119e-008 1 1.44352e-006 0.0349094 -1.11135e-006 0.99939 0.999391 3.42476e-008 -0.0349063 -0.997309 8.6321e-008 -0.0733125 -0.0732982 -1.47599e-006 0.99731 -5.38766e-006 -1 -1.68605e-006 -2.77487e-008 1 1.28796e-006 0.0732982 1.22309e-006 -0.99731 0.99731 -8.62964e-008 0.0732984 -0.997476 9.57806e-008 -0.0709999 -0.0709991 -1.82695e-006 0.997476 -3.10826e-008 1 1.16174e-006 5.4109e-006 -1 -5.586e-007 0.0709991 1.87589e-006 -0.997476 0.997475 -1.33553e-007 0.071015 -0.999853 -1.68466e-008 0.017171 -0.0171752 9.80963e-007 -0.999852 -3.25279e-008 1 6.5961e-007 5.45902e-006 -1 -6.89948e-007 0.0171752 -9.80963e-007 0.999852 0.999853 1.57102e-008 -0.0171549 -1 1.45802e-010 -0.00014861 -0.000148403 -1.76616e-006 1 -2.6795e-008 1 6.9033e-007 5.44917e-006 -1 -5.63922e-007 0.000148403 9.81199e-007 -1 1 -1.6158e-010 0.000164676 -1 2.79547e-010 -0.000133548 -0.000149532 -2.42007e-006 1 -5.4228e-006 1 2.66639e-006 -7.22773e-009 -1 -2.6672e-006 0.000149486 2.35466e-006 -1 1 -3.5229e-010 0.000149614 -1 2.70811e-010 -0.000133548 -0.000149524 -2.42007e-006 1 -5.4228e-006 1 2.63501e-006 -7.22769e-009 -1 -2.6672e-006 0.000149501 2.28925e-006 -1 1 -3.42504e-010 0.000149614 -0.996996 -7.09288e-008 -0.0774585 -0.0774655 3.913e-007 0.996995 -1.61331e-007 -1 1.21493e-006 5.57292e-006 1 -6.68596e-007 0.0774655 -6.03255e-007 -0.996995 0.996996 4.6868e-008 0.0774584 </float_array>
+          <technique_common>
+            <accessor source="#rct_obj_timber_brk.xno-geometry-normal-array" count="60" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_obj_timber_brk.xno-geometry-uv">
+          <float_array id="rct_obj_timber_brk.xno-geometry-uv-array" count="40">0.504046 0.2658 1.38267 0.00400031 1.38259 0.168603 0.504044 0.346401 1.38267 0.0845965 0.588056 0.346403 7.62939e-006 0.00398791 0.588058 0.265801 7.3909e-006 0.0845914 7.03335e-006 0.168603 0.504045 0.25645 0.504045 0.175841 0.588057 0.25645 0.588057 0.175841 7.62939e-006 0.0845889 0.557181 0.00399071 0.557071 0.168603 0.55718 0.0845937 0.931056 0.084593 0.931056 0.00398791 </float_array>
+          <technique_common>
+            <accessor source="#rct_obj_timber_brk.xno-geometry-uv-array" count="20" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_obj_timber_brk.xno-geometry-uv2">
+          <float_array id="rct_obj_timber_brk.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#rct_obj_timber_brk.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_obj_timber_brk.xno-geometry-color">
+          <float_array id="rct_obj_timber_brk.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#rct_obj_timber_brk.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="rct_obj_timber_brk.xno-geometry-vertex">
+          <input semantic="POSITION" source="#rct_obj_timber_brk.xno-geometry-position" />
+        </vertices>
+        <triangles material="rct_obj_timber_brk.xno0" count="12">
+          <input semantic="VERTEX" source="#rct_obj_timber_brk.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#rct_obj_timber_brk.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#rct_obj_timber_brk.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#rct_obj_timber_brk.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#rct_obj_timber_brk.xno-geometry-color" offset="4" set="0" />
+          <p>23 5 13 0 0 20 5 12 0 0 17 5 11 0 0 14 5 10 0 0 17 5 11 0 0 20 5 12 0 0 13 2 9 0 0 18 2 8 0 0 2 2 2 0 0 10 2 4 0 0 2 2 2 0 0 18 2 8 0 0 7 3 2 0 0 21 3 9 0 0 5 3 4 0 0 16 3 8 0 0 5 3 4 0 0 21 3 9 0 0 4 1 4 0 0 15 1 8 0 0 1 1 1 0 0 12 1 6 0 0 1 1 1 0 0 15 1 8 0 0 6 0 5 0 0 3 0 3 0 0 9 0 7 0 0 0 0 0 0 0 9 0 7 0 0 3 0 3 0 0 22 4 1 0 0 8 4 6 0 0 19 4 4 0 0 11 4 8 0 0 19 4 4 0 0 8 4 6 0 0 </p>
+        </triangles>
+        <triangles material="rct_obj_timber_brk.xno0" count="12">
+          <input semantic="VERTEX" source="#rct_obj_timber_brk.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#rct_obj_timber_brk.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#rct_obj_timber_brk.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#rct_obj_timber_brk.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#rct_obj_timber_brk.xno-geometry-color" offset="4" set="0" />
+          <p>31 9 2 0 0 45 9 16 0 0 29 9 4 0 0 40 9 17 0 0 29 9 4 0 0 45 9 16 0 0 37 8 16 0 0 42 8 17 0 0 26 8 2 0 0 34 8 4 0 0 26 8 2 0 0 42 8 17 0 0 28 7 4 0 0 39 7 17 0 0 25 7 1 0 0 36 7 15 0 0 25 7 1 0 0 39 7 17 0 0 47 11 13 0 0 44 11 12 0 0 41 11 11 0 0 38 11 10 0 0 41 11 11 0 0 44 11 12 0 0 30 6 5 0 0 27 6 3 0 0 33 6 7 0 0 24 6 0 0 0 33 6 7 0 0 27 6 3 0 0 46 10 19 0 0 32 10 6 0 0 43 10 18 0 0 35 10 14 0 0 43 10 18 0 0 32 10 6 0 0 </p>
+        </triangles>
+        <triangles material="rct_obj_timber_brk.xno0" count="12">
+          <input semantic="VERTEX" source="#rct_obj_timber_brk.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#rct_obj_timber_brk.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#rct_obj_timber_brk.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#rct_obj_timber_brk.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#rct_obj_timber_brk.xno-geometry-color" offset="4" set="0" />
+          <p>55 15 2 0 0 69 15 16 0 0 53 15 4 0 0 64 15 17 0 0 53 15 4 0 0 69 15 16 0 0 61 14 16 0 0 66 14 17 0 0 50 14 2 0 0 58 14 4 0 0 50 14 2 0 0 66 14 17 0 0 52 13 4 0 0 63 13 17 0 0 49 13 1 0 0 60 13 15 0 0 49 13 1 0 0 63 13 17 0 0 71 17 13 0 0 68 17 12 0 0 65 17 11 0 0 62 17 10 0 0 65 17 11 0 0 68 17 12 0 0 54 12 5 0 0 51 12 3 0 0 57 12 7 0 0 48 12 0 0 0 57 12 7 0 0 51 12 3 0 0 70 16 19 0 0 56 16 6 0 0 67 16 18 0 0 59 16 14 0 0 67 16 18 0 0 56 16 6 0 0 </p>
+        </triangles>
+        <triangles material="rct_obj_timber_brk.xno0" count="12">
+          <input semantic="VERTEX" source="#rct_obj_timber_brk.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#rct_obj_timber_brk.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#rct_obj_timber_brk.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#rct_obj_timber_brk.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#rct_obj_timber_brk.xno-geometry-color" offset="4" set="0" />
+          <p>89 23 13 0 0 86 23 12 0 0 95 23 11 0 0 92 23 10 0 0 95 23 11 0 0 86 23 12 0 0 90 20 9 0 0 85 20 8 0 0 79 20 2 0 0 74 20 4 0 0 79 20 2 0 0 85 20 8 0 0 77 21 2 0 0 88 21 9 0 0 82 21 4 0 0 93 21 8 0 0 82 21 4 0 0 88 21 9 0 0 83 22 4 0 0 94 22 8 0 0 80 22 1 0 0 91 22 6 0 0 80 22 1 0 0 94 22 8 0 0 75 18 5 0 0 81 18 3 0 0 72 18 7 0 0 78 18 0 0 0 72 18 7 0 0 81 18 3 0 0 87 19 1 0 0 76 19 6 0 0 84 19 4 0 0 73 19 8 0 0 84 19 4 0 0 76 19 6 0 0 </p>
+        </triangles>
+        <triangles material="rct_obj_timber_brk.xno0" count="12">
+          <input semantic="VERTEX" source="#rct_obj_timber_brk.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#rct_obj_timber_brk.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#rct_obj_timber_brk.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#rct_obj_timber_brk.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#rct_obj_timber_brk.xno-geometry-color" offset="4" set="0" />
+          <p>102 24 13 0 0 105 24 12 0 0 96 24 11 0 0 99 24 10 0 0 96 24 11 0 0 105 24 12 0 0 101 27 9 0 0 106 27 8 0 0 109 27 2 0 0 114 27 4 0 0 109 27 2 0 0 106 27 8 0 0 117 26 2 0 0 103 26 9 0 0 112 26 4 0 0 98 26 8 0 0 112 26 4 0 0 103 26 9 0 0 111 25 4 0 0 97 25 8 0 0 108 25 1 0 0 100 25 6 0 0 108 25 1 0 0 97 25 8 0 0 119 29 5 0 0 113 29 3 0 0 116 29 7 0 0 110 29 0 0 0 116 29 7 0 0 113 29 3 0 0 104 28 1 0 0 118 28 6 0 0 107 28 4 0 0 115 28 8 0 0 107 28 4 0 0 118 28 6 0 0 </p>
+        </triangles>
+        <triangles material="rct_obj_timber_brk.xno0" count="12">
+          <input semantic="VERTEX" source="#rct_obj_timber_brk.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#rct_obj_timber_brk.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#rct_obj_timber_brk.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#rct_obj_timber_brk.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#rct_obj_timber_brk.xno-geometry-color" offset="4" set="0" />
+          <p>120 30 13 0 0 123 30 12 0 0 126 30 11 0 0 129 30 10 0 0 126 30 11 0 0 123 30 12 0 0 130 33 9 0 0 125 33 8 0 0 138 33 2 0 0 133 33 4 0 0 138 33 2 0 0 125 33 8 0 0 136 32 2 0 0 122 32 9 0 0 141 32 4 0 0 127 32 8 0 0 141 32 4 0 0 122 32 9 0 0 142 34 4 0 0 128 34 8 0 0 139 34 1 0 0 131 34 6 0 0 139 34 1 0 0 128 34 8 0 0 137 35 5 0 0 143 35 3 0 0 134 35 7 0 0 140 35 0 0 0 134 35 7 0 0 143 35 3 0 0 121 31 1 0 0 135 31 6 0 0 124 31 4 0 0 132 31 8 0 0 124 31 4 0 0 135 31 6 0 0 </p>
+        </triangles>
+        <triangles material="rct_obj_timber_brk.xno0" count="12">
+          <input semantic="VERTEX" source="#rct_obj_timber_brk.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#rct_obj_timber_brk.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#rct_obj_timber_brk.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#rct_obj_timber_brk.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#rct_obj_timber_brk.xno-geometry-color" offset="4" set="0" />
+          <p>150 36 13 0 0 153 36 12 0 0 144 36 11 0 0 147 36 10 0 0 144 36 11 0 0 153 36 12 0 0 149 39 9 0 0 154 39 8 0 0 157 39 2 0 0 162 39 4 0 0 157 39 2 0 0 154 39 8 0 0 165 38 2 0 0 151 38 9 0 0 160 38 4 0 0 146 38 8 0 0 160 38 4 0 0 151 38 9 0 0 159 37 4 0 0 145 37 8 0 0 156 37 1 0 0 148 37 6 0 0 156 37 1 0 0 145 37 8 0 0 167 41 5 0 0 161 41 3 0 0 164 41 7 0 0 158 41 0 0 0 164 41 7 0 0 161 41 3 0 0 152 40 1 0 0 166 40 6 0 0 155 40 4 0 0 163 40 8 0 0 155 40 4 0 0 166 40 6 0 0 </p>
+        </triangles>
+        <triangles material="rct_obj_timber_brk.xno0" count="12">
+          <input semantic="VERTEX" source="#rct_obj_timber_brk.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#rct_obj_timber_brk.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#rct_obj_timber_brk.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#rct_obj_timber_brk.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#rct_obj_timber_brk.xno-geometry-color" offset="4" set="0" />
+          <p>191 47 13 0 0 188 47 12 0 0 185 47 11 0 0 182 47 10 0 0 185 47 11 0 0 188 47 12 0 0 181 44 9 0 0 186 44 8 0 0 170 44 2 0 0 178 44 4 0 0 170 44 2 0 0 186 44 8 0 0 175 45 2 0 0 189 45 9 0 0 173 45 4 0 0 184 45 8 0 0 173 45 4 0 0 189 45 9 0 0 172 43 4 0 0 183 43 8 0 0 169 43 1 0 0 180 43 6 0 0 169 43 1 0 0 183 43 8 0 0 174 42 5 0 0 171 42 3 0 0 177 42 7 0 0 168 42 0 0 0 177 42 7 0 0 171 42 3 0 0 190 46 1 0 0 176 46 6 0 0 187 46 4 0 0 179 46 8 0 0 187 46 4 0 0 176 46 6 0 0 </p>
+        </triangles>
+        <triangles material="rct_obj_timber_brk.xno0" count="12">
+          <input semantic="VERTEX" source="#rct_obj_timber_brk.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#rct_obj_timber_brk.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#rct_obj_timber_brk.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#rct_obj_timber_brk.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#rct_obj_timber_brk.xno-geometry-color" offset="4" set="0" />
+          <p>215 53 13 0 0 212 53 12 0 0 209 53 11 0 0 206 53 10 0 0 209 53 11 0 0 212 53 12 0 0 205 50 9 0 0 210 50 8 0 0 194 50 2 0 0 202 50 4 0 0 194 50 2 0 0 210 50 8 0 0 199 51 2 0 0 213 51 9 0 0 197 51 4 0 0 208 51 8 0 0 197 51 4 0 0 213 51 9 0 0 196 49 4 0 0 207 49 8 0 0 193 49 1 0 0 204 49 6 0 0 193 49 1 0 0 207 49 8 0 0 198 48 5 0 0 195 48 3 0 0 201 48 7 0 0 192 48 0 0 0 201 48 7 0 0 195 48 3 0 0 214 52 1 0 0 200 52 6 0 0 211 52 4 0 0 203 52 8 0 0 211 52 4 0 0 200 52 6 0 0 </p>
+        </triangles>
+        <triangles material="rct_obj_timber_brk.xno0" count="12">
+          <input semantic="VERTEX" source="#rct_obj_timber_brk.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#rct_obj_timber_brk.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#rct_obj_timber_brk.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#rct_obj_timber_brk.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#rct_obj_timber_brk.xno-geometry-color" offset="4" set="0" />
+          <p>216 54 13 0 0 219 54 12 0 0 222 54 11 0 0 225 54 10 0 0 222 54 11 0 0 219 54 12 0 0 226 57 9 0 0 221 57 8 0 0 234 57 2 0 0 229 57 4 0 0 234 57 2 0 0 221 57 8 0 0 232 56 2 0 0 218 56 9 0 0 237 56 4 0 0 223 56 8 0 0 237 56 4 0 0 218 56 9 0 0 238 58 4 0 0 224 58 8 0 0 235 58 1 0 0 227 58 6 0 0 235 58 1 0 0 224 58 8 0 0 233 59 5 0 0 239 59 3 0 0 230 59 7 0 0 236 59 0 0 0 230 59 7 0 0 239 59 3 0 0 217 55 1 0 0 231 55 6 0 0 220 55 4 0 0 228 55 8 0 0 220 55 4 0 0 231 55 6 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="rct_obj_timber_brk.xno-controller">
+      <skin source="#rct_obj_timber_brk.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="rct_obj_timber_brk.xno-controller-Joints">
+          <Name_array id="rct_obj_timber_brk.xno-controller-Joints-array" count="10">rct_obj_timber_brk part01 part02 part03 part04 part05 part06 part07 part08 part09 </Name_array>
+          <technique_common>
+            <accessor source="#rct_obj_timber_brk.xno-controller-Joints-array" count="10">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_obj_timber_brk.xno-controller-Matrices">
+          <float_array id="rct_obj_timber_brk.xno-controller-Matrices-array" count="160">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 25.9648 0 1 0 -76.3566 0 0 1 -60.0883 0 0 0 1 1 0 0 23.7638 0 1 0 -76.3566 0 0 1 2.4429 0 0 0 1 1 0 0 -0.55708 0 1 0 -46.7936 0 0 1 -70.4712 0 0 0 1 1 0 0 2.09063 0 1 0 -46.7937 0 0 1 -29.5752 0 0 0 1 1 0 0 1.63452 0 1 0 -14.5789 0 0 1 36.15 0 0 0 1 1 0 0 1.64735 0 1 0 -14.5788 0 0 1 -70.8929 0 0 0 1 1 0 0 -3.56908 0 1 0 -14.5811 0 0 1 -35.7029 0 0 0 1 1 0 0 -3.58541 0 1 0 -14.5812 0 0 1 70.2199 0 0 0 1 1 0 0 0.401252 0 1 0 -46.796 0 0 1 38.54 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#rct_obj_timber_brk.xno-controller-Matrices-array" count="10" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="rct_obj_timber_brk.xno-controller-Weights">
+          <float_array id="rct_obj_timber_brk.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#rct_obj_timber_brk.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#rct_obj_timber_brk.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#rct_obj_timber_brk.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="240">
+          <input semantic="JOINT" offset="0" source="#rct_obj_timber_brk.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#rct_obj_timber_brk.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 6 0 6 0 6 0 6 0 6 0 6 0 6 0 6 0 6 0 6 0 6 0 6 0 6 0 6 0 6 0 6 0 6 0 6 0 6 0 6 0 6 0 6 0 6 0 6 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 8 0 8 0 8 0 8 0 8 0 8 0 8 0 8 0 8 0 8 0 8 0 8 0 8 0 8 0 8 0 8 0 8 0 8 0 8 0 8 0 8 0 8 0 8 0 8 0 9 0 9 0 9 0 9 0 9 0 9 0 9 0 9 0 9 0 9 0 9 0 9 0 9 0 9 0 9 0 9 0 9 0 9 0 9 0 9 0 9 0 9 0 9 0 9 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="rct_obj_timber_brk" sid="rct_obj_timber_brk" name="rct_obj_timber_brk" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <node id="part09" sid="part09" name="part09" type="JOINT">
+          <matrix>1 0 0 -0.401252 0 1 0 46.796 0 0 1 -38.54 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="part08" sid="part08" name="part08" type="JOINT">
+          <matrix>1 0 0 3.58541 0 1 0 14.5812 0 0 1 -70.2199 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="part07" sid="part07" name="part07" type="JOINT">
+          <matrix>1 0 0 3.56908 0 1 0 14.5811 0 0 1 35.7029 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="part06" sid="part06" name="part06" type="JOINT">
+          <matrix>1 0 0 -1.64735 0 1 0 14.5788 0 0 1 70.8929 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="part05" sid="part05" name="part05" type="JOINT">
+          <matrix>1 0 0 -1.63452 0 1 0 14.5789 0 0 1 -36.15 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="part04" sid="part04" name="part04" type="JOINT">
+          <matrix>1 0 0 -2.09063 0 1 0 46.7937 0 0 1 29.5752 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="part03" sid="part03" name="part03" type="JOINT">
+          <matrix>1 0 0 0.55708 0 1 0 46.7936 0 0 1 70.4712 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="part02" sid="part02" name="part02" type="JOINT">
+          <matrix>1 0 0 -23.7638 0 1 0 76.3566 0 0 1 -2.4429 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="part01" sid="part01" name="part01" type="JOINT">
+          <matrix>1 0 0 -25.9648 0 1 0 76.3566 0 0 1 60.0883 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="rct_obj_timber_brk.xno" sid="rct_obj_timber_brk.xno" name="rct_obj_timber_brk.xno">
+        <instance_controller url="#rct_obj_timber_brk.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="rct_obj_timber_brk.xno0" target="#rct_obj_timber_brk.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

@@ -1,0 +1,276 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="kdv_door01_dfsp_z.dds-image" name="kdv_door01_dfsp_z.dds-image">
+      <init_from>./textures/kdv_door01_dfsp_z.dds</init_from>
+    </image>
+    <image id="kdv_door01_ntxx_z.dds-image" name="kdv_door01_ntxx_z.dds-image">
+      <init_from>./textures/kdv_door01_ntxx_z.dds</init_from>
+    </image>
+    <image id="kdv_luminous05_enlu_r.dds-image" name="kdv_luminous05_enlu_r.dds-image">
+      <init_from>./textures/kdv_luminous05_enlu_r.dds</init_from>
+    </image>
+    <image id="kdv_luminous05_lu_z.dds-image" name="kdv_luminous05_lu_z.dds-image">
+      <init_from>./textures/kdv_luminous05_lu_z.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="test_door_zama.xno0ID" name="test_door_zama.xno0">
+      <instance_effect url="#test_door_zama.xno0-effect" />
+    </material>
+    <material id="test_door_zama.xno1ID" name="test_door_zama.xno1">
+      <instance_effect url="#test_door_zama.xno1-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="test_door_zama.xno0-effect" name="test_door_zama.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_door01_dfsp_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_door01_dfsp_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_door01_dfsp_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_door01_dfsp_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_door01_ntxx_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_door01_ntxx_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_door01_ntxx_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_door01_ntxx_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_door01_ntxx_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_door01_ntxx_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_door01_ntxx_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_door01_ntxx_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_door01_ntxx_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_door01_ntxx_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_door01_ntxx_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_door01_ntxx_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_door01_dfsp_z.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="test_door_zama.xno1-effect" name="test_door_zama.xno1-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_luminous05_enlu_r.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_luminous05_enlu_r.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_luminous05_enlu_r.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_luminous05_enlu_r.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_luminous05_lu_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_luminous05_lu_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_luminous05_lu_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_luminous05_lu_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_luminous05_lu_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_luminous05_lu_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_luminous05_lu_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_luminous05_lu_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_luminous05_enlu_r.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="test_door_zama.xno-geometry" name="test_door_zama.xno-geometry">
+      <mesh>
+        <source id="test_door_zama.xno-geometry-position">
+          <float_array id="test_door_zama.xno-geometry-position-array" count="168">-413.734 -0.767803 -27.2506 -413.734 -0.767803 -27.2506 -413.734 1019.11 27.4744 -413.734 1019.11 -27.2506 -413.734 -0.767803 27.4744 -413.734 -0.767803 27.4744 0.811741 504.16 -27.2506 0.811741 504.16 27.4744 405.821 1019.11 27.4744 405.821 -0.767803 -27.2506 405.821 -0.767803 -27.2506 405.821 -0.767803 27.4744 405.821 -0.767803 27.4744 405.821 1019.11 -27.2506 -81.9627 501.012 27.8525 -81.0671 500.846 -27.7063 -78.9084 526.344 26.7664 -78.9084 475.68 26.7664 -78.1018 526.058 -26.6203 -78.1018 475.635 -26.6203 -66.4967 453.413 27.8524 -66.4967 548.612 27.8525 -65.6745 453.473 -27.7063 -65.6745 548.22 -27.7063 -49.1287 567.332 26.7664 -49.1287 434.692 26.7664 -48.4635 566.852 -26.6203 -48.4635 434.841 -26.6203 -26.0061 578.03 27.8525 -26.006 423.994 27.8525 -25.3761 577.498 -27.7063 -25.3761 424.194 -27.7063 -0.953351 501.012 46.5761 -0.944329 582.988 26.7664 -0.944317 419.036 26.7664 -0.507867 582.433 -26.6203 -0.507855 419.259 -26.6203 -0.498734 500.846 -46.457 24.0431 578.03 27.8525 24.0431 423.994 27.8524 24.4355 577.498 -27.7063 24.4355 424.194 -27.7063 47.2401 567.332 26.7664 47.2401 434.692 26.7664 47.4478 566.852 -26.6203 47.4478 434.841 -26.6203 64.5337 548.612 27.8525 64.5337 453.413 27.8525 64.7339 453.473 -27.7063 64.7339 548.22 -27.7063 77.0197 526.344 26.7664 77.0197 475.68 26.7664 77.0861 475.635 -26.6203 77.0861 526.058 -26.6203 79.9997 501.012 27.8524 80.1265 500.846 -27.7063 </float_array>
+          <technique_common>
+            <accessor source="#test_door_zama.xno-geometry-position-array" count="56" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_door_zama.xno-geometry-normal">
+          <float_array id="test_door_zama.xno-geometry-normal-array" count="129">-2.72683e-005 -1.28961e-007 -1 0 -1 0 0 0 1 -0.225193 -4.00315e-007 0.974314 -0.226673 -3.49078e-007 -0.973971 -0.223416 0.0725935 0.972016 -0.223416 -0.0725944 0.972016 -0.224668 0.0729967 -0.971697 -0.224668 -0.0729968 -0.971697 -0.182233 -0.132323 0.974311 -0.182232 0.132323 0.974311 -0.183333 -0.133278 -0.973974 -0.183333 0.133278 -0.973974 -0.13807 0.190045 0.972018 -0.138071 -0.190045 0.972018 -0.138861 0.191118 -0.971695 -0.138861 -0.191118 -0.971695 -0.0697008 0.214188 0.974302 -0.0697 -0.214188 0.974302 -0.0699316 0.21556 -0.973983 -0.0699312 -0.21556 -0.973983 5.79593e-006 0.23489 0.972022 6.50893e-006 -0.234891 0.972022 -6.07837e-006 0.236253 -0.971692 -6.07645e-006 -0.236253 -0.971692 0.0695226 0.214294 0.974292 0.069522 -0.214295 0.974292 0.0701135 0.215452 -0.973994 0.0701133 -0.215452 -0.973994 0.13806 0.190016 0.972025 0.138061 -0.190016 0.972025 0.13887 0.191147 -0.971688 0.138871 -0.191147 -0.971688 0.182256 0.132494 0.974283 0.182257 -0.132494 0.974283 0.183308 -0.133102 -0.974003 0.183308 0.133102 -0.974003 0.223373 0.0725757 0.972027 0.223373 -0.0725762 0.972027 0.224712 -0.0730149 -0.971686 0.224712 0.0730149 -0.971686 0.225341 -3.72152e-007 0.97428 0.226521 -3.49547e-007 -0.974006 </float_array>
+          <technique_common>
+            <accessor source="#test_door_zama.xno-geometry-normal-array" count="43" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_door_zama.xno-geometry-uv">
+          <float_array id="test_door_zama.xno-geometry-uv-array" count="108">0.792329 0.0129662 0.998246 2.17135 0.00551427 0.986945 0.792329 0.986918 0.883999 2.17135 0.00551412 0.0129385 0.398444 0.499942 0.399965 0.499942 0.00617465 0.0129533 0.998246 2.98681 0.883999 2.98681 0.00617465 0.98693 0.0531445 0.652635 0.0534949 0.652118 0.100955 0.807012 0.00533344 0.498258 0.102447 0.806454 0.00454313 0.497783 0.053031 0.343873 0.225867 0.902242 0.0524494 0.341267 0.225742 0.900509 0.350778 0.997472 0.100729 0.189488 0.349037 0.994564 0.100356 0.184751 0.504944 0.997374 0.225634 0.0941073 0.501897 0.995776 0.22652 0.0896643 0.504963 0.498726 0.659109 0.997276 0.35054 -0.00127387 0.654757 0.996988 0.352684 -0.00542223 0.503361 0.495145 0.783836 0.901955 0.504939 -0.00118077 0.780914 0.901487 0.505194 -0.00412226 0.908563 0.806633 0.659338 -0.00108767 0.907071 0.805986 0.657705 -0.0028224 0.956223 0.652449 0.784069 0.0943884 0.780876 0.0910563 0.954593 0.649505 1.00388 0.498265 0.9088 0.189865 0.904046 0.184935 1.00212 0.493025 0.956342 0.344065 0.953081 0.33898 </float_array>
+          <technique_common>
+            <accessor source="#test_door_zama.xno-geometry-uv-array" count="54" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_door_zama.xno-geometry-uv2">
+          <float_array id="test_door_zama.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#test_door_zama.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_door_zama.xno-geometry-color">
+          <float_array id="test_door_zama.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#test_door_zama.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="test_door_zama.xno-geometry-vertex">
+          <input semantic="POSITION" source="#test_door_zama.xno-geometry-position" />
+        </vertices>
+        <triangles material="test_door_zama.xno0" count="10">
+          <input semantic="VERTEX" source="#test_door_zama.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#test_door_zama.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#test_door_zama.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#test_door_zama.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#test_door_zama.xno-geometry-color" offset="4" set="0" />
+          <p>5 2 5 0 0 12 2 0 0 0 7 2 7 0 0 8 2 3 0 0 7 2 7 0 0 12 2 0 0 0 2 2 2 0 0 7 2 7 0 0 8 2 3 0 0 7 2 7 0 0 2 2 2 0 0 5 2 5 0 0 4 1 4 0 0 10 1 9 0 0 11 1 10 0 0 10 1 9 0 0 4 1 4 0 0 1 1 1 0 0 6 0 6 0 0 13 0 11 0 0 9 0 8 0 0 13 0 11 0 0 6 0 6 0 0 3 0 3 0 0 3 0 3 0 0 6 0 6 0 0 0 0 0 0 0 9 0 8 0 0 0 0 0 0 0 6 0 6 0 0 </p>
+        </triangles>
+        <triangles material="test_door_zama.xno1" count="40">
+          <input semantic="VERTEX" source="#test_door_zama.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#test_door_zama.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#test_door_zama.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#test_door_zama.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#test_door_zama.xno-geometry-color" offset="4" set="0" />
+          <p>38 25 36 0 0 33 21 31 0 0 32 2 30 0 0 28 17 26 0 0 32 2 30 0 0 33 21 31 0 0 32 2 30 0 0 28 17 26 0 0 24 13 22 0 0 24 13 22 0 0 21 10 19 0 0 32 2 30 0 0 16 5 14 0 0 32 2 30 0 0 21 10 19 0 0 32 2 30 0 0 16 5 14 0 0 14 3 12 0 0 14 3 12 0 0 17 6 15 0 0 32 2 30 0 0 20 9 18 0 0 32 2 30 0 0 17 6 15 0 0 32 2 30 0 0 20 9 18 0 0 25 14 23 0 0 25 14 23 0 0 29 18 27 0 0 32 2 30 0 0 34 22 32 0 0 32 2 30 0 0 29 18 27 0 0 32 2 30 0 0 34 22 32 0 0 39 26 37 0 0 39 26 37 0 0 43 30 41 0 0 32 2 30 0 0 47 34 45 0 0 32 2 30 0 0 43 30 41 0 0 32 2 30 0 0 47 34 45 0 0 51 38 49 0 0 51 38 49 0 0 54 41 52 0 0 32 2 30 0 0 50 37 48 0 0 32 2 30 0 0 54 41 52 0 0 50 37 48 0 0 46 33 44 0 0 32 2 30 0 0 42 29 40 0 0 32 2 30 0 0 46 33 44 0 0 32 2 30 0 0 42 29 40 0 0 38 25 36 0 0 37 0 35 0 0 30 19 28 0 0 35 23 33 0 0 30 19 28 0 0 37 0 35 0 0 26 15 24 0 0 23 12 21 0 0 26 15 24 0 0 37 0 35 0 0 37 0 35 0 0 18 7 16 0 0 23 12 21 0 0 18 7 16 0 0 37 0 35 0 0 15 4 13 0 0 19 8 17 0 0 15 4 13 0 0 37 0 35 0 0 37 0 35 0 0 22 11 20 0 0 19 8 17 0 0 22 11 20 0 0 37 0 35 0 0 27 16 25 0 0 31 20 29 0 0 27 16 25 0 0 37 0 35 0 0 37 0 35 0 0 36 24 34 0 0 31 20 29 0 0 36 24 34 0 0 37 0 35 0 0 41 28 39 0 0 45 32 43 0 0 41 28 39 0 0 37 0 35 0 0 37 0 35 0 0 48 35 46 0 0 45 32 43 0 0 48 35 46 0 0 37 0 35 0 0 52 39 50 0 0 37 0 35 0 0 55 42 53 0 0 52 39 50 0 0 55 42 53 0 0 37 0 35 0 0 53 40 51 0 0 49 36 47 0 0 53 40 51 0 0 37 0 35 0 0 37 0 35 0 0 44 31 42 0 0 49 36 47 0 0 44 31 42 0 0 37 0 35 0 0 40 27 38 0 0 35 23 33 0 0 40 27 38 0 0 37 0 35 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="test_door_zama.xno-controller">
+      <skin source="#test_door_zama.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="test_door_zama.xno-controller-Joints">
+          <Name_array id="test_door_zama.xno-controller-Joints-array" count="2">test_door_zama.xno0 test_door_zama.xno1 </Name_array>
+          <technique_common>
+            <accessor source="#test_door_zama.xno-controller-Joints-array" count="2">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_door_zama.xno-controller-Matrices">
+          <float_array id="test_door_zama.xno-controller-Matrices-array" count="32">1 0 0 0 0 1 0 -0.00901031 0 0 1 6.09795e-008 0 0 0 1 1 0 0 3.71468e-007 0 1 0 0 0 0 1 6.09795e-008 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#test_door_zama.xno-controller-Matrices-array" count="2" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_door_zama.xno-controller-Weights">
+          <float_array id="test_door_zama.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#test_door_zama.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#test_door_zama.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#test_door_zama.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="56">
+          <input semantic="JOINT" offset="0" source="#test_door_zama.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#test_door_zama.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="test_door_zama.xno0" sid="test_door_zama.xno0" name="test_door_zama.xno0" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0.00901031 0 0 1 -6.09795e-008 0 0 0 1 </matrix>
+        <node id="test_door_zama.xno1" sid="test_door_zama.xno1" name="test_door_zama.xno1" type="JOINT">
+          <matrix>1 0 0 -3.71468e-007 0 1 0 -0.00901031 0 0 1 -0 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="test_door_zama.xno" sid="test_door_zama.xno" name="test_door_zama.xno">
+        <instance_controller url="#test_door_zama.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="test_door_zama.xno0" target="#test_door_zama.xno0ID" />
+              <instance_material symbol="test_door_zama.xno1" target="#test_door_zama.xno1ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

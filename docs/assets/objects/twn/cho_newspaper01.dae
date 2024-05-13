@@ -1,0 +1,222 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="cho_newspaper01_df.dds-image" name="cho_newspaper01_df.dds-image">
+      <init_from>./textures/cho_newspaper01_df.dds</init_from>
+    </image>
+    <image id="cho_newspaper01_sp.dds-image" name="cho_newspaper01_sp.dds-image">
+      <init_from>./textures/cho_newspaper01_sp.dds</init_from>
+    </image>
+    <image id="cht_town_common_rf.dds-image" name="cht_town_common_rf.dds-image">
+      <init_from>./textures/cht_town_common_rf.dds</init_from>
+    </image>
+    <image id="cho_newspaper01_nt.dds-image" name="cho_newspaper01_nt.dds-image">
+      <init_from>./textures/cho_newspaper01_nt.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="test_cho_newspaper01.xno0ID" name="test_cho_newspaper01.xno0">
+      <instance_effect url="#test_cho_newspaper01.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="test_cho_newspaper01.xno0-effect" name="test_cho_newspaper01.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="cho_newspaper01_df.dds-image-surface">
+          <surface type="2D">
+            <init_from>cho_newspaper01_df.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="cho_newspaper01_df.dds-image-sampler">
+          <sampler2D>
+            <source>cho_newspaper01_df.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="cho_newspaper01_sp.dds-image-surface">
+          <surface type="2D">
+            <init_from>cho_newspaper01_sp.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="cho_newspaper01_sp.dds-image-sampler">
+          <sampler2D>
+            <source>cho_newspaper01_sp.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="cht_town_common_rf.dds-image-surface">
+          <surface type="2D">
+            <init_from>cht_town_common_rf.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="cht_town_common_rf.dds-image-sampler">
+          <sampler2D>
+            <source>cht_town_common_rf.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="cho_newspaper01_nt.dds-image-surface">
+          <surface type="2D">
+            <init_from>cho_newspaper01_nt.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="cho_newspaper01_nt.dds-image-sampler">
+          <sampler2D>
+            <source>cho_newspaper01_nt.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="cho_newspaper01_df.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="test_cho_newspaper01.xno-geometry" name="test_cho_newspaper01.xno-geometry">
+      <mesh>
+        <source id="test_cho_newspaper01.xno-geometry-position">
+          <float_array id="test_cho_newspaper01.xno-geometry-position-array" count="162">-21.9718 12.8475 -55.8056 -18.5754 13.7553 -57.1265 -15.9832 0.203007 -56.957 -15.0199 14.4749 -42.4328 -14.8598 14.4749 -42.4328 -14.1897 1.0085 -58.0143 -9.36114 1.75183 -43.4543 -8.72094 15.9024 -28.7972 -8.66705 1.8321 -44.0481 -8.56086 15.9024 -28.7972 -8.50067 -12.2274 -59.1755 -8.39032 -12.2052 -58.8869 -7.45554 -37.5834 -56.1621 -6.12127 -18.6945 -59.2766 -5.36707 -32.1439 -58.5846 -4.99651 -25.2747 -59.2391 -3.62767 16.6651 -14.6385 -3.4676 16.6651 -14.6385 -2.33529 -10.7149 -45.5023 -2.2344 -25.1825 -60.4942 -2.22493 -10.6927 -45.2138 -1.85234 3.28013 -30.271 -1.54511 3.4147 -30.7312 -1.07493 -38.0898 -52.476 -0.412395 17.198 0.231587 -0.226115 -38.6774 -60.1863 1.18182 17.8492 -0.407169 1.49404 3.95297 -15.4665 1.6354 4.02529 -15.8585 2.86194 -37.8059 -49.2924 3.58369 -23.6238 -46.4287 3.82854 -23.6178 -46.8498 4.53001 -9.21374 -31.7504 4.67137 -9.14143 -32.1424 5.2481 -37.3509 -46.0368 5.59712 4.55648 -0.92777 6.00183 4.64973 -1.41812 6.13786 -37.2935 -46.6986 7.97027 -8.58251 -16.9746 8.11162 -8.51019 -17.3667 9.41236 -22.2185 -32.6195 9.55372 -22.1462 -33.0116 12.0734 -7.979 -2.43592 12.2147 -7.90669 -2.82797 12.4169 -21.6219 -17.6812 12.5583 -21.5496 -18.0732 12.7177 -35.8151 -32.8401 12.8591 -35.7428 -33.2322 15.7223 -35.2185 -17.9018 16.52 -21.0184 -3.14247 17.7537 -20.8731 -4.23348 17.8186 -34.9908 -19.0235 19.8254 -34.615 -3.36307 24.6235 -32.9516 -5.59505 </float_array>
+          <technique_common>
+            <accessor source="#test_cho_newspaper01.xno-geometry-position-array" count="54" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_cho_newspaper01.xno-geometry-normal">
+          <float_array id="test_cho_newspaper01.xno-geometry-normal-array" count="162">-0.786031 -0.414078 0.459014 0.910992 0.330611 -0.246555 -0.770882 -0.462431 0.438063 -0.806814 -0.400387 0.434444 0.832803 0.420026 -0.36058 0.859666 0.391795 -0.327828 -0.771359 -0.455512 0.444426 -0.800389 -0.457566 0.387313 0.796832 0.444941 -0.408762 0.788896 0.48522 -0.377101 0.81332 0.425955 -0.396324 -0.806637 -0.417806 0.418061 -0.404117 0.497119 0.76783 -0.82959 -0.277737 0.484399 -0.685295 0.218901 0.694588 -0.801855 -0.0540038 0.595074 -0.883111 -0.40353 0.239328 0.864148 0.411755 -0.289319 0.788795 0.434705 -0.434551 0.864785 0.279408 -0.417226 -0.785327 -0.438037 0.437476 -0.811983 -0.46097 0.358038 0.815912 0.460452 -0.349673 -0.598568 0.266503 0.755442 -0.881912 -0.407614 0.236817 0.895555 0.134489 -0.424138 0.882055 0.363702 -0.299501 -0.872765 -0.429042 0.232817 0.872734 0.419749 -0.249291 -0.7699 0.00200656 0.638161 -0.852995 -0.22177 0.472459 0.865463 0.277676 -0.416976 -0.849251 -0.413553 0.328247 0.848476 0.411495 -0.332808 -0.843171 -0.116914 0.524779 -0.853988 -0.45083 0.259725 0.87196 0.404045 -0.276465 0.88855 0.163425 -0.428687 -0.88368 -0.401706 0.240295 0.883969 0.399681 -0.242597 -0.907657 -0.273172 0.318647 0.908692 0.279372 -0.310209 -0.878726 -0.397351 0.264487 0.86749 0.40905 -0.283089 -0.930664 -0.279754 0.235799 0.89861 0.339371 -0.278077 -0.90706 -0.226271 0.355025 0.895869 0.259635 -0.360566 -0.943101 -0.233119 0.237101 -0.921445 -0.277817 0.271581 0.831529 0.413139 -0.371317 0.845352 0.39326 -0.361561 -0.933728 -0.231425 0.273122 0.751718 0.478689 -0.453626 </float_array>
+          <technique_common>
+            <accessor source="#test_cho_newspaper01.xno-geometry-normal-array" count="54" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_cho_newspaper01.xno-geometry-uv">
+          <float_array id="test_cho_newspaper01.xno-geometry-uv-array" count="108">1.00968 -0.00975823 1.00968 0.492801 1.00968 0.116279 0.756745 -0.00975823 0.756745 0.492801 1.00968 0.618839 0.756745 0.116279 0.502571 -0.00975823 0.756745 0.618839 0.502571 0.492801 1.00968 0.744876 1.00968 0.242317 1.00968 0.494391 1.00968 0.305335 1.00968 0.431373 1.00968 0.368354 0.249637 -0.00975823 0.249637 0.492801 0.756745 0.744876 1.00968 0.870913 0.756745 0.242316 0.502571 0.116279 0.502571 0.618839 0.916038 0.494391 -0.00329736 -0.00975823 1.00968 0.996951 -0.00329736 0.492801 0.249637 0.116279 0.249637 0.618839 0.822396 0.494391 0.756745 0.368354 0.756745 0.870913 0.502571 0.242316 0.502571 0.744876 0.756745 0.494391 -0.00329736 0.116279 -0.00329736 0.618839 0.756745 0.996951 0.249637 0.242316 0.249637 0.744876 0.502571 0.368354 0.502571 0.870913 -0.00329736 0.242316 -0.00329736 0.744876 0.249637 0.368354 0.249637 0.870913 0.502571 0.494391 0.502571 0.996951 0.249637 0.494391 -0.00329736 0.368354 -0.00329736 0.870913 0.249637 0.996951 -0.00329736 0.494391 -0.00329736 0.996951 </float_array>
+          <technique_common>
+            <accessor source="#test_cho_newspaper01.xno-geometry-uv-array" count="54" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_cho_newspaper01.xno-geometry-uv2">
+          <float_array id="test_cho_newspaper01.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#test_cho_newspaper01.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_cho_newspaper01.xno-geometry-color">
+          <float_array id="test_cho_newspaper01.xno-geometry-color-array" count="12">0.690196 0.509804 0.72549 0.00392157 0 0 0 0 0.219608 0.658824 0.72549 0.00392157 </float_array>
+          <technique_common>
+            <accessor source="#test_cho_newspaper01.xno-geometry-color-array" count="3" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="test_cho_newspaper01.xno-geometry-vertex">
+          <input semantic="POSITION" source="#test_cho_newspaper01.xno-geometry-position" />
+        </vertices>
+        <triangles material="test_cho_newspaper01.xno0" count="68">
+          <input semantic="VERTEX" source="#test_cho_newspaper01.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#test_cho_newspaper01.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#test_cho_newspaper01.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#test_cho_newspaper01.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#test_cho_newspaper01.xno-geometry-color" offset="4" set="0" />
+          <p>51 51 51 0 1 47 47 47 0 1 45 45 45 0 1 41 41 41 0 1 45 45 45 0 1 47 47 47 0 1 45 45 45 0 1 41 41 41 0 1 39 39 39 0 1 33 33 33 0 1 39 39 39 0 1 41 41 41 0 1 39 39 39 0 1 33 33 33 0 1 28 28 28 0 1 22 22 22 0 1 28 28 28 0 1 33 33 33 0 1 28 28 28 0 1 22 22 22 0 1 17 17 17 0 1 9 9 9 0 1 17 17 17 0 1 22 22 22 0 1 47 47 47 0 1 37 37 37 0 1 41 41 41 0 1 31 31 31 0 1 41 41 41 0 1 37 37 37 0 1 41 41 41 0 1 31 31 31 0 1 33 33 33 0 1 18 18 18 0 1 33 33 33 0 1 31 31 31 0 1 33 33 33 0 1 18 18 18 0 1 22 22 22 0 1 8 8 8 0 1 22 22 22 0 1 18 18 18 0 1 22 22 22 0 1 8 8 8 0 1 9 9 9 0 1 4 4 4 0 1 9 9 9 0 1 8 8 8 0 1 1 1 1 0 1 4 4 4 0 1 5 5 5 0 1 8 8 8 0 1 5 5 5 0 1 4 4 4 0 1 5 5 5 0 1 8 8 8 0 1 10 10 10 0 1 18 18 18 0 1 10 10 10 0 1 8 8 8 0 1 10 10 10 0 1 18 18 18 0 1 19 19 19 0 1 31 31 31 0 1 19 19 19 0 1 18 18 18 0 1 19 19 19 0 1 31 31 31 0 1 25 25 25 0 1 37 37 37 0 1 25 25 25 0 1 31 31 31 0 1 53 53 53 0 1 51 51 51 0 1 50 50 50 0 1 45 45 45 0 1 50 50 50 0 1 51 51 51 0 1 50 50 50 0 1 45 45 45 0 1 43 43 43 0 1 39 39 39 0 1 43 43 43 0 1 45 45 45 0 1 43 43 43 0 1 39 39 39 0 1 36 36 36 0 1 28 28 28 0 1 36 36 36 0 1 39 39 39 0 1 36 36 36 0 1 28 28 28 0 1 26 26 26 0 1 17 17 17 0 1 26 26 26 0 1 28 28 28 0 1 49 49 49 0 1 42 42 42 0 1 44 44 44 0 1 38 38 38 0 1 44 44 44 0 1 42 42 42 0 1 44 44 44 0 1 38 38 38 0 1 40 40 40 0 1 32 32 32 0 1 40 40 40 0 1 38 38 38 0 1 40 40 40 0 1 32 32 32 0 1 30 30 30 0 1 20 20 20 0 1 30 30 30 0 1 32 32 32 0 1 30 30 30 0 1 20 20 20 0 1 13 13 13 0 1 11 11 11 0 1 13 13 13 0 1 20 20 20 0 1 15 15 15 0 1 30 30 30 0 1 13 13 13 0 1 42 42 42 0 1 35 35 35 0 1 38 38 38 0 1 27 27 27 0 1 38 38 38 0 1 35 35 35 0 1 38 38 38 0 1 27 27 27 0 1 32 32 32 0 1 21 21 21 0 1 32 32 32 0 1 27 27 27 0 1 32 32 32 0 1 21 21 21 0 1 20 20 20 0 1 6 6 6 0 1 20 20 20 0 1 21 21 21 0 1 20 20 20 0 1 6 6 6 0 1 11 11 11 0 1 2 2 2 0 1 11 11 11 0 1 6 6 6 0 1 35 35 35 0 1 24 24 24 0 1 27 27 27 0 1 16 16 16 0 1 27 27 27 0 1 24 24 24 0 1 27 27 27 0 1 16 16 16 0 1 21 21 21 0 1 7 7 7 0 1 21 21 21 0 1 16 16 16 0 1 21 21 21 0 1 7 7 7 0 1 6 6 6 0 1 3 3 3 0 1 6 6 6 0 1 7 7 7 0 1 6 6 6 0 1 3 3 3 0 1 2 2 2 0 1 0 0 0 0 0 2 2 2 0 1 3 3 3 0 1 52 52 52 0 1 49 49 49 0 1 48 48 48 0 1 44 44 44 0 1 48 48 48 0 1 49 49 49 0 1 48 48 48 0 1 44 44 44 0 1 46 46 46 0 1 40 40 40 0 1 46 46 46 0 1 44 44 44 0 1 46 46 46 0 1 40 40 40 0 1 34 34 34 0 1 30 30 30 0 1 34 34 34 0 1 40 40 40 0 1 34 34 34 0 1 30 30 30 0 1 29 29 29 0 2 15 15 15 0 1 29 29 29 0 2 30 30 30 0 1 29 29 29 0 2 15 15 15 0 1 23 23 23 0 1 14 14 14 0 1 23 23 23 0 1 15 15 15 0 1 23 23 23 0 1 14 14 14 0 1 12 12 12 0 1 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="test_cho_newspaper01.xno-controller">
+      <skin source="#test_cho_newspaper01.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="test_cho_newspaper01.xno-controller-Joints">
+          <Name_array id="test_cho_newspaper01.xno-controller-Joints-array" count="2">test_cho_newspaper01.xno0 test_cho_newspaper01.xno1 </Name_array>
+          <technique_common>
+            <accessor source="#test_cho_newspaper01.xno-controller-Joints-array" count="2">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_cho_newspaper01.xno-controller-Matrices">
+          <float_array id="test_cho_newspaper01.xno-controller-Matrices-array" count="32">1 3.14597e-008 -9.96833e-008 0 -3.14598e-008 1 -5.99041e-007 0 9.96833e-008 5.99041e-007 1 0 0 0 0 1 0.331164 -0.942006 -0.0543571 -11.5264 0.873708 0.327888 -0.359338 -12.1114 0.356322 0.0715075 0.931623 28.6436 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#test_cho_newspaper01.xno-controller-Matrices-array" count="2" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_cho_newspaper01.xno-controller-Weights">
+          <float_array id="test_cho_newspaper01.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#test_cho_newspaper01.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#test_cho_newspaper01.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#test_cho_newspaper01.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="54">
+          <input semantic="JOINT" offset="0" source="#test_cho_newspaper01.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#test_cho_newspaper01.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="test_cho_newspaper01.xno0" sid="test_cho_newspaper01.xno0" name="test_cho_newspaper01.xno0" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <node id="test_cho_newspaper01.xno1" sid="test_cho_newspaper01.xno1" name="test_cho_newspaper01.xno1" type="JOINT">
+          <matrix>0.331193 0.873682 0.356358 4.19258 -0.941995 0.327916 0.0715253 -8.93501 -0.054365 -0.359376 0.931608 -31.6637 0 0 0 1 </matrix>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="test_cho_newspaper01.xno" sid="test_cho_newspaper01.xno" name="test_cho_newspaper01.xno">
+        <instance_controller url="#test_cho_newspaper01.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="test_cho_newspaper01.xno0" target="#test_cho_newspaper01.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

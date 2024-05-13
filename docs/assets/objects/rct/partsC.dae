@@ -1,0 +1,175 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="rct_train04Abrk_dfsp_j.dds-image" name="rct_train04Abrk_dfsp_j.dds-image">
+      <init_from>./textures/rct_train04Abrk_dfsp_j.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="partsC.xno0ID" name="partsC.xno0">
+      <instance_effect url="#partsC.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="partsC.xno0-effect" name="partsC.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="rct_train04Abrk_dfsp_j.dds-image-surface">
+          <surface type="2D">
+            <init_from>rct_train04Abrk_dfsp_j.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="rct_train04Abrk_dfsp_j.dds-image-sampler">
+          <sampler2D>
+            <source>rct_train04Abrk_dfsp_j.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="rct_train04Abrk_dfsp_j.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="partsC.xno-geometry" name="partsC.xno-geometry">
+      <mesh>
+        <source id="partsC.xno-geometry-position">
+          <float_array id="partsC.xno-geometry-position-array" count="90">-26.3236 -17.0354 -1.91783 -26.3236 -17.0354 -1.91783 -26.3236 -17.0354 -1.91783 -26.3236 -17.0354 0.582166 -26.3236 -17.0354 0.582166 -26.3236 -17.0354 0.582166 -19.6229 16.1397 -1.91783 -19.6229 16.1397 -1.91783 -19.6229 16.1397 -1.91783 -19.6229 16.1397 0.582167 -19.6229 16.1397 0.582167 -19.6229 16.1397 0.582167 11.2789 34.7641 -1.91783 11.2789 34.7641 -1.91783 11.2789 34.7641 -1.91783 11.2789 34.7641 0.582169 11.2789 34.7641 0.582169 11.2789 34.7641 0.582169 11.5947 -26.8317 0.582166 11.5947 -26.8317 0.582166 11.5947 -26.8317 0.582166 11.5947 -26.8317 -1.91783 11.5947 -26.8317 -1.91783 11.5947 -26.8317 -1.91783 27.4965 7.40272 0.582169 27.4965 7.40272 0.582169 27.4965 7.40272 0.582169 27.4965 7.40272 -1.91783 27.4965 7.40272 -1.91783 27.4965 7.40272 -1.91783 </float_array>
+          <technique_common>
+            <accessor source="#partsC.xno-geometry-position-array" count="30" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="partsC.xno-geometry-normal">
+          <float_array id="partsC.xno-geometry-normal-array" count="21">-0.980206 0.197981 0 -0.250141 -0.96821 -0 1.05877e-008 4.09816e-008 -1 -3.61435e-008 -4.48392e-008 1 -0.516193 0.856472 0 0.860243 0.509884 0 0.906935 -0.42127 0 </float_array>
+          <technique_common>
+            <accessor source="#partsC.xno-geometry-normal-array" count="7" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="partsC.xno-geometry-uv">
+          <float_array id="partsC.xno-geometry-uv-array" count="30">0.491459 0.606239 0.542325 0.630911 0.491284 0.614093 0.464976 0.662238 0.532711 0.691308 0.467729 0.662565 0.487736 0.716325 0.488373 0.725215 0.487391 0.718218 0.537008 0.646034 0.539773 0.644738 0.48792 0.613076 0.528049 0.698552 0.465103 0.675402 0.531694 0.702493 </float_array>
+          <technique_common>
+            <accessor source="#partsC.xno-geometry-uv-array" count="15" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="partsC.xno-geometry-uv2">
+          <float_array id="partsC.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#partsC.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="partsC.xno-geometry-color">
+          <float_array id="partsC.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#partsC.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="partsC.xno-geometry-vertex">
+          <input semantic="POSITION" source="#partsC.xno-geometry-position" />
+        </vertices>
+        <triangles material="partsC.xno0" count="16">
+          <input semantic="VERTEX" source="#partsC.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#partsC.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#partsC.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#partsC.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#partsC.xno-geometry-color" offset="4" set="0" />
+          <p>13 2 7 0 0 27 2 13 0 0 8 2 4 0 0 22 2 11 0 0 8 2 4 0 0 27 2 13 0 0 8 2 4 0 0 22 2 11 0 0 2 2 1 0 0 11 3 5 0 0 24 3 12 0 0 16 3 8 0 0 24 3 12 0 0 11 3 5 0 0 19 3 9 0 0 5 3 2 0 0 19 3 9 0 0 11 3 5 0 0 9 0 5 0 0 6 0 3 0 0 3 0 2 0 0 0 0 0 0 0 3 0 2 0 0 6 0 3 0 0 1 1 0 0 0 21 1 10 0 0 4 1 2 0 0 18 1 9 0 0 4 1 2 0 0 21 1 10 0 0 25 5 12 0 0 28 5 14 0 0 17 5 8 0 0 14 5 6 0 0 17 5 8 0 0 28 5 14 0 0 12 4 6 0 0 7 4 3 0 0 15 4 8 0 0 10 4 5 0 0 15 4 8 0 0 7 4 3 0 0 26 6 12 0 0 20 6 9 0 0 29 6 14 0 0 23 6 10 0 0 29 6 14 0 0 20 6 9 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="partsC.xno-controller">
+      <skin source="#partsC.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="partsC.xno-controller-Joints">
+          <Name_array id="partsC.xno-controller-Joints-array" count="1">partsC </Name_array>
+          <technique_common>
+            <accessor source="#partsC.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="partsC.xno-controller-Matrices">
+          <float_array id="partsC.xno-controller-Matrices-array" count="16">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#partsC.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="partsC.xno-controller-Weights">
+          <float_array id="partsC.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#partsC.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#partsC.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#partsC.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="30">
+          <input semantic="JOINT" offset="0" source="#partsC.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#partsC.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="partsC" sid="partsC" name="partsC" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="partsC.xno" sid="partsC.xno" name="partsC.xno">
+        <instance_controller url="#partsC.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="partsC.xno0" target="#partsC.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

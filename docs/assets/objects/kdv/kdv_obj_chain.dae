@@ -1,0 +1,175 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="kdv_obj_rust02_dfsp_z.dds-image" name="kdv_obj_rust02_dfsp_z.dds-image">
+      <init_from>./textures/kdv_obj_rust02_dfsp_z.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="kdv_obj_chain.xno0ID" name="kdv_obj_chain.xno0">
+      <instance_effect url="#kdv_obj_chain.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="kdv_obj_chain.xno0-effect" name="kdv_obj_chain.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_obj_rust02_dfsp_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_obj_rust02_dfsp_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_obj_rust02_dfsp_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_obj_rust02_dfsp_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_obj_rust02_dfsp_z.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="kdv_obj_chain.xno-geometry" name="kdv_obj_chain.xno-geometry">
+      <mesh>
+        <source id="kdv_obj_chain.xno-geometry-position">
+          <float_array id="kdv_obj_chain.xno-geometry-position-array" count="144">-10 12.5 2.50001 -10 12.5 -2.49999 -10 12.5 -2.49999 -10 12.5 -2.49999 -9.99999 -12.5 -2.5 -9.99999 -12.5 -2.5 -9.99999 -12.5 -2.5 -9.99999 -12.5 2.5 -7.57831 -15 -2.5 -7.57831 -15 -2.5 -7.57831 -15 -2.5 -7.57831 -15 2.5 -7.50001 15 -2.49999 -7.50001 15 -2.49999 -7.50001 15 -2.49999 -7.50001 15 2.50001 -5.00001 10 -2.49999 -5.00001 10 -2.49999 -5.00001 10 -2.49999 -5 10 2.50001 -5 -10 -2.5 -5 -10 -2.5 -5 -10 -2.5 -4.99999 -10 2.5 4.99999 10 -2.5 4.99999 10 -2.5 4.99999 10 -2.5 5 10 2.5 5 -10 -2.50001 5 -10 -2.50001 5 -10 -2.50001 5.00001 -10 2.49999 7.49999 15 -2.5 7.49999 15 -2.5 7.49999 15 -2.5 7.49999 15 2.5 7.57832 -15 -2.50001 7.57832 -15 -2.50001 7.57832 -15 -2.50001 7.57832 -15 2.49999 9.99999 12.5 -2.5 9.99999 12.5 -2.5 9.99999 12.5 -2.5 9.99999 12.5 2.5 10 -12.5 -2.50001 10 -12.5 -2.50001 10 -12.5 -2.50001 10 -12.5 2.49999 </float_array>
+          <technique_common>
+            <accessor source="#kdv_obj_chain.xno-geometry-position-array" count="48" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_obj_chain.xno-geometry-normal">
+          <float_array id="kdv_obj_chain.xno-geometry-normal-array" count="72">-0.717284 0.297108 0.630263 -0.717284 0.297108 -0.630262 -0.718631 -0.29099 -0.631581 -0.71863 -0.290991 0.631581 -0.303219 -0.715874 -0.628954 -0.303219 -0.715874 0.628954 -0.297109 0.717284 -0.630262 -0.297109 0.717283 0.630263 0.301511 -0.301511 -0.904534 0.301512 -0.301512 0.904534 0.301511 0.301512 -0.904534 0.301512 0.301511 0.904534 -0.301512 -0.301511 -0.904534 -0.301511 -0.301512 0.904534 -0.301512 0.301512 -0.904534 -0.301511 0.301511 0.904534 0.297108 0.717284 -0.630262 0.297108 0.717283 0.630263 0.303219 -0.715873 -0.628954 0.30322 -0.715874 0.628954 0.717283 0.297109 -0.630263 0.717284 0.297109 0.630262 0.718631 -0.29099 -0.631581 0.718631 -0.29099 0.631581 </float_array>
+          <technique_common>
+            <accessor source="#kdv_obj_chain.xno-geometry-normal-array" count="24" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_obj_chain.xno-geometry-uv">
+          <float_array id="kdv_obj_chain.xno-geometry-uv-array" count="92">0.148371 0.503896 0.0679703 0.424163 0.148194 0.50499 0.148486 0.403988 0.649463 0.50499 0.649559 0.403987 0.716699 0.429119 0.648646 0.504297 0.698198 0.551998 0.766323 0.478814 0.801224 0.550665 0.698198 0.551332 0.000917062 0.552774 0.0157654 0.480377 0.100045 0.551998 0.0995074 0.552759 0.199555 0.70232 0.200045 0.60499 0.300364 0.602918 0.199811 0.603514 0.501257 0.605424 0.600046 0.60499 0.600536 0.70232 0.199846 0.705948 0.200045 0.80499 0.300364 0.80576 0.199834 0.806044 0.501257 0.804567 0.599421 0.705948 0.600046 0.80499 0.599421 0.805448 0.000917211 0.860445 0.0359016 0.928214 0.100045 0.860833 0.698198 0.861221 0.758773 0.947174 0.801224 0.861377 0.698198 0.861888 0.102942 0.985877 0.146347 0.90499 0.157135 1.00182 0.156766 0.90499 0.636965 1.00341 0.647616 0.90499 0.697077 0.996495 0.637196 0.90499 </float_array>
+          <technique_common>
+            <accessor source="#kdv_obj_chain.xno-geometry-uv-array" count="46" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_obj_chain.xno-geometry-uv2">
+          <float_array id="kdv_obj_chain.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_obj_chain.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_obj_chain.xno-geometry-color">
+          <float_array id="kdv_obj_chain.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_obj_chain.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="kdv_obj_chain.xno-geometry-vertex">
+          <input semantic="POSITION" source="#kdv_obj_chain.xno-geometry-position" />
+        </vertices>
+        <triangles material="kdv_obj_chain.xno0" count="48">
+          <input semantic="VERTEX" source="#kdv_obj_chain.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#kdv_obj_chain.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#kdv_obj_chain.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#kdv_obj_chain.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#kdv_obj_chain.xno-geometry-color" offset="4" set="0" />
+          <p>2 1 2 0 0 14 6 14 0 0 17 8 17 0 0 34 16 33 0 0 17 8 17 0 0 14 6 14 0 0 17 8 17 0 0 34 16 33 0 0 25 12 24 0 0 41 20 39 0 0 25 12 24 0 0 34 16 33 0 0 45 22 43 0 0 25 12 24 0 0 41 20 39 0 0 25 12 24 0 0 45 22 43 0 0 30 14 29 0 0 36 18 34 0 0 30 14 29 0 0 45 22 43 0 0 8 4 8 0 0 30 14 29 0 0 36 18 34 0 0 30 14 29 0 0 8 4 8 0 0 21 10 21 0 0 4 2 4 0 0 21 10 21 0 0 8 4 8 0 0 2 1 2 0 0 21 10 21 0 0 4 2 4 0 0 21 10 21 0 0 2 1 2 0 0 17 8 17 0 0 27 13 26 0 0 18 8 18 0 0 26 12 25 0 0 18 8 18 0 0 27 13 26 0 0 19 9 19 0 0 15 7 15 0 0 19 9 19 0 0 27 13 26 0 0 19 9 19 0 0 15 7 15 0 0 0 0 0 0 0 13 6 13 0 0 0 0 0 0 0 15 7 15 0 0 0 0 0 0 0 13 6 13 0 0 1 1 1 0 0 23 11 21 0 0 28 14 27 0 0 20 10 20 0 0 28 14 27 0 0 23 11 21 0 0 31 15 30 0 0 39 19 37 0 0 31 15 30 0 0 23 11 21 0 0 31 15 30 0 0 39 19 37 0 0 47 23 45 0 0 47 23 45 0 0 39 19 37 0 0 46 22 44 0 0 37 18 35 0 0 46 22 44 0 0 39 19 37 0 0 40 20 38 0 0 33 16 32 0 0 43 21 41 0 0 35 17 33 0 0 43 21 41 0 0 33 16 32 0 0 43 21 41 0 0 35 17 33 0 0 27 13 26 0 0 15 7 15 0 0 27 13 26 0 0 35 17 33 0 0 15 7 15 0 0 35 17 33 0 0 12 6 12 0 0 32 16 31 0 0 12 6 12 0 0 35 17 33 0 0 10 4 10 0 0 38 18 36 0 0 11 5 11 0 0 39 19 37 0 0 11 5 11 0 0 38 18 36 0 0 23 11 21 0 0 11 5 11 0 0 39 19 37 0 0 7 3 7 0 0 11 5 11 0 0 23 11 21 0 0 11 5 11 0 0 7 3 7 0 0 9 4 9 0 0 6 2 6 0 0 9 4 9 0 0 7 3 7 0 0 24 12 23 0 0 29 14 28 0 0 27 13 26 0 0 31 15 30 0 0 27 13 26 0 0 29 14 28 0 0 27 13 26 0 0 31 15 30 0 0 43 21 41 0 0 47 23 45 0 0 43 21 41 0 0 31 15 30 0 0 43 21 41 0 0 47 23 45 0 0 42 20 40 0 0 44 22 42 0 0 42 20 40 0 0 47 23 45 0 0 22 10 22 0 0 16 8 16 0 0 23 11 21 0 0 19 9 19 0 0 23 11 21 0 0 16 8 16 0 0 23 11 21 0 0 19 9 19 0 0 7 3 7 0 0 0 0 0 0 0 7 3 7 0 0 19 9 19 0 0 7 3 7 0 0 0 0 0 0 0 5 2 5 0 0 3 1 3 0 0 5 2 5 0 0 0 0 0 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="kdv_obj_chain.xno-controller">
+      <skin source="#kdv_obj_chain.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="kdv_obj_chain.xno-controller-Joints">
+          <Name_array id="kdv_obj_chain.xno-controller-Joints-array" count="1">kdv_obj_chain </Name_array>
+          <technique_common>
+            <accessor source="#kdv_obj_chain.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_obj_chain.xno-controller-Matrices">
+          <float_array id="kdv_obj_chain.xno-controller-Matrices-array" count="16">1 8.74228e-008 -8.74228e-008 0 -8.74228e-008 1 8.74228e-008 0 8.74228e-008 -8.74228e-008 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_obj_chain.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="kdv_obj_chain.xno-controller-Weights">
+          <float_array id="kdv_obj_chain.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#kdv_obj_chain.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#kdv_obj_chain.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#kdv_obj_chain.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="48">
+          <input semantic="JOINT" offset="0" source="#kdv_obj_chain.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#kdv_obj_chain.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="kdv_obj_chain" sid="kdv_obj_chain" name="kdv_obj_chain" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="kdv_obj_chain.xno" sid="kdv_obj_chain.xno" name="kdv_obj_chain.xno">
+        <instance_controller url="#kdv_obj_chain.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="kdv_obj_chain.xno0" target="#kdv_obj_chain.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

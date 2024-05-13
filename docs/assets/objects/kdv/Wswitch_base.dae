@@ -1,0 +1,175 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="kdv_pillar17_dfxx_r.dds-image" name="kdv_pillar17_dfxx_r.dds-image">
+      <init_from>./textures/kdv_pillar17_dfxx_r.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="Wswitch_base.xno0ID" name="Wswitch_base.xno0">
+      <instance_effect url="#Wswitch_base.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Wswitch_base.xno0-effect" name="Wswitch_base.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_pillar17_dfxx_r.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_pillar17_dfxx_r.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_pillar17_dfxx_r.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_pillar17_dfxx_r.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_pillar17_dfxx_r.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="Wswitch_base.xno-geometry" name="Wswitch_base.xno-geometry">
+      <mesh>
+        <source id="Wswitch_base.xno-geometry-position">
+          <float_array id="Wswitch_base.xno-geometry-position-array" count="54">-41.2794 -12.3515 -17.0985 -41.2794 -12.3515 17.0985 -41.2793 -10344.6 17.0981 -41.2793 -10344.6 -17.0989 -17.0985 -12.3515 -41.2794 -17.0985 -12.3515 41.2794 -17.0983 -10344.6 -41.2798 -17.0983 -10344.6 41.279 17.0985 -12.3515 -41.2794 17.0985 -12.3515 41.2794 17.0987 -10344.6 -41.2799 17.0987 -10344.6 41.279 41.2794 -12.3515 17.0985 41.2794 -12.3515 -17.0985 41.2794 -12.3515 -17.0985 41.2796 -10344.6 17.0981 41.2796 -10344.6 -17.0989 41.2796 -10344.6 -17.0989 </float_array>
+          <technique_common>
+            <accessor source="#Wswitch_base.xno-geometry-position-array" count="18" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Wswitch_base.xno-geometry-normal">
+          <float_array id="Wswitch_base.xno-geometry-normal-array" count="24">-0.92388 -2.28352e-010 -0.382681 -0.92388 -2.95131e-008 0.382682 -0.382685 3.01337e-008 -0.923879 -0.382685 -4.15897e-008 0.923879 0.382681 4.25787e-008 -0.92388 0.382681 -2.86464e-008 0.92388 0.923877 5.38863e-010 0.382689 0.923879 3.00913e-008 -0.382686 </float_array>
+          <technique_common>
+            <accessor source="#Wswitch_base.xno-geometry-normal-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Wswitch_base.xno-geometry-uv">
+          <float_array id="Wswitch_base.xno-geometry-uv-array" count="36">0.49894 16.509 0.676616 16.509 0.676813 -24.7043 0.499138 -24.7043 0.321262 16.509 0.854291 16.509 0.321461 -24.7043 0.854493 -24.7043 0.136265 16.509 1.03197 16.509 0.136465 -24.7043 1.03217 -24.7043 1.20965 16.509 -0.0377523 16.509 1.38732 16.509 1.20985 -24.7043 -0.0375523 -24.7043 1.38753 -24.7043 </float_array>
+          <technique_common>
+            <accessor source="#Wswitch_base.xno-geometry-uv-array" count="18" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Wswitch_base.xno-geometry-uv2">
+          <float_array id="Wswitch_base.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#Wswitch_base.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Wswitch_base.xno-geometry-color">
+          <float_array id="Wswitch_base.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#Wswitch_base.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Wswitch_base.xno-geometry-vertex">
+          <input semantic="POSITION" source="#Wswitch_base.xno-geometry-position" />
+        </vertices>
+        <triangles material="Wswitch_base.xno0" count="16">
+          <input semantic="VERTEX" source="#Wswitch_base.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#Wswitch_base.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#Wswitch_base.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#Wswitch_base.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#Wswitch_base.xno-geometry-color" offset="4" set="0" />
+          <p>17 7 17 0 0 14 7 14 0 0 15 6 15 0 0 12 6 12 0 0 15 6 15 0 0 14 7 14 0 0 15 6 15 0 0 12 6 12 0 0 11 5 11 0 0 9 5 9 0 0 11 5 11 0 0 12 6 12 0 0 11 5 11 0 0 9 5 9 0 0 7 3 7 0 0 5 3 5 0 0 7 3 7 0 0 9 5 9 0 0 7 3 7 0 0 5 3 5 0 0 2 1 2 0 0 1 1 1 0 0 2 1 2 0 0 5 3 5 0 0 2 1 2 0 0 1 1 1 0 0 3 0 3 0 0 0 0 0 0 0 3 0 3 0 0 1 1 1 0 0 3 0 3 0 0 0 0 0 0 0 6 2 6 0 0 4 2 4 0 0 6 2 6 0 0 0 0 0 0 0 6 2 6 0 0 4 2 4 0 0 10 4 10 0 0 8 4 8 0 0 10 4 10 0 0 4 2 4 0 0 10 4 10 0 0 8 4 8 0 0 16 7 16 0 0 13 7 13 0 0 16 7 16 0 0 8 4 8 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="Wswitch_base.xno-controller">
+      <skin source="#Wswitch_base.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="Wswitch_base.xno-controller-Joints">
+          <Name_array id="Wswitch_base.xno-controller-Joints-array" count="1">Wswitch_base </Name_array>
+          <technique_common>
+            <accessor source="#Wswitch_base.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Wswitch_base.xno-controller-Matrices">
+          <float_array id="Wswitch_base.xno-controller-Matrices-array" count="16">0.92388 0 0.382684 0 0 1 0 0 -0.382684 0 0.92388 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#Wswitch_base.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Wswitch_base.xno-controller-Weights">
+          <float_array id="Wswitch_base.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#Wswitch_base.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#Wswitch_base.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#Wswitch_base.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="18">
+          <input semantic="JOINT" offset="0" source="#Wswitch_base.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#Wswitch_base.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="Wswitch_base" sid="Wswitch_base" name="Wswitch_base" type="JOINT">
+        <matrix>0.923879 -0 -0.382683 0 0 1 -0 0 0.382683 0 0.923879 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="Wswitch_base.xno" sid="Wswitch_base.xno" name="Wswitch_base.xno">
+        <instance_controller url="#Wswitch_base.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Wswitch_base.xno0" target="#Wswitch_base.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

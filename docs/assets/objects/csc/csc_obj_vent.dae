@@ -1,0 +1,249 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="csc_vent01_dfsp_i.dds-image" name="csc_vent01_dfsp_i.dds-image">
+      <init_from>./textures/csc_vent01_dfsp_i.dds</init_from>
+    </image>
+    <image id="csc_vent02_dfsp_i.dds-image" name="csc_vent02_dfsp_i.dds-image">
+      <init_from>./textures/csc_vent02_dfsp_i.dds</init_from>
+    </image>
+    <image id="csc_vent03_dfsp_i.dds-image" name="csc_vent03_dfsp_i.dds-image">
+      <init_from>./textures/csc_vent03_dfsp_i.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="csc_obj_vent.xno0ID" name="csc_obj_vent.xno0">
+      <instance_effect url="#csc_obj_vent.xno0-effect" />
+    </material>
+    <material id="csc_obj_vent.xno1ID" name="csc_obj_vent.xno1">
+      <instance_effect url="#csc_obj_vent.xno1-effect" />
+    </material>
+    <material id="csc_obj_vent.xno2ID" name="csc_obj_vent.xno2">
+      <instance_effect url="#csc_obj_vent.xno2-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="csc_obj_vent.xno0-effect" name="csc_obj_vent.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="csc_vent01_dfsp_i.dds-image-surface">
+          <surface type="2D">
+            <init_from>csc_vent01_dfsp_i.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="csc_vent01_dfsp_i.dds-image-sampler">
+          <sampler2D>
+            <source>csc_vent01_dfsp_i.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="csc_vent01_dfsp_i.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="csc_obj_vent.xno1-effect" name="csc_obj_vent.xno1-effect">
+      <profile_COMMON>
+        <newparam sid="csc_vent02_dfsp_i.dds-image-surface">
+          <surface type="2D">
+            <init_from>csc_vent02_dfsp_i.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="csc_vent02_dfsp_i.dds-image-sampler">
+          <sampler2D>
+            <source>csc_vent02_dfsp_i.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="csc_vent02_dfsp_i.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="csc_obj_vent.xno2-effect" name="csc_obj_vent.xno2-effect">
+      <profile_COMMON>
+        <newparam sid="csc_vent03_dfsp_i.dds-image-surface">
+          <surface type="2D">
+            <init_from>csc_vent03_dfsp_i.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="csc_vent03_dfsp_i.dds-image-sampler">
+          <sampler2D>
+            <source>csc_vent03_dfsp_i.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="csc_vent03_dfsp_i.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="csc_obj_vent.xno-geometry" name="csc_obj_vent.xno-geometry">
+      <mesh>
+        <source id="csc_obj_vent.xno-geometry-position">
+          <float_array id="csc_obj_vent.xno-geometry-position-array" count="456">-70 14 42 -70 14 42 -70 14 42 -70 14 -42 -70 14 -42 -70 14 -42 -70 25.5049 42 -70 25.5049 42 -70 25.5049 42 -70 25.5049 42 -70 25.5049 -42 -70 25.5049 -42 -70 25.5049 -42 -70 25.5049 -42 -70 162.4 42 -70 162.4 42 -70 162.4 42 -70 162.4 -42 -70 162.4 -42 -70 162.4 -42 -64.3984 0 -45.258 -64.3984 0 -45.258 -64.3984 0 -45.258 -64.3984 0 45.258 -64.3984 0 45.258 -64.3984 0 45.258 -63 14 -45.258 -63 14 -45.258 -63 14 -45.258 -63 14 45.258 -63 14 45.258 -63 14 45.258 -52.5 98.2086 41.3477 -50.0013 98.2086 49.547 -50.0013 98.2086 49.547 -49.3339 116.165 41.3477 -49.3339 80.2526 41.3477 -46.9858 115.31 49.547 -46.9858 115.31 49.547 -46.9858 81.1072 49.547 -46.9858 81.1072 49.547 -45.5 14 45.258 -45.5 14 45.258 -45.5 14 45.258 -45.5 14 -45.258 -45.5 14 -45.258 -45.5 14 -45.258 -44.1016 0 45.258 -44.1016 0 45.258 -44.1016 0 45.258 -44.1016 0 -45.258 -44.1016 0 -45.258 -44.1016 0 -45.258 -40.2173 131.955 41.3477 -40.2173 64.4623 41.3477 -38.3032 130.349 49.547 -38.3032 130.349 49.547 -38.3032 66.0684 49.547 -38.3032 66.0684 49.547 -26.25 143.675 41.3477 -26.25 52.7423 41.3477 -25.4585 102.698 53.4061 -25.0006 141.511 49.547 -25.0006 141.511 49.547 -25.0006 54.9063 49.547 -25.0006 54.9063 49.547 -22.3878 85.283 53.4061 -16.6168 118.012 53.4061 -9.11653 149.911 41.3477 -9.11652 46.5062 41.3477 -8.84163 73.9165 53.4061 -8.68264 147.45 49.547 -8.68264 147.45 49.547 -8.68262 48.967 49.547 -8.68262 48.967 49.547 -2.3365e-006 124.06 53.4061 0 98.2086 53.4061 8.68263 147.45 49.547 8.68263 147.45 49.547 8.68265 48.967 49.547 8.68265 48.967 49.547 8.84164 73.9165 53.4061 9.11652 149.911 41.3477 9.11654 46.5062 41.3477 16.6168 118.012 53.4061 22.3878 85.2831 53.4061 25.0006 141.511 49.547 25.0006 141.511 49.547 25.0007 54.9063 49.547 25.0007 54.9063 49.547 25.4585 102.698 53.4061 26.25 143.675 41.3477 26.25 52.7423 41.3477 38.3032 130.349 49.547 38.3032 130.349 49.547 38.3032 66.0684 49.547 38.3032 66.0684 49.547 40.2173 131.955 41.3477 40.2173 64.4623 41.3477 44.1016 2.44269e-008 45.258 44.1016 2.44269e-008 45.258 44.1016 2.44269e-008 45.258 44.1016 -2.44269e-008 -45.258 44.1016 -2.44269e-008 -45.258 44.1016 -2.44269e-008 -45.258 45.5 14 45.258 45.5 14 45.258 45.5 14 45.258 45.5 14 -45.258 45.5 14 -45.258 45.5 14 -45.258 46.9858 115.31 49.547 46.9858 115.31 49.547 46.9858 81.1072 49.547 46.9858 81.1072 49.547 49.3339 116.165 41.3477 49.3339 80.2526 41.3477 50.0013 98.2086 49.547 50.0013 98.2086 49.547 52.5 98.2086 41.3477 63 14 45.258 63 14 45.258 63 14 45.258 63 14 -45.258 63 14 -45.258 63 14 -45.258 64.3984 0 45.258 64.3984 0 45.258 64.3984 0 45.258 64.3984 0 -45.258 64.3984 0 -45.258 64.3984 0 -45.258 70 14 42 70 14 42 70 14 42 70 25.5049 42 70 25.5049 42 70 25.5049 42 70 25.5049 42 70 162.4 -42 70 162.4 -42 70 162.4 -42 70 162.4 42 70 162.4 42 70 162.4 42 70 14 -42 70 14 -42 70 14 -42 70 25.5049 -42 70 25.5049 -42 70 25.5049 -42 70 25.5049 -42 </float_array>
+          <technique_common>
+            <accessor source="#csc_obj_vent.xno-geometry-position-array" count="152" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="csc_obj_vent.xno-geometry-normal">
+          <float_array id="csc_obj_vent.xno-geometry-normal-array" count="159">-1 0 0 -1.20348e-009 -1 5.39725e-010 0 0 1 0 0 -1 0 1 0 -0.995048 0.0993935 -1.25811e-007 -0.956567 -2.87112e-007 0.291511 -0.154858 -0.00264107 0.987933 -0.898879 0.327165 0.291511 -0.898879 -0.327165 0.291511 -0.144615 0.0554462 0.987933 -0.146422 -0.0504827 0.987933 0.995048 0.0993938 0 -0.732773 0.61487 0.291511 -0.732773 -0.61487 0.29151 -0.120325 0.0975175 0.987933 -0.11693 -0.101564 0.987933 -0.478284 0.828412 0.291511 -0.478284 -0.828412 0.291511 -0.0887732 0.0156531 0.995929 -0.0751417 0.135431 0.987933 -0.079716 -0.13279 0.987933 -0.0780658 -0.0450713 0.995929 -0.0579426 0.0690533 0.995929 -0.166107 0.942035 0.291511 -0.166106 -0.942035 0.291511 -0.0308306 -0.0847064 0.995929 -0.0294917 0.152046 0.987933 -0.0242898 -0.152964 0.987933 4.5309e-009 0.0901426 0.995929 0.0294917 0.152046 0.987933 0.166106 0.942035 0.291511 0.0242899 -0.152964 0.987933 0.166106 -0.942035 0.291511 0.0308306 -0.0847064 0.995929 0.0579426 0.0690533 0.995929 0.0780658 -0.0450713 0.995929 0.0751417 0.135431 0.987933 0.478284 0.828412 0.291511 0.079716 -0.13279 0.987933 0.478284 -0.828412 0.291511 0.0887732 0.0156531 0.995929 0.120325 0.0975175 0.987933 0.732773 0.61487 0.291512 0.11693 -0.101564 0.987933 0.732774 -0.61487 0.29151 0.144615 0.0554462 0.987933 0.898879 0.327165 0.291512 0.146422 -0.0504827 0.987933 0.89888 -0.327165 0.29151 0.154858 -0.00264098 0.987933 0.956567 -1.16354e-007 0.291511 1 0 0 </float_array>
+          <technique_common>
+            <accessor source="#csc_obj_vent.xno-geometry-normal-array" count="53" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="csc_obj_vent.xno-geometry-uv">
+          <float_array id="csc_obj_vent.xno-geometry-uv-array" count="202">0.507955 0.0794842 0.00184876 0.246355 0.000158287 0.000321805 0.999196 0.0794842 0.498323 0.246354 0.500871 0.00182861 0.507955 0.000321805 0.000158287 0.0794842 0.000820563 0.0783784 0.999196 0.000321805 0.999274 0.00182861 0.0014047 0.00188082 0.500871 0.999206 0.000803365 0.996747 0.0014047 0.998697 0.999274 0.999206 0.498324 0.99882 0.00358081 0 0.00358081 0.129253 0.416072 0 0.00378201 0.245074 0.068169 0.133716 0.416072 0.129253 0.497772 0.133716 0.115735 0.564151 0.151983 0.564151 0.144952 0.564151 0.139122 0.688251 0.139126 0.44005 0.173184 0.676652 0.166577 0.678902 0.173188 0.45165 0.16658 0.4494 0.497772 0.129425 0.497772 0.245074 0.068169 0.245074 0.416073 0.130781 0.497856 0 0.00358081 0.130781 0.068169 0.129425 0.206465 0.797384 0.206472 0.330919 0.234233 0.775585 0.228847 0.779813 0.234239 0.352718 0.228853 0.34849 0.309642 0.878385 0.309652 0.249919 0.320971 0.594274 0.327767 0.849015 0.324251 0.854713 0.327775 0.279289 0.32426 0.273592 0.342996 0.477421 0.384382 0.697033 0.436209 0.921486 0.436219 0.20682 0.44015 0.401152 0.442504 0.888088 0.441283 0.894566 0.442513 0.240219 0.441292 0.23374 0.503556 0.737616 0.503559 0.564154 0.565826 0.894567 0.564605 0.888089 0.565836 0.233741 0.564614 0.24022 0.566973 0.401153 0.570899 0.921487 0.570909 0.206822 0.622733 0.697034 0.664125 0.477424 0.682859 0.854715 0.679343 0.849018 0.682867 0.273595 0.679351 0.279292 0.686146 0.594277 0.697467 0.878388 0.697476 0.249922 0.778265 0.779818 0.772879 0.775589 0.778272 0.348494 0.772885 0.352723 0.800646 0.797388 0.800653 0.330924 0.840538 0.678908 0.833931 0.676657 0.840542 0.449405 0.833934 0.451655 0.867993 0.688257 0.867996 0.440056 0.862167 0.564156 0.855135 0.564156 0.891383 0.564157 -0.54153 0.0794842 0.999236 0.0783863 -0.54153 0.000321805 0.998321 0.998697 0.999222 0.996759 0.998321 0.00188082 </float_array>
+          <technique_common>
+            <accessor source="#csc_obj_vent.xno-geometry-uv-array" count="101" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="csc_obj_vent.xno-geometry-uv2">
+          <float_array id="csc_obj_vent.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#csc_obj_vent.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="csc_obj_vent.xno-geometry-color">
+          <float_array id="csc_obj_vent.xno-geometry-color-array" count="128">0.933333 0.933333 0.945098 1 0.886275 0.886275 0.894118 1 0.92549 0.92549 0.941176 1 0.890196 0.890196 0.898039 1 0.929412 0.929412 0.941176 1 0.992157 0.992157 1 1 0.945098 0.945098 0.952941 1 0.984314 0.984314 0.996078 1 0.905882 0.905882 0.909804 1 0.988235 0.988235 0.996078 1 0.776471 0.776471 0.792157 1 0.792157 0.792157 0.807843 1 0.780392 0.780392 0.8 1 0.964706 0.964706 0.968627 1 0.827451 0.827451 0.827451 1 0.972549 0.972549 0.976471 1 0.941176 0.941176 0.945098 1 0.94902 0.94902 0.952941 1 0.937255 0.937255 0.941176 1 0.752941 0.752941 0.764706 1 0.756863 0.756863 0.768627 1 0.933333 0.933333 0.937255 1 0.945098 0.945098 0.94902 1 0.94902 0.94902 0.956863 1 0.941176 0.941176 0.94902 1 0.74902 0.74902 0.760784 1 0.933333 0.929412 0.933333 1 0.968627 0.968627 0.972549 1 0.956863 0.956863 0.964706 1 0.772549 0.772549 0.792157 1 0.882353 0.882353 0.890196 1 0.909804 0.909804 0.913725 1 </float_array>
+          <technique_common>
+            <accessor source="#csc_obj_vent.xno-geometry-color-array" count="32" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="csc_obj_vent.xno-geometry-vertex">
+          <input semantic="POSITION" source="#csc_obj_vent.xno-geometry-position" />
+        </vertices>
+        <triangles material="csc_obj_vent.xno0" count="82">
+          <input semantic="VERTEX" source="#csc_obj_vent.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#csc_obj_vent.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#csc_obj_vent.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#csc_obj_vent.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#csc_obj_vent.xno-geometry-color" offset="4" set="0" />
+          <p>115 47 90 0 18 112 47 87 0 22 119 51 94 0 18 118 51 93 0 22 119 51 94 0 18 112 47 87 0 22 119 51 94 0 18 118 51 93 0 22 116 49 91 0 18 114 49 89 0 24 116 49 91 0 18 118 51 93 0 22 116 49 91 0 18 114 49 89 0 24 98 45 85 0 21 96 45 83 0 16 98 45 85 0 21 114 49 89 0 24 98 45 85 0 21 96 45 83 0 16 92 40 79 0 21 89 40 76 0 16 92 40 79 0 21 96 45 83 0 16 92 40 79 0 21 89 40 76 0 16 83 33 70 0 21 80 33 67 0 16 83 33 70 0 21 89 40 76 0 16 83 33 70 0 21 80 33 67 0 16 69 25 56 0 21 73 25 60 0 16 69 25 56 0 21 80 33 67 0 16 69 25 56 0 21 73 25 60 0 16 60 18 47 0 21 64 18 51 0 16 60 18 47 0 21 73 25 60 0 16 60 18 47 0 21 64 18 51 0 16 54 14 41 0 21 57 14 44 0 22 54 14 41 0 21 64 18 51 0 16 54 14 41 0 21 57 14 44 0 22 36 9 28 0 18 39 9 31 0 6 36 9 28 0 18 57 14 44 0 22 36 9 28 0 18 39 9 31 0 6 32 6 24 0 16 33 6 25 0 17 32 6 24 0 16 39 9 31 0 6 32 6 24 0 16 33 6 25 0 17 35 8 27 0 16 37 8 29 0 6 35 8 27 0 16 33 6 25 0 17 35 8 27 0 16 37 8 29 0 6 53 13 40 0 18 55 13 42 0 6 53 13 40 0 18 37 8 29 0 6 53 13 40 0 18 55 13 42 0 6 59 17 46 0 18 62 17 49 0 17 59 17 46 0 18 55 13 42 0 6 59 17 46 0 18 62 17 49 0 17 68 24 55 0 16 71 24 58 0 23 68 24 55 0 16 62 17 49 0 17 68 24 55 0 16 71 24 58 0 23 82 31 69 0 24 78 31 65 0 23 82 31 69 0 24 71 24 58 0 23 82 31 69 0 24 78 31 65 0 23 91 38 78 0 16 87 38 74 0 6 91 38 78 0 16 78 31 65 0 23 91 38 78 0 16 87 38 74 0 6 97 43 84 0 18 94 43 81 0 22 97 43 84 0 18 87 38 74 0 6 97 43 84 0 18 94 43 81 0 22 115 47 90 0 18 112 47 87 0 22 115 47 90 0 18 94 43 81 0 22 84 35 71 0 9 75 29 62 0 9 76 2 63 0 9 67 23 54 0 9 76 2 63 0 9 75 29 62 0 9 61 19 48 0 9 76 2 63 0 9 67 23 54 0 9 66 22 53 0 9 76 2 63 0 9 61 19 48 0 9 70 26 57 0 9 76 2 63 0 9 66 22 53 0 9 81 34 68 0 9 76 2 63 0 9 70 26 57 0 9 85 36 72 0 9 76 2 63 0 9 81 34 68 0 9 90 41 77 0 9 76 2 63 0 9 85 36 72 0 9 76 2 63 0 9 90 41 77 0 9 84 35 71 0 9 111 46 86 0 9 84 35 71 0 9 90 41 77 0 9 93 42 80 0 9 84 35 71 0 9 111 46 86 0 9 86 37 73 0 9 84 35 71 0 9 93 42 80 0 9 84 35 71 0 9 86 37 73 0 9 75 29 62 0 9 77 30 64 0 9 75 29 62 0 9 86 37 73 0 9 72 27 59 0 9 75 29 62 0 9 77 30 64 0 9 75 29 62 0 9 72 27 59 0 9 67 23 54 0 9 63 20 50 0 9 67 23 54 0 9 72 27 59 0 9 56 15 43 0 9 67 23 54 0 9 63 20 50 0 9 67 23 54 0 9 56 15 43 0 9 61 19 48 0 9 38 10 30 0 9 61 19 48 0 9 56 15 43 0 9 34 7 26 0 9 61 19 48 0 9 38 10 30 0 9 61 19 48 0 9 34 7 26 0 9 66 22 53 0 9 40 11 32 0 9 66 22 53 0 9 34 7 26 0 9 58 16 45 0 9 66 22 53 0 9 40 11 32 0 9 66 22 53 0 9 58 16 45 0 9 70 26 57 0 9 65 21 52 0 9 70 26 57 0 9 58 16 45 0 9 74 28 61 0 9 70 26 57 0 9 65 21 52 0 9 70 26 57 0 9 74 28 61 0 9 81 34 68 0 9 79 32 66 0 9 81 34 68 0 9 74 28 61 0 9 88 39 75 0 9 81 34 68 0 9 79 32 66 0 9 81 34 68 0 9 88 39 75 0 9 85 36 72 0 9 95 44 82 0 9 85 36 72 0 9 88 39 75 0 9 113 48 88 0 9 85 36 72 0 9 95 44 82 0 9 85 36 72 0 9 113 48 88 0 9 90 41 77 0 9 117 50 92 0 9 90 41 77 0 9 113 48 88 0 9 90 41 77 0 9 117 50 92 0 9 111 46 86 0 9 8 2 7 0 6 133 2 9 0 2 135 2 3 0 17 133 2 9 0 2 8 2 7 0 6 2 2 2 0 2 9 2 8 0 6 142 2 99 0 31 15 2 13 0 8 142 2 99 0 31 9 2 8 0 6 136 2 96 0 17 10 0 9 0 5 0 0 0 0 0 7 0 6 0 5 0 0 0 0 0 10 0 9 0 5 3 0 3 0 0 148 3 2 0 7 5 3 3 0 4 13 3 9 0 7 5 3 3 0 4 148 3 2 0 7 146 3 7 0 2 137 52 97 0 9 147 52 7 0 0 150 52 2 0 9 147 52 7 0 0 137 52 97 0 9 134 52 95 0 0 </p>
+        </triangles>
+        <triangles material="csc_obj_vent.xno1" count="2">
+          <input semantic="VERTEX" source="#csc_obj_vent.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#csc_obj_vent.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#csc_obj_vent.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#csc_obj_vent.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#csc_obj_vent.xno-geometry-color" offset="4" set="0" />
+          <p>139 3 98 0 9 149 3 100 0 7 18 3 14 0 9 12 3 11 0 7 18 3 14 0 9 149 3 100 0 7 </p>
+        </triangles>
+        <triangles material="csc_obj_vent.xno2" count="32">
+          <input semantic="VERTEX" source="#csc_obj_vent.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#csc_obj_vent.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#csc_obj_vent.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#csc_obj_vent.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#csc_obj_vent.xno-geometry-color" offset="4" set="0" />
+          <p>105 5 18 0 26 108 5 22 0 18 99 5 17 0 25 102 5 19 0 19 99 5 17 0 25 108 5 22 0 18 4 1 4 0 3 145 1 16 0 1 1 1 1 0 1 132 1 14 0 30 1 1 1 0 1 145 1 16 0 1 120 2 35 0 9 106 2 20 0 9 127 2 39 0 11 101 2 18 0 11 127 2 39 0 11 106 2 20 0 9 125 12 34 0 28 122 12 35 0 27 131 12 33 0 29 128 12 39 0 12 131 12 33 0 29 122 12 35 0 27 109 3 22 0 9 123 3 33 0 9 104 3 19 0 11 130 3 37 0 11 104 3 19 0 11 123 3 33 0 9 107 4 21 0 14 121 4 35 0 14 110 4 23 0 14 124 4 34 0 14 110 4 23 0 14 121 4 35 0 14 129 1 36 0 11 126 1 38 0 11 103 1 19 0 11 100 1 17 0 11 103 1 19 0 11 126 1 38 0 11 23 5 19 0 12 29 5 22 0 15 20 5 17 0 10 26 5 18 0 13 20 5 17 0 10 29 5 22 0 15 22 3 18 0 11 27 3 20 0 9 51 3 39 0 11 44 3 35 0 9 51 3 39 0 11 27 3 20 0 9 52 12 39 0 20 46 12 35 0 16 49 12 33 0 19 43 12 34 0 18 49 12 33 0 19 46 12 35 0 16 48 2 37 0 11 41 2 33 0 9 25 2 19 0 11 30 2 22 0 9 25 2 19 0 11 41 2 33 0 9 42 4 34 0 14 45 4 35 0 14 31 4 23 0 14 28 4 21 0 14 31 4 23 0 14 45 4 35 0 14 21 1 17 0 11 50 1 38 0 11 24 1 19 0 11 47 1 36 0 11 24 1 19 0 11 50 1 38 0 11 17 0 15 0 9 11 0 10 0 5 14 0 12 0 5 6 0 5 0 5 14 0 12 0 5 11 0 10 0 5 144 52 12 0 9 138 52 5 0 9 141 52 15 0 9 151 52 10 0 9 141 52 15 0 9 138 52 5 0 9 143 4 1 0 9 140 4 4 0 9 16 4 14 0 9 19 4 16 0 9 16 4 14 0 9 140 4 4 0 9 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="csc_obj_vent.xno-controller">
+      <skin source="#csc_obj_vent.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="csc_obj_vent.xno-controller-Joints">
+          <Name_array id="csc_obj_vent.xno-controller-Joints-array" count="1">csc_obj_vent </Name_array>
+          <technique_common>
+            <accessor source="#csc_obj_vent.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="csc_obj_vent.xno-controller-Matrices">
+          <float_array id="csc_obj_vent.xno-controller-Matrices-array" count="16">1 0 0 0 0 1 0 0 0 0 1 -1.67816e-007 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#csc_obj_vent.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="csc_obj_vent.xno-controller-Weights">
+          <float_array id="csc_obj_vent.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#csc_obj_vent.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#csc_obj_vent.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#csc_obj_vent.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="152">
+          <input semantic="JOINT" offset="0" source="#csc_obj_vent.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#csc_obj_vent.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="csc_obj_vent" sid="csc_obj_vent" name="csc_obj_vent" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 1.67816e-007 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="csc_obj_vent.xno" sid="csc_obj_vent.xno" name="csc_obj_vent.xno">
+        <instance_controller url="#csc_obj_vent.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="csc_obj_vent.xno0" target="#csc_obj_vent.xno0ID" />
+              <instance_material symbol="csc_obj_vent.xno1" target="#csc_obj_vent.xno1ID" />
+              <instance_material symbol="csc_obj_vent.xno2" target="#csc_obj_vent.xno2ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

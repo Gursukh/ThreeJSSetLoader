@@ -1,0 +1,211 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="kdv_obj_rust01_dfsp_z.dds-image" name="kdv_obj_rust01_dfsp_z.dds-image">
+      <init_from>./textures/kdv_obj_rust01_dfsp_z.dds</init_from>
+    </image>
+    <image id="kdv_obj_rust01_ntxx_z.dds-image" name="kdv_obj_rust01_ntxx_z.dds-image">
+      <init_from>./textures/kdv_obj_rust01_ntxx_z.dds</init_from>
+    </image>
+    <image id="kdv_obj_rust01_xxpt_p_z.dds-image" name="kdv_obj_rust01_xxpt_p_z.dds-image">
+      <init_from>./textures/kdv_obj_rust01_xxpt_p_z.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="test_kdv_obj_chain01.xno0ID" name="test_kdv_obj_chain01.xno0">
+      <instance_effect url="#test_kdv_obj_chain01.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="test_kdv_obj_chain01.xno0-effect" name="test_kdv_obj_chain01.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="kdv_obj_rust01_dfsp_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_obj_rust01_dfsp_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_obj_rust01_dfsp_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_obj_rust01_dfsp_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_obj_rust01_ntxx_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_obj_rust01_ntxx_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_obj_rust01_ntxx_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_obj_rust01_ntxx_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_obj_rust01_xxpt_p_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_obj_rust01_xxpt_p_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_obj_rust01_xxpt_p_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_obj_rust01_xxpt_p_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="kdv_obj_rust01_ntxx_z.dds-image-surface">
+          <surface type="2D">
+            <init_from>kdv_obj_rust01_ntxx_z.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="kdv_obj_rust01_ntxx_z.dds-image-sampler">
+          <sampler2D>
+            <source>kdv_obj_rust01_ntxx_z.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="kdv_obj_rust01_dfsp_z.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="test_kdv_obj_chain01.xno-geometry" name="test_kdv_obj_chain01.xno-geometry">
+      <mesh>
+        <source id="test_kdv_obj_chain01.xno-geometry-position">
+          <float_array id="test_kdv_obj_chain01.xno-geometry-position-array" count="96">-15.6622 1781.53 0.0543403 -15.6622 1204.65 0.0543403 -15.6622 51.9423 0.0543403 -15.6622 627.774 0.0543403 -15.6622 21.543 0.0543403 -15.6622 2358.4 0.0543403 -15.6622 243.886 0.0543403 -15.6622 435.83 0.0543403 -0.0033509 71.1576 15.681 -0.0033509 646.989 15.681 -0.0033509 263.101 15.681 -0.0033509 1223.87 15.681 -0.0033509 2377.62 15.681 -0.0033509 1800.74 15.681 -0.0033509 40.7584 15.681 -0.0033509 455.045 15.681 0.0033509 263.102 -15.6434 0.0033509 1800.74 -15.6434 0.0033509 1223.87 -15.6434 0.0033509 455.045 -15.6434 0.0033509 2377.62 -15.6434 0.0033509 71.1576 -15.6434 0.0033509 40.7584 -15.6434 0.0033509 646.989 -15.6434 15.6622 435.83 -0.0168143 15.6622 243.886 -0.0168143 15.6622 627.774 -0.0168143 15.6622 1781.53 -0.0168143 15.6622 1204.65 -0.0168143 15.6622 51.9423 -0.0168143 15.6622 2358.4 -0.0168143 15.6622 21.543 -0.0168143 </float_array>
+          <technique_common>
+            <accessor source="#test_kdv_obj_chain01.xno-geometry-position-array" count="32" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_kdv_obj_chain01.xno-geometry-normal">
+          <float_array id="test_kdv_obj_chain01.xno-geometry-normal-array" count="6">-0.00227154 6.48424e-014 -0.999997 1 0 0.000213948 </float_array>
+          <technique_common>
+            <accessor source="#test_kdv_obj_chain01.xno-geometry-normal-array" count="2" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_kdv_obj_chain01.xno-geometry-uv">
+          <float_array id="test_kdv_obj_chain01.xno-geometry-uv-array" count="32">0.0146306 7.42331 0.014688 14.8002 0.0148058 29.554 0.0147453 22.1771 0.0148088 29.9427 0.0145733 0.0464193 0.0147856 27.095 0.0147655 24.6361 0.346022 29.554 0.345965 22.1771 0.346003 27.095 0.345908 14.8002 0.345793 0.0464193 0.34585 7.42332 0.34624 29.9427 0.345984 24.6361 </float_array>
+          <technique_common>
+            <accessor source="#test_kdv_obj_chain01.xno-geometry-uv-array" count="16" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_kdv_obj_chain01.xno-geometry-uv2">
+          <float_array id="test_kdv_obj_chain01.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#test_kdv_obj_chain01.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_kdv_obj_chain01.xno-geometry-color">
+          <float_array id="test_kdv_obj_chain01.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#test_kdv_obj_chain01.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="test_kdv_obj_chain01.xno-geometry-vertex">
+          <input semantic="POSITION" source="#test_kdv_obj_chain01.xno-geometry-position" />
+        </vertices>
+        <triangles material="test_kdv_obj_chain01.xno0" count="28">
+          <input semantic="VERTEX" source="#test_kdv_obj_chain01.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#test_kdv_obj_chain01.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#test_kdv_obj_chain01.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#test_kdv_obj_chain01.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#test_kdv_obj_chain01.xno-geometry-color" offset="4" set="0" />
+          <p>2 0 2 0 0 31 0 14 0 0 4 0 4 0 0 31 0 14 0 0 2 0 2 0 0 29 0 8 0 0 6 0 6 0 0 29 0 8 0 0 2 0 2 0 0 29 0 8 0 0 6 0 6 0 0 25 0 10 0 0 7 0 7 0 0 25 0 10 0 0 6 0 6 0 0 25 0 10 0 0 7 0 7 0 0 24 0 15 0 0 3 0 3 0 0 24 0 15 0 0 7 0 7 0 0 24 0 15 0 0 3 0 3 0 0 26 0 9 0 0 1 0 1 0 0 26 0 9 0 0 3 0 3 0 0 26 0 9 0 0 1 0 1 0 0 28 0 11 0 0 0 0 0 0 0 28 0 11 0 0 1 0 1 0 0 28 0 11 0 0 0 0 0 0 0 27 0 13 0 0 5 0 5 0 0 27 0 13 0 0 0 0 0 0 0 27 0 13 0 0 5 0 5 0 0 30 0 12 0 0 21 1 2 0 0 14 1 14 0 0 22 1 4 0 0 14 1 14 0 0 21 1 2 0 0 8 1 8 0 0 16 1 6 0 0 8 1 8 0 0 21 1 2 0 0 8 1 8 0 0 16 1 6 0 0 10 1 10 0 0 19 1 7 0 0 10 1 10 0 0 16 1 6 0 0 10 1 10 0 0 19 1 7 0 0 15 1 15 0 0 23 1 3 0 0 15 1 15 0 0 19 1 7 0 0 15 1 15 0 0 23 1 3 0 0 9 1 9 0 0 18 1 1 0 0 9 1 9 0 0 23 1 3 0 0 9 1 9 0 0 18 1 1 0 0 11 1 11 0 0 17 1 0 0 0 11 1 11 0 0 18 1 1 0 0 11 1 11 0 0 17 1 0 0 0 13 1 13 0 0 20 1 5 0 0 13 1 13 0 0 17 1 0 0 0 13 1 13 0 0 20 1 5 0 0 12 1 12 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="test_kdv_obj_chain01.xno-controller">
+      <skin source="#test_kdv_obj_chain01.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="test_kdv_obj_chain01.xno-controller-Joints">
+          <Name_array id="test_kdv_obj_chain01.xno-controller-Joints-array" count="1">test_kdv_obj_chain01.xno0 </Name_array>
+          <technique_common>
+            <accessor source="#test_kdv_obj_chain01.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_kdv_obj_chain01.xno-controller-Matrices">
+          <float_array id="test_kdv_obj_chain01.xno-controller-Matrices-array" count="16">1 0 0 0 0 1 0 -54.3531 0 0 1 8.46451e-008 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#test_kdv_obj_chain01.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="test_kdv_obj_chain01.xno-controller-Weights">
+          <float_array id="test_kdv_obj_chain01.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#test_kdv_obj_chain01.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#test_kdv_obj_chain01.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#test_kdv_obj_chain01.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="32">
+          <input semantic="JOINT" offset="0" source="#test_kdv_obj_chain01.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#test_kdv_obj_chain01.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="test_kdv_obj_chain01.xno0" sid="test_kdv_obj_chain01.xno0" name="test_kdv_obj_chain01.xno0" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 54.3531 0 0 1 -8.46451e-008 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="test_kdv_obj_chain01.xno" sid="test_kdv_obj_chain01.xno" name="test_kdv_obj_chain01.xno">
+        <instance_controller url="#test_kdv_obj_chain01.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="test_kdv_obj_chain01.xno0" target="#test_kdv_obj_chain01.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

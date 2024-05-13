@@ -1,0 +1,198 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="twn_direction_dfpt_a.dds-image" name="twn_direction_dfpt_a.dds-image">
+      <init_from>./textures/twn_direction_dfpt_a.dds</init_from>
+    </image>
+    <image id="twn_direction_xxlu_a.dds-image" name="twn_direction_xxlu_a.dds-image">
+      <init_from>./textures/twn_direction_xxlu_a.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="twn_obj_direction.xno0ID" name="twn_obj_direction.xno0">
+      <instance_effect url="#twn_obj_direction.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="twn_obj_direction.xno0-effect" name="twn_obj_direction.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="twn_direction_dfpt_a.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_direction_dfpt_a.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_direction_dfpt_a.dds-image-sampler">
+          <sampler2D>
+            <source>twn_direction_dfpt_a.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_direction_xxlu_a.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_direction_xxlu_a.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_direction_xxlu_a.dds-image-sampler">
+          <sampler2D>
+            <source>twn_direction_xxlu_a.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="twn_direction_xxlu_a.dds-image-surface">
+          <surface type="2D">
+            <init_from>twn_direction_xxlu_a.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="twn_direction_xxlu_a.dds-image-sampler">
+          <sampler2D>
+            <source>twn_direction_xxlu_a.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="twn_direction_dfpt_a.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="twn_obj_direction.xno-geometry" name="twn_obj_direction.xno-geometry">
+      <mesh>
+        <source id="twn_obj_direction.xno-geometry-position">
+          <float_array id="twn_obj_direction.xno-geometry-position-array" count="108">-194.701 0 0 -153.701 0 0 -139.701 0 0 -139.701 -64.3027 3.2952e-005 -139.701 64.3027 -3.2952e-005 -114.701 0 0 -100.701 0 0 -98.701 -64.3027 3.2952e-005 -98.701 64.3027 -3.2952e-005 -84.701 64.3027 -3.2952e-005 -84.701 -64.3027 3.2952e-005 -59.701 0 0 -59.701 -64.3027 3.2952e-005 -59.701 64.3027 -3.2952e-005 -45.701 -64.3027 3.2952e-005 -45.701 64.3027 -3.2952e-005 -4.701 64.3027 -3.2952e-005 -4.701 -64.3027 3.2952e-005 5 0 0 46 0 0 60 -64.3027 3.2952e-005 60 0 0 60 64.3027 -3.2952e-005 85 0 0 99 0 0 101 64.3027 -3.2952e-005 101 -64.3027 3.2952e-005 115 64.3027 -3.2952e-005 115 -64.3027 3.2952e-005 140 0 0 140 -64.3027 3.2952e-005 140 64.3027 -3.2952e-005 154 -64.3027 3.2952e-005 154 64.3027 -3.2952e-005 195 64.3027 -3.2952e-005 195 -64.3027 3.2952e-005 </float_array>
+          <technique_common>
+            <accessor source="#twn_obj_direction.xno-geometry-position-array" count="36" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_obj_direction.xno-geometry-normal">
+          <float_array id="twn_obj_direction.xno-geometry-normal-array" count="3">0 5.12452e-007 1 </float_array>
+          <technique_common>
+            <accessor source="#twn_obj_direction.xno-geometry-normal-array" count="1" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_obj_direction.xno-geometry-uv">
+          <float_array id="twn_obj_direction.xno-geometry-uv-array" count="36">1.01722 0.499964 1.22221 0.499964 1.29221 0.499964 1.29221 0.178456 1.29221 0.821472 1.41721 0.499964 1.48721 0.499964 1.49721 0.178456 1.49721 0.821472 1.56721 0.821472 1.56721 0.178456 1.6922 0.499964 1.6922 0.178456 1.6922 0.821472 1.7622 0.178456 1.7622 0.821472 1.9672 0.821472 1.9672 0.178456 </float_array>
+          <technique_common>
+            <accessor source="#twn_obj_direction.xno-geometry-uv-array" count="18" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_obj_direction.xno-geometry-uv2">
+          <float_array id="twn_obj_direction.xno-geometry-uv2-array" count="36">1.01722 0.499964 1.22221 0.499964 1.29221 0.499964 1.29221 0.178456 1.29221 0.821472 1.41721 0.499964 1.48721 0.499964 1.49721 0.178456 1.49721 0.821472 1.56721 0.821472 1.56721 0.178456 1.6922 0.499964 1.6922 0.178456 1.6922 0.821472 1.7622 0.178456 1.7622 0.821472 1.9672 0.821472 1.9672 0.178456 </float_array>
+          <technique_common>
+            <accessor source="#twn_obj_direction.xno-geometry-uv2-array" count="18" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_obj_direction.xno-geometry-color">
+          <float_array id="twn_obj_direction.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#twn_obj_direction.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="twn_obj_direction.xno-geometry-vertex">
+          <input semantic="POSITION" source="#twn_obj_direction.xno-geometry-position" />
+        </vertices>
+        <triangles material="twn_obj_direction.xno0" count="24">
+          <input semantic="VERTEX" source="#twn_obj_direction.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#twn_obj_direction.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#twn_obj_direction.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#twn_obj_direction.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#twn_obj_direction.xno-geometry-color" offset="4" set="0" />
+          <p>34 0 16 16 0 33 0 15 15 0 29 0 11 11 0 24 0 6 6 0 29 0 11 11 0 33 0 15 15 0 32 0 14 14 0 29 0 11 11 0 24 0 6 6 0 29 0 11 11 0 32 0 14 14 0 35 0 17 17 0 19 0 1 1 0 20 0 3 3 0 26 0 7 7 0 20 0 3 3 0 19 0 1 1 0 18 0 0 0 0 18 0 0 0 0 19 0 1 1 0 22 0 4 4 0 25 0 8 8 0 22 0 4 4 0 19 0 1 1 0 8 0 8 8 0 4 0 4 4 0 1 0 1 1 0 0 0 0 0 0 1 0 1 1 0 4 0 4 4 0 3 0 3 3 0 1 0 1 1 0 0 0 0 0 0 1 0 1 1 0 3 0 3 3 0 7 0 7 7 0 23 0 5 5 0 28 0 10 10 0 30 0 12 12 0 28 0 10 10 0 23 0 5 5 0 21 0 2 2 0 21 0 2 2 0 23 0 5 5 0 27 0 9 9 0 31 0 13 13 0 27 0 9 9 0 23 0 5 5 0 16 0 16 16 0 15 0 15 15 0 11 0 11 11 0 6 0 6 6 0 11 0 11 11 0 15 0 15 15 0 14 0 14 14 0 11 0 11 11 0 6 0 6 6 0 11 0 11 11 0 14 0 14 14 0 17 0 17 17 0 5 0 5 5 0 10 0 10 10 0 12 0 12 12 0 10 0 10 10 0 5 0 5 5 0 2 0 2 2 0 2 0 2 2 0 5 0 5 5 0 9 0 9 9 0 13 0 13 13 0 9 0 9 9 0 5 0 5 5 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="twn_obj_direction.xno-controller">
+      <skin source="#twn_obj_direction.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="twn_obj_direction.xno-controller-Joints">
+          <Name_array id="twn_obj_direction.xno-controller-Joints-array" count="1">twn_obj_direction </Name_array>
+          <technique_common>
+            <accessor source="#twn_obj_direction.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_obj_direction.xno-controller-Matrices">
+          <float_array id="twn_obj_direction.xno-controller-Matrices-array" count="16">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#twn_obj_direction.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="twn_obj_direction.xno-controller-Weights">
+          <float_array id="twn_obj_direction.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#twn_obj_direction.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#twn_obj_direction.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#twn_obj_direction.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="36">
+          <input semantic="JOINT" offset="0" source="#twn_obj_direction.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#twn_obj_direction.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="twn_obj_direction" sid="twn_obj_direction" name="twn_obj_direction" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="twn_obj_direction.xno" sid="twn_obj_direction.xno" name="twn_obj_direction.xno">
+        <instance_controller url="#twn_obj_direction.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="twn_obj_direction.xno0" target="#twn_obj_direction.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

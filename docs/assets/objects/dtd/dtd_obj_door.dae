@@ -1,0 +1,175 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="dtd_door_dfsp_a.dds-image" name="dtd_door_dfsp_a.dds-image">
+      <init_from>./textures/dtd_door_dfsp_a.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="dtd_obj_door.xno0ID" name="dtd_obj_door.xno0">
+      <instance_effect url="#dtd_obj_door.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="dtd_obj_door.xno0-effect" name="dtd_obj_door.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="dtd_door_dfsp_a.dds-image-surface">
+          <surface type="2D">
+            <init_from>dtd_door_dfsp_a.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="dtd_door_dfsp_a.dds-image-sampler">
+          <sampler2D>
+            <source>dtd_door_dfsp_a.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="dtd_door_dfsp_a.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="dtd_obj_door.xno-geometry" name="dtd_obj_door.xno-geometry">
+      <mesh>
+        <source id="dtd_obj_door.xno-geometry-position">
+          <float_array id="dtd_obj_door.xno-geometry-position-array" count="72">-400 800 -30 -400 800 -30 -400 800 -30 -400 800 30 -400 800 30 -400 800 30 -400 0 30 -400 0 30 -400 0 30 -400 0 -30 -400 0 -30 -400 0 -30 400 800 -30 400 800 -30 400 800 -30 400 0 30 400 0 30 400 0 30 400 0 -30 400 0 -30 400 0 -30 400 800 30 400 800 30 400 800 30 </float_array>
+          <technique_common>
+            <accessor source="#dtd_obj_door.xno-geometry-position-array" count="24" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="dtd_obj_door.xno-geometry-normal">
+          <float_array id="dtd_obj_door.xno-geometry-normal-array" count="18">-1 0 0 0 1 0 0 0 -1 0 0 1 0 -1 0 1 0 0 </float_array>
+          <technique_common>
+            <accessor source="#dtd_obj_door.xno-geometry-normal-array" count="6" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="dtd_obj_door.xno-geometry-uv">
+          <float_array id="dtd_obj_door.xno-geometry-uv-array" count="24">0.907189 1.00017 0.907189 0.000165999 0.907594 1.00099 0.999398 1.00017 0.998346 0 0.000376024 1.00099 0.999398 0.000165999 0.000376024 0.000994563 0.907594 0.000994563 -0.00027891 1.00099 -0.00027891 0.000994563 0.998346 1 </float_array>
+          <technique_common>
+            <accessor source="#dtd_obj_door.xno-geometry-uv-array" count="12" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="dtd_obj_door.xno-geometry-uv2">
+          <float_array id="dtd_obj_door.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#dtd_obj_door.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="dtd_obj_door.xno-geometry-color">
+          <float_array id="dtd_obj_door.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#dtd_obj_door.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="dtd_obj_door.xno-geometry-vertex">
+          <input semantic="POSITION" source="#dtd_obj_door.xno-geometry-position" />
+        </vertices>
+        <triangles material="dtd_obj_door.xno0" count="12">
+          <input semantic="VERTEX" source="#dtd_obj_door.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#dtd_obj_door.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#dtd_obj_door.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#dtd_obj_door.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#dtd_obj_door.xno-geometry-color" offset="4" set="0" />
+          <p>6 0 6 0 0 3 0 3 0 0 9 0 1 0 0 0 0 0 0 0 9 0 1 0 0 3 0 3 0 0 11 4 6 0 0 19 4 3 0 0 7 4 1 0 0 15 4 0 0 0 7 4 1 0 0 19 4 3 0 0 10 2 8 0 0 2 2 2 0 0 18 2 10 0 0 13 2 9 0 0 18 2 10 0 0 2 2 2 0 0 20 5 6 0 0 14 5 3 0 0 17 5 1 0 0 23 5 0 0 0 17 5 1 0 0 14 5 3 0 0 16 3 8 0 0 22 3 2 0 0 8 3 7 0 0 5 3 5 0 0 8 3 7 0 0 22 3 2 0 0 21 1 11 0 0 12 1 0 0 0 4 1 4 0 0 1 1 1 0 0 4 1 4 0 0 12 1 0 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="dtd_obj_door.xno-controller">
+      <skin source="#dtd_obj_door.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="dtd_obj_door.xno-controller-Joints">
+          <Name_array id="dtd_obj_door.xno-controller-Joints-array" count="1">dtd_obj_door </Name_array>
+          <technique_common>
+            <accessor source="#dtd_obj_door.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="dtd_obj_door.xno-controller-Matrices">
+          <float_array id="dtd_obj_door.xno-controller-Matrices-array" count="16">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#dtd_obj_door.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="dtd_obj_door.xno-controller-Weights">
+          <float_array id="dtd_obj_door.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#dtd_obj_door.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#dtd_obj_door.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#dtd_obj_door.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="24">
+          <input semantic="JOINT" offset="0" source="#dtd_obj_door.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#dtd_obj_door.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="dtd_obj_door" sid="dtd_obj_door" name="dtd_obj_door" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="dtd_obj_door.xno" sid="dtd_obj_door.xno" name="dtd_obj_door.xno">
+        <instance_controller url="#dtd_obj_door.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="dtd_obj_door.xno0" target="#dtd_obj_door.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

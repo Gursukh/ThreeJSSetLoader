@@ -1,0 +1,311 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="wvo_Seagull_dfxx_h.dds-image" name="wvo_Seagull_dfxx_h.dds-image">
+      <init_from>./textures/wvo_Seagull_dfxx_h.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="wvo_obj_seagull01_nos_.xno0ID" name="wvo_obj_seagull01_nos_.xno0">
+      <instance_effect url="#wvo_obj_seagull01_nos_.xno0-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="wvo_obj_seagull01_nos_.xno0-effect" name="wvo_obj_seagull01_nos_.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="wvo_Seagull_dfxx_h.dds-image-surface">
+          <surface type="2D">
+            <init_from>wvo_Seagull_dfxx_h.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="wvo_Seagull_dfxx_h.dds-image-sampler">
+          <sampler2D>
+            <source>wvo_Seagull_dfxx_h.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="wvo_Seagull_dfxx_h.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="wvo_obj_seagull01_nos_.xno-geometry" name="wvo_obj_seagull01_nos_.xno-geometry">
+      <mesh>
+        <source id="wvo_obj_seagull01_nos_.xno-geometry-position">
+          <float_array id="wvo_obj_seagull01_nos_.xno-geometry-position-array" count="585">-27.9998 -4.98919 -22.4513 -17.7735 5.00672 22.3379 -17.7735 5.00672 22.3379 -16.9557 5.93876 56.5295 -16.9557 5.93876 56.5295 -15.3702 -2.66185 -31.5799 -12.48 -0.506068 -6.57682 -12.48 -0.506068 -6.57682 -12.48 -0.506068 -6.57682 -8.93152 0.726521 75.3532 -8.93152 0.726521 75.3532 -8.93152 0.726521 75.3532 -3.25743 -1.95477 91.0018 -3.25743 -1.95477 91.0018 2.44926e-006 11.7855 17.1278 2.44926e-006 15.4836 51.0019 2.44926e-006 9.45701 80.8138 2.44926e-006 9.45701 80.8138 2.44926e-006 -11.0778 72.8277 2.44926e-006 -11.0778 72.8277 2.44926e-006 -9.64703 21.1743 2.44926e-006 -13.5448 54.3438 2.44926e-006 -4.98957 88.3265 2.44926e-006 -4.98957 88.3265 2.44926e-006 -3.78402 103.249 2.44926e-006 0.31125 97.1605 2.44926e-006 2.72576 91.0018 2.44926e-006 2.72576 91.0018 2.4494e-006 3.2344 -6.3261 2.4494e-006 3.2344 -6.3261 2.4494e-006 -2.31665 -6.32609 2.4494e-006 -2.31665 -6.32609 2.54957e-006 -0.757844 -36.6486 3.25744 -1.95477 91.0018 3.25744 -1.95477 91.0018 8.93152 0.726521 75.3532 8.93152 0.726521 75.3532 8.93152 0.726521 75.3532 12.48 -0.506068 -6.57682 12.48 -0.506068 -6.57682 12.48 -0.506068 -6.57682 15.3702 -2.66185 -31.5799 16.9557 5.93876 56.5295 16.9557 5.93876 56.5295 17.7735 5.00672 22.3379 17.7735 5.00672 22.3379 27.9998 -4.98919 -22.4513 -179.486 65.354 7.94783 -142.087 55.2829 46.1045 -128.115 46.8914 5.94679 -108.56 42.8009 61.3879 -84.5748 31.2284 25.2716 -42.8147 19.6301 54.2286 -10.0594 4.37686 8.30901 -6.3262 8.35988 60.8657 -4.48155 6.80631 33.244 4.48155 6.80631 33.244 6.3262 8.35988 60.8657 10.0594 4.37686 8.30901 42.8147 19.6301 54.2286 84.5748 31.2284 25.2716 108.56 42.8009 61.3879 128.115 46.8914 5.94678 142.087 55.2829 46.1045 179.486 65.354 7.94782 107.341 -116.754 110.297 117.567 -106.758 155.086 117.567 -106.758 155.086 118.385 -105.826 189.278 118.385 -105.826 189.278 119.97 -114.426 101.169 122.861 -112.271 126.172 122.861 -112.271 126.172 122.861 -112.271 126.172 126.409 -111.038 208.102 126.409 -111.038 208.102 126.409 -111.038 208.102 132.083 -113.719 223.75 132.083 -113.719 223.75 135.341 -125.309 187.092 135.341 -99.979 149.876 135.341 -96.2809 183.75 135.341 -102.307 213.562 135.341 -102.307 213.562 135.341 -114.081 126.422 135.341 -114.081 126.422 135.341 -122.842 205.576 135.341 -122.842 205.576 135.341 -108.53 126.422 135.341 -108.53 126.422 135.341 -121.411 153.923 135.341 -112.522 96.0999 135.341 -115.548 235.998 135.341 -109.039 223.75 135.341 -109.039 223.75 135.341 -111.453 229.909 135.341 -116.754 221.075 135.341 -116.754 221.075 138.598 -113.719 223.75 138.598 -113.719 223.75 144.272 -111.038 208.102 144.272 -111.038 208.102 144.272 -111.038 208.102 147.821 -112.271 126.172 147.821 -112.271 126.172 147.821 -112.271 126.172 150.711 -114.426 101.169 152.296 -105.826 189.278 152.296 -105.826 189.278 153.114 -106.758 155.086 153.114 -106.758 155.086 163.34 -116.754 110.297 -44.7799 -161.573 140.696 -8.69263 -147.509 178.853 7.53408 -145.982 138.695 25.7066 -137.682 194.136 51.8823 -132.78 158.02 92.3872 -117.36 186.977 127.808 -110.222 141.058 128.452 -104.801 193.614 130.859 -104.958 165.992 139.822 -104.958 165.992 142.234 -104.954 193.614 142.533 -110.405 141.058 177.43 -119.775 186.977 216.875 -137.733 158.02 242.687 -144.285 194.136 260.297 -153.721 138.695 276.394 -156.274 178.853 311.517 -172.598 140.696 -233.474 79.697 47.813 -223.248 89.6929 92.6022 -223.248 89.6929 92.6022 -222.43 90.625 126.794 -222.43 90.625 126.794 -220.844 82.0244 38.6844 -217.954 84.1802 63.6875 -217.954 84.1802 63.6875 -217.954 84.1802 63.6875 -214.406 85.4128 145.618 -214.406 85.4128 145.618 -214.406 85.4128 145.618 -208.731 82.7315 161.266 -208.731 82.7315 161.266 -205.474 71.1414 124.608 -205.474 96.4717 87.3921 -205.474 100.17 121.266 -205.474 94.1432 151.078 -205.474 94.1432 151.078 -205.474 82.3696 63.9382 -205.474 82.3696 63.9382 -205.474 73.6084 143.092 -205.474 73.6084 143.092 -205.474 87.9206 63.9382 -205.474 87.9206 63.9382 -205.474 75.0392 91.4386 -205.474 83.9284 33.6157 -205.474 80.9022 173.513 -205.474 87.412 161.266 -205.474 87.412 161.266 -205.474 84.9975 167.425 -205.474 79.6967 158.591 -205.474 79.6967 158.591 -202.217 82.7315 161.266 -202.217 82.7315 161.266 -196.543 85.4128 145.618 -196.543 85.4128 145.618 -196.543 85.4128 145.618 -192.994 84.1802 63.6875 -192.994 84.1802 63.6875 -192.994 84.1802 63.6875 -190.104 82.0244 38.6844 -188.518 90.625 126.794 -188.518 90.625 126.794 -187.701 89.6929 92.6022 -187.701 89.6929 92.6022 -177.474 79.697 47.813 -378.355 166.965 78.2121 -342.127 153.265 116.369 -329.048 143.54 76.2111 -309.99 137.547 131.652 -287.259 123.672 95.5359 -246.842 108.023 124.493 -215.745 89.6233 78.5733 -211.639 93.22 131.13 -209.956 91.4925 103.508 -200.992 91.4925 103.508 -199.414 93.3156 131.13 -195.103 89.9656 78.5733 -165.137 110.155 124.493 -125.706 128.143 95.5359 -103.827 143.325 131.652 -85.1521 150.425 76.2111 -72.6646 160.898 116.369 -37.302 176.696 78.2121 </float_array>
+          <technique_common>
+            <accessor source="#wvo_obj_seagull01_nos_.xno-geometry-position-array" count="195" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wvo_obj_seagull01_nos_.xno-geometry-normal">
+          <float_array id="wvo_obj_seagull01_nos_.xno-geometry-normal-array" count="255">-0.960654 -0.187044 -0.205325 -0.976203 0.148762 -0.157789 -0.974525 0.190507 0.118352 -0.45236 -0.0776033 -0.888453 -0.901044 0.0221621 0.43316 -0.924622 -0.0964115 0.368483 -0.955939 -0.224347 0.189339 -0.943063 -0.0845386 0.32169 -4.16249e-009 0.976631 -0.214925 8.89156e-009 0.999837 0.0180327 5.76857e-009 0.871725 0.489995 6.9237e-009 -0.967863 0.251476 -8.85224e-009 -0.990809 -0.135267 1.87042e-008 -0.999999 0.00126819 5.21103e-009 -0.976824 0.214046 1.91505e-008 -0.996753 0.0805249 1.39275e-007 -0.219833 0.975538 3.20201e-009 0.865692 0.500576 1.88081e-008 0.834341 0.551248 3.75823e-008 0.931007 0.365002 -9.11175e-009 0.984044 -0.177924 8.02493e-009 -0.998455 0.0555614 5.31575e-009 0.0239852 -0.999712 0.943063 -0.0845386 0.32169 0.955939 -0.224347 0.189339 0.924622 -0.0964115 0.368483 0.901044 0.0221621 0.43316 0.45236 -0.0776033 -0.888453 0.974525 0.190507 0.118352 0.976203 0.148762 -0.157789 0.960654 -0.187044 -0.205325 0.33438 0.939047 -0.0798836 0.352956 0.933116 -0.0686768 0.351467 0.933369 -0.0727522 0.354542 0.932884 -0.0634677 0.333221 0.939603 -0.0781662 0.301951 0.951973 -0.0507176 0.302408 0.939788 -0.159212 0.300513 0.953188 -0.0335427 0.300903 0.949182 -0.0922528 -0.300903 0.949182 -0.0922528 -0.300513 0.953188 -0.0335426 -0.302408 0.939788 -0.159212 -0.301951 0.951973 -0.0507176 -0.333221 0.939603 -0.0781662 -0.354542 0.932884 -0.0634677 -0.351467 0.933369 -0.0727522 -0.352956 0.933116 -0.0686768 -0.33438 0.939047 -0.0798836 -0.287502 0.954443 -0.0798835 -0.269027 0.960681 -0.0686768 -0.270376 0.960002 -0.0727521 -0.267612 0.961434 -0.0634677 -0.288765 0.954204 -0.0781661 -0.321281 0.945625 -0.0507175 -0.313688 0.936083 -0.159212 -0.323158 0.94575 -0.0335426 -0.32047 0.942756 -0.0922527 0.379618 0.920532 -0.0922528 0.382491 0.92335 -0.0335427 0.372426 0.914303 -0.159212 0.380609 0.923344 -0.0507176 0.348703 0.933968 -0.0781662 0.328051 0.942526 -0.0634678 0.330719 0.940921 -0.0727522 0.329415 0.941684 -0.0686768 0.347457 0.934287 -0.0798836 0.425096 0.901616 -0.0798836 0.442999 0.893888 -0.0686768 0.441542 0.894286 -0.0727522 0.444554 0.893501 -0.0634677 0.423997 0.902284 -0.0781662 0.394095 0.917669 -0.0507176 0.393351 0.905498 -0.159212 0.392783 0.919019 -0.0335427 0.392777 0.914995 -0.0922528 -0.445683 0.890425 -0.0922528 -0.445925 0.894442 -0.0335427 -0.4457 0.88091 -0.159212 -0.447155 0.893018 -0.0507176 -0.476105 0.875908 -0.0781662 -0.496112 0.865936 -0.0634677 -0.493151 0.866896 -0.0727522 -0.494582 0.866413 -0.0686768 -0.477163 0.875177 -0.0798836 </float_array>
+          <technique_common>
+            <accessor source="#wvo_obj_seagull01_nos_.xno-geometry-normal-array" count="85" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wvo_obj_seagull01_nos_.xno-geometry-uv">
+          <float_array id="wvo_obj_seagull01_nos_.xno-geometry-uv-array" count="76">0.862169 0.00353527 0.666323 0.250572 0.668066 0.467802 0.280612 0.270594 0.28069 0.48791 0.9644 0.113626 0.684388 0.103868 0.992506 0.317081 0.995658 0.534598 0.0110325 0.57882 0.0121137 0.361113 0.0406816 0.182825 0.264043 0.144553 0.727095 0.68001 0.343316 0.68001 0.00555895 0.68001 0.118623 0.30744 0.00463302 -0.0023123 0.0627894 0.461868 0.679449 0.461868 0.305268 0.461868 0.225856 0.101236 0.438854 0.118444 0.351949 0.176898 0.264042 0.211361 0.68158 0.247606 0.992817 0.68001 0.989677 0.461868 0.995466 0.247606 0.995254 0.976647 0.788089 0.771795 0.702192 0.98739 0.596026 0.689743 0.453775 0.920542 0.221801 0.728179 0.028545 0.974707 0.017025 0.692546 0.0048662 0.840839 </float_array>
+          <technique_common>
+            <accessor source="#wvo_obj_seagull01_nos_.xno-geometry-uv-array" count="38" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wvo_obj_seagull01_nos_.xno-geometry-uv2">
+          <float_array id="wvo_obj_seagull01_nos_.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#wvo_obj_seagull01_nos_.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wvo_obj_seagull01_nos_.xno-geometry-color">
+          <float_array id="wvo_obj_seagull01_nos_.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#wvo_obj_seagull01_nos_.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="wvo_obj_seagull01_nos_.xno-geometry-vertex">
+          <input semantic="POSITION" source="#wvo_obj_seagull01_nos_.xno-geometry-position" />
+        </vertices>
+        <triangles material="wvo_obj_seagull01_nos_.xno0" count="50">
+          <input semantic="VERTEX" source="#wvo_obj_seagull01_nos_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#wvo_obj_seagull01_nos_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#wvo_obj_seagull01_nos_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#wvo_obj_seagull01_nos_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#wvo_obj_seagull01_nos_.xno-geometry-color" offset="4" set="0" />
+          <p>9 5 9 0 0 16 10 15 0 0 4 2 4 0 0 15 9 14 0 0 4 2 4 0 0 16 10 15 0 0 14 8 13 0 0 4 2 4 0 0 15 9 14 0 0 4 2 4 0 0 14 8 13 0 0 2 1 2 0 0 29 20 26 0 0 2 1 2 0 0 14 8 13 0 0 2 1 2 0 0 29 20 26 0 0 8 4 8 0 0 43 28 4 0 0 16 10 15 0 0 35 25 9 0 0 16 10 15 0 0 43 28 4 0 0 15 9 14 0 0 15 9 14 0 0 43 28 4 0 0 14 8 13 0 0 45 29 2 0 0 14 8 13 0 0 43 28 4 0 0 14 8 13 0 0 45 29 2 0 0 29 20 26 0 0 40 26 8 0 0 29 20 26 0 0 45 29 2 0 0 7 4 7 0 0 31 21 27 0 0 1 1 1 0 0 20 12 19 0 0 1 1 1 0 0 31 21 27 0 0 1 1 1 0 0 20 12 19 0 0 3 2 3 0 0 21 13 20 0 0 3 2 3 0 0 20 12 19 0 0 19 11 18 0 0 3 2 3 0 0 21 13 20 0 0 3 2 3 0 0 19 11 18 0 0 10 5 10 0 0 44 29 1 0 0 31 21 27 0 0 39 26 7 0 0 31 21 27 0 0 44 29 1 0 0 20 12 19 0 0 42 28 3 0 0 20 12 19 0 0 44 29 1 0 0 20 12 19 0 0 42 28 3 0 0 21 13 20 0 0 21 13 20 0 0 42 28 3 0 0 19 11 18 0 0 36 25 10 0 0 19 11 18 0 0 42 28 3 0 0 28 20 25 0 0 38 26 6 0 0 46 30 0 0 0 30 21 25 0 0 46 30 0 0 0 38 26 6 0 0 41 27 5 0 0 46 30 0 0 0 30 21 25 0 0 46 30 0 0 0 41 27 5 0 0 28 20 25 0 0 28 20 25 0 0 41 27 5 0 0 32 22 28 0 0 30 21 25 0 0 32 22 28 0 0 41 27 5 0 0 5 3 5 0 0 32 22 28 0 0 30 21 25 0 0 32 22 28 0 0 5 3 5 0 0 28 20 25 0 0 0 0 0 0 0 28 20 25 0 0 5 3 5 0 0 28 20 25 0 0 0 0 0 0 0 6 4 6 0 0 6 4 6 0 0 0 0 0 0 0 30 21 25 0 0 5 3 5 0 0 30 21 25 0 0 0 0 0 0 0 34 24 12 0 0 27 19 24 0 0 25 17 23 0 0 12 6 12 0 0 25 17 23 0 0 27 19 24 0 0 25 17 23 0 0 12 6 12 0 0 24 16 22 0 0 23 15 21 0 0 24 16 22 0 0 12 6 12 0 0 34 24 12 0 0 24 16 22 0 0 23 15 21 0 0 24 16 22 0 0 34 24 12 0 0 25 17 23 0 0 17 10 16 0 0 26 18 24 0 0 33 23 12 0 0 26 18 24 0 0 17 10 16 0 0 13 7 12 0 0 11 5 11 0 0 13 7 12 0 0 17 10 16 0 0 13 7 12 0 0 11 5 11 0 0 22 14 21 0 0 18 11 17 0 0 22 14 21 0 0 11 5 11 0 0 37 25 11 0 0 22 14 21 0 0 18 11 17 0 0 22 14 21 0 0 37 25 11 0 0 33 23 12 0 0 17 10 16 0 0 33 23 12 0 0 37 25 11 0 0 </p>
+        </triangles>
+        <triangles material="wvo_obj_seagull01_nos_.xno0" count="7">
+          <input semantic="VERTEX" source="#wvo_obj_seagull01_nos_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#wvo_obj_seagull01_nos_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#wvo_obj_seagull01_nos_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#wvo_obj_seagull01_nos_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#wvo_obj_seagull01_nos_.xno-geometry-color" offset="4" set="0" />
+          <p>53 37 35 0 0 51 35 33 0 0 55 39 37 0 0 54 38 36 0 0 55 39 37 0 0 52 36 34 0 0 51 35 33 0 0 52 36 34 0 0 55 39 37 0 0 52 36 34 0 0 51 35 33 0 0 50 34 32 0 0 50 34 32 0 0 51 35 33 0 0 48 32 30 0 0 49 33 31 0 0 48 32 30 0 0 51 35 33 0 0 48 32 30 0 0 49 33 31 0 0 47 31 29 0 0 </p>
+        </triangles>
+        <triangles material="wvo_obj_seagull01_nos_.xno0" count="7">
+          <input semantic="VERTEX" source="#wvo_obj_seagull01_nos_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#wvo_obj_seagull01_nos_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#wvo_obj_seagull01_nos_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#wvo_obj_seagull01_nos_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#wvo_obj_seagull01_nos_.xno-geometry-color" offset="4" set="0" />
+          <p>64 48 29 0 0 62 46 31 0 0 63 47 30 0 0 60 44 33 0 0 63 47 30 0 0 62 46 31 0 0 63 47 30 0 0 60 44 33 0 0 61 45 32 0 0 61 45 32 0 0 60 44 33 0 0 59 43 34 0 0 56 40 37 0 0 59 43 34 0 0 60 44 33 0 0 59 43 34 0 0 56 40 37 0 0 57 41 36 0 0 56 40 37 0 0 60 44 33 0 0 58 42 35 0 0 </p>
+        </triangles>
+        <triangles material="wvo_obj_seagull01_nos_.xno0" count="50">
+          <input semantic="VERTEX" source="#wvo_obj_seagull01_nos_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#wvo_obj_seagull01_nos_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#wvo_obj_seagull01_nos_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#wvo_obj_seagull01_nos_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#wvo_obj_seagull01_nos_.xno-geometry-color" offset="4" set="0" />
+          <p>74 5 9 0 0 82 10 15 0 0 69 2 4 0 0 81 9 14 0 0 69 2 4 0 0 82 10 15 0 0 80 8 13 0 0 69 2 4 0 0 81 9 14 0 0 69 2 4 0 0 80 8 13 0 0 67 1 2 0 0 89 20 26 0 0 67 1 2 0 0 80 8 13 0 0 67 1 2 0 0 89 20 26 0 0 73 4 8 0 0 108 28 4 0 0 82 10 15 0 0 100 25 9 0 0 82 10 15 0 0 108 28 4 0 0 81 9 14 0 0 81 9 14 0 0 108 28 4 0 0 80 8 13 0 0 110 29 2 0 0 80 8 13 0 0 108 28 4 0 0 80 8 13 0 0 110 29 2 0 0 89 20 26 0 0 105 26 8 0 0 89 20 26 0 0 110 29 2 0 0 72 4 7 0 0 85 21 27 0 0 66 1 1 0 0 90 12 19 0 0 66 1 1 0 0 85 21 27 0 0 66 1 1 0 0 90 12 19 0 0 68 2 3 0 0 79 13 20 0 0 68 2 3 0 0 90 12 19 0 0 87 11 18 0 0 68 2 3 0 0 79 13 20 0 0 68 2 3 0 0 87 11 18 0 0 75 5 10 0 0 109 29 1 0 0 85 21 27 0 0 104 26 7 0 0 85 21 27 0 0 109 29 1 0 0 90 12 19 0 0 107 28 3 0 0 90 12 19 0 0 109 29 1 0 0 90 12 19 0 0 107 28 3 0 0 79 13 20 0 0 79 13 20 0 0 107 28 3 0 0 87 11 18 0 0 101 25 10 0 0 87 11 18 0 0 107 28 3 0 0 88 20 25 0 0 103 26 6 0 0 111 30 0 0 0 84 21 25 0 0 111 30 0 0 0 103 26 6 0 0 106 27 5 0 0 111 30 0 0 0 84 21 25 0 0 111 30 0 0 0 106 27 5 0 0 88 20 25 0 0 88 20 25 0 0 106 27 5 0 0 91 22 28 0 0 84 21 25 0 0 91 22 28 0 0 106 27 5 0 0 70 3 5 0 0 91 22 28 0 0 84 21 25 0 0 91 22 28 0 0 70 3 5 0 0 88 20 25 0 0 65 0 0 0 0 88 20 25 0 0 70 3 5 0 0 88 20 25 0 0 65 0 0 0 0 71 4 6 0 0 71 4 6 0 0 65 0 0 0 0 84 21 25 0 0 70 3 5 0 0 84 21 25 0 0 65 0 0 0 0 99 24 12 0 0 94 19 24 0 0 95 17 23 0 0 77 6 12 0 0 95 17 23 0 0 94 19 24 0 0 95 17 23 0 0 77 6 12 0 0 92 16 22 0 0 97 15 21 0 0 92 16 22 0 0 77 6 12 0 0 99 24 12 0 0 92 16 22 0 0 97 15 21 0 0 92 16 22 0 0 99 24 12 0 0 95 17 23 0 0 83 10 16 0 0 93 18 24 0 0 98 23 12 0 0 93 18 24 0 0 83 10 16 0 0 78 7 12 0 0 76 5 11 0 0 78 7 12 0 0 83 10 16 0 0 78 7 12 0 0 76 5 11 0 0 96 14 21 0 0 86 11 17 0 0 96 14 21 0 0 76 5 11 0 0 102 25 11 0 0 96 14 21 0 0 86 11 17 0 0 96 14 21 0 0 102 25 11 0 0 98 23 12 0 0 83 10 16 0 0 98 23 12 0 0 102 25 11 0 0 </p>
+        </triangles>
+        <triangles material="wvo_obj_seagull01_nos_.xno0" count="7">
+          <input semantic="VERTEX" source="#wvo_obj_seagull01_nos_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#wvo_obj_seagull01_nos_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#wvo_obj_seagull01_nos_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#wvo_obj_seagull01_nos_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#wvo_obj_seagull01_nos_.xno-geometry-color" offset="4" set="0" />
+          <p>118 55 35 0 0 116 53 33 0 0 120 57 37 0 0 119 56 36 0 0 120 57 37 0 0 117 54 34 0 0 116 53 33 0 0 117 54 34 0 0 120 57 37 0 0 117 54 34 0 0 116 53 33 0 0 115 52 32 0 0 115 52 32 0 0 116 53 33 0 0 113 50 30 0 0 114 51 31 0 0 113 50 30 0 0 116 53 33 0 0 113 50 30 0 0 114 51 31 0 0 112 49 29 0 0 </p>
+        </triangles>
+        <triangles material="wvo_obj_seagull01_nos_.xno0" count="7">
+          <input semantic="VERTEX" source="#wvo_obj_seagull01_nos_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#wvo_obj_seagull01_nos_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#wvo_obj_seagull01_nos_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#wvo_obj_seagull01_nos_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#wvo_obj_seagull01_nos_.xno-geometry-color" offset="4" set="0" />
+          <p>129 66 29 0 0 127 64 31 0 0 128 65 30 0 0 125 62 33 0 0 128 65 30 0 0 127 64 31 0 0 128 65 30 0 0 125 62 33 0 0 126 63 32 0 0 126 63 32 0 0 125 62 33 0 0 124 61 34 0 0 121 58 37 0 0 124 61 34 0 0 125 62 33 0 0 124 61 34 0 0 121 58 37 0 0 122 59 36 0 0 121 58 37 0 0 125 62 33 0 0 123 60 35 0 0 </p>
+        </triangles>
+        <triangles material="wvo_obj_seagull01_nos_.xno0" count="50">
+          <input semantic="VERTEX" source="#wvo_obj_seagull01_nos_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#wvo_obj_seagull01_nos_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#wvo_obj_seagull01_nos_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#wvo_obj_seagull01_nos_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#wvo_obj_seagull01_nos_.xno-geometry-color" offset="4" set="0" />
+          <p>139 5 9 0 0 147 10 15 0 0 134 2 4 0 0 146 9 14 0 0 134 2 4 0 0 147 10 15 0 0 145 8 13 0 0 134 2 4 0 0 146 9 14 0 0 134 2 4 0 0 145 8 13 0 0 132 1 2 0 0 154 20 26 0 0 132 1 2 0 0 145 8 13 0 0 132 1 2 0 0 154 20 26 0 0 138 4 8 0 0 173 28 4 0 0 147 10 15 0 0 165 25 9 0 0 147 10 15 0 0 173 28 4 0 0 146 9 14 0 0 146 9 14 0 0 173 28 4 0 0 145 8 13 0 0 175 29 2 0 0 145 8 13 0 0 173 28 4 0 0 145 8 13 0 0 175 29 2 0 0 154 20 26 0 0 170 26 8 0 0 154 20 26 0 0 175 29 2 0 0 137 4 7 0 0 150 21 27 0 0 131 1 1 0 0 155 12 19 0 0 131 1 1 0 0 150 21 27 0 0 131 1 1 0 0 155 12 19 0 0 133 2 3 0 0 144 13 20 0 0 133 2 3 0 0 155 12 19 0 0 152 11 18 0 0 133 2 3 0 0 144 13 20 0 0 133 2 3 0 0 152 11 18 0 0 140 5 10 0 0 174 29 1 0 0 150 21 27 0 0 169 26 7 0 0 150 21 27 0 0 174 29 1 0 0 155 12 19 0 0 172 28 3 0 0 155 12 19 0 0 174 29 1 0 0 155 12 19 0 0 172 28 3 0 0 144 13 20 0 0 144 13 20 0 0 172 28 3 0 0 152 11 18 0 0 166 25 10 0 0 152 11 18 0 0 172 28 3 0 0 153 20 25 0 0 168 26 6 0 0 176 30 0 0 0 149 21 25 0 0 176 30 0 0 0 168 26 6 0 0 171 27 5 0 0 176 30 0 0 0 149 21 25 0 0 176 30 0 0 0 171 27 5 0 0 153 20 25 0 0 153 20 25 0 0 171 27 5 0 0 156 22 28 0 0 149 21 25 0 0 156 22 28 0 0 171 27 5 0 0 135 3 5 0 0 156 22 28 0 0 149 21 25 0 0 156 22 28 0 0 135 3 5 0 0 153 20 25 0 0 130 0 0 0 0 153 20 25 0 0 135 3 5 0 0 153 20 25 0 0 130 0 0 0 0 136 4 6 0 0 136 4 6 0 0 130 0 0 0 0 149 21 25 0 0 135 3 5 0 0 149 21 25 0 0 130 0 0 0 0 164 24 12 0 0 159 19 24 0 0 160 17 23 0 0 142 6 12 0 0 160 17 23 0 0 159 19 24 0 0 160 17 23 0 0 142 6 12 0 0 157 16 22 0 0 162 15 21 0 0 157 16 22 0 0 142 6 12 0 0 164 24 12 0 0 157 16 22 0 0 162 15 21 0 0 157 16 22 0 0 164 24 12 0 0 160 17 23 0 0 148 10 16 0 0 158 18 24 0 0 163 23 12 0 0 158 18 24 0 0 148 10 16 0 0 143 7 12 0 0 141 5 11 0 0 143 7 12 0 0 148 10 16 0 0 143 7 12 0 0 141 5 11 0 0 161 14 21 0 0 151 11 17 0 0 161 14 21 0 0 141 5 11 0 0 167 25 11 0 0 161 14 21 0 0 151 11 17 0 0 161 14 21 0 0 167 25 11 0 0 163 23 12 0 0 148 10 16 0 0 163 23 12 0 0 167 25 11 0 0 </p>
+        </triangles>
+        <triangles material="wvo_obj_seagull01_nos_.xno0" count="7">
+          <input semantic="VERTEX" source="#wvo_obj_seagull01_nos_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#wvo_obj_seagull01_nos_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#wvo_obj_seagull01_nos_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#wvo_obj_seagull01_nos_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#wvo_obj_seagull01_nos_.xno-geometry-color" offset="4" set="0" />
+          <p>183 73 35 0 0 181 71 33 0 0 185 75 37 0 0 184 74 36 0 0 185 75 37 0 0 182 72 34 0 0 181 71 33 0 0 182 72 34 0 0 185 75 37 0 0 182 72 34 0 0 181 71 33 0 0 180 70 32 0 0 180 70 32 0 0 181 71 33 0 0 178 68 30 0 0 179 69 31 0 0 178 68 30 0 0 181 71 33 0 0 178 68 30 0 0 179 69 31 0 0 177 67 29 0 0 </p>
+        </triangles>
+        <triangles material="wvo_obj_seagull01_nos_.xno0" count="7">
+          <input semantic="VERTEX" source="#wvo_obj_seagull01_nos_.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#wvo_obj_seagull01_nos_.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#wvo_obj_seagull01_nos_.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#wvo_obj_seagull01_nos_.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#wvo_obj_seagull01_nos_.xno-geometry-color" offset="4" set="0" />
+          <p>194 84 29 0 0 192 82 31 0 0 193 83 30 0 0 190 80 33 0 0 193 83 30 0 0 192 82 31 0 0 193 83 30 0 0 190 80 33 0 0 191 81 32 0 0 191 81 32 0 0 190 80 33 0 0 189 79 34 0 0 186 76 37 0 0 189 79 34 0 0 190 80 33 0 0 189 79 34 0 0 186 76 37 0 0 187 77 36 0 0 186 76 37 0 0 190 80 33 0 0 188 78 35 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="wvo_obj_seagull01_nos_.xno-controller">
+      <skin source="#wvo_obj_seagull01_nos_.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="wvo_obj_seagull01_nos_.xno-controller-Joints">
+          <Name_array id="wvo_obj_seagull01_nos_.xno-controller-Joints-array" count="10">wvo_obj_seagull01_nos_ sea_gull_body00 L_wing R_wing sea_gull_body01 L_wing01 R_wing01 sea_gull_body02 L_wing02 R_wing02 </Name_array>
+          <technique_common>
+            <accessor source="#wvo_obj_seagull01_nos_.xno-controller-Joints-array" count="10">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wvo_obj_seagull01_nos_.xno-controller-Matrices">
+          <float_array id="wvo_obj_seagull01_nos_.xno-controller-Matrices-array" count="160">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 -36.9243 0 0 0 1 -4.37114e-008 4.08792e-009 -1 33.244 0.34202 0.939693 -1.11088e-008 -4.86306 0.939693 -0.34202 -4.24734e-008 6.53917 0 0 0 1 -4.37114e-008 -1.87522e-008 -1 33.244 -0.34202 0.939693 -2.67113e-009 -4.86306 0.939693 0.34202 -4.74889e-008 -6.53917 0 0 0 1 1 0 0 -135.341 0 1 0 111.764 0 0 1 -169.673 0 0 0 1 -4.37114e-008 3.51759e-009 -1 165.992 -0.281733 0.959493 1.569e-008 137.574 0.959493 0.281733 -4.09498e-008 -95.9882 0 0 0 1 -4.37114e-008 -2.84309e-008 -1 165.992 0.34202 0.939693 -4.16665e-008 50.8064 0.939693 -0.34202 -3.13513e-008 -167.288 0 0 0 1 1 0 0 205.474 0 1 0 -84.6862 0 0 1 -107.189 0 0 0 1 -4.37114e-008 -1.3728e-008 -1 103.508 0.432762 0.901508 -3.12925e-008 8.3796 0.901508 -0.432762 -3.34652e-008 228.871 0 0 0 1 1.94535e-008 -3.54796e-008 -1 103.508 -0.48481 0.87462 -1.40168e-008 -177.464 0.87462 0.48481 -5.77473e-008 131.436 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#wvo_obj_seagull01_nos_.xno-controller-Matrices-array" count="10" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wvo_obj_seagull01_nos_.xno-controller-Weights">
+          <float_array id="wvo_obj_seagull01_nos_.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#wvo_obj_seagull01_nos_.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#wvo_obj_seagull01_nos_.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#wvo_obj_seagull01_nos_.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="195">
+          <input semantic="JOINT" offset="0" source="#wvo_obj_seagull01_nos_.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#wvo_obj_seagull01_nos_.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 3 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 5 0 6 0 6 0 6 0 6 0 6 0 6 0 6 0 6 0 6 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 8 0 8 0 8 0 8 0 8 0 8 0 8 0 8 0 8 0 9 0 9 0 9 0 9 0 9 0 9 0 9 0 9 0 9 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="wvo_obj_seagull01_nos_" sid="wvo_obj_seagull01_nos_" name="wvo_obj_seagull01_nos_" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <node id="sea_gull_body02" sid="sea_gull_body02" name="sea_gull_body02" type="JOINT">
+          <matrix>1 0 0 -205.474 0 1 0 84.6862 0 0 1 107.189 0 0 0 1 </matrix>
+          <node id="R_wing02" sid="R_wing02" name="R_wing02" type="JOINT">
+            <matrix>-3.72529e-008 -0.484785 0.874633 4.48157 0 0.874633 0.484785 6.8063 -1 0 -3.72529e-008 -3.68027 0 0 0 1 </matrix>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node id="L_wing02" sid="L_wing02" name="L_wing02" type="JOINT">
+            <matrix>-1.86265e-008 0.432748 0.901515 -4.48157 0 0.901515 -0.432748 6.8063 -1 -4.47035e-008 -7.45058e-009 -3.68027 0 0 0 1 </matrix>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="sea_gull_body01" sid="sea_gull_body01" name="sea_gull_body01" type="JOINT">
+          <matrix>1 0 0 135.341 0 1 0 -111.764 0 0 1 169.673 0 0 0 1 </matrix>
+          <node id="R_wing01" sid="R_wing01" name="R_wing01" type="JOINT">
+            <matrix>-9.49949e-008 0.34203 0.939689 4.48154 0 0.939689 -0.34203 6.8063 -1 -2.98023e-008 -9.12696e-008 -3.68024 0 0 0 1 </matrix>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node id="L_wing01" sid="L_wing01" name="L_wing01" type="JOINT">
+            <matrix>1.09896e-007 -0.281741 0.95949 -4.48154 1.49012e-008 0.95949 0.281741 6.8063 -1 -1.49012e-008 1.09896e-007 -3.68024 0 0 0 1 </matrix>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="sea_gull_body00" sid="sea_gull_body00" name="sea_gull_body00" type="JOINT">
+          <matrix>1 0 0 0 0 1 0 0 0 0 1 36.9243 0 0 0 1 </matrix>
+          <node id="R_wing" sid="R_wing" name="R_wing" type="JOINT">
+            <matrix>-9.49949e-008 -0.34203 0.939689 4.48155 0 0.939689 0.34203 6.80631 -1 2.98023e-008 -9.12696e-008 -3.68027 0 0 0 1 </matrix>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <node id="L_wing" sid="L_wing" name="L_wing" type="JOINT">
+            <matrix>-9.49949e-008 0.34203 0.939689 -4.48155 0 0.939689 -0.34203 6.80631 -1 -2.98023e-008 -9.12696e-008 -3.68026 0 0 0 1 </matrix>
+            <extra>
+              <technique profile="FCOLLADA">
+                <visibility>1.000000</visibility>
+              </technique>
+            </extra>
+          </node>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="wvo_obj_seagull01_nos_.xno" sid="wvo_obj_seagull01_nos_.xno" name="wvo_obj_seagull01_nos_.xno">
+        <instance_controller url="#wvo_obj_seagull01_nos_.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="wvo_obj_seagull01_nos_.xno0" target="#wvo_obj_seagull01_nos_.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

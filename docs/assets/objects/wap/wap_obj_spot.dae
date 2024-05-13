@@ -1,0 +1,141 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_geometries>
+    <geometry id="wap_obj_spot.xno-geometry" name="wap_obj_spot.xno-geometry">
+      <mesh>
+        <source id="wap_obj_spot.xno-geometry-position">
+          <float_array id="wap_obj_spot.xno-geometry-position-array" count="192">-458.333 -0.237033 5000 -458.333 -0.237033 5000 -420.895 -174.578 5000 -420.895 -174.578 5000 -420.895 174.103 5000 -420.895 174.103 5000 -324.09 -324.327 5000 -324.09 -324.327 5000 -324.09 323.853 5000 -324.09 323.853 5000 -185 -0.236304 -0.491158 -185 -0.236304 -0.491158 -174.341 420.658 5000 -174.341 420.658 5000 -174.341 -421.132 5000 -174.341 -421.132 5000 -169.889 70.134 -0.491208 -169.889 70.134 -0.491208 -169.889 -70.6066 -0.491214 -169.889 -70.6066 -0.491214 -130.815 130.578 -0.49114 -130.815 130.578 -0.49114 -130.815 -131.051 -0.491175 -130.815 -131.051 -0.491175 -70.3703 169.653 -0.491204 -70.3703 169.653 -0.491204 -70.3703 -170.125 -0.491218 -70.3703 -170.125 -0.491218 -2.98305e-005 458.095 5000 -2.98305e-005 458.095 5000 -8.08661e-006 184.764 -0.491132 -8.08661e-006 184.764 -0.491132 2.42598e-005 -185.236 -0.491184 2.42598e-005 -185.236 -0.491184 5.03069e-005 -458.569 5000 5.03069e-005 -458.569 5000 70.3703 169.653 -0.491204 70.3703 169.653 -0.491204 70.3703 -170.125 -0.491218 70.3703 -170.125 -0.491218 130.815 130.578 -0.491133 130.815 130.578 -0.491133 130.815 -131.051 -0.491176 130.815 -131.051 -0.491176 169.889 -70.6066 -0.491214 169.889 -70.6066 -0.491214 169.889 70.134 -0.491208 169.889 70.134 -0.491208 174.341 420.658 5000 174.341 420.658 5000 174.341 -421.132 5000 174.341 -421.132 5000 185 -0.236288 -0.491158 185 -0.236288 -0.491158 324.09 323.853 5000 324.09 323.853 5000 324.09 -324.327 5000 324.09 -324.327 5000 420.895 -174.577 5000 420.895 -174.577 5000 420.895 174.103 5000 420.895 174.103 5000 458.332 -0.237033 5000 458.332 -0.237033 5000 </float_array>
+          <technique_common>
+            <accessor source="#wap_obj_spot.xno-geometry-position-array" count="64" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wap_obj_spot.xno-geometry-normal">
+          <float_array id="wap_obj_spot.xno-geometry-normal-array" count="54">-0.998509 -1.01964e-007 -0.0545797 0 0 1 -0.922519 -0.38212 -0.0542522 -0.922519 0.38212 -0.0542521 -0.706053 -0.706053 -0.0545798 -0.706053 0.706053 -0.0545795 -4.4427e-009 1.08535e-006 -1 -0.38212 0.922519 -0.054252 -0.38212 -0.922519 -0.0542522 -2.55786e-008 0.998509 -0.0545795 2.12769e-007 -0.998509 -0.0545798 0.38212 0.922519 -0.054252 0.38212 -0.922519 -0.0542522 0.706053 0.706053 -0.0545795 0.706053 -0.706053 -0.0545797 0.922519 -0.38212 -0.0542522 0.922519 0.38212 -0.0542521 0.998509 -4.56078e-008 -0.0545796 </float_array>
+          <technique_common>
+            <accessor source="#wap_obj_spot.xno-geometry-normal-array" count="18" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wap_obj_spot.xno-geometry-uv">
+          <float_array id="wap_obj_spot.xno-geometry-uv-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#wap_obj_spot.xno-geometry-uv-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wap_obj_spot.xno-geometry-uv2">
+          <float_array id="wap_obj_spot.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#wap_obj_spot.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wap_obj_spot.xno-geometry-color">
+          <float_array id="wap_obj_spot.xno-geometry-color-array" count="4">1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#wap_obj_spot.xno-geometry-color-array" count="1" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="wap_obj_spot.xno-geometry-vertex">
+          <input semantic="POSITION" source="#wap_obj_spot.xno-geometry-position" />
+        </vertices>
+        <triangles material="wap_obj_spot.xno0" count="60">
+          <input semantic="VERTEX" source="#wap_obj_spot.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#wap_obj_spot.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#wap_obj_spot.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#wap_obj_spot.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#wap_obj_spot.xno-geometry-color" offset="4" set="0" />
+          <p>29 1 0 0 0 13 1 0 0 0 48 1 0 0 0 9 1 0 0 0 48 1 0 0 0 13 1 0 0 0 48 1 0 0 0 9 1 0 0 0 54 1 0 0 0 5 1 0 0 0 54 1 0 0 0 9 1 0 0 0 54 1 0 0 0 5 1 0 0 0 60 1 0 0 0 1 1 0 0 0 60 1 0 0 0 5 1 0 0 0 60 1 0 0 0 1 1 0 0 0 62 1 0 0 0 3 1 0 0 0 62 1 0 0 0 1 1 0 0 0 62 1 0 0 0 3 1 0 0 0 58 1 0 0 0 7 1 0 0 0 58 1 0 0 0 3 1 0 0 0 58 1 0 0 0 7 1 0 0 0 56 1 0 0 0 15 1 0 0 0 56 1 0 0 0 7 1 0 0 0 56 1 0 0 0 15 1 0 0 0 50 1 0 0 0 34 1 0 0 0 50 1 0 0 0 15 1 0 0 0 31 6 0 0 0 36 6 0 0 0 25 6 0 0 0 40 6 0 0 0 25 6 0 0 0 36 6 0 0 0 25 6 0 0 0 40 6 0 0 0 21 6 0 0 0 46 6 0 0 0 21 6 0 0 0 40 6 0 0 0 21 6 0 0 0 46 6 0 0 0 17 6 0 0 0 52 6 0 0 0 17 6 0 0 0 46 6 0 0 0 17 6 0 0 0 52 6 0 0 0 11 6 0 0 0 44 6 0 0 0 11 6 0 0 0 52 6 0 0 0 11 6 0 0 0 44 6 0 0 0 19 6 0 0 0 42 6 0 0 0 19 6 0 0 0 44 6 0 0 0 19 6 0 0 0 42 6 0 0 0 23 6 0 0 0 38 6 0 0 0 23 6 0 0 0 42 6 0 0 0 23 6 0 0 0 38 6 0 0 0 27 6 0 0 0 32 6 0 0 0 27 6 0 0 0 38 6 0 0 0 63 17 0 0 0 59 15 0 0 0 45 15 0 0 0 57 14 0 0 0 45 15 0 0 0 59 15 0 0 0 45 15 0 0 0 57 14 0 0 0 43 14 0 0 0 51 12 0 0 0 43 14 0 0 0 57 14 0 0 0 43 14 0 0 0 51 12 0 0 0 39 12 0 0 0 39 12 0 0 0 51 12 0 0 0 33 10 0 0 0 35 10 0 0 0 33 10 0 0 0 51 12 0 0 0 14 8 0 0 0 33 10 0 0 0 35 10 0 0 0 33 10 0 0 0 14 8 0 0 0 26 8 0 0 0 26 8 0 0 0 14 8 0 0 0 22 4 0 0 0 6 4 0 0 0 22 4 0 0 0 14 8 0 0 0 2 2 0 0 0 22 4 0 0 0 6 4 0 0 0 22 4 0 0 0 2 2 0 0 0 18 2 0 0 0 18 2 0 0 0 2 2 0 0 0 10 0 0 0 0 0 0 0 0 0 10 0 0 0 0 2 2 0 0 0 4 3 0 0 0 10 0 0 0 0 0 0 0 0 0 10 0 0 0 0 4 3 0 0 0 16 3 0 0 0 16 3 0 0 0 4 3 0 0 0 20 5 0 0 0 8 5 0 0 0 20 5 0 0 0 4 3 0 0 0 12 7 0 0 0 20 5 0 0 0 8 5 0 0 0 20 5 0 0 0 12 7 0 0 0 24 7 0 0 0 24 7 0 0 0 12 7 0 0 0 30 9 0 0 0 28 9 0 0 0 30 9 0 0 0 12 7 0 0 0 49 11 0 0 0 30 9 0 0 0 28 9 0 0 0 30 9 0 0 0 49 11 0 0 0 37 11 0 0 0 37 11 0 0 0 49 11 0 0 0 41 13 0 0 0 55 13 0 0 0 41 13 0 0 0 49 11 0 0 0 41 13 0 0 0 55 13 0 0 0 47 16 0 0 0 61 16 0 0 0 47 16 0 0 0 55 13 0 0 0 63 17 0 0 0 47 16 0 0 0 61 16 0 0 0 47 16 0 0 0 63 17 0 0 0 53 17 0 0 0 45 15 0 0 0 53 17 0 0 0 63 17 0 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="wap_obj_spot.xno-controller">
+      <skin source="#wap_obj_spot.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="wap_obj_spot.xno-controller-Joints">
+          <Name_array id="wap_obj_spot.xno-controller-Joints-array" count="1">wap_obj_spot </Name_array>
+          <technique_common>
+            <accessor source="#wap_obj_spot.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wap_obj_spot.xno-controller-Matrices">
+          <float_array id="wap_obj_spot.xno-controller-Matrices-array" count="16">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#wap_obj_spot.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wap_obj_spot.xno-controller-Weights">
+          <float_array id="wap_obj_spot.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#wap_obj_spot.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#wap_obj_spot.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#wap_obj_spot.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="64">
+          <input semantic="JOINT" offset="0" source="#wap_obj_spot.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#wap_obj_spot.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="wap_obj_spot" sid="wap_obj_spot" name="wap_obj_spot" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="wap_obj_spot.xno" sid="wap_obj_spot.xno" name="wap_obj_spot.xno">
+        <instance_controller url="#wap_obj_spot.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="wap_obj_spot.xno0" target="#wap_obj_spot.xno0ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

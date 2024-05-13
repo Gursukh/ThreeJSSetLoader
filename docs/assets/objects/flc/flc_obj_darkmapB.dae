@@ -1,0 +1,235 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="flc_rock01_dfsp_t.dds-image" name="flc_rock01_dfsp_t.dds-image">
+      <init_from>./textures/flc_rock01_dfsp_t.dds</init_from>
+    </image>
+    <image id="flc_rock02_dfsp_t.dds-image" name="flc_rock02_dfsp_t.dds-image">
+      <init_from>./textures/flc_rock02_dfsp_t.dds</init_from>
+    </image>
+    <image id="flc_mantlemask02_dflu_t.dds-image" name="flc_mantlemask02_dflu_t.dds-image">
+      <init_from>./textures/flc_mantlemask02_dflu_t.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="flc_obj_darkmapB.xno0ID" name="flc_obj_darkmapB.xno0">
+      <instance_effect url="#flc_obj_darkmapB.xno0-effect" />
+    </material>
+    <material id="flc_obj_darkmapB.xno1ID" name="flc_obj_darkmapB.xno1">
+      <instance_effect url="#flc_obj_darkmapB.xno1-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="flc_obj_darkmapB.xno0-effect" name="flc_obj_darkmapB.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="flc_rock02_dfsp_t.dds-image-surface">
+          <surface type="2D">
+            <init_from>flc_rock02_dfsp_t.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="flc_rock02_dfsp_t.dds-image-sampler">
+          <sampler2D>
+            <source>flc_rock02_dfsp_t.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="flc_mantlemask02_dflu_t.dds-image-surface">
+          <surface type="2D">
+            <init_from>flc_mantlemask02_dflu_t.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="flc_mantlemask02_dflu_t.dds-image-sampler">
+          <sampler2D>
+            <source>flc_mantlemask02_dflu_t.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="flc_mantlemask02_dflu_t.dds-image-surface">
+          <surface type="2D">
+            <init_from>flc_mantlemask02_dflu_t.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="flc_mantlemask02_dflu_t.dds-image-sampler">
+          <sampler2D>
+            <source>flc_mantlemask02_dflu_t.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="flc_rock02_dfsp_t.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="flc_obj_darkmapB.xno1-effect" name="flc_obj_darkmapB.xno1-effect">
+      <profile_COMMON>
+        <newparam sid="flc_rock01_dfsp_t.dds-image-surface">
+          <surface type="2D">
+            <init_from>flc_rock01_dfsp_t.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="flc_rock01_dfsp_t.dds-image-sampler">
+          <sampler2D>
+            <source>flc_rock01_dfsp_t.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="flc_rock01_dfsp_t.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="flc_obj_darkmapB.xno-geometry" name="flc_obj_darkmapB.xno-geometry">
+      <mesh>
+        <source id="flc_obj_darkmapB.xno-geometry-position">
+          <float_array id="flc_obj_darkmapB.xno-geometry-position-array" count="255">-391.375 0 75.9689 -391.375 0 75.9689 -386.377 0 -64.8034 -356.966 -58.5577 77.5846 -356.966 -58.5577 77.5846 -354.116 0 173.212 -332.424 -84.3468 -127.436 -321.554 0 -231.11 -296.028 0 -266.435 -284.744 -84.6492 -234.443 -279.622 -96.0549 65.8892 -279.622 -96.0549 65.8892 -271.472 0 303.325 -219.832 -50.2295 293.592 -204.244 0 -331.406 -186.833 -158.814 40.2176 -186.833 -158.814 40.2176 -184.656 -134.217 -101.117 -177.624 -65.0593 -328.445 -160.703 -122.117 148.27 -141.329 0 -364.436 -137.79 -101.462 274.667 -105.293 -54.1063 355.542 -104.608 0 382.393 -89.0061 -197.21 26.9091 -89.0061 -197.21 26.9091 -89.0061 -197.21 26.9091 -74.7972 -162.26 -79.8418 -74.7972 -162.26 -79.8418 -74.7972 -162.26 -79.8418 -72.9927 -102.488 -259.935 -72.0472 -191.695 57.3221 -72.0472 -191.695 57.3221 -59.1467 -190.761 37.7981 -44.3624 0 -387.943 -38.0501 -145.775 183.855 -24.4862 0 382.164 33.5366 -157.448 92.8097 33.5366 -157.448 92.8097 40.8909 0 393.173 49.3619 -85.9543 -305.484 51.3071 -109.013 288.873 58.2297 -116.721 -190.742 60.389 0 -356.344 88.7394 -134.123 -20.8367 113.121 0 358.595 119.929 -139.469 192.6 157.422 0 -343.009 176.783 0 346.328 208.956 -87.9731 236.83 221.051 -118.406 -169.27 267.103 0 -284.601 268.93 -69.2762 -219.559 268.93 -69.2762 -219.559 268.93 -69.2762 -219.559 286.603 -64.8245 68.6506 298.498 0 240.482 330.769 0 -187.102 335.892 -59.8906 -40.3926 349.602 0 79.6455 353.432 0 138.045 371.356 0 -46.1217 -391.375 0 75.9689 -386.377 0 -64.8034 -354.116 0 173.212 -321.554 0 -231.11 -296.028 0 -266.435 -271.472 0 303.325 -204.244 0 -331.406 -141.329 0 -364.436 -104.608 0 382.393 -44.3624 0 -387.943 -24.4862 0 382.164 6.53863 0 -10.0204 40.8909 0 393.173 60.389 0 -356.344 113.121 0 358.595 157.422 0 -343.009 176.783 0 346.328 267.103 0 -284.601 298.498 0 240.482 330.769 0 -187.102 349.602 0 79.6455 353.432 0 138.045 371.356 0 -46.1217 </float_array>
+          <technique_common>
+            <accessor source="#flc_obj_darkmapB.xno-geometry-position-array" count="85" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flc_obj_darkmapB.xno-geometry-normal">
+          <float_array id="flc_obj_darkmapB.xno-geometry-normal-array" count="153">-0.85514 -0.502199 0.128575 -0.87463 -0.469359 -0.121345 -0.679644 -0.71277 0.173327 -0.668066 -0.62907 0.39744 -0.675727 -0.715787 -0.176186 -0.830512 -0.328849 -0.449564 -0.667895 -0.325121 -0.669487 -0.536669 -0.711261 -0.453975 -0.427426 -0.892331 0.145091 -0.550737 -0.648818 0.525094 -0.465543 -0.712509 0.524977 -0.516473 -0.248607 -0.819421 -0.447213 -0.888311 0.104426 -0.2503 -0.946829 -0.202151 -0.297134 -0.649288 -0.700098 -0.307264 -0.900928 0.30646 -0.292613 -0.332696 -0.896488 -0.229537 -0.898101 0.375136 -0.18239 -0.634637 0.75098 -0.184047 -0.435064 0.881389 -0.0830535 -0.996243 -0.0245216 0.00584875 -0.937018 -0.349233 -0.03886 -0.948828 -0.313393 -0.0264687 -0.964788 0.261692 0.267299 -0.962022 -0.0553588 0.034918 -0.605602 -0.795002 -0.105244 -0.910469 0.399962 -0.129429 -0.275385 0.952581 0.231225 -0.96881 0.0891233 0.158218 -0.624419 0.764897 0.121094 -0.804126 -0.581995 0.115213 -0.834835 0.53831 0.0410384 -0.975352 -0.216807 0.182344 -0.517925 -0.835765 0.248772 -0.966593 -0.0617306 0.27613 -0.668807 0.690253 0.220455 -0.955407 0.196464 0.27157 -0.634941 -0.723257 0.254516 -0.716009 0.65004 0.466282 -0.778226 0.420648 0.30674 -0.930408 -0.200629 0.504992 -0.583676 -0.63585 0.563968 -0.684006 -0.462683 0.53301 -0.83969 0.104025 0.617065 -0.646686 0.448361 0.783235 -0.527403 -0.329225 0.701571 -0.709261 0.0688948 0.713952 -0.699422 0.0328947 0.657026 -0.740307 0.142345 0.830365 -0.557221 0.000101387 0 1 0 </float_array>
+          <technique_common>
+            <accessor source="#flc_obj_darkmapB.xno-geometry-normal-array" count="51" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flc_obj_darkmapB.xno-geometry-uv">
+          <float_array id="flc_obj_darkmapB.xno-geometry-uv-array" count="146">-0.233522 0.099026 -0.394356 -0.0130936 -0.195198 0.0179849 -0.0843668 0.105203 -0.384099 -0.144642 -0.542617 -0.180344 -0.545455 -0.231934 -0.46229 -0.247173 -0.163582 -0.069557 0.113528 0.0968434 0.11815 -0.00512755 -0.563427 -0.381234 -0.132631 -0.196772 -0.269529 -0.269164 -0.486922 -0.407829 0.000503115 -0.167438 -0.569118 -0.470981 0.126484 -0.119064 0.236084 -0.0999955 0.30205 -0.0531631 -0.0874168 -0.298478 -0.175962 -0.363075 -0.37017 -0.472775 -0.0610569 -0.298523 -0.0675149 -0.327787 -0.536613 -0.594287 0.0762592 -0.267686 0.361089 -0.141824 0.0175793 -0.382583 0.415774 -0.206349 -0.344536 -0.623277 0.231422 -0.289973 -0.223421 -0.568185 -0.437611 -0.709647 -0.0452832 -0.503169 0.419895 -0.31183 0.135736 -0.411866 -0.355715 -0.808031 0.431647 -0.396867 0.259408 -0.470591 -0.11979 -0.706895 -0.224326 -0.882892 -0.145383 -0.795271 0.156696 -0.662367 0.387683 -0.598852 -0.0814435 -0.905391 0.0732314 -0.773225 0.250141 -0.757833 0.315251 -0.722892 0.110841 -0.870283 0.0519651 0.571771 0.0562208 0.691932 0.0837427 0.4888 0.111551 0.833867 0.135398 0.864595 0.154265 0.377802 0.211588 0.917034 0.27278 0.948086 0.296652 0.310314 0.347609 0.967944 0.365031 0.310574 0.391664 0.645171 0.420969 0.301237 0.437273 0.940788 0.48299 0.332543 0.520305 0.929371 0.53679 0.34107 0.613029 0.877162 0.640704 0.431413 0.66802 0.796124 0.684245 0.568589 0.687521 0.518683 0.702882 0.676064 </float_array>
+          <technique_common>
+            <accessor source="#flc_obj_darkmapB.xno-geometry-uv-array" count="73" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flc_obj_darkmapB.xno-geometry-uv2">
+          <float_array id="flc_obj_darkmapB.xno-geometry-uv2-array" count="120">-1.35637 0.896291 4.07642 0.750821 3.46707 0.782895 -1.31522 0.75756 4.07367 0.468795 -1.11907 0.920587 3.18057 0.384731 3.0416 0.813422 2.95323 0.828751 3.00329 0.624636 -1.2584 0.561204 3.98099 0.113926 -0.777509 0.91198 -0.719408 0.72982 2.69778 0.845048 -1.25848 -0.0972445 3.71521 -0.35953 2.76884 -0.154006 2.64672 0.696795 -0.953179 0.284101 2.53483 0.845416 -0.663684 0.524328 -0.303022 0.772588 -0.295563 0.95025 -0.632491 -0.318638 0.405218 -0.797617 3.67905 -0.76145 1.00334 -0.990355 2.02346 -0.442098 2.98507 -0.83085 2.33062 0.421327 -0.465686 -0.253814 0.307904 -0.623106 0.438697 -0.617153 2.31262 0.811044 -0.133885 0.0743573 -0.0514598 0.931386 0.443384 0.0221646 0.153011 0.937343 1.88576 0.570849 0.15018 0.475124 1.87667 0.151172 2.07501 0.829485 1.13658 0.222243 0.315208 0.945844 0.473882 0.422782 1.86767 0.865857 0.437697 0.974691 0.616061 0.754051 1.39683 0.60055 1.60684 0.948351 1.52549 0.774464 0.965139 0.774962 0.765997 0.948689 1.42322 0.867509 1.17656 0.837154 0.970446 0.933928 0.868639 0.951586 1.19197 0.947152 0 1 </float_array>
+          <technique_common>
+            <accessor source="#flc_obj_darkmapB.xno-geometry-uv2-array" count="60" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flc_obj_darkmapB.xno-geometry-color">
+          <float_array id="flc_obj_darkmapB.xno-geometry-color-array" count="200">0.0156863 0.0117647 0.00784314 1 0.054902 0.0470588 0.027451 1 0.0156863 0.0117647 0.00392157 1 0.0235294 0.0196078 0.0117647 1 0.192157 0.133333 0.054902 1 0.109804 0.0823529 0.0392157 1 0.121569 0.0941176 0.0588235 1 0.215686 0.152941 0.0705882 1 0.133333 0.0901961 0.0392157 1 0.0392157 0.0313726 0.0235294 1 0.337255 0.235294 0.105882 1 0.0352941 0.0313726 0.0196078 1 0.0470588 0.027451 0.0156863 1 0.552941 0.388235 0.160784 1 0.192157 0.141176 0.0745098 1 0.372549 0.262745 0.113725 1 0.054902 0.0431373 0.027451 1 0.215686 0.113725 0.0745098 1 0.258824 0.180392 0.0823529 1 0.172549 0.121569 0.0509804 1 0.0862745 0.0588235 0.0235294 1 0.0745098 0.0509804 0.0196078 1 0.192157 0.141176 0.0784314 1 0.137255 0.0941176 0.0392157 1 0.439216 0.309804 0.129412 1 0.109804 0.0862745 0.054902 1 0.121569 0.0823529 0.0352941 1 0.0901961 0.0666667 0.0313726 1 0.239216 0.164706 0.0745098 1 0.247059 0.164706 0.0745098 1 0.0470588 0.0313726 0.0117647 1 0.286275 0.203922 0.101961 1 0.2 0.145098 0.0784314 1 0.458824 0.321569 0.137255 1 0.0745098 0.0509804 0.0235294 1 0.156863 0.117647 0.0666667 1 0.564706 0.396078 0.164706 1 0.0862745 0.0705882 0.0470588 1 0.0431373 0.0196078 0.00392157 1 0.372549 0.258824 0.121569 1 0.427451 0.301961 0.129412 1 0.0941176 0.0745098 0.0509804 1 0.0862745 0.0627451 0.0313726 1 0.0901961 0.0666667 0.0352941 1 0.203922 0.14902 0.0823529 1 0.0980392 0.0627451 0.0235294 1 0.156863 0.117647 0.0627451 1 0.0392157 0.0156863 0.00784314 1 0.188235 0.0901961 0.0666667 1 1 1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#flc_obj_darkmapB.xno-geometry-color-array" count="50" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="flc_obj_darkmapB.xno-geometry-vertex">
+          <input semantic="POSITION" source="#flc_obj_darkmapB.xno-geometry-position" />
+        </vertices>
+        <triangles material="flc_obj_darkmapB.xno0" count="76">
+          <input semantic="VERTEX" source="#flc_obj_darkmapB.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#flc_obj_darkmapB.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#flc_obj_darkmapB.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#flc_obj_darkmapB.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#flc_obj_darkmapB.xno-geometry-color" offset="4" set="0" />
+          <p>32 23 23 32 23 25 20 20 25 20 33 24 24 33 24 27 21 21 27 21 33 24 24 33 24 25 20 20 25 20 27 21 21 27 21 44 34 34 43 35 33 24 24 33 24 37 28 28 37 28 33 24 24 33 24 44 34 34 43 35 33 24 24 33 24 37 28 28 37 28 32 23 23 32 23 35 26 26 35 26 32 23 23 32 23 37 28 28 37 28 51 41 41 50 41 57 45 45 54 16 53 42 42 51 27 51 41 41 50 41 52 42 42 51 42 47 37 37 46 37 40 30 30 39 31 47 37 37 46 37 52 42 42 51 42 47 37 37 46 37 40 30 30 39 31 43 33 33 42 34 43 33 33 42 34 40 30 30 39 31 34 25 25 34 25 18 14 14 18 14 34 25 25 34 25 40 30 30 39 31 34 25 25 34 25 18 14 14 18 14 20 16 16 20 16 20 16 16 20 16 18 14 14 18 14 14 11 11 14 11 14 11 11 14 11 18 14 14 18 14 8 6 6 8 6 9 7 7 9 7 8 6 6 8 6 18 14 14 18 14 8 6 6 8 6 9 7 7 9 7 7 5 5 7 5 6 4 4 6 4 7 5 5 7 5 9 7 7 9 7 7 5 5 7 5 6 4 4 6 4 2 1 1 2 1 2 1 1 2 1 6 4 4 6 4 1 0 0 1 0 1 0 0 1 0 6 4 4 6 4 4 2 2 4 2 4 2 2 4 2 6 4 4 6 4 11 8 8 11 8 17 13 13 17 13 11 8 8 11 8 6 4 4 6 4 11 8 8 11 8 17 13 13 17 13 16 12 12 16 12 16 12 12 16 12 17 13 13 17 13 26 20 20 26 20 29 21 21 29 21 26 20 20 26 20 17 13 13 17 13 50 40 40 49 40 44 34 34 43 35 42 32 32 41 33 28 21 21 28 21 42 32 32 41 33 44 34 34 43 35 42 32 32 41 33 28 21 21 28 21 17 13 13 17 13 49 39 39 48 39 46 36 36 45 36 55 43 43 52 44 46 36 36 45 36 49 39 39 48 39 41 31 31 40 32 19 15 15 19 15 41 31 31 40 32 21 17 17 21 17 22 18 18 22 18 21 17 17 21 17 41 31 31 40 32 13 10 10 13 10 21 17 17 21 17 22 18 18 22 18 3 2 2 3 2 21 17 17 21 17 13 10 10 13 10 10 8 8 10 8 21 17 17 21 17 3 2 2 3 2 21 17 17 21 17 10 8 8 10 8 19 15 15 19 15 15 12 12 15 12 19 15 15 19 15 10 8 8 10 8 24 20 20 24 20 19 15 15 19 15 15 12 12 15 12 31 23 23 31 23 19 15 15 19 15 24 20 20 24 20 35 26 26 35 26 19 15 15 19 15 31 23 23 31 23 19 15 15 19 15 35 26 26 35 26 41 31 31 40 32 38 28 28 37 29 41 31 31 40 32 35 26 26 35 26 41 31 31 40 32 38 28 28 37 29 46 36 36 45 36 44 34 34 43 35 46 36 36 45 36 38 28 28 37 29 46 36 36 45 36 44 34 34 43 35 55 43 43 52 44 50 40 40 49 40 55 43 43 52 44 44 34 34 43 35 55 43 43 52 44 50 40 40 49 40 58 46 46 55 46 54 42 42 51 43 58 46 46 55 46 50 40 40 49 40 57 45 45 54 16 58 46 46 55 46 54 42 42 51 43 61 49 49 58 37 58 46 46 55 46 57 45 45 54 16 58 46 46 55 46 61 49 49 58 37 55 43 43 52 44 59 47 47 56 47 55 43 43 52 44 61 49 49 58 37 60 48 48 57 48 55 43 43 52 44 59 47 47 56 47 55 43 43 52 44 60 48 48 57 48 49 39 39 48 39 56 44 44 53 45 49 39 39 48 39 60 48 48 57 48 48 38 38 47 38 49 39 39 48 39 56 44 44 53 45 45 35 35 44 2 49 39 39 48 39 48 38 38 47 38 49 39 39 48 39 45 35 35 44 2 41 31 31 40 32 39 29 29 38 30 41 31 31 40 32 45 35 35 44 2 41 31 31 40 32 39 29 29 38 30 22 18 18 22 18 36 27 27 36 27 22 18 18 22 18 39 29 29 38 30 23 19 19 23 19 22 18 18 22 18 36 27 27 36 27 12 9 9 12 9 22 18 18 22 18 23 19 19 23 19 22 18 18 22 18 12 9 9 12 9 13 10 10 13 10 5 3 3 5 3 13 10 10 13 10 12 9 9 12 9 13 10 10 13 10 5 3 3 5 3 3 2 2 3 2 0 0 0 0 0 3 2 2 3 2 5 3 3 5 3 53 42 42 51 27 50 40 40 49 40 40 30 30 39 31 42 32 32 41 33 40 30 30 39 31 50 40 40 49 40 40 30 30 39 31 42 32 32 41 33 30 22 22 30 22 17 13 13 17 13 30 22 22 30 22 42 32 32 41 33 30 22 22 30 22 17 13 13 17 13 9 7 7 9 7 6 4 4 6 4 9 7 7 9 7 17 13 13 17 13 18 14 14 18 14 30 22 22 30 22 9 7 7 9 7 30 22 22 30 22 18 14 14 18 14 40 30 30 39 31 </p>
+        </triangles>
+        <triangles material="flc_obj_darkmapB.xno1" count="22">
+          <input semantic="VERTEX" source="#flc_obj_darkmapB.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#flc_obj_darkmapB.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#flc_obj_darkmapB.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#flc_obj_darkmapB.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#flc_obj_darkmapB.xno-geometry-color" offset="4" set="0" />
+          <p>71 50 59 59 49 69 50 57 59 49 73 50 61 59 49 68 50 56 59 49 73 50 61 59 49 69 50 57 59 49 73 50 61 59 49 68 50 56 59 49 66 50 54 59 49 66 50 54 59 49 65 50 53 59 49 73 50 61 59 49 63 50 51 59 49 73 50 61 59 49 65 50 53 59 49 73 50 61 59 49 63 50 51 59 49 62 50 50 59 49 62 50 50 59 49 64 50 52 59 49 73 50 61 59 49 67 50 55 59 49 73 50 61 59 49 64 50 52 59 49 70 50 58 59 49 73 50 61 59 49 67 50 55 59 49 73 50 61 59 49 70 50 58 59 49 72 50 60 59 49 72 50 60 59 49 74 50 62 59 49 73 50 61 59 49 76 50 64 59 49 73 50 61 59 49 74 50 62 59 49 73 50 61 59 49 76 50 64 59 49 78 50 66 59 49 78 50 66 59 49 80 50 68 59 49 73 50 61 59 49 83 50 71 59 49 73 50 61 59 49 80 50 68 59 49 73 50 61 59 49 83 50 71 59 49 82 50 70 59 49 82 50 70 59 49 84 50 72 59 49 73 50 61 59 49 81 50 69 59 49 73 50 61 59 49 84 50 72 59 49 73 50 61 59 49 81 50 69 59 49 79 50 67 59 49 79 50 67 59 49 77 50 65 59 49 73 50 61 59 49 75 50 63 59 49 73 50 61 59 49 77 50 65 59 49 73 50 61 59 49 75 50 63 59 49 71 50 59 59 49 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="flc_obj_darkmapB.xno-controller">
+      <skin source="#flc_obj_darkmapB.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="flc_obj_darkmapB.xno-controller-Joints">
+          <Name_array id="flc_obj_darkmapB.xno-controller-Joints-array" count="1">flc_obj_darkmapB </Name_array>
+          <technique_common>
+            <accessor source="#flc_obj_darkmapB.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flc_obj_darkmapB.xno-controller-Matrices">
+          <float_array id="flc_obj_darkmapB.xno-controller-Matrices-array" count="16">1 0 0 0.610736 0 1 0 0 0 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#flc_obj_darkmapB.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="flc_obj_darkmapB.xno-controller-Weights">
+          <float_array id="flc_obj_darkmapB.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#flc_obj_darkmapB.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#flc_obj_darkmapB.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#flc_obj_darkmapB.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="85">
+          <input semantic="JOINT" offset="0" source="#flc_obj_darkmapB.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#flc_obj_darkmapB.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="flc_obj_darkmapB" sid="flc_obj_darkmapB" name="flc_obj_darkmapB" type="JOINT">
+        <matrix>1 0 0 -0.610736 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="flc_obj_darkmapB.xno" sid="flc_obj_darkmapB.xno" name="flc_obj_darkmapB.xno">
+        <instance_controller url="#flc_obj_darkmapB.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="flc_obj_darkmapB.xno0" target="#flc_obj_darkmapB.xno0ID" />
+              <instance_material symbol="flc_obj_darkmapB.xno1" target="#flc_obj_darkmapB.xno1ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

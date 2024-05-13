@@ -1,0 +1,249 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="aqa_float01_dfsp_r.dds-image" name="aqa_float01_dfsp_r.dds-image">
+      <init_from>./textures/aqa_float01_dfsp_r.dds</init_from>
+    </image>
+    <image id="aqa_float02_dflu_r.dds-image" name="aqa_float02_dflu_r.dds-image">
+      <init_from>./textures/aqa_float02_dflu_r.dds</init_from>
+    </image>
+    <image id="aqa_float04_dfsp_r.dds-image" name="aqa_float04_dfsp_r.dds-image">
+      <init_from>./textures/aqa_float04_dfsp_r.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="aqa_obj_floatpieceB.xno0ID" name="aqa_obj_floatpieceB.xno0">
+      <instance_effect url="#aqa_obj_floatpieceB.xno0-effect" />
+    </material>
+    <material id="aqa_obj_floatpieceB.xno1ID" name="aqa_obj_floatpieceB.xno1">
+      <instance_effect url="#aqa_obj_floatpieceB.xno1-effect" />
+    </material>
+    <material id="aqa_obj_floatpieceB.xno2ID" name="aqa_obj_floatpieceB.xno2">
+      <instance_effect url="#aqa_obj_floatpieceB.xno2-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="aqa_obj_floatpieceB.xno0-effect" name="aqa_obj_floatpieceB.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="aqa_float01_dfsp_r.dds-image-surface">
+          <surface type="2D">
+            <init_from>aqa_float01_dfsp_r.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="aqa_float01_dfsp_r.dds-image-sampler">
+          <sampler2D>
+            <source>aqa_float01_dfsp_r.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="aqa_float01_dfsp_r.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="aqa_obj_floatpieceB.xno1-effect" name="aqa_obj_floatpieceB.xno1-effect">
+      <profile_COMMON>
+        <newparam sid="aqa_float04_dfsp_r.dds-image-surface">
+          <surface type="2D">
+            <init_from>aqa_float04_dfsp_r.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="aqa_float04_dfsp_r.dds-image-sampler">
+          <sampler2D>
+            <source>aqa_float04_dfsp_r.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="aqa_float04_dfsp_r.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="aqa_obj_floatpieceB.xno2-effect" name="aqa_obj_floatpieceB.xno2-effect">
+      <profile_COMMON>
+        <newparam sid="aqa_float02_dflu_r.dds-image-surface">
+          <surface type="2D">
+            <init_from>aqa_float02_dflu_r.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="aqa_float02_dflu_r.dds-image-sampler">
+          <sampler2D>
+            <source>aqa_float02_dflu_r.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="aqa_float02_dflu_r.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="aqa_obj_floatpieceB.xno-geometry" name="aqa_obj_floatpieceB.xno-geometry">
+      <mesh>
+        <source id="aqa_obj_floatpieceB.xno-geometry-position">
+          <float_array id="aqa_obj_floatpieceB.xno-geometry-position-array" count="489">-384.989 -372.325 -194.321 -384.989 -372.325 -194.321 -384.989 -372.325 -194.321 -376.391 -291.812 -72.8302 -376.391 -291.812 -72.8302 -367.513 -208.679 152.551 -367.513 -208.679 152.551 -362.787 -164.423 235.072 -362.787 -164.423 235.072 -362.787 -164.423 235.072 -321.584 221.409 211.283 -321.584 221.409 211.283 -321.584 221.409 211.283 -321.584 221.409 211.283 -321.584 221.409 -157.714 -321.584 221.409 -157.714 -321.584 221.409 -157.714 -321.584 221.409 -157.714 -276.069 -438.127 -265.32 -276.069 -438.127 -265.32 -210.314 360.757 147.042 -210.314 360.757 147.042 -210.314 360.757 147.042 -210.314 360.757 -93.4722 -210.314 360.757 -93.4722 -210.314 360.757 -93.4722 -150.114 360.757 -58.7156 -150.114 360.757 -58.7156 -150.114 360.757 -58.7156 -150.114 360.757 112.285 -150.114 360.757 112.285 -150.114 360.757 112.285 -131.87 -129.568 364.094 -131.87 -129.568 364.094 -131.87 -129.568 364.094 -131.87 -464.589 -351.836 -131.87 -464.589 -351.836 -131.87 -198.868 147.444 -131.87 -322.424 -56.8941 -131.87 -456.289 -255.865 -93.0061 469.801 -25.7442 -93.0061 469.801 -25.7442 -93.0061 469.801 -25.7442 -93.0061 469.801 79.3135 -93.0061 469.801 79.3135 -93.0061 469.801 79.3135 -69.9917 469.801 -12.4568 -69.9917 469.801 -12.4568 -69.9917 469.801 -12.4568 -69.9916 469.801 66.0262 -69.9916 469.801 66.0262 -69.9916 469.801 66.0262 -57.4669 452.364 -5.22565 -57.4669 452.364 -5.22565 -57.4669 452.364 -5.22565 -57.4669 452.364 58.795 -57.4669 452.364 58.795 -57.4669 452.364 58.795 -2.02344 -469.801 -427.446 -2.02344 -469.801 -427.446 -2.02344 -469.801 -427.446 -2.02343 221.409 -342.213 -2.02343 221.409 -342.213 -2.02343 221.409 -342.213 -2.02343 221.409 -342.213 -2.02341 360.757 -144.216 -2.02341 360.757 -144.216 -2.02341 360.757 -144.216 -2.02341 469.801 -78.2731 -2.02341 469.801 -78.2731 -2.02341 469.801 -78.2731 -2.02341 469.801 -51.6983 -2.02341 469.801 -51.6983 -2.02341 469.801 -51.6983 -2.02341 452.364 -37.236 -2.02341 452.364 -37.236 -2.02341 452.364 -37.236 -2.02339 360.757 -213.729 -2.02339 360.757 -213.729 -2.02339 360.757 -213.729 -2.02338 452.364 90.8053 -2.02338 452.364 90.8053 -2.02338 452.364 90.8053 -2.02338 469.801 105.268 -2.02338 469.801 105.268 -2.02338 469.801 105.268 -2.02338 469.801 131.842 -2.02338 469.801 131.842 -2.02338 469.801 131.842 -2.02336 -35.3742 427.446 -2.02336 -35.3742 427.446 -2.02336 -35.3742 427.446 -2.02336 360.757 197.785 -2.02336 360.757 197.785 -2.02336 360.757 197.785 -2.02336 360.757 267.298 -2.02336 360.757 267.298 -2.02336 360.757 267.298 -2.02336 221.409 395.782 -2.02336 221.409 395.782 -2.02336 221.409 395.782 -2.02336 221.409 395.782 53.4201 452.364 -5.22565 53.4201 452.364 -5.22565 53.4201 452.364 -5.22565 53.4201 452.364 58.795 53.4201 452.364 58.795 53.4201 452.364 58.795 65.9449 469.801 66.0262 65.9449 469.801 66.0262 65.9449 469.801 66.0262 65.9449 469.801 -12.4568 65.9449 469.801 -12.4568 65.9449 469.801 -12.4568 88.9593 469.801 79.3135 88.9593 469.801 79.3135 88.9593 469.801 79.3135 88.9593 469.801 -25.7442 88.9593 469.801 -25.7442 88.9593 469.801 -25.7442 114.667 -355.691 -308.234 114.667 -379.489 -348.938 114.667 -379.489 -348.938 114.667 -385.277 -24.1738 114.667 -208.21 152.307 117.574 -94.5741 363.929 117.574 -94.5741 363.929 117.574 -94.5741 363.929 117.574 -94.5741 363.929 146.067 360.757 112.285 146.067 360.757 112.285 146.067 360.757 112.285 146.067 360.757 -58.7156 146.067 360.757 -58.7156 146.067 360.757 -58.7156 203.158 -376.379 -297.464 203.158 -376.379 -297.464 206.268 360.757 -93.4722 206.268 360.757 -93.4722 206.268 360.757 -93.4722 206.268 360.757 147.042 206.268 360.757 147.042 206.268 360.757 147.042 317.538 221.409 211.283 317.538 221.409 211.283 317.538 221.409 211.283 317.538 221.409 211.283 317.538 221.409 -157.714 317.538 221.409 -157.714 317.538 221.409 -157.714 317.538 221.409 -157.714 318.88 -408.513 -234.615 318.88 -408.513 -234.615 354.532 -125.013 232.642 354.532 -125.013 232.642 354.532 -125.013 232.642 355.796 -136.848 115.157 355.796 -136.848 115.157 382.469 -386.625 -23.4721 382.469 -386.625 -23.4721 384.989 -410.219 -196.657 384.989 -410.219 -196.657 384.989 -410.219 -196.657 </float_array>
+          <technique_common>
+            <accessor source="#aqa_obj_floatpieceB.xno-geometry-position-array" count="163" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aqa_obj_floatpieceB.xno-geometry-normal">
+          <float_array id="aqa_obj_floatpieceB.xno-geometry-normal-array" count="168">-0.994346 0.106186 -1.51935e-008 -0.497174 0.106186 -0.861129 -0.13804 -0.821878 0.552686 -0.0949821 -0.862561 0.496958 0.046801 -0.912513 0.406362 -0.497173 0.106185 0.861129 0.0158652 -0.915623 0.401724 -0.859157 0.383366 0.33894 -0.781437 0.623984 5.1606e-008 -0.859157 0.383366 -0.338939 -0.139448 -0.872001 0.469221 -0.390719 0.623984 0.676745 -9.09505e-007 1 -5.78929e-008 -0.390719 0.623984 -0.676744 -0.885867 0.463939 3.21663e-007 -0.442933 0.46394 -0.767183 -0.442933 0.46394 0.767183 0.0282224 -0.897402 0.440309 0.205047 -0.957832 0.20128 -0.0662619 -0.901111 0.428496 -0.117254 -0.883426 0.453663 0.137601 -0.932171 0.334849 0.406099 0.583382 0.703384 0.812198 0.583381 -2.41976e-007 0.406099 0.583381 -0.703384 0.272483 -0.80722 0.523592 0.497173 0.106186 -0.861129 0.136048 0.383367 -0.913521 0.390718 0.623984 -0.676744 0.442933 0.46394 -0.767183 -0.406099 0.583381 0.703385 -0.4061 0.583381 -0.703384 0.442933 0.46394 0.767183 0.090053 -0.63831 0.764494 0.50666 0.105512 0.855665 0.39072 0.623982 0.676746 0.137998 0.381411 0.914047 -0.812198 0.583381 0 0.885866 0.46394 0 -0.0176312 -0.961292 0.274967 0.109779 -0.854161 0.508289 -0.0953245 -0.9221 0.375027 0.130962 -0.822276 0.553814 0.125018 -0.83252 0.539705 0.498186 0.104155 0.860792 -0.225908 -0.974035 -0.0148878 0.781438 0.623983 5.34706e-007 0.722556 0.381926 0.576234 0.994346 0.106186 1.77853e-007 0.723109 0.383367 -0.574581 -0.116866 -0.992789 0.026708 0.237216 -0.935783 0.260842 0.492285 0.105839 0.863976 0.23973 -0.835442 0.494537 -0.016545 -0.842454 0.538513 -0.101709 -0.985906 0.132836 </float_array>
+          <technique_common>
+            <accessor source="#aqa_obj_floatpieceB.xno-geometry-normal-array" count="56" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aqa_obj_floatpieceB.xno-geometry-uv">
+          <float_array id="aqa_obj_floatpieceB.xno-geometry-uv-array" count="182">1.10762e-005 0.863071 0.481227 0.863071 0.389342 0.439391 0.0247176 0.883487 0.403293 0.194398 0.064122 0.904567 0.417698 -0.208404 0.078695 0.915789 0.425366 -0.366669 0.078695 1.01362 1.09282 0.671217 1.38318 0.671217 1.11339e-005 1.01362 0.481227 1.01362 0.456822 0.846386 0.566073 0.597199 1.33055 0.825195 1.14181 0.825195 -0.674465 0.105987 -0.674465 0.190616 -0.653198 0.178387 -0.653198 0.118217 0.131665 0.924627 0.800046 -0.587317 0.801736 -0.592875 0.425877 0.839676 0.800046 0.747567 0.800046 -0.208404 0.800046 0.194398 0.800046 0.597199 -0.633024 0.166785 0.378299 0.226651 -0.633024 0.129819 0.287294 0.226651 0.36932 0.206477 0.297053 0.206477 0.358774 0.190429 0.307457 0.190429 0.397327 0.838354 1.01073 0.864997 0.397327 1.01362 -0.600882 0.208471 -0.600882 0.185268 0.423802 0.149622 0.399421 0.149622 0.378316 0.149622 -0.600882 0.232931 0.284781 0.149622 -0.600882 0.111335 0.264811 0.149622 0.241791 0.149622 0.157255 0.948511 1.01073 -0.755821 -0.600882 0.0881323 -0.600882 0.0636728 0.157255 1.01362 0.358774 0.106567 -0.568741 0.166785 0.307457 0.106567 -0.568741 0.129819 0.296853 0.092567 0.369321 0.092567 0.287294 0.0725554 0.378299 0.0725554 1.20007 0.597199 1.20007 0.6768 0.374142 0.861255 1.20007 0.194398 1.20007 -0.208404 1.20007 -0.611205 1.20007 -0.615973 1.20714 -0.611205 0.188292 0.933585 -0.548567 0.118217 -0.548567 0.178387 1.34365 0.597199 0.35656 0.862043 -0.5273 0.190616 -0.5273 0.105987 0.23919 1.01362 0.318126 1.01362 1.53142 0.528049 0.333567 0.853895 1.58927 -0.393786 0.23919 0.925782 1.59132 -0.208404 0.264479 0.922781 1.6346 0.194398 0.288676 0.859445 1.63869 0.47247 0.318126 0.853462 </float_array>
+          <technique_common>
+            <accessor source="#aqa_obj_floatpieceB.xno-geometry-uv-array" count="91" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aqa_obj_floatpieceB.xno-geometry-uv2">
+          <float_array id="aqa_obj_floatpieceB.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#aqa_obj_floatpieceB.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aqa_obj_floatpieceB.xno-geometry-color">
+          <float_array id="aqa_obj_floatpieceB.xno-geometry-color-array" count="96">0.996078 0.996078 0.996078 1 0.603922 0.564706 0.52549 1 0.52549 0.478431 0.431373 1 0.972549 0.972549 0.968627 1 0.992157 0.992157 0.992157 1 0.596078 0.552941 0.513726 1 0.529412 0.482353 0.435294 1 0.988235 0.988235 0.988235 1 0.592157 0.552941 0.513726 1 0.960784 0.956863 0.952941 1 0.619608 0.580392 0.545098 1 0.937255 0.929412 0.92549 1 0.988235 0.988235 0.984314 1 0.596078 0.556863 0.517647 1 0.929412 0.921569 0.913725 1 0.737255 0.709804 0.682353 1 0.533333 0.486275 0.443137 1 0.572549 0.529412 0.486275 1 0.678431 0.647059 0.615686 1 0.733333 0.705882 0.682353 1 0.839216 0.823529 0.807843 1 0.537255 0.494118 0.447059 1 0.607843 0.568627 0.529412 1 0.780392 0.756863 0.737255 1 </float_array>
+          <technique_common>
+            <accessor source="#aqa_obj_floatpieceB.xno-geometry-color-array" count="24" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="aqa_obj_floatpieceB.xno-geometry-vertex">
+          <input semantic="POSITION" source="#aqa_obj_floatpieceB.xno-geometry-position" />
+        </vertices>
+        <triangles material="aqa_obj_floatpieceB.xno0" count="83">
+          <input semantic="VERTEX" source="#aqa_obj_floatpieceB.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#aqa_obj_floatpieceB.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#aqa_obj_floatpieceB.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#aqa_obj_floatpieceB.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#aqa_obj_floatpieceB.xno-geometry-color" offset="4" set="0" />
+          <p>132 12 74 0 18 137 12 77 0 0 66 12 41 0 8 78 12 46 0 0 66 12 41 0 8 137 12 77 0 0 66 12 41 0 8 78 12 46 0 0 28 12 20 0 6 25 12 19 0 0 28 12 20 0 6 78 12 46 0 0 28 12 20 0 6 25 12 19 0 0 31 12 21 0 2 22 12 18 0 5 31 12 21 0 2 25 12 19 0 0 31 12 21 0 2 22 12 18 0 5 93 12 53 0 10 96 12 54 0 0 93 12 53 0 10 22 12 18 0 5 93 12 53 0 10 96 12 54 0 0 129 12 73 0 2 140 12 78 0 0 129 12 73 0 2 96 12 54 0 0 129 12 73 0 2 140 12 78 0 0 132 12 74 0 18 137 12 77 0 0 132 12 74 0 18 140 12 78 0 0 89 5 51 0 0 98 5 55 0 0 32 5 22 0 2 13 5 9 0 3 32 5 22 0 2 98 5 55 0 0 32 5 22 0 2 13 5 9 0 3 8 5 7 0 2 150 48 80 0 0 159 48 88 0 23 162 48 90 0 0 159 48 88 0 23 150 48 80 0 0 157 48 86 0 22 146 48 79 0 0 157 48 86 0 22 150 48 80 0 0 157 48 86 0 22 146 48 79 0 0 155 48 84 0 21 17 1 13 0 0 18 1 14 0 4 1 1 1 0 0 18 1 14 0 4 17 1 13 0 0 35 1 25 0 2 61 1 40 0 0 35 1 25 0 2 17 1 13 0 0 35 1 25 0 2 61 1 40 0 0 58 1 38 0 0 10 7 9 0 3 5 0 5 0 2 7 0 7 0 2 5 0 5 0 2 10 7 9 0 3 3 0 3 0 1 14 9 12 0 0 3 0 3 0 1 10 7 9 0 3 3 0 3 0 1 14 9 12 0 0 0 0 0 0 0 62 27 40 0 0 122 26 66 0 14 60 26 38 0 0 122 26 66 0 14 62 27 40 0 0 136 26 76 0 19 148 49 80 0 0 136 26 76 0 19 62 27 40 0 0 136 26 76 0 19 148 49 80 0 0 152 26 82 0 20 161 26 90 0 0 152 26 82 0 20 148 49 80 0 0 103 30 56 0 0 112 30 61 0 0 74 30 45 0 0 71 30 44 0 0 74 30 45 0 0 112 30 61 0 0 76 22 45 0 0 73 22 44 0 0 53 22 36 0 0 47 22 34 0 0 53 22 36 0 0 73 22 44 0 0 54 23 36 0 0 48 23 34 0 0 57 23 37 0 0 51 23 35 0 0 57 23 37 0 0 48 23 34 0 0 56 24 37 0 0 50 24 35 0 0 82 24 47 0 0 85 24 49 0 0 82 24 47 0 0 50 24 35 0 0 80 31 47 0 0 83 31 49 0 0 106 31 58 0 0 109 31 60 0 0 106 31 58 0 0 83 31 49 0 0 138 28 17 0 0 147 28 10 0 0 79 28 16 0 0 64 28 11 0 0 79 28 16 0 0 147 28 10 0 0 105 37 58 0 0 108 37 60 0 0 102 37 56 0 0 111 37 61 0 0 102 37 56 0 0 108 37 60 0 0 72 12 44 0 0 69 12 43 0 9 46 12 34 0 0 42 12 31 0 7 46 12 34 0 0 69 12 43 0 9 46 12 34 0 0 42 12 31 0 7 49 12 35 0 0 45 12 33 0 0 49 12 35 0 0 42 12 31 0 7 49 12 35 0 0 45 12 33 0 0 84 12 49 0 0 87 12 50 0 7 84 12 49 0 0 45 12 33 0 0 84 12 49 0 0 87 12 50 0 7 110 12 60 0 0 114 12 62 0 11 110 12 60 0 0 87 12 50 0 7 110 12 60 0 0 114 12 62 0 11 113 12 61 0 0 117 12 63 0 12 113 12 61 0 0 114 12 62 0 11 113 12 61 0 0 117 12 63 0 12 72 12 44 0 0 69 12 43 0 9 72 12 44 0 0 117 12 63 0 12 154 52 84 0 21 144 47 79 0 0 128 44 72 0 17 99 36 55 0 0 128 44 72 0 17 144 47 79 0 0 128 44 72 0 17 99 36 55 0 0 91 34 51 0 0 131 38 73 0 2 119 38 57 0 12 116 38 59 0 11 119 38 57 0 12 131 38 73 0 2 134 38 74 0 18 94 32 53 0 10 115 32 59 0 11 88 32 48 0 7 115 32 59 0 11 94 32 53 0 10 130 32 73 0 2 30 16 21 0 2 86 16 48 0 7 44 16 32 0 0 86 16 48 0 7 30 16 21 0 2 92 16 53 0 10 26 14 20 0 6 43 14 32 0 0 40 14 30 0 7 43 14 32 0 0 26 14 20 0 6 29 14 21 0 2 65 15 41 0 8 41 15 30 0 7 68 15 42 0 9 41 15 30 0 7 65 15 41 0 8 27 15 20 0 6 133 29 74 0 18 70 29 42 0 9 118 29 57 0 12 70 29 42 0 9 133 29 74 0 18 67 29 41 0 8 139 46 16 0 0 145 47 10 0 0 149 49 11 0 0 145 47 10 0 0 139 46 16 0 0 142 46 17 0 0 141 35 16 0 0 101 35 10 0 0 143 35 11 0 0 101 35 10 0 0 141 35 16 0 0 97 35 17 0 0 95 11 16 0 0 11 7 10 0 3 100 36 11 0 0 11 7 10 0 3 95 11 16 0 0 21 11 17 0 5 20 8 16 0 5 16 8 10 0 0 12 8 11 0 3 16 8 10 0 0 20 8 16 0 5 23 8 17 0 0 24 13 16 0 0 63 27 10 0 0 15 9 11 0 0 63 27 10 0 0 24 13 16 0 0 77 13 17 0 0 </p>
+        </triangles>
+        <triangles material="aqa_obj_floatpieceB.xno1" count="27">
+          <input semantic="VERTEX" source="#aqa_obj_floatpieceB.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#aqa_obj_floatpieceB.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#aqa_obj_floatpieceB.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#aqa_obj_floatpieceB.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#aqa_obj_floatpieceB.xno-geometry-color" offset="4" set="0" />
+          <p>125 43 69 0 17 33 17 23 0 2 124 42 68 0 16 37 19 27 0 2 124 42 68 0 16 33 17 23 0 2 124 42 68 0 16 37 19 27 0 2 123 41 67 0 15 38 20 28 0 2 123 41 67 0 15 37 19 27 0 2 123 41 67 0 15 38 20 28 0 2 120 39 64 0 13 39 21 29 0 2 120 39 64 0 13 38 20 28 0 2 120 39 64 0 13 39 21 29 0 2 36 18 26 0 2 36 18 26 0 2 39 21 29 0 2 19 10 15 0 4 38 20 28 0 2 19 10 15 0 4 39 21 29 0 2 19 10 15 0 4 38 20 28 0 2 2 2 2 0 0 2 2 2 0 0 38 20 28 0 2 4 3 4 0 1 37 19 27 0 2 4 3 4 0 1 38 20 28 0 2 4 3 4 0 1 37 19 27 0 2 6 4 6 0 2 6 4 6 0 2 37 19 27 0 2 9 6 8 0 2 33 17 23 0 2 9 6 8 0 2 37 19 27 0 2 160 55 89 0 0 158 54 87 0 23 151 50 81 0 20 123 41 67 0 15 151 50 81 0 20 158 54 87 0 23 151 50 81 0 20 123 41 67 0 15 135 45 75 0 19 120 39 64 0 13 135 45 75 0 19 123 41 67 0 15 135 45 75 0 19 120 39 64 0 13 121 40 65 0 14 36 18 26 0 2 121 40 65 0 14 120 39 64 0 13 121 40 65 0 14 36 18 26 0 2 59 25 39 0 0 156 53 85 0 22 123 41 67 0 15 158 54 87 0 23 123 41 67 0 15 156 53 85 0 22 124 42 68 0 16 153 51 83 0 21 124 42 68 0 16 156 53 85 0 22 124 42 68 0 16 153 51 83 0 21 127 43 71 0 17 126 43 70 0 17 90 33 52 0 0 34 17 24 0 2 </p>
+        </triangles>
+        <triangles material="aqa_obj_floatpieceB.xno2" count="4">
+          <input semantic="VERTEX" source="#aqa_obj_floatpieceB.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#aqa_obj_floatpieceB.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#aqa_obj_floatpieceB.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#aqa_obj_floatpieceB.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#aqa_obj_floatpieceB.xno-geometry-color" offset="4" set="0" />
+          <p>75 12 42 0 0 52 12 30 0 0 104 12 57 0 0 55 12 32 0 0 104 12 57 0 0 52 12 30 0 0 104 12 57 0 0 55 12 32 0 0 107 12 59 0 0 81 12 48 0 0 107 12 59 0 0 55 12 32 0 0 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="aqa_obj_floatpieceB.xno-controller">
+      <skin source="#aqa_obj_floatpieceB.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="aqa_obj_floatpieceB.xno-controller-Joints">
+          <Name_array id="aqa_obj_floatpieceB.xno-controller-Joints-array" count="1">aqa_obj_floatpieceB </Name_array>
+          <technique_common>
+            <accessor source="#aqa_obj_floatpieceB.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aqa_obj_floatpieceB.xno-controller-Matrices">
+          <float_array id="aqa_obj_floatpieceB.xno-controller-Matrices-array" count="16">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#aqa_obj_floatpieceB.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="aqa_obj_floatpieceB.xno-controller-Weights">
+          <float_array id="aqa_obj_floatpieceB.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#aqa_obj_floatpieceB.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#aqa_obj_floatpieceB.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#aqa_obj_floatpieceB.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="163">
+          <input semantic="JOINT" offset="0" source="#aqa_obj_floatpieceB.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#aqa_obj_floatpieceB.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="aqa_obj_floatpieceB" sid="aqa_obj_floatpieceB" name="aqa_obj_floatpieceB" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="aqa_obj_floatpieceB.xno" sid="aqa_obj_floatpieceB.xno" name="aqa_obj_floatpieceB.xno">
+        <instance_controller url="#aqa_obj_floatpieceB.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="aqa_obj_floatpieceB.xno0" target="#aqa_obj_floatpieceB.xno0ID" />
+              <instance_material symbol="aqa_obj_floatpieceB.xno1" target="#aqa_obj_floatpieceB.xno1ID" />
+              <instance_material symbol="aqa_obj_floatpieceB.xno2" target="#aqa_obj_floatpieceB.xno2ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>
