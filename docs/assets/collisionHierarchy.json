@@ -1580,5 +1580,74 @@
             "wvo_mapB_yacht_nos_.dae",
             "wvo_sky.dae"
         ]
+    },
+    "player": {
+        "amy": [
+            "amy_Head01.dae",
+            "amy_item_handpoint.dae",
+            "amy_Root.dae"
+        ],
+        "blaze": [
+            "blaze_Head01.dae",
+            "blaze_Root.dae"
+        ],
+        "knuckles": [
+            "knuckles_Head01.dae",
+            "knuckles_Root.dae"
+        ],
+        "omega": [
+            "omega_L_arm_point.dae",
+            "omega_L_hand_point.dae",
+            "omega_Root.dae",
+            "omega_R_arm_point.dae",
+            "omega_R_hand_point.dae",
+            "omega_Stomach_point.dae"
+        ],
+        "princess": [
+            "ch_princess01.dae",
+            "ch_princess01_hair.dae",
+            "ch_princess01_head.dae",
+            "ch_princess01_tiara.dae"
+        ],
+        "rouge": [
+            "rouge_Head01.dae",
+            "rouge_Root.dae"
+        ],
+        "shadow_none": [
+            "shadow_Head01.dae",
+            "shadow_Root.dae"
+        ],
+        "silver": [
+            "silver_Head01.dae",
+            "silver_Root.dae",
+            "sv_itm_p_braceletL.dae",
+            "sv_itm_p_braceletR.dae",
+            "sv_itm_s_ringL.dae",
+            "sv_itm_s_ringR.dae"
+        ],
+        "sonic_new": [
+            "sonic_Head01.dae",
+            "sonic_Root.dae",
+            "so_itm_bbungle_L.dae",
+            "so_itm_sbungle_L.dae",
+            "so_itm_sbungle_R.dae"
+        ],
+        "supershadow": [
+            "sshadow_Head01.dae",
+            "sshadow_Root.dae"
+        ],
+        "supersilver": [
+            "ssilver_Head01.dae",
+            "ssilver_Root.dae"
+        ],
+        "supersonic": [
+            "ssonic_Head01.dae",
+            "ssonic_Root.dae"
+        ],
+        "tails": [
+            "tails_Head01.dae",
+            "tails_Itempoint.dae",
+            "tails_Root.dae"
+        ]
     }
 }

@@ -1,0 +1,271 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="ch_silver_tex07_df.dds-image" name="ch_silver_tex07_df.dds-image">
+      <init_from>./textures/ch_silver_tex07_df.dds</init_from>
+    </image>
+    <image id="ch_silver_tex07_sp.dds-image" name="ch_silver_tex07_sp.dds-image">
+      <init_from>./textures/ch_silver_tex07_sp.dds</init_from>
+    </image>
+    <image id="ch_silver_tex07_nw.dds-image" name="ch_silver_tex07_nw.dds-image">
+      <init_from>./textures/ch_silver_tex07_nw.dds</init_from>
+    </image>
+    <image id="ch_silver_tex05_rf.dds-image" name="ch_silver_tex05_rf.dds-image">
+      <init_from>./textures/ch_silver_tex05_rf.dds</init_from>
+    </image>
+    <image id="ch_silver_tex05_lu.dds-image" name="ch_silver_tex05_lu.dds-image">
+      <init_from>./textures/ch_silver_tex05_lu.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="sv_itm_s_ringR.xno0ID" name="sv_itm_s_ringR.xno0">
+      <instance_effect url="#sv_itm_s_ringR.xno0-effect" />
+    </material>
+    <material id="sv_itm_s_ringR.xno1ID" name="sv_itm_s_ringR.xno1">
+      <instance_effect url="#sv_itm_s_ringR.xno1-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="sv_itm_s_ringR.xno0-effect" name="sv_itm_s_ringR.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="ch_silver_tex07_df.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_silver_tex07_df.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_silver_tex07_df.dds-image-sampler">
+          <sampler2D>
+            <source>ch_silver_tex07_df.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="ch_silver_tex07_sp.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_silver_tex07_sp.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_silver_tex07_sp.dds-image-sampler">
+          <sampler2D>
+            <source>ch_silver_tex07_sp.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="ch_silver_tex07_nw.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_silver_tex07_nw.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_silver_tex07_nw.dds-image-sampler">
+          <sampler2D>
+            <source>ch_silver_tex07_nw.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="ch_silver_tex07_nw.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_silver_tex07_nw.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_silver_tex07_nw.dds-image-sampler">
+          <sampler2D>
+            <source>ch_silver_tex07_nw.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="ch_silver_tex07_df.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="sv_itm_s_ringR.xno1-effect" name="sv_itm_s_ringR.xno1-effect">
+      <profile_COMMON>
+        <newparam sid="ch_silver_tex05_rf.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_silver_tex05_rf.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_silver_tex05_rf.dds-image-sampler">
+          <sampler2D>
+            <source>ch_silver_tex05_rf.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="ch_silver_tex05_lu.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_silver_tex05_lu.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_silver_tex05_lu.dds-image-sampler">
+          <sampler2D>
+            <source>ch_silver_tex05_lu.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="ch_silver_tex05_lu.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_silver_tex05_lu.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_silver_tex05_lu.dds-image-sampler">
+          <sampler2D>
+            <source>ch_silver_tex05_lu.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="ch_silver_tex05_rf.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="sv_itm_s_ringR.xno-geometry" name="sv_itm_s_ringR.xno-geometry">
+      <mesh>
+        <source id="sv_itm_s_ringR.xno-geometry-position">
+          <float_array id="sv_itm_s_ringR.xno-geometry-position-array" count="306">12.7714 -0.709014 -4.78481 12.7714 -0.709014 -4.78481 12.8159 5.42277 -1.1513 12.8159 5.42277 -1.1513 12.8419 -2.98273 -3.50748 12.8419 -2.98273 -3.50748 12.9027 5.39344 1.45599 12.9027 5.39344 1.45599 12.9638 -1.47592 -5.30648 12.9638 -1.47592 -5.30648 12.9638 -1.47592 -5.30648 13.0117 -3.02078 -4.43859 13.0117 -3.02078 -4.43859 13.0117 -3.02078 -4.43859 13.0197 6.24656 -0.732468 13.0197 6.24656 -0.732468 13.0197 6.24656 -0.732468 13.0789 6.22657 1.04323 13.0789 6.22657 1.04323 13.0789 6.22657 1.04323 13.079 -3.06287 3.61576 13.079 -3.06287 3.61576 13.0953 -0.81848 4.94571 13.0953 -0.81848 4.94571 13.3101 -3.12212 4.53227 13.3101 -3.12212 4.53227 13.3101 -3.12212 4.53227 13.3212 -1.59635 5.43638 13.3212 -1.59635 5.43638 13.3212 -1.59635 5.43638 15.0844 -1.34439 -5.74495 15.0844 -1.34439 -5.74495 15.0844 -1.34439 -5.74495 15.0844 -1.34439 -5.74495 15.1416 6.5455 -1.06963 15.1416 6.5455 -1.06963 15.1416 6.5455 -1.06963 15.1416 6.5455 -1.06963 15.147 -3.36375 -4.61052 15.147 -3.36375 -4.61052 15.147 -3.36375 -4.61052 15.147 -3.36375 -4.61052 15.2187 6.51945 1.24598 15.2187 6.51945 1.24598 15.2187 6.51945 1.24598 15.2187 6.51945 1.24598 15.3052 -0.677657 -4.86833 15.3052 -0.677657 -4.86833 15.3052 -0.677657 -4.86833 15.3498 5.45412 -1.23482 15.3498 5.45412 -1.23482 15.3498 5.45412 -1.23482 15.3757 -2.95138 -3.591 15.3757 -2.95138 -3.591 15.3757 -2.95138 -3.591 15.4366 5.42479 1.37247 15.4366 5.42479 1.37247 15.4366 5.42479 1.37247 15.4519 -3.46687 4.55511 15.4519 -3.46687 4.55511 15.4519 -3.46687 4.55511 15.4519 -3.46687 4.55511 15.4664 -1.47355 5.73629 15.4664 -1.47355 5.73629 15.4664 -1.47355 5.73629 15.4664 -1.47355 5.73629 15.6128 -3.03152 3.53223 15.6128 -3.03152 3.53223 15.6128 -3.03152 3.53223 15.6292 -0.787123 4.86219 15.6292 -0.787123 4.86219 15.6292 -0.787123 4.86219 16.1191 -1.27147 -5.10982 16.1191 -1.27147 -5.10982 16.1668 -2.81086 -4.24502 16.1668 -2.81086 -4.24502 16.1714 5.9424 -0.835155 16.1714 5.9424 -0.835155 16.2302 5.92254 0.930075 16.2302 5.92254 0.930075 16.3523 -0.992179 -4.81933 16.3523 -0.992179 -4.81933 16.3523 -0.992179 -4.81933 16.3998 5.55101 -0.942091 16.3998 5.55101 -0.942091 16.3998 5.55101 -0.942091 16.4052 -2.69697 -3.86161 16.4052 -2.69697 -3.86161 16.4052 -2.69697 -3.86161 16.4455 -2.90526 4.13535 16.4455 -2.90526 4.13535 16.4566 -1.38572 5.03578 16.4566 -1.38572 5.03578 16.4649 5.52902 1.0128 16.4649 5.52902 1.0128 16.4649 5.52902 1.0128 16.6581 -2.7826 3.73963 16.6581 -2.7826 3.73963 16.6581 -2.7826 3.73963 16.6703 -1.0998 4.7368 16.6703 -1.0998 4.7368 16.6703 -1.0998 4.7368 </float_array>
+          <technique_common>
+            <accessor source="#sv_itm_s_ringR.xno-geometry-position-array" count="102" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sv_itm_s_ringR.xno-geometry-normal">
+          <float_array id="sv_itm_s_ringR.xno-geometry-normal-array" count="162">-0.976651 -0.127439 -0.172953 -0.15124 0.616759 -0.772486 -0.974139 0.223229 0.034953 -0.152229 0.38165 -0.911685 -0.101714 -0.986518 0.128204 -0.0913308 0.360947 0.928104 -0.204082 0.515075 -0.832495 -0.147639 -0.4879 -0.860324 -0.157667 -0.987424 0.0115852 -0.203388 0.483248 -0.851531 -0.137046 0.99044 0.0157105 -0.146275 0.46382 0.87377 -0.963167 -0.131869 0.234349 -0.110553 -0.983429 -0.143687 -0.0992238 0.599413 0.794266 -0.158623 -0.987052 -0.0238179 -0.0907846 -0.507187 0.857041 -0.148001 0.496531 0.855309 0.0760845 0.748194 -0.659103 0.172552 -0.478365 -0.861042 0.0724406 0.217693 -0.973325 0.182918 0.983116 0.00497357 0.128528 -0.947315 0.293385 0.136936 0.195843 0.971027 0.106527 0.489503 0.86547 0.151984 0.7496 -0.644206 0.0958487 -0.995292 -0.0143878 0.148037 0.20348 -0.967823 0.204023 -0.931761 0.300326 0.212059 0.181832 0.960192 0.108137 -0.940354 -0.322554 0.228789 -0.497497 0.836751 0.120185 0.733285 0.669215 0.0493297 0.508903 -0.859409 0.182953 -0.924627 -0.334057 0.194934 0.735014 0.649426 0.266878 0.653743 -0.708093 0.697436 -0.334446 -0.633821 0.316008 -0.931097 0.1822 0.26432 0.304314 -0.915166 0.704934 0.709104 -0.01549 0.324824 0.283938 0.902147 0.21879 0.609693 -0.761844 0.855384 -0.233297 -0.462483 0.21704 0.373124 -0.902038 0.860704 0.508589 -0.0229315 0.267335 -0.956364 0.117895 0.302466 -0.926551 -0.223645 0.73763 -0.348173 0.578514 0.313839 0.637785 0.703374 0.276821 0.352996 0.893736 0.258133 -0.953294 -0.156836 0.883939 -0.243118 0.399432 0.269368 0.592501 0.759199 </float_array>
+          <technique_common>
+            <accessor source="#sv_itm_s_ringR.xno-geometry-normal-array" count="54" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sv_itm_s_ringR.xno-geometry-uv">
+          <float_array id="sv_itm_s_ringR.xno-geometry-uv-array" count="64">0.641487 0.0298882 0.673794 0.0298882 0.354338 0.0298882 0.980965 0.0298882 0.544654 0.135106 0.447303 0.135106 0.769763 0.131245 0.885026 0.131245 0.0216225 0.0298882 0.329379 0.0298882 0.117645 0.138968 0.227276 0.138968 0.559678 0.352321 1.96915 0.0128073 0.752265 0.352321 0.432427 0.352321 1.0397 0.0125817 0.902576 0.352321 1.98203 0.978676 0.641672 0.352321 0.67385 0.352321 1.02229 0.978675 0.354522 0.352321 0.981021 0.352321 0.100952 0.352321 0.244177 0.352321 0.0218668 0.352321 0.329623 0.352321 1.82869 0.366135 1.1771 0.366136 1.86323 0.715278 1.14223 0.715277 </float_array>
+          <technique_common>
+            <accessor source="#sv_itm_s_ringR.xno-geometry-uv-array" count="32" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sv_itm_s_ringR.xno-geometry-uv2">
+          <float_array id="sv_itm_s_ringR.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#sv_itm_s_ringR.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sv_itm_s_ringR.xno-geometry-color">
+          <float_array id="sv_itm_s_ringR.xno-geometry-color-array" count="32">1 0 0 0.835294 1 0 0 0.827451 1 0 0 0.831373 1 0 0 0.729412 1 1 1 1 1 0 0 0.741176 1 0 0 0.737255 1 0 0 0.733333 </float_array>
+          <technique_common>
+            <accessor source="#sv_itm_s_ringR.xno-geometry-color-array" count="8" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="sv_itm_s_ringR.xno-geometry-vertex">
+          <input semantic="POSITION" source="#sv_itm_s_ringR.xno-geometry-position" />
+        </vertices>
+        <triangles material="sv_itm_s_ringR.xno0" count="24">
+          <input semantic="VERTEX" source="#sv_itm_s_ringR.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#sv_itm_s_ringR.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#sv_itm_s_ringR.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#sv_itm_s_ringR.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#sv_itm_s_ringR.xno-geometry-color" offset="4" set="0" />
+          <p>15 9 6 0 2 34 20 14 0 5 3 3 1 0 1 50 27 20 0 1 3 3 1 0 1 34 20 14 0 5 32 19 12 0 3 40 19 15 0 6 10 7 4 0 2 13 7 5 0 0 10 7 4 0 2 40 19 15 0 6 6 2 3 0 2 17 2 7 0 1 2 2 1 0 1 14 2 6 0 2 2 2 1 0 1 17 2 7 0 1 56 29 23 0 1 42 23 17 0 3 7 5 3 0 2 18 11 7 0 1 7 5 3 0 2 42 23 17 0 3 67 34 26 0 2 58 30 24 0 7 21 13 8 0 1 25 15 10 0 1 21 13 8 0 1 58 30 24 0 7 28 17 11 0 1 62 32 25 0 7 23 14 9 0 2 70 35 27 0 1 23 14 9 0 2 62 32 25 0 7 20 12 8 0 1 24 12 10 0 1 22 12 9 0 2 27 12 11 0 1 22 12 9 0 2 24 12 10 0 1 12 8 5 0 0 38 22 15 0 6 5 4 2 0 0 53 28 22 0 0 5 4 2 0 0 38 22 15 0 6 0 0 0 0 0 8 0 4 0 2 4 0 2 0 0 11 0 5 0 0 4 0 2 0 0 8 0 4 0 2 47 25 19 0 0 30 18 12 0 3 1 1 0 0 0 9 6 4 0 2 1 1 0 0 0 30 18 12 0 3 44 21 17 0 3 36 21 14 0 5 19 10 7 0 1 16 10 6 0 2 19 10 7 0 1 36 21 14 0 5 60 31 24 0 7 64 31 25 0 7 26 16 10 0 1 29 16 11 0 1 26 16 10 0 1 64 31 25 0 7 </p>
+        </triangles>
+        <triangles material="sv_itm_s_ringR.xno1" count="30">
+          <input semantic="VERTEX" source="#sv_itm_s_ringR.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#sv_itm_s_ringR.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#sv_itm_s_ringR.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#sv_itm_s_ringR.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#sv_itm_s_ringR.xno-geometry-color" offset="4" set="0" />
+          <p>98 52 31 0 4 101 52 30 0 4 90 48 29 0 4 92 48 28 0 4 90 48 29 0 4 101 52 30 0 4 90 48 29 0 4 92 48 28 0 4 61 31 16 0 4 65 31 13 0 4 61 31 16 0 4 92 48 28 0 4 95 45 31 0 4 85 45 30 0 4 79 40 29 0 4 77 40 28 0 4 79 40 29 0 4 85 45 30 0 4 37 21 13 0 4 79 40 29 0 4 77 40 28 0 4 79 40 29 0 4 37 21 13 0 4 45 21 16 0 4 48 25 18 0 4 72 36 28 0 4 31 18 13 0 4 72 36 28 0 4 48 25 18 0 4 81 42 30 0 4 54 28 21 0 4 74 38 29 0 4 87 46 31 0 4 74 38 29 0 4 54 28 21 0 4 39 22 16 0 4 46 24 18 0 4 86 24 31 0 4 80 24 30 0 4 86 24 31 0 4 46 24 18 0 4 52 24 21 0 4 68 34 21 0 4 89 47 29 0 4 59 30 16 0 4 89 47 29 0 4 68 34 21 0 4 97 51 31 0 4 71 35 18 0 4 91 49 28 0 4 100 53 30 0 4 91 49 28 0 4 71 35 18 0 4 63 32 13 0 4 66 33 21 0 4 99 33 30 0 4 96 33 31 0 4 99 33 30 0 4 66 33 21 0 4 69 33 18 0 4 57 29 21 0 4 78 41 29 0 4 43 23 16 0 4 78 41 29 0 4 57 29 21 0 4 94 50 31 0 4 51 27 18 0 4 76 39 28 0 4 84 44 30 0 4 76 39 28 0 4 51 27 18 0 4 35 20 13 0 4 55 26 21 0 4 83 26 30 0 4 93 26 31 0 4 83 26 30 0 4 55 26 21 0 4 49 26 18 0 4 73 37 28 0 4 41 19 16 0 4 33 19 13 0 4 41 19 16 0 4 73 37 28 0 4 75 37 29 0 4 75 37 29 0 4 73 37 28 0 4 88 43 31 0 4 82 43 30 0 4 88 43 31 0 4 73 37 28 0 4 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="sv_itm_s_ringR.xno-controller">
+      <skin source="#sv_itm_s_ringR.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="sv_itm_s_ringR.xno-controller-Joints">
+          <Name_array id="sv_itm_s_ringR.xno-controller-Joints-array" count="1">s_ringR </Name_array>
+          <technique_common>
+            <accessor source="#sv_itm_s_ringR.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sv_itm_s_ringR.xno-controller-Matrices">
+          <float_array id="sv_itm_s_ringR.xno-controller-Matrices-array" count="16">1 -8.76073e-008 8.74273e-008 0 8.76073e-008 1 8.75397e-008 0 -8.74274e-008 -8.75397e-008 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#sv_itm_s_ringR.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sv_itm_s_ringR.xno-controller-Weights">
+          <float_array id="sv_itm_s_ringR.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#sv_itm_s_ringR.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#sv_itm_s_ringR.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#sv_itm_s_ringR.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="102">
+          <input semantic="JOINT" offset="0" source="#sv_itm_s_ringR.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#sv_itm_s_ringR.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="s_ringR" sid="s_ringR" name="s_ringR" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="sv_itm_s_ringR.xno" sid="sv_itm_s_ringR.xno" name="sv_itm_s_ringR.xno">
+        <instance_controller url="#sv_itm_s_ringR.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="sv_itm_s_ringR.xno0" target="#sv_itm_s_ringR.xno0ID" />
+              <instance_material symbol="sv_itm_s_ringR.xno1" target="#sv_itm_s_ringR.xno1ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

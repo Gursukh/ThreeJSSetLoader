@@ -1,0 +1,271 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="ch_silver_tex07_df.dds-image" name="ch_silver_tex07_df.dds-image">
+      <init_from>./textures/ch_silver_tex07_df.dds</init_from>
+    </image>
+    <image id="ch_silver_tex07_sp.dds-image" name="ch_silver_tex07_sp.dds-image">
+      <init_from>./textures/ch_silver_tex07_sp.dds</init_from>
+    </image>
+    <image id="ch_silver_tex07_nw.dds-image" name="ch_silver_tex07_nw.dds-image">
+      <init_from>./textures/ch_silver_tex07_nw.dds</init_from>
+    </image>
+    <image id="ch_silver_tex05_rf.dds-image" name="ch_silver_tex05_rf.dds-image">
+      <init_from>./textures/ch_silver_tex05_rf.dds</init_from>
+    </image>
+    <image id="ch_silver_tex05_lu.dds-image" name="ch_silver_tex05_lu.dds-image">
+      <init_from>./textures/ch_silver_tex05_lu.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="sv_itm_p_braceletL.xno0ID" name="sv_itm_p_braceletL.xno0">
+      <instance_effect url="#sv_itm_p_braceletL.xno0-effect" />
+    </material>
+    <material id="sv_itm_p_braceletL.xno1ID" name="sv_itm_p_braceletL.xno1">
+      <instance_effect url="#sv_itm_p_braceletL.xno1-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="sv_itm_p_braceletL.xno0-effect" name="sv_itm_p_braceletL.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="ch_silver_tex07_df.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_silver_tex07_df.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_silver_tex07_df.dds-image-sampler">
+          <sampler2D>
+            <source>ch_silver_tex07_df.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="ch_silver_tex07_sp.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_silver_tex07_sp.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_silver_tex07_sp.dds-image-sampler">
+          <sampler2D>
+            <source>ch_silver_tex07_sp.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="ch_silver_tex07_nw.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_silver_tex07_nw.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_silver_tex07_nw.dds-image-sampler">
+          <sampler2D>
+            <source>ch_silver_tex07_nw.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="ch_silver_tex07_nw.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_silver_tex07_nw.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_silver_tex07_nw.dds-image-sampler">
+          <sampler2D>
+            <source>ch_silver_tex07_nw.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="ch_silver_tex07_df.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="sv_itm_p_braceletL.xno1-effect" name="sv_itm_p_braceletL.xno1-effect">
+      <profile_COMMON>
+        <newparam sid="ch_silver_tex05_rf.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_silver_tex05_rf.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_silver_tex05_rf.dds-image-sampler">
+          <sampler2D>
+            <source>ch_silver_tex05_rf.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="ch_silver_tex05_lu.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_silver_tex05_lu.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_silver_tex05_lu.dds-image-sampler">
+          <sampler2D>
+            <source>ch_silver_tex05_lu.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="ch_silver_tex05_lu.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_silver_tex05_lu.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_silver_tex05_lu.dds-image-sampler">
+          <sampler2D>
+            <source>ch_silver_tex05_lu.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="ch_silver_tex05_rf.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="sv_itm_p_braceletL.xno-geometry" name="sv_itm_p_braceletL.xno-geometry">
+      <mesh>
+        <source id="sv_itm_p_braceletL.xno-geometry-position">
+          <float_array id="sv_itm_p_braceletL.xno-geometry-position-array" count="207">-2.19159 5.55239 1.39123 -2.19159 5.55239 1.39123 -2.19159 5.55239 1.39123 -2.19159 5.55239 -1.25656 -2.19159 5.55239 -1.25656 -2.19159 5.55239 -1.25656 -2.11952 4.55252 1.25997 -2.11952 4.55252 -1.1253 -0.0876752 -0.0134225 -5.04781 -0.0876752 1.31048 -4.87352 -0.0876752 2.54415 -4.36251 -0.0876752 -1.33732 -4.87352 -0.0876752 -2.57099 -4.36251 -0.0876751 3.60353 -3.54962 -0.0876751 -3.63038 -3.54962 -0.0876751 4.41643 -2.49024 -0.0876751 4.41643 -2.49024 -0.0876751 3.19724 -2.1164 -0.0876751 -4.44327 -2.49024 -0.0876751 -4.95427 -1.25656 -0.0876751 -5.12857 0.0673322 -0.0876751 -5.12857 0.0673322 -0.0876751 -4.95427 1.39123 -0.0876751 3.19724 2.25107 -0.0876751 -4.44327 2.6249 -0.0876751 4.41642 2.62491 -0.0876751 4.41642 2.62491 -0.087675 3.60353 3.68429 -0.087675 3.60353 3.68429 -0.087675 3.60353 3.68429 -0.087675 -3.63038 3.68429 -0.087675 2.54415 4.49718 -0.087675 -2.57099 4.49718 -0.087675 -1.33732 5.00818 -0.087675 -0.0134235 5.18248 -0.087675 1.31047 5.00818 1.38163 4.96183 -1.09622 1.38163 4.96183 -1.09622 1.38163 5.13541 0.0670919 1.38163 5.13541 0.0670919 1.38164 4.96183 1.2304 1.38164 4.96183 1.2304 1.86483 1.29969 -4.83376 1.86483 -0.0134148 -5.00664 1.86483 -1.32653 -4.83376 1.86483 -2.55016 4.46061 1.86483 -4.40718 -2.46989 1.86483 2.52333 4.46061 1.86483 -3.60091 -3.52065 1.86483 -4.91403 -1.24627 1.86483 -2.55016 -4.32692 1.86483 3.57408 -3.52064 1.86483 2.52333 -4.32692 1.86483 -4.40719 2.60359 1.86483 -3.60092 3.65434 1.86483 -5.0869 0.0668466 1.86483 -5.0869 0.0668466 1.86483 3.57408 3.65434 1.86483 3.57408 3.65434 1.86483 -4.91403 1.37996 1.86483 -0.0134235 5.14033 1.86483 1.29969 4.96746 1.86483 -1.32653 4.96746 2.99037 4.88719 -1.24626 2.99037 5.06006 0.0668495 2.99037 4.88719 1.37996 3.00337 4.38034 2.60359 3.00337 4.38035 -2.46989 3.00337 4.38035 -2.46989 </float_array>
+          <technique_common>
+            <accessor source="#sv_itm_p_braceletL.xno-geometry-position-array" count="69" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sv_itm_p_braceletL.xno-geometry-normal">
+          <float_array id="sv_itm_p_braceletL.xno-geometry-normal-array" count="123">-0.905454 -0.118762 0.407491 0.14063 0.975463 0.169394 -0.905454 -0.118762 -0.407491 0.140605 0.975467 -0.169392 -0.824235 -0.439274 0.357316 -0.824235 -0.439274 -0.357316 0.0210849 -1.01252e-007 -0.999778 0.0210921 0.258767 -0.965709 0.0211155 0.499898 -0.865827 0.0210941 -0.258756 -0.965712 0.0211184 -0.499878 -0.865838 0.0211545 0.706958 -0.706939 0.0211582 -0.706958 -0.706939 -0.553722 -0.2244 -0.801896 0.0779293 0.847649 -0.524803 -0.636998 -0.62028 -0.457697 0.0212116 -0.86584 -0.499871 0.0212706 -0.965702 -0.25878 0.0213348 -0.999772 -2.11e-005 0.0213988 -0.96571 0.258739 -0.636998 -0.62028 0.457696 0.0214583 -0.865836 0.499868 -0.553722 -0.224401 0.801895 0.0780797 0.847641 0.524794 0.0215052 0.706932 0.706955 0.0215096 -0.706932 0.706954 0.0215452 0.499893 0.865819 0.0215486 -0.499875 0.865829 0.0215737 -0.258764 0.9657 0.0215805 -1.30053e-006 0.999767 0.0215716 0.258764 0.9657 0.0781658 0.958343 -0.274715 0.102892 0.994693 4.09043e-006 0.0782337 0.958341 0.274705 0.0177329 0.720468 -0.693262 0.018027 0.720429 0.693294 0.0222542 0.963869 -0.265444 0.0391978 0.999231 -1.30633e-005 0.0223383 0.963874 0.265419 0.0135432 0.882444 0.470222 0.0133952 0.88246 -0.470197 </float_array>
+          <technique_common>
+            <accessor source="#sv_itm_p_braceletL.xno-geometry-normal-array" count="41" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sv_itm_p_braceletL.xno-geometry-uv">
+          <float_array id="sv_itm_p_braceletL.xno-geometry-uv-array" count="134">0.663746 0.637745 0.157019 0.988476 -0.981635 0.97513 0.847912 0.637745 0.273904 0.988476 -0.0142175 0.975128 0.700179 0.575423 0.809337 0.575423 0.608915 0.81361 0.54499 0.81361 0.480331 0.81361 0.672114 0.81361 0.734642 0.81361 0.414985 0.81361 0.796593 0.81361 0.962919 0.388636 0.349056 0.81361 0.8515 0.388636 0.858087 0.81361 0.919267 0.81361 0.411945 0.982868 0.980287 0.81361 0.472965 0.982868 0.661681 0.388636 0.534145 0.982868 0.548739 0.388636 0.0831971 0.81361 0.0172682 0.81361 0.977247 0.982868 0.595639 0.982868 0.911901 0.982868 0.65759 0.982868 0.720118 0.982868 0.783317 0.982868 0.847242 0.982868 0.274561 0.730163 -0.0728047 0.0165815 0.216138 0.730162 -0.497841 0.0235448 0.157716 0.730162 -0.922877 0.016582 0.545082 0.666017 0.609002 0.666016 0.67219 0.666016 0.657505 0.835275 0.858108 0.666017 0.911833 0.835275 0.796635 0.666017 0.919266 0.666017 0.734703 0.666016 0.415067 0.666017 0.480421 0.666017 0.534084 0.835275 0.595564 0.835275 0.411923 0.835274 0.980265 0.666017 0.0172187 0.666017 0.977198 0.835275 0.472922 0.835275 0.783228 0.835275 0.84716 0.835275 0.720028 0.835275 0.282751 0.594791 0.216151 0.594791 0.149548 0.594791 0.0831702 0.594791 0.349124 0.594791 </float_array>
+          <technique_common>
+            <accessor source="#sv_itm_p_braceletL.xno-geometry-uv-array" count="67" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sv_itm_p_braceletL.xno-geometry-uv2">
+          <float_array id="sv_itm_p_braceletL.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#sv_itm_p_braceletL.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sv_itm_p_braceletL.xno-geometry-color">
+          <float_array id="sv_itm_p_braceletL.xno-geometry-color-array" count="52">0 0 0 0.835294 1 1 1 1 0 0 0 0.819608 0 0 0 0.8 0 0 0 0.839216 0 0 0 0.705882 0 0 0 0.560784 0 0 0 0.572549 0 0 0 0.694118 0 0 0 0.745098 0 0 0 0.737255 0 0 0 0.831373 0 0 0 0.827451 </float_array>
+          <technique_common>
+            <accessor source="#sv_itm_p_braceletL.xno-geometry-color-array" count="13" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="sv_itm_p_braceletL.xno-geometry-vertex">
+          <input semantic="POSITION" source="#sv_itm_p_braceletL.xno-geometry-position" />
+        </vertices>
+        <triangles material="sv_itm_p_braceletL.xno0" count="58">
+          <input semantic="VERTEX" source="#sv_itm_p_braceletL.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#sv_itm_p_braceletL.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#sv_itm_p_braceletL.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#sv_itm_p_braceletL.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#sv_itm_p_braceletL.xno-geometry-color" offset="4" set="0" />
+          <p>20 18 20 0 0 55 18 54 0 0 22 19 22 0 0 59 19 58 0 0 22 19 22 0 0 55 18 54 0 0 22 19 22 0 0 59 19 58 0 0 24 21 24 0 4 53 21 52 0 0 24 21 24 0 4 59 19 58 0 0 24 21 24 0 4 53 21 52 0 0 30 25 29 0 0 54 25 53 0 0 30 25 29 0 0 53 21 52 0 0 30 25 29 0 0 54 25 53 0 0 32 27 31 0 0 45 27 44 0 0 32 27 31 0 0 54 25 53 0 0 32 27 31 0 0 45 27 44 0 0 33 28 32 0 0 62 28 61 0 0 33 28 32 0 0 45 27 44 0 0 33 28 32 0 0 62 28 61 0 0 34 29 33 0 0 60 29 59 0 0 34 29 33 0 0 62 28 61 0 0 34 29 33 0 0 60 29 59 0 0 35 30 34 0 0 61 30 60 0 0 35 30 34 0 0 60 29 59 0 0 35 30 34 0 0 61 30 60 0 0 31 26 30 0 0 47 26 46 0 0 31 26 30 0 0 61 30 60 0 0 31 26 30 0 0 47 26 46 0 0 28 24 28 0 4 47 26 46 0 0 58 35 57 0 0 29 24 28 0 0 51 34 50 0 0 16 14 16 0 5 67 40 66 0 0 16 14 16 0 5 51 34 50 0 0 13 11 13 0 0 13 11 13 0 0 51 34 50 0 0 10 8 10 0 0 52 8 51 0 0 10 8 10 0 0 51 34 50 0 0 10 8 10 0 0 52 8 51 0 0 9 7 9 0 4 42 7 41 0 4 9 7 9 0 4 52 8 51 0 0 9 7 9 0 4 42 7 41 0 4 8 6 8 0 4 43 6 42 0 0 8 6 8 0 4 42 7 41 0 4 8 6 8 0 4 43 6 42 0 0 11 9 11 0 0 44 9 43 0 0 11 9 11 0 0 43 6 42 0 0 11 9 11 0 0 44 9 43 0 0 12 10 12 0 4 50 10 49 0 0 12 10 12 0 4 44 9 43 0 0 12 10 12 0 4 50 10 49 0 0 14 12 14 0 0 48 12 47 0 0 14 12 14 0 0 50 10 49 0 0 14 12 14 0 0 48 12 47 0 0 18 16 18 0 0 46 16 45 0 0 18 16 18 0 0 48 12 47 0 0 18 16 18 0 0 46 16 45 0 0 19 17 19 0 0 49 17 48 0 0 19 17 19 0 0 46 16 45 0 0 19 17 19 0 0 49 17 48 0 0 21 18 21 0 0 56 18 55 0 0 21 18 21 0 0 49 17 48 0 0 25 22 25 0 8 0 0 0 0 0 6 4 6 0 2 3 2 3 0 0 6 4 6 0 2 0 0 0 0 0 6 4 6 0 2 3 2 3 0 0 7 5 7 0 3 15 13 15 0 5 7 5 7 0 3 3 2 3 0 0 7 5 7 0 3 15 13 15 0 5 17 15 17 0 6 23 20 23 0 7 7 5 7 0 3 17 15 17 0 6 7 5 7 0 3 23 20 23 0 7 6 4 6 0 2 25 22 25 0 8 6 4 6 0 2 23 20 23 0 7 27 24 27 0 4 57 35 56 0 0 26 23 26 0 8 66 39 65 0 12 26 23 26 0 8 57 35 56 0 0 65 38 64 0 11 26 23 26 0 8 66 39 65 0 12 26 23 26 0 8 65 38 64 0 11 40 33 39 0 10 64 37 63 0 11 40 33 39 0 10 65 38 64 0 11 40 33 39 0 10 64 37 63 0 11 38 32 37 0 9 38 32 37 0 9 64 37 63 0 11 36 31 35 0 9 63 36 62 0 11 36 31 35 0 9 64 37 63 0 11 36 31 35 0 9 63 36 62 0 11 16 14 16 0 5 68 40 66 0 11 16 14 16 0 5 63 36 62 0 11 4 3 4 0 0 36 31 35 0 9 16 14 16 0 5 40 33 39 0 10 1 1 1 0 0 26 23 26 0 8 </p>
+        </triangles>
+        <triangles material="sv_itm_p_braceletL.xno1" count="3">
+          <input semantic="VERTEX" source="#sv_itm_p_braceletL.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#sv_itm_p_braceletL.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#sv_itm_p_braceletL.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#sv_itm_p_braceletL.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#sv_itm_p_braceletL.xno-geometry-color" offset="4" set="0" />
+          <p>37 31 36 0 1 5 3 5 0 1 39 32 38 0 1 2 1 2 0 1 39 32 38 0 1 5 3 5 0 1 39 32 38 0 1 2 1 2 0 1 41 33 40 0 1 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="sv_itm_p_braceletL.xno-controller">
+      <skin source="#sv_itm_p_braceletL.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="sv_itm_p_braceletL.xno-controller-Joints">
+          <Name_array id="sv_itm_p_braceletL.xno-controller-Joints-array" count="1">p_braceletL </Name_array>
+          <technique_common>
+            <accessor source="#sv_itm_p_braceletL.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sv_itm_p_braceletL.xno-controller-Matrices">
+          <float_array id="sv_itm_p_braceletL.xno-controller-Matrices-array" count="16">1 -1.73361e-011 -1.29654e-008 0 1.73374e-011 1 1.00621e-007 0 1.29654e-008 -1.00621e-007 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#sv_itm_p_braceletL.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="sv_itm_p_braceletL.xno-controller-Weights">
+          <float_array id="sv_itm_p_braceletL.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#sv_itm_p_braceletL.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#sv_itm_p_braceletL.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#sv_itm_p_braceletL.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="69">
+          <input semantic="JOINT" offset="0" source="#sv_itm_p_braceletL.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#sv_itm_p_braceletL.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="p_braceletL" sid="p_braceletL" name="p_braceletL" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="sv_itm_p_braceletL.xno" sid="sv_itm_p_braceletL.xno" name="sv_itm_p_braceletL.xno">
+        <instance_controller url="#sv_itm_p_braceletL.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="sv_itm_p_braceletL.xno0" target="#sv_itm_p_braceletL.xno0ID" />
+              <instance_material symbol="sv_itm_p_braceletL.xno1" target="#sv_itm_p_braceletL.xno1ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

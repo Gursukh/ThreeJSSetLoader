@@ -1,5 +1,5 @@
 import { MeshLambertMaterial, MeshPhongMaterial, Vector3 } from "three";
-import { hexToRgb, rgbToHex, showXML } from "./util.js";
+import { hexToRgb, rgbToHex, show_XML } from "./util.js";
 
 var speed = 1;
 var controls;
@@ -286,7 +286,7 @@ function addEventListeners(environment) {
 
   
   document.getElementById("open-placement").addEventListener("click", () => {
-    showXML(document.getElementById("placement-dropdown-input").value);
+    show_XML(document.getElementById("placement-dropdown-input").value);
   })
 
   environment.renderer.domElement.addEventListener('click', function () {

@@ -11,7 +11,7 @@ export const rgbToHex = (r, g, b) => '#' + [r, g, b].map(x => {
   return hex.length === 1 ? '0' + hex : hex
 }).join('')
 
-export function showXML(PlacementID) {
+export function show_XML(PlacementID) {
   var win = window.open("docs/assets/placement/" + PlacementID, '_blank');
   win.focus();
 }
@@ -43,4 +43,18 @@ export function get_warpgate_texture_offset(txt) {
     case "goto_aqa": return new THREE.Vector2(0, 0.66);
     case "goto_end": return new THREE.Vector2(0.25, 0.66);
   }
+}
+
+export function make_emissive(material) {
+  material.emissive = new THREE.Color(1, 1, 1);
+  material.emissiveMap = material.map
+}
+
+export function get_page_offsets(el) {
+  var rect = el.getBoundingClientRect();
+  var docEl = document.documentElement;
+  return {
+    left: rect.left + (window.pageXOffset || docEl.scrollLeft || 0),
+    top: rect.top + (window.pageYOffset || docEl.scrollTop || 0)
+  };
 }

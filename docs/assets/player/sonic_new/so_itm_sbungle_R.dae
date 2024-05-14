@@ -1,0 +1,335 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <authoring_tool>LibS06 - COLLADA Exporter</authoring_tool>
+    </contributor>
+    <unit name="meters" meter="1.0" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="ch_sonic_tex05_df.dds-image" name="ch_sonic_tex05_df.dds-image">
+      <init_from>./textures/ch_sonic_tex05_df.dds</init_from>
+    </image>
+    <image id="ch_sonic_tex05_sp.dds-image" name="ch_sonic_tex05_sp.dds-image">
+      <init_from>./textures/ch_sonic_tex05_sp.dds</init_from>
+    </image>
+    <image id="ch_sonic_tex05_nw.dds-image" name="ch_sonic_tex05_nw.dds-image">
+      <init_from>./textures/ch_sonic_tex05_nw.dds</init_from>
+    </image>
+    <image id="ch_sonic_tex02a1_df.dds-image" name="ch_sonic_tex02a1_df.dds-image">
+      <init_from>./textures/ch_sonic_tex02a1_df.dds</init_from>
+    </image>
+    <image id="ch_sonic_tex02a1_lu.dds-image" name="ch_sonic_tex02a1_lu.dds-image">
+      <init_from>./textures/ch_sonic_tex02a1_lu.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="so_itm_sbungle_R.xno0ID" name="so_itm_sbungle_R.xno0">
+      <instance_effect url="#so_itm_sbungle_R.xno0-effect" />
+    </material>
+    <material id="so_itm_sbungle_R.xno1ID" name="so_itm_sbungle_R.xno1">
+      <instance_effect url="#so_itm_sbungle_R.xno1-effect" />
+    </material>
+    <material id="so_itm_sbungle_R.xno2ID" name="so_itm_sbungle_R.xno2">
+      <instance_effect url="#so_itm_sbungle_R.xno2-effect" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="so_itm_sbungle_R.xno0-effect" name="so_itm_sbungle_R.xno0-effect">
+      <profile_COMMON>
+        <newparam sid="ch_sonic_tex02a1_df.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_sonic_tex02a1_df.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_sonic_tex02a1_df.dds-image-sampler">
+          <sampler2D>
+            <source>ch_sonic_tex02a1_df.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="ch_sonic_tex02a1_lu.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_sonic_tex02a1_lu.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_sonic_tex02a1_lu.dds-image-sampler">
+          <sampler2D>
+            <source>ch_sonic_tex02a1_lu.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="ch_sonic_tex02a1_lu.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_sonic_tex02a1_lu.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_sonic_tex02a1_lu.dds-image-sampler">
+          <sampler2D>
+            <source>ch_sonic_tex02a1_lu.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="ch_sonic_tex02a1_df.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="so_itm_sbungle_R.xno1-effect" name="so_itm_sbungle_R.xno1-effect">
+      <profile_COMMON>
+        <newparam sid="ch_sonic_tex05_df.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_sonic_tex05_df.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_sonic_tex05_df.dds-image-sampler">
+          <sampler2D>
+            <source>ch_sonic_tex05_df.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="ch_sonic_tex05_sp.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_sonic_tex05_sp.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_sonic_tex05_sp.dds-image-sampler">
+          <sampler2D>
+            <source>ch_sonic_tex05_sp.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="ch_sonic_tex05_nw.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_sonic_tex05_nw.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_sonic_tex05_nw.dds-image-sampler">
+          <sampler2D>
+            <source>ch_sonic_tex05_nw.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="ch_sonic_tex05_nw.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_sonic_tex05_nw.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_sonic_tex05_nw.dds-image-sampler">
+          <sampler2D>
+            <source>ch_sonic_tex05_nw.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="ch_sonic_tex05_df.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="so_itm_sbungle_R.xno2-effect" name="so_itm_sbungle_R.xno2-effect">
+      <profile_COMMON>
+        <newparam sid="ch_sonic_tex05_df.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_sonic_tex05_df.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_sonic_tex05_df.dds-image-sampler">
+          <sampler2D>
+            <source>ch_sonic_tex05_df.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="ch_sonic_tex05_sp.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_sonic_tex05_sp.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_sonic_tex05_sp.dds-image-sampler">
+          <sampler2D>
+            <source>ch_sonic_tex05_sp.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="ch_sonic_tex05_nw.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_sonic_tex05_nw.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_sonic_tex05_nw.dds-image-sampler">
+          <sampler2D>
+            <source>ch_sonic_tex05_nw.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="ch_sonic_tex05_nw.dds-image-surface">
+          <surface type="2D">
+            <init_from>ch_sonic_tex05_nw.dds-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ch_sonic_tex05_nw.dds-image-sampler">
+          <sampler2D>
+            <source>ch_sonic_tex05_nw.dds-image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="COMMON">
+          <phong>
+            <diffuse>
+              <texture texture="ch_sonic_tex05_df.dds-image-sampler" texcoord="UVSET0" />
+              <color>1.000000 1.000000 1.000000 1</color>
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="so_itm_sbungle_R.xno-geometry" name="so_itm_sbungle_R.xno-geometry">
+      <mesh>
+        <source id="so_itm_sbungle_R.xno-geometry-position">
+          <float_array id="so_itm_sbungle_R.xno-geometry-position-array" count="255">-0.780601 -5.67117 -1.27842 -0.780601 -5.67117 -1.27842 -0.780601 -5.67117 -1.27842 -0.780601 -5.67117 -1.27842 -0.77814 -5.40143 1.86784 -0.77814 -5.40143 1.86784 -0.77814 -5.40143 1.86784 -0.745668 -4.48651 -3.30182 -0.745668 -4.48651 -3.30182 -0.745668 -4.48651 -3.30182 -0.745668 -4.48651 -3.30182 -0.745668 -4.48651 -3.30182 -0.739436 -4.26318 3.77625 -0.739436 -4.26318 3.77625 -0.739436 -4.26318 3.77625 -0.739436 -4.26318 3.77625 -0.739436 -4.26318 3.77625 -0.674328 -2.24572 5.23982 -0.674328 -2.24572 5.23982 -0.666175 -1.74196 -4.63872 -0.666175 -1.74196 -4.63872 -0.666175 -1.74196 -4.63872 -0.575035 1.45848 -4.61118 -0.575035 1.45848 -4.61118 -0.575035 1.45848 -4.61118 -0.568205 1.68058 5.19552 -0.568205 1.68058 5.19552 -0.539922 2.80864 -3.9333 -0.539922 2.80864 -3.9333 -0.534666 3.05946 4.28459 -0.534666 3.05946 4.28459 -0.504809 4.13353 -2.91232 -0.504809 4.13353 -2.91232 -0.501128 4.43277 2.86126 -0.501128 4.43277 2.86126 -0.465463 5.09976 -1.3249 -0.465463 5.09976 -1.3249 -0.457811 5.17145 1.11968 -0.457811 5.17145 1.11968 -0.159508 -6.38416 -1.46344 -0.156053 -6.06741 1.7879 -0.12027 -4.98776 -3.79251 -0.11325 -4.73637 4.19699 -0.0422577 -2.43692 5.83317 -0.0372859 -2.07473 -5.16604 -0.0372859 -2.07473 -5.16604 0.0675363 1.78774 -5.1328 0.0675363 1.78774 -5.1328 0.0707405 1.82203 5.79174 0.103896 3.19847 -4.43536 0.107173 3.34231 4.79694 0.140256 4.58393 -3.39482 0.143605 4.85702 3.28973 0.182626 5.6944 -1.61705 0.191348 5.81539 1.05101 0.489037 -5.77257 -1.2903 0.489037 -5.77257 -1.2903 0.492799 -5.43858 1.73813 0.492799 -5.43858 1.73813 0.52527 -4.52366 -3.43153 0.52527 -4.52366 -3.43153 0.531509 -4.30145 3.77585 0.531509 -4.30145 3.77585 0.59671 -2.28124 5.23945 0.59671 -2.28124 5.23945 0.604871 -1.77565 -4.7684 0.604871 -1.77565 -4.7684 0.604871 -1.77565 -4.7684 0.696011 1.42478 -4.74086 0.696011 1.42478 -4.74086 0.696011 1.42478 -4.74086 0.702833 1.64507 5.19515 0.702833 1.64507 5.19515 0.73107 2.77322 -4.063 0.73107 2.77322 -4.063 0.736326 3.02258 4.28421 0.736326 3.02258 4.28421 0.76613 4.09638 -3.04203 0.76613 4.09638 -3.04203 0.769818 4.39451 2.86087 0.769818 4.39451 2.86087 0.805476 5.06261 -1.45461 0.805476 5.06261 -1.45461 0.813128 5.1343 0.989968 0.813128 5.1343 0.989968 </float_array>
+          <technique_common>
+            <accessor source="#so_itm_sbungle_R.xno-geometry-position-array" count="85" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="so_itm_sbungle_R.xno-geometry-normal">
+          <float_array id="so_itm_sbungle_R.xno-geometry-normal-array" count="198">-0.921149 -0.379409 -0.0868012 -0.911103 -0.289542 0.293355 -0.0430332 -0.974292 -0.221142 -0.014659 -0.96309 0.268779 -0.908081 -0.391111 0.149737 -0.999582 0.028896 0.000437793 -0.914835 -0.256655 -0.311778 -0.0472792 -0.682376 -0.72947 -0.999002 0.0446356 -0.00139931 -0.702388 -0.200809 0.682881 -0.999578 0.0290501 0.000431828 -0.674988 -0.113792 -0.729001 -0.99963 0.0271972 0.000250754 -0.670395 0.161759 -0.724158 -0.999662 0.0259944 0.000107507 -0.691352 0.230696 0.684698 -0.999657 0.0261858 -0.00029326 -0.700316 0.388118 -0.599101 -0.999701 0.0244668 6.10818e-005 -0.66943 0.484174 0.563418 -0.99955 0.0299842 -0.000916718 -0.713281 0.53046 -0.458085 -0.999573 0.0292065 -0.000135677 -0.673634 0.629205 0.387709 -0.7106 0.67954 -0.182408 -0.998098 0.0616334 0.00131669 -0.688251 0.709817 0.149902 -0.016027 -0.740551 0.671809 -0.00634286 -0.299909 0.953947 -0.0564231 -0.24609 -0.967603 -0.046403 0.268347 -0.962204 0.00796324 0.287137 0.957856 -0.031698 0.534854 -0.84435 0.0160835 0.625818 0.779803 -0.0139926 0.739078 -0.673474 0.0196644 0.823946 0.566327 0.0139208 0.954613 -0.297524 0.0335052 0.98638 0.161034 0.697035 -0.703066 -0.140859 0.999559 -0.0296895 0.000241607 0.68536 -0.69184 0.227243 0.99921 -0.0396221 0.0031288 0.665399 -0.498951 -0.55524 0.999581 -0.0289438 2.71523e-005 0.682341 -0.555257 0.475501 0.999495 -0.0317751 -0.000286907 0.691541 -0.239878 0.681344 0.999583 -0.0288779 -0.000643732 0.572368 -0.159554 -0.804324 0.999588 -0.0286932 -0.000164738 0.580164 0.137114 -0.802876 0.999624 -0.0274027 1.04758e-005 0.702055 0.194262 0.685114 0.999658 -0.0261683 -0.000331682 0.648455 0.383781 -0.657433 0.999657 -0.0261767 0.000283107 0.693568 0.450222 0.562373 0.999701 -0.0244587 -6.46935e-005 0.687643 0.524565 -0.501975 0.999548 -0.0300579 0.000543393 0.708982 0.588025 0.389321 0.99958 -0.0289821 0.000444664 0.721163 0.659852 -0.210998 0.9993 -0.0373538 -0.00203242 0.736154 0.66518 0.124951 0.998648 -0.0519449 0.0017312 </float_array>
+          <technique_common>
+            <accessor source="#so_itm_sbungle_R.xno-geometry-normal-array" count="66" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="so_itm_sbungle_R.xno-geometry-uv">
+          <float_array id="so_itm_sbungle_R.xno-geometry-uv-array" count="152">0.43698 0.297558 1.37122 0.942912 0.32598 0.306357 1.62704 0.918761 0.508779 0.332172 1.20575 0.847897 0.258947 0.340602 1.78153 0.824762 0.207887 0.400806 1.89921 0.659505 0.556814 0.413219 0.266783 0.68654 1.09505 0.625426 0.556815 0.508132 0.128125 0.68654 1.09505 0.364894 0.210645 0.517223 1.89285 0.339948 0.532798 0.541884 1.1504 0.272249 0.241574 0.548829 1.82157 0.253191 0.50878 0.575635 1.20575 0.179604 0.272503 0.580435 1.75029 0.166433 0.446891 0.616308 1.34839 0.0679612 0.355629 0.621603 1.55872 0.0534285 1.35667 1 1.62101 0.971949 1.16618 0.887966 1.8161 0.861909 1.94762 0.673581 0.280825 0.645195 1.05238 0.651809 0.113488 0.645195 1.05238 0.337393 1.94127 0.326949 1.10928 0.239805 1.86306 0.228743 1.16618 0.142217 1.78486 0.130536 1.3242 0.0187017 1.55268 0 1.37033 0.949035 0.0101473 0.126154 1.61652 0.919737 0.0213242 0.222976 1.19523 0.848873 0.0483572 0.0572873 1.78153 0.825738 0.0571837 0.287873 1.89921 0.660258 0.120312 0.334154 0.267153 0.603851 1.08453 0.626121 0.133334 0.0137482 0.128495 0.603851 1.08453 0.365589 0.232723 0.0137479 1.89285 0.3407 0.242219 0.331655 1.13988 0.273085 0.268012 0.0355172 1.82157 0.254055 0.275273 0.303621 1.19523 0.18058 0.303301 0.0572865 1.75029 0.167409 0.308327 0.275587 1.33786 0.0689374 0.345892 0.113383 1.54819 0.0544047 0.351436 0.196103 </float_array>
+          <technique_common>
+            <accessor source="#so_itm_sbungle_R.xno-geometry-uv-array" count="76" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="so_itm_sbungle_R.xno-geometry-uv2">
+          <float_array id="so_itm_sbungle_R.xno-geometry-uv2-array" count="2">0 1 </float_array>
+          <technique_common>
+            <accessor source="#so_itm_sbungle_R.xno-geometry-uv2-array" count="1" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="so_itm_sbungle_R.xno-geometry-color">
+          <float_array id="so_itm_sbungle_R.xno-geometry-color-array" count="80">1 0 0 0.607843 1 0 0 0.67451 1 0 0 0.584314 1 0 0 0.588235 1 0 0 0.745098 1 0 0 0.913725 1 0 0 0.878431 1 0 0 0.933333 1 0 0 0.890196 1 0 0 0.937255 1 0 0 0.921569 1 0 0 0.901961 1 0 0 0.905882 1 0 0 0.835294 1 0 0 0.886275 1 0 0 0.847059 1 0 0 0.737255 1 0 0 0.6 1 0 0 0.647059 1 0 0 0.772549 </float_array>
+          <technique_common>
+            <accessor source="#so_itm_sbungle_R.xno-geometry-color-array" count="20" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="so_itm_sbungle_R.xno-geometry-vertex">
+          <input semantic="POSITION" source="#so_itm_sbungle_R.xno-geometry-position" />
+        </vertices>
+        <triangles material="so_itm_sbungle_R.xno0" count="52">
+          <input semantic="VERTEX" source="#so_itm_sbungle_R.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#so_itm_sbungle_R.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#so_itm_sbungle_R.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#so_itm_sbungle_R.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#so_itm_sbungle_R.xno-geometry-color" offset="4" set="0" />
+          <p>55 38 46 0 2 57 40 48 0 16 39 2 30 0 5 40 3 31 0 6 39 2 30 0 5 57 40 48 0 16 39 2 30 0 5 40 3 31 0 6 1 1 1 0 0 43 28 34 0 8 16 9 7 0 2 42 27 33 0 8 16 9 7 0 2 43 28 34 0 8 18 9 9 0 2 48 31 39 0 10 18 9 9 0 2 43 28 34 0 8 18 9 9 0 2 48 31 39 0 10 26 15 17 0 2 50 33 41 0 12 26 15 17 0 2 48 31 39 0 10 26 15 17 0 2 50 33 41 0 12 30 19 21 0 2 52 35 43 0 14 30 19 21 0 2 50 33 41 0 12 30 19 21 0 2 52 35 43 0 14 34 23 25 0 2 54 37 45 0 14 34 23 25 0 2 52 35 43 0 14 34 23 25 0 2 54 37 45 0 14 38 26 29 0 4 38 26 29 0 4 54 37 45 0 14 36 24 27 0 3 53 36 44 0 15 36 24 27 0 3 54 37 45 0 14 36 24 27 0 3 53 36 44 0 15 32 21 23 0 2 51 34 42 0 13 32 21 23 0 2 53 36 44 0 15 49 32 40 0 11 32 21 23 0 2 51 34 42 0 13 32 21 23 0 2 49 32 40 0 11 28 17 19 0 2 47 30 38 0 9 28 17 19 0 2 49 32 40 0 11 28 17 19 0 2 47 30 38 0 9 24 13 15 0 2 41 7 32 0 7 39 2 30 0 5 11 3 5 0 2 39 2 30 0 5 41 7 32 0 7 55 38 46 0 2 59 42 50 0 2 55 38 46 0 2 41 7 32 0 7 69 50 60 0 2 47 30 38 0 9 73 54 64 0 2 49 32 40 0 11 73 54 64 0 2 47 30 38 0 9 73 54 64 0 2 49 32 40 0 11 77 58 68 0 2 51 34 42 0 13 77 58 68 0 2 49 32 40 0 11 77 58 68 0 2 51 34 42 0 13 81 62 72 0 19 53 36 44 0 15 81 62 72 0 19 51 34 42 0 13 81 62 72 0 19 53 36 44 0 15 83 64 74 0 2 54 37 45 0 14 83 64 74 0 2 53 36 44 0 15 83 64 74 0 2 54 37 45 0 14 79 60 70 0 2 52 35 43 0 14 79 60 70 0 2 54 37 45 0 14 79 60 70 0 2 52 35 43 0 14 75 56 66 0 2 50 33 41 0 12 75 56 66 0 2 52 35 43 0 14 75 56 66 0 2 50 33 41 0 12 71 52 62 0 2 48 31 39 0 10 71 52 62 0 2 50 33 41 0 12 43 28 34 0 8 71 52 62 0 2 48 31 39 0 10 71 52 62 0 2 43 28 34 0 8 63 46 54 0 18 63 46 54 0 18 43 28 34 0 8 61 44 52 0 17 42 27 33 0 8 61 44 52 0 17 43 28 34 0 8 61 44 52 0 17 42 27 33 0 8 57 40 48 0 16 40 3 31 0 6 57 40 48 0 16 42 27 33 0 8 40 3 31 0 6 42 27 33 0 8 5 4 3 0 1 15 1 7 0 2 5 4 3 0 1 42 27 33 0 8 9 7 5 0 2 21 11 12 0 2 41 7 32 0 7 45 29 36 0 5 41 7 32 0 7 21 11 12 0 2 41 7 32 0 7 45 29 36 0 5 59 42 50 0 2 66 48 57 0 2 59 42 50 0 2 45 29 36 0 5 39 2 30 0 5 2 2 1 0 0 10 2 5 0 2 6 3 3 0 1 3 3 1 0 0 40 3 31 0 6 </p>
+        </triangles>
+        <triangles material="so_itm_sbungle_R.xno1" count="24">
+          <input semantic="VERTEX" source="#so_itm_sbungle_R.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#so_itm_sbungle_R.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#so_itm_sbungle_R.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#so_itm_sbungle_R.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#so_itm_sbungle_R.xno-geometry-color" offset="4" set="0" />
+          <p>58 41 49 0 16 56 39 47 0 2 62 45 53 0 17 60 43 51 0 2 62 45 53 0 17 56 39 47 0 2 67 49 58 0 2 62 45 53 0 17 60 43 51 0 2 62 45 53 0 17 67 49 58 0 2 64 47 55 0 18 64 47 55 0 18 67 49 58 0 2 72 53 63 0 2 70 51 61 0 2 72 53 63 0 2 67 49 58 0 2 72 53 63 0 2 70 51 61 0 2 76 57 67 0 2 74 55 65 0 2 76 57 67 0 2 70 51 61 0 2 76 57 67 0 2 74 55 65 0 2 80 61 71 0 2 78 59 69 0 2 80 61 71 0 2 74 55 65 0 2 80 61 71 0 2 78 59 69 0 2 84 65 75 0 2 82 63 73 0 19 84 65 75 0 2 78 59 69 0 2 8 6 4 0 2 0 0 0 0 0 14 1 6 0 2 4 4 2 0 1 14 1 6 0 2 0 0 0 0 0 37 25 28 0 4 35 8 26 0 3 33 22 24 0 2 31 20 22 0 2 33 22 24 0 2 35 8 26 0 3 27 16 18 0 2 33 22 24 0 2 31 20 22 0 2 33 22 24 0 2 27 16 18 0 2 29 18 20 0 2 22 12 13 0 2 29 18 20 0 2 27 16 18 0 2 29 18 20 0 2 22 12 13 0 2 25 14 16 0 2 25 14 16 0 2 22 12 13 0 2 17 10 8 0 2 19 5 10 0 2 17 10 8 0 2 22 12 13 0 2 17 10 8 0 2 19 5 10 0 2 13 8 6 0 2 19 5 10 0 2 7 5 4 0 2 12 5 6 0 2 </p>
+        </triangles>
+        <triangles material="so_itm_sbungle_R.xno2" count="4">
+          <input semantic="VERTEX" source="#so_itm_sbungle_R.xno-geometry-vertex" offset="0" />
+          <input semantic="NORMAL" source="#so_itm_sbungle_R.xno-geometry-normal" offset="1" />
+          <input semantic="TEXCOORD" source="#so_itm_sbungle_R.xno-geometry-uv" offset="2" set="0" />
+          <input semantic="TEXCOORD" source="#so_itm_sbungle_R.xno-geometry-uv2" offset="3" set="1" />
+          <input semantic="COLOR" source="#so_itm_sbungle_R.xno-geometry-color" offset="4" set="0" />
+          <p>20 11 11 0 2 23 13 14 0 2 44 29 35 0 5 46 30 37 0 9 44 29 35 0 5 23 13 14 0 2 68 50 59 0 2 44 29 35 0 5 46 30 37 0 9 44 29 35 0 5 68 50 59 0 2 65 48 56 0 2 </p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="so_itm_sbungle_R.xno-controller">
+      <skin source="#so_itm_sbungle_R.xno-geometry">
+        <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+        <source id="so_itm_sbungle_R.xno-controller-Joints">
+          <Name_array id="so_itm_sbungle_R.xno-controller-Joints-array" count="1">sbungle_R </Name_array>
+          <technique_common>
+            <accessor source="#so_itm_sbungle_R.xno-controller-Joints-array" count="1">
+              <param type="name" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="so_itm_sbungle_R.xno-controller-Matrices">
+          <float_array id="so_itm_sbungle_R.xno-controller-Matrices-array" count="16">1 4.7693e-007 -1.56753e-006 0 -4.7693e-007 1 -2.64436e-011 0 1.56753e-006 2.71912e-011 1 0 0 0 0 1 </float_array>
+          <technique_common>
+            <accessor source="#so_itm_sbungle_R.xno-controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="so_itm_sbungle_R.xno-controller-Weights">
+          <float_array id="so_itm_sbungle_R.xno-controller-Weights-array" count="1">1 </float_array>
+          <technique_common>
+            <accessor source="#so_itm_sbungle_R.xno-controller-Weights-array" count="1">
+              <param type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#so_itm_sbungle_R.xno-controller-Joints" />
+          <input semantic="INV_BIND_MATRIX" source="#so_itm_sbungle_R.xno-controller-Matrices" />
+        </joints>
+        <vertex_weights count="85">
+          <input semantic="JOINT" offset="0" source="#so_itm_sbungle_R.xno-controller-Joints" />
+          <input semantic="WEIGHT" offset="1" source="#so_itm_sbungle_R.xno-controller-Weights" />
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="LibGensScene" name="LibGensScene">
+      <node id="sbungle_R" sid="sbungle_R" name="sbungle_R" type="JOINT">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 -0 0 0 0 1 </matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="so_itm_sbungle_R.xno" sid="so_itm_sbungle_R.xno" name="so_itm_sbungle_R.xno">
+        <instance_controller url="#so_itm_sbungle_R.xno-controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="so_itm_sbungle_R.xno0" target="#so_itm_sbungle_R.xno0ID" />
+              <instance_material symbol="so_itm_sbungle_R.xno1" target="#so_itm_sbungle_R.xno1ID" />
+              <instance_material symbol="so_itm_sbungle_R.xno2" target="#so_itm_sbungle_R.xno2ID" />
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#LibGensScene" />
+  </scene>
+</COLLADA>

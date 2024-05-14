@@ -40,12 +40,14 @@ if __name__ == "__main__":
     collision_directory = "./docs/assets/collision"
     placement_directory = "./docs/assets/placement"
     terrain_directory = "./docs/assets/terrain/"
+    player_directory = "./docs/assets/player/"
     output_file_path = "./docs/assets/collisionHierarchy.json"
 
     data = {}
     data["collision"] = traverse_directory(collision_directory)
     data["placement"] = get_files_in_directory(placement_directory)
     data["terrain"] = map_terrain(terrain_directory)
+    data["player"] = map_terrain(player_directory)
 
     write_json(data, output_file_path)
 
